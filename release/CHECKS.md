@@ -63,3 +63,5 @@ Streaming publication: four original manifests checked on the evidence host; ten
 Full vocabulary publication: four complete recursive manifests rechecked on the original evidence host (28523 runtime, 38893 assembly, 14 contracted-reader and 17 topology-reader entries); aggregate review hashes and three case result/output identities verified locally. Exact 9496-tile coverage, zero/winner, all progress values and repeat-logit bits checked. Seven weight-free CSL modules match the frozen common batch hashes. See `VOCABULARY-CHECKS.json`; no new SDK run.
 
 Model boot publication: 1113 boot, 272 compile and 1106 audit manifest entries checked on the original evidence host; review/execution/results identities verified. Actual output/core hashes, all 40530 progress markers, decoder zero status and ordinary controller metadata checked. No new SDK run. See `MODEL-BOOT-CHECKS.json`.
+
+Model partition publication: six complete frozen manifests verified on the original evidence host; review/execution/results identities and exact accepted block intervals checked locally. No SDK or compiler rerun. See `MODEL-PARTITION-CHECKS.json`.

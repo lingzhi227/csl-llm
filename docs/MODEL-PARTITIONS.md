@@ -1,0 +1,26 @@
+# Model weight partition qualification
+
+Two independently compiled partitions now cover original matrix blocks 0–1535, out of 34552 required by the full model. Their initializer, static resource and whole-ELF compatibility checks pass. They have not been assembled into a fully initialized model and do not add a neural runtime result.
+
+| Original block interval | Original blocks in this partition | Compile time | Compile peak RSS | Application ELF classes |
+| --- | ---: | ---: | ---: | ---: |
+| 0–511 | 512 | 392.903389 s | 5881412 KiB | 889 |
+| 512–1535 | 1024 | 636.782091 s | 10493376 KiB | 1401 |
+
+Each partition retains the complete 193 × 210 application layout, with unselected matrix blocks represented by zeros. Both have maximum static high-water 45456 bytes. The first resource audit checks 710 final DSR families, 7784 nodes and 32857 interference edges; the second checks 1222 families, 12681 nodes and 52133 edges. Original selected matrix data, 25 normalization controllers, selected bias roots and placeholder bytes/alignment are independently checked. The second partition has nine selected original bias roots; this is not complete original-bias deployment.
+
+The offline initializer/resource runs took 143.693764 s / 121532 KiB and 152.811075 s / 137560 KiB respectively. The separate compatibility runs took 8.208980 s / 218732 KiB and 9.221093 s / 199408 KiB. Process cleanup was independently confirmed.
+
+## What compatibility establishes
+
+The first partition contributes 512 selected ELF files and the second 1024. Each has 162 common ELF files covering 5978 common coordinates and 215 placeholder ELF files. Independent inspection checks that entire selected artifacts belong to the requested tile set, common allocated bytes and ordered loader segments match the baseline, and output metadata plus ordered SDK I/O/RPC remain compatible. These checks support later composition; they do not prove that all 34552 original blocks have been composed or run.
+
+`release/MODEL-PARTITION-LEDGER.json` records the two accepted intervals and their original compile/audit/contract identities. The development ledger continues to grow; this public selection is a fixed historical snapshot. Independent reviews and selected original manifests, configuration and results are retained under `validation/`.
+
+## Selected tools and reproduction boundary
+
+`tools/model_partition_contract_probe.py` prepares a bounded offline compatibility audit from locally completed candidate and baseline initializer/resource audits. Its default source root is `support/model_partition/`, an isolated copy of the second accepted partition's contract helper, ELF readers and layout definitions. The only public changes select that support root and portable SDK paths. Use `--help` for fixture arguments and `CSL_LLM_SDK_IMAGE` / `CSL_LLM_CS_PYTHON` for one's own SDK.
+
+The original compile and audit drivers are inspection snapshots with original evidence hashes; the entire evolving static-input/model-layout preparation chain is not supplied as a standalone frontend. Reproduction needs local checkpoint declarations, compiled ELF artifacts and completed audit fixtures. Public manifests list original omitted dependencies. Weight literal modules, raw arrays, ELF binaries and personal paths are excluded, so frozen snapshots alone are not runnable. Publication verification did not rerun compilation or SDK simulation.
+
+The previous [full-layout boot](MODEL-BOOT.md) remains a separate accepted run with only 12 original matrix blocks. Its runtime result must not be transferred to these larger static partitions. Complete original-model composition, computation, persistent generation and full capacity remain open.

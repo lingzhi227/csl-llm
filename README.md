@@ -31,6 +31,8 @@ Recorded SDK results belong to the original development snapshots. Publication c
 
 The **193 × 210 model layout now passes actual SDK initialization/reset/prepare** after independent static checks. Only 12 matrix blocks have original weights; no model computation was invoked. [Boot evidence and source boundaries](docs/MODEL-BOOT.md).
 
+Two static model-weight partitions now independently qualify original blocks **0–1535 of 34552**, including whole-ELF compatibility. They are not a fully assembled or executed model. [Partition evidence and tools](docs/MODEL-PARTITIONS.md).
+
 ## New accepted milestones
 
 Stateful GQA (34 real reference tokens), a separately scoped 2048-position KV diagnostic, sequential packet ACK completion and exact full-checkpoint BF16 packing are now included. [Read their acceptance boundaries](docs/MILESTONES.md). These are component milestones, not complete-model generation.

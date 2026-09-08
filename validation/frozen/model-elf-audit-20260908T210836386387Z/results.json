@@ -1,0 +1,11 @@
+{
+  "success": true,
+  "offline_only": true,
+  "source_execution_sha256": "efa195860b1ac7fc592cbaaec6f4f2b086a285855b09eeefad2f099439884f0a",
+  "report_sha256": {
+    "initializers.json": "c3651461d5d21622822d7255b192e81b8758caa9857b9d4065023a348cc523d6",
+    "elf-memory.json": "4179e74ba7d547e0464e2396c81dcb0fafbc16172f5529e261b8cc4b292884a9",
+    "dsr-graphs.json": "38f748996a923111330fa9792e65f8279e9e4ded33c709d1375b2747213afc0c"
+  },
+  "scope": "Offline initial ELF bytes, static SRAM and DSR allocations. No compiler, simulator, runtime identity, full original model or neural execution."
+}

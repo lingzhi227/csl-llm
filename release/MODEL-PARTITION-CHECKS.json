@@ -1,0 +1,55 @@
+{
+  "runs": [
+    {
+      "run": "model-compile-20260908T195906840729Z",
+      "manifest_sha256": "06fdbef8aa8cd3b985a999eff322e68c164371cc15f94a05042af999e1968dc5",
+      "execution_sha256": "2c07e0b46f20db07a9b18f3c9b7b0eb5682cd7cb819b0414df4cfee88c05e88c",
+      "results_sha256": "12aa76826fb65761175bdd367b8e3a78f947c20dbf3ab935fdfdd81c2628d50f",
+      "remote_manifest_entries_verified": 772
+    },
+    {
+      "run": "model-elf-audit-20260908T202809240433Z",
+      "manifest_sha256": "5e13180093e839f19222b625ce7ab304cda0d08f569c7c42882217d72237ea0b",
+      "execution_sha256": "341615f8ccbb60677191ca5ac944f56b077075423088d19ee3353fb9f4d1e473",
+      "results_sha256": "e1741bf0e655653fc813e10b384f290c02cd1b0b28e39c376879fda821c91548",
+      "remote_manifest_entries_verified": 3107
+    },
+    {
+      "run": "model-contract-20260908T205030734366Z",
+      "manifest_sha256": "e287225e102d57a595788435284c5de5d1d9b897760e80b625e74e6d48669eed",
+      "execution_sha256": "2008aa5a803814ea80de97d866a41c6f008c52e236afd80150481f66a9d741e2",
+      "results_sha256": "b31f10f1410b3f120631a2a2083915e6ddb4ed0e8e55e5a42fb1a1d2fd454a47",
+      "remote_manifest_entries_verified": 4239
+    },
+    {
+      "run": "model-compile-20260908T205319491521Z",
+      "manifest_sha256": "c04a4cbc6e2521b98f5b5cfe04d6a74f57dc5b8ab865ce138fdcaeca58404e02",
+      "execution_sha256": "efa195860b1ac7fc592cbaaec6f4f2b086a285855b09eeefad2f099439884f0a",
+      "results_sha256": "337d365276843b1b011297ef894b7953c804e501e60e8f1ac0786188b5b4aec5",
+      "remote_manifest_entries_verified": 1284
+    },
+    {
+      "run": "model-elf-audit-20260908T210836386387Z",
+      "manifest_sha256": "3ec05090c3c126a7bdd2031d46212b70d82ffa4762dec6361ac68fe9463c60ce",
+      "execution_sha256": "bf22e4b1acfe07d56fcefdcee0cd22efdc5cb6e870fecbeb6dbcc2496ee15978",
+      "results_sha256": "326e0476833c73b84169a8113b4e0b9a18f92777157a37623e5b880243c1c27c",
+      "remote_manifest_entries_verified": 5155
+    },
+    {
+      "run": "model-contract-20260908T211332915171Z",
+      "manifest_sha256": "d6e52ab59e5f03f1342efc52de9cb55d735f3c1ffb07009953ef8b8f8362451d",
+      "execution_sha256": "f70ccf3aca83e5bf877a94a634d8afc3c3e97643a4a37cb9e626394730c85127",
+      "results_sha256": "94b1318f0a6bd14f3fb53740a8f5dc31bbad8a8c2ff40c8de489cf076a6451d0",
+      "remote_manifest_entries_verified": 6287
+    }
+  ],
+  "accepted_original_intervals_exact": true,
+  "total_accepted_original_tiles": 1536,
+  "scope": "Publication identity/interval checks only; no compiler or SDK simulation rerun. Independent initializer/resource/whole-ELF compatibility evidence selected; no full assembly or neural acceptance.",
+  "host_tests": {
+    "total": 11,
+    "passed": 10,
+    "skipped_linux_only": 1
+  },
+  "python_compileall_passed": true
+}

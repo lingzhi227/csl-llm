@@ -1,0 +1,43 @@
+{
+  "original_ledger_sha256": "17d7f9dcf3ec3c20dde573daa9ea12e9b679c251b197e236c54d8d3f234a9551",
+  "publication_note": "Selected first two independently accepted intervals from the development ledger; subsequent candidates excluded.",
+  "total_original_matrix_tiles": 34552,
+  "accepted_original_tiles": 1536,
+  "accepted_intervals": [
+    {
+      "first": 0,
+      "last": 511,
+      "compile": "model-compile-20260908T195906840729Z",
+      "audit": "model-elf-audit-20260908T202809240433Z",
+      "initializer_review": "s5-model-first512-initializer-review.json",
+      "resource_review": "s5-model-first512-resource-review.json",
+      "elf_count": 889,
+      "max_static_bytes": 45456,
+      "compile_seconds": 392.903388743056,
+      "compile_peak_rss_kib": 5881412,
+      "contract_review": "s5-model-first512-contract-independent-review.json",
+      "selected_elves": 512,
+      "common_elves": 162,
+      "contract": "model-contract-20260908T205030734366Z"
+    },
+    {
+      "first": 512,
+      "last": 1535,
+      "compile": "model-compile-20260908T205319491521Z",
+      "audit": "model-elf-audit-20260908T210836386387Z",
+      "initializer_review": "model-elf-audit-20260908T210836386387Z-independent-initializer-review.json",
+      "resource_review": "s5-model-second-partition-resource-review.json",
+      "contract": "model-contract-20260908T211332915171Z",
+      "contract_candidate_review": "s5-model-second-partition-contract-candidate-review.json",
+      "contract_review": "s5-model-second-partition-contract-independent-review.json",
+      "elf_count": 1401,
+      "max_static_bytes": 45456,
+      "compile_seconds": 636.7820909880102,
+      "compile_peak_rss_kib": 10493376,
+      "selected_elves": 1024,
+      "common_elves": 162
+    }
+  ],
+  "assembled": false,
+  "sdk_complete": false
+}
