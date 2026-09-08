@@ -1,0 +1,23 @@
+{
+  "reviewed_at": "2026-09-08T23:23:29.884125+00:00",
+  "run": "decoder-chain-assembled-20260908T231810298397Z",
+  "manifest_sha256": "c04ade3926ec753b0a4c8894f4ad38122324c4e3726317c8dd7a4bfda474fd8b",
+  "execution_sha256": "4e882b131a4700df10ed7861f3f09010cad5d5d368016990cbc8cc06e8b381fb",
+  "results_sha256": "7b8131af5b182d097bd53cdb86caa9de486dcc6336441e23dbdd8b4ccd8a3e57",
+  "counts": {
+    "matrix": 2088,
+    "controller": 2,
+    "bias": 18
+  },
+  "coordinates": 2580,
+  "elf_count": 2226,
+  "selected_original_matrices": 2088,
+  "all_initializers_exact": true,
+  "all_manifest_and_report_hashes_verified": true,
+  "all_tracked_pids_absent": true,
+  "elapsed_seconds": 105.36006999597885,
+  "peak_rss_kib": 288316,
+  "method": "Independent closed-form physical ownership, manual ELF64 symbols and SDK ELFObject actual segment coordinates/read_data. Declaration bytes bound to previously independently qualified original data.",
+  "scope": "Complete assembled two-layer original2088matrix/2normfrequency/18bias/endpoint initializers. No actual core or neural acceptance.",
+  "review_script_sha256": "70b67fe16f2be3d87eda37b990ec8f3fd6ae9a71ae79e41097086a1a55b5b2c1"
+}

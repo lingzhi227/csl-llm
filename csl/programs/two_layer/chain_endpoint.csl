@@ -1,0 +1,67 @@
+// Diagnostic endpoint for two unmodified streamed decoder regions.
+// It supplies one initial vector and receives the final vector on device.
+// It does not implement the production vocabulary or token controller.
+param memcpy_params;
+param first_x:u16=62;
+param first_y:u16=0;
+const sys=@import_module("<memcpy/memcpy>",memcpy_params);
+const clock=@import_module("<time>");
+const packets=@import_module("packets.csl",.{
+ .sent_task_id=@get_local_task_id(12),.received_task_id=@get_local_task_id(13),
+ .on_sent=sent,.on_received=received});
+const boundary=@import_module("activation_stream.csl",.{});
+var input=@zeros([896]f32);
+var output=@zeros([896]f32);
+var progress=@zeros([1]u32);
+// Status records source callback completion and final receive completion.
+var status=@zeros([2]u32);
+var timing=@zeros([6]u16);
+var started=@zeros([3]u16);var ended=@zeros([3]u16);
+var tx=@zeros([31]u32);
+var epoch:u32=0;
+var waiting:bool=false;
+var source_done:bool=false;
+var result_done:bool=false;
+
+fn initialize() void {packets.init();sys.unblock_cmd_stream();}
+fn reset_model() void {
+ @assert(!waiting and !packets.sending and !packets.receiving);
+ status[0]=0;status[1]=0;sys.unblock_cmd_stream();
+}
+fn prepare() void {
+ @assert(!waiting and !packets.sending and !packets.receiving and epoch<65535);
+ epoch+=1;boundary.reset(epoch);source_done=false;result_done=false;
+ status[0]=0;status[1]=0;progress[0]=epoch*2-1;sys.unblock_cmd_stream();
+}
+fn compute() void {
+ @assert(!waiting);waiting=true;boundary.arm();
+ clock.enable_tsc();clock.get_timestamp(&started);transmit();
+}
+fn transmit() void {
+ const n=boundary.frame(&tx);
+ packets.copy_words(@ptrcast([*]u32,&input[boundary.sent_count]),@ptrcast([*]u32,&tx[2]),n);
+ packets.send(first_x,first_y,&tx,n+2);
+}
+fn finish_if_ready() void {
+ if(waiting and source_done and result_done){
+  clock.get_timestamp(&ended);clock.disable_tsc();
+  for(@range(u16,3))|i|{timing[i]=started[i];timing[i+3]=ended[i];}
+  waiting=false;progress[0]=epoch*2;sys.unblock_cmd_stream();
+ }
+}
+fn sent() void {
+ if(boundary.complete_send()){source_done=true;status[0]=1;finish_if_ready();}
+ else{transmit();}
+}
+fn received(data:[*]u32,length:u16) void {
+ const start=boundary.accept(data,length);
+ packets.copy_words(@ptrcast([*]u32,&data[2]),@ptrcast([*]u32,&output[start]),length-2);
+ if(boundary.take_ready()){result_done=true;status[1]=1;finish_if_ready();}
+}
+const ip:[*]f32=&input;const op:[*]f32=&output;
+const pp:[*]u32=&progress;const sp:[*]u32=&status;const tp:[*]u16=&timing;
+comptime {
+ @export_symbol(ip,"input");@export_symbol(op,"output");
+ @export_symbol(pp,"progress");@export_symbol(sp,"status");@export_symbol(tp,"timing");
+ @export_symbol(initialize);@export_symbol(reset_model);@export_symbol(prepare);@export_symbol(compute);
+}

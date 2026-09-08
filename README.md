@@ -25,6 +25,10 @@ CSL kernels and distributed execution components for real-model inference on Cer
 
 Recorded SDK results belong to the original development snapshots. Publication changes make host paths portable; they have not received a fresh complete SDK qualification. See [release checks](release/CHECKS.md).
 
+## Latest accepted integration
+
+**Original-weight layer 0 → layer 1 now passes direct device activation transfer and actual SDK numerical/core checks at position 0.** All 2088 matrix blocks are original; 35 numerical checks pass. [Accepted two-layer code and evidence](docs/TWO-LAYER.md). Cached/reset behavior, the full 24-layer model and generation remain unfinished.
+
 ## Latest accepted component
 
 **The complete original vocabulary now passes actual SDK execution.** All 9496 weight tiles are assembled; three cases verify all 151936 logits, zero/tie behavior, three original embedding rows and fresh-process bit-repeat. [Full evidence, source map and remaining limits](docs/FULL-VOCABULARY.md). Device final normalization, the integrated 24-layer model and persistent generation remain unfinished.

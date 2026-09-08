@@ -24,3 +24,7 @@ The first partition contributes 512 selected ELF files and the second 1024. Each
 The original compile and audit drivers are inspection snapshots with original evidence hashes; the entire evolving static-input/model-layout preparation chain is not supplied as a standalone frontend. Reproduction needs local checkpoint declarations, compiled ELF artifacts and completed audit fixtures. Public manifests list original omitted dependencies. Weight literal modules, raw arrays, ELF binaries and personal paths are excluded, so frozen snapshots alone are not runnable. Publication verification did not rerun compilation or SDK simulation.
 
 The previous [full-layout boot](MODEL-BOOT.md) remains a separate accepted run with only 12 original matrix blocks. Its runtime result must not be transferred to these larger static partitions. Complete original-model composition, computation, persistent generation and full capacity remain open.
+
+## Subsequent accepted coverage
+
+The third (1536–2559) and fourth (2560–3583) partitions extend original static coverage to 3584 of 34552 blocks. Their initializer/resource/whole-ELF compatibility reviews and frozen evidence accompany the [two-layer release](TWO-LAYER.md). The table above retains the first publication scope; the public ledger now contains all four accepted intervals. Full-model assembly and execution remain open.

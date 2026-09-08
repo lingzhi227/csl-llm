@@ -1,0 +1,22 @@
+{
+  "reviewed_at": "2026-09-08T23:23:28.650956+00:00",
+  "run": "decoder-chain-assembled-20260908T231810298397Z",
+  "manifest_sha256": "c04ade3926ec753b0a4c8894f4ad38122324c4e3726317c8dd7a4bfda474fd8b",
+  "execution_sha256": "4e882b131a4700df10ed7861f3f09010cad5d5d368016990cbc8cc06e8b381fb",
+  "results_sha256": "7b8131af5b182d097bd53cdb86caa9de486dcc6336441e23dbdd8b4ccd8a3e57",
+  "passed": true,
+  "original_matrix_tiles": 2088,
+  "common_coordinates": 492,
+  "application_coordinates": 2580,
+  "elf_count": 2226,
+  "all_original_partition_coverage_and_source_bytes_exact": true,
+  "all_common_allocated_ordered_loader_signatures_equal": true,
+  "all_sdk_io_rpc_and_layout_equal": true,
+  "all_tracked_pids_absent": true,
+  "elapsed_seconds": 105.36006999597885,
+  "peak_rss_kib": 288316,
+  "method": "Independent raw ELF64 allocated sections and SDK ELFObject ordered segments/physical coordinates; closed-form two-layer ownership and actual copied source/output file equality; no composition/contract module import.",
+  "scope": "Complete original two-layer intact artifact composition and source compatibility. Actual loaded fullinitializer and symbols reviewed separately; no runtime/neural acceptance.",
+  "review_script_sha256": "07903efff4ed20700bb1c0de7038b90780a4a753dd88a9a01afcff65497bd672",
+  "helper_sha256": "d0637282286328e8d20a787e240a8edfdc05c22af3bc70593e4323b42edc117e"
+}

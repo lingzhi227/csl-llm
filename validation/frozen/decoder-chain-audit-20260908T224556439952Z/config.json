@@ -1,0 +1,6 @@
+{
+  "source_execution_sha256": "23659b89bc89faa45f427815a1a2f140f6b99645e5865390a09e367cfc38be5f",
+  "timeout_seconds": 600,
+  "rss_limit_kib": 4194304,
+  "scope": "Two-layer actual ELF initializers and static resources only; no SDK execution."
+}

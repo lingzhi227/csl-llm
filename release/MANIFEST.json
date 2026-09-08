@@ -1,5 +1,5 @@
 {
-  "scope": "First 1536 original model blocks: static initializer, resource and whole-ELF compatibility, plus prior scoped milestones, 2026-09-08",
+  "scope": "Original-weight two-layer position-zero SDK integration and cumulative static model support, 2026-09-08",
   "files": [
     {
       "path": ".gitignore",
@@ -13,8 +13,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 7727,
-      "sha256": "7e2d936af1642ab95aa634ad3345f78a4669444f59dccc425a50a4c507721b18"
+      "bytes": 8100,
+      "sha256": "2e83b7ab4e801bdc00e7dbf51002475fdcf36ed2b5b815b04017a05c8b142334"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
@@ -362,6 +362,56 @@
       "sha256": "43636c22795d3d83f02a6510cc5a8c6df95b62a06dd3f3f89173f0d5cd09da3e"
     },
     {
+      "path": "csl/programs/two_layer/activation_stream.csl",
+      "bytes": 1831,
+      "sha256": "93e824a8395f64b7e9aff193fc1fa0eb32e9912c4ec03ccca1e3b9ccc87616fa"
+    },
+    {
+      "path": "csl/programs/two_layer/chain_endpoint.csl",
+      "bytes": 2775,
+      "sha256": "6281b82a113471935ad0fb3f5ae61c5a87188e3606c68876a2f21b74aa16a3b2"
+    },
+    {
+      "path": "csl/programs/two_layer/decoder.csl",
+      "bytes": 16977,
+      "sha256": "e6dcd478742a1e0edde7c5040b3199b939dc1fc2d2bbfcee11a2892ad950a73d"
+    },
+    {
+      "path": "csl/programs/two_layer/input.csl",
+      "bytes": 709,
+      "sha256": "e9b289a13f821df69a08e58e9bf6847f4b542d94d617c60d8df143413d2a61af"
+    },
+    {
+      "path": "csl/programs/two_layer/kernel.csl",
+      "bytes": 1387,
+      "sha256": "3e92175efe12b28065bb77934c54136db3c9287c68c81877781a0e527354304c"
+    },
+    {
+      "path": "csl/programs/two_layer/kv.csl",
+      "bytes": 3624,
+      "sha256": "9c1d6762937cd668c1668305f515995e97cc92a2e27b8ecd05411c921b9fc0f2"
+    },
+    {
+      "path": "csl/programs/two_layer/line.csl",
+      "bytes": 3947,
+      "sha256": "21f8628d937c6e481c24a45747895fb27caa1bd2a6b18d7338e138d492a4a529"
+    },
+    {
+      "path": "csl/programs/two_layer/packets.csl",
+      "bytes": 2601,
+      "sha256": "151009e07423dc16bb2b2304f29e7e6c52e84e57613c809eb5188470e8bcc6c7"
+    },
+    {
+      "path": "csl/programs/two_layer/rope.csl",
+      "bytes": 897,
+      "sha256": "8d7be77e4938a5d5b7e95525e8869b12d6b2b529fcc25d3152128de230ad7cf8"
+    },
+    {
+      "path": "csl/programs/two_layer/vector.csl",
+      "bytes": 2509,
+      "sha256": "e923d62d7c3527d80282bb6b4714bb00b537510d8c4a48455f84aa939571b26b"
+    },
+    {
       "path": "csl/runtime/distributed_linear_pe.csl",
       "bytes": 1825,
       "sha256": "7eb773d6975d9463e930f9684e02f480d00ce24d36b29f21d75dfd21c5f27333"
@@ -423,8 +473,8 @@
     },
     {
       "path": "docs/MODEL-PARTITIONS.md",
-      "bytes": 3719,
-      "sha256": "8023cd0baf89ee04dad2da777dcdca5dad43a8f4e3b6a4f75240c26c61c29a94"
+      "bytes": 4158,
+      "sha256": "b9fb2610f2d4db7bc3263c0bb8a767ee1cfe5e54468ef17f23e7aeaec3680320"
     },
     {
       "path": "docs/NATIVE-U8.md",
@@ -458,13 +508,18 @@
     },
     {
       "path": "docs/STATUS.md",
-      "bytes": 4478,
-      "sha256": "77f450d95dc6820222435828e92bb7b5a76a7341cecb94c08e32588cca10a7e2"
+      "bytes": 4744,
+      "sha256": "af720c4d5d32d3d96be1d337a82e6f069c222b62be65a5fde96162d2ef79b38c"
     },
     {
       "path": "docs/STREAM-OUTPUT.md",
       "bytes": 4427,
       "sha256": "8263c1d0647c9e4c1bf34abfc5ac29a502dc2e4b7c730ea878a23ba2f3b09feb"
+    },
+    {
+      "path": "docs/TWO-LAYER.md",
+      "bytes": 6122,
+      "sha256": "ba9389a6aeb5da896a4d185242fbf19068efe37ea2efc5b85fe2a27aa4dcc27d"
     },
     {
       "path": "evidence/model-inventory.json",
@@ -478,8 +533,8 @@
     },
     {
       "path": "release/CHECKS.md",
-      "bytes": 10667,
-      "sha256": "c0fc4e6656ab7dce8dbc7a33016a4a8b99c9d7e47ca66d980fa1693fd9b07e7b"
+      "bytes": 11119,
+      "sha256": "bfe03e2cafd537dd8b3dab827f11885a8ad0696a786e0993abf5b85382002905"
     },
     {
       "path": "release/COLLECTIVE-CHECKS.json",
@@ -518,8 +573,8 @@
     },
     {
       "path": "release/MODEL-PARTITION-LEDGER.json",
-      "bytes": 1812,
-      "sha256": "2cb0a1af5993ede8ed47181538a59903aa7a28678dfe2ffb427c03c0d41ce582"
+      "bytes": 3169,
+      "sha256": "60935c079d48006aa74ef9044ceaa596301f3e37431958d0660b6bedbb04855b"
     },
     {
       "path": "release/NATIVE-DOWN-CHECKS.json",
@@ -565,6 +620,16 @@
       "path": "release/STREAM-CHECKS.json",
       "bytes": 1752,
       "sha256": "843f2987ff83dd4f8e40f6069dbc45dd229511f7b85cd7aca229d8f7849dc2a4"
+    },
+    {
+      "path": "release/TWO-LAYER-CHECKS.json",
+      "bytes": 7051,
+      "sha256": "af34c2f6506e8bfcb382a231b7807a4abafc51424daa1420324ab2ddd89930ef"
+    },
+    {
+      "path": "release/TWO-LAYER-LEDGER.json",
+      "bytes": 2831,
+      "sha256": "602d8d592417cdeade08ee2e04df6ea7b02e2f1dee928813c502dceb619d02f1"
     },
     {
       "path": "release/VOCABULARY-CHECKS.json",
@@ -702,6 +767,101 @@
       "sha256": "1e4d555f3eee06e1a4dd3e2c2fee7339f5ae78e2aeb92cf16514a0490661ead6"
     },
     {
+      "path": "support/two_layer/configs/precision.json",
+      "bytes": 1396,
+      "sha256": "c5da7df9c06537cb205b8c5a760703fd39b7c519bb27666906cafb1d6e45b3b0"
+    },
+    {
+      "path": "support/two_layer/manifest.json",
+      "bytes": 2101,
+      "sha256": "965c883dc1a11ac71479e3247e87051edfed0fb4d7eb69d0d6fd5d10cb45869e"
+    },
+    {
+      "path": "support/two_layer/src/csl_llm/__init__.py",
+      "bytes": 80,
+      "sha256": "e330d6b21720c96f282971a7ec9519f943e1c21b9bd944c611bbb4763ca390e2"
+    },
+    {
+      "path": "support/two_layer/src/csl_llm/decoder_layout.py",
+      "bytes": 4528,
+      "sha256": "20fa5b2f051dcad58cb2c44f7d7f511b41fde243113c61a338ac2c661877ec13"
+    },
+    {
+      "path": "support/two_layer/src/csl_llm/regions.py",
+      "bytes": 2413,
+      "sha256": "2b23cc1644fc6e28ebe461bb68dfe0b4c77ac03570c094411d78d477377728c2"
+    },
+    {
+      "path": "support/two_layer/tests/test_decoder_chain_assemble.py",
+      "bytes": 2958,
+      "sha256": "d5eb45c145a78f59200fa502a773eda7783cd75550903c6e927a42b0e34d0f6e"
+    },
+    {
+      "path": "support/two_layer/tests/test_decoder_chain_validate.py",
+      "bytes": 4083,
+      "sha256": "c3944b819e2bf55bcbd11b2620f1c84132dc22e74bd82a6a82fc2578ea964a6d"
+    },
+    {
+      "path": "support/two_layer/tests/test_model_symbols.py",
+      "bytes": 1360,
+      "sha256": "5c47052c06553688d8286e56fa949162e28a1cb06db597419b9e4ddf1e430361"
+    },
+    {
+      "path": "support/two_layer/tools/compare_elf_images.py",
+      "bytes": 2353,
+      "sha256": "64bdf83955560a94e1e0389f9f6ee81c91632c370e70560462d1f285f1852f6f"
+    },
+    {
+      "path": "support/two_layer/tools/decoder_chain_assemble.py",
+      "bytes": 7353,
+      "sha256": "c560a8a603a331187375763b19ec5d053283e4aeb9061e54476373f1c379868c"
+    },
+    {
+      "path": "support/two_layer/tools/decoder_chain_audit_probe.py",
+      "bytes": 8360,
+      "sha256": "0d481c6a19aaaf03f93f5d8e2d18363f32f0381e078a2703d55c31b7ed153ab5"
+    },
+    {
+      "path": "support/two_layer/tools/decoder_chain_symbols.py",
+      "bytes": 4282,
+      "sha256": "d7c7c4b7df0f706fa5122295df5649b66db54f3f599f547dee496f3553032034"
+    },
+    {
+      "path": "support/two_layer/tools/decoder_chain_validate.py",
+      "bytes": 8421,
+      "sha256": "f088f796ebe6c7450b3668f0aa80093d4a92fdbc237d4de137c6a488d384b586"
+    },
+    {
+      "path": "support/two_layer/tools/elf_partition.py",
+      "bytes": 6170,
+      "sha256": "53c0c74f0731a9ff26424b9cf53b91dfb02ffd4bffc12e63d6edbbdaf9118878"
+    },
+    {
+      "path": "support/two_layer/tools/model_initializer_audit.py",
+      "bytes": 8499,
+      "sha256": "497abba2a3ce9927325ea8e56f9d2c97fb2ecd785f3fec3105aef70fb0511e29"
+    },
+    {
+      "path": "support/two_layer/tools/model_partition_contract.py",
+      "bytes": 8842,
+      "sha256": "a192ee68425ade5f4d28648a69f0e1e5fc5a0526dd7c6d9bfc4e0c96c37c79d5"
+    },
+    {
+      "path": "support/two_layer/tools/model_symbols.py",
+      "bytes": 5150,
+      "sha256": "8c5bca78d42cfa4beaa6a33f59e4aeeb12d5953695d0c4b401c7eef31c9793ca"
+    },
+    {
+      "path": "support/two_layer/tools/sdk_core.py",
+      "bytes": 7828,
+      "sha256": "10ba97cebcccf4749e5ee0c22be5518f800e3820429f7d2ae1425b7f66b9e88d"
+    },
+    {
+      "path": "support/two_layer/tools/sdk_probe.py",
+      "bytes": 8573,
+      "sha256": "1e4d555f3eee06e1a4dd3e2c2fee7339f5ae78e2aeb92cf16514a0490661ead6"
+    },
+    {
       "path": "tests/test_bf16_transport.py",
       "bytes": 1115,
       "sha256": "3cfa0200548237147c3eed2e4f495d4c12d24f7ae0aebf774ccdeaf1c6d80e85"
@@ -795,6 +955,16 @@
       "path": "tools/core_topology_probe.py",
       "bytes": 6381,
       "sha256": "5797e18137b23c6f62be60378bfc01e3914374406002527bf5a5e2404e3f7bf2"
+    },
+    {
+      "path": "tools/decoder_chain_assembly_probe.py",
+      "bytes": 5244,
+      "sha256": "ffb27930af92a2bc4e2b2d4550ae77e9d131d342caf4a861413f1bdc649aa689"
+    },
+    {
+      "path": "tools/decoder_chain_runtime_probe.py",
+      "bytes": 11183,
+      "sha256": "a1947d7e6f2b0e927d8bdeb40c05cbe8a762cec931ce29e483a58059a74927a5"
     },
     {
       "path": "tools/distributed_linear_probe.py",
@@ -1632,6 +1802,361 @@
       "sha256": "d570b61b73ad8b41540a31e62eba97cdc9dd26ac9337be5caea9feebb04eb073"
     },
     {
+      "path": "validation/frozen/decoder-chain-assembled-20260908T231810298397Z/config.json",
+      "bytes": 856,
+      "sha256": "5e8f5c398bf8ebf7f2c93623ff80619b0a71d67331f7d5bf45e7d5ba8187fb0d"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-assembled-20260908T231810298397Z/driver.py",
+      "bytes": 5222,
+      "sha256": "35b9c5302120da0cbc049f7cc650558fd0e946ca39cafcdf65c4c9b782cc3bf3"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-assembled-20260908T231810298397Z/execution-summary.json",
+      "bytes": 815,
+      "sha256": "0eee94459557848a9e821b8638d48fc195714a3f779bf323a8100abdd7e35c1b"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-assembled-20260908T231810298397Z/manifest.json",
+      "bytes": 1304875,
+      "sha256": "c04ade3926ec753b0a4c8894f4ad38122324c4e3726317c8dd7a4bfda474fd8b"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-assembled-20260908T231810298397Z/results-summary.json",
+      "bytes": 551,
+      "sha256": "50ca68189bec5fc1fe424cf15a9e4559c6e41a9410c3e42dd338062964a4f2bf"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-assembled-20260908T231810298397Z/src/csl_llm/__init__.py",
+      "bytes": 80,
+      "sha256": "e330d6b21720c96f282971a7ec9519f943e1c21b9bd944c611bbb4763ca390e2"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-assembled-20260908T231810298397Z/src/csl_llm/decoder_layout.py",
+      "bytes": 4528,
+      "sha256": "20fa5b2f051dcad58cb2c44f7d7f511b41fde243113c61a338ac2c661877ec13"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-assembled-20260908T231810298397Z/src/csl_llm/regions.py",
+      "bytes": 2413,
+      "sha256": "2b23cc1644fc6e28ebe461bb68dfe0b4c77ac03570c094411d78d477377728c2"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-assembled-20260908T231810298397Z/tools/compare_elf_images.py",
+      "bytes": 2353,
+      "sha256": "64bdf83955560a94e1e0389f9f6ee81c91632c370e70560462d1f285f1852f6f"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-assembled-20260908T231810298397Z/tools/decoder_chain_assemble.py",
+      "bytes": 7353,
+      "sha256": "c560a8a603a331187375763b19ec5d053283e4aeb9061e54476373f1c379868c"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-assembled-20260908T231810298397Z/tools/decoder_chain_audit_probe.py",
+      "bytes": 8360,
+      "sha256": "0d481c6a19aaaf03f93f5d8e2d18363f32f0381e078a2703d55c31b7ed153ab5"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-assembled-20260908T231810298397Z/tools/decoder_chain_symbols.py",
+      "bytes": 4282,
+      "sha256": "d7c7c4b7df0f706fa5122295df5649b66db54f3f599f547dee496f3553032034"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-assembled-20260908T231810298397Z/tools/elf_partition.py",
+      "bytes": 6170,
+      "sha256": "53c0c74f0731a9ff26424b9cf53b91dfb02ffd4bffc12e63d6edbbdaf9118878"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-assembled-20260908T231810298397Z/tools/model_initializer_audit.py",
+      "bytes": 8499,
+      "sha256": "497abba2a3ce9927325ea8e56f9d2c97fb2ecd785f3fec3105aef70fb0511e29"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-assembled-20260908T231810298397Z/tools/model_partition_contract.py",
+      "bytes": 8842,
+      "sha256": "a192ee68425ade5f4d28648a69f0e1e5fc5a0526dd7c6d9bfc4e0c96c37c79d5"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-assembled-20260908T231810298397Z/tools/model_symbols.py",
+      "bytes": 5150,
+      "sha256": "8c5bca78d42cfa4beaa6a33f59e4aeeb12d5953695d0c4b401c7eef31c9793ca"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-audit-20260908T224556439952Z/config.json",
+      "bytes": 247,
+      "sha256": "870e3e56626e4f65292aca8ad6fbb27ff0395780fa015467c4b816bf8dff5008"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-audit-20260908T224556439952Z/driver.py",
+      "bytes": 8360,
+      "sha256": "0d481c6a19aaaf03f93f5d8e2d18363f32f0381e078a2703d55c31b7ed153ab5"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-audit-20260908T224556439952Z/execution-summary.json",
+      "bytes": 814,
+      "sha256": "c5581d0cad6d4cabcb844bfed5b54f81dfdcab06ec0eb8e9b520b29604827763"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-audit-20260908T224556439952Z/manifest.json",
+      "bytes": 118179,
+      "sha256": "ba7dca86528620e3fc490906dc868a867b76159e1964cd4dd63ce5a1bc247873"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-audit-20260908T224556439952Z/results-summary.json",
+      "bytes": 473,
+      "sha256": "c5811815e3a6f88bcb5a10567ba642037e5a93d5e6f01e3a358054aed019cd0b"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-audit-20260908T230120448566Z/config.json",
+      "bytes": 247,
+      "sha256": "c82d8ddd9249f5e95831ae0d1d37ba2e12bbe448e58b13896b06f048e2f4f7fa"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-audit-20260908T230120448566Z/driver.py",
+      "bytes": 8360,
+      "sha256": "0d481c6a19aaaf03f93f5d8e2d18363f32f0381e078a2703d55c31b7ed153ab5"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-audit-20260908T230120448566Z/execution-summary.json",
+      "bytes": 814,
+      "sha256": "21244a88a2376add1622c5ab664d47fcde9d5f13c549bab860c79ff816d8425a"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-audit-20260908T230120448566Z/manifest.json",
+      "bytes": 540712,
+      "sha256": "1eb128218a1abaa191178ac170a5139d60849b4ad1bfc3ab5d2e4576434afc63"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-audit-20260908T230120448566Z/results-summary.json",
+      "bytes": 473,
+      "sha256": "e672ad6939c7707f5e715ccd9b5ce3aa0f925aa6af680a18ce59dd27eba74cea"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-audit-20260908T231345094257Z/config.json",
+      "bytes": 247,
+      "sha256": "b51f0bab758e4960c48a6994fc953db2946f9f7df44eb6cdcf5ef829ff9506ae"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-audit-20260908T231345094257Z/driver.py",
+      "bytes": 8360,
+      "sha256": "0d481c6a19aaaf03f93f5d8e2d18363f32f0381e078a2703d55c31b7ed153ab5"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-audit-20260908T231345094257Z/execution-summary.json",
+      "bytes": 814,
+      "sha256": "ebec438e1d1a5249c47d7df3050b651634d0b6d1831cc3898e6e72854c6c9dd9"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-audit-20260908T231345094257Z/manifest.json",
+      "bytes": 541444,
+      "sha256": "0f0b449887dfdd2fec65738afd28e04f7f5d0fc36d4ea617ab1dba24c5118304"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-audit-20260908T231345094257Z/results-summary.json",
+      "bytes": 473,
+      "sha256": "883703b53c303d0455e8bd66cae0dbb388787ccbfea082836e408b165c08b75e"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-compile-20260908T224126125556Z/config.json",
+      "bytes": 2004,
+      "sha256": "89db08eebde6c6cba2aef723411f1856df2a6635b09ba1246c03a8026e5b9e4c"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-compile-20260908T224126125556Z/driver.py",
+      "bytes": 5762,
+      "sha256": "560528783da285668aab7ed10f3c23c3d39ff6db683d4694f0ba11141173aad1"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-compile-20260908T224126125556Z/execution-summary.json",
+      "bytes": 814,
+      "sha256": "81184b2a9d2c6392714009ab2533eef22642c82c71e0f6f223d9a04c195b837b"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-compile-20260908T224126125556Z/manifest.json",
+      "bytes": 28425,
+      "sha256": "4ad13cbd8051dbe6b89340c10a85c370052f036e9ba0c1ed3f1ffe51707f7737"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-compile-20260908T224126125556Z/precision.json",
+      "bytes": 1396,
+      "sha256": "c5da7df9c06537cb205b8c5a760703fd39b7c519bb27666906cafb1d6e45b3b0"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-compile-20260908T224126125556Z/results-summary.json",
+      "bytes": 563,
+      "sha256": "f34487285567c961f606b7bfbd09c9d049cd54a74a46ecb873bbf7fe756d58dd"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-compile-20260908T224822742528Z/config.json",
+      "bytes": 2006,
+      "sha256": "516341209390efc8d40b47a81120faed71ef341220472802de73bc3376588385"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-compile-20260908T224822742528Z/driver.py",
+      "bytes": 5762,
+      "sha256": "560528783da285668aab7ed10f3c23c3d39ff6db683d4694f0ba11141173aad1"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-compile-20260908T224822742528Z/execution-summary.json",
+      "bytes": 817,
+      "sha256": "1fc552d98d759d339ba9f93302625ee58212ba5c819384647736bb25f4d53445"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-compile-20260908T224822742528Z/manifest.json",
+      "bytes": 119087,
+      "sha256": "9979f98b2f253be34f019babfc346ec8a2993f125f2a48c4166d1d1359bfe7b6"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-compile-20260908T224822742528Z/precision.json",
+      "bytes": 1396,
+      "sha256": "c5da7df9c06537cb205b8c5a760703fd39b7c519bb27666906cafb1d6e45b3b0"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-compile-20260908T224822742528Z/results-summary.json",
+      "bytes": 564,
+      "sha256": "d008a9c3a1ec841f726c197c9fa1806149b0cb42cb91c7d9021c0895a180a74a"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-compile-20260908T224823712082Z/config.json",
+      "bytes": 2006,
+      "sha256": "5a00312681ad2e78b04905eab7e982eeea47728c2cf641b38019095ed456afa4"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-compile-20260908T224823712082Z/driver.py",
+      "bytes": 5762,
+      "sha256": "560528783da285668aab7ed10f3c23c3d39ff6db683d4694f0ba11141173aad1"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-compile-20260908T224823712082Z/execution-summary.json",
+      "bytes": 817,
+      "sha256": "af179c79255e959262e0de30230329c9b0d6fae387ecf906b13c69cbb0a663ea"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-compile-20260908T224823712082Z/manifest.json",
+      "bytes": 119617,
+      "sha256": "372a2c3e9a955de110617346d6f033ad5d93c1d424f4ed3c12403861fe46bbc0"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-compile-20260908T224823712082Z/precision.json",
+      "bytes": 1396,
+      "sha256": "c5da7df9c06537cb205b8c5a760703fd39b7c519bb27666906cafb1d6e45b3b0"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-compile-20260908T224823712082Z/results-summary.json",
+      "bytes": 564,
+      "sha256": "5496838b5e52fe3ec558747ee3cf01c0b2ac6dc0ca8dd56286f75cd5b5c46219"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-integration-source-20260908T225528021561Z/manifest.json",
+      "bytes": 12920,
+      "sha256": "48381d47a1d7d90aefd5ffc325be11e7f4c92867d3b297f5471e69eb8dd2ac06"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-reference-20260908T222936118540Z/config.json",
+      "bytes": 5398,
+      "sha256": "ba759328640c8e4c230879290c5e411d5155760ca51cb816a17734ac59b5de87"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-reference-20260908T222936118540Z/driver.py",
+      "bytes": 6724,
+      "sha256": "9612ccdb435e791e97f67cad80d92465f0f8176e0b4f0744a8e2601cc4d78629"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-reference-20260908T222936118540Z/equations.py",
+      "bytes": 30845,
+      "sha256": "d0097925f9ee7e6fd7362285f8374c8e7d3b885272b43157ca2b8cd32997c673"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-reference-20260908T222936118540Z/manifest.json",
+      "bytes": 456,
+      "sha256": "9c2eb93b26f396e71f8ca43b5501d0ea8408f8c2595f5818456332b1a1f19ab5"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-reference-20260908T222936118540Z/precision.json",
+      "bytes": 1396,
+      "sha256": "c5da7df9c06537cb205b8c5a760703fd39b7c519bb27666906cafb1d6e45b3b0"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-runtime-20260908T232256520820Z/config.json",
+      "bytes": 681,
+      "sha256": "fad2d9b27b88bccfbf43de6479f52aa9542993b51038aa9a5d36c6a3b59b34b2"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-runtime-20260908T232256520820Z/driver.py",
+      "bytes": 11161,
+      "sha256": "096e6a49cb4f0b1a5a54af0d72d85e6aa18f803b7ac2ac85be17690e3accc0b0"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-runtime-20260908T232256520820Z/execution-summary.json",
+      "bytes": 816,
+      "sha256": "8f6964147cd3a91fd5d98ba3c33317bc5d15ab5e46d8970fb325d42389ca7c2c"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-runtime-20260908T232256520820Z/manifest.json",
+      "bytes": 2161651,
+      "sha256": "d48ad6ae37cb384422003253936dd78d97c96e2473e51ddea641f0023e63a143"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-runtime-20260908T232256520820Z/precision.json",
+      "bytes": 1396,
+      "sha256": "c5da7df9c06537cb205b8c5a760703fd39b7c519bb27666906cafb1d6e45b3b0"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-runtime-20260908T232256520820Z/results.json",
+      "bytes": 7201,
+      "sha256": "ea000e7aae1eab9d26cd49c7b2010bb7de720c2ee259b19bc8eba01856229fd2"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-runtime-20260908T232256520820Z/src/csl_llm/__init__.py",
+      "bytes": 80,
+      "sha256": "e330d6b21720c96f282971a7ec9519f943e1c21b9bd944c611bbb4763ca390e2"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-runtime-20260908T232256520820Z/src/csl_llm/decoder_layout.py",
+      "bytes": 4528,
+      "sha256": "20fa5b2f051dcad58cb2c44f7d7f511b41fde243113c61a338ac2c661877ec13"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-runtime-20260908T232256520820Z/src/csl_llm/regions.py",
+      "bytes": 2413,
+      "sha256": "2b23cc1644fc6e28ebe461bb68dfe0b4c77ac03570c094411d78d477377728c2"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-runtime-20260908T232256520820Z/tools/decoder_chain_assemble.py",
+      "bytes": 7353,
+      "sha256": "c560a8a603a331187375763b19ec5d053283e4aeb9061e54476373f1c379868c"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-runtime-20260908T232256520820Z/tools/decoder_chain_audit_probe.py",
+      "bytes": 8360,
+      "sha256": "0d481c6a19aaaf03f93f5d8e2d18363f32f0381e078a2703d55c31b7ed153ab5"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-runtime-20260908T232256520820Z/tools/decoder_chain_symbols.py",
+      "bytes": 4282,
+      "sha256": "d7c7c4b7df0f706fa5122295df5649b66db54f3f599f547dee496f3553032034"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-runtime-20260908T232256520820Z/tools/decoder_chain_validate.py",
+      "bytes": 8421,
+      "sha256": "f088f796ebe6c7450b3668f0aa80093d4a92fdbc237d4de137c6a488d384b586"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-runtime-20260908T232256520820Z/tools/model_initializer_audit.py",
+      "bytes": 8499,
+      "sha256": "497abba2a3ce9927325ea8e56f9d2c97fb2ecd785f3fec3105aef70fb0511e29"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-runtime-20260908T232256520820Z/tools/model_symbols.py",
+      "bytes": 5150,
+      "sha256": "8c5bca78d42cfa4beaa6a33f59e4aeeb12d5953695d0c4b401c7eef31c9793ca"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-runtime-20260908T232256520820Z/tools/sdk_core.py",
+      "bytes": 7828,
+      "sha256": "10ba97cebcccf4749e5ee0c22be5518f800e3820429f7d2ae1425b7f66b9e88d"
+    },
+    {
       "path": "validation/frozen/decoder-stream-compile-20260908T131131135548Z/activation_stream.csl",
       "bytes": 1831,
       "sha256": "93e824a8395f64b7e9aff193fc1fa0eb32e9912c4ec03ccca1e3b9ccc87616fa"
@@ -2062,6 +2587,56 @@
       "sha256": "cc25364805183e72a9b8c4fe7a8d98cfba221626eb49547d9a7139bf11195300"
     },
     {
+      "path": "validation/frozen/model-compile-20260908T211616702150Z/config.json",
+      "bytes": 1219,
+      "sha256": "e5c2cd81a0515c4a51cc76a128ddbc79eeca2047d9e6972bfb8ee22eb2cecb08"
+    },
+    {
+      "path": "validation/frozen/model-compile-20260908T211616702150Z/driver.py",
+      "bytes": 6725,
+      "sha256": "6b9c3eabb072023805fe3201100418caac97981c0f0fd555bafcc1ad374d7f55"
+    },
+    {
+      "path": "validation/frozen/model-compile-20260908T211616702150Z/execution-summary.json",
+      "bytes": 817,
+      "sha256": "59b3a7176b59be051500ad4c864bfbfcdfc3b630605551506763ecedec1c3d4b"
+    },
+    {
+      "path": "validation/frozen/model-compile-20260908T211616702150Z/manifest.json",
+      "bytes": 119292,
+      "sha256": "406f6939eafcf9ad734fc5a43fdc9f0ad6bcb4717b6879e356f80cc65f7b5a16"
+    },
+    {
+      "path": "validation/frozen/model-compile-20260908T211616702150Z/results-summary.json",
+      "bytes": 732,
+      "sha256": "13119f87d3fc0bce8832356d929ca83cc76409519bdc9d89d157c5527af7d06c"
+    },
+    {
+      "path": "validation/frozen/model-compile-20260908T213153009623Z/config.json",
+      "bytes": 1219,
+      "sha256": "7e882e3dc047fcd2008c423cd496d312bbf6a0ab83bc145abe3e32d1a12f60a0"
+    },
+    {
+      "path": "validation/frozen/model-compile-20260908T213153009623Z/driver.py",
+      "bytes": 6725,
+      "sha256": "6b9c3eabb072023805fe3201100418caac97981c0f0fd555bafcc1ad374d7f55"
+    },
+    {
+      "path": "validation/frozen/model-compile-20260908T213153009623Z/execution-summary.json",
+      "bytes": 816,
+      "sha256": "77ad9449d3fc5d11ce65d451337324eb0fc29e3c45e1e2c9a0ce1c162f61df45"
+    },
+    {
+      "path": "validation/frozen/model-compile-20260908T213153009623Z/manifest.json",
+      "bytes": 119142,
+      "sha256": "7e8bc256e75e8be4123a04d4fc62941bb09f780c5de5f1db8b9731fe3c42bb5b"
+    },
+    {
+      "path": "validation/frozen/model-compile-20260908T213153009623Z/results-summary.json",
+      "bytes": 732,
+      "sha256": "13119f87d3fc0bce8832356d929ca83cc76409519bdc9d89d157c5527af7d06c"
+    },
+    {
       "path": "validation/frozen/model-contract-20260908T205030734366Z/config.json",
       "bytes": 472,
       "sha256": "13715f32bee26b11e7f016b91a4a02c0b1345063d34c3c477b8f8785d0f3fe4d"
@@ -2172,6 +2747,56 @@
       "sha256": "134a387da3962b5cac5f2bcad3a5ed2e99d3714c725b6ae9c1b954991a9e7ce0"
     },
     {
+      "path": "validation/frozen/model-contract-20260908T213656824645Z/config.json",
+      "bytes": 472,
+      "sha256": "32582039fffb5fe7280de6b1a1cf399ed8f1b8e49ccf8fe5e100aa9b9c6acc91"
+    },
+    {
+      "path": "validation/frozen/model-contract-20260908T213656824645Z/driver.py",
+      "bytes": 4127,
+      "sha256": "a0236b560bde85722f55be199c9583cc7e66c2ee1ba8e0cc65dd58f56f5d2674"
+    },
+    {
+      "path": "validation/frozen/model-contract-20260908T213656824645Z/execution-summary.json",
+      "bytes": 814,
+      "sha256": "8a1527dd3ad869add85e3a7996bc94e75ca11489fa0a6088f13c69ef621dd05c"
+    },
+    {
+      "path": "validation/frozen/model-contract-20260908T213656824645Z/manifest.json",
+      "bytes": 734757,
+      "sha256": "a1d9d8bec0c38835e847c5ba3b2ba197f918ce73ae6f5185a5ae03371fcd1db3"
+    },
+    {
+      "path": "validation/frozen/model-contract-20260908T213656824645Z/results-summary.json",
+      "bytes": 1363,
+      "sha256": "484370b738a805f4569ea2a2c6bbfca02e64ce4f2a51d8fa4488773a9f13dadf"
+    },
+    {
+      "path": "validation/frozen/model-contract-20260908T220541045120Z/config.json",
+      "bytes": 472,
+      "sha256": "d8135977e5d50d83ec635171dbed09e605ddaa44d2341dcc0f0f15a6ec3ab8a0"
+    },
+    {
+      "path": "validation/frozen/model-contract-20260908T220541045120Z/driver.py",
+      "bytes": 4127,
+      "sha256": "a0236b560bde85722f55be199c9583cc7e66c2ee1ba8e0cc65dd58f56f5d2674"
+    },
+    {
+      "path": "validation/frozen/model-contract-20260908T220541045120Z/execution-summary.json",
+      "bytes": 814,
+      "sha256": "3d477cdebb8c3fe78edfd946879aec9c68d348628ff701b98d2195c1a0352f69"
+    },
+    {
+      "path": "validation/frozen/model-contract-20260908T220541045120Z/manifest.json",
+      "bytes": 734607,
+      "sha256": "e4d09abc4e98babab7d405fae7cd228d55e7770c260153098a816b927d7e8f5b"
+    },
+    {
+      "path": "validation/frozen/model-contract-20260908T220541045120Z/results-summary.json",
+      "bytes": 1363,
+      "sha256": "946d285fdaa2d21588245af427c7bf394167f53bddc31b643ccfec1e7fca39a0"
+    },
+    {
       "path": "validation/frozen/model-elf-audit-20260908T194004676554Z/config.json",
       "bytes": 475,
       "sha256": "a504f07f79924a2606be79c6edda97e4609d9f92ed7487f1d4567a91a69545a7"
@@ -2245,6 +2870,101 @@
       "path": "validation/frozen/model-elf-audit-20260908T210836386387Z/results.json",
       "bytes": 600,
       "sha256": "326e0476833c73b84169a8113b4e0b9a18f92777157a37623e5b880243c1c27c"
+    },
+    {
+      "path": "validation/frozen/model-elf-audit-20260908T213134326147Z/config.json",
+      "bytes": 475,
+      "sha256": "19869e8f43925f6c38cd9c7c9d185cfc6c773ce481dae717c3052255082a68c3"
+    },
+    {
+      "path": "validation/frozen/model-elf-audit-20260908T213134326147Z/driver.py",
+      "bytes": 5295,
+      "sha256": "8d46e3e52498efae3a56d1fd57117bae65c6b11463d1d6ffa9de3a01c3a82402"
+    },
+    {
+      "path": "validation/frozen/model-elf-audit-20260908T213134326147Z/execution-summary.json",
+      "bytes": 814,
+      "sha256": "442479c20b84579a1e5f0abfc6b9e63a292fb1eeb0cca4ef2ff82c1b4964c524"
+    },
+    {
+      "path": "validation/frozen/model-elf-audit-20260908T213134326147Z/manifest.json",
+      "bytes": 553484,
+      "sha256": "a7f183fe34c756919aa88548a8b581f27b445b99be3a0259339e81506f3fbe07"
+    },
+    {
+      "path": "validation/frozen/model-elf-audit-20260908T213134326147Z/results-summary.json",
+      "bytes": 537,
+      "sha256": "60dcfc1852a7faf422af629b9c772f0624d58641b61dd6a30ebecb3a1b8757da"
+    },
+    {
+      "path": "validation/frozen/model-elf-audit-20260908T215942648812Z/config.json",
+      "bytes": 475,
+      "sha256": "0a866459f7ecc6ab7076c4dc7292cea92a122d59b5964960dde1dd8b33e08d34"
+    },
+    {
+      "path": "validation/frozen/model-elf-audit-20260908T215942648812Z/driver.py",
+      "bytes": 5295,
+      "sha256": "8d46e3e52498efae3a56d1fd57117bae65c6b11463d1d6ffa9de3a01c3a82402"
+    },
+    {
+      "path": "validation/frozen/model-elf-audit-20260908T215942648812Z/execution-summary.json",
+      "bytes": 815,
+      "sha256": "b978bf1aaf026689ae47c849e45427b85497020f114a48195be255d1d65a534a"
+    },
+    {
+      "path": "validation/frozen/model-elf-audit-20260908T215942648812Z/manifest.json",
+      "bytes": 553334,
+      "sha256": "7c8e698dc8d15d49f3643c6ed09fe2960c11fbd7c1ca248fba60db8f7a9567d3"
+    },
+    {
+      "path": "validation/frozen/model-elf-audit-20260908T215942648812Z/results-summary.json",
+      "bytes": 537,
+      "sha256": "8fdb25e0467fc2aed37f0dff98ad631dc264a9b5c1ab978eac0d081993d65717"
+    },
+    {
+      "path": "validation/frozen/model-symbols-20260908T214013350071Z/config.json",
+      "bytes": 302,
+      "sha256": "72c95fd5a452fb8ca207eed4cc0364a8d96f4f1663994482d248207744fd52ea"
+    },
+    {
+      "path": "validation/frozen/model-symbols-20260908T214013350071Z/driver.py",
+      "bytes": 3738,
+      "sha256": "7e746df9b506c8e5177f3ac3275acc2dd36e6d8c60b27b7cdd729a096c9d81fd"
+    },
+    {
+      "path": "validation/frozen/model-symbols-20260908T214013350071Z/execution-summary.json",
+      "bytes": 814,
+      "sha256": "6701c3c6cc27093bd74172f662545dda6b568f7dbf29906c036e7f333f10e210"
+    },
+    {
+      "path": "validation/frozen/model-symbols-20260908T214013350071Z/manifest.json",
+      "bytes": 596263,
+      "sha256": "0c494fec0d4735b0d353812c9b29914d8949e58370543b44487540811d47b3df"
+    },
+    {
+      "path": "validation/frozen/model-symbols-20260908T214013350071Z/results-summary.json",
+      "bytes": 652,
+      "sha256": "e84b3d2d249fc6ced3b1bea01682245fdc3e09a950752027f8f32e2300f31642"
+    },
+    {
+      "path": "validation/frozen/model-symbols-20260908T214013350071Z/src/csl_llm/__init__.py",
+      "bytes": 80,
+      "sha256": "e330d6b21720c96f282971a7ec9519f943e1c21b9bd944c611bbb4763ca390e2"
+    },
+    {
+      "path": "validation/frozen/model-symbols-20260908T214013350071Z/src/csl_llm/decoder_layout.py",
+      "bytes": 4528,
+      "sha256": "20fa5b2f051dcad58cb2c44f7d7f511b41fde243113c61a338ac2c661877ec13"
+    },
+    {
+      "path": "validation/frozen/model-symbols-20260908T214013350071Z/src/csl_llm/regions.py",
+      "bytes": 2413,
+      "sha256": "2b23cc1644fc6e28ebe461bb68dfe0b4c77ac03570c094411d78d477377728c2"
+    },
+    {
+      "path": "validation/frozen/model-symbols-20260908T214013350071Z/tools/model_symbols.py",
+      "bytes": 4958,
+      "sha256": "cb5663397d082a6ef2c435828996d2b5ff94465d4aa040c988fc3670f89781d6"
     },
     {
       "path": "validation/frozen/packet-fanin-20260908T095259518148Z/config.json",
@@ -3292,9 +4012,114 @@
       "sha256": "adc055effe8d54805717ab47a6fe7ebc5ad39c47b01091dda96103e9bacbc00d"
     },
     {
+      "path": "validation/reviews/decoder-chain-assembled-20260908T231810298397Z-independent-contract-review.json",
+      "bytes": 1394,
+      "sha256": "fc371eb06b71cad696654384c93b4cb1dc20e0666786dbc87a25d56d2e1d225d"
+    },
+    {
+      "path": "validation/reviews/decoder-chain-assembled-20260908T231810298397Z-independent-initializer-review.json",
+      "bytes": 1177,
+      "sha256": "df0d0e42c929c5a4e1cfac70b697f547c9fc174e4146c919046d00ddc82c96f8"
+    },
+    {
+      "path": "validation/reviews/decoder-chain-assembled-20260908T231810298397Z-independent-symbol-review.json",
+      "bytes": 3200591,
+      "sha256": "b90fffb61f5efc9e7e2385937bf9ac8fb4e3c924f070b6f499016cb434767117"
+    },
+    {
+      "path": "validation/reviews/decoder-chain-audit-20260908T224556439952Z-independent-initializer-review.json",
+      "bytes": 1329,
+      "sha256": "ff33fd3248e46d7f701a192b8af6aa0fca1d6a57fddffd13a8b7f7d5ade51423"
+    },
+    {
+      "path": "validation/reviews/decoder-chain-audit-20260908T224556439952Z-independent-resource-review.json",
+      "bytes": 1155,
+      "sha256": "aee30f8aedc3017f7554a60f9f43fb66b9135f35d4b49c28a7ac6a6a86de292a"
+    },
+    {
+      "path": "validation/reviews/decoder-chain-audit-20260908T230120448566Z-independent-initializer-review.json",
+      "bytes": 1332,
+      "sha256": "9012c524033f97e5d32ac6a08623aafe6e9e1de6855d26ef23aaf27c4a0478ee"
+    },
+    {
+      "path": "validation/reviews/decoder-chain-audit-20260908T230120448566Z-independent-resource-review.json",
+      "bytes": 1159,
+      "sha256": "e837e244f13de0234195517856c20d24fa4f495981018d58a12a8e1a5c1f9383"
+    },
+    {
+      "path": "validation/reviews/decoder-chain-audit-20260908T231345094257Z-independent-initializer-review.json",
+      "bytes": 1332,
+      "sha256": "0b2a95030ec3c4eb15ae47ac13c5c2a1ab51f312b3222f63022a2bd1f377214b"
+    },
+    {
+      "path": "validation/reviews/decoder-chain-audit-20260908T231345094257Z-independent-resource-review.json",
+      "bytes": 1159,
+      "sha256": "6e11eeb71b6b40ebb15e52fd67451b65ccf17daf92f6e84f9f1b97e9edffeb08"
+    },
+    {
+      "path": "validation/reviews/decoder-chain-compile-20260908T224822742528Z-independent-symbol-review.json",
+      "bytes": 2012611,
+      "sha256": "64b7d13393aec591a85ac47b0ae6503cba8ca86e1b8e742a5ee8b62af2fcf7eb"
+    },
+    {
+      "path": "validation/reviews/decoder-chain-reference-20260908T222936118540Z-independent-reference-review.json",
+      "bytes": 10192,
+      "sha256": "948fee77ce50b5e02d5bb0d05aa06092c5375714cf8db1276f34bfe2c3ea0ceb"
+    },
+    {
+      "path": "validation/reviews/decoder-chain-runtime-20260908T232256520820Z-acceptance.json",
+      "bytes": 1368,
+      "sha256": "9a884e60d390f34eef5e8d69ea96a6c288d7ca0cc05ac0581244f510872c0cf7"
+    },
+    {
+      "path": "validation/reviews/decoder-chain-runtime-20260908T232256520820Z-independent-core-review.json",
+      "bytes": 1591,
+      "sha256": "786a2a2bd906c38444d550d1aeed360ffbf6ff44b9b1d2d9352dc585cf95dd5d"
+    },
+    {
+      "path": "validation/reviews/decoder-chain-runtime-20260908T232256520820Z-independent-numeric-review.json",
+      "bytes": 12372,
+      "sha256": "3decae7a5b862a9577116d39734b283259e63ab304efc0b452d8ec46537e8f7b"
+    },
+    {
+      "path": "validation/reviews/model-contract-20260908T213656824645Z-independent-contract-review.json",
+      "bytes": 1292,
+      "sha256": "be366f3970375d1a4a8baecf6ffadeecf59e148409877dfd1c378237d8fa8bb7"
+    },
+    {
+      "path": "validation/reviews/model-contract-20260908T220541045120Z-independent-contract-review.json",
+      "bytes": 1292,
+      "sha256": "a882eb7c31bdbc409bf884a55b192036c066c2b6971f437a8071b2167908531e"
+    },
+    {
       "path": "validation/reviews/model-elf-audit-20260908T210836386387Z-independent-initializer-review.json",
       "bytes": 1331,
       "sha256": "90f3452269d0d5aa2af50119a05f861406327196fb9d343006db43f2b291a2fc"
+    },
+    {
+      "path": "validation/reviews/model-elf-audit-20260908T213134326147Z-independent-initializer-review.json",
+      "bytes": 1331,
+      "sha256": "d936dffe9e3c34e3fb20bc3afcab5c692dce1d21bc5e88b7baa433d9dc70425f"
+    },
+    {
+      "path": "validation/reviews/model-elf-audit-20260908T213134326147Z-independent-resource-review.json",
+      "bytes": 1155,
+      "sha256": "c9e52bd6cc8931353d1e94dae54d61b34328ed497d3a5f7611ec0cf15aed478a"
+    },
+    {
+      "path": "validation/reviews/model-elf-audit-20260908T215942648812Z-independent-initializer-review.json",
+      "bytes": 1332,
+      "sha256": "c44429265eb833b9ea31c9d0eafdad03391e0aa5ee28b5e5a5f8b129d6a649f1"
+    },
+    {
+      "path": "validation/reviews/model-elf-audit-20260908T215942648812Z-independent-resource-review.json",
+      "bytes": 1155,
+      "sha256": "16104a16720b44ce60fef587f94d906e6a6ee89303a75026017cf5289b0580bb"
+    },
+    {
+      "path": "validation/reviews/model-symbols-20260908T214013350071Z-independent-symbol-review.json",
+      "bytes": 1389,
+      "sha256": "707e9982d93ccfdc21e93d12113825280e2edb14ab7fa6bed43155fc2351b1ea"
     },
     {
       "path": "validation/reviews/resident-weight-pack-review.json",
@@ -3770,6 +4595,11 @@
       "path": "validation/reviews/s5-token-sequence-resource-review.json",
       "bytes": 890,
       "sha256": "58a9bdd7ac6ab369e96fa137d4bb536d74bea0f7f80fb64b86567485465e1629"
+    },
+    {
+      "path": "validation/reviews/s5-two-layer-integration-source-snapshot-review.json",
+      "bytes": 1689,
+      "sha256": "e6b69eb98e2c6d5046206648c5fdf29713fde551ea82077c1fc9e27df926b225"
     },
     {
       "path": "validation/reviews/s5-vocabulary-case0-independent-numeric-review.json",

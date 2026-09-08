@@ -1,0 +1,337 @@
+{
+  "reviewed_at": "2026-09-08T22:38:21.718631+00:00",
+  "run": "decoder-chain-reference-20260908T222936118540Z",
+  "manifest_sha256": "9c2eb93b26f396e71f8ca43b5501d0ea8408f8c2595f5818456332b1a1f19ab5",
+  "inputs_sha256": "da7667460d25f5b70acd47ad0e1728b3ebbd79d9aabe86f3ab983b7a20b69a73",
+  "all_files_verified": true,
+  "checks": [
+    {
+      "name": "layer0.input_norm",
+      "max_abs": 9.948139512161447e-08,
+      "relative_l2": 4.152509625996233e-08,
+      "relative_peak": 5.428273912035684e-08
+    },
+    {
+      "name": "layer0.q",
+      "max_abs": 2.3737375975940722e-06,
+      "relative_l2": 3.3265852730919865e-08,
+      "relative_peak": 3.084520940590025e-08
+    },
+    {
+      "name": "layer0.k",
+      "max_abs": 3.959023075594814e-06,
+      "relative_l2": 2.5325875040622308e-08,
+      "relative_peak": 3.06236852266947e-08
+    },
+    {
+      "name": "layer0.v",
+      "max_abs": 4.4438181689976375e-08,
+      "relative_l2": 2.3983421738308483e-07,
+      "relative_peak": 2.477434263646874e-07
+    },
+    {
+      "name": "layer0.context",
+      "max_abs": 4.4438181689976375e-08,
+      "relative_l2": 2.398342173830848e-07,
+      "relative_peak": 2.477434263646874e-07
+    },
+    {
+      "name": "layer0.o",
+      "max_abs": 2.0380249829421437e-07,
+      "relative_l2": 5.399842876690673e-07,
+      "relative_peak": 2.2582839380031315e-06
+    },
+    {
+      "name": "layer0.attention_residual",
+      "max_abs": 2.0380249829421437e-07,
+      "relative_l2": 7.867271175199942e-07,
+      "relative_peak": 2.2415135252988534e-06
+    },
+    {
+      "name": "layer0.post_norm",
+      "max_abs": 9.504013426919755e-06,
+      "relative_l2": 5.380005029672844e-07,
+      "relative_peak": 7.019663551664418e-07
+    },
+    {
+      "name": "layer0.up",
+      "max_abs": 2.2677290090200586e-06,
+      "relative_l2": 5.339462038475808e-07,
+      "relative_peak": 4.985481436273458e-07
+    },
+    {
+      "name": "layer0.gate",
+      "max_abs": 3.090520246828987e-06,
+      "relative_l2": 6.21127849052242e-07,
+      "relative_peak": 6.590481747046708e-07
+    },
+    {
+      "name": "layer0.activation",
+      "max_abs": 7.5573641007409265e-06,
+      "relative_l2": 9.172107561001642e-07,
+      "relative_peak": 1.367789322740354e-06
+    },
+    {
+      "name": "layer0.down",
+      "max_abs": 2.829883211319384e-06,
+      "relative_l2": 8.383335639999574e-07,
+      "relative_peak": 9.423078188047308e-07
+    },
+    {
+      "name": "layer0.output",
+      "max_abs": 2.9069803306747133e-06,
+      "relative_l2": 8.379413711423691e-07,
+      "relative_peak": 9.662061100053616e-07
+    },
+    {
+      "name": "layer0.cache_k",
+      "max_abs": 3.959023075594814e-06,
+      "relative_l2": 2.5325875040622308e-08,
+      "relative_peak": 3.06236852266947e-08
+    },
+    {
+      "name": "official0.cache_k",
+      "max_abs": 5.164668465340583e-06,
+      "relative_l2": 3.318537763365994e-08,
+      "relative_peak": 3.994954774520071e-08
+    },
+    {
+      "name": "layer0.cache_v",
+      "max_abs": 4.4438181689976375e-08,
+      "relative_l2": 2.3983421738308483e-07,
+      "relative_peak": 2.477434263646874e-07
+    },
+    {
+      "name": "official0.cache_v",
+      "max_abs": 5.988519521937796e-08,
+      "relative_l2": 4.155475244971921e-07,
+      "relative_peak": 3.3386072264773586e-07
+    },
+    {
+      "name": "official0.input_norm",
+      "max_abs": 9.948139512161447e-08,
+      "relative_l2": 4.152509625996233e-08,
+      "relative_peak": 5.428273912035684e-08
+    },
+    {
+      "name": "official0.q",
+      "max_abs": 5.008701442932306e-06,
+      "relative_l2": 6.400532129063934e-08,
+      "relative_peak": 6.508488765374542e-08
+    },
+    {
+      "name": "official0.k",
+      "max_abs": 5.164668465340583e-06,
+      "relative_l2": 3.318537763365994e-08,
+      "relative_peak": 3.994954774520071e-08
+    },
+    {
+      "name": "official0.v",
+      "max_abs": 5.988519521937796e-08,
+      "relative_l2": 4.155475244971921e-07,
+      "relative_peak": 3.3386072264773586e-07
+    },
+    {
+      "name": "official0.o",
+      "max_abs": 7.93195643888911e-08,
+      "relative_l2": 5.621227064723856e-07,
+      "relative_peak": 8.789200315407667e-07
+    },
+    {
+      "name": "official0.post_norm",
+      "max_abs": 9.237420799834695e-06,
+      "relative_l2": 8.145428315380558e-07,
+      "relative_peak": 6.82275825877091e-07
+    },
+    {
+      "name": "official0.up",
+      "max_abs": 2.9774797312143164e-06,
+      "relative_l2": 8.562692039652463e-07,
+      "relative_peak": 6.545830594310733e-07
+    },
+    {
+      "name": "official0.gate",
+      "max_abs": 6.633262997102207e-06,
+      "relative_l2": 8.019229000502814e-07,
+      "relative_peak": 1.4145320274351035e-06
+    },
+    {
+      "name": "official0.down",
+      "max_abs": 2.6537441080165536e-06,
+      "relative_l2": 1.1317913286783923e-06,
+      "relative_peak": 8.836561919193487e-07
+    },
+    {
+      "name": "official0.output",
+      "max_abs": 2.5766469886612242e-06,
+      "relative_l2": 1.1304798208359187e-06,
+      "relative_peak": 8.564117333375827e-07
+    },
+    {
+      "name": "layer1.input_norm",
+      "max_abs": 6.116561028335354e-06,
+      "relative_l2": 7.68282104618473e-07,
+      "relative_peak": 4.491222605473794e-07
+    },
+    {
+      "name": "layer1.q",
+      "max_abs": 4.366582627923776e-06,
+      "relative_l2": 5.573825319498206e-07,
+      "relative_peak": 3.0895948942182816e-07
+    },
+    {
+      "name": "layer1.k",
+      "max_abs": 5.038829669956613e-06,
+      "relative_l2": 7.839757106901672e-08,
+      "relative_peak": 3.455295464652589e-08
+    },
+    {
+      "name": "layer1.v",
+      "max_abs": 1.195150629129671e-06,
+      "relative_l2": 7.124206440411051e-07,
+      "relative_peak": 5.586450345633886e-07
+    },
+    {
+      "name": "layer1.context",
+      "max_abs": 1.195150629129671e-06,
+      "relative_l2": 7.12420644041105e-07,
+      "relative_peak": 5.586450345633886e-07
+    },
+    {
+      "name": "layer1.o",
+      "max_abs": 1.2125133710405578e-06,
+      "relative_l2": 7.53224215875384e-07,
+      "relative_peak": 8.16105333960361e-07
+    },
+    {
+      "name": "layer1.attention_residual",
+      "max_abs": 2.837754871531928e-06,
+      "relative_l2": 7.943217813228087e-07,
+      "relative_peak": 8.385214010442309e-07
+    },
+    {
+      "name": "layer1.post_norm",
+      "max_abs": 6.05793131391863e-06,
+      "relative_l2": 7.389414492707293e-07,
+      "relative_peak": 4.3780777055327815e-07
+    },
+    {
+      "name": "layer1.up",
+      "max_abs": 3.544748710559986e-06,
+      "relative_l2": 7.010653365832281e-07,
+      "relative_peak": 6.131286519137224e-07
+    },
+    {
+      "name": "layer1.gate",
+      "max_abs": 2.949520762296487e-06,
+      "relative_l2": 6.911559789909254e-07,
+      "relative_peak": 2.968142365599513e-07
+    },
+    {
+      "name": "layer1.activation",
+      "max_abs": 8.449695791057366e-06,
+      "relative_l2": 1.101641839093398e-06,
+      "relative_peak": 8.063743945082152e-07
+    },
+    {
+      "name": "layer1.down",
+      "max_abs": 2.3641823210240887e-06,
+      "relative_l2": 1.004771184673461e-06,
+      "relative_peak": 6.787462967753715e-07
+    },
+    {
+      "name": "layer1.output",
+      "max_abs": 3.3135863777289387e-06,
+      "relative_l2": 9.137108270573262e-07,
+      "relative_peak": 4.889570884194808e-07
+    },
+    {
+      "name": "layer1.cache_k",
+      "max_abs": 5.038829669956613e-06,
+      "relative_l2": 7.839757106901672e-08,
+      "relative_peak": 3.455295464652589e-08
+    },
+    {
+      "name": "official1.cache_k",
+      "max_abs": 1.0219959392543387e-05,
+      "relative_l2": 1.2371877397099235e-07,
+      "relative_peak": 7.008170875181194e-08
+    },
+    {
+      "name": "layer1.cache_v",
+      "max_abs": 1.195150629129671e-06,
+      "relative_l2": 7.124206440411051e-07,
+      "relative_peak": 5.586450345633886e-07
+    },
+    {
+      "name": "official1.cache_v",
+      "max_abs": 1.97969999105041e-06,
+      "relative_l2": 9.521264826636236e-07,
+      "relative_peak": 9.253641699798691e-07
+    },
+    {
+      "name": "official1.input_norm",
+      "max_abs": 7.184671468429826e-06,
+      "relative_l2": 1.0203295190037054e-06,
+      "relative_peak": 5.275506736944384e-07
+    },
+    {
+      "name": "official1.q",
+      "max_abs": 7.077509168951224e-06,
+      "relative_l2": 8.408091661985351e-07,
+      "relative_peak": 5.007722985095997e-07
+    },
+    {
+      "name": "official1.k",
+      "max_abs": 1.0219959392543387e-05,
+      "relative_l2": 1.2371877397099235e-07,
+      "relative_peak": 7.008170875181194e-08
+    },
+    {
+      "name": "official1.v",
+      "max_abs": 1.97969999105041e-06,
+      "relative_l2": 9.521264826636236e-07,
+      "relative_peak": 9.253641699798691e-07
+    },
+    {
+      "name": "official1.o",
+      "max_abs": 1.202314555470707e-06,
+      "relative_l2": 1.078844950756394e-06,
+      "relative_peak": 8.092408259182845e-07
+    },
+    {
+      "name": "official1.post_norm",
+      "max_abs": 6.334718257061667e-06,
+      "relative_l2": 1.0022233712324746e-06,
+      "relative_peak": 4.578112120279759e-07
+    },
+    {
+      "name": "official1.up",
+      "max_abs": 4.407182212951e-06,
+      "relative_l2": 9.796390508812273e-07,
+      "relative_peak": 7.623021854595451e-07
+    },
+    {
+      "name": "official1.gate",
+      "max_abs": 9.593631839166505e-06,
+      "relative_l2": 9.943334316724372e-07,
+      "relative_peak": 9.654200596175403e-07
+    },
+    {
+      "name": "official1.down",
+      "max_abs": 4.073119314718099e-06,
+      "relative_l2": 1.4520059350830667e-06,
+      "relative_peak": 1.1693745556779246e-06
+    },
+    {
+      "name": "official1.output",
+      "max_abs": 3.980228092448357e-06,
+      "relative_l2": 1.2745871639075267e-06,
+      "relative_peak": 5.873276014198337e-07
+    }
+  ],
+  "passed": true,
+  "method": "Independent raw safetensors BF16 promotion and NumPy float64 original-input L0 then L1 equations; no developer equation/model imports. Position-zero RoPE identity and causal softmax=1 used explicitly.",
+  "scope": "Position-zero two-layer CPU fixture only; no SDK, nonzero RoPE, cached/reset or full-model inference qualification.",
+  "review_script_sha256": "c4a0f25e0efc7f396b5900b1529217000ee2d35b5ec7a3a704e12c651af8270e"
+}

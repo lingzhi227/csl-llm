@@ -1,0 +1,46 @@
+{
+  "width": 129,
+  "height": 20,
+  "fabric_dimensions": [
+    136,
+    22
+  ],
+  "fabric_offsets": [
+    4,
+    1
+  ],
+  "layers": [
+    0,
+    1
+  ],
+  "matrix_tiles": 2088,
+  "kv_tiles": 264,
+  "controllers": 2,
+  "endpoint": [
+    128,
+    0
+  ],
+  "weight_storage": "u8",
+  "static_input_binding": {
+    "input_bundle": "model-static-inputs-20260908T223024029012Z",
+    "input_manifest_sha256": "541450bf9dce4be2cf6cc55522ce478ab64cbc382666dbd1af16bf290f47d224",
+    "selected_matrix_tiles": 1024,
+    "initialized_controllers": 2,
+    "initialized_bias_roots": 9,
+    "scope": "Original bounded matrix selection and two original norm/frequency controllers; compile-only."
+  },
+  "timeout_seconds": 900,
+  "rss_limit_kib": 12582912,
+  "production_source_sha256": {
+    "csl/programs/resident_decoder/pe.csl": "e6dcd478742a1e0edde7c5040b3199b939dc1fc2d2bbfcee11a2892ad950a73d",
+    "csl/kernels/local_gemv_bf16_f32_colmajor.csl": "3e92175efe12b28065bb77934c54136db3c9287c68c81877781a0e527354304c",
+    "csl/kernels/vector_f32.csl": "e923d62d7c3527d80282bb6b4714bb00b537510d8c4a48455f84aa939571b26b",
+    "csl/kernels/qwen_position_f32.csl": "8d7be77e4938a5d5b7e95525e8869b12d6b2b529fcc25d3152128de230ad7cf8",
+    "csl/kernels/kv_block_f32.csl": "9c1d6762937cd668c1668305f515995e97cc92a2e27b8ecd05411c921b9fc0f2",
+    "csl/runtime/line_allreduce_f32.csl": "21f8628d937c6e481c24a45747895fb27caa1bd2a6b18d7338e138d492a4a529",
+    "csl/runtime/filtered_input.csl": "e9b289a13f821df69a08e58e9bf6847f4b542d94d617c60d8df143413d2a61af",
+    "csl/runtime/packets.csl": "151009e07423dc16bb2b2304f29e7e6c52e84e57613c809eb5188470e8bcc6c7",
+    "csl/runtime/activation_stream.csl": "93e824a8395f64b7e9aff193fc1fa0eb32e9912c4ec03ccca1e3b9ccc87616fa"
+  },
+  "scope": "Two original-sized streamed decoder regions plus diagnostic endpoint. Selected original matrices and both norm/frequency controllers, selected biases; remaining matrices/biases zero. Compilation only, no complete initialization or SDK inference."
+}

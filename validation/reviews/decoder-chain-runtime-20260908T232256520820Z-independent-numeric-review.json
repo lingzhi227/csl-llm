@@ -1,0 +1,394 @@
+{
+  "reviewed_at": "2026-09-08T23:44:35.787963+00:00",
+  "run": "decoder-chain-runtime-20260908T232256520820Z",
+  "manifest_sha256": "d48ad6ae37cb384422003253936dd78d97c96e2473e51ddea641f0023e63a143",
+  "execution_sha256": "36917fbf9ad1792ea279907f3bc88831616440d7b6654667a86c448be52469f8",
+  "results_sha256": "ea000e7aae1eab9d26cd49c7b2010bb7de720c2ee259b19bc8eba01856229fd2",
+  "actual_sha256": "c0e6bdbf22c3b4759e8e9d8a38ee22da315bf3f55e9f8fe6af7dccc1ec0d21d4",
+  "reference_inputs_sha256": "da7667460d25f5b70acd47ad0e1728b3ebbd79d9aabe86f3ab983b7a20b69a73",
+  "all_files_verified": true,
+  "checks": [
+    {
+      "name": "SDK.layer0.input_norm",
+      "max_abs": 1.6633800632437357e-06,
+      "relative_l2": 9.022914155534809e-07,
+      "relative_peak": 9.076353012609119e-07
+    },
+    {
+      "name": "SDK.layer0.q",
+      "max_abs": 1.4578797934206023e-05,
+      "relative_l2": 1.9497753904736763e-07,
+      "relative_peak": 1.8944220103463626e-07
+    },
+    {
+      "name": "SDK.layer0.k",
+      "max_abs": 4.805478909020167e-06,
+      "relative_l2": 3.797886974273306e-08,
+      "relative_peak": 3.7171158304310695e-08
+    },
+    {
+      "name": "SDK.layer0.v",
+      "max_abs": 2.2325211601614825e-07,
+      "relative_l2": 9.74052836406817e-07,
+      "relative_peak": 1.2446333774606942e-06
+    },
+    {
+      "name": "SDK.layer0.context",
+      "max_abs": 2.2325211601614825e-07,
+      "relative_l2": 9.740528364068167e-07,
+      "relative_peak": 1.2446333774606942e-06
+    },
+    {
+      "name": "SDK.layer0.o",
+      "max_abs": 1.4419785351882375e-07,
+      "relative_l2": 9.59726782519704e-07,
+      "relative_peak": 1.5978199444149425e-06
+    },
+    {
+      "name": "SDK.layer0.attention_residual",
+      "max_abs": 1.4419785351882375e-07,
+      "relative_l2": 1.398475422847364e-06,
+      "relative_peak": 1.5859542531951485e-06
+    },
+    {
+      "name": "SDK.layer0.post_norm",
+      "max_abs": 8.368745394227162e-06,
+      "relative_l2": 1.1162747538631035e-06,
+      "relative_peak": 6.181154674152785e-07
+    },
+    {
+      "name": "SDK.layer0.up",
+      "max_abs": 3.3750815084943042e-06,
+      "relative_l2": 8.413731849035588e-07,
+      "relative_peak": 7.419936923494785e-07
+    },
+    {
+      "name": "SDK.layer0.gate",
+      "max_abs": 3.942884171159733e-06,
+      "relative_l2": 8.376936549540224e-07,
+      "relative_peak": 8.408133286753228e-07
+    },
+    {
+      "name": "SDK.layer0.activation",
+      "max_abs": 1.0418387049959676e-05,
+      "relative_l2": 1.4135849587072682e-06,
+      "relative_peak": 1.8855990497684412e-06
+    },
+    {
+      "name": "SDK.layer0.down",
+      "max_abs": 3.5451389486240714e-06,
+      "relative_l2": 1.3053956037829342e-06,
+      "relative_peak": 1.180477037594828e-06
+    },
+    {
+      "name": "SDK.layer0.output",
+      "max_abs": 3.6222360679794008e-06,
+      "relative_l2": 1.302987997459014e-06,
+      "relative_peak": 1.2039388721805283e-06
+    },
+    {
+      "name": "SDK.layer0.cache_k0",
+      "max_abs": 4.805478909020167e-06,
+      "relative_l2": 3.3540552860427104e-08,
+      "relative_peak": 3.7171158304310695e-08
+    },
+    {
+      "name": "SDK.layer0.cache_v0",
+      "max_abs": 2.2325211601614825e-07,
+      "relative_l2": 9.569490578089187e-07,
+      "relative_peak": 1.2446333774606942e-06
+    },
+    {
+      "name": "SDK.layer0.cache_k1",
+      "max_abs": 4.7521157071628295e-06,
+      "relative_l2": 4.140279010021903e-08,
+      "relative_peak": 3.793659255734169e-08
+    },
+    {
+      "name": "SDK.layer0.cache_v1",
+      "max_abs": 7.256030411240122e-08,
+      "relative_l2": 1.0333212100248293e-06,
+      "relative_peak": 7.038491660187404e-07
+    },
+    {
+      "name": "layer0.cache_k",
+      "max_abs": 3.959023075594814e-06,
+      "relative_l2": 2.5325875040622308e-08,
+      "relative_peak": 3.06236852266947e-08
+    },
+    {
+      "name": "official0.cache_k",
+      "max_abs": 5.164668465340583e-06,
+      "relative_l2": 3.318537763365994e-08,
+      "relative_peak": 3.994954774520071e-08
+    },
+    {
+      "name": "layer0.cache_v",
+      "max_abs": 4.4438181689976375e-08,
+      "relative_l2": 2.3983421738308483e-07,
+      "relative_peak": 2.477434263646874e-07
+    },
+    {
+      "name": "official0.cache_v",
+      "max_abs": 5.988519521937796e-08,
+      "relative_l2": 4.155475244971921e-07,
+      "relative_peak": 3.3386072264773586e-07
+    },
+    {
+      "name": "official0.input_norm",
+      "max_abs": 9.948139512161447e-08,
+      "relative_l2": 4.152509625996233e-08,
+      "relative_peak": 5.428273912035684e-08
+    },
+    {
+      "name": "official0.q",
+      "max_abs": 5.008701442932306e-06,
+      "relative_l2": 6.400532129063934e-08,
+      "relative_peak": 6.508488765374542e-08
+    },
+    {
+      "name": "official0.k",
+      "max_abs": 5.164668465340583e-06,
+      "relative_l2": 3.318537763365994e-08,
+      "relative_peak": 3.994954774520071e-08
+    },
+    {
+      "name": "official0.v",
+      "max_abs": 5.988519521937796e-08,
+      "relative_l2": 4.155475244971921e-07,
+      "relative_peak": 3.3386072264773586e-07
+    },
+    {
+      "name": "official0.o",
+      "max_abs": 7.93195643888911e-08,
+      "relative_l2": 5.621227064723856e-07,
+      "relative_peak": 8.789200315407667e-07
+    },
+    {
+      "name": "official0.post_norm",
+      "max_abs": 9.237420799834695e-06,
+      "relative_l2": 8.145428315380558e-07,
+      "relative_peak": 6.82275825877091e-07
+    },
+    {
+      "name": "official0.up",
+      "max_abs": 2.9774797312143164e-06,
+      "relative_l2": 8.562692039652463e-07,
+      "relative_peak": 6.545830594310733e-07
+    },
+    {
+      "name": "official0.gate",
+      "max_abs": 6.633262997102207e-06,
+      "relative_l2": 8.019229000502814e-07,
+      "relative_peak": 1.4145320274351035e-06
+    },
+    {
+      "name": "official0.down",
+      "max_abs": 2.6537441080165536e-06,
+      "relative_l2": 1.1317913286783923e-06,
+      "relative_peak": 8.836561919193487e-07
+    },
+    {
+      "name": "official0.output",
+      "max_abs": 2.5766469886612242e-06,
+      "relative_l2": 1.1304798208359187e-06,
+      "relative_peak": 8.564117333375827e-07
+    },
+    {
+      "name": "SDK.layer1.input_norm",
+      "max_abs": 8.367807849352094e-06,
+      "relative_l2": 1.0626795895756281e-06,
+      "relative_peak": 6.144251254450277e-07
+    },
+    {
+      "name": "SDK.layer1.q",
+      "max_abs": 8.181279893548776e-06,
+      "relative_l2": 7.640354808541322e-07,
+      "relative_peak": 5.788700853989708e-07
+    },
+    {
+      "name": "SDK.layer1.k",
+      "max_abs": 5.038829669956613e-06,
+      "relative_l2": 1.0453300026119562e-07,
+      "relative_peak": 3.455295464652589e-08
+    },
+    {
+      "name": "SDK.layer1.v",
+      "max_abs": 1.1355459843542803e-06,
+      "relative_l2": 8.876393225940906e-07,
+      "relative_peak": 5.307842461162163e-07
+    },
+    {
+      "name": "SDK.layer1.context",
+      "max_abs": 1.1355459843542803e-06,
+      "relative_l2": 8.876393225940905e-07,
+      "relative_peak": 5.307842461162163e-07
+    },
+    {
+      "name": "SDK.layer1.o",
+      "max_abs": 1.4509319501421203e-06,
+      "relative_l2": 1.0091581542038663e-06,
+      "relative_peak": 9.765775223643987e-07
+    },
+    {
+      "name": "SDK.layer1.attention_residual",
+      "max_abs": 4.4370617806599455e-06,
+      "relative_l2": 1.269275188618349e-06,
+      "relative_peak": 1.311096775187732e-06
+    },
+    {
+      "name": "SDK.layer1.post_norm",
+      "max_abs": 4.802098411804678e-06,
+      "relative_l2": 1.0842634509240915e-06,
+      "relative_peak": 3.470485039701927e-07
+    },
+    {
+      "name": "SDK.layer1.up",
+      "max_abs": 2.875815197977971e-06,
+      "relative_l2": 9.779830290187899e-07,
+      "relative_peak": 4.974244550076096e-07
+    },
+    {
+      "name": "SDK.layer1.gate",
+      "max_abs": 6.437912841938953e-06,
+      "relative_l2": 1.061352478783106e-06,
+      "relative_peak": 6.478558176792843e-07
+    },
+    {
+      "name": "SDK.layer1.activation",
+      "max_abs": 1.4993854650313665e-05,
+      "relative_l2": 1.6540091428374067e-06,
+      "relative_peak": 1.4308989061815543e-06
+    },
+    {
+      "name": "SDK.layer1.down",
+      "max_abs": 3.863985255758706e-06,
+      "relative_l2": 1.5255854551319655e-06,
+      "relative_peak": 1.1093330915378822e-06
+    },
+    {
+      "name": "SDK.layer1.output",
+      "max_abs": 4.218646671549919e-06,
+      "relative_l2": 1.4060246942075184e-06,
+      "relative_peak": 6.225089550873088e-07
+    },
+    {
+      "name": "SDK.layer1.cache_k0",
+      "max_abs": 4.705683180894482e-06,
+      "relative_l2": 6.064269428447235e-07,
+      "relative_peak": 2.882607544349677e-07
+    },
+    {
+      "name": "SDK.layer1.cache_v0",
+      "max_abs": 7.740496293789922e-07,
+      "relative_l2": 1.6499164897262542e-06,
+      "relative_peak": 1.6518133407884487e-06
+    },
+    {
+      "name": "SDK.layer1.cache_k1",
+      "max_abs": 5.038829669956613e-06,
+      "relative_l2": 7.491493387434672e-08,
+      "relative_peak": 3.455295464652589e-08
+    },
+    {
+      "name": "SDK.layer1.cache_v1",
+      "max_abs": 1.1355459843542803e-06,
+      "relative_l2": 7.467502346321743e-07,
+      "relative_peak": 5.307842461162163e-07
+    },
+    {
+      "name": "layer1.cache_k",
+      "max_abs": 5.038829669956613e-06,
+      "relative_l2": 7.839757106901672e-08,
+      "relative_peak": 3.455295464652589e-08
+    },
+    {
+      "name": "official1.cache_k",
+      "max_abs": 1.0219959392543387e-05,
+      "relative_l2": 1.2371877397099235e-07,
+      "relative_peak": 7.008170875181194e-08
+    },
+    {
+      "name": "layer1.cache_v",
+      "max_abs": 1.195150629129671e-06,
+      "relative_l2": 7.124206440411051e-07,
+      "relative_peak": 5.586450345633886e-07
+    },
+    {
+      "name": "official1.cache_v",
+      "max_abs": 1.97969999105041e-06,
+      "relative_l2": 9.521264826636236e-07,
+      "relative_peak": 9.253641699798691e-07
+    },
+    {
+      "name": "official1.input_norm",
+      "max_abs": 7.184671468429826e-06,
+      "relative_l2": 1.0203295190037054e-06,
+      "relative_peak": 5.275506736944384e-07
+    },
+    {
+      "name": "official1.q",
+      "max_abs": 7.077509168951224e-06,
+      "relative_l2": 8.408091661985351e-07,
+      "relative_peak": 5.007722985095997e-07
+    },
+    {
+      "name": "official1.k",
+      "max_abs": 1.0219959392543387e-05,
+      "relative_l2": 1.2371877397099235e-07,
+      "relative_peak": 7.008170875181194e-08
+    },
+    {
+      "name": "official1.v",
+      "max_abs": 1.97969999105041e-06,
+      "relative_l2": 9.521264826636236e-07,
+      "relative_peak": 9.253641699798691e-07
+    },
+    {
+      "name": "official1.o",
+      "max_abs": 1.202314555470707e-06,
+      "relative_l2": 1.078844950756394e-06,
+      "relative_peak": 8.092408259182845e-07
+    },
+    {
+      "name": "official1.post_norm",
+      "max_abs": 6.334718257061667e-06,
+      "relative_l2": 1.0022233712324746e-06,
+      "relative_peak": 4.578112120279759e-07
+    },
+    {
+      "name": "official1.up",
+      "max_abs": 4.407182212951e-06,
+      "relative_l2": 9.796390508812273e-07,
+      "relative_peak": 7.623021854595451e-07
+    },
+    {
+      "name": "official1.gate",
+      "max_abs": 9.593631839166505e-06,
+      "relative_l2": 9.943334316724372e-07,
+      "relative_peak": 9.654200596175403e-07
+    },
+    {
+      "name": "official1.down",
+      "max_abs": 4.073119314718099e-06,
+      "relative_l2": 1.4520059350830667e-06,
+      "relative_peak": 1.1693745556779246e-06
+    },
+    {
+      "name": "official1.output",
+      "max_abs": 3.980228092448357e-06,
+      "relative_l2": 1.2745871639075267e-06,
+      "relative_peak": 5.873276014198337e-07
+    },
+    {
+      "name": "SDK.endpoint_output",
+      "max_abs": 4.218646671549919e-06,
+      "relative_l2": 1.4060246942075184e-06,
+      "relative_peak": 6.225089550873088e-07
+    }
+  ],
+  "passed": true,
+  "method": "Independent raw safetensors BF16 promotion and NumPy float64 original-input L0 then L1 equations; no developer equation/model imports. Position-zero RoPE identity and causal softmax=1 used explicitly.",
+  "scope": "Actual SDK exported diagnostic stage arrays compared independently to original BF16/float64 full two-layer position-zero equations. Actual core/normal provenance and protocol state require separate independent review. Not cached/reset, nonzero RoPE or full-model generation.",
+  "review_script_sha256": "435368d842e951e77998f4237ac9784221032155d8a009ed6f30a7415b0be628"
+}

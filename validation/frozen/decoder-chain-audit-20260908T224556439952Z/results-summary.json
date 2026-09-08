@@ -1,0 +1,8 @@
+{
+  "success": true,
+  "offline_only": true,
+  "source_execution_sha256": "23659b89bc89faa45f427815a1a2f140f6b99645e5865390a09e367cfc38be5f",
+  "scope": "Two-layer actual ELF initializers and static resources only; no SDK execution.",
+  "original_file_sha256": "64ce42188ab5ee9170a54055e50136b34b63cc059fb6976897193a8c6780aaf1",
+  "publication_note": "Derived compact report: detailed object tables, source paths and process identities omitted; original hash preserved."
+}

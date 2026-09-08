@@ -1,0 +1,9 @@
+{
+  "files": {
+    "precision.json": "c5da7df9c06537cb205b8c5a760703fd39b7c519bb27666906cafb1d6e45b3b0",
+    "driver.py": "9612ccdb435e791e97f67cad80d92465f0f8176e0b4f0744a8e2601cc4d78629",
+    "config.json": "ba759328640c8e4c230879290c5e411d5155760ca51cb816a17734ac59b5de87",
+    "equations.py": "d0097925f9ee7e6fd7362285f8374c8e7d3b885272b43157ca2b8cd32997c673",
+    "inputs.npz": "da7667460d25f5b70acd47ad0e1728b3ebbd79d9aabe86f3ab983b7a20b69a73"
+  }
+}

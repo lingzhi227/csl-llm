@@ -1,0 +1,59 @@
+{
+  "original_ledger_sha256": "2729888bc133097b6eb074c17ded48b1da40faf773465bcd1b5166f55035b14c",
+  "reference": {
+    "run": "decoder-chain-reference-20260908T222936118540Z",
+    "review": "decoder-chain-reference-20260908T222936118540Z-independent-reference-review.json",
+    "scope": "Position-zero CPU only;54 independent float64 checks"
+  },
+  "accepted_static_partitions": [
+    {
+      "first": 2048,
+      "last": 2087,
+      "compile": "decoder-chain-compile-20260908T224126125556Z",
+      "audit": "decoder-chain-audit-20260908T224556439952Z",
+      "initializer_review": "decoder-chain-audit-20260908T224556439952Z-independent-initializer-review.json",
+      "resource_review": "decoder-chain-audit-20260908T224556439952Z-independent-resource-review.json",
+      "elf_count": 366,
+      "max_static_bytes": 45456,
+      "dsr_families": 205
+    },
+    {
+      "first": 0,
+      "last": 1023,
+      "compile": "decoder-chain-compile-20260908T224822742528Z",
+      "audit": "decoder-chain-audit-20260908T230120448566Z",
+      "initializer_review": "decoder-chain-audit-20260908T230120448566Z-independent-initializer-review.json",
+      "resource_review": "decoder-chain-audit-20260908T230120448566Z-independent-resource-review.json",
+      "symbol_availability_review": "decoder-chain-compile-20260908T224822742528Z-independent-symbol-review.json",
+      "elf_count": 1347,
+      "max_static_bytes": 45456,
+      "dsr_families": 1188
+    },
+    {
+      "first": 1024,
+      "last": 2047,
+      "compile": "decoder-chain-compile-20260908T224823712082Z",
+      "audit": "decoder-chain-audit-20260908T231345094257Z",
+      "initializer_review": "decoder-chain-audit-20260908T231345094257Z-independent-initializer-review.json",
+      "resource_review": "decoder-chain-audit-20260908T231345094257Z-independent-resource-review.json",
+      "elf_count": 1349,
+      "max_static_bytes": 45456,
+      "dsr_families": 1189
+    }
+  ],
+  "assembly": {
+    "run": "decoder-chain-assembled-20260908T231810298397Z",
+    "independent_reviews": [
+      "decoder-chain-assembled-20260908T231810298397Z-independent-contract-review.json",
+      "decoder-chain-assembled-20260908T231810298397Z-independent-initializer-review.json",
+      "decoder-chain-assembled-20260908T231810298397Z-independent-symbol-review.json"
+    ],
+    "elf_count": 2226,
+    "original_matrix_tiles": 2088,
+    "application_coordinates": 2580,
+    "logical_coordinate_checks": 26916
+  },
+  "runtime_acceptance": "decoder-chain-runtime-20260908T232256520820Z-acceptance.json",
+  "scope": "Original-sized original-weight device endpoint\u2192L0\u2192L1\u2192endpoint at causalposition0; complete numerical/immutable/KV/readiness/completion/protocol evidence. Not cached/reset, nonzero-position RoPE, full24layer inference or2048/256capacity.",
+  "sdk_complete": false
+}

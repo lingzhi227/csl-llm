@@ -1,0 +1,9 @@
+{
+  "execution_sha256": {
+    "candidate": "a14667fffed03386b36e92358405b92dac53a52b5ea7f19f09c2f770eb8f5a73",
+    "baseline": "a71689f8b57c99a42f75c80d0829eb77fc749b6c46f6962fc50ec52f555f1c76"
+  },
+  "timeout_seconds": 180,
+  "rss_limit_kib": 2097152,
+  "scope": "Offline whole-ELF partition containment, common allocated images, fixed CSL/layout and complete output metadata/ordered SDK I/O/RPC compatibility. No composition, compiler, simulator or neural execution."
+}

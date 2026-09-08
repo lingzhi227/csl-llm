@@ -65,3 +65,5 @@ Full vocabulary publication: four complete recursive manifests rechecked on the 
 Model boot publication: 1113 boot, 272 compile and 1106 audit manifest entries checked on the original evidence host; review/execution/results identities verified. Actual output/core hashes, all 40530 progress markers, decoder zero status and ordinary controller metadata checked. No new SDK run. See `MODEL-BOOT-CHECKS.json`.
 
 Model partition publication: six complete frozen manifests verified on the original evidence host; review/execution/results identities and exact accepted block intervals checked locally. No SDK or compiler rerun. See `MODEL-PARTITION-CHECKS.json`.
+
+Two-layer publication: all selected execution/batch recursive manifests verified on the evidence host; complete 122-file integration source verified locally. Actual core/output hashes, 57 diagnostic arrays, ordinary readiness/progress and endpoint/layer1/final-transfer bit equality checked. Independent original-input/core reviews retained. Nine isolated support tests pass, plus the existing host suite; no new SDK run. See `TWO-LAYER-CHECKS.json`.

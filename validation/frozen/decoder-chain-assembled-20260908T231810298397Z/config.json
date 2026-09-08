@@ -1,0 +1,22 @@
+{
+  "audits": [
+    {
+      "path": "audits/0",
+      "source_bundle": "decoder-chain-audit-20260908T224556439952Z",
+      "execution_sha256": "327cca1db9ebd322c352012d2ff13727e9d35648ffcdf93b5a863c5904c35ab7"
+    },
+    {
+      "path": "audits/1",
+      "source_bundle": "decoder-chain-audit-20260908T230120448566Z",
+      "execution_sha256": "9220553748ea4d94a9a560da7a3293dd6580e18cb9e473fc91492a364693f007"
+    },
+    {
+      "path": "audits/2",
+      "source_bundle": "decoder-chain-audit-20260908T231345094257Z",
+      "execution_sha256": "61163ebf2c0ef09c6a5862e57bdeb0f083b1da3490ad88ecf943b4f46af8c6c8"
+    }
+  ],
+  "timeout_seconds": 300,
+  "rss_limit_kib": 4194304,
+  "scope": "Original two-layer static intact-ELF assembly and loaded initial bytes only. No compiler, SdkRuntime or neural execution. Includes actual ELF symbol qualification."
+}

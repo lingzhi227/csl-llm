@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "offline_only": true,
+  "scope": "Complete original two-layer intact ELF composition and actual initial bytes. Runtime, neural correctness and full-model acceptance remain separate.",
+  "symbols_sha256": "0a7e1418ade3d29e302ad6febca84bc8c19edeeb2d5e0fcdd6d167cfddc6d399",
+  "success": true,
+  "original_file_sha256": "7b8131af5b182d097bd53cdb86caa9de486dcc6336441e23dbdd8b4ccd8a3e57",
+  "publication_note": "Derived compact report: detailed object tables, source paths and process identities omitted; original hash preserved."
+}

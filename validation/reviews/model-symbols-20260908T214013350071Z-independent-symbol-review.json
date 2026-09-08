@@ -1,0 +1,26 @@
+{
+  "reviewed_at": "2026-09-08T21:43:06.811861+00:00",
+  "run": "model-symbols-20260908T214013350071Z",
+  "manifest_sha256": "0c494fec0d4735b0d353812c9b29914d8949e58370543b44487540811d47b3df",
+  "execution_sha256": "918a2a6add86e264c20c7b67c7064433fa5d115c66172f623d24f8af36e8fbac",
+  "results_sha256": "7fcfb40d35fef538662d341ec022cf348594048a7b86cd0250c3c5cdd0050516",
+  "symbols_sha256": "19b99114b9be9b7acc2fb24260ab3403fab156179df13d02d1f0739ed5c579ae",
+  "elf_count": 1401,
+  "coordinates": 40530,
+  "logical_symbol_coordinate_checks": 312542,
+  "private_aliases_across_images": 337,
+  "counts": {
+    "matrix": 34552,
+    "kv": 3168,
+    "decoder_controller": 24,
+    "vocabulary_controller": 1
+  },
+  "all_actual_objects_and_aliases_exact": true,
+  "all_manifest_receipts_verified": true,
+  "all_tracked_pids_absent": true,
+  "elapsed_seconds": 32.63514780602418,
+  "peak_rss_kib": 117032,
+  "method": "Independent manual ELF64 object table parsing and SDK ELFObject segment coordinates; closed-form role/symbol sizes without owner auditor or layout imports.",
+  "scope": "Actual static symbol/address/size/alignment/alias contract for these frozen full-layout ELF artifacts only. Not live/core reader execution, complete original deployment, model inference or hardware performance.",
+  "review_script_sha256": "9240e7d187dff7bd9c73fc4f14ecd2f09b8540bd4d8eabdc5cd248a4332e4dae"
+}

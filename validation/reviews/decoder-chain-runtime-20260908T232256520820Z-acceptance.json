@@ -1,0 +1,27 @@
+{
+  "accepted_at": "2026-09-08T23:45:48.210684+00:00",
+  "run": "decoder-chain-runtime-20260908T232256520820Z",
+  "accepted_two_layer_position_zero": true,
+  "execution_sha256": "36917fbf9ad1792ea279907f3bc88831616440d7b6654667a86c448be52469f8",
+  "manifest_sha256": "d48ad6ae37cb384422003253936dd78d97c96e2473e51ddea641f0023e63a143",
+  "results_sha256": "ea000e7aae1eab9d26cd49c7b2010bb7de720c2ee259b19bc8eba01856229fd2",
+  "core_sha256": "0e0c9d2b1a2f4e1e214109d23ea9804e895a43b5449c5ebec3ab68b8baf9db89",
+  "independent_reviews": [
+    "decoder-chain-runtime-20260908T232256520820Z-independent-numeric-review.json",
+    "decoder-chain-runtime-20260908T232256520820Z-independent-core-review.json"
+  ],
+  "independent_sdk_checks": 35,
+  "max_abs": 1.4993854650313665e-05,
+  "max_relative_l2": 1.6540091428374067e-06,
+  "max_relative_peak": 1.8855990497684412e-06,
+  "cycles": {
+    "endpoint_timing": 743855,
+    "layer_0_timing": 374983,
+    "layer_1_timing": 743759
+  },
+  "elapsed_seconds": 801.7785962680355,
+  "peak_rss_kib": 1660820,
+  "all_tracked_pids_absent": true,
+  "scope": "Original-sized original-weight device endpoint\u2192L0\u2192L1\u2192endpoint at causalposition0; complete numerical/immutable/KV/readiness/completion/protocol evidence. Not cached/reset, nonzero-position RoPE, full24layer inference or2048/256capacity.",
+  "sdk_complete": false
+}

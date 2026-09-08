@@ -1,0 +1,20 @@
+{
+  "reviewed_at": "2026-09-08T22:07:17.750084+00:00",
+  "run": "compiled",
+  "manifest_sha256": "7e8bc256e75e8be4123a04d4fc62941bb09f780c5de5f1db8b9731fe3c42bb5b",
+  "elf_report_sha256": "7e98e41caaeb00585cb185b4b04502004b030dad0a05cdb553742b1f5eeb352e",
+  "dsr_report_sha256": "1774dd2804da81c523ce0caddfd1336cfb8598ac5f7458091a73c39edffe5f2b",
+  "review_script_sha256": "d7fdf1eaffbc1f7ef3f174c23499f39035d81a10f55cb6447c8249831c873e79",
+  "application_elf_classes_verified": 1401,
+  "max_static_high_water_bytes": 45456,
+  "final_dsr_families_verified": 1222,
+  "nodes_checked": 12681,
+  "interference_edges_checked": 52133,
+  "method": "Independent actualELF64 hash/allocsection parsing and final graph edge/assignment/range/explicitDSR checks.",
+  "limitations": [
+    "No dynamic-stack, runtime numerical/protocol, hardware performance or full-model fit proof."
+  ],
+  "audit_run": "model-elf-audit-20260908T215942648812Z",
+  "execution_method": "Independent resource reviewer evaluated read-only; report paths redirected to audit parent. No remote writes.",
+  "adapter_sha256": "9a0bc7ea85c7126622716385577cafd5640f83b5e64ab93ed01e248ea02da134"
+}

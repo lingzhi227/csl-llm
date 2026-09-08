@@ -1,0 +1,23 @@
+{
+  "timeout_seconds": 900,
+  "rss_limit_kib": 12582912,
+  "width": 193,
+  "height": 210,
+  "matrix_tiles": 34552,
+  "kv_tiles": 3168,
+  "controllers": 25,
+  "layers": 24,
+  "vocabulary": 151936,
+  "initialization": "selected-original-declarations",
+  "weight_storage": "u8",
+  "static_input_binding": {
+    "input_bundle": "model-static-inputs-20260908T211554105440Z",
+    "input_manifest_sha256": "dc3019e4f5a6b71f01153798e4bf4229829593f153a454b7ec2a68df4208222d",
+    "selected_matrix_tiles": 1024,
+    "initialized_controllers": 25,
+    "initialized_bias_roots": 9,
+    "scope": "Typed binding of frozen input declarations only; no original byte re-audit or SDK acceptance."
+  },
+  "identity_initialization": "Opt-in device application-coordinate derivation in initialize; unexecuted",
+  "scope": "Complete original-sized193x210 model CSL graph. Selected original matrix declarations, original norms/frequencies on all25controllers (frequencies on24decodercontrollers) and selected original bias roots; remaining matrices/biases zero. Unexecuted coordinate identity initialization and optional byte ABI. Compile-only role/route/resource qualification; no complete initialized model, SdkRuntime or neural result."
+}

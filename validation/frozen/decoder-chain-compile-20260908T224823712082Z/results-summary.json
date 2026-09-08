@@ -1,0 +1,8 @@
+{
+  "success": true,
+  "compile_only": true,
+  "elf_count": 1349,
+  "scope": "Two original-sized streamed decoder regions plus diagnostic endpoint. Selected original matrices and both norm/frequency controllers, selected biases; remaining matrices/biases zero. Compilation only, no complete initialization or SDK inference.",
+  "original_file_sha256": "a46cac26458a921423ed230e52862527dd0bb0880bde360a8c296e78ee95c788",
+  "publication_note": "Derived compact report: detailed object tables, source paths and process identities omitted; original hash preserved."
+}
