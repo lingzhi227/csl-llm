@@ -24,3 +24,5 @@ Experimental intact-artifact composition passes two independent GEMVs in isolate
 Eight-PE cross-partition line allreduce is now accepted for the full group-0 128 × 896 contraction, four cases per isolated variant. This supersedes the earlier statement that no application collective is qualified; full vocabulary/model inference remains unaccepted. [Scoped evidence](PARTITION-EXPERIMENT.md#eight-pe-cross-partition-collective-acceptance).
 
 193 × 50 tagged streaming transport is independently accepted for selected-column ordering, padding exclusion, repeat/reset and all 9650 completion counters. Tiny support and original tiles 1024–2047 compile-only evidence accompany it. No neural/full-vocabulary runtime acceptance is inferred. [Evidence](STREAM-OUTPUT.md).
+
+Full 193 × 210 model layout: independent static checks and SDK boot accepted for 40530 PEs. Only 12 of 34552 matrix blocks contain original weights; reset/prepare passes, no compute. [Exact scope](MODEL-BOOT.md).

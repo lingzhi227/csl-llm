@@ -1,0 +1,15 @@
+{
+  "sdk_sha256": "fff17e81c61dcb6012bdee2941a6fdc570f5c8604967530e7b7108651258193d",
+  "publication_note": "Publication support package, not an original execution fixture. Frozen support modules plus portable SDK path selection.",
+  "files": {
+    "tools/model_initializer_audit.py": "497abba2a3ce9927325ea8e56f9d2c97fb2ecd785f3fec3105aef70fb0511e29",
+    "tools/dsr_graph.py": "b43d3b0cd5c6935b6e33143fc9cfca1f1855516ce29fd06987f047f0c745e111",
+    "tools/sdk_probe.py": "1e4d555f3eee06e1a4dd3e2c2fee7339f5ae78e2aeb92cf16514a0490661ead6",
+    "tools/elf_memory.py": "88a2c2d6cceefc3186499b12d9c97979d8f565402cda2b9ac493f56f3fe6d136",
+    "tools/sdk_core.py": "ac0ff42dc186cec411254f17ba8df28d25d71d3e8620ea88071cb74912e9a571",
+    "src/csl_llm/coordinate_identity.py": "33943a93a0c562b0647fef94cb43e9942c88fa1f7116537bdaeddda186ad7f83",
+    "src/csl_llm/regions.py": "2b23cc1644fc6e28ebe461bb68dfe0b4c77ac03570c094411d78d477377728c2",
+    "src/csl_llm/__init__.py": "e330d6b21720c96f282971a7ec9519f943e1c21b9bd944c611bbb4763ca390e2",
+    "src/csl_llm/decoder_layout.py": "20fa5b2f051dcad58cb2c44f7d7f511b41fde243113c61a338ac2c661877ec13"
+  }
+}

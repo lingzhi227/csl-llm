@@ -1,0 +1,11 @@
+{
+  "audited_bundle": "model-elf-audit-20260908T194004676554Z",
+  "audit_execution_sha256": "a71689f8b57c99a42f75c80d0829eb77fc749b6c46f6962fc50ec52f555f1c76",
+  "simulator_threads": 16,
+  "timeout_seconds": 1800,
+  "rss_limit_kib": 25165824,
+  "prompt_token": 22,
+  "generation_limit": 0,
+  "expected_progress": 1,
+  "scope": "One fresh full193x210 SDK load/run/initialize/reset/prepare instance. No compute invocation or neural arithmetic. All40530actual progress markers must be1; matrix/KV/guard identities, initial weights/norms/bias/frequencies and decoder logical status checked from stopped core. Normal controller D2H is bound to core values. Only12matrices/25normcontrollers/3biasroots have original data; other matrices/biases are zero. Not full original deployment, physical KV capacity, generation or hardware performance."
+}

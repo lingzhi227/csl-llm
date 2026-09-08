@@ -1,0 +1,31 @@
+{
+  "reviewed_at": "2026-09-08T20:17:07.117794+00:00",
+  "run": "model-boot-20260908T195258420390Z",
+  "compile_manifest_sha256": "1d3e80574f506646b5e6c37906cd7cb759cd54644cb59d6242d4fea16f3df7f0",
+  "manifest_sha256": "f9cef1edfd76af97bb16d96979be424f290f68ae5a77a86c07cdc6b318b782c0",
+  "execution_sha256": "edfdccd63f27068b3797443cdd54737b438e2fedc063ecc6bff223d2f837afeb",
+  "results_sha256": "0f1c4c863270f670a0cbb029608a52f2284e147d378d367b6bc3eed7b2032ce2",
+  "counts": {
+    "matrix": 34552,
+    "controller": 25,
+    "bias": 3
+  },
+  "coordinates": 40530,
+  "elf_count": 388,
+  "selected_original_matrices": 12,
+  "all_initializers_exact": true,
+  "all40530_actual_progress_one": true,
+  "all_coordinate_identities_exact": true,
+  "all_decoder_status_zero": true,
+  "ordinary_controller_d2h_core_exact": true,
+  "core_sha256": "caa322f53a17345e6ba0b0fc93b07848067b0f27499b45c8e42365488f487012",
+  "core_bytes": 2251540088,
+  "actual_sha256": "9fce823478c8b5612b6cbbda8f39ecd70b3db481b5207ca7b488f78446fc9ebf",
+  "all_manifest_and_report_hashes_verified": true,
+  "all_tracked_pids_absent": true,
+  "elapsed_seconds": 1094.791799044935,
+  "peak_rss_kib": 22337684,
+  "method": "Independent closed-form physical ownership/identity, manual ELF64 symbols, actual standalone ET_CORE ELFObject. Compiled ELF supplies only addresses/coordinates, never initializer overlay or fallback. Previously qualified original declaration bytes checked against stopped memory.",
+  "scope": "Actual full-layout initialization/reset/prepare and normal controller D2H, all core identities/status and initial data. Only12original matrices,25normcontrollers,3bias roots. No compute, neural inference, full original deployment, persistent generation, physical KV capacity or hardware performance.",
+  "review_script_sha256": "eff1e47f3ed8b9e6b98a09e1705d70d621175191b09b637f85f8655e5917cf3c"
+}

@@ -1,0 +1,37 @@
+{
+  "runs": [
+    {
+      "run": "model-boot-20260908T195258420390Z",
+      "manifest_sha256": "f9cef1edfd76af97bb16d96979be424f290f68ae5a77a86c07cdc6b318b782c0",
+      "execution_sha256": "edfdccd63f27068b3797443cdd54737b438e2fedc063ecc6bff223d2f837afeb",
+      "results_sha256": "0f1c4c863270f670a0cbb029608a52f2284e147d378d367b6bc3eed7b2032ce2",
+      "remote_manifest_entries_verified": 1113
+    },
+    {
+      "run": "model-elf-audit-20260908T194004676554Z",
+      "manifest_sha256": "f97bc4626d356b5a0c142aa747c1cdb0e91eae7c92c294cd937d1c45a89487d4",
+      "execution_sha256": "a71689f8b57c99a42f75c80d0829eb77fc749b6c46f6962fc50ec52f555f1c76",
+      "results_sha256": "1ab2d7e80050c7250b03e0f6b2e7e234c4ada36dc6a8af050c4668ef859b5b0c",
+      "remote_manifest_entries_verified": 1106
+    },
+    {
+      "run": "model-compile-20260908T182818553172Z",
+      "manifest_sha256": "1d3e80574f506646b5e6c37906cd7cb759cd54644cb59d6242d4fea16f3df7f0",
+      "execution_sha256": "94abac09fb78f5862118296352970bc77334729dc0c33fd08e258ad38c943fca",
+      "results_sha256": "9a64de74cf6d05a33bbf2f745733b02c57e12ff4471f907765e88c6cbf07b647",
+      "remote_manifest_entries_verified": 272
+    }
+  ],
+  "actual_and_normal_output_hashes_verified": true,
+  "actual_core_hash_verified_on_remote": true,
+  "all40530_progress_one_and_decoder_status_zero_checked": true,
+  "ordinary_progress_control_summary_prompt_checked": true,
+  "scope": "Publication checks of existing SDK output and frozen sources; no new SDK execution. Identity/initializer full independent evidence retained in reviews. Only 12 original matrix blocks; no neural compute.",
+  "all_actual_coordinate_identities_match_published_frozen_specification": true,
+  "host_tests": {
+    "total": 11,
+    "passed": 10,
+    "skipped_linux_only": 1
+  },
+  "python_compileall_passed": true
+}

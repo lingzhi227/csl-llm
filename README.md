@@ -29,6 +29,8 @@ Recorded SDK results belong to the original development snapshots. Publication c
 
 **The complete original vocabulary now passes actual SDK execution.** All 9496 weight tiles are assembled; three cases verify all 151936 logits, zero/tie behavior, three original embedding rows and fresh-process bit-repeat. [Full evidence, source map and remaining limits](docs/FULL-VOCABULARY.md). Device final normalization, the integrated 24-layer model and persistent generation remain unfinished.
 
+The **193 × 210 model layout now passes actual SDK initialization/reset/prepare** after independent static checks. Only 12 matrix blocks have original weights; no model computation was invoked. [Boot evidence and source boundaries](docs/MODEL-BOOT.md).
+
 ## New accepted milestones
 
 Stateful GQA (34 real reference tokens), a separately scoped 2048-position KV diagnostic, sequential packet ACK completion and exact full-checkpoint BF16 packing are now included. [Read their acceptance boundaries](docs/MILESTONES.md). These are component milestones, not complete-model generation.

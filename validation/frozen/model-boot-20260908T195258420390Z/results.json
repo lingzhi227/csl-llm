@@ -1,0 +1,20 @@
+{
+  "success": true,
+  "neural_execution": false,
+  "application_coordinates": 40530,
+  "matrix_tiles": 34552,
+  "kv_tiles": 3168,
+  "all_initializers_exact": true,
+  "all_coordinate_identities_exact": true,
+  "all_global_prepare_markers_one": true,
+  "all_decoder_logical_status_zero": true,
+  "normal_d2h_core_progress_control_summary_exact": true,
+  "audit_execution_sha256": "a71689f8b57c99a42f75c80d0829eb77fc749b6c46f6962fc50ec52f555f1c76",
+  "compiled_files_sha256": "67b0674134c5d91e924834d7cc3bfd4c4259faec0cb324b6cd26f6b5db0ddf77",
+  "runtime_artifacts_sha256": "9cb971f348dc916bce3a509c18be22b20bb182da85c2fb91b6c56ae8c5286ce8",
+  "actual_sha256": "9fce823478c8b5612b6cbbda8f39ecd70b3db481b5207ca7b488f78446fc9ebf",
+  "normal_d2h_sha256": "cad45c3735675dc3dc2dff77125a2297d9743b2b7d094a93831f895c93c3bc2b",
+  "core_sha256": "caa322f53a17345e6ba0b0fc93b07848067b0f27499b45c8e42365488f487012",
+  "core_bytes": 2251540088,
+  "scope": "One fresh full193x210 SDK load/run/initialize/reset/prepare instance. No compute invocation or neural arithmetic. All40530actual progress markers must be1; matrix/KV/guard identities, initial weights/norms/bias/frequencies and decoder logical status checked from stopped core. Normal controller D2H is bound to core values. Only12matrices/25normcontrollers/3biasroots have original data; other matrices/biases are zero. Not full original deployment, physical KV capacity, generation or hardware performance."
+}

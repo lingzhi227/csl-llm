@@ -1,0 +1,2759 @@
+{
+  "original_pack": "resident-weights-20260908T080621344705Z",
+  "mapping_audit": {
+    "passed": true,
+    "matrix_tiles": 34552,
+    "decoder_tiles": 25056,
+    "vocabulary_tiles": 9496,
+    "pack_manifest_sha256": "788ce538ac7ca41f2547b4ce8b86bee283b2cbd75b739f3841fdafafca9e0c9b",
+    "pack_verification_sha256": "d2ed7130847ec83853410c870ac3536369c279996bf02a37a32b1c68df522c0f",
+    "auditor_sha256": "f1fcc1e4ff033031383a209e78bc0ad2eac412af8c8a8f97321c6e7af403d16f",
+    "source_sha256": {
+      "src/csl_llm/decoder_layout.py": "20fa5b2f051dcad58cb2c44f7d7f511b41fde243113c61a338ac2c661877ec13",
+      "src/csl_llm/regions.py": "2b23cc1644fc6e28ebe461bb68dfe0b4c77ac03570c094411d78d477377728c2",
+      "tools/verify_weight_pack.py": "0e73b0020e8c99eef84ea528f740f7f052560a0e91cd619240c2c4318f38bfa4"
+    },
+    "scope": "Existing hash-verified input pack and its prior raw-checkpoint verification bind every matrix coordinate/tensor slice to current full-model ownership. No old controller layout reuse, new CSL initializer, compilation, SDK loading or numerical inference acceptance."
+  },
+  "frequency_fixture": "resident-decoder-20260908T113615465376Z",
+  "frequency_fixture_manifest_sha256": "abb67d0829c8ecd2d57be77501be2c7bebd3afa35dff67c9ff15b0740b2a9828",
+  "frequency_auxiliary_sha256": "37613816d4a497714fcd28a4a55f3d3e8463bb0cc0f21cd2624084316658f543",
+  "matrices": [
+    {
+      "coordinate": [
+        0,
+        0
+      ],
+      "file": "weights_0_0.csl",
+      "original_record": {
+        "x": 0,
+        "y": 0,
+        "role": "matrix",
+        "layer": 0,
+        "tensor": "model.layers.0.mlp.up_proj.weight",
+        "row": 0,
+        "column": 0,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 0,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "676710cf9562fc0b90086f0e873e97db054b30cc1aaccbe9a188068f77053ef8"
+    },
+    {
+      "coordinate": [
+        16,
+        0
+      ],
+      "file": "weights_16_0.csl",
+      "original_record": {
+        "x": 16,
+        "y": 0,
+        "role": "matrix",
+        "layer": 0,
+        "tensor": "model.layers.0.mlp.gate_proj.weight",
+        "row": 0,
+        "column": 0,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 8716288,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "b26ee8f63222feb774ecb8e13254182160985f7d985a11e3a30ab893e2f4cb44"
+    },
+    {
+      "coordinate": [
+        32,
+        0
+      ],
+      "file": "weights_32_0.csl",
+      "original_record": {
+        "x": 32,
+        "y": 0,
+        "role": "matrix",
+        "layer": 0,
+        "tensor": "model.layers.0.mlp.down_proj.weight",
+        "row": 0,
+        "column": 0,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 17432576,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "bd816bd54764963cd2369f16d724b58dffb3672ba1aa7ec38f3e3a62b458be54"
+    },
+    {
+      "coordinate": [
+        54,
+        0
+      ],
+      "file": "weights_54_0.csl",
+      "original_record": {
+        "x": 54,
+        "y": 0,
+        "role": "matrix",
+        "layer": 0,
+        "tensor": "model.layers.0.self_attn.q_proj.weight",
+        "row": 0,
+        "column": 0,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 26263552,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "87aff5a2071097291d148a910ab732c6c44f038dc0b6203f0a6eb43bdba4fed1"
+    },
+    {
+      "coordinate": [
+        53,
+        1
+      ],
+      "file": "weights_53_1.csl",
+      "original_record": {
+        "x": 53,
+        "y": 1,
+        "role": "matrix",
+        "layer": 0,
+        "tensor": "model.layers.0.mlp.down_proj.weight",
+        "row": 0,
+        "column": 4816,
+        "valid_rows": 128,
+        "valid_columns": 48,
+        "head": -1,
+        "stripe": -1,
+        "offset": 18665472,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "eb05705c99f1806f530257f073ce45c3515ba4d77a20f5e6d40e6896778f5a5e"
+    },
+    {
+      "coordinate": [
+        54,
+        7
+      ],
+      "file": "weights_54_7.csl",
+      "original_record": {
+        "x": 54,
+        "y": 7,
+        "role": "matrix",
+        "layer": 0,
+        "tensor": "model.layers.0.self_attn.k_proj.weight",
+        "row": 0,
+        "column": 0,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 27869184,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "ef3edab62b4c64b45a8072ee8d0b8b94f823c5707da3a9d5538229b1d4b139e7"
+    },
+    {
+      "coordinate": [
+        54,
+        8
+      ],
+      "file": "weights_54_8.csl",
+      "original_record": {
+        "x": 54,
+        "y": 8,
+        "role": "matrix",
+        "layer": 0,
+        "tensor": "model.layers.0.self_attn.v_proj.weight",
+        "row": 0,
+        "column": 0,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 28098560,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "e9a23f6cee97787409519fe430d20b010dcacb3b6b1c80c09ecdd5a0405886a3"
+    },
+    {
+      "coordinate": [
+        54,
+        9
+      ],
+      "file": "weights_54_9.csl",
+      "original_record": {
+        "x": 54,
+        "y": 9,
+        "role": "matrix",
+        "layer": 0,
+        "tensor": "model.layers.0.self_attn.o_proj.weight",
+        "row": 0,
+        "column": 0,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 28327936,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "29930e0af393af7033817ec2106e4a5e7c473bee2d2f9f3f1d66c31ea62e425a"
+    },
+    {
+      "coordinate": [
+        128,
+        140
+      ],
+      "file": "weights_128_140.csl",
+      "original_record": {
+        "x": 128,
+        "y": 140,
+        "role": "matrix",
+        "layer": 23,
+        "tensor": "model.layers.23.mlp.up_proj.weight",
+        "row": 0,
+        "column": 0,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 688472064,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "6a3cbfb7ccf98fd6be1c602defe9fc311813817f791dde57651105201323562a"
+    },
+    {
+      "coordinate": [
+        181,
+        141
+      ],
+      "file": "weights_181_141.csl",
+      "original_record": {
+        "x": 181,
+        "y": 141,
+        "role": "matrix",
+        "layer": 23,
+        "tensor": "model.layers.23.mlp.down_proj.weight",
+        "row": 0,
+        "column": 4816,
+        "valid_rows": 128,
+        "valid_columns": 48,
+        "head": -1,
+        "stripe": -1,
+        "offset": 707137536,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "bb5974e9d217937ea33195751721e6ad1672224823ce94b59889b8fb3fcef567"
+    },
+    {
+      "coordinate": [
+        0,
+        160
+      ],
+      "file": "weights_0_160.csl",
+      "original_record": {
+        "x": 0,
+        "y": 160,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 0,
+        "column": 0,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 718405632,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "584d4297de1b4891838c80a571a14e571329e9fd5e17dab33bcb550d45559bea"
+    },
+    {
+      "coordinate": [
+        87,
+        209
+      ],
+      "file": "weights_87_209.csl",
+      "original_record": {
+        "x": 87,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 151808,
+        "column": 784,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 990646272,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "a58c7f925db142178c496f3764a9358c3d222545f9fbace86700d7a26cb226e6"
+    }
+  ],
+  "auxiliaries": [
+    {
+      "coordinate": [
+        62,
+        0
+      ],
+      "file": "controller_aux_0.csl",
+      "tensors": [
+        "model.layers.0.input_layernorm.weight",
+        "model.layers.0.post_attention_layernorm.weight"
+      ],
+      "kind": "decoder_norms_frequency"
+    },
+    {
+      "coordinate": [
+        54,
+        0
+      ],
+      "file": "bias_54_0.csl",
+      "tensor": "model.layers.0.self_attn.q_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        1
+      ],
+      "file": "bias_54_1.csl",
+      "tensor": "model.layers.0.self_attn.q_proj.bias",
+      "row": 128,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        2
+      ],
+      "file": "bias_54_2.csl",
+      "tensor": "model.layers.0.self_attn.q_proj.bias",
+      "row": 256,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        3
+      ],
+      "file": "bias_54_3.csl",
+      "tensor": "model.layers.0.self_attn.q_proj.bias",
+      "row": 384,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        4
+      ],
+      "file": "bias_54_4.csl",
+      "tensor": "model.layers.0.self_attn.q_proj.bias",
+      "row": 512,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        5
+      ],
+      "file": "bias_54_5.csl",
+      "tensor": "model.layers.0.self_attn.q_proj.bias",
+      "row": 640,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        6
+      ],
+      "file": "bias_54_6.csl",
+      "tensor": "model.layers.0.self_attn.q_proj.bias",
+      "row": 768,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        7
+      ],
+      "file": "bias_54_7.csl",
+      "tensor": "model.layers.0.self_attn.k_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        8
+      ],
+      "file": "bias_54_8.csl",
+      "tensor": "model.layers.0.self_attn.v_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        126,
+        0
+      ],
+      "file": "controller_aux_1.csl",
+      "tensors": [
+        "model.layers.1.input_layernorm.weight",
+        "model.layers.1.post_attention_layernorm.weight"
+      ],
+      "kind": "decoder_norms_frequency"
+    },
+    {
+      "coordinate": [
+        118,
+        0
+      ],
+      "file": "bias_118_0.csl",
+      "tensor": "model.layers.1.self_attn.q_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        1
+      ],
+      "file": "bias_118_1.csl",
+      "tensor": "model.layers.1.self_attn.q_proj.bias",
+      "row": 128,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        2
+      ],
+      "file": "bias_118_2.csl",
+      "tensor": "model.layers.1.self_attn.q_proj.bias",
+      "row": 256,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        3
+      ],
+      "file": "bias_118_3.csl",
+      "tensor": "model.layers.1.self_attn.q_proj.bias",
+      "row": 384,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        4
+      ],
+      "file": "bias_118_4.csl",
+      "tensor": "model.layers.1.self_attn.q_proj.bias",
+      "row": 512,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        5
+      ],
+      "file": "bias_118_5.csl",
+      "tensor": "model.layers.1.self_attn.q_proj.bias",
+      "row": 640,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        6
+      ],
+      "file": "bias_118_6.csl",
+      "tensor": "model.layers.1.self_attn.q_proj.bias",
+      "row": 768,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        7
+      ],
+      "file": "bias_118_7.csl",
+      "tensor": "model.layers.1.self_attn.k_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        8
+      ],
+      "file": "bias_118_8.csl",
+      "tensor": "model.layers.1.self_attn.v_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        190,
+        0
+      ],
+      "file": "controller_aux_2.csl",
+      "tensors": [
+        "model.layers.2.input_layernorm.weight",
+        "model.layers.2.post_attention_layernorm.weight"
+      ],
+      "kind": "decoder_norms_frequency"
+    },
+    {
+      "coordinate": [
+        182,
+        0
+      ],
+      "file": "bias_182_0.csl",
+      "tensor": "model.layers.2.self_attn.q_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        1
+      ],
+      "file": "bias_182_1.csl",
+      "tensor": "model.layers.2.self_attn.q_proj.bias",
+      "row": 128,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        2
+      ],
+      "file": "bias_182_2.csl",
+      "tensor": "model.layers.2.self_attn.q_proj.bias",
+      "row": 256,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        3
+      ],
+      "file": "bias_182_3.csl",
+      "tensor": "model.layers.2.self_attn.q_proj.bias",
+      "row": 384,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        4
+      ],
+      "file": "bias_182_4.csl",
+      "tensor": "model.layers.2.self_attn.q_proj.bias",
+      "row": 512,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        5
+      ],
+      "file": "bias_182_5.csl",
+      "tensor": "model.layers.2.self_attn.q_proj.bias",
+      "row": 640,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        6
+      ],
+      "file": "bias_182_6.csl",
+      "tensor": "model.layers.2.self_attn.q_proj.bias",
+      "row": 768,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        7
+      ],
+      "file": "bias_182_7.csl",
+      "tensor": "model.layers.2.self_attn.k_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        8
+      ],
+      "file": "bias_182_8.csl",
+      "tensor": "model.layers.2.self_attn.v_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        62,
+        20
+      ],
+      "file": "controller_aux_3.csl",
+      "tensors": [
+        "model.layers.3.input_layernorm.weight",
+        "model.layers.3.post_attention_layernorm.weight"
+      ],
+      "kind": "decoder_norms_frequency"
+    },
+    {
+      "coordinate": [
+        54,
+        20
+      ],
+      "file": "bias_54_20.csl",
+      "tensor": "model.layers.3.self_attn.q_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        21
+      ],
+      "file": "bias_54_21.csl",
+      "tensor": "model.layers.3.self_attn.q_proj.bias",
+      "row": 128,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        22
+      ],
+      "file": "bias_54_22.csl",
+      "tensor": "model.layers.3.self_attn.q_proj.bias",
+      "row": 256,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        23
+      ],
+      "file": "bias_54_23.csl",
+      "tensor": "model.layers.3.self_attn.q_proj.bias",
+      "row": 384,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        24
+      ],
+      "file": "bias_54_24.csl",
+      "tensor": "model.layers.3.self_attn.q_proj.bias",
+      "row": 512,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        25
+      ],
+      "file": "bias_54_25.csl",
+      "tensor": "model.layers.3.self_attn.q_proj.bias",
+      "row": 640,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        26
+      ],
+      "file": "bias_54_26.csl",
+      "tensor": "model.layers.3.self_attn.q_proj.bias",
+      "row": 768,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        27
+      ],
+      "file": "bias_54_27.csl",
+      "tensor": "model.layers.3.self_attn.k_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        28
+      ],
+      "file": "bias_54_28.csl",
+      "tensor": "model.layers.3.self_attn.v_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        126,
+        20
+      ],
+      "file": "controller_aux_4.csl",
+      "tensors": [
+        "model.layers.4.input_layernorm.weight",
+        "model.layers.4.post_attention_layernorm.weight"
+      ],
+      "kind": "decoder_norms_frequency"
+    },
+    {
+      "coordinate": [
+        118,
+        20
+      ],
+      "file": "bias_118_20.csl",
+      "tensor": "model.layers.4.self_attn.q_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        21
+      ],
+      "file": "bias_118_21.csl",
+      "tensor": "model.layers.4.self_attn.q_proj.bias",
+      "row": 128,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        22
+      ],
+      "file": "bias_118_22.csl",
+      "tensor": "model.layers.4.self_attn.q_proj.bias",
+      "row": 256,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        23
+      ],
+      "file": "bias_118_23.csl",
+      "tensor": "model.layers.4.self_attn.q_proj.bias",
+      "row": 384,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        24
+      ],
+      "file": "bias_118_24.csl",
+      "tensor": "model.layers.4.self_attn.q_proj.bias",
+      "row": 512,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        25
+      ],
+      "file": "bias_118_25.csl",
+      "tensor": "model.layers.4.self_attn.q_proj.bias",
+      "row": 640,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        26
+      ],
+      "file": "bias_118_26.csl",
+      "tensor": "model.layers.4.self_attn.q_proj.bias",
+      "row": 768,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        27
+      ],
+      "file": "bias_118_27.csl",
+      "tensor": "model.layers.4.self_attn.k_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        28
+      ],
+      "file": "bias_118_28.csl",
+      "tensor": "model.layers.4.self_attn.v_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        190,
+        20
+      ],
+      "file": "controller_aux_5.csl",
+      "tensors": [
+        "model.layers.5.input_layernorm.weight",
+        "model.layers.5.post_attention_layernorm.weight"
+      ],
+      "kind": "decoder_norms_frequency"
+    },
+    {
+      "coordinate": [
+        182,
+        20
+      ],
+      "file": "bias_182_20.csl",
+      "tensor": "model.layers.5.self_attn.q_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        21
+      ],
+      "file": "bias_182_21.csl",
+      "tensor": "model.layers.5.self_attn.q_proj.bias",
+      "row": 128,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        22
+      ],
+      "file": "bias_182_22.csl",
+      "tensor": "model.layers.5.self_attn.q_proj.bias",
+      "row": 256,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        23
+      ],
+      "file": "bias_182_23.csl",
+      "tensor": "model.layers.5.self_attn.q_proj.bias",
+      "row": 384,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        24
+      ],
+      "file": "bias_182_24.csl",
+      "tensor": "model.layers.5.self_attn.q_proj.bias",
+      "row": 512,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        25
+      ],
+      "file": "bias_182_25.csl",
+      "tensor": "model.layers.5.self_attn.q_proj.bias",
+      "row": 640,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        26
+      ],
+      "file": "bias_182_26.csl",
+      "tensor": "model.layers.5.self_attn.q_proj.bias",
+      "row": 768,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        27
+      ],
+      "file": "bias_182_27.csl",
+      "tensor": "model.layers.5.self_attn.k_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        28
+      ],
+      "file": "bias_182_28.csl",
+      "tensor": "model.layers.5.self_attn.v_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        62,
+        40
+      ],
+      "file": "controller_aux_6.csl",
+      "tensors": [
+        "model.layers.6.input_layernorm.weight",
+        "model.layers.6.post_attention_layernorm.weight"
+      ],
+      "kind": "decoder_norms_frequency"
+    },
+    {
+      "coordinate": [
+        54,
+        40
+      ],
+      "file": "bias_54_40.csl",
+      "tensor": "model.layers.6.self_attn.q_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        41
+      ],
+      "file": "bias_54_41.csl",
+      "tensor": "model.layers.6.self_attn.q_proj.bias",
+      "row": 128,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        42
+      ],
+      "file": "bias_54_42.csl",
+      "tensor": "model.layers.6.self_attn.q_proj.bias",
+      "row": 256,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        43
+      ],
+      "file": "bias_54_43.csl",
+      "tensor": "model.layers.6.self_attn.q_proj.bias",
+      "row": 384,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        44
+      ],
+      "file": "bias_54_44.csl",
+      "tensor": "model.layers.6.self_attn.q_proj.bias",
+      "row": 512,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        45
+      ],
+      "file": "bias_54_45.csl",
+      "tensor": "model.layers.6.self_attn.q_proj.bias",
+      "row": 640,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        46
+      ],
+      "file": "bias_54_46.csl",
+      "tensor": "model.layers.6.self_attn.q_proj.bias",
+      "row": 768,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        47
+      ],
+      "file": "bias_54_47.csl",
+      "tensor": "model.layers.6.self_attn.k_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        48
+      ],
+      "file": "bias_54_48.csl",
+      "tensor": "model.layers.6.self_attn.v_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        126,
+        40
+      ],
+      "file": "controller_aux_7.csl",
+      "tensors": [
+        "model.layers.7.input_layernorm.weight",
+        "model.layers.7.post_attention_layernorm.weight"
+      ],
+      "kind": "decoder_norms_frequency"
+    },
+    {
+      "coordinate": [
+        118,
+        40
+      ],
+      "file": "bias_118_40.csl",
+      "tensor": "model.layers.7.self_attn.q_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        41
+      ],
+      "file": "bias_118_41.csl",
+      "tensor": "model.layers.7.self_attn.q_proj.bias",
+      "row": 128,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        42
+      ],
+      "file": "bias_118_42.csl",
+      "tensor": "model.layers.7.self_attn.q_proj.bias",
+      "row": 256,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        43
+      ],
+      "file": "bias_118_43.csl",
+      "tensor": "model.layers.7.self_attn.q_proj.bias",
+      "row": 384,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        44
+      ],
+      "file": "bias_118_44.csl",
+      "tensor": "model.layers.7.self_attn.q_proj.bias",
+      "row": 512,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        45
+      ],
+      "file": "bias_118_45.csl",
+      "tensor": "model.layers.7.self_attn.q_proj.bias",
+      "row": 640,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        46
+      ],
+      "file": "bias_118_46.csl",
+      "tensor": "model.layers.7.self_attn.q_proj.bias",
+      "row": 768,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        47
+      ],
+      "file": "bias_118_47.csl",
+      "tensor": "model.layers.7.self_attn.k_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        48
+      ],
+      "file": "bias_118_48.csl",
+      "tensor": "model.layers.7.self_attn.v_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        190,
+        40
+      ],
+      "file": "controller_aux_8.csl",
+      "tensors": [
+        "model.layers.8.input_layernorm.weight",
+        "model.layers.8.post_attention_layernorm.weight"
+      ],
+      "kind": "decoder_norms_frequency"
+    },
+    {
+      "coordinate": [
+        182,
+        40
+      ],
+      "file": "bias_182_40.csl",
+      "tensor": "model.layers.8.self_attn.q_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        41
+      ],
+      "file": "bias_182_41.csl",
+      "tensor": "model.layers.8.self_attn.q_proj.bias",
+      "row": 128,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        42
+      ],
+      "file": "bias_182_42.csl",
+      "tensor": "model.layers.8.self_attn.q_proj.bias",
+      "row": 256,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        43
+      ],
+      "file": "bias_182_43.csl",
+      "tensor": "model.layers.8.self_attn.q_proj.bias",
+      "row": 384,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        44
+      ],
+      "file": "bias_182_44.csl",
+      "tensor": "model.layers.8.self_attn.q_proj.bias",
+      "row": 512,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        45
+      ],
+      "file": "bias_182_45.csl",
+      "tensor": "model.layers.8.self_attn.q_proj.bias",
+      "row": 640,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        46
+      ],
+      "file": "bias_182_46.csl",
+      "tensor": "model.layers.8.self_attn.q_proj.bias",
+      "row": 768,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        47
+      ],
+      "file": "bias_182_47.csl",
+      "tensor": "model.layers.8.self_attn.k_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        48
+      ],
+      "file": "bias_182_48.csl",
+      "tensor": "model.layers.8.self_attn.v_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        62,
+        60
+      ],
+      "file": "controller_aux_9.csl",
+      "tensors": [
+        "model.layers.9.input_layernorm.weight",
+        "model.layers.9.post_attention_layernorm.weight"
+      ],
+      "kind": "decoder_norms_frequency"
+    },
+    {
+      "coordinate": [
+        54,
+        60
+      ],
+      "file": "bias_54_60.csl",
+      "tensor": "model.layers.9.self_attn.q_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        61
+      ],
+      "file": "bias_54_61.csl",
+      "tensor": "model.layers.9.self_attn.q_proj.bias",
+      "row": 128,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        62
+      ],
+      "file": "bias_54_62.csl",
+      "tensor": "model.layers.9.self_attn.q_proj.bias",
+      "row": 256,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        63
+      ],
+      "file": "bias_54_63.csl",
+      "tensor": "model.layers.9.self_attn.q_proj.bias",
+      "row": 384,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        64
+      ],
+      "file": "bias_54_64.csl",
+      "tensor": "model.layers.9.self_attn.q_proj.bias",
+      "row": 512,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        65
+      ],
+      "file": "bias_54_65.csl",
+      "tensor": "model.layers.9.self_attn.q_proj.bias",
+      "row": 640,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        66
+      ],
+      "file": "bias_54_66.csl",
+      "tensor": "model.layers.9.self_attn.q_proj.bias",
+      "row": 768,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        67
+      ],
+      "file": "bias_54_67.csl",
+      "tensor": "model.layers.9.self_attn.k_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        68
+      ],
+      "file": "bias_54_68.csl",
+      "tensor": "model.layers.9.self_attn.v_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        126,
+        60
+      ],
+      "file": "controller_aux_10.csl",
+      "tensors": [
+        "model.layers.10.input_layernorm.weight",
+        "model.layers.10.post_attention_layernorm.weight"
+      ],
+      "kind": "decoder_norms_frequency"
+    },
+    {
+      "coordinate": [
+        118,
+        60
+      ],
+      "file": "bias_118_60.csl",
+      "tensor": "model.layers.10.self_attn.q_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        61
+      ],
+      "file": "bias_118_61.csl",
+      "tensor": "model.layers.10.self_attn.q_proj.bias",
+      "row": 128,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        62
+      ],
+      "file": "bias_118_62.csl",
+      "tensor": "model.layers.10.self_attn.q_proj.bias",
+      "row": 256,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        63
+      ],
+      "file": "bias_118_63.csl",
+      "tensor": "model.layers.10.self_attn.q_proj.bias",
+      "row": 384,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        64
+      ],
+      "file": "bias_118_64.csl",
+      "tensor": "model.layers.10.self_attn.q_proj.bias",
+      "row": 512,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        65
+      ],
+      "file": "bias_118_65.csl",
+      "tensor": "model.layers.10.self_attn.q_proj.bias",
+      "row": 640,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        66
+      ],
+      "file": "bias_118_66.csl",
+      "tensor": "model.layers.10.self_attn.q_proj.bias",
+      "row": 768,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        67
+      ],
+      "file": "bias_118_67.csl",
+      "tensor": "model.layers.10.self_attn.k_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        68
+      ],
+      "file": "bias_118_68.csl",
+      "tensor": "model.layers.10.self_attn.v_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        190,
+        60
+      ],
+      "file": "controller_aux_11.csl",
+      "tensors": [
+        "model.layers.11.input_layernorm.weight",
+        "model.layers.11.post_attention_layernorm.weight"
+      ],
+      "kind": "decoder_norms_frequency"
+    },
+    {
+      "coordinate": [
+        182,
+        60
+      ],
+      "file": "bias_182_60.csl",
+      "tensor": "model.layers.11.self_attn.q_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        61
+      ],
+      "file": "bias_182_61.csl",
+      "tensor": "model.layers.11.self_attn.q_proj.bias",
+      "row": 128,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        62
+      ],
+      "file": "bias_182_62.csl",
+      "tensor": "model.layers.11.self_attn.q_proj.bias",
+      "row": 256,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        63
+      ],
+      "file": "bias_182_63.csl",
+      "tensor": "model.layers.11.self_attn.q_proj.bias",
+      "row": 384,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        64
+      ],
+      "file": "bias_182_64.csl",
+      "tensor": "model.layers.11.self_attn.q_proj.bias",
+      "row": 512,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        65
+      ],
+      "file": "bias_182_65.csl",
+      "tensor": "model.layers.11.self_attn.q_proj.bias",
+      "row": 640,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        66
+      ],
+      "file": "bias_182_66.csl",
+      "tensor": "model.layers.11.self_attn.q_proj.bias",
+      "row": 768,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        67
+      ],
+      "file": "bias_182_67.csl",
+      "tensor": "model.layers.11.self_attn.k_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        68
+      ],
+      "file": "bias_182_68.csl",
+      "tensor": "model.layers.11.self_attn.v_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        62,
+        80
+      ],
+      "file": "controller_aux_12.csl",
+      "tensors": [
+        "model.layers.12.input_layernorm.weight",
+        "model.layers.12.post_attention_layernorm.weight"
+      ],
+      "kind": "decoder_norms_frequency"
+    },
+    {
+      "coordinate": [
+        54,
+        80
+      ],
+      "file": "bias_54_80.csl",
+      "tensor": "model.layers.12.self_attn.q_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        81
+      ],
+      "file": "bias_54_81.csl",
+      "tensor": "model.layers.12.self_attn.q_proj.bias",
+      "row": 128,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        82
+      ],
+      "file": "bias_54_82.csl",
+      "tensor": "model.layers.12.self_attn.q_proj.bias",
+      "row": 256,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        83
+      ],
+      "file": "bias_54_83.csl",
+      "tensor": "model.layers.12.self_attn.q_proj.bias",
+      "row": 384,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        84
+      ],
+      "file": "bias_54_84.csl",
+      "tensor": "model.layers.12.self_attn.q_proj.bias",
+      "row": 512,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        85
+      ],
+      "file": "bias_54_85.csl",
+      "tensor": "model.layers.12.self_attn.q_proj.bias",
+      "row": 640,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        86
+      ],
+      "file": "bias_54_86.csl",
+      "tensor": "model.layers.12.self_attn.q_proj.bias",
+      "row": 768,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        87
+      ],
+      "file": "bias_54_87.csl",
+      "tensor": "model.layers.12.self_attn.k_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        88
+      ],
+      "file": "bias_54_88.csl",
+      "tensor": "model.layers.12.self_attn.v_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        126,
+        80
+      ],
+      "file": "controller_aux_13.csl",
+      "tensors": [
+        "model.layers.13.input_layernorm.weight",
+        "model.layers.13.post_attention_layernorm.weight"
+      ],
+      "kind": "decoder_norms_frequency"
+    },
+    {
+      "coordinate": [
+        118,
+        80
+      ],
+      "file": "bias_118_80.csl",
+      "tensor": "model.layers.13.self_attn.q_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        81
+      ],
+      "file": "bias_118_81.csl",
+      "tensor": "model.layers.13.self_attn.q_proj.bias",
+      "row": 128,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        82
+      ],
+      "file": "bias_118_82.csl",
+      "tensor": "model.layers.13.self_attn.q_proj.bias",
+      "row": 256,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        83
+      ],
+      "file": "bias_118_83.csl",
+      "tensor": "model.layers.13.self_attn.q_proj.bias",
+      "row": 384,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        84
+      ],
+      "file": "bias_118_84.csl",
+      "tensor": "model.layers.13.self_attn.q_proj.bias",
+      "row": 512,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        85
+      ],
+      "file": "bias_118_85.csl",
+      "tensor": "model.layers.13.self_attn.q_proj.bias",
+      "row": 640,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        86
+      ],
+      "file": "bias_118_86.csl",
+      "tensor": "model.layers.13.self_attn.q_proj.bias",
+      "row": 768,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        87
+      ],
+      "file": "bias_118_87.csl",
+      "tensor": "model.layers.13.self_attn.k_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        88
+      ],
+      "file": "bias_118_88.csl",
+      "tensor": "model.layers.13.self_attn.v_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        190,
+        80
+      ],
+      "file": "controller_aux_14.csl",
+      "tensors": [
+        "model.layers.14.input_layernorm.weight",
+        "model.layers.14.post_attention_layernorm.weight"
+      ],
+      "kind": "decoder_norms_frequency"
+    },
+    {
+      "coordinate": [
+        182,
+        80
+      ],
+      "file": "bias_182_80.csl",
+      "tensor": "model.layers.14.self_attn.q_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        81
+      ],
+      "file": "bias_182_81.csl",
+      "tensor": "model.layers.14.self_attn.q_proj.bias",
+      "row": 128,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        82
+      ],
+      "file": "bias_182_82.csl",
+      "tensor": "model.layers.14.self_attn.q_proj.bias",
+      "row": 256,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        83
+      ],
+      "file": "bias_182_83.csl",
+      "tensor": "model.layers.14.self_attn.q_proj.bias",
+      "row": 384,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        84
+      ],
+      "file": "bias_182_84.csl",
+      "tensor": "model.layers.14.self_attn.q_proj.bias",
+      "row": 512,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        85
+      ],
+      "file": "bias_182_85.csl",
+      "tensor": "model.layers.14.self_attn.q_proj.bias",
+      "row": 640,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        86
+      ],
+      "file": "bias_182_86.csl",
+      "tensor": "model.layers.14.self_attn.q_proj.bias",
+      "row": 768,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        87
+      ],
+      "file": "bias_182_87.csl",
+      "tensor": "model.layers.14.self_attn.k_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        88
+      ],
+      "file": "bias_182_88.csl",
+      "tensor": "model.layers.14.self_attn.v_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        62,
+        100
+      ],
+      "file": "controller_aux_15.csl",
+      "tensors": [
+        "model.layers.15.input_layernorm.weight",
+        "model.layers.15.post_attention_layernorm.weight"
+      ],
+      "kind": "decoder_norms_frequency"
+    },
+    {
+      "coordinate": [
+        54,
+        100
+      ],
+      "file": "bias_54_100.csl",
+      "tensor": "model.layers.15.self_attn.q_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        101
+      ],
+      "file": "bias_54_101.csl",
+      "tensor": "model.layers.15.self_attn.q_proj.bias",
+      "row": 128,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        102
+      ],
+      "file": "bias_54_102.csl",
+      "tensor": "model.layers.15.self_attn.q_proj.bias",
+      "row": 256,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        103
+      ],
+      "file": "bias_54_103.csl",
+      "tensor": "model.layers.15.self_attn.q_proj.bias",
+      "row": 384,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        104
+      ],
+      "file": "bias_54_104.csl",
+      "tensor": "model.layers.15.self_attn.q_proj.bias",
+      "row": 512,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        105
+      ],
+      "file": "bias_54_105.csl",
+      "tensor": "model.layers.15.self_attn.q_proj.bias",
+      "row": 640,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        106
+      ],
+      "file": "bias_54_106.csl",
+      "tensor": "model.layers.15.self_attn.q_proj.bias",
+      "row": 768,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        107
+      ],
+      "file": "bias_54_107.csl",
+      "tensor": "model.layers.15.self_attn.k_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        108
+      ],
+      "file": "bias_54_108.csl",
+      "tensor": "model.layers.15.self_attn.v_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        126,
+        100
+      ],
+      "file": "controller_aux_16.csl",
+      "tensors": [
+        "model.layers.16.input_layernorm.weight",
+        "model.layers.16.post_attention_layernorm.weight"
+      ],
+      "kind": "decoder_norms_frequency"
+    },
+    {
+      "coordinate": [
+        118,
+        100
+      ],
+      "file": "bias_118_100.csl",
+      "tensor": "model.layers.16.self_attn.q_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        101
+      ],
+      "file": "bias_118_101.csl",
+      "tensor": "model.layers.16.self_attn.q_proj.bias",
+      "row": 128,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        102
+      ],
+      "file": "bias_118_102.csl",
+      "tensor": "model.layers.16.self_attn.q_proj.bias",
+      "row": 256,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        103
+      ],
+      "file": "bias_118_103.csl",
+      "tensor": "model.layers.16.self_attn.q_proj.bias",
+      "row": 384,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        104
+      ],
+      "file": "bias_118_104.csl",
+      "tensor": "model.layers.16.self_attn.q_proj.bias",
+      "row": 512,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        105
+      ],
+      "file": "bias_118_105.csl",
+      "tensor": "model.layers.16.self_attn.q_proj.bias",
+      "row": 640,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        106
+      ],
+      "file": "bias_118_106.csl",
+      "tensor": "model.layers.16.self_attn.q_proj.bias",
+      "row": 768,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        107
+      ],
+      "file": "bias_118_107.csl",
+      "tensor": "model.layers.16.self_attn.k_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        108
+      ],
+      "file": "bias_118_108.csl",
+      "tensor": "model.layers.16.self_attn.v_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        190,
+        100
+      ],
+      "file": "controller_aux_17.csl",
+      "tensors": [
+        "model.layers.17.input_layernorm.weight",
+        "model.layers.17.post_attention_layernorm.weight"
+      ],
+      "kind": "decoder_norms_frequency"
+    },
+    {
+      "coordinate": [
+        182,
+        100
+      ],
+      "file": "bias_182_100.csl",
+      "tensor": "model.layers.17.self_attn.q_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        101
+      ],
+      "file": "bias_182_101.csl",
+      "tensor": "model.layers.17.self_attn.q_proj.bias",
+      "row": 128,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        102
+      ],
+      "file": "bias_182_102.csl",
+      "tensor": "model.layers.17.self_attn.q_proj.bias",
+      "row": 256,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        103
+      ],
+      "file": "bias_182_103.csl",
+      "tensor": "model.layers.17.self_attn.q_proj.bias",
+      "row": 384,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        104
+      ],
+      "file": "bias_182_104.csl",
+      "tensor": "model.layers.17.self_attn.q_proj.bias",
+      "row": 512,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        105
+      ],
+      "file": "bias_182_105.csl",
+      "tensor": "model.layers.17.self_attn.q_proj.bias",
+      "row": 640,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        106
+      ],
+      "file": "bias_182_106.csl",
+      "tensor": "model.layers.17.self_attn.q_proj.bias",
+      "row": 768,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        107
+      ],
+      "file": "bias_182_107.csl",
+      "tensor": "model.layers.17.self_attn.k_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        108
+      ],
+      "file": "bias_182_108.csl",
+      "tensor": "model.layers.17.self_attn.v_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        62,
+        120
+      ],
+      "file": "controller_aux_18.csl",
+      "tensors": [
+        "model.layers.18.input_layernorm.weight",
+        "model.layers.18.post_attention_layernorm.weight"
+      ],
+      "kind": "decoder_norms_frequency"
+    },
+    {
+      "coordinate": [
+        54,
+        120
+      ],
+      "file": "bias_54_120.csl",
+      "tensor": "model.layers.18.self_attn.q_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        121
+      ],
+      "file": "bias_54_121.csl",
+      "tensor": "model.layers.18.self_attn.q_proj.bias",
+      "row": 128,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        122
+      ],
+      "file": "bias_54_122.csl",
+      "tensor": "model.layers.18.self_attn.q_proj.bias",
+      "row": 256,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        123
+      ],
+      "file": "bias_54_123.csl",
+      "tensor": "model.layers.18.self_attn.q_proj.bias",
+      "row": 384,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        124
+      ],
+      "file": "bias_54_124.csl",
+      "tensor": "model.layers.18.self_attn.q_proj.bias",
+      "row": 512,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        125
+      ],
+      "file": "bias_54_125.csl",
+      "tensor": "model.layers.18.self_attn.q_proj.bias",
+      "row": 640,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        126
+      ],
+      "file": "bias_54_126.csl",
+      "tensor": "model.layers.18.self_attn.q_proj.bias",
+      "row": 768,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        127
+      ],
+      "file": "bias_54_127.csl",
+      "tensor": "model.layers.18.self_attn.k_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        128
+      ],
+      "file": "bias_54_128.csl",
+      "tensor": "model.layers.18.self_attn.v_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        126,
+        120
+      ],
+      "file": "controller_aux_19.csl",
+      "tensors": [
+        "model.layers.19.input_layernorm.weight",
+        "model.layers.19.post_attention_layernorm.weight"
+      ],
+      "kind": "decoder_norms_frequency"
+    },
+    {
+      "coordinate": [
+        118,
+        120
+      ],
+      "file": "bias_118_120.csl",
+      "tensor": "model.layers.19.self_attn.q_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        121
+      ],
+      "file": "bias_118_121.csl",
+      "tensor": "model.layers.19.self_attn.q_proj.bias",
+      "row": 128,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        122
+      ],
+      "file": "bias_118_122.csl",
+      "tensor": "model.layers.19.self_attn.q_proj.bias",
+      "row": 256,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        123
+      ],
+      "file": "bias_118_123.csl",
+      "tensor": "model.layers.19.self_attn.q_proj.bias",
+      "row": 384,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        124
+      ],
+      "file": "bias_118_124.csl",
+      "tensor": "model.layers.19.self_attn.q_proj.bias",
+      "row": 512,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        125
+      ],
+      "file": "bias_118_125.csl",
+      "tensor": "model.layers.19.self_attn.q_proj.bias",
+      "row": 640,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        126
+      ],
+      "file": "bias_118_126.csl",
+      "tensor": "model.layers.19.self_attn.q_proj.bias",
+      "row": 768,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        127
+      ],
+      "file": "bias_118_127.csl",
+      "tensor": "model.layers.19.self_attn.k_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        128
+      ],
+      "file": "bias_118_128.csl",
+      "tensor": "model.layers.19.self_attn.v_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        190,
+        120
+      ],
+      "file": "controller_aux_20.csl",
+      "tensors": [
+        "model.layers.20.input_layernorm.weight",
+        "model.layers.20.post_attention_layernorm.weight"
+      ],
+      "kind": "decoder_norms_frequency"
+    },
+    {
+      "coordinate": [
+        182,
+        120
+      ],
+      "file": "bias_182_120.csl",
+      "tensor": "model.layers.20.self_attn.q_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        121
+      ],
+      "file": "bias_182_121.csl",
+      "tensor": "model.layers.20.self_attn.q_proj.bias",
+      "row": 128,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        122
+      ],
+      "file": "bias_182_122.csl",
+      "tensor": "model.layers.20.self_attn.q_proj.bias",
+      "row": 256,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        123
+      ],
+      "file": "bias_182_123.csl",
+      "tensor": "model.layers.20.self_attn.q_proj.bias",
+      "row": 384,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        124
+      ],
+      "file": "bias_182_124.csl",
+      "tensor": "model.layers.20.self_attn.q_proj.bias",
+      "row": 512,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        125
+      ],
+      "file": "bias_182_125.csl",
+      "tensor": "model.layers.20.self_attn.q_proj.bias",
+      "row": 640,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        126
+      ],
+      "file": "bias_182_126.csl",
+      "tensor": "model.layers.20.self_attn.q_proj.bias",
+      "row": 768,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        127
+      ],
+      "file": "bias_182_127.csl",
+      "tensor": "model.layers.20.self_attn.k_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        128
+      ],
+      "file": "bias_182_128.csl",
+      "tensor": "model.layers.20.self_attn.v_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        62,
+        140
+      ],
+      "file": "controller_aux_21.csl",
+      "tensors": [
+        "model.layers.21.input_layernorm.weight",
+        "model.layers.21.post_attention_layernorm.weight"
+      ],
+      "kind": "decoder_norms_frequency"
+    },
+    {
+      "coordinate": [
+        54,
+        140
+      ],
+      "file": "bias_54_140.csl",
+      "tensor": "model.layers.21.self_attn.q_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        141
+      ],
+      "file": "bias_54_141.csl",
+      "tensor": "model.layers.21.self_attn.q_proj.bias",
+      "row": 128,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        142
+      ],
+      "file": "bias_54_142.csl",
+      "tensor": "model.layers.21.self_attn.q_proj.bias",
+      "row": 256,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        143
+      ],
+      "file": "bias_54_143.csl",
+      "tensor": "model.layers.21.self_attn.q_proj.bias",
+      "row": 384,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        144
+      ],
+      "file": "bias_54_144.csl",
+      "tensor": "model.layers.21.self_attn.q_proj.bias",
+      "row": 512,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        145
+      ],
+      "file": "bias_54_145.csl",
+      "tensor": "model.layers.21.self_attn.q_proj.bias",
+      "row": 640,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        146
+      ],
+      "file": "bias_54_146.csl",
+      "tensor": "model.layers.21.self_attn.q_proj.bias",
+      "row": 768,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        147
+      ],
+      "file": "bias_54_147.csl",
+      "tensor": "model.layers.21.self_attn.k_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        148
+      ],
+      "file": "bias_54_148.csl",
+      "tensor": "model.layers.21.self_attn.v_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        126,
+        140
+      ],
+      "file": "controller_aux_22.csl",
+      "tensors": [
+        "model.layers.22.input_layernorm.weight",
+        "model.layers.22.post_attention_layernorm.weight"
+      ],
+      "kind": "decoder_norms_frequency"
+    },
+    {
+      "coordinate": [
+        118,
+        140
+      ],
+      "file": "bias_118_140.csl",
+      "tensor": "model.layers.22.self_attn.q_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        141
+      ],
+      "file": "bias_118_141.csl",
+      "tensor": "model.layers.22.self_attn.q_proj.bias",
+      "row": 128,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        142
+      ],
+      "file": "bias_118_142.csl",
+      "tensor": "model.layers.22.self_attn.q_proj.bias",
+      "row": 256,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        143
+      ],
+      "file": "bias_118_143.csl",
+      "tensor": "model.layers.22.self_attn.q_proj.bias",
+      "row": 384,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        144
+      ],
+      "file": "bias_118_144.csl",
+      "tensor": "model.layers.22.self_attn.q_proj.bias",
+      "row": 512,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        145
+      ],
+      "file": "bias_118_145.csl",
+      "tensor": "model.layers.22.self_attn.q_proj.bias",
+      "row": 640,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        146
+      ],
+      "file": "bias_118_146.csl",
+      "tensor": "model.layers.22.self_attn.q_proj.bias",
+      "row": 768,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        147
+      ],
+      "file": "bias_118_147.csl",
+      "tensor": "model.layers.22.self_attn.k_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        148
+      ],
+      "file": "bias_118_148.csl",
+      "tensor": "model.layers.22.self_attn.v_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        190,
+        140
+      ],
+      "file": "controller_aux_23.csl",
+      "tensors": [
+        "model.layers.23.input_layernorm.weight",
+        "model.layers.23.post_attention_layernorm.weight"
+      ],
+      "kind": "decoder_norms_frequency"
+    },
+    {
+      "coordinate": [
+        182,
+        140
+      ],
+      "file": "bias_182_140.csl",
+      "tensor": "model.layers.23.self_attn.q_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        141
+      ],
+      "file": "bias_182_141.csl",
+      "tensor": "model.layers.23.self_attn.q_proj.bias",
+      "row": 128,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        142
+      ],
+      "file": "bias_182_142.csl",
+      "tensor": "model.layers.23.self_attn.q_proj.bias",
+      "row": 256,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        143
+      ],
+      "file": "bias_182_143.csl",
+      "tensor": "model.layers.23.self_attn.q_proj.bias",
+      "row": 384,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        144
+      ],
+      "file": "bias_182_144.csl",
+      "tensor": "model.layers.23.self_attn.q_proj.bias",
+      "row": 512,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        145
+      ],
+      "file": "bias_182_145.csl",
+      "tensor": "model.layers.23.self_attn.q_proj.bias",
+      "row": 640,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        146
+      ],
+      "file": "bias_182_146.csl",
+      "tensor": "model.layers.23.self_attn.q_proj.bias",
+      "row": 768,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        147
+      ],
+      "file": "bias_182_147.csl",
+      "tensor": "model.layers.23.self_attn.k_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        148
+      ],
+      "file": "bias_182_148.csl",
+      "tensor": "model.layers.23.self_attn.v_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        192,
+        160
+      ],
+      "file": "final_norm.csl",
+      "tensor": "model.norm.weight",
+      "kind": "final_norm"
+    }
+  ],
+  "scope": "Selected original BF16 matrix byte declarations and all24layer norms/biases/pinnedfrequencies plus final norm. Data authoring only: no placement binding, new ELF/alignment, SDK loading or model inference acceptance."
+}

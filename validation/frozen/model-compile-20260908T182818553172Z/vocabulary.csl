@@ -1,0 +1,251 @@
+// Device model-step controller plus resident tied vocabulary. Unqualified
+// composition candidate: do not infer full inference from component passes.
+// Every group owns128 rows across eight112-column matrix tiles.
+param memcpy_params;
+param matrix:bool;param controller:bool;
+param shard:u16=0;
+param controller_x:u16;param controller_y:u16;
+param first_layer_x:u16;param first_layer_y:u16;
+param weight_file="<empty>";
+param static_weights:bool=true;
+param static_norms:bool=false;param auxiliary_file="<empty>";
+param weight_type:type=u32;
+comptime{@comptime_assert(weight_type==u8 or weight_type==u32);}
+param coordinate_identity:bool=false;
+const sys=@import_module("<memcpy/memcpy>",memcpy_params);
+const clock=@import_module("<time>");
+const placement=@import_module(if(coordinate_identity) "<layout>" else "<empty>");
+const initial=@import_module(weight_file);
+const norm_initial=@import_module(if(static_norms) auxiliary_file else "<empty>");
+comptime{@comptime_assert(!static_norms or controller);}
+const kernel=@import_module(if(matrix) "kernel.csl" else "<empty>",if(matrix) .{.rows=128,.columns=112} else .{});
+const embedding=@import_module(if(matrix) "embedding.csl" else "<empty>");
+const argmax=@import_module("argmax.csl");
+const line=@import_module(if(matrix) "line.csl" else "<empty>",if(matrix) .{.ordinal=shard,.participants=8,.length=128,.colors=[3]color{@get_color(0),@get_color(1),@get_color(2)},.task_id=@get_local_task_id(10),.on_complete=reduced} else .{});
+const input_task=@get_local_task_id(11);
+const receiver=@import_module(if(matrix) "input.csl" else "<empty>",if(matrix) .{.length=112,.input_color=@get_color(3),.completion_task=input_task} else .{});
+const packets=@import_module("packets.csl",.{.sent_task_id=@get_local_task_id(12),.received_task_id=@get_local_task_id(13),.on_sent=sent,.on_received=received});
+const control_task=@get_local_task_id(14);
+const control_receiver=@import_module(if(matrix) "input.csl" else "<empty>",if(matrix) .{.length=4,.input_color=@get_color(4),.queue_id=5,.completion_task=control_task} else .{});
+const sequence=@import_module(if(controller) "sequence.csl" else "<empty>");
+const boundary=@import_module(if(controller) "activation_stream.csl" else "<empty>",.{});
+const vector=@import_module(if(controller) "vector.csl" else "<empty>",if(controller) .{.length=896} else .{});
+var weights=if(matrix and static_weights) initial.values else @zeros([if(matrix) (if(weight_type==u8) 28672 else 7168) else (if(weight_type==u8) 4 else 1)]weight_type);
+var input=@zeros([if(controller) 896 else if(matrix) 112 else 1]f32);
+var partial=@zeros([if(matrix) 128 else 1]f32);
+var result=@zeros([if(matrix) 128 else 1]f32);
+var lookup=@zeros([if(controller) 896 else if(matrix) 112 else 1]f32);
+var best=@zeros([1]f32);var winner=@zeros([1]u32);
+// Controller control: prompt length and maximum generated count, loaded once.
+// Device frame: invocation, token ID, need-head flag, original position.
+var control=@zeros([2]u32);var frame=@zeros([4]u32);var progress=@zeros([1]u32);
+var norms=if(controller and static_norms) norm_initial.norms else @zeros([if(controller) 448 else 1]u32);
+var summary=@zeros([if(controller) 7 else 1]u32);
+// Numerical row identity is data, not a distinct compiler specialization.
+// The shard stays compile-time because it determines regional routing.
+var identity=@zeros([1]u32);
+var seen=@zeros([if(controller) 1187 else 1]u16);
+var epoch:u32=0;var completed:u16=0;var offset:u16=0;var count:u16=0;
+var sending_done:bool=false;var tx=@zeros([31]u32);
+var command_waiting:bool=false;
+var control_received:bool=false;var step_started:bool=false;
+var control_sent:bool=false;var embedding_sent:bool=false;
+// Controller phases:0 lookup/control,1 layers,2 projection. Matrix lookup
+// packet completion and head reduction can arrive in either order.
+var phase:u16=0;var lookup_done:bool=false;var reduction_done:bool=false;
+var transmitting_lookup:bool=false;
+var timing=@zeros([6]u16);var started=@zeros([3]u16);var ended=@zeros([3]u16);
+const outq=@get_output_queue(4);
+const control_outq=@get_output_queue(5);
+const dest=@get_dsr(dsr_dest,5);const source=@get_dsr(dsr_src1,5);
+
+fn initialize() void {
+ if(comptime coordinate_identity and matrix){
+  const x=@as(u16,placement.get_x_coord());const y=@as(u16,placement.get_y_coord());
+  @assert(x<192 and y>=160 and y<210);
+  identity[0]=@as(u32,(y-160)*24+x/8);@assert(identity[0]<1187);
+ }
+ packets.init();sys.unblock_cmd_stream();
+}
+fn reset_model() void {
+ @assert(!packets.sending and !packets.receiving and !command_waiting);
+ if(comptime controller){
+  @assert(control[0]>0 and control[0]<=2048 and control[1]<=256);
+  sequence.reset(@as(u16,control[0]),@as(u16,control[1]));update_summary();
+ }
+ sys.unblock_cmd_stream();
+}
+fn update_summary() void {
+ if(comptime controller){
+  summary[0]=@as(u32,sequence.consumed);summary[1]=@as(u32,sequence.generated_count);
+  summary[2]=if(sequence.finished) @as(u32,1) else @as(u32,0);
+  summary[3]=@as(u32,sequence.reason);summary[4]=epoch;
+  summary[5]=if(sequence.busy) @as(u32,1) else @as(u32,0);
+  summary[6]=if(sequence.head_expected) @as(u32,1) else @as(u32,0);
+ }
+}
+fn prepare() void {
+ @assert(!packets.sending and !packets.receiving);
+ @assert(!command_waiting and epoch<65535);
+ if(comptime matrix){@assert(identity[0]<1187);}
+ epoch+=1;completed=0;offset=0;sending_done=false;command_waiting=false;
+ control_received=false;step_started=false;control_sent=false;embedding_sent=false;
+ phase=0;lookup_done=false;reduction_done=false;transmitting_lookup=false;
+ if(comptime controller){@assert(!sequence.finished and !sequence.busy);boundary.reset(epoch);}
+ if(comptime controller){for(@range(u16,1187))|i|{seen[i]=0;}}
+ progress[0]=epoch*2-1;sys.unblock_cmd_stream();
+}
+fn finish() void {
+ @assert(command_waiting);command_waiting=false;
+ clock.get_timestamp(&ended);clock.disable_tsc();
+ for(@range(u16,3))|i|{timing[i]=started[i];timing[i+3]=ended[i];}
+ progress[0]=epoch*2;sys.unblock_cmd_stream();
+}
+fn compute() void {
+ command_waiting=true;
+ clock.enable_tsc();clock.get_timestamp(&started);
+ if(comptime controller){
+  frame[0]=epoch;frame[1]=sequence.start();
+  frame[2]=if(sequence.head_expected) @as(u32,1) else @as(u32,0);
+  frame[3]=@as(u32,sequence.consumed);boundary.arm();
+  const mem=@get_dsd(mem1d_dsd,.{.base_address=&frame,.extent=4});
+  const out=@get_dsd(fabout_dsd,.{.output_queue=control_outq,.extent=4});
+  @load_to_dsr(dest,out,.{.async=true,.activate=control_task});@load_to_dsr(source,mem);@mov32(dest,source,.{.async=true});
+ }else if(comptime matrix){control_receiver.arm(@ptrcast([*]f32,&frame));}
+ else{finish();}
+}
+task control_complete() void {
+ if(comptime controller){control_sent=true;join_lookup();}
+ else if(comptime matrix){
+  @assert(frame[0]==epoch and frame[1]<151936 and frame[2]<=1 and frame[3]<2048);
+  control_received=true;start_matrix();
+ }
+}
+fn start_matrix() void {
+ if(comptime matrix){
+  if(!command_waiting or !control_received or step_started){return;}
+  step_started=true;
+  // Control receive has released DSR5 before head input is armed on DSR5.
+  if(frame[2]==1){receiver.arm(&input);}
+  if(frame[1]/128==identity[0]){
+   embedding.lookup(@ptrcast([*]u16,&weights),@as(u16,frame[1]%128),&lookup);
+   transmitting_lookup=true;transmit_lookup();
+  }else{lookup_done=true;if(frame[2]==0){finish();}}
+ }
+}
+task input_complete() void {
+ if(comptime matrix){kernel.compute(@ptrcast([*]u16,&weights),&input,&partial);line.start(&partial,&result);}
+ else if(comptime controller){sending_done=true;join_head();}
+}
+fn reduced() void {
+ if(comptime matrix){
+  reduction_done=true;join_matrix_head();
+ }
+}
+fn join_matrix_head() void {
+ if(comptime matrix){
+  if(!reduction_done or !lookup_done){return;}
+  if(comptime shard==0){
+   argmax.select(&result,128,identity[0]*128,&best[0],&winner[0]);
+   tx[0]=epoch;tx[1]=identity[0];tx[2]=winner[0];tx[3]=@bitcast(u32,best[0]);
+   packets.send(controller_x,controller_y,&tx,4);
+  }else{finish();}
+ }
+}
+fn transmit_lookup() void {
+ if(comptime matrix){
+  @assert(offset<112);count=if(112-offset<28) 112-offset else 28;
+  tx[0]=epoch;tx[1]=@as(u32,shard);tx[2]=@as(u32,offset);
+  packets.copy_words(@ptrcast([*]u32,&lookup[offset]),@ptrcast([*]u32,&tx[3]),count);
+  packets.send(controller_x,controller_y,&tx,count+3);
+ }
+}
+fn sent() void {
+ if(comptime controller){
+  @assert(phase==1);
+  if(boundary.complete_send()){embedding_sent=true;join_layers();}else{transmit_embedding();}
+ }else if(comptime matrix){
+  if(transmitting_lookup){
+   offset+=count;
+   if(offset<112){transmit_lookup();}
+   else{transmitting_lookup=false;lookup_done=true;if(frame[2]==0){finish();}else{join_matrix_head();}}
+  }else{finish();}
+ }
+}
+fn join_head() void {
+ if(comptime controller){
+  if(command_waiting and completed==1187 and sending_done){sequence.complete_head(winner[0]);update_summary();finish();}
+ }
+}
+fn join_lookup() void {
+ if(comptime controller){
+  if(command_waiting and phase==0 and completed==8 and control_sent){phase=1;transmit_embedding();}
+ }
+}
+fn transmit_embedding() void {
+ if(comptime controller){
+  const n=boundary.frame(&tx);
+  packets.copy_words(@ptrcast([*]u32,&lookup[boundary.sent_count]),@ptrcast([*]u32,&tx[2]),n);
+  packets.send(first_layer_x,first_layer_y,&tx,n+2);
+ }
+}
+fn join_layers() void {
+ if(comptime controller){
+  if(!embedding_sent or !boundary.take_ready()){return;}
+  @assert(phase==1);
+  if(frame[2]==0){sequence.complete_prefill();update_summary();finish();return;}
+  // Embedding send is complete, so lookup storage can hold final RMS gamma.
+  const halves=@ptrcast([*]u16,&norms);
+  for(@range(u16,896))|i|{lookup[i]=@bitcast(f32,@as(u32,halves[i])<<16);}
+  vector.rmsnorm(&input,&lookup,&input);
+  phase=2;completed=0;for(@range(u16,1187))|i|{seen[i]=0;}
+  const mem=@get_dsd(mem1d_dsd,.{.base_address=&input,.extent=896});
+  const out=@get_dsd(fabout_dsd,.{.output_queue=outq,.extent=896});
+  @load_to_dsr(dest,out,.{.async=true,.activate=input_task});@load_to_dsr(source,mem);@mov32(dest,source,.{.async=true});
+ }
+}
+fn received(data:[*]u32,length:u16) void {
+ if(comptime controller){
+  if(length>=3 and (data[0]>>16)!=0){
+   @assert(phase==1);const start=boundary.accept(data,length);
+   packets.copy_words(@ptrcast([*]u32,&data[2]),@ptrcast([*]u32,&input[start]),length-2);join_layers();return;
+  }
+  @assert(length>=4 and data[0]==epoch);
+  if(phase==0){
+   @assert(data[1]<8);const part=@as(u16,data[1]);const begin=@as(u16,data[2]);
+   @assert(data[2]<112 and begin==seen[part] and begin+length-3<=112);
+   packets.copy_words(@ptrcast([*]u32,&data[3]),@ptrcast([*]u32,&lookup[part*112+begin]),length-3);
+   seen[part]+=length-3;if(seen[part]==112){completed+=1;}
+   join_lookup();
+  }else{
+   @assert(phase==2);
+   @assert(length==4 and data[1]<1187);const part=@as(u16,data[1]);
+   @assert(seen[part]==0 and data[2]>=data[1]*128 and data[2]<(data[1]+1)*128);
+   if(completed==0){best[0]=@bitcast(f32,data[3]);winner[0]=data[2];}
+   // merge also checks finiteness for the first candidate.
+   argmax.merge(@bitcast(f32,data[3]),data[2],&best[0],&winner[0]);
+   seen[part]=1;completed+=1;join_head();
+  }
+ }else{@assert(false);}
+}
+const ip:[*]f32=&input;const rp:[*]f32=&result;const lp:[*]f32=&lookup;
+const bp:[*]f32=&best;const wp:[*]u32=&winner;const cp:[*]u32=&control;
+const pp:[*]u32=&progress;const tp:[*]u16=&timing;
+const weight_ptr:[*]weight_type=&weights;
+const identity_ptr:[*]u32=&identity;
+const norms_ptr:[*]u32=&norms;const summary_ptr:[*]u32=&summary;
+const prompt_ptr:[*]u32=if(controller) &sequence.prompt else &identity;
+const generated_ptr:[*]u32=if(controller) &sequence.generated else &identity;
+comptime{
+ if(controller){@initialize_queue(outq,.{.color=@get_color(3)});@initialize_queue(control_outq,.{.color=@get_color(4)});}
+ @bind_local_task(input_complete,input_task);
+ @bind_local_task(control_complete,control_task);
+ @export_symbol(ip,"input");@export_symbol(rp,"result");@export_symbol(lp,"lookup");
+ @export_symbol(bp,"best");@export_symbol(wp,"winner");@export_symbol(cp,"control");
+ @export_symbol(pp,"progress");@export_symbol(tp,"timing");
+ @export_symbol(weight_ptr,"weights");
+ @export_symbol(identity_ptr,"identity");
+ @export_symbol(norms_ptr,"norms");@export_symbol(summary_ptr,"summary");
+ @export_symbol(prompt_ptr,"prompt");@export_symbol(generated_ptr,"generated");
+ @export_symbol(initialize);@export_symbol(reset_model);@export_symbol(prepare);@export_symbol(compute);
+}

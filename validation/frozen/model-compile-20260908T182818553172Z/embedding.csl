@@ -1,0 +1,13 @@
+// One resident tied-embedding / LM-head matrix tile: [inner, vocabulary_rows].
+// Preserves original BF16 words. Lookup output must not alias resident weights.
+param vocabulary_rows:u16=128;
+param inner:u16=112;
+comptime {@comptime_assert(vocabulary_rows>0 and vocabulary_rows<=128 and inner>0 and inner<=112);}
+fn lookup(weights:[*]u16,row:u16,output:[*]f32) void {
+ @assert(row<vocabulary_rows);
+ const y=@get_dsd(mem1d_dsd,.{.base_address=output,.extent=inner});@fmovs(y,0.0);
+ const base=@get_dsd(mem1d_dsd,.{.base_address=weights,.extent=inner,.stride=@as(i16,vocabulary_rows)});
+ const source=@increment_dsd_offset(base,@as(i16,row),u16);
+ const low=@get_dsd(mem1d_dsd,.{.base_address=@ptrcast([*]u16,output),.extent=inner,.stride=2});
+ const high=@increment_dsd_offset(low,1,u16);@mov16(high,source);
+}
