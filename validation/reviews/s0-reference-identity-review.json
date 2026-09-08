@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "actual_model_files_verified": 10,
+  "actual_tensor_shapes_match_independent_inventory": 290,
+  "parameters": 494032768,
+  "reference_runs": [
+    {
+      "name": "reference-bf16-greedy-20260908T0552",
+      "dtype": "bfloat16",
+      "report_files_verified": 56,
+      "prompts": 3,
+      "steps": 42,
+      "report_sha256": "2d4356839ef46e3207707f642bba6d9a725259a2e90a8334e69204f6447d9fcc"
+    },
+    {
+      "name": "reference-f32-greedy-20260908T0554",
+      "dtype": "float32",
+      "report_files_verified": 56,
+      "prompts": 3,
+      "steps": 42,
+      "report_sha256": "ed7a56c88ffe6b6b629715b847fbc7415bbc82e6856c48ebbc03a6a080d16340"
+    }
+  ],
+  "scope": "Read-only remote actual artifact hashes/tensor inventory/reference report identity. CPU-only reference acceptance, not SDK inference or independently recomputed tensor mathematics."
+}

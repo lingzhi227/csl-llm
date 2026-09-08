@@ -1,0 +1,51 @@
+{
+  "reviewed_at": "2026-09-08T07:19:49.218115+00:00",
+  "manifest_sha256": "b6c97e81c312ff5b1938e6da5cb1f8af13f2121812d51c13b3e191b3f0fb09a7",
+  "results_sha256": "8c38f2d60d7d86564168e9357906b00b6e3ecff80661da4414d9e4c80cddf6af",
+  "wall_events_sha256": "f6438b7bba7ac5f844a2757cc0d78f120e2ece936a1146b7a8af69d65a3b168e",
+  "raw_outputs_verified": true,
+  "cases": [
+    {
+      "epoch": 0,
+      "mode": 0,
+      "cycles": [
+        55,
+        55,
+        55,
+        55
+      ],
+      "actual_sha256": "1b6dd81dd67b564fd7b0df96dac3f3bdfefc54f9e0ba5a4a4e0bac559bd329ab"
+    },
+    {
+      "epoch": 1,
+      "mode": 1,
+      "cycles": [
+        19190,
+        19190,
+        19190,
+        19190
+      ],
+      "actual_sha256": "5aa4f150fd76a2762ebd58bdd06ca075a734f8a52349583f6884f40b362e73e2"
+    },
+    {
+      "epoch": 2,
+      "mode": 0,
+      "cycles": [
+        55,
+        55,
+        55,
+        55
+      ],
+      "actual_sha256": "39f3354bf44e338168041a204b8918e4d095480467cf67fcd8e0d1ac58e7d3f7"
+    }
+  ],
+  "host_phase_totals_seconds": [
+    131.1582447658293,
+    280.8718538309913,
+    130.28200406301767
+  ],
+  "gemv_minus_mean_control_seconds": 150.15172941656783,
+  "elapsed_seconds": 551.6564996759407,
+  "peak_rss_kib": 2231852,
+  "scope": "Four sampled corner PEs only. Same-binary control and GEMV host-phase totals; difference includes simulator scheduling, execution and transport, not isolated compute cost."
+}

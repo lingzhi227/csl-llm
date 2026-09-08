@@ -1,0 +1,252 @@
+{
+  "manifest_sha256": "19aecf8e4f2ef53b6f7465265e351fe7036baab1e43fd077fc609cb690d6b6a2",
+  "results_sha256": "cceedc4f57d1a708db0dda445d92da1904603b013872385b90e11a11b37ab820",
+  "trace_and_model_config_verified": true,
+  "cases": [
+    {
+      "position": 0,
+      "in_place": false,
+      "checks": {
+        "query_out_independent": {
+          "max_abs": 0.0,
+          "l2": 0.0,
+          "peak": 0.0
+        },
+        "query_out_official": {
+          "max_abs": 0.0,
+          "l2": 0.0,
+          "peak": 0.0
+        },
+        "key_out_independent": {
+          "max_abs": 0.0,
+          "l2": 0.0,
+          "peak": 0.0
+        },
+        "key_out_official": {
+          "max_abs": 0.0,
+          "l2": 0.0,
+          "peak": 0.0
+        }
+      },
+      "actual_sha256": "440fc7d383e57e266e68b683c804544c6644304f699a839d21418e4f61e677a7"
+    },
+    {
+      "position": 1,
+      "in_place": false,
+      "checks": {
+        "query_out_independent": {
+          "max_abs": 5.089460231033627e-06,
+          "l2": 3.77253480000601e-08,
+          "peak": 6.349034490611454e-08
+        },
+        "query_out_official": {
+          "max_abs": 3.814697265625e-06,
+          "l2": 2.114224434490007e-08,
+          "peak": 4.758784811938535e-08
+        },
+        "key_out_independent": {
+          "max_abs": 3.330294873649109e-06,
+          "l2": 2.3163096425693217e-08,
+          "peak": 2.5655076955284345e-08
+        },
+        "key_out_official": {
+          "max_abs": 3.814697265625e-06,
+          "l2": 1.0914825528591532e-08,
+          "peak": 2.938669267114692e-08
+        }
+      },
+      "actual_sha256": "ebef91ee3f10deb72a166304ee6de64d5d1777645e121bc6033b9ef40d0ed587"
+    },
+    {
+      "position": 29,
+      "in_place": false,
+      "checks": {
+        "query_out_independent": {
+          "max_abs": 4.064375673351606e-06,
+          "l2": 4.2578028257060326e-08,
+          "peak": 5.0788288237480864e-08
+        },
+        "query_out_official": {
+          "max_abs": 1.9073486328125e-06,
+          "l2": 1.9087417934865157e-08,
+          "peak": 2.3834159250509122e-08
+        },
+        "key_out_independent": {
+          "max_abs": 4.444884197596366e-06,
+          "l2": 2.779703322496038e-08,
+          "peak": 3.4241929283563745e-08
+        },
+        "key_out_official": {
+          "max_abs": 7.62939453125e-06,
+          "l2": 2.5645626747496372e-08,
+          "peak": 5.877435256524188e-08
+        }
+      },
+      "actual_sha256": "c52a617692eb84ff801b64aa7020fcadafdf1521520bbff9e73a1e9bac21460b"
+    },
+    {
+      "position": 30,
+      "in_place": false,
+      "checks": {
+        "query_out_independent": {
+          "max_abs": 6.523514784362305e-06,
+          "l2": 4.8493230048720094e-08,
+          "peak": 8.152532843474445e-08
+        },
+        "query_out_official": {
+          "max_abs": 3.814697265625e-06,
+          "l2": 2.5390897723178978e-08,
+          "peak": 4.7672831653692345e-08
+        },
+        "key_out_independent": {
+          "max_abs": 4.166260325177973e-06,
+          "l2": 2.8910810083305636e-08,
+          "peak": 3.209552125423601e-08
+        },
+        "key_out_official": {
+          "max_abs": 7.62939453125e-06,
+          "l2": 2.7455169952875945e-08,
+          "peak": 5.877438710950738e-08
+        }
+      },
+      "actual_sha256": "f43ff285be7bc67787d5cfd53e9ec1fde27e245f0397a9e132c50404cf467ac5"
+    },
+    {
+      "position": 31,
+      "in_place": false,
+      "checks": {
+        "query_out_independent": {
+          "max_abs": 3.2919812227305556e-06,
+          "l2": 3.589542556446585e-08,
+          "peak": 4.114437438513142e-08
+        },
+        "query_out_official": {
+          "max_abs": 3.814697265625e-06,
+          "l2": 2.568083844109334e-08,
+          "peak": 4.767746841033975e-08
+        },
+        "key_out_independent": {
+          "max_abs": 3.560155604986903e-06,
+          "l2": 2.8126675379985343e-08,
+          "peak": 2.7426302749843352e-08
+        },
+        "key_out_official": {
+          "max_abs": 1.9073486328125e-06,
+          "l2": 8.53564499872854e-09,
+          "peak": 1.469360541345337e-08
+        }
+      },
+      "actual_sha256": "943a67b6e3311ccec72d20656f6a5eddaeaf4baa05ca67dff7766fde7a1a5738"
+    },
+    {
+      "position": 32,
+      "in_place": false,
+      "checks": {
+        "query_out_independent": {
+          "max_abs": 5.781512015801127e-06,
+          "l2": 4.510298396822099e-08,
+          "peak": 7.226662754548848e-08
+        },
+        "query_out_official": {
+          "max_abs": 3.814697265625e-06,
+          "l2": 2.8528474124430025e-08,
+          "peak": 4.768221974846866e-08
+        },
+        "key_out_independent": {
+          "max_abs": 3.844064892177812e-06,
+          "l2": 2.6268660383376445e-08,
+          "peak": 2.9613466700610195e-08
+        },
+        "key_out_official": {
+          "max_abs": 3.814697265625e-06,
+          "l2": 1.6953210001300438e-08,
+          "peak": 2.9387228099080098e-08
+        }
+      },
+      "actual_sha256": "39e69857cca1daeb59ae77d68d6c222d19265c99f248d742ad01f203a32e73a3"
+    },
+    {
+      "position": 1023,
+      "in_place": false,
+      "checks": {
+        "query_out_independent": {
+          "max_abs": 5.51180210095481e-06,
+          "l2": 4.496995528685935e-08,
+          "peak": 6.876295656493425e-08
+        },
+        "query_out_official": {
+          "max_abs": 7.62939453125e-06,
+          "l2": 4.1944041339721216e-08,
+          "peak": 9.518115877540302e-08
+        },
+        "key_out_independent": {
+          "max_abs": 8.277053737515416e-06,
+          "l2": 3.492650622263624e-08,
+          "peak": 6.380113750560495e-08
+        },
+        "key_out_official": {
+          "max_abs": 9.5367431640625e-07,
+          "l2": 3.934649524559793e-09,
+          "peak": 7.351106859100218e-09
+        }
+      },
+      "actual_sha256": "bf4a8ebaa0a27741995089a7550eb99783582832de09ee93b87940cdb8a92772"
+    },
+    {
+      "position": 2047,
+      "in_place": false,
+      "checks": {
+        "query_out_independent": {
+          "max_abs": 3.274124722452143e-06,
+          "l2": 4.3877863525698e-08,
+          "peak": 4.085250556251597e-08
+        },
+        "query_out_official": {
+          "max_abs": 3.814697265625e-06,
+          "l2": 3.656012509370379e-08,
+          "peak": 4.759743385099033e-08
+        },
+        "key_out_independent": {
+          "max_abs": 6.233335710703614e-06,
+          "l2": 3.715714209480914e-08,
+          "peak": 4.807711623666849e-08
+        },
+        "key_out_official": {
+          "max_abs": 3.814697265625e-06,
+          "l2": 1.6064863286500617e-08,
+          "peak": 2.9422391381357737e-08
+        }
+      },
+      "actual_sha256": "9edcf2fe4d53d3d54ec4b34b21dc9229430a8e15e7a49e87948959e8c73b7bbe"
+    },
+    {
+      "position": 29,
+      "in_place": true,
+      "checks": {
+        "query_out_independent": {
+          "max_abs": 4.064375673351606e-06,
+          "l2": 4.2578028257060326e-08,
+          "peak": 5.0788288237480864e-08
+        },
+        "query_out_official": {
+          "max_abs": 1.9073486328125e-06,
+          "l2": 1.9087417934865157e-08,
+          "peak": 2.3834159250509122e-08
+        },
+        "key_out_independent": {
+          "max_abs": 4.444884197596366e-06,
+          "l2": 2.779703322496038e-08,
+          "peak": 3.4241929283563745e-08
+        },
+        "key_out_official": {
+          "max_abs": 7.62939453125e-06,
+          "l2": 2.5645626747496372e-08,
+          "peak": 5.877435256524188e-08
+        }
+      },
+      "actual_sha256": "cfa555fbc8656d84b168a841fc5970e5e7b8cae9f62d605035778fc0bfca936f"
+    }
+  ],
+  "scope": "Independent half-split equations with rounded FP32 phases plus frozen official reference, all14Q/2K heads at9 position/alias cases. Frequency constants checked against theta; no causal attention or KV acceptance.",
+  "reviewed_at": "2026-09-08T07:32:36.632920+00:00"
+}

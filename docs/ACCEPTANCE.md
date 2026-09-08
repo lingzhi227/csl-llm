@@ -1,0 +1,10 @@
+# Acceptance rules
+
+1. Freeze official checkpoint revision and byte hashes, tokenizer/template and reference dependencies. Validate tensor names, shapes, biases, tied weights and all model-specific semantics.
+2. Establish deterministic official-reference prompts, full-logit/greedy results and intermediate traces before selecting target tolerances. Define finite errors, per-stage and end-to-end error budgets and top1/margin policy. Document any chosen storage conversions; same-precision comparison cannot replace the official reference.
+3. Complete SDK means actual CSL execution with the complete checkpoint, full24layers and full151936vocabulary. Check prompt prefill and iterative KV-cached decode, device greedy selection, EOS/length stop and reset/isolation. Small models or synthetic inputs qualify only their named probes.
+4. Host tokenization/loading/control and separate CPU reference are allowed. No host neural-network compute inside the claimed inference path. Model weights/KV resident on intended wafer; any simulator-specific execution partition must be explicit and cannot silently replace resident-device acceptance.
+5. Cover declared2048total context and up to256generation capacity through model runs and boundary/state tests. Keep support and empirically exercised ranges separate. A reduced-range smoke is not final acceptance.
+6. Preserve generated/handwritten source, compilation commands/versions, ELF/resource reports, actual runtime outputs, failure logs and immutable manifests. Inspect perPE memory, tasks/colors/queues/DSR/buffer lifetimes; do not infer global barriers from local callbacks.
+7. Measure costs early and report simulator walltime separately from simulated cycles. Performance claims require matched work/configuration and explicit scope. Hardware performance remains unverified until hardware exists.
+8. Coordinator independently checks evidence and full-goal coverage. Phase passes never auto-close the project; stop only after fullSDK acceptance or explicit user stop. Record deferred hardware work in the final report.

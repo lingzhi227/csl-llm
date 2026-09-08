@@ -1,0 +1,28 @@
+{
+  "phase": "S0",
+  "accepted": true,
+  "reviewed_at": "2026-09-08T06:10:49.106047+00:00",
+  "scope": "Pinned model artifacts, reproducible CPU reference and initial explicit precision contract only. This does not accept any CSL layer/model inference.",
+  "evidence_sha256": {
+    "DEVELOPMENT-PLAN.md": "0d7c67c16b4b7d35dba576d582b02efc129239f7239dc852d1e96d589ad28994",
+    "configs/target.json": "a960df2edd8b651df7c58529e3bfabbb3f7b9e4ece1905cb0171e029367f5270",
+    "configs/precision.json": "c5da7df9c06537cb205b8c5a760703fd39b7c519bb27666906cafb1d6e45b3b0",
+    "configs/prompts.json": "3b17a15b7c3787f1b826b635d1017d7824d446c056bd2bc9cf34c7c31fe1fb30",
+    "docs/REFERENCE.md": "60e6200d440e7fc0bb02748d0f31626799df2909931ea98feade1bc3ae25a914",
+    "coordination/s0-reference-identity-review.json": "ba473c5d1af50f61baed16cebed45d5f72e5b232825e7bfe84613c82b9167805",
+    "coordination/s0-semantics-review.json": "1d152e794051d4dbd867e0136e2299e0988da58c0476188558361e0c53baf224",
+    "coordination/precision-policy-review.json": "bea83179659390f6a702f9ff859b1822339acd3ef7b9608eabdc960981f690db"
+  },
+  "basis": [
+    "10 original checkpoint files and 290 tensor shapes/byte ranges independently verified",
+    "BF16 and canonical FP32 reference reports and retained payload identities checked: three prompts, 42 steps each",
+    "Explicit model equations checked by source review and 15288 reported metrics across 42 fixed prefixes; no independent full CPU rerun by coordinator",
+    "Precision gates frozen before CSL layer/model candidate results; original prompts retained and canonical tokens exact"
+  ],
+  "continuing_obligations": [
+    "Add boundary/adversarial/capacity reference corpus for S3-S6",
+    "Validate bitwise BF16 expansion and actual SDK stage/logit/token outputs",
+    "Measure full-model resource and simulator feasibility in S1"
+  ],
+  "sdk_complete": false
+}

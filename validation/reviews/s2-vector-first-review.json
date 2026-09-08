@@ -1,0 +1,349 @@
+{
+  "manifest_sha256": "284bad455c7e6c4cc5e6e69c585bb157ecd0577dd1bca5fa73e8bf6284eeaee6",
+  "results_sha256": "4c11b830f1b6e4793aa94aba966d724411a361ce6da7a015169dd8375337a36c",
+  "model_and_trace_hashes_verified": true,
+  "real_stage_inputs_gamma_and_reference_verified": true,
+  "cases": [
+    {
+      "name": "layer0-input-rms",
+      "checks": {
+        "independent_equation": {
+          "max_abs": 1.6316833117979712e-06,
+          "l2": 1.0826906926187672e-06,
+          "peak": 1.1013510610989595e-06
+        },
+        "frozen_reference": {
+          "max_abs": 1.7881393432617188e-06,
+          "l2": 1.1126390013887763e-06,
+          "peak": 1.2069556370581405e-06
+        }
+      },
+      "actual_sha256": "10e4b2b7813bf619e1f7d4fc1ca25c79e764a43fda839c32277f4f583f75c44c"
+    },
+    {
+      "name": "layer0-residual",
+      "checks": {
+        "independent_equation": {
+          "max_abs": 1.862645149230957e-09,
+          "l2": 1.4852921705349733e-08,
+          "peak": 3.6696459102882545e-09
+        },
+        "frozen_reference": {
+          "max_abs": 0.0,
+          "l2": 0.0,
+          "peak": 0.0
+        }
+      },
+      "actual_sha256": "857121010462713ae3361bcc4e71c6755297f6e4c90b669921ca8e74ceff45ce"
+    },
+    {
+      "name": "layer0-post-attention-rms",
+      "checks": {
+        "independent_equation": {
+          "max_abs": 3.761070086483187e-07,
+          "l2": 8.481530299938549e-08,
+          "peak": 3.267046891217786e-08
+        },
+        "frozen_reference": {
+          "max_abs": 2.384185791015625e-07,
+          "l2": 7.393918166342882e-08,
+          "peak": 2.0710187109084862e-08
+        }
+      },
+      "actual_sha256": "f948e828b06b98728bf6b03cd907d8aadb754585380df741b3883815500f31c0"
+    },
+    {
+      "name": "layer0-swiglu-slice",
+      "checks": {
+        "independent_equation": {
+          "max_abs": 1.9986603516652934e-07,
+          "l2": 2.7613454423929093e-07,
+          "peak": 7.248731760224549e-07
+        },
+        "frozen_reference": {
+          "max_abs": 1.9986603516652934e-07,
+          "l2": 2.7613454423953387e-07,
+          "peak": 7.248731760224549e-07
+        }
+      },
+      "actual_sha256": "28898c0ac961ed93bfc0cc3c1a5474060dea5ff2c2b7a6785edf5ed23ba9fdf3"
+    },
+    {
+      "name": "layer12-input-rms",
+      "checks": {
+        "independent_equation": {
+          "max_abs": 1.6275768892626274e-06,
+          "l2": 1.2852626693303605e-07,
+          "peak": 8.351322611046222e-08
+        },
+        "frozen_reference": {
+          "max_abs": 1.9073486328125e-06,
+          "l2": 1.2298734855311797e-07,
+          "peak": 9.786870345792639e-08
+        }
+      },
+      "actual_sha256": "b92d7e82cb31a80277b537d77f68f9c2badc4b11ee4cb9ea2da307c47323edb1"
+    },
+    {
+      "name": "layer12-residual",
+      "checks": {
+        "independent_equation": {
+          "max_abs": 2.2351741790771484e-07,
+          "l2": 2.4786179269256916e-08,
+          "peak": 3.254908836513307e-08
+        },
+        "frozen_reference": {
+          "max_abs": 0.0,
+          "l2": 0.0,
+          "peak": 0.0
+        }
+      },
+      "actual_sha256": "be03ea62679e2deaf9c935c5dec5bf10a2fedb7fc0a972c7fb036ea8d0c2bea4"
+    },
+    {
+      "name": "layer12-post-attention-rms",
+      "checks": {
+        "independent_equation": {
+          "max_abs": 1.1201174405783831e-06,
+          "l2": 6.06521548442264e-08,
+          "peak": 7.581756429230383e-08
+        },
+        "frozen_reference": {
+          "max_abs": 0.0,
+          "l2": 0.0,
+          "peak": 0.0
+        }
+      },
+      "actual_sha256": "e7021c62c7ce636ee38954c34ee64c82939e4b0fab950593c8f92d2443d5a7f1"
+    },
+    {
+      "name": "layer12-swiglu-slice",
+      "checks": {
+        "independent_equation": {
+          "max_abs": 2.484605814423446e-07,
+          "l2": 1.2104510336939955e-07,
+          "peak": 8.496163605713488e-08
+        },
+        "frozen_reference": {
+          "max_abs": 2.484605814423446e-07,
+          "l2": 1.2104510336945103e-07,
+          "peak": 8.496163605713488e-08
+        }
+      },
+      "actual_sha256": "1c59678d36efba0018ab350a874fd5ab22bc8d1435872e281071890ddcc3c697"
+    },
+    {
+      "name": "layer23-input-rms",
+      "checks": {
+        "independent_equation": {
+          "max_abs": 7.54458455176632e-06,
+          "l2": 4.930984367932067e-07,
+          "peak": 4.865456499007364e-07
+        },
+        "frozen_reference": {
+          "max_abs": 6.67572021484375e-06,
+          "l2": 4.226628313253794e-07,
+          "peak": 4.3051306886997517e-07
+        }
+      },
+      "actual_sha256": "64976585ba669c60ca21391988592e5e5ba612a27cdddc34610a6ee8347c4c44"
+    },
+    {
+      "name": "layer23-residual",
+      "checks": {
+        "independent_equation": {
+          "max_abs": 1.9073486328125e-06,
+          "l2": 3.1355331956511865e-08,
+          "peak": 3.4306716661616144e-08
+        },
+        "frozen_reference": {
+          "max_abs": 0.0,
+          "l2": 0.0,
+          "peak": 0.0
+        }
+      },
+      "actual_sha256": "b149531d52b071fb0f5027cf9f902865fd84bdf1cf2709a9de8175d88006b261"
+    },
+    {
+      "name": "layer23-post-attention-rms",
+      "checks": {
+        "independent_equation": {
+          "max_abs": 1.5765103427156646e-06,
+          "l2": 5.192697789119926e-08,
+          "peak": 7.667186462390308e-08
+        },
+        "frozen_reference": {
+          "max_abs": 1.9073486328125e-06,
+          "l2": 7.650092681608798e-08,
+          "peak": 9.276182279579125e-08
+        }
+      },
+      "actual_sha256": "8b6ff5f69454db490cb00cb516ecf2fe527b34c4a46d9fe4e004069aa199f92a"
+    },
+    {
+      "name": "layer23-swiglu-slice",
+      "checks": {
+        "independent_equation": {
+          "max_abs": 8.258651842396603e-07,
+          "l2": 7.917354952844696e-08,
+          "peak": 5.972363988917292e-08
+        },
+        "frozen_reference": {
+          "max_abs": 8.258651842396603e-07,
+          "l2": 7.917354952836033e-08,
+          "peak": 5.972363988917292e-08
+        }
+      },
+      "actual_sha256": "e7dc45fde1573384ed6c848e4b50289c44635daadaa996f284a523caf33cb3a8"
+    },
+    {
+      "name": "rms-zero",
+      "checks": {
+        "independent_equation": {
+          "max_abs": 0.0,
+          "l2": 0.0,
+          "peak": 0.0
+        },
+        "frozen_reference": {
+          "max_abs": 0.0,
+          "l2": 0.0,
+          "peak": 0.0
+        }
+      },
+      "actual_sha256": "3a52953e6cd18440f6e0a2681bb7201e2369701497330a50503ccf664939794a"
+    },
+    {
+      "name": "rms-tiny",
+      "checks": {
+        "independent_equation": {
+          "max_abs": 6.856742517519221e-11,
+          "l2": 2.8648291864466483e-08,
+          "peak": 6.856743680174883e-08
+        },
+        "frozen_reference": {
+          "max_abs": 6.856742517519221e-11,
+          "l2": 2.8648291864466483e-08,
+          "peak": 6.856743680174883e-08
+        }
+      },
+      "actual_sha256": "43e2494d03a1e5c66c997ca5cfe7a203070943dfcdcf82279c63268d8f62cdbb"
+    },
+    {
+      "name": "rms-large",
+      "checks": {
+        "independent_equation": {
+          "max_abs": 2.1727478949351564e-07,
+          "l2": 9.745482049319845e-08,
+          "peak": 1.2558374039364867e-07
+        },
+        "frozen_reference": {
+          "max_abs": 2.1727478949351564e-07,
+          "l2": 9.745482049319845e-08,
+          "peak": 1.2558374039364867e-07
+        }
+      },
+      "actual_sha256": "513b9b49109583f800ba6ace08fbb3e4cfd1fc613a38e0fd7369139a05d66eaa"
+    },
+    {
+      "name": "swiglu-extremes",
+      "checks": {
+        "independent_equation": {
+          "max_abs": 7.591486792080104e-06,
+          "l2": 2.4849694961599827e-08,
+          "peak": 3.795743396040052e-08
+        },
+        "frozen_reference": {
+          "max_abs": 7.591486792080104e-06,
+          "l2": 2.4849694961599827e-08,
+          "peak": 3.795743396040052e-08
+        }
+      },
+      "actual_sha256": "bd0889427be0f5b248675c9822ed6c16422306b6ff758cfdef1ca33166cfccde"
+    },
+    {
+      "name": "softmax-constant",
+      "checks": {
+        "independent_equation": {
+          "max_abs": 4.989228084492647e-11,
+          "l2": 4.470348363705411e-08,
+          "peak": 4.470348363705412e-08
+        },
+        "frozen_reference": {
+          "max_abs": 4.989228084492647e-11,
+          "l2": 4.470348363705411e-08,
+          "peak": 4.470348363705412e-08
+        },
+        "mass_error": 4.470348358154297e-08
+      },
+      "actual_sha256": "11f5ca19abe79f2b2ddd1cc7d4d81361d9ce991838a37c5915adad5a53c32b38"
+    },
+    {
+      "name": "softmax-wide",
+      "checks": {
+        "independent_equation": {
+          "max_abs": 4.0368697620807303e-08,
+          "l2": 1.456731700194192e-07,
+          "peak": 2.0158542664601742e-07
+        },
+        "frozen_reference": {
+          "max_abs": 4.0368697620807303e-08,
+          "l2": 1.4567316999846927e-07,
+          "peak": 2.0158542664601742e-07
+        },
+        "mass_error": 5.248775636346181e-09
+      },
+      "actual_sha256": "f114e7f06140a114e8e620d6034c1f6337bd45a90c2818aeb38b1e193f6c1224"
+    },
+    {
+      "name": "softmax-two-equal-maxima",
+      "checks": {
+        "independent_equation": {
+          "max_abs": 7.253521668803164e-33,
+          "l2": 3.06713343303543e-31,
+          "peak": 1.450704333760633e-32
+        },
+        "frozen_reference": {
+          "max_abs": 7.253521668803164e-33,
+          "l2": 3.06713343303543e-31,
+          "peak": 1.450704333760633e-32
+        },
+        "mass_error": 0.0
+      },
+      "actual_sha256": "90a264801c40e57df6e347ef880fe928b202ae7de6fd2ee985d4b88f7a44db78"
+    },
+    {
+      "name": "repeat-first-rms",
+      "checks": {
+        "independent_equation": {
+          "max_abs": 1.6316833117979712e-06,
+          "l2": 1.0826906926187672e-06,
+          "peak": 1.1013510610989595e-06
+        },
+        "frozen_reference": {
+          "max_abs": 1.7881393432617188e-06,
+          "l2": 1.1126390013887763e-06,
+          "peak": 1.2069556370581405e-06
+        }
+      },
+      "actual_sha256": "f1fbb8792505789935e7f7af75c1b53ec41fa347b6d630b7b7c9be30745c7693"
+    },
+    {
+      "name": "rms-in-place",
+      "checks": {
+        "independent_equation": {
+          "max_abs": 1.6316833117979712e-06,
+          "l2": 1.0826906926187672e-06,
+          "peak": 1.1013510610989595e-06
+        },
+        "frozen_reference": {
+          "max_abs": 1.7881393432617188e-06,
+          "l2": 1.1126390013887763e-06,
+          "peak": 1.2069556370581405e-06
+        }
+      },
+      "actual_sha256": "f12187c702c6bdd33be863db82be6ddcadc4828b213b202e55f84ea757d18235"
+    }
+  ],
+  "scope": "Independent Python math equations and frozen canonical references on all21 length896 raw outputs. Includes RMS in-place/softmax mass, not fullFFN/causal attention or arbitrary shape qualification.",
+  "reviewed_at": "2026-09-08T07:22:39.582627+00:00"
+}

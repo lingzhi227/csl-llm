@@ -1,0 +1,65 @@
+{
+  "reviewed_at": "2026-09-08T07:07:25.295754+00:00",
+  "dsr_graphs": [
+    {
+      "file": "out_0.greedy.dot",
+      "sha256": "bf0776f57a044acb271a469a768aeb9de40c4980aef5c6ff9c48410de159a859",
+      "nodes": 7,
+      "edges": 18,
+      "assigned": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "proper_coloring": true
+    },
+    {
+      "file": "out_1.greedy.dot",
+      "sha256": "bf0776f57a044acb271a469a768aeb9de40c4980aef5c6ff9c48410de159a859",
+      "nodes": 7,
+      "edges": 18,
+      "assigned": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "proper_coloring": true
+    },
+    {
+      "file": "out_2.greedy.dot",
+      "sha256": "bf0776f57a044acb271a469a768aeb9de40c4980aef5c6ff9c48410de159a859",
+      "nodes": 7,
+      "edges": 18,
+      "assigned": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "proper_coloring": true
+    }
+  ],
+  "elfs": [
+    {
+      "elf": "out_0_0.elf",
+      "sha256": "b0802532fd1e5c62ad749748a3df5ffbbc24eebfb3da04f13f08bf3009494f23",
+      "static_high_water_bytes": 39248
+    },
+    {
+      "elf": "out_1_0.elf",
+      "sha256": "f277779d5cc173e68c54c2de480d025d342600a566128c0de6b0e1dd4103aede",
+      "static_high_water_bytes": 39248
+    },
+    {
+      "elf": "out_2_0.elf",
+      "sha256": "fe61a53f911b2e917c3f992a406d840f85ec6ff757d8717030e67039437dbc76",
+      "static_high_water_bytes": 39248
+    }
+  ],
+  "scope": "Independent final graph edge coloring and ELF section-byte audit. Static allocation only, not dynamic-stack peak or full protocol/lifecycle proof."
+}

@@ -1,0 +1,29 @@
+{
+  "manifest_sha256": "d99521c8001d45e4ea6199da046327dad4df22f978b929524d31ec93cc46ea85",
+  "results_sha256": "33d34edb4ae535caad78384567e3871f8af0889dda691ae50ed08541c603b764",
+  "execution_sha256": "be0df2d43ae67d0e11480a130b1df8a2df4dffe19bf650945b6c07477b42cee9",
+  "elapsed_seconds": 32.672435850137845,
+  "peak_rss_kib": 280772,
+  "cases": [
+    {
+      "epoch": 0,
+      "output_elements": 8192,
+      "exact_constant_result": true,
+      "actual_sha256": "2b265aecfbc16fc63c9046ce766d9e6c0015994c0cfb07f5e1b256b999f939ea"
+    },
+    {
+      "epoch": 1,
+      "output_elements": 8192,
+      "exact_constant_result": true,
+      "actual_sha256": "2734adf3be746eb56a2a09b1e726c719a61496a97f405517f7f65da8a098b76c"
+    },
+    {
+      "epoch": 2,
+      "output_elements": 8192,
+      "exact_constant_result": true,
+      "actual_sha256": "e76e8a4c1e06f7d7ab1926433ae24211bdc9ea74f387c20cae06d79a148ab17d"
+    }
+  ],
+  "scope": "All 256 PEs raw output checked against exact binary-representable constant GEMV result 224*(1/64)*(1/8)=0.4375. Replicated cost probe only, no communication/full-model acceptance.",
+  "reviewed_at": "2026-09-08T06:11:12.335414+00:00"
+}

@@ -1,0 +1,12 @@
+// Deterministic finite FP32 argmax; exact ties select smallest global index.
+const math=@import_module("<math>");
+fn select(values:[*]f32,length:u16,base:u32,value:*f32,index:*u32) void {
+ @assert(length>0 and length<=2048 and base<=151936-@as(u32,length));
+ var best=values[0];var winner=base;@assert(math.isFinite_f32(best));
+ for(@range(u16,length))|i|{const v=values[i];@assert(math.isFinite_f32(v));if(v>best){best=v;winner=base+@as(u32,i);}}
+ value.*=best;index.*=winner;
+}
+fn merge(candidate_value:f32,candidate_index:u32,value:*f32,index:*u32) void {
+ @assert(math.isFinite_f32(candidate_value) and candidate_index<151936);
+ if(candidate_value>value.* or (candidate_value==value.* and candidate_index<index.*)){value.*=candidate_value;index.*=candidate_index;}
+}

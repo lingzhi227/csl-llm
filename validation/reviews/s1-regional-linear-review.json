@@ -1,0 +1,121 @@
+{
+  "manifest_sha256": "5e7bfbde62c492693b2aabe76ba3da808948f49a0cd68886c2e343ac943196ec",
+  "results_sha256": "b451633049a8fc9e2ce06fd257b480d4735a113ceb307b5169d4d54f03d55710",
+  "line_sha256": "ec46a1840c19eac7f39dc985bae8f0f90fd1be0c442a873dc3cdca9eb3485b18",
+  "official_inputs_weights_verified": true,
+  "cases": [
+    {
+      "sequence": 0,
+      "checks": [
+        {
+          "epoch": 0,
+          "group": 0,
+          "l2": 2.532746912288521e-07,
+          "peak": 1.2784805802926448e-07
+        },
+        {
+          "epoch": 0,
+          "group": 1,
+          "l2": 1.72301276864855e-07,
+          "peak": 1.1569369781380427e-07
+        },
+        {
+          "epoch": 1,
+          "group": 0,
+          "l2": 2.2967192544765118e-07,
+          "peak": 1.3772610489920349e-07
+        },
+        {
+          "epoch": 1,
+          "group": 1,
+          "l2": 1.874571330623174e-07,
+          "peak": 1.4340525286950385e-07
+        },
+        {
+          "epoch": 2,
+          "group": 0,
+          "l2": 2.2296894756865926e-07,
+          "peak": 1.3312216845522898e-07
+        },
+        {
+          "epoch": 2,
+          "group": 1,
+          "l2": 1.7599853067394558e-07,
+          "peak": 1.0541375790901843e-07
+        },
+        {
+          "epoch": 3,
+          "group": 0,
+          "l2": 2.3711728094776147e-07,
+          "peak": 1.3414614684778335e-07
+        },
+        {
+          "epoch": 3,
+          "group": 1,
+          "l2": 1.6647402241109679e-07,
+          "peak": 1.0889539562177368e-07
+        }
+      ],
+      "guards": 6,
+      "actual_sha256": "4cc3dc99ab1c73893797705c1856c6ae47511a7be04f746113c64bcda55f5cc1"
+    },
+    {
+      "sequence": 1,
+      "checks": [
+        {
+          "epoch": 0,
+          "group": 0,
+          "l2": 0.0,
+          "peak": 0.0
+        },
+        {
+          "epoch": 0,
+          "group": 1,
+          "l2": 0.0,
+          "peak": 0.0
+        },
+        {
+          "epoch": 1,
+          "group": 0,
+          "l2": 2.0880406309399456e-08,
+          "peak": 2.4642999940240725e-08
+        },
+        {
+          "epoch": 1,
+          "group": 1,
+          "l2": 2.4425199027601276e-08,
+          "peak": 5.3534173566463236e-08
+        },
+        {
+          "epoch": 2,
+          "group": 0,
+          "l2": 2.0234411091587585e-08,
+          "peak": 3.093873792658293e-08
+        },
+        {
+          "epoch": 2,
+          "group": 1,
+          "l2": 2.408395943161514e-08,
+          "peak": 5.416664748264568e-08
+        },
+        {
+          "epoch": 3,
+          "group": 0,
+          "l2": 4.2285600753440634e-08,
+          "peak": 1.0145614252180132e-07
+        },
+        {
+          "epoch": 3,
+          "group": 1,
+          "l2": 3.2579316653703724e-08,
+          "peak": 5.4380806272673736e-08
+        }
+      ],
+      "guards": 6,
+      "actual_sha256": "15f90a35181441a32c5b21a2caddd78342377fa5652a66292c9c5f53332c38c4"
+    }
+  ],
+  "elapsed_seconds": 115.23709473782219,
+  "scope": "Independent raw numerical audit for two translated horizontal8PE fixed-length regions;4 device epochs each and2 reset sequences. Six sampled guards only; no arbitrary routing/global barrier/queue-drain claim.",
+  "reviewed_at": "2026-09-08T07:26:22.292789+00:00"
+}

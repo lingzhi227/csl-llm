@@ -1,0 +1,50 @@
+[
+  {
+    "original_run": "regional-linear-20260908T072157772253Z",
+    "original_file": "line.csl",
+    "published": [
+      "csl/runtime/line_allreduce_f32.csl"
+    ],
+    "sha256": "ec46a1840c19eac7f39dc985bae8f0f90fd1be0c442a873dc3cdca9eb3485b18"
+  },
+  {
+    "original_run": "regional-linear-20260908T072157772253Z",
+    "original_file": "kernel.csl",
+    "published": [
+      "csl/kernels/local_gemv_bf16_f32_colmajor.csl"
+    ],
+    "sha256": "3e92175efe12b28065bb77934c54136db3c9287c68c81877781a0e527354304c"
+  },
+  {
+    "original_run": "qwen-position-20260908T072721665047Z",
+    "original_file": "kernel.csl",
+    "published": [
+      "csl/kernels/qwen_position_f32.csl"
+    ],
+    "sha256": "8d7be77e4938a5d5b7e95525e8869b12d6b2b529fcc25d3152128de230ad7cf8"
+  },
+  {
+    "original_run": "selection-20260908T073009176262Z",
+    "original_file": "embedding.csl",
+    "published": [
+      "csl/kernels/tied_embedding_f32.csl"
+    ],
+    "sha256": "a97ff65ee153bb5caedfd4085f659011cba3d686715c132ab95e8e6a25cf64a0"
+  },
+  {
+    "original_run": "selection-20260908T073009176262Z",
+    "original_file": "argmax.csl",
+    "published": [
+      "csl/kernels/argmax_f32.csl"
+    ],
+    "sha256": "f2d70dae54e1bea001256f345dd870ee9a9cafdcbda1703d7899e7eabce0e096"
+  },
+  {
+    "original_run": "vector-f32-20260908T071859637394Z",
+    "original_file": "kernel.csl",
+    "published": [
+      "csl/kernels/vector_f32.csl"
+    ],
+    "sha256": "e923d62d7c3527d80282bb6b4714bb00b537510d8c4a48455f84aa939571b26b"
+  }
+]

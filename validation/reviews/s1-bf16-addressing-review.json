@@ -1,0 +1,25 @@
+{
+  "reviewed_at": "2026-09-08T06:18:56.274544+00:00",
+  "source_sha256": {
+    "csl/kernels/local_gemv_bf16_f32.csl": "f4f12aec2684d1d58431013b979fc9b059618bbf537510174e9a695ffc90ea98",
+    "tools/bf16_bits_probe.py": "fbdb069fea91de5179e42ad3848177b0beaf991a6e89afd56218338b1a211d52",
+    "tools/elf_memory.py": "8cf00d0baa8da79c0de99f2e9d3f991c8581b5bdd4f421986788e3a26d089823"
+  },
+  "findings": [
+    {
+      "priority": "high",
+      "finding": "expand_column constructs half DSD from &weights[column]; odd columns need explicit descriptor offset from aligned weights base based on prior verified SDK behavior.",
+      "coverage_gap": "Exhaustive bit-pattern probe uses columns=1,column=0 only; it cannot validate odd source-column addressing or row stride.",
+      "requested_validation": "Production columns=224 even/odd column alternation, row stride, sequential expansions without intermediate reset; exact u32 output."
+    },
+    {
+      "priority": "medium",
+      "finding": "elf_memory filters alloc sections by start<49152 before checking bounds, so out-of-range sections can be silently excluded.",
+      "requested_validation": "Inventory excluded alloc sections and justify address-space mapping; check all SRAM-relevant sections and spans explicitly."
+    }
+  ],
+  "observed_failed_run": "bf16-bits-20260908T061151944583Z",
+  "observed_failure": "Compile-time pointer cast not supported; current local source switches export to f32 while reading raw 32-bit data. No execution pass yet.",
+  "sdk_complete": false,
+  "subsequent_correction": "See s1-bf16-alternative-base-review.json: original construction also passes. Address coverage gap was valid; predicted defect in this path was not reproduced."
+}

@@ -1,0 +1,8 @@
+{
+  "reviewed_at": "2026-09-08T07:01:22.901719+00:00",
+  "layout_sha256": "a46b7718a016e94f35cdcb58fc7ea307874118a3c4fe2f99ea1f85e98ca886c5",
+  "geometry_unchanged_from_independently_checked_v1": true,
+  "bias_owner_shards_verified": 216,
+  "norm_owner_roles_verified": true,
+  "scope": "Static auxiliary owner mapping added; code/memory/transport and runtime remain unqualified."
+}

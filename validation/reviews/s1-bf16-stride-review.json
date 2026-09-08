@@ -1,0 +1,22 @@
+{
+  "source_hashes_verified": true,
+  "manifest_sha256": "8d2017ca1d830d2a10ad222032952f7619b35b204fa86d978bc761e57aa0a2eb",
+  "kernel_sha256": "0880517060f5b5f12f20c4c5fee505e7a1ff7a7260d61d902a66c038475598e0",
+  "results_sha256": "ed67323c7409526da8e07f1c0e2a547a376b3c98fa1496f4e4050a11951c9539",
+  "execution_sha256": "6076a034a85690350cfae8b95da36099e9dfb2e428419b1abc19ea0db8f9a508",
+  "input_sha256": "5317eccce9d5823a385487406b115fd2186966eddb65f05af5cfa3ccb8a022c8",
+  "all_words_exact": true,
+  "checked_words": 16384,
+  "wide_columns_covered": 224,
+  "strides": [
+    224,
+    3
+  ],
+  "calls": 16,
+  "progress_verified": true,
+  "observed_cleanup_all_gone": true,
+  "elapsed_seconds": 72.36678284103982,
+  "scope": "Independent raw-word and original-input address calculation for production expansion, 64 rows, all 224 columns and stride 3. No neural GEMV or full-model acceptance.",
+  "reviewed_at": "2026-09-08T06:31:36.624823+00:00",
+  "matches_current_local_kernel": true
+}

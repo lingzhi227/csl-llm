@@ -1,0 +1,26 @@
+{
+  "reviewed_at": "2026-09-08T06:50:27.053707+00:00",
+  "source_sha256": {
+    "tools/distributed_linear_probe.py": "4ae11e30ef22c6c01a89d547cd6e90e1b7d334d9bc4febee2867d21a94600537",
+    "csl/runtime/distributed_linear_pe.csl": "6db9ef575eb1cb9cee5971539fdd1dbfc6b93f736a99f2ef215314d12a17a70c",
+    "csl/kernels/local_gemv_bf16_f32_colmajor.csl": "3e92175efe12b28065bb77934c54136db3c9287c68c81877781a0e527354304c"
+  },
+  "scope": "Pre-execution source review only",
+  "observations": [
+    "Eight contiguous 112-element input shards cover full hidden896 for128 original UP outputs",
+    "Frozen planned cases include three canonical FP32 traces, shard-boundary basis vectors, zero/sign/return",
+    "Sequential synchronous kernel phase precedes SDK sum and broadcast callbacks",
+    "Per-PE partial and final numerical checks are declared; actual compiled DSR/resource coexistence and lifecycle remain pending"
+  ],
+  "scale_probe": "gemv-bf16-64x64-20260908T064407307372Z observed at read-output-1; incomplete sampled cost evidence",
+  "next_review": [
+    "Actual eight-PE compile/DSR/ELF and original-input raw outputs",
+    "Explicit ownership and post-collective idle/lifecycle guarantees before operator qualification"
+  ],
+  "sdk_complete": false,
+  "subsequent_scope_constraint": {
+    "recorded_at": "2026-09-08T07:15:35.878813+00:00",
+    "developer_finding": "SDK collectives params and initialization use full application rectangle/global coordinates. Origin8PE probe does not qualify translated or concurrent regions.",
+    "required": "Explicit regional coordinate/root/completion contract and translated isolated-region SDK probe before composed layer acceptance."
+  }
+}

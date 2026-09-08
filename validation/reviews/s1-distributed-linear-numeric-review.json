@@ -1,0 +1,163 @@
+{
+  "manifest_sha256": "b6630ecf2340872007b65715fad1a543cef63abfe50350d93a19034eb81414e7",
+  "results_sha256": "1b18c3d414d693038e5f8e2d672dcbb3d309fadc129f0b6cb4e9ea23e518369f",
+  "input_sha256": "2bb6ea12d0f56dddcd65e0d2001a79646b23c4e1ff841ca06bedeb263cf07a23",
+  "kernel_sha256": "3e92175efe12b28065bb77934c54136db3c9287c68c81877781a0e527354304c",
+  "model_and_reference_bindings_verified": true,
+  "packed_weights_exact": true,
+  "cases": [
+    {
+      "epoch": 0,
+      "checks": {
+        "partial": {
+          "l2": 2.1241812955682165e-07,
+          "peak": 5.298299568662124e-07
+        },
+        "result": {
+          "l2": 2.532746912288521e-07,
+          "peak": 1.2784805802926448e-07
+        }
+      },
+      "all_pe_result_equal": true,
+      "actual_sha256": "b50c47874bba808ab3da769f23b26fa41985b225976bbc499f424221a90a2c0f"
+    },
+    {
+      "epoch": 1,
+      "checks": {
+        "partial": {
+          "l2": 2.3142799172941625e-07,
+          "peak": 4.99013281396532e-07
+        },
+        "result": {
+          "l2": 2.0182933908607312e-07,
+          "peak": 1.5503281550059528e-07
+        }
+      },
+      "all_pe_result_equal": true,
+      "actual_sha256": "e7c528bdf75480fa36f6e42be90638695002fa49a77209bfbffca10ef04a2d62"
+    },
+    {
+      "epoch": 2,
+      "checks": {
+        "partial": {
+          "l2": 2.486950759326427e-07,
+          "peak": 4.5397768402566214e-07
+        },
+        "result": {
+          "l2": 2.499905418139324e-07,
+          "peak": 3.1256682852549456e-07
+        }
+      },
+      "all_pe_result_equal": true,
+      "actual_sha256": "95a53cbaeaf9b3803a31bba60b144673babf483da8de7ccd0369c6e4d25db829"
+    },
+    {
+      "epoch": 3,
+      "checks": {
+        "partial": {
+          "l2": 0.0,
+          "peak": 0.0
+        },
+        "result": {
+          "l2": 0.0,
+          "peak": 0.0
+        }
+      },
+      "all_pe_result_equal": true,
+      "actual_sha256": "451d249abd87644465449cd17a4d3ffdeaf275084e737c41d10c5dc0478400ea"
+    },
+    {
+      "epoch": 4,
+      "checks": {
+        "partial": {
+          "l2": 0.0,
+          "peak": 0.0
+        },
+        "result": {
+          "l2": 0.0,
+          "peak": 0.0
+        }
+      },
+      "all_pe_result_equal": true,
+      "actual_sha256": "6a436b5576ca969485502c0d2e58dd5c7880864d2b31f5583e8670469c11df07"
+    },
+    {
+      "epoch": 5,
+      "checks": {
+        "partial": {
+          "l2": 0.0,
+          "peak": 0.0
+        },
+        "result": {
+          "l2": 0.0,
+          "peak": 0.0
+        }
+      },
+      "all_pe_result_equal": true,
+      "actual_sha256": "c924bad2aeab5a4dc9c175e50ea9079bf55ffbe8dafa29ef8dde44028e3c66f6"
+    },
+    {
+      "epoch": 6,
+      "checks": {
+        "partial": {
+          "l2": 0.0,
+          "peak": 0.0
+        },
+        "result": {
+          "l2": 0.0,
+          "peak": 0.0
+        }
+      },
+      "all_pe_result_equal": true,
+      "actual_sha256": "0dc2525dee833326025dc2c663bd4938d41e4d114f560aa2b77813163872390a"
+    },
+    {
+      "epoch": 7,
+      "checks": {
+        "partial": {
+          "l2": 0.0,
+          "peak": 0.0
+        },
+        "result": {
+          "l2": 0.0,
+          "peak": 0.0
+        }
+      },
+      "all_pe_result_equal": true,
+      "actual_sha256": "dee00a9fc4dba0a8dd26586c8746376320a5c14619c99f4be22d99114ba4767a"
+    },
+    {
+      "epoch": 8,
+      "checks": {
+        "partial": {
+          "l2": 2.1241812955682165e-07,
+          "peak": 5.298299568662124e-07
+        },
+        "result": {
+          "l2": 2.532746912288521e-07,
+          "peak": 1.2784805802926448e-07
+        }
+      },
+      "all_pe_result_equal": true,
+      "actual_sha256": "9eb602e5db72872dc4c0887743586e3871c220675aa73f98eb6cfe86dd64b43f"
+    },
+    {
+      "epoch": 9,
+      "checks": {
+        "partial": {
+          "l2": 2.1241812955682165e-07,
+          "peak": 5.298299568662124e-07
+        },
+        "result": {
+          "l2": 2.532746912288521e-07,
+          "peak": 1.2784805802926448e-07
+        }
+      },
+      "all_pe_result_equal": true,
+      "actual_sha256": "42ca6ac5348b89e40837754a6015a924b19296dc0d5ccc4abf68db375cc0f88e"
+    }
+  ],
+  "elapsed_seconds": 59.124461989849806,
+  "scope": "Independent math.fsum over original checkpoint and inputs for all8 partials and full896 contraction,10 calls. No full-layer/model or cross-run performance acceptance.",
+  "reviewed_at": "2026-09-08T07:06:57.000719+00:00"
+}

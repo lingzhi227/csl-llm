@@ -1,0 +1,9 @@
+{
+  "purpose": "Frozen initial reference corpus before candidate CSL output; later capacity corpus is additive and separately versioned.",
+  "max_new_tokens": 16,
+  "prompts": [
+    {"id": "arithmetic", "messages": [{"role": "system", "content": "You are a helpful assistant."}, {"role": "user", "content": "What is 7 times 8? Answer briefly."}]},
+    {"id": "english", "messages": [{"role": "system", "content": "You are a helpful assistant."}, {"role": "user", "content": "Explain why the sky appears blue in one sentence."}]},
+    {"id": "chinese", "messages": [{"role": "system", "content": "You are a helpful assistant."}, {"role": "user", "content": "请用一句话解释什么是矩阵乘法。"}]}
+  ]
+}

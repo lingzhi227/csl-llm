@@ -1,0 +1,65 @@
+{
+  "manifest_sha256": "675fb379859f27fdc547a6092f44dd623248fb9ff053a14953f85399f4b728dc",
+  "results_sha256": "459fb184f153569e53d43b4c805a24f4159ca297e688fe0466e7ba6f1bef80a9",
+  "frozen_file_hashes_match": true,
+  "official_weight_slice_exact": true,
+  "reference_activation_slice_exact": true,
+  "cases": [
+    {
+      "epoch": 0,
+      "relative_l2": 1.151296833063467e-07,
+      "relative_peak": 1.5624806094255123e-07,
+      "actual_sha256": "9c4bacd60f41dc169dd1c06dfbd9581c64f46f4365019622a1bcbf94a2cb83c0",
+      "timing": [
+        [
+          [
+            6,
+            0,
+            0,
+            17282,
+            0,
+            0
+          ]
+        ]
+      ]
+    },
+    {
+      "epoch": 1,
+      "relative_l2": 1.151296833063467e-07,
+      "relative_peak": 1.5624806094255123e-07,
+      "actual_sha256": "76e9ab583c1531ddb0ff9fe4671d3ef2cf587be2c7ddbd2cf9b8ac3500e12b8f",
+      "timing": [
+        [
+          [
+            6,
+            0,
+            0,
+            17282,
+            0,
+            0
+          ]
+        ]
+      ]
+    },
+    {
+      "epoch": 2,
+      "relative_l2": 1.151296833063467e-07,
+      "relative_peak": 1.5624806094255123e-07,
+      "actual_sha256": "5cd3c55a48604770bf71860905a613afe9d272b86f3082b0ee61109941fbcd0f",
+      "timing": [
+        [
+          [
+            6,
+            0,
+            0,
+            17282,
+            0,
+            0
+          ]
+        ]
+      ]
+    }
+  ],
+  "scope": "Independent math.fsum comparison of existing raw SDK outputs; repeated same input on one PE, not full-model acceptance.",
+  "reviewed_at": "2026-09-08T06:02:56.572022+00:00"
+}

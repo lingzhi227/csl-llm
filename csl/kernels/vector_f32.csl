@@ -1,0 +1,48 @@
+// Synchronous FP32 vector operators built on SDK math and memory DSDs.
+// Reduction-map structure follows SDK benchmark BLAS (Apache-2.0).
+// Caller owns storage and joins asynchronous users before entry. No fabric
+// queues, colors, tasks or asynchronous microthreads are allocated here.
+param length:u16;
+comptime { @comptime_assert(length>0 and length<=2048); }
+const math=@import_module("<math>");
+fn square_add(x:f32,total:*f32) f32 { return total.*+x*x; }
+fn add(x:f32,total:*f32) f32 { return total.*+x; }
+fn maximum(x:f32,peak:*f32) f32 { return if(x>peak.*) x else peak.*; }
+fn exponential(x:f32) f32 { return math.exp_f32(x); }
+fn silu_value(x:f32) f32 {
+ const magnitude:f32=if(x<0.0) -x else x;
+ const e=math.exp_f32(-magnitude);
+ return (if(x>=0.0) x else x*e)/(1.0+e);
+}
+// Input/gamma finite; squared sum must remain representable in FP32.
+// output may equal input, but gamma must not alias output.
+fn rmsnorm(input:[*]f32,gamma:[*]f32,output:[*]f32) void {
+ const x=@get_dsd(mem1d_dsd,.{.base_address=input,.extent=length});
+ const g=@get_dsd(mem1d_dsd,.{.base_address=gamma,.extent=length});
+ const y=@get_dsd(mem1d_dsd,.{.base_address=output,.extent=length});
+ var sum:f32=0.0;@map(square_add,x,&sum,&sum);
+ const inverse:f32=1.0/math.sqrt_f32(sum/@as(f32,length)+0.000001);
+ @fmuls(y,x,inverse);@fmuls(y,y,g);
+}
+// Distinct output, gate and up buffers. Stable negative branch avoids overflow.
+fn swiglu(gate:[*]f32,up:[*]f32,output:[*]f32) void {
+ const g=@get_dsd(mem1d_dsd,.{.base_address=gate,.extent=length});
+ const u=@get_dsd(mem1d_dsd,.{.base_address=up,.extent=length});
+ const y=@get_dsd(mem1d_dsd,.{.base_address=output,.extent=length});
+ @map(silu_value,g,y);@fmuls(y,y,u);
+}
+// All inputs finite. Attention masking is a separate active-length contract;
+// callers must not pass an all-masked vector to this dense softmax routine.
+fn softmax(input:[*]f32,output:[*]f32) void {
+ const x=@get_dsd(mem1d_dsd,.{.base_address=input,.extent=length});
+ const y=@get_dsd(mem1d_dsd,.{.base_address=output,.extent=length});
+ var peak:f32=@bitcast(f32,@as(u32,0xff7fffff));@map(maximum,x,&peak,&peak);
+ @fsubs(y,x,peak);@map(exponential,y,y);
+ var sum:f32=0.0;@map(add,y,&sum,&sum);@fmuls(y,y,1.0/sum);
+}
+fn residual(input:[*]f32,other:[*]f32,output:[*]f32) void {
+ const x=@get_dsd(mem1d_dsd,.{.base_address=input,.extent=length});
+ const z=@get_dsd(mem1d_dsd,.{.base_address=other,.extent=length});
+ const y=@get_dsd(mem1d_dsd,.{.base_address=output,.extent=length});
+ @fadds(y,x,z);
+}

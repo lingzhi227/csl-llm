@@ -1,0 +1,12 @@
+{
+  "manifest_sha256": "e34d4106e4b0e450ed78dbae78ab863a52cdbe61d9e82ff2d4893b2f18351af8",
+  "kernel_sha256": "ac9f00da226da6d7a27c5ae6e2d3743e33acb994da80c28c709a7d3113a81ac8",
+  "results_sha256": "ed67323c7409526da8e07f1c0e2a547a376b3c98fa1496f4e4050a11951c9539",
+  "input_sha256": "5317eccce9d5823a385487406b115fd2186966eddb65f05af5cfa3ccb8a022c8",
+  "raw_output_hashes_verified": true,
+  "success": true,
+  "elapsed_seconds": 71.33744566282257,
+  "reviewed_at": "2026-09-08T06:36:14.491016+00:00",
+  "scope": "Alternative original base-address construction passes the same 16384 raw words; raw hashes match independently verified positive experiment. Negative label is historical intent, not observed failure.",
+  "correction": "Earlier prediction that this @get_dsd construction necessarily reproduces the old odd-base behavior was unsupported and contradicted by this experiment. Do not conflate @get_dsd construction with the prior @set_dsd_base behavior. Explicit increment remains a reviewed design choice, not a demonstrated fix for this path."
+}

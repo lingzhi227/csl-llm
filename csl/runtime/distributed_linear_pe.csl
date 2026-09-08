@@ -1,0 +1,31 @@
+// One row group of a distributed linear operator, FP32 SDK sum+broadcast.
+// Synchronous matrix kernel leases DSR3/4 before the asynchronous SDK phase.
+param memcpy_params;
+param c2d_params;
+const sys=@import_module("<memcpy/memcpy>",memcpy_params);
+const clock=@import_module("<time>");
+const mx=@import_module("<collectives_2d/pe>",.{.dim_params=c2d_params.x});
+const kernel=@import_module("kernel.csl",.{.rows=128,.columns=112});
+const callback=@get_local_task_id(10);
+var weights=@zeros([14336]u16);var input=@zeros([112]f32);
+var partial=@zeros([128]f32);var result=@zeros([128]f32);
+var progress=@zeros([1]u32);var timing=@zeros([9]u16);
+var started=@zeros([3]u16);var middle=@zeros([3]u16);var finished=@zeros([3]u16);
+var active:bool=false;var phase:u16=0;
+const wp:[*]u16=&weights;const xp:[*]f32=&input;const pp:[*]f32=&partial;const rp:[*]f32=&result;const cp:[*]u32=&progress;const tp:[*]u16=&timing;
+fn initialize() void {mx.init();sys.unblock_cmd_stream();}
+fn compute() void {
+ @assert(!active);active=true;phase=0;clock.enable_tsc();clock.get_timestamp(&started);
+ kernel.compute(&weights,&input,&partial);clock.get_timestamp(&middle);
+ mx.reduce_fadds(0,&partial,&result,128,callback);
+}
+task advance() void {
+ @assert(active);
+ if(phase==0){phase=1;mx.broadcast(0,@ptrcast([*]u32,&result),128,callback);}
+ else{
+  @assert(phase==1);clock.get_timestamp(&finished);clock.disable_tsc();
+  for(@range(u16,3))|i|{timing[i]=started[i];timing[i+3]=middle[i];timing[i+6]=finished[i];}
+  progress[0]+=1;active=false;sys.unblock_cmd_stream();
+ }
+}
+comptime{@bind_local_task(advance,callback);@export_symbol(wp,"weights");@export_symbol(xp,"input");@export_symbol(pp,"partial");@export_symbol(rp,"result");@export_symbol(cp,"progress");@export_symbol(tp,"timing");@export_symbol(initialize);@export_symbol(compute);}

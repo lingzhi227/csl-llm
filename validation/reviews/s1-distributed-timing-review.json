@@ -1,0 +1,38 @@
+{
+  "reviewed_at": "2026-09-08T07:28:56.090684+00:00",
+  "manifest_sha256": "f2b2c42ce719473bf3e515e6bbe7242fed5ea591807b81ad1758e8a019fc1e09",
+  "results_sha256": "b4bd461aef806a149f10079a07bf4daff0012b438916a25e7762e4308c9eaa97",
+  "actual_sha256": "109d4badf7ca3f61babf8acc654a602c127d1016dd473895c2e7ec3f99a81bcb",
+  "kernel_cycles": [
+    18961,
+    18961,
+    18961,
+    18961,
+    18961,
+    18961,
+    18961,
+    18961
+  ],
+  "collective_cycles": [
+    1334,
+    1334,
+    1334,
+    1334,
+    1334,
+    1334,
+    1334,
+    1334
+  ],
+  "total_cycles": [
+    20295,
+    20295,
+    20295,
+    20295,
+    20295,
+    20295,
+    20295,
+    20295
+  ],
+  "final_result_independent_fsum_l2": 2.532746912288521e-07,
+  "scope": "Raw three timestamps verified under one counter interval, all8PEs. Intervals include instrumentation boundary costs. New binary only; no retrospective decomposition or causal explanation of earlier runs."
+}

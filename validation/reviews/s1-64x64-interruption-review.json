@@ -1,0 +1,17 @@
+{
+  "reviewed_at": "2026-09-08T06:12:17.093035+00:00",
+  "run": "gemv-64x64-20260908T055950559879Z",
+  "observed_execution_success": false,
+  "observed_stage": "read-output-0",
+  "observed_elapsed_seconds": 534.7095161159523,
+  "observed_peak_rss_kib": 2218772,
+  "developer_explanation": "Developer deliberately interrupted slow full-grid diagnostic readback. Singularity descendants survived original launcher cleanup and were subsequently terminated after ownership verification; developer reports all identified PIDs exited.",
+  "independent_scope": "Execution and stage read directly; cleanup termination reported by developer, not independently observed. No numeric or intrinsic SDK failure inferred.",
+  "next": "Single simulator exhaustive BF16 bit expansion probe; improved owned-process cleanup; later explicitly sampled cost diagnostics.",
+  "cost_attribution_correction": {
+    "recorded_at": "2026-09-08T06:54:53.209566+00:00",
+    "finding": "Host stage read-output identifies where the program was waiting, not the division between pending simulated compute and data transfer. The 534.71s aggregate cannot be described as pure transfer cost.",
+    "required_evidence": "Same-layout no-op baseline and controlled call/thread measurements as needed before cost decomposition.",
+    "environment": "Continue workstation single simulator. Developer reports read-only host capacity inspection only; alternate host lacks verified SDK/runtime and is not an accepted execution environment."
+  }
+}

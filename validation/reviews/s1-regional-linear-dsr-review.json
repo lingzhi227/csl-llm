@@ -1,0 +1,261 @@
+{
+  "reviewed_at": "2026-09-08T07:27:32.009478+00:00",
+  "final_dsatur_graphs": [
+    {
+      "file": "out_0.dsatur.dot",
+      "sha256": "b9165c6a43acb9793d83537a440a956aac4b3473546b99f3d61715166cf5fe15",
+      "nodes": 2,
+      "edges": 1,
+      "assigned": [
+        0,
+        1
+      ]
+    },
+    {
+      "file": "out_1.dsatur.dot",
+      "sha256": "b9165c6a43acb9793d83537a440a956aac4b3473546b99f3d61715166cf5fe15",
+      "nodes": 2,
+      "edges": 1,
+      "assigned": [
+        0,
+        1
+      ]
+    },
+    {
+      "file": "out_10.dsatur.dot",
+      "sha256": "52b1b0d14a1b9eacb29f808a012512d82622e16ae240e5f24553ce6d1b0567a3",
+      "nodes": 11,
+      "edges": 33,
+      "assigned": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "file": "out_11.dsatur.dot",
+      "sha256": "5692b46277fb276ced17b5c5bf300d97344063f47d88621fa3b8f1968a3ac312",
+      "nodes": 11,
+      "edges": 33,
+      "assigned": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "file": "out_12.dsatur.dot",
+      "sha256": "5692b46277fb276ced17b5c5bf300d97344063f47d88621fa3b8f1968a3ac312",
+      "nodes": 11,
+      "edges": 33,
+      "assigned": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "file": "out_13.dsatur.dot",
+      "sha256": "5692b46277fb276ced17b5c5bf300d97344063f47d88621fa3b8f1968a3ac312",
+      "nodes": 11,
+      "edges": 33,
+      "assigned": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "file": "out_14.dsatur.dot",
+      "sha256": "5692b46277fb276ced17b5c5bf300d97344063f47d88621fa3b8f1968a3ac312",
+      "nodes": 11,
+      "edges": 33,
+      "assigned": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "file": "out_15.dsatur.dot",
+      "sha256": "5692b46277fb276ced17b5c5bf300d97344063f47d88621fa3b8f1968a3ac312",
+      "nodes": 11,
+      "edges": 33,
+      "assigned": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "file": "out_16.dsatur.dot",
+      "sha256": "5692b46277fb276ced17b5c5bf300d97344063f47d88621fa3b8f1968a3ac312",
+      "nodes": 11,
+      "edges": 33,
+      "assigned": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "file": "out_17.dsatur.dot",
+      "sha256": "70b680ec599b5f8e5ed121332a1734b3bde3eda03bc614ea489909fca7e683d1",
+      "nodes": 11,
+      "edges": 32,
+      "assigned": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "file": "out_18.dsatur.dot",
+      "sha256": "b9165c6a43acb9793d83537a440a956aac4b3473546b99f3d61715166cf5fe15",
+      "nodes": 2,
+      "edges": 1,
+      "assigned": [
+        0,
+        1
+      ]
+    },
+    {
+      "file": "out_2.dsatur.dot",
+      "sha256": "52b1b0d14a1b9eacb29f808a012512d82622e16ae240e5f24553ce6d1b0567a3",
+      "nodes": 11,
+      "edges": 33,
+      "assigned": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "file": "out_3.dsatur.dot",
+      "sha256": "5692b46277fb276ced17b5c5bf300d97344063f47d88621fa3b8f1968a3ac312",
+      "nodes": 11,
+      "edges": 33,
+      "assigned": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "file": "out_4.dsatur.dot",
+      "sha256": "5692b46277fb276ced17b5c5bf300d97344063f47d88621fa3b8f1968a3ac312",
+      "nodes": 11,
+      "edges": 33,
+      "assigned": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "file": "out_5.dsatur.dot",
+      "sha256": "5692b46277fb276ced17b5c5bf300d97344063f47d88621fa3b8f1968a3ac312",
+      "nodes": 11,
+      "edges": 33,
+      "assigned": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "file": "out_6.dsatur.dot",
+      "sha256": "5692b46277fb276ced17b5c5bf300d97344063f47d88621fa3b8f1968a3ac312",
+      "nodes": 11,
+      "edges": 33,
+      "assigned": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "file": "out_7.dsatur.dot",
+      "sha256": "5692b46277fb276ced17b5c5bf300d97344063f47d88621fa3b8f1968a3ac312",
+      "nodes": 11,
+      "edges": 33,
+      "assigned": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "file": "out_8.dsatur.dot",
+      "sha256": "5692b46277fb276ced17b5c5bf300d97344063f47d88621fa3b8f1968a3ac312",
+      "nodes": 11,
+      "edges": 33,
+      "assigned": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "file": "out_9.dsatur.dot",
+      "sha256": "70b680ec599b5f8e5ed121332a1734b3bde3eda03bc614ea489909fca7e683d1",
+      "nodes": 11,
+      "edges": 32,
+      "assigned": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  ],
+  "intermediate_greedy_failures_preserved": true,
+  "scope": "Final DSATUR edge coloring and explicit assignments verified. Intermediate greedy failures are not compiler rejection. Fixed line protocol only; no dynamic resource release/global barrier proof."
+}

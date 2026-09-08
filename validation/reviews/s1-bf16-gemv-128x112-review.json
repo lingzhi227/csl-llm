@@ -1,0 +1,76 @@
+{
+  "manifest_sha256": "f946a62e08c0b9f6989d1a68bcac6fb1e57fc5b98623610d0b161ff11fee9449",
+  "kernel_sha256": "3e92175efe12b28065bb77934c54136db3c9287c68c81877781a0e527354304c",
+  "results_sha256": "bdfb04fbb26b3d50be1854b06819a96a34e737338250c57750f2c3328f8ac957",
+  "official_weights_and_bf16_bits_exact": true,
+  "canonical_fp32_activation_verified": true,
+  "cases": [
+    {
+      "epoch": 0,
+      "l2": 1.697030421128018e-07,
+      "peak": 1.9847194775533684e-07,
+      "cycles": 33405,
+      "actual_sha256": "44d6f98014550a1b7e103fdb2d28e81e2d3e90cb4aa4a5bfcb6e8b32bc042fad"
+    },
+    {
+      "epoch": 1,
+      "l2": 0.0,
+      "peak": 0.0,
+      "cycles": 33405,
+      "actual_sha256": "67a56b105babb91d69b3b0df7d703ec62126db65b99600af656de3d679ceffc3"
+    },
+    {
+      "epoch": 2,
+      "l2": 0.0,
+      "peak": 0.0,
+      "cycles": 33405,
+      "actual_sha256": "c9514184404386c6d7fe94fda9b09cfb3a5fed041863e84d44f470a690c38f4d"
+    },
+    {
+      "epoch": 3,
+      "l2": 0.0,
+      "peak": 0.0,
+      "cycles": 33405,
+      "actual_sha256": "809c8781a0a2fad554479085f2989e66a5e83eef06e2e2e03ddfbcde70b171a1"
+    },
+    {
+      "epoch": 4,
+      "l2": 0.0,
+      "peak": 0.0,
+      "cycles": 33405,
+      "actual_sha256": "42dcdf72fb6f38b1c78493a9a1d42c6ff3015dbb607596d3f32059da5dc54a70"
+    },
+    {
+      "epoch": 5,
+      "l2": 0.0,
+      "peak": 0.0,
+      "cycles": 33405,
+      "actual_sha256": "61a273bda44d2a1cdc5832f00b572ab8a50efea4ce2a349b8aa7b00129f5b201"
+    },
+    {
+      "epoch": 6,
+      "l2": 0.0,
+      "peak": 0.0,
+      "cycles": 33405,
+      "actual_sha256": "072e7d14b4c0bf914b3dcf1e29419794a1d91e8a19e8fb4c99031b280be94c28"
+    },
+    {
+      "epoch": 7,
+      "l2": 1.697030421128018e-07,
+      "peak": 1.9847194775533684e-07,
+      "cycles": 33405,
+      "actual_sha256": "8173a38bad7a04aaafe47514fe4a22838b19777e25e8a848e5c4131832032a2b"
+    },
+    {
+      "epoch": 8,
+      "l2": 1.697030421128018e-07,
+      "peak": 1.9847194775533684e-07,
+      "cycles": 33405,
+      "actual_sha256": "efe68ce782693e21af0f6bf7e3e5e25eb94bd935bf241ca3e2c0f71ed8bd0e70"
+    }
+  ],
+  "elapsed_seconds": 23.452380892122164,
+  "peak_rss_kib": 235036,
+  "scope": "Independent math.fsum of real 128x112 checkpoint slice; original input, five basis inputs, zero, sign reversal and return. One PE only; no distributed/full-model qualification.",
+  "reviewed_at": "2026-09-08T06:42:53.062393+00:00"
+}

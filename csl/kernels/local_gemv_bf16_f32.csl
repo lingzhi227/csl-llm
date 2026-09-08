@@ -1,0 +1,28 @@
+// Lossless BF16 storage, f32 products/accumulation. No fabric resources.
+// reset_expansion establishes zero low halfwords; column loads write high halves.
+param rows: u16;
+param columns: u16;
+comptime { @comptime_assert(rows > 0 and columns > 0 and columns <= 32767); }
+var expanded = @zeros([rows]f32);
+fn reset_expansion() void {
+  const fd = @get_dsd(mem1d_dsd, .{ .base_address = &expanded, .extent = rows });
+  @fmovs(fd, 0.0);
+}
+fn expand_column(weights: [*]u16, column: u16) void {
+  @assert(column < columns);
+  const low = @get_dsd(mem1d_dsd, .{ .base_address = @ptrcast([*]u16, &expanded), .extent = rows, .stride = 2 });
+  const high = @increment_dsd_offset(low, 1, u16);
+  const base = @get_dsd(mem1d_dsd, .{ .base_address = weights, .extent = rows, .stride = columns });
+  const wd = @increment_dsd_offset(base, @as(i16, column), u16);
+  @mov16(high, wd);
+}
+fn compute(weights: [*]u16, input: [*]f32, output: [*]f32) void {
+  const yd = @get_dsd(mem1d_dsd, .{ .base_address = output, .extent = rows });
+  const fd = @get_dsd(mem1d_dsd, .{ .base_address = &expanded, .extent = rows });
+  @fmovs(yd, 0.0);
+  reset_expansion();
+  for (@range(u16, columns)) |i| {
+    expand_column(weights, i);
+    @fmacs(yd, yd, fd, input[i]);
+  }
+}

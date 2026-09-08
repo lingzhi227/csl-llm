@@ -1,0 +1,101 @@
+{
+  "manifest_sha256": "caaabfd55609103b3fb9010abad77822624f2289bb5ce2deedaacaa467602631",
+  "results_sha256": "4d1f8dc2e7e894b72851100dfc1e6651f2242b13db664bf5a1a7244a26994042",
+  "execution_sha256": "b84be9a2d99f3c62c20bee3b0e2eb0149fc7a64d0d509373ca5f96c51c154aff",
+  "cases": [
+    {
+      "epoch": 0,
+      "output_words": 512,
+      "exact_constant": true,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          63
+        ],
+        [
+          63,
+          0
+        ],
+        [
+          63,
+          63
+        ]
+      ],
+      "cycles": [
+        33405,
+        33405,
+        33405,
+        33405
+      ],
+      "actual_sha256": "bc7bf92718ec411917e3571313500441177f43f517c469083e28afa2dab8227d"
+    },
+    {
+      "epoch": 1,
+      "output_words": 512,
+      "exact_constant": true,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          63
+        ],
+        [
+          63,
+          0
+        ],
+        [
+          63,
+          63
+        ]
+      ],
+      "cycles": [
+        33405,
+        33405,
+        33405,
+        33405
+      ],
+      "actual_sha256": "8e4ad6d81de42a66b33333d23bef479ae13ce72e2e1417a38c4ae867483991f4"
+    },
+    {
+      "epoch": 2,
+      "output_words": 512,
+      "exact_constant": true,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          63
+        ],
+        [
+          63,
+          0
+        ],
+        [
+          63,
+          63
+        ]
+      ],
+      "cycles": [
+        33405,
+        33405,
+        33405,
+        33405
+      ],
+      "actual_sha256": "ae8b28eb616a241bcb1c773aa1bbeef53377462dda9530531e9e0c91a8c2a3d2"
+    }
+  ],
+  "elapsed_seconds": 955.1647894959897,
+  "peak_rss_kib": 2230368,
+  "scope": "Independent existing raw outputs at four corner PEs, constant GEMV112*(1/64)*(1/8); sampled cost probe only, no all-PE extrema, distributed reduction or full-model claim.",
+  "reviewed_at": "2026-09-08T07:00:55.885368+00:00"
+}

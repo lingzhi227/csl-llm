@@ -1,0 +1,286 @@
+{
+  "captured_utc": "2026-09-08T07:48:12.130782+00:00",
+  "files": [
+    {
+      "source": "configs/target.json",
+      "sha256": "a960df2edd8b651df7c58529e3bfabbb3f7b9e4ece1905cb0171e029367f5270"
+    },
+    {
+      "source": "configs/reference-requirements.txt",
+      "sha256": "31508a76a09d22846455af04248d53fcb44a386520539af433a6878be21d6bda"
+    },
+    {
+      "source": "configs/prompts.json",
+      "sha256": "3b17a15b7c3787f1b826b635d1017d7824d446c056bd2bc9cf34c7c31fe1fb30"
+    },
+    {
+      "source": "configs/precision.json",
+      "sha256": "c5da7df9c06537cb205b8c5a760703fd39b7c519bb27666906cafb1d6e45b3b0"
+    },
+    {
+      "source": "src/csl_llm/layout.py",
+      "sha256": "1c8a833ec48f7cc016680c641d9e00a740597439893852750b6d5f3b0a74fa0f"
+    },
+    {
+      "source": "src/csl_llm/regions.py",
+      "sha256": "7e489ffba463d22070bc640f8d4ac1336756ce51ca545dfbd6aeb6e75f68dcc6"
+    },
+    {
+      "source": "src/csl_llm/__init__.py",
+      "sha256": "e330d6b21720c96f282971a7ec9519f943e1c21b9bd944c611bbb4763ca390e2"
+    },
+    {
+      "source": "tests/test_regions.py",
+      "sha256": "164d8861278ee9c048cae44e97bc19ff608784e2213f432a2390a74bce4d1a1e"
+    },
+    {
+      "source": "tests/test_elf_sections.py",
+      "sha256": "9da2e6579b818f70741dd2c91ec1629bba04d8b38a8d5625d3374bc294471ffd"
+    },
+    {
+      "source": "tests/test_sdk_cleanup.py",
+      "sha256": "7810b60c600f649c8eb746c77501e6336fc115a237179ae79ba08c2a6a12cbce"
+    },
+    {
+      "source": "tools/regional_linear_probe.py",
+      "sha256": "79c34b1cd5b985ad7353117c5682747f118570f71272e3319ece24b4c0153f4c"
+    },
+    {
+      "source": "tools/fetch_model.py",
+      "sha256": "dae183dcad0c7c7a30f93b77130e774368d97c69c9336b59a33f9f6891c963d4"
+    },
+    {
+      "source": "tools/selection_probe.py",
+      "sha256": "02a6a81724eb346fd929a052779770c8424a6313ebbd44de6092dd8f19d9f724"
+    },
+    {
+      "source": "tools/plan_layout.py",
+      "sha256": "85b9f0e67ca428a7b2aa1a8a486ecf3c8242f16247727f07875a0dc651d455b7"
+    },
+    {
+      "source": "tools/prepare_gemv_probe.py",
+      "sha256": "fe89fc35b93fee23bfea819d7f7097f58d8009215d7627a89b68199a5916c9ca"
+    },
+    {
+      "source": "tools/position_probe.py",
+      "sha256": "336ad07ae9dcc2a61c53353420ac0734d966178bfc83ca9546d4185bc17caf04"
+    },
+    {
+      "source": "tools/reference_run.py",
+      "sha256": "2a20ecf9856a5444119381a81acc24624a62801ee32ec56c65ea8d778e6de910"
+    },
+    {
+      "source": "tools/model_inventory.py",
+      "sha256": "9fbe38e114c060af751171e0dcc5908ec8f16228480896e678c6032bf7d6d143"
+    },
+    {
+      "source": "tools/reference_semantics.py",
+      "sha256": "dd2120c5123d92a3b025067ee39bc733e161d0e694776ef9ca757248b3ac6bc5"
+    },
+    {
+      "source": "tools/bf16_bits_probe.py",
+      "sha256": "fbdb069fea91de5179e42ad3848177b0beaf991a6e89afd56218338b1a211d52"
+    },
+    {
+      "source": "tools/sdk_probe.py",
+      "sha256": "a126d22d650e21205370b323139aeb1c5e3aa1cb6951e5c3527aa2201c97b0f9"
+    },
+    {
+      "source": "tools/vector_probe.py",
+      "sha256": "eddf23dbab852355759058a91a254db892d8305cb7117914943138fbd68f723d"
+    },
+    {
+      "source": "tools/attention_capacity_probe.py",
+      "sha256": "6185410091ec18e48d38b47f98d97cc0438c070ce3976cc041b9a1934e644e99"
+    },
+    {
+      "source": "tools/simulator_cost_probe.py",
+      "sha256": "a637357f41bed8d0c39f231379871cd331bfcf1ceba382160099497e12fb84f3"
+    },
+    {
+      "source": "tools/bf16_stride_probe.py",
+      "sha256": "fe8e81f0bfcef3c3fc540ff9277fb0989c4f11a43d003e41d89df00f9b7e0f3a"
+    },
+    {
+      "source": "tools/elf_memory.py",
+      "sha256": "88a2c2d6cceefc3186499b12d9c97979d8f565402cda2b9ac493f56f3fe6d136"
+    },
+    {
+      "source": "tools/distributed_linear_probe.py",
+      "sha256": "e45676f774e690c7458f4b059f9cb9f6b5ff4ebc65c259652ea8dfab29b698f0"
+    },
+    {
+      "source": "csl/kernels/local_gemv_bf16_f32.csl",
+      "sha256": "0880517060f5b5f12f20c4c5fee505e7a1ff7a7260d61d902a66c038475598e0"
+    },
+    {
+      "source": "csl/kernels/local_gemv_f32.csl",
+      "sha256": "be1c4531f994e1d88991b2670daf0edda81839cc8fd0c6abff3d2999eaf43376"
+    },
+    {
+      "source": "csl/kernels/vector_f32.csl",
+      "sha256": "e923d62d7c3527d80282bb6b4714bb00b537510d8c4a48455f84aa939571b26b"
+    },
+    {
+      "source": "csl/kernels/LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "source": "csl/kernels/tied_embedding_f32.csl",
+      "sha256": "a97ff65ee153bb5caedfd4085f659011cba3d686715c132ab95e8e6a25cf64a0"
+    },
+    {
+      "source": "csl/kernels/argmax_f32.csl",
+      "sha256": "f2d70dae54e1bea001256f345dd870ee9a9cafdcbda1703d7899e7eabce0e096"
+    },
+    {
+      "source": "csl/kernels/local_gemv_bf16_f32_colmajor.csl",
+      "sha256": "3e92175efe12b28065bb77934c54136db3c9287c68c81877781a0e527354304c"
+    },
+    {
+      "source": "csl/kernels/qwen_position_f32.csl",
+      "sha256": "8d7be77e4938a5d5b7e95525e8869b12d6b2b529fcc25d3152128de230ad7cf8"
+    },
+    {
+      "source": "csl/runtime/distributed_linear_pe.csl",
+      "sha256": "7eb773d6975d9463e930f9684e02f480d00ce24d36b29f21d75dfd21c5f27333"
+    },
+    {
+      "source": "csl/runtime/line_allreduce_f32.csl",
+      "sha256": "21f8628d937c6e481c24a45747895fb27caa1bd2a6b18d7338e138d492a4a529"
+    },
+    {
+      "source": "docs/ACCEPTANCE.md",
+      "sha256": "41fc6d4327fc2b6c51370454b4caf2ee665fab725198b0078166f6cba1ad8c4f"
+    },
+    {
+      "source": "docs/REGIONAL-RUNTIME.md",
+      "sha256": "ecd8352beaa88c1e55fe681f35fa7e56b95880064a3be59b5d01f8b117a2a382"
+    },
+    {
+      "source": "docs/LAYOUT-CANDIDATE.md",
+      "sha256": "b7d79e77725fa9b3b538de6add3871a1d288c8a50e323dc1a4e3e682212f0f79"
+    },
+    {
+      "source": "DEVELOPMENT-PLAN.md",
+      "sha256": "0d7c67c16b4b7d35dba576d582b02efc129239f7239dc852d1e96d589ad28994"
+    },
+    {
+      "source": "coordination/s0-reference-identity-review.json",
+      "sha256": "ba473c5d1af50f61baed16cebed45d5f72e5b232825e7bfe84613c82b9167805"
+    },
+    {
+      "source": "coordination/s1-bf16-all-patterns-review.json",
+      "sha256": "9f7debee62a6f94a1a25f160e60dc1252efe8dbfa66b457ff5cc16af05ca4fcf"
+    },
+    {
+      "source": "coordination/s1-simulator-cost-64x64-review.json",
+      "sha256": "2593f15501ffcc35e243e40a84539130e351404862bc06454c68f4eac0eae2a1"
+    },
+    {
+      "source": "coordination/s0-semantics-review.json",
+      "sha256": "1d152e794051d4dbd867e0136e2299e0988da58c0476188558361e0c53baf224"
+    },
+    {
+      "source": "coordination/s1-distributed-linear-resource-review.json",
+      "sha256": "5b663d24adf8bf78d5e474012bfa233dec84fa450a7a39d0245af321b1b49d54"
+    },
+    {
+      "source": "coordination/s1-layout-candidate-v2-review.json",
+      "sha256": "0a0120e9bd165fb54ffdf371bdd1f3ad3a0ff316a6fb09e2934449047ddaba50"
+    },
+    {
+      "source": "coordination/s1-layout-candidate-v1-review.json",
+      "sha256": "5bf70a9a0a0e11c65972693d08e329cb87da0e3893700d8213a86f4825e6573e"
+    },
+    {
+      "source": "coordination/s1-bf16-alternative-base-review.json",
+      "sha256": "5523e0228ba39530454079ebcf4d4834aa633adab61e95e1704564b852f372a3"
+    },
+    {
+      "source": "coordination/s2-rope-review.json",
+      "sha256": "5f150a72ebbac87baebc511bffe3a536684ff4de2ab30fd1649d9ee138f35a4e"
+    },
+    {
+      "source": "coordination/s1-regional-linear-review.json",
+      "sha256": "c08ccd1f65a2f2ba32f35a1db63bea4e6ff77042343cbe0f91170b5ae19b8291"
+    },
+    {
+      "source": "coordination/s1-distributed-linear-numeric-review.json",
+      "sha256": "f1d0b0eaa9d5db6d3743f2d01d0c2d896d394e2feb285de9ee62a9713a59b9ab"
+    },
+    {
+      "source": "coordination/s2-selection-review.json",
+      "sha256": "3791ccba9c2c283f7ed73f13c024daf6ac6a533db9910338010ef63237409c8e"
+    },
+    {
+      "source": "coordination/s1-regional-linear-dsr-review.json",
+      "sha256": "5b8dce46e89b9203b7087ef792923b8454bf1a4e7b2a87c97181a3ae5a522cb1"
+    },
+    {
+      "source": "coordination/s1-distributed-linear-source-review.json",
+      "sha256": "bb67b4d33e7117771cc72036be5cf6b4a2049fcb03d080f3efd1d1a154f0bb42"
+    },
+    {
+      "source": "coordination/s2-vector-first-review.json",
+      "sha256": "c9004d491d1b2f4448044a918e75ee52dbd73f6b0c504fd34f2de11af1760e31"
+    },
+    {
+      "source": "coordination/s1-bf16-stride-review.json",
+      "sha256": "80156eb440b08207f6ee5392e8b4e4fedba796a8bac738997e6399bb39785fa5"
+    },
+    {
+      "source": "coordination/s1-64x64-sampled-review.json",
+      "sha256": "58a2eac6c768d5043bc43293ecd5823226c11b34bcfdf707763c884e8176d3e4"
+    },
+    {
+      "source": "coordination/s1-16x16-review.json",
+      "sha256": "b2179a7d809b4f7b6559ab5e5df69cd443429e418fd0105822cfd8ba999669e3"
+    },
+    {
+      "source": "coordination/s1-64x64-interruption-review.json",
+      "sha256": "67851bc59badcc27de78bc979731b4bf934530ffeb7c8fa7e47231af51113707"
+    },
+    {
+      "source": "coordination/s1-simulator-cost-1pe-review.json",
+      "sha256": "34a611a034a74ca8510851e127fcf9e2a74a5394df53968b1e16faa4770de1ab"
+    },
+    {
+      "source": "coordination/s1-first-gemv-review.json",
+      "sha256": "94594df5cfeb7761bbb30aa1eac413400ac6b07daf7a3520c01764313df0ea56"
+    },
+    {
+      "source": "coordination/s1-bf16-addressing-review.json",
+      "sha256": "452ea9cb952686216821ebdb3d03d93505a1557e37c8cf930177a38513e06191"
+    },
+    {
+      "source": "coordination/s1-bf16-gemv-128x112-review.json",
+      "sha256": "aa544750f599a3a661424635d3db6824a63ec97eb876609f3f157abcd7fbb06b"
+    },
+    {
+      "source": "coordination/s1-distributed-timing-review.json",
+      "sha256": "565b302698162b7c021bb92cf659aad8adb13707fe18b372603a622294e089be"
+    },
+    {
+      "source": "coordination/s0-acceptance.json",
+      "sha256": "a1350f51b920a03ff3f55da97ce93e8a19b21ac16381a89ed7d30bb11bf3b03e"
+    },
+    {
+      "source": "evidence/model-inventory.json",
+      "sha256": "2e14e675bf0ce9add5587d2e4a4b7226c0540ac336faf55caffc16265f0ea6c4"
+    },
+    {
+      "source": "evidence/model-manifest.json",
+      "sha256": "9e4305503478f0f118ced0c5b87b148b73ae5823504f5636fb7c778e1252c75e"
+    }
+  ],
+  "scope": "Original selected source hashes before publication portability edits. No full-model qualification.",
+  "frozen_overrides": [
+    {
+      "source": "evidence/regional-linear-20260908T072157772253Z/line.csl",
+      "published": "csl/runtime/line_allreduce_f32.csl",
+      "sha256": "ec46a1840c19eac7f39dc985bae8f0f90fd1be0c442a873dc3cdca9eb3485b18",
+      "reason": "Publish the qualified sum-only regional protocol, excluding later attention extensions."
+    }
+  ]
+}

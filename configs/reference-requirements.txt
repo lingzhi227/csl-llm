@@ -1,0 +1,5 @@
+# CPU torch is installed from https://download.pytorch.org/whl/cpu.
+torch==2.7.1
+transformers==4.51.3
+safetensors==0.5.3
+numpy==2.2.6

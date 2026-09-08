@@ -1,0 +1,114 @@
+{
+  "manifest_sha256": "ed0b9ecb3a6f9bdd858f5a755b3b31c327f1b821a7d3f8ff78bc49f195a2f8bb",
+  "results_sha256": "950cb32864c52ebd2376cf9fb3a0710cbd059efe898407bc5d9bc2ea4c2070a2",
+  "wall_events_sha256": "b4ad6a86d3bb9e4a97b5f5c1c152a41a86fe2eb482ddda2e5b5ebc59dec6fd90",
+  "cases": [
+    {
+      "mode": 0,
+      "cycles": 55,
+      "actual_sha256": "f4d585f1cbc29d3fad868b1b3cf348a636d7816b12afc5caa7b5185511d89e61"
+    },
+    {
+      "mode": 1,
+      "cycles": 19190,
+      "actual_sha256": "8d09d397dda0e395d536792f5b00e34628fcb6aa583b8a6e9b7ea8985f76c8d7"
+    },
+    {
+      "mode": 0,
+      "cycles": 55,
+      "actual_sha256": "ee32dc61cb1aebe60e1c96feb63895230f67be69fbd70fc79e8af4f7b3c60e80"
+    }
+  ],
+  "wall_events": [
+    {
+      "name": "compile",
+      "seconds": 2.44605693500489
+    },
+    {
+      "name": "load",
+      "seconds": 0.00036826287396252155
+    },
+    {
+      "name": "run",
+      "seconds": 0.026902467012405396
+    },
+    {
+      "name": "0-set-mode",
+      "seconds": 0.00037790904752910137
+    },
+    {
+      "name": "0-launch-nonblocking",
+      "seconds": 0.00010030902922153473
+    },
+    {
+      "name": "0-explicit-task-wait",
+      "seconds": 8.226092904806137e-05
+    },
+    {
+      "name": "0-read-output-0-0",
+      "seconds": 0.4473144388757646
+    },
+    {
+      "name": "0-read-progress-0-0",
+      "seconds": 0.03596460516564548
+    },
+    {
+      "name": "0-read-timing-0-0",
+      "seconds": 0.045257838908582926
+    },
+    {
+      "name": "1-set-mode",
+      "seconds": 0.00024055596441030502
+    },
+    {
+      "name": "1-launch-nonblocking",
+      "seconds": 0.00010644295252859592
+    },
+    {
+      "name": "1-explicit-task-wait",
+      "seconds": 9.166402742266655e-05
+    },
+    {
+      "name": "1-read-output-0-0",
+      "seconds": 1.300607895012945
+    },
+    {
+      "name": "1-read-progress-0-0",
+      "seconds": 0.03704092092812061
+    },
+    {
+      "name": "1-read-timing-0-0",
+      "seconds": 0.045710534090176225
+    },
+    {
+      "name": "2-set-mode",
+      "seconds": 0.00025132601149380207
+    },
+    {
+      "name": "2-launch-nonblocking",
+      "seconds": 0.00014618085697293282
+    },
+    {
+      "name": "2-explicit-task-wait",
+      "seconds": 0.00011758808977901936
+    },
+    {
+      "name": "2-read-output-0-0",
+      "seconds": 0.4340003510005772
+    },
+    {
+      "name": "2-read-progress-0-0",
+      "seconds": 0.0369861361104995
+    },
+    {
+      "name": "2-read-timing-0-0",
+      "seconds": 0.04600933287292719
+    },
+    {
+      "name": "stop",
+      "seconds": 0.010942036984488368
+    }
+  ],
+  "scope": "Verified raw same-binary 1PE control experiment. API waits are observed host costs; no pure compute/transport decomposition or explanation of earlier-run cycle differences.",
+  "reviewed_at": "2026-09-08T07:15:08.650479+00:00"
+}

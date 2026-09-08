@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.venv/
+models/
+build/
+evidence/*/
+*.sif
+*.elf
+*.core
+.DS_Store

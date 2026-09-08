@@ -1,0 +1,12 @@
+{
+  "reviewed_at": "2026-09-08T06:43:48.246396+00:00",
+  "layout_sha256": "03f930dbee9ce482a67e830cd1298df1c44b8c2e71a2d573df9e9dd3e914eeeb",
+  "all_290_tensors_covered": true,
+  "matrix_partition_exact": true,
+  "placement_unique": true,
+  "kv_all_24_layers_2_heads_2048_positions": true,
+  "matrix_tiles": 34552,
+  "kv_tiles": 3072,
+  "estimated_matrix_free_bytes": 1600,
+  "scope": "Independent static tensor partition and geometry audit only. Auxiliary owner strings, routing, code/stack fit, dynamic lifetimes, prefill and full-fabric simulator execution remain unqualified."
+}
