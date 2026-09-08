@@ -1,0 +1,41 @@
+{
+  "recorded_at": "2026-09-08T19:34:52.580946+00:00",
+  "run": "vocabulary-runtime-20260908T173751421842Z",
+  "manifest_sha256": "b1ee3e042c4e644147fa8f604fc69e88c5ff4bfc78e0f5e8c996a763825abb2c",
+  "execution_sha256": "dc8b66aa9d1dbc79634c55a83e66a26cdb04055b8ea072555a3a629a35023161",
+  "results_sha256": "0afbe4c606252009eaa368a1cd94b42520d8fad8ac568e502bf8af892ae9c4f7",
+  "final_numerical_review": "vocabulary-runtime-20260908T173751421842Z-independent-numeric-review.json",
+  "final_numerical_review_sha256": "b1b6f25809b24314dcccd2f375f9375b883325a0b125a68b53fc005e295cb012",
+  "core_reviews": [
+    {
+      "case": 0,
+      "review": "vocabulary-runtime-20260908T173751421842Z-case-0-independent-core-review.json",
+      "review_sha256": "63ddf5a5473e25dd292cb48d2758b2249291b2d9b8628ada140480da988886b7",
+      "core_sha256": "9cfee805d723390b8147a21d7a6b8c9a83584166c4d6dcaea06840be33dfc010",
+      "supplemental_original_case_receipt": {
+        "review": "s5-vocabulary-case0-independent-numeric-review.json",
+        "review_sha256": "e07a4556ce1f01c253d27fee3f800e1f8eb2bfc3f6c9104163ac9c891826b5a5"
+      }
+    },
+    {
+      "case": 1,
+      "review": "vocabulary-runtime-20260908T173751421842Z-case-1-independent-core-review.json",
+      "review_sha256": "873e2121eb3301cff351e4fb2f398eb86b7b9b38ed93b3650758e9242ee6e0b3",
+      "core_sha256": "45c13f69179a99698755fcf4941ffc1c7324fd1c6d8856a963d595460d863565",
+      "supplemental_original_case_receipt": {
+        "review": "s5-vocabulary-case1-independent-numeric-review.json",
+        "review_sha256": "d796d223a808f6e366fcd28f98893076990c1a261536fa21a80edf484bd2f086"
+      }
+    },
+    {
+      "case": 2,
+      "review": "vocabulary-runtime-20260908T173751421842Z-case-2-independent-core-review.json",
+      "review_sha256": "7d52d818aa27afab60d7aaed84d2aca3231f5d7086e58881f969dc6f3e9473ca",
+      "core_sha256": "47adbe560962d7422a9e0def956569b8277572cc7b9cd1f9c2aab090c1b9cd2e",
+      "supplemental_original_case_receipt": null
+    }
+  ],
+  "accepted_full_vocabulary_scoped": true,
+  "sdk_complete": false,
+  "scope": "Complete original151936x896 tied embedding/head, three isolated SDK cases: original lookup rows0/151645/151935, official finalnorm-input full logits, zero/smallest-index tie, fresh-process bit-repeat, ordinary devicewinner, all original weights and metadata verified from actual cores. Not device final RMS,24layers,persistent autoregressive reset/generation, declared full-model capacity or hardware performance."
+}

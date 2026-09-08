@@ -1,0 +1,136 @@
+{
+  "original_batches_sha256": "c5566bf55f0e92b8e4bc481772c241a5663403025f2483d126395978861d5f8a",
+  "note": "Original source paths omitted; source bundle names and evidence hashes unchanged.",
+  "batches": [
+    {
+      "bundle": "compact-vocabulary-compile-20260908T144210950745Z",
+      "first_tile": 0,
+      "last_tile": 1023,
+      "original_tiles": 1024,
+      "evidence_hashes": {
+        "manifest.json": "4def8d16529f3c61a91ae5bf4450ab9c82dad1c759d4e9dbbe0a76f7c3ef0fac",
+        "execution.json": "6c9d228905a931ddbfd51dfc2a140e706fc16188b06083a08915f43da3ff6a2c",
+        "results.json": "c82d870d60b4da06bc30cc60ed6fbbc442eb67704528c8e79d8fac406b94e30e",
+        "elf-memory.json": "150588b47197fba9097a2592ea62974a60ea33460950458a651b7b2617672e25",
+        "dsr-graphs.json": "c7137ae49ebe02ffcf3a0edb7d1c64852c548fc9efadbeeca5f2c090889889ca"
+      }
+    },
+    {
+      "bundle": "compact-vocabulary-compile-20260908T151839929786Z",
+      "first_tile": 1024,
+      "last_tile": 2047,
+      "original_tiles": 1024,
+      "evidence_hashes": {
+        "manifest.json": "668e7f9fd647f62679e03d88b1bdc8df3faac0a8899a3a76a0fb9c5e015ebce0",
+        "execution.json": "64b1637cb6f5baef4179bca174c165e13c10221f8d151c7ce2a6761c28d47974",
+        "results.json": "d2bbb0c904e7cfa042e2590f63c7b824681148129d5810a6b0d25721ccc86f30",
+        "elf-memory.json": "ffe90bf0da13fff62fdf0ec367b7404660002b9329f8a07b9413ed9a648e6a52",
+        "dsr-graphs.json": "e3afd33a586a654e502666147b4b1d88cca26ec7c9e281e17cd58c9e4c3e8a45"
+      }
+    },
+    {
+      "bundle": "compact-vocabulary-compile-20260908T160050947282Z",
+      "first_tile": 2048,
+      "last_tile": 3071,
+      "original_tiles": 1024,
+      "evidence_hashes": {
+        "manifest.json": "03734b1e458b7b1ac8a85a45ee4657adabddb0078db5996c9d0bbe1f63bbbd1b",
+        "execution.json": "c838b5325a8ab591b56a714d9af12fb12ab8af77efbb18c191b145fb475ce21c",
+        "results.json": "aff4eccc3b5cb0c629816e6afad9ce3a3a36fff595b57b069925160560fab93e",
+        "elf-memory.json": "fa97e73387c2aa2e236d7b7774783a6f32ee06239a8bc15300658cad942c69cc",
+        "dsr-graphs.json": "f0de2334965c724fd9805dae91743067b8be81057db7ad52ae84fbed1e37b4cb"
+      }
+    },
+    {
+      "bundle": "compact-vocabulary-compile-20260908T160641958797Z",
+      "first_tile": 3072,
+      "last_tile": 4095,
+      "original_tiles": 1024,
+      "evidence_hashes": {
+        "manifest.json": "6f270fae4fae28f8cc6122454cb2d161d6777aa13192a4ae3ef4802431a19897",
+        "execution.json": "2e603705f3dddf52642c4ff2724e148c002f3bfec742da36090f5a8e67657347",
+        "results.json": "2cfd4a4fee8e90e90841f4c70ea5d47b68ac9a03b1dcd252b22e54ae28def447",
+        "elf-memory.json": "27edfabff85fd227b1f81adf0543e19916982b07ebe1c4eb20e5126a8e18d89c",
+        "dsr-graphs.json": "f499268e81c55aeb33909ca2226ffe540ca2e604ed71c6df4da1d4ce7160eca0"
+      }
+    },
+    {
+      "bundle": "compact-vocabulary-compile-20260908T160650162414Z",
+      "first_tile": 4096,
+      "last_tile": 5119,
+      "original_tiles": 1024,
+      "evidence_hashes": {
+        "manifest.json": "30d37aef1221098d16466677affa2839e67189355accf813719fc444c87e4103",
+        "execution.json": "8daa76b7adba3278f7b5a5eb33901e51ba7a7dd37e4c6d4e10b5cca3ee767ac2",
+        "results.json": "c1664995c245bc1ca1fc4fb7e35c5be6ef6d08e0c9eb66a1a6092ec26277475b",
+        "elf-memory.json": "eec7d9dbeb82a0de4f9731676f235d1180a0c7d1688a98bed4fc4f3c2831826d",
+        "dsr-graphs.json": "864f94ab1c2331c14f4e4fe4121fd0d15ed16be2e99e99928c8892d348855dda"
+      }
+    },
+    {
+      "bundle": "compact-vocabulary-compile-20260908T160658359021Z",
+      "first_tile": 5120,
+      "last_tile": 6143,
+      "original_tiles": 1024,
+      "evidence_hashes": {
+        "manifest.json": "02e707b63ea67381ae475dabbc5c17e9a36c906337826eebd68c34f00926bac1",
+        "execution.json": "13c0ec6085928786b422bd5a8f3e71c45b398838726c0a2598b5de97a501ea19",
+        "results.json": "ab743def7a7a08af79eafddd97a613f9c06ad14b08bf476c5223708c27301dbd",
+        "elf-memory.json": "b6526b63935aa18bfbed3b58ee953a4bd62513b6ad324175cc160f81df09786b",
+        "dsr-graphs.json": "cecd92d81a344386b57d884786752b26f7e85bed6202693c9a4fef2f48ffeacf"
+      }
+    },
+    {
+      "bundle": "compact-vocabulary-compile-20260908T160707598839Z",
+      "first_tile": 6144,
+      "last_tile": 7167,
+      "original_tiles": 1024,
+      "evidence_hashes": {
+        "manifest.json": "61046b23a9dc8ed30d43aba8711b1a8c2514d5da78a86e60ebe5359818625dea",
+        "execution.json": "0d421b4ef2fc35447316aecd2824452579ee6995081276a40dc2c1351cddbfe9",
+        "results.json": "a6f06c5be22cf84a2b060f9b5175a44b3bcd8b949af9764575e14c205497727f",
+        "elf-memory.json": "7b5adcb25f614cc7633ce7778a70b61e2ef3a9405f5b0a177e6879bfa0a8e865",
+        "dsr-graphs.json": "665327f17fb6a22d5f6428f3f2a23ade8cbaeec29069855b77cc6dc0b2850557"
+      }
+    },
+    {
+      "bundle": "compact-vocabulary-compile-20260908T160716135226Z",
+      "first_tile": 7168,
+      "last_tile": 8191,
+      "original_tiles": 1024,
+      "evidence_hashes": {
+        "manifest.json": "33210033e6d54adfd65b3cabafcb581cdc55c8505b046a2a9fa62644c4ff5bea",
+        "execution.json": "c12660a7c9a51ed34898b089baacc62f5e43e2615dabf34e6d9aa4a7bff8b096",
+        "results.json": "3d6350d7bc14a088032a82827741c4700da9e465c18c15a8575161de2f6822ee",
+        "elf-memory.json": "879ede9e3a92da8216c8bc66c2827ecc5106e154dd4348d77fc82121c533e06e",
+        "dsr-graphs.json": "b4b0c398699694868200a8ab7f81b3fc1da55b1016153d9b2e2bb3f078b555b9"
+      }
+    },
+    {
+      "bundle": "compact-vocabulary-compile-20260908T160724699618Z",
+      "first_tile": 8192,
+      "last_tile": 9215,
+      "original_tiles": 1024,
+      "evidence_hashes": {
+        "manifest.json": "99d76a561762649c64fb010e1a15fa8c55e3218d78f347f877ad7b6727b0124a",
+        "execution.json": "31d932ddad34828f7691d314741166825b8244f6b66bea371ce8a3af26e8084d",
+        "results.json": "62e1a994a69d93dd583c0f4cce18884d60df2bbf988fdf2d2325d13332c3153b",
+        "elf-memory.json": "a4afc97db21747756aa827ae1574bad1be4f155a6181bdd069da5e990122f5c0",
+        "dsr-graphs.json": "09e9cbdaf615d8d4a05f01958902e516b053912700728ae87663994ab9acea8c"
+      }
+    },
+    {
+      "bundle": "compact-vocabulary-compile-20260908T160733196670Z",
+      "first_tile": 9216,
+      "last_tile": 9495,
+      "original_tiles": 280,
+      "evidence_hashes": {
+        "manifest.json": "8ff14ad7889985913df65a2eb9a567be1ba5ce00f21e6cb46d15ced9f78a2170",
+        "execution.json": "0ff76bd6db335231c2c319d60994f9a55c64a40967f480f94aa4bf5a0063cc74",
+        "results.json": "222171e8260f79aade24e2679d9993dcf81ce74274064f6112c707892c68e0b5",
+        "elf-memory.json": "48991b475104229f3cd8ec399a43ba2fdf963aed42af6a408b97be28f5976d80",
+        "dsr-graphs.json": "b27dda2b2c1b50b1c967be29c5d7f3d222b390eb5a23d3f75046498a0162c47f"
+      }
+    }
+  ]
+}

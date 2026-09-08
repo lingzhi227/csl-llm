@@ -1,0 +1,17 @@
+{
+  "reviewed_at": "2026-09-08T19:03:19.893801+00:00",
+  "run": "core-contract-audit-20260908T190039713537Z",
+  "manifest_sha256": "1b5a0ea4576b429a52f26311297ca0fa499e7ac099a7bfe037a7af1a415a3999",
+  "all_manifest_files_verified": 14,
+  "source_hashes": {
+    "driver.py": "5e12db9e0794fb85e46bcb13870450fb9269118f9ebba03d9940ed7cdd9b4dc1",
+    "sdk_core.py": "ac0ff42dc186cec411254f17ba8df28d25d71d3e8620ea88071cb74912e9a571",
+    "executor.py": "9ccab37dc8b6ecfb0d23d56bf0826da7b87ce5d3c22d0a4ba94cb4aea6501e1c"
+  },
+  "all_inputs_exact_to_independently_accepted_case0": true,
+  "core_sha256": "9cfee805d723390b8147a21d7a6b8c9a83584166c4d6dcaea06840be33dfc010",
+  "source_case_results_sha256": "cae11e98557e6cf70f5e090c0edc6e44a7bdaeafb6d5f585c2dfe819bdbe9b8f",
+  "mem_available": "24301488 kB",
+  "approved_scope": "One180s2GiB offline actual-core contract-reader audit only; currentcase2 simulator maycontinue. No compiler/SdkRuntime orlegacycase rerun. Newreader output/timing must be verified before claiming qualification; timing includesconcurrenthostwork, notdeviceinference speedup.",
+  "host_tests": "Independent core contract unittest discovery:2 tests passed"
+}

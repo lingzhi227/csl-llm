@@ -1,0 +1,8 @@
+{
+  "source_run": "vocabulary-runtime-20260908T173751421842Z",
+  "case": 0,
+  "source_case_results_sha256": "cae11e98557e6cf70f5e090c0edc6e44a7bdaeafb6d5f585c2dfe819bdbe9b8f",
+  "timeout_seconds": 180,
+  "rss_limit_kib": 2097152,
+  "scope": "Read-only inspection of an already executed full vocabulary core using previously audited hash-bound symbol addresses. Full original weights and actual arrays/normal D2H are compared. No new simulator/compiler/neural result or hardware performance. Timing is not isolated from other host work."
+}

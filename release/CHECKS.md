@@ -59,3 +59,5 @@ Independently checked all remote recursive manifests for runtime/static composit
 Eight-PE collective publication: both frozen recursive manifests verified on the original evidence host; review/run hashes, eight actual-output hashes and non-timing array bit equality checked locally. See `COLLECTIVE-CHECKS.json`. No duplicate SDK execution.
 
 Streaming publication: four original manifests checked on the evidence host; ten saved output payloads and four global progress arrays independently checked locally against tags/coordinates/counters and review hashes. Frozen tiny retry differs from failed run only in PE source. See `STREAM-CHECKS.json`; no new simulator run.
+
+Full vocabulary publication: four complete recursive manifests rechecked on the original evidence host (28523 runtime, 38893 assembly, 14 contracted-reader and 17 topology-reader entries); aggregate review hashes and three case result/output identities verified locally. Exact 9496-tile coverage, zero/winner, all progress values and repeat-logit bits checked. Seven weight-free CSL modules match the frozen common batch hashes. See `VOCABULARY-CHECKS.json`; no new SDK run.

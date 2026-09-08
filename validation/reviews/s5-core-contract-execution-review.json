@@ -1,0 +1,20 @@
+{
+  "reviewed_at": "2026-09-08T19:11:51.363506+00:00",
+  "run": "core-contract-audit-20260908T190039713537Z",
+  "manifest_sha256": "1b5a0ea4576b429a52f26311297ca0fa499e7ac099a7bfe037a7af1a415a3999",
+  "execution_sha256": "409989fca5a7e1c4d2cac25d292f64c8890f6dd50471284cff5d7dfd2e058c5b",
+  "results_sha256": "bbafc474a597871cca9ce2c87fc535164d523c3ef4746fa6a9f5cb91465af54a",
+  "all14_manifest_files_verified": true,
+  "all3_tracked_pids_absent": true,
+  "elapsed_seconds": 43.02183907688595,
+  "peak_rss_kib": 862344,
+  "proof_checks_and_json_seconds": 7.260564999189228,
+  "contract_core_load_seconds": 0.25294509599916637,
+  "read_compare_seconds": 32.465207191882655,
+  "verified_read_seconds": 39.97871728707105,
+  "accepted_offline_scoped": true,
+  "source_numeric_review": "s5-vocabulary-case0-independent-numeric-review.json",
+  "source_independent_manual_core_review": "vocabulary-runtime-20260908T173751421842Z-case-0-independent-core-review.json",
+  "method": "Frozen newreader source reviewed; independently verified all input copies/accepted original case0 core-array evidence and actual successful execution bindings, report counts, guards andcleanup. Existing independent manual-core proof supplies data reference; no repeated simulation.",
+  "scope": "Hash-bound contracted symbol reader qualified on already accepted case0full-vocabulary core; all9496weights/9650metadata/151936logits/896lookup andnormalwinner exact. Nonisolated offline timing withanotherSDKprocess active; notneural/hardware speedup, newruntime case acceptance orfullmodelproof."
+}

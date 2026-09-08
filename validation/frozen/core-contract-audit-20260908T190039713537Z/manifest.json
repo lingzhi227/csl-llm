@@ -1,0 +1,19 @@
+{
+  "sdk_sha256": "fff17e81c61dcb6012bdee2941a6fdc570f5c8604967530e7b7108651258193d",
+  "files": {
+    "driver.py": "5e12db9e0794fb85e46bcb13870450fb9269118f9ebba03d9940ed7cdd9b4dc1",
+    "weights.u32.bin": "4d28668615ef106971477ab3dbadda515547506ad8a29d9830e67674fd93a165",
+    "compiled-files.json": "9b71ba44e4ec045e890d218cd9d567f7a5103a1ae078b33742198b752676f1d9",
+    "sdk_core.py": "ac0ff42dc186cec411254f17ba8df28d25d71d3e8620ea88071cb74912e9a571",
+    "actual.core": "9cfee805d723390b8147a21d7a6b8c9a83584166c4d6dcaea06840be33dfc010",
+    "source-composition.json": "d410b8e706af2808ad25683dd3d43627efe344af277ba392f4522386496ca332",
+    "source-runtime-manifest.json": "b1ee3e042c4e644147fa8f604fc69e88c5ff4bfc78e0f5e8c996a763825abb2c",
+    "config.json": "20e6b5c94d9d47cc6ab0c153d0c13051f8fcfdf44466ac98fa325df819cca7ed",
+    "executor.py": "9ccab37dc8b6ecfb0d23d56bf0826da7b87ce5d3c22d0a4ba94cb4aea6501e1c",
+    "expected.npz": "c847af8df16370f7a7ede3b66cc0981d7256edb9567dd6e6129f7ec60b5aa865",
+    "source-symbols.json": "176970055d314b5a62a287a763fc9a918d4a50cbc9efe95073bf144bfc335810",
+    "runtime-artifacts.json": "40cfd77b83296321e709078e37b501ee85f9db9a84e8c1be0ad0752181416b3a",
+    "normal-d2h.npz": "3fa6bcd273f4ca165c7e66109d4d69373fdfad3d94c7af1a362b44d99f39585d",
+    "source-case-results.json": "cae11e98557e6cf70f5e090c0edc6e44a7bdaeafb6d5f585c2dfe819bdbe9b8f"
+  }
+}

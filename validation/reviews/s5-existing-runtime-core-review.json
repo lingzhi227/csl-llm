@@ -1,0 +1,555 @@
+{
+  "reviewed_at": "2026-09-08T15:58:17.086990+00:00",
+  "run": "partition-runtime-20260908T151505818904Z",
+  "execution_sha256": "1707cea62e638b422f98053c817a365f90dfb1cb59ebf2589a63b85c49469cb7",
+  "manifest_sha256": "f1ff0fd927206409913de4bf601965c0e245f36711e03175db6257ad242486a0",
+  "existing_actual_ET_CORE_to_D2H_exact_all8PE_both_variants": true,
+  "output_and_progress_differ_from_initialized_ELF": true,
+  "records": [
+    {
+      "variant": "composed",
+      "core_sha256": "5e69407a4306df34277e73254c970a0e3018b74c603f0652aa3ccf8563240e2d",
+      "core_size": 2404878,
+      "core_mtime_utc": "2026-09-08T15:17:41.560917+00:00",
+      "checks": [
+        {
+          "coordinate": [
+            4,
+            1
+          ],
+          "symbol": "output",
+          "address": 33384,
+          "size": 512,
+          "bytes_sha256": "16e165472c06fe808aaa95de9f5b32c63faa1f0b46fbea2d0eeebec1feca3bbb",
+          "differs_from_initializer": true
+        },
+        {
+          "coordinate": [
+            4,
+            1
+          ],
+          "symbol": "progress",
+          "address": 33896,
+          "size": 4,
+          "bytes_sha256": "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+          "differs_from_initializer": true
+        },
+        {
+          "coordinate": [
+            4,
+            1
+          ],
+          "symbol": "weights",
+          "address": 3700,
+          "size": 28672,
+          "bytes_sha256": "584d4297de1b4891838c80a571a14e571329e9fd5e17dab33bcb550d45559bea",
+          "differs_from_initializer": false
+        },
+        {
+          "coordinate": [
+            5,
+            1
+          ],
+          "symbol": "output",
+          "address": 33384,
+          "size": 512,
+          "bytes_sha256": "16e165472c06fe808aaa95de9f5b32c63faa1f0b46fbea2d0eeebec1feca3bbb",
+          "differs_from_initializer": true
+        },
+        {
+          "coordinate": [
+            5,
+            1
+          ],
+          "symbol": "progress",
+          "address": 33896,
+          "size": 4,
+          "bytes_sha256": "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+          "differs_from_initializer": true
+        },
+        {
+          "coordinate": [
+            5,
+            1
+          ],
+          "symbol": "weights",
+          "address": 3700,
+          "size": 28672,
+          "bytes_sha256": "83523a46abb025f03da7e7c05351186be9dcf319141238169668f40b3e568300",
+          "differs_from_initializer": false
+        },
+        {
+          "coordinate": [
+            6,
+            1
+          ],
+          "symbol": "output",
+          "address": 33384,
+          "size": 512,
+          "bytes_sha256": "16e165472c06fe808aaa95de9f5b32c63faa1f0b46fbea2d0eeebec1feca3bbb",
+          "differs_from_initializer": true
+        },
+        {
+          "coordinate": [
+            6,
+            1
+          ],
+          "symbol": "progress",
+          "address": 33896,
+          "size": 4,
+          "bytes_sha256": "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+          "differs_from_initializer": true
+        },
+        {
+          "coordinate": [
+            6,
+            1
+          ],
+          "symbol": "weights",
+          "address": 3700,
+          "size": 28672,
+          "bytes_sha256": "6deb02cd6f0d6c66095b240e5e5bdff7f52c6ff5b32d2f8415e660f3b440eeba",
+          "differs_from_initializer": false
+        },
+        {
+          "coordinate": [
+            7,
+            1
+          ],
+          "symbol": "output",
+          "address": 33384,
+          "size": 512,
+          "bytes_sha256": "16e165472c06fe808aaa95de9f5b32c63faa1f0b46fbea2d0eeebec1feca3bbb",
+          "differs_from_initializer": true
+        },
+        {
+          "coordinate": [
+            7,
+            1
+          ],
+          "symbol": "progress",
+          "address": 33896,
+          "size": 4,
+          "bytes_sha256": "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+          "differs_from_initializer": true
+        },
+        {
+          "coordinate": [
+            7,
+            1
+          ],
+          "symbol": "weights",
+          "address": 3700,
+          "size": 28672,
+          "bytes_sha256": "709f76d40838d90966dec6f82b2eb91320f802a03a316512617dc8bc7721c632",
+          "differs_from_initializer": false
+        },
+        {
+          "coordinate": [
+            8,
+            1
+          ],
+          "symbol": "output",
+          "address": 33384,
+          "size": 512,
+          "bytes_sha256": "16e165472c06fe808aaa95de9f5b32c63faa1f0b46fbea2d0eeebec1feca3bbb",
+          "differs_from_initializer": true
+        },
+        {
+          "coordinate": [
+            8,
+            1
+          ],
+          "symbol": "progress",
+          "address": 33896,
+          "size": 4,
+          "bytes_sha256": "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+          "differs_from_initializer": true
+        },
+        {
+          "coordinate": [
+            8,
+            1
+          ],
+          "symbol": "weights",
+          "address": 3700,
+          "size": 28672,
+          "bytes_sha256": "70f122ed7b90721a6275469e5d863f887ae265f60be78f9b9ca6c8c2a6849d58",
+          "differs_from_initializer": false
+        },
+        {
+          "coordinate": [
+            9,
+            1
+          ],
+          "symbol": "output",
+          "address": 33384,
+          "size": 512,
+          "bytes_sha256": "16e165472c06fe808aaa95de9f5b32c63faa1f0b46fbea2d0eeebec1feca3bbb",
+          "differs_from_initializer": true
+        },
+        {
+          "coordinate": [
+            9,
+            1
+          ],
+          "symbol": "progress",
+          "address": 33896,
+          "size": 4,
+          "bytes_sha256": "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+          "differs_from_initializer": true
+        },
+        {
+          "coordinate": [
+            9,
+            1
+          ],
+          "symbol": "weights",
+          "address": 3700,
+          "size": 28672,
+          "bytes_sha256": "d03c17f013d30fc627982638f6c24a94522bcdd9fa027ff31132cd78e3695af8",
+          "differs_from_initializer": false
+        },
+        {
+          "coordinate": [
+            10,
+            1
+          ],
+          "symbol": "output",
+          "address": 33384,
+          "size": 512,
+          "bytes_sha256": "16e165472c06fe808aaa95de9f5b32c63faa1f0b46fbea2d0eeebec1feca3bbb",
+          "differs_from_initializer": true
+        },
+        {
+          "coordinate": [
+            10,
+            1
+          ],
+          "symbol": "progress",
+          "address": 33896,
+          "size": 4,
+          "bytes_sha256": "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+          "differs_from_initializer": true
+        },
+        {
+          "coordinate": [
+            10,
+            1
+          ],
+          "symbol": "weights",
+          "address": 3700,
+          "size": 28672,
+          "bytes_sha256": "47a379ade47f99f64acce34903ad6b3e5f511f6b65f0e3f77d33a1e08b1e7b84",
+          "differs_from_initializer": false
+        },
+        {
+          "coordinate": [
+            11,
+            1
+          ],
+          "symbol": "output",
+          "address": 33356,
+          "size": 512,
+          "bytes_sha256": "16e165472c06fe808aaa95de9f5b32c63faa1f0b46fbea2d0eeebec1feca3bbb",
+          "differs_from_initializer": true
+        },
+        {
+          "coordinate": [
+            11,
+            1
+          ],
+          "symbol": "progress",
+          "address": 33868,
+          "size": 4,
+          "bytes_sha256": "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+          "differs_from_initializer": true
+        },
+        {
+          "coordinate": [
+            11,
+            1
+          ],
+          "symbol": "weights",
+          "address": 3672,
+          "size": 28672,
+          "bytes_sha256": "82cc5f55b2a141ea4c66675b4e242102e9d285f1b6ea758651bb0eab6a37ad4d",
+          "differs_from_initializer": false
+        }
+      ]
+    },
+    {
+      "variant": "baseline",
+      "core_sha256": "5e69407a4306df34277e73254c970a0e3018b74c603f0652aa3ccf8563240e2d",
+      "core_size": 2404878,
+      "core_mtime_utc": "2026-09-08T15:18:36.000650+00:00",
+      "checks": [
+        {
+          "coordinate": [
+            4,
+            1
+          ],
+          "symbol": "output",
+          "address": 33384,
+          "size": 512,
+          "bytes_sha256": "16e165472c06fe808aaa95de9f5b32c63faa1f0b46fbea2d0eeebec1feca3bbb",
+          "differs_from_initializer": true
+        },
+        {
+          "coordinate": [
+            4,
+            1
+          ],
+          "symbol": "progress",
+          "address": 33896,
+          "size": 4,
+          "bytes_sha256": "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+          "differs_from_initializer": true
+        },
+        {
+          "coordinate": [
+            4,
+            1
+          ],
+          "symbol": "weights",
+          "address": 3700,
+          "size": 28672,
+          "bytes_sha256": "584d4297de1b4891838c80a571a14e571329e9fd5e17dab33bcb550d45559bea",
+          "differs_from_initializer": false
+        },
+        {
+          "coordinate": [
+            5,
+            1
+          ],
+          "symbol": "output",
+          "address": 33384,
+          "size": 512,
+          "bytes_sha256": "16e165472c06fe808aaa95de9f5b32c63faa1f0b46fbea2d0eeebec1feca3bbb",
+          "differs_from_initializer": true
+        },
+        {
+          "coordinate": [
+            5,
+            1
+          ],
+          "symbol": "progress",
+          "address": 33896,
+          "size": 4,
+          "bytes_sha256": "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+          "differs_from_initializer": true
+        },
+        {
+          "coordinate": [
+            5,
+            1
+          ],
+          "symbol": "weights",
+          "address": 3700,
+          "size": 28672,
+          "bytes_sha256": "83523a46abb025f03da7e7c05351186be9dcf319141238169668f40b3e568300",
+          "differs_from_initializer": false
+        },
+        {
+          "coordinate": [
+            6,
+            1
+          ],
+          "symbol": "output",
+          "address": 33384,
+          "size": 512,
+          "bytes_sha256": "16e165472c06fe808aaa95de9f5b32c63faa1f0b46fbea2d0eeebec1feca3bbb",
+          "differs_from_initializer": true
+        },
+        {
+          "coordinate": [
+            6,
+            1
+          ],
+          "symbol": "progress",
+          "address": 33896,
+          "size": 4,
+          "bytes_sha256": "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+          "differs_from_initializer": true
+        },
+        {
+          "coordinate": [
+            6,
+            1
+          ],
+          "symbol": "weights",
+          "address": 3700,
+          "size": 28672,
+          "bytes_sha256": "6deb02cd6f0d6c66095b240e5e5bdff7f52c6ff5b32d2f8415e660f3b440eeba",
+          "differs_from_initializer": false
+        },
+        {
+          "coordinate": [
+            7,
+            1
+          ],
+          "symbol": "output",
+          "address": 33384,
+          "size": 512,
+          "bytes_sha256": "16e165472c06fe808aaa95de9f5b32c63faa1f0b46fbea2d0eeebec1feca3bbb",
+          "differs_from_initializer": true
+        },
+        {
+          "coordinate": [
+            7,
+            1
+          ],
+          "symbol": "progress",
+          "address": 33896,
+          "size": 4,
+          "bytes_sha256": "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+          "differs_from_initializer": true
+        },
+        {
+          "coordinate": [
+            7,
+            1
+          ],
+          "symbol": "weights",
+          "address": 3700,
+          "size": 28672,
+          "bytes_sha256": "709f76d40838d90966dec6f82b2eb91320f802a03a316512617dc8bc7721c632",
+          "differs_from_initializer": false
+        },
+        {
+          "coordinate": [
+            8,
+            1
+          ],
+          "symbol": "output",
+          "address": 33384,
+          "size": 512,
+          "bytes_sha256": "16e165472c06fe808aaa95de9f5b32c63faa1f0b46fbea2d0eeebec1feca3bbb",
+          "differs_from_initializer": true
+        },
+        {
+          "coordinate": [
+            8,
+            1
+          ],
+          "symbol": "progress",
+          "address": 33896,
+          "size": 4,
+          "bytes_sha256": "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+          "differs_from_initializer": true
+        },
+        {
+          "coordinate": [
+            8,
+            1
+          ],
+          "symbol": "weights",
+          "address": 3700,
+          "size": 28672,
+          "bytes_sha256": "70f122ed7b90721a6275469e5d863f887ae265f60be78f9b9ca6c8c2a6849d58",
+          "differs_from_initializer": false
+        },
+        {
+          "coordinate": [
+            9,
+            1
+          ],
+          "symbol": "output",
+          "address": 33384,
+          "size": 512,
+          "bytes_sha256": "16e165472c06fe808aaa95de9f5b32c63faa1f0b46fbea2d0eeebec1feca3bbb",
+          "differs_from_initializer": true
+        },
+        {
+          "coordinate": [
+            9,
+            1
+          ],
+          "symbol": "progress",
+          "address": 33896,
+          "size": 4,
+          "bytes_sha256": "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+          "differs_from_initializer": true
+        },
+        {
+          "coordinate": [
+            9,
+            1
+          ],
+          "symbol": "weights",
+          "address": 3700,
+          "size": 28672,
+          "bytes_sha256": "d03c17f013d30fc627982638f6c24a94522bcdd9fa027ff31132cd78e3695af8",
+          "differs_from_initializer": false
+        },
+        {
+          "coordinate": [
+            10,
+            1
+          ],
+          "symbol": "output",
+          "address": 33384,
+          "size": 512,
+          "bytes_sha256": "16e165472c06fe808aaa95de9f5b32c63faa1f0b46fbea2d0eeebec1feca3bbb",
+          "differs_from_initializer": true
+        },
+        {
+          "coordinate": [
+            10,
+            1
+          ],
+          "symbol": "progress",
+          "address": 33896,
+          "size": 4,
+          "bytes_sha256": "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+          "differs_from_initializer": true
+        },
+        {
+          "coordinate": [
+            10,
+            1
+          ],
+          "symbol": "weights",
+          "address": 3700,
+          "size": 28672,
+          "bytes_sha256": "47a379ade47f99f64acce34903ad6b3e5f511f6b65f0e3f77d33a1e08b1e7b84",
+          "differs_from_initializer": false
+        },
+        {
+          "coordinate": [
+            11,
+            1
+          ],
+          "symbol": "output",
+          "address": 33356,
+          "size": 512,
+          "bytes_sha256": "16e165472c06fe808aaa95de9f5b32c63faa1f0b46fbea2d0eeebec1feca3bbb",
+          "differs_from_initializer": true
+        },
+        {
+          "coordinate": [
+            11,
+            1
+          ],
+          "symbol": "progress",
+          "address": 33868,
+          "size": 4,
+          "bytes_sha256": "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+          "differs_from_initializer": true
+        },
+        {
+          "coordinate": [
+            11,
+            1
+          ],
+          "symbol": "weights",
+          "address": 3672,
+          "size": 28672,
+          "bytes_sha256": "82cc5f55b2a141ea4c66675b4e242102e9d285f1b6ea758651bb0eab6a37ad4d",
+          "differs_from_initializer": false
+        }
+      ]
+    }
+  ],
+  "scope": "Independent manual ELF64 headers/symbols and SDK ELFObject reading existing runtime ET_CORE only, never constructing SdkRuntime. Actual last-case output/progress4/weights match previously independently accepted D2H. Cores hashed now; not included in original execution hash tree. No live snapshot/public read_symbol/hardware transfer or fullmodel proof."
+}

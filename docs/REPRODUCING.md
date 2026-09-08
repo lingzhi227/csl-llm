@@ -86,3 +86,5 @@ Use the [resident MLP workflow](RESIDENT-MLP.md) to prepare fixtures, generate l
 ## Complete decoder layer0
 
 Use the [accepted decoder workflow](DECODER.md). The frozen layer0 driver is separate from the unexecuted parameterized layer interface. Generated bias/norm/weight source is model payload and must remain local.
+
+For the complete vocabulary component, assembly helpers and separate offline readers, see [source map and prerequisites](FULL-VOCABULARY.md#source-organization-and-reproduction-prerequisites). The public snapshots omit required local checkpoint/SDK artifacts and are not standalone executable fixtures.

@@ -1,0 +1,18 @@
+{
+  "success": true,
+  "offline_only": true,
+  "case": 0,
+  "matrix_tiles": 9496,
+  "application_coordinates": 9650,
+  "logits": 151936,
+  "lookup": 896,
+  "all_original_weights_exact": true,
+  "all_actual_arrays_exact": true,
+  "source_case_results_sha256": "cae11e98557e6cf70f5e090c0edc6e44a7bdaeafb6d5f585c2dfe819bdbe9b8f",
+  "core_sha256": "9cfee805d723390b8147a21d7a6b8c9a83584166c4d6dcaea06840be33dfc010",
+  "proof_checks_and_json_seconds": 7.260564999189228,
+  "contract_core_load_seconds": 0.25294509599916637,
+  "read_compare_seconds": 32.465207191882655,
+  "verified_read_seconds": 39.97871728707105,
+  "scope": "Read-only inspection of an already executed full vocabulary core using previously audited hash-bound symbol addresses. Full original weights and actual arrays/normal D2H are compared. No new simulator/compiler/neural result or hardware performance. Timing is not isolated from other host work."
+}

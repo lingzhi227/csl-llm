@@ -1,0 +1,22 @@
+{
+  "reviewed_at": "2026-09-08T17:38:02.294966+00:00",
+  "run": "vocabulary-assembled-20260908T172933194810Z",
+  "manifest_sha256": "fb3413671b084ffeae6d53dc924bde49cbf1e4e41f3585637906a403935eeb6e",
+  "execution_sha256": "90648e6cb5ba048800bcacd71a9ad647d6244ac41dd98edb240fd97562c68d05",
+  "results_sha256": "d0d5891fda6e80120dc4eb50e8e9a9e7fbf0bdb5302fe64d41629913f3fd74d1",
+  "composition_sha256": "d410b8e706af2808ad25683dd3d43627efe344af277ba392f4522386496ca332",
+  "symbols_sha256": "176970055d314b5a62a287a763fc9a918d4a50cbc9efe95073bf144bfc335810",
+  "elapsed_seconds": 288.67365167313255,
+  "peak_rss_kib": 1006540,
+  "all_tracked_pids_absent": true,
+  "elf_count": 9499,
+  "all9650_coordinates_unique_complete": true,
+  "all9496_original_loaded_weights_exact": true,
+  "all_selected_elf_bytes_unchanged": true,
+  "all_required_symbol_contracts_independently_parsed": true,
+  "max_static_high_water_bytes": 38768,
+  "source_allocation_graph_copies_verified": 18995,
+  "common_io_ordered_images_rpc_exact": true,
+  "scope": "Actual full original vocabulary intact assembly, loader weight bytes, manual ELF64 symbols/high-water and unchanged source graphs. Source batches have separate independent DSR/resource acceptance. SDK ELFObject remains shared loader dependency. No SdkRuntime/full-vocabulary neural execution or full-model acceptance.",
+  "review_script_sha256": "7d98f961bb57cb3a074a093776c8598b568ca7de35170afcfbed76668b368d54"
+}

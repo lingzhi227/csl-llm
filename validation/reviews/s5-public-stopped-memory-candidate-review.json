@@ -1,0 +1,10 @@
+{
+  "reviewed_at": "2026-09-08T15:59:36.334160+00:00",
+  "run": "partition-runtime-20260908T155803243957Z",
+  "manifest_sha256": "76a9cf78c322722ce550219578c27c19dcb7f77a581764e827c2319a31751fd6",
+  "all71_manifest_files_verified": true,
+  "only_driver_config_changed_from151505": true,
+  "compiled_trees_inputs_gates_exact": true,
+  "plan": "360s1GiB total, two sequential isolated SdkRuntime, no compiler. Stop then public read_symbol uint8 physical coordinates all8PE output/progress/weights to actualD2H, core/NPZ hashes included in results.",
+  "scope": "Candidate only; existing ET_CORE offline comparison independently passed separately."
+}

@@ -1,5 +1,5 @@
 {
-  "scope": "Full-grid tagged streaming SDK transport, partial-weight compile support and prior scoped milestones, 2026-09-08",
+  "scope": "Complete original tied vocabulary SDK runtime, static assembly and scoped offline readers, 2026-09-08",
   "files": [
     {
       "path": ".gitignore",
@@ -13,8 +13,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 6626,
-      "sha256": "c79eeef9d4bcb1b7868b06a3644262ced58586b1927910d3aaffc789fc2d7cf2"
+      "bytes": 7228,
+      "sha256": "dfe2993c982694701e3b22f290f991d4034dd8c6d35b4d4da81d348306bf7d94"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
@@ -242,6 +242,41 @@
       "sha256": "e923d62d7c3527d80282bb6b4714bb00b537510d8c4a48455f84aa939571b26b"
     },
     {
+      "path": "csl/programs/resident_vocabulary/argmax.csl",
+      "bytes": 772,
+      "sha256": "f2d70dae54e1bea001256f345dd870ee9a9cafdcbda1703d7899e7eabce0e096"
+    },
+    {
+      "path": "csl/programs/resident_vocabulary/embedding.csl",
+      "bytes": 811,
+      "sha256": "a97ff65ee153bb5caedfd4085f659011cba3d686715c132ab95e8e6a25cf64a0"
+    },
+    {
+      "path": "csl/programs/resident_vocabulary/input.csl",
+      "bytes": 709,
+      "sha256": "e9b289a13f821df69a08e58e9bf6847f4b542d94d617c60d8df143413d2a61af"
+    },
+    {
+      "path": "csl/programs/resident_vocabulary/kernel.csl",
+      "bytes": 1387,
+      "sha256": "3e92175efe12b28065bb77934c54136db3c9287c68c81877781a0e527354304c"
+    },
+    {
+      "path": "csl/programs/resident_vocabulary/line.csl",
+      "bytes": 3947,
+      "sha256": "21f8628d937c6e481c24a45747895fb27caa1bd2a6b18d7338e138d492a4a529"
+    },
+    {
+      "path": "csl/programs/resident_vocabulary/packets.csl",
+      "bytes": 2601,
+      "sha256": "151009e07423dc16bb2b2304f29e7e6c52e84e57613c809eb5188470e8bcc6c7"
+    },
+    {
+      "path": "csl/programs/resident_vocabulary/pe.csl",
+      "bytes": 6561,
+      "sha256": "fb5e0f177f6808fdbcc9c491a7e07ea143b9392480de4a3ff71f131dbc65098a"
+    },
+    {
       "path": "csl/programs/static_weights/kernel.csl",
       "bytes": 1387,
       "sha256": "3e92175efe12b28065bb77934c54136db3c9287c68c81877781a0e527354304c"
@@ -302,6 +337,11 @@
       "sha256": "355377294fe34a17dac77b17f03673ccab6b943af31d8d459e6fb97a5a97c894"
     },
     {
+      "path": "docs/FULL-VOCABULARY.md",
+      "bytes": 7661,
+      "sha256": "99ec63cf0ba0b5f00eb13935c58f125319939fb07b3e9ba08ee5226e1dc221c0"
+    },
+    {
       "path": "docs/LAYOUT-CANDIDATE.md",
       "bytes": 3099,
       "sha256": "b7d79e77725fa9b3b538de6add3871a1d288c8a50e323dc1a4e3e682212f0f79"
@@ -333,8 +373,8 @@
     },
     {
       "path": "docs/REPRODUCING.md",
-      "bytes": 5936,
-      "sha256": "82fa2af3534c48c94f37dea2371d80c2d5bb7665b1daf80932f25406371eae14"
+      "bytes": 6240,
+      "sha256": "47ce8c768ea6458e46fae24614593bc0cab0fe6596e4d1a2492915e3afe566b4"
     },
     {
       "path": "docs/RESIDENT-MLP.md",
@@ -343,8 +383,8 @@
     },
     {
       "path": "docs/STATUS.md",
-      "bytes": 3583,
-      "sha256": "501f5759828b482b859dbb2866ff79b3747ac9d63d23c6f11f081f7b0a0d562f"
+      "bytes": 4041,
+      "sha256": "2e7c57d7331fb01acdf2cc49926d90c7518259eb001b4065faae310347e33ca0"
     },
     {
       "path": "docs/STREAM-OUTPUT.md",
@@ -363,8 +403,8 @@
     },
     {
       "path": "release/CHECKS.md",
-      "bytes": 9614,
-      "sha256": "a3db7e8bd0e26ae55e5417aba665a8262112a3a635da7c76fb7104c281eff823"
+      "bytes": 10090,
+      "sha256": "5f2e24f495aa315e581ff097928a20bcfcbb992305d8fdbc4a9bb108d383cec9"
     },
     {
       "path": "release/COLLECTIVE-CHECKS.json",
@@ -437,6 +477,11 @@
       "sha256": "843f2987ff83dd4f8e40f6069dbc45dd229511f7b85cd7aca229d8f7849dc2a4"
     },
     {
+      "path": "release/VOCABULARY-CHECKS.json",
+      "bytes": 2312,
+      "sha256": "c6e8e7e7ad3b82c65cbb23f1ecb8f6de736a2b5c0a3ec26de2f79294296bec26"
+    },
+    {
       "path": "release/verify_manifest.py",
       "bytes": 452,
       "sha256": "94562d7211935bfd47160ffcd01f82711307c78fb530cc39729ebd1a5c2e79a9"
@@ -480,6 +525,11 @@
       "path": "tests/test_bf16_transport.py",
       "bytes": 1115,
       "sha256": "3cfa0200548237147c3eed2e4f495d4c12d24f7ae0aebf774ccdeaf1c6d80e85"
+    },
+    {
+      "path": "tests/test_core_contract.py",
+      "bytes": 2242,
+      "sha256": "bb45fecca3b29dc750babd4f5b2ba17ac3cdc8fab3ce3c3fb2be03b7ab34f66c"
     },
     {
       "path": "tests/test_decoder_model_ownership.py",
@@ -550,6 +600,21 @@
       "path": "tools/compare_elf_images.py",
       "bytes": 2353,
       "sha256": "64bdf83955560a94e1e0389f9f6ee81c91632c370e70560462d1f285f1852f6f"
+    },
+    {
+      "path": "tools/contract_sdk_core.py",
+      "bytes": 7101,
+      "sha256": "ac0ff42dc186cec411254f17ba8df28d25d71d3e8620ea88071cb74912e9a571"
+    },
+    {
+      "path": "tools/core_contract_probe.py",
+      "bytes": 8281,
+      "sha256": "867a9e375f06b1cf4c3481a14b24f4ad6eaf877eba2f32d19303332877973c83"
+    },
+    {
+      "path": "tools/core_topology_probe.py",
+      "bytes": 6381,
+      "sha256": "5797e18137b23c6f62be60378bfc01e3914374406002527bf5a5e2404e3f7bf2"
     },
     {
       "path": "tools/distributed_linear_probe.py",
@@ -742,6 +807,11 @@
       "sha256": "f654395d9b60a3b91ad32908d3d216aa5d0d4792ccd26ce18b5ee6ea89b53929"
     },
     {
+      "path": "tools/topology_sdk_core.py",
+      "bytes": 2755,
+      "sha256": "06f001a8138f926ad8646f440cbef278d33a13f30f179b4ce68eb39081468064"
+    },
+    {
       "path": "tools/vector_probe.py",
       "bytes": 9422,
       "sha256": "399ad88dd52ec86977059a929c8dba73e8eeb6a9c68433efaf8dab5c213a3346"
@@ -750,6 +820,36 @@
       "path": "tools/verify_weight_pack.py",
       "bytes": 3593,
       "sha256": "0e73b0020e8c99eef84ea528f740f7f052560a0e91cd619240c2c4318f38bfa4"
+    },
+    {
+      "path": "tools/vocabulary_assemble_probe.py",
+      "bytes": 9146,
+      "sha256": "d4989ecca6f7c2734ce88d9c2cf3eb7ea5f3b3c3425d90395d0af78d631bd23a"
+    },
+    {
+      "path": "tools/vocabulary_compare_elf_images.py",
+      "bytes": 2353,
+      "sha256": "64bdf83955560a94e1e0389f9f6ee81c91632c370e70560462d1f285f1852f6f"
+    },
+    {
+      "path": "tools/vocabulary_elf_partition.py",
+      "bytes": 6170,
+      "sha256": "53c0c74f0731a9ff26424b9cf53b91dfb02ffd4bffc12e63d6edbbdaf9118878"
+    },
+    {
+      "path": "tools/vocabulary_runtime_probe.py",
+      "bytes": 14442,
+      "sha256": "2c4ebfa46240c8b00f0b19d87a68b59ea29e67713881ca5a2b28d54dee4cbad5"
+    },
+    {
+      "path": "tools/vocabulary_sdk_core.py",
+      "bytes": 2755,
+      "sha256": "06f001a8138f926ad8646f440cbef278d33a13f30f179b4ce68eb39081468064"
+    },
+    {
+      "path": "tools/vocabulary_symbols.py",
+      "bytes": 3124,
+      "sha256": "95e4517a9c89ec3e0a066db3025ef518a1b71d5b8ae09317b40fbd35a57e95ec"
     },
     {
       "path": "validation/MLP-DSD-FAILURE.json",
@@ -937,6 +1037,206 @@
       "sha256": "d2bbb0c904e7cfa042e2590f63c7b824681148129d5810a6b0d25721ccc86f30"
     },
     {
+      "path": "validation/frozen/compact-vocabulary-compile-20260908T160050947282Z/config.json",
+      "bytes": 10946,
+      "sha256": "ad605f45f81096b1f87cbcb3c98da308d98ecf63d3c7a84e590fb193b66f1da4"
+    },
+    {
+      "path": "validation/frozen/compact-vocabulary-compile-20260908T160050947282Z/driver.py",
+      "bytes": 8953,
+      "sha256": "ce0f1a63616faf0aa523ca882ac0b99516033a56301aff0f6164db30cf96941e"
+    },
+    {
+      "path": "validation/frozen/compact-vocabulary-compile-20260908T160050947282Z/encoder.py",
+      "bytes": 5545,
+      "sha256": "7b12467f4b63acd2dd82d64e90fba994fd0df17d5909257b164e3156730f1f4c"
+    },
+    {
+      "path": "validation/frozen/compact-vocabulary-compile-20260908T160050947282Z/execution-summary.json",
+      "bytes": 792,
+      "sha256": "7ab9939a0d510b9bc5e1be78ccd72ff1289a325a4da297b60a9e7ba1cabab91d"
+    },
+    {
+      "path": "validation/frozen/compact-vocabulary-compile-20260908T160050947282Z/manifest.json",
+      "bytes": 96928,
+      "sha256": "03734b1e458b7b1ac8a85a45ee4657adabddb0078db5996c9d0bbe1f63bbbd1b"
+    },
+    {
+      "path": "validation/frozen/compact-vocabulary-compile-20260908T160641958797Z/config.json",
+      "bytes": 10946,
+      "sha256": "e494bca4bc23eacf9c15225c51dccfd9e3ad17581db239afd2499491b8673894"
+    },
+    {
+      "path": "validation/frozen/compact-vocabulary-compile-20260908T160641958797Z/driver.py",
+      "bytes": 8953,
+      "sha256": "ce0f1a63616faf0aa523ca882ac0b99516033a56301aff0f6164db30cf96941e"
+    },
+    {
+      "path": "validation/frozen/compact-vocabulary-compile-20260908T160641958797Z/encoder.py",
+      "bytes": 5545,
+      "sha256": "7b12467f4b63acd2dd82d64e90fba994fd0df17d5909257b164e3156730f1f4c"
+    },
+    {
+      "path": "validation/frozen/compact-vocabulary-compile-20260908T160641958797Z/execution-summary.json",
+      "bytes": 792,
+      "sha256": "4f46110ec60a526a9519eb9adfda92f2d68cdce1d0045235956b25fd00ccef34"
+    },
+    {
+      "path": "validation/frozen/compact-vocabulary-compile-20260908T160641958797Z/manifest.json",
+      "bytes": 96854,
+      "sha256": "6f270fae4fae28f8cc6122454cb2d161d6777aa13192a4ae3ef4802431a19897"
+    },
+    {
+      "path": "validation/frozen/compact-vocabulary-compile-20260908T160650162414Z/config.json",
+      "bytes": 10946,
+      "sha256": "4b228b588a8931624a9f5a18e29fe7e265a8e9d5d4dfc0f2571facb7013469bf"
+    },
+    {
+      "path": "validation/frozen/compact-vocabulary-compile-20260908T160650162414Z/driver.py",
+      "bytes": 8953,
+      "sha256": "ce0f1a63616faf0aa523ca882ac0b99516033a56301aff0f6164db30cf96941e"
+    },
+    {
+      "path": "validation/frozen/compact-vocabulary-compile-20260908T160650162414Z/encoder.py",
+      "bytes": 5545,
+      "sha256": "7b12467f4b63acd2dd82d64e90fba994fd0df17d5909257b164e3156730f1f4c"
+    },
+    {
+      "path": "validation/frozen/compact-vocabulary-compile-20260908T160650162414Z/execution-summary.json",
+      "bytes": 792,
+      "sha256": "2baf9eb4a4cf7cce46db40a3025ed619147a338e5f2dc8ebf1e4054d0a74365d"
+    },
+    {
+      "path": "validation/frozen/compact-vocabulary-compile-20260908T160650162414Z/manifest.json",
+      "bytes": 96892,
+      "sha256": "30d37aef1221098d16466677affa2839e67189355accf813719fc444c87e4103"
+    },
+    {
+      "path": "validation/frozen/compact-vocabulary-compile-20260908T160658359021Z/config.json",
+      "bytes": 10946,
+      "sha256": "0772183e71bf7ea22b4adb6c82ce83281e7c80957898b67a7a82c9aaf22cddeb"
+    },
+    {
+      "path": "validation/frozen/compact-vocabulary-compile-20260908T160658359021Z/driver.py",
+      "bytes": 8953,
+      "sha256": "ce0f1a63616faf0aa523ca882ac0b99516033a56301aff0f6164db30cf96941e"
+    },
+    {
+      "path": "validation/frozen/compact-vocabulary-compile-20260908T160658359021Z/encoder.py",
+      "bytes": 5545,
+      "sha256": "7b12467f4b63acd2dd82d64e90fba994fd0df17d5909257b164e3156730f1f4c"
+    },
+    {
+      "path": "validation/frozen/compact-vocabulary-compile-20260908T160658359021Z/execution-summary.json",
+      "bytes": 792,
+      "sha256": "c881a5b661c7115e25b03b9cc6f65d6897b54b883098072f257a1ac9450d1ee5"
+    },
+    {
+      "path": "validation/frozen/compact-vocabulary-compile-20260908T160658359021Z/manifest.json",
+      "bytes": 96928,
+      "sha256": "02e707b63ea67381ae475dabbc5c17e9a36c906337826eebd68c34f00926bac1"
+    },
+    {
+      "path": "validation/frozen/compact-vocabulary-compile-20260908T160707598839Z/config.json",
+      "bytes": 10946,
+      "sha256": "a26b1dfd0b1d0b580b9e8741b8b1baf7f172da560be291269b6eeb87729c22fc"
+    },
+    {
+      "path": "validation/frozen/compact-vocabulary-compile-20260908T160707598839Z/driver.py",
+      "bytes": 8953,
+      "sha256": "ce0f1a63616faf0aa523ca882ac0b99516033a56301aff0f6164db30cf96941e"
+    },
+    {
+      "path": "validation/frozen/compact-vocabulary-compile-20260908T160707598839Z/encoder.py",
+      "bytes": 5545,
+      "sha256": "7b12467f4b63acd2dd82d64e90fba994fd0df17d5909257b164e3156730f1f4c"
+    },
+    {
+      "path": "validation/frozen/compact-vocabulary-compile-20260908T160707598839Z/execution-summary.json",
+      "bytes": 792,
+      "sha256": "07ac0a3b07754abb6d08d92c4150f2e8750fc997e420e4eca40d5a6d11f40f3c"
+    },
+    {
+      "path": "validation/frozen/compact-vocabulary-compile-20260908T160707598839Z/manifest.json",
+      "bytes": 96854,
+      "sha256": "61046b23a9dc8ed30d43aba8711b1a8c2514d5da78a86e60ebe5359818625dea"
+    },
+    {
+      "path": "validation/frozen/compact-vocabulary-compile-20260908T160716135226Z/config.json",
+      "bytes": 10946,
+      "sha256": "d3ff8d4ef55480db1a80b342715162beeb8377b7949349b9490860dd02068a5d"
+    },
+    {
+      "path": "validation/frozen/compact-vocabulary-compile-20260908T160716135226Z/driver.py",
+      "bytes": 8953,
+      "sha256": "ce0f1a63616faf0aa523ca882ac0b99516033a56301aff0f6164db30cf96941e"
+    },
+    {
+      "path": "validation/frozen/compact-vocabulary-compile-20260908T160716135226Z/encoder.py",
+      "bytes": 5545,
+      "sha256": "7b12467f4b63acd2dd82d64e90fba994fd0df17d5909257b164e3156730f1f4c"
+    },
+    {
+      "path": "validation/frozen/compact-vocabulary-compile-20260908T160716135226Z/execution-summary.json",
+      "bytes": 792,
+      "sha256": "1a7029f93ba5e3005eaaa357854198c8c4fc5305554c1fe73b7a707a2ad96158"
+    },
+    {
+      "path": "validation/frozen/compact-vocabulary-compile-20260908T160716135226Z/manifest.json",
+      "bytes": 96892,
+      "sha256": "33210033e6d54adfd65b3cabafcb581cdc55c8505b046a2a9fa62644c4ff5bea"
+    },
+    {
+      "path": "validation/frozen/compact-vocabulary-compile-20260908T160724699618Z/config.json",
+      "bytes": 10946,
+      "sha256": "81bfdc5ba7c67d4cd6e1c9b9c36f6aa99fbe94ad778631a415ad4e24089402da"
+    },
+    {
+      "path": "validation/frozen/compact-vocabulary-compile-20260908T160724699618Z/driver.py",
+      "bytes": 8953,
+      "sha256": "ce0f1a63616faf0aa523ca882ac0b99516033a56301aff0f6164db30cf96941e"
+    },
+    {
+      "path": "validation/frozen/compact-vocabulary-compile-20260908T160724699618Z/encoder.py",
+      "bytes": 5545,
+      "sha256": "7b12467f4b63acd2dd82d64e90fba994fd0df17d5909257b164e3156730f1f4c"
+    },
+    {
+      "path": "validation/frozen/compact-vocabulary-compile-20260908T160724699618Z/execution-summary.json",
+      "bytes": 792,
+      "sha256": "31541b1bd8e58b68786f91e874b988afd5c8b2693898b2a3e8618146f0f2b491"
+    },
+    {
+      "path": "validation/frozen/compact-vocabulary-compile-20260908T160724699618Z/manifest.json",
+      "bytes": 96928,
+      "sha256": "99d76a561762649c64fb010e1a15fa8c55e3218d78f347f877ad7b6727b0124a"
+    },
+    {
+      "path": "validation/frozen/compact-vocabulary-compile-20260908T160733196670Z/config.json",
+      "bytes": 3506,
+      "sha256": "834d2c87b67c308f1b8165d85b75415b23c64f5566252699c52eaf3bc62bbee8"
+    },
+    {
+      "path": "validation/frozen/compact-vocabulary-compile-20260908T160733196670Z/driver.py",
+      "bytes": 8953,
+      "sha256": "ce0f1a63616faf0aa523ca882ac0b99516033a56301aff0f6164db30cf96941e"
+    },
+    {
+      "path": "validation/frozen/compact-vocabulary-compile-20260908T160733196670Z/encoder.py",
+      "bytes": 5545,
+      "sha256": "7b12467f4b63acd2dd82d64e90fba994fd0df17d5909257b164e3156730f1f4c"
+    },
+    {
+      "path": "validation/frozen/compact-vocabulary-compile-20260908T160733196670Z/execution-summary.json",
+      "bytes": 793,
+      "sha256": "28bde5151532efa048ffbf5fc2e11627af48356bbf48ceef287af808bee3f725"
+    },
+    {
+      "path": "validation/frozen/compact-vocabulary-compile-20260908T160733196670Z/manifest.json",
+      "bytes": 27334,
+      "sha256": "8ff14ad7889985913df65a2eb9a567be1ba5ce00f21e6cb46d15ced9f78a2170"
+    },
+    {
       "path": "validation/frozen/compact-weights-compile-20260908T135146210938Z/config.json",
       "bytes": 521,
       "sha256": "21a84bda80cbc42c685bd1134d9630ea562be2d24c4198629354412e7045c024"
@@ -1070,6 +1370,71 @@
       "path": "validation/frozen/compact-weights-runtime-20260908T142527930638Z/runtime_worker.py",
       "bytes": 8329,
       "sha256": "14edb681d8d153059728da6d71455c49a839a3b66bcaf44b1410a7d00ef8c912"
+    },
+    {
+      "path": "validation/frozen/core-contract-audit-20260908T190039713537Z/config.json",
+      "bytes": 539,
+      "sha256": "20e6b5c94d9d47cc6ab0c153d0c13051f8fcfdf44466ac98fa325df819cca7ed"
+    },
+    {
+      "path": "validation/frozen/core-contract-audit-20260908T190039713537Z/driver.py",
+      "bytes": 8254,
+      "sha256": "5e12db9e0794fb85e46bcb13870450fb9269118f9ebba03d9940ed7cdd9b4dc1"
+    },
+    {
+      "path": "validation/frozen/core-contract-audit-20260908T190039713537Z/execution-summary.json",
+      "bytes": 790,
+      "sha256": "a39699ffd6c4abe737b60788f37d5680098682d4b7fec3e2c06c725b35eb3673"
+    },
+    {
+      "path": "validation/frozen/core-contract-audit-20260908T190039713537Z/manifest.json",
+      "bytes": 1397,
+      "sha256": "1b5a0ea4576b429a52f26311297ca0fa499e7ac099a7bfe037a7af1a415a3999"
+    },
+    {
+      "path": "validation/frozen/core-contract-audit-20260908T190039713537Z/results.json",
+      "bytes": 920,
+      "sha256": "bbafc474a597871cca9ce2c87fc535164d523c3ef4746fa6a9f5cb91465af54a"
+    },
+    {
+      "path": "validation/frozen/core-contract-audit-20260908T190039713537Z/sdk_core.py",
+      "bytes": 7101,
+      "sha256": "ac0ff42dc186cec411254f17ba8df28d25d71d3e8620ea88071cb74912e9a571"
+    },
+    {
+      "path": "validation/frozen/core-topology-audit-20260908T162341268872Z/config-summary.json",
+      "bytes": 1038,
+      "sha256": "f16899f3fcc20e9bf30121665e044955bb7cb9b5c645b088e8f7129c1fa995a9"
+    },
+    {
+      "path": "validation/frozen/core-topology-audit-20260908T162341268872Z/driver.py",
+      "bytes": 6363,
+      "sha256": "0553cdf91bd711e578a60630964d68fc06fc8647a5caf55b8c769be80db1eaf8"
+    },
+    {
+      "path": "validation/frozen/core-topology-audit-20260908T162341268872Z/execution-summary.json",
+      "bytes": 788,
+      "sha256": "f629438f00e098738c4da9fb0f1149ec53f61024f18eed3bf81866a4677f97fa"
+    },
+    {
+      "path": "validation/frozen/core-topology-audit-20260908T162341268872Z/manifest.json",
+      "bytes": 1667,
+      "sha256": "4dd614060af091ebbbe6d96478d15a148d47283d41b553181ac54d177fe6bd3c"
+    },
+    {
+      "path": "validation/frozen/core-topology-audit-20260908T162341268872Z/results.json",
+      "bytes": 770,
+      "sha256": "e0b42db74eecddc820ffc7bd9320a367f28c94ada56c5f8d4994451f872f2853"
+    },
+    {
+      "path": "validation/frozen/core-topology-audit-20260908T162341268872Z/sdk_core.py",
+      "bytes": 2755,
+      "sha256": "06f001a8138f926ad8646f440cbef278d33a13f30f179b4ce68eb39081468064"
+    },
+    {
+      "path": "validation/frozen/core-topology-audit-20260908T162341268872Z/timing-environment-note.json",
+      "bytes": 572,
+      "sha256": "d570b61b73ad8b41540a31e62eba97cdc9dd26ac9337be5caea9feebb04eb073"
     },
     {
       "path": "validation/frozen/decoder-stream-compile-20260908T131131135548Z/activation_stream.csl",
@@ -1505,6 +1870,16 @@
       "path": "validation/frozen/partition-runtime-20260908T151505818904Z/results.json",
       "bytes": 11985,
       "sha256": "ea851ce8efef320f64873c14e40974bfa0cb103650fe617fa59091745e9eaae3"
+    },
+    {
+      "path": "validation/frozen/partition-runtime-20260908T155803243957Z/execution-summary.json",
+      "bytes": 704,
+      "sha256": "e43865b2613ba4ee1a3e92c62d0038924767fce631073c786bd4cb87de7dc71c"
+    },
+    {
+      "path": "validation/frozen/partition-runtime-20260908T155803243957Z/manifest.json",
+      "bytes": 7305,
+      "sha256": "76a9cf78c322722ce550219578c27c19dcb7f77a581764e827c2319a31751fd6"
     },
     {
       "path": "validation/frozen/projection-down-20260908T094329141262Z/bf16_transport.py",
@@ -2202,6 +2577,96 @@
       "sha256": "43636c22795d3d83f02a6510cc5a8c6df95b62a06dd3f3f89173f0d5cd09da3e"
     },
     {
+      "path": "validation/frozen/vocabulary-assembled-20260908T172933194810Z/batches-summary.json",
+      "bytes": 6870,
+      "sha256": "a942177e97632c8497a0b6f304344cc375a3613281c0147f2e53993c451962c9"
+    },
+    {
+      "path": "validation/frozen/vocabulary-assembled-20260908T172933194810Z/compare_elf_images.py",
+      "bytes": 2353,
+      "sha256": "64bdf83955560a94e1e0389f9f6ee81c91632c370e70560462d1f285f1852f6f"
+    },
+    {
+      "path": "validation/frozen/vocabulary-assembled-20260908T172933194810Z/driver.py",
+      "bytes": 9115,
+      "sha256": "47c68604861357ee615a646bd4f02669f8d287eccaea40c70cf674b4f0dd85a8"
+    },
+    {
+      "path": "validation/frozen/vocabulary-assembled-20260908T172933194810Z/elf_partition.py",
+      "bytes": 6170,
+      "sha256": "53c0c74f0731a9ff26424b9cf53b91dfb02ffd4bffc12e63d6edbbdaf9118878"
+    },
+    {
+      "path": "validation/frozen/vocabulary-assembled-20260908T172933194810Z/execution-summary.json",
+      "bytes": 792,
+      "sha256": "621917cd6654cfcac21bd84c117bc64eaac9173517ff504dc3ec05d43fa274ad"
+    },
+    {
+      "path": "validation/frozen/vocabulary-assembled-20260908T172933194810Z/manifest.json",
+      "bytes": 4450967,
+      "sha256": "fb3413671b084ffeae6d53dc924bde49cbf1e4e41f3585637906a403935eeb6e"
+    },
+    {
+      "path": "validation/frozen/vocabulary-assembled-20260908T172933194810Z/preparation.json",
+      "bytes": 258,
+      "sha256": "1258882b21dfdc79d5a1344a0907330d61ede67374df3e1cafd7a5aafb519975"
+    },
+    {
+      "path": "validation/frozen/vocabulary-assembled-20260908T172933194810Z/results.json",
+      "bytes": 139006,
+      "sha256": "d0d5891fda6e80120dc4eb50e8e9a9e7fbf0bdb5302fe64d41629913f3fd74d1"
+    },
+    {
+      "path": "validation/frozen/vocabulary-assembled-20260908T172933194810Z/vocabulary_symbols.py",
+      "bytes": 3124,
+      "sha256": "95e4517a9c89ec3e0a066db3025ef518a1b71d5b8ae09317b40fbd35a57e95ec"
+    },
+    {
+      "path": "validation/frozen/vocabulary-runtime-20260908T173751421842Z/case-0/results.json",
+      "bytes": 1736,
+      "sha256": "cae11e98557e6cf70f5e090c0edc6e44a7bdaeafb6d5f585c2dfe819bdbe9b8f"
+    },
+    {
+      "path": "validation/frozen/vocabulary-runtime-20260908T173751421842Z/case-1/results.json",
+      "bytes": 1626,
+      "sha256": "63c1aad946516cf43c214fb64f0f72f3a7cbf8595abc0fb7bbc4a831bc978e39"
+    },
+    {
+      "path": "validation/frozen/vocabulary-runtime-20260908T173751421842Z/case-2/results.json",
+      "bytes": 1736,
+      "sha256": "dccfa09737850f981d90f7adfa09965ada14550597aae740d8424b2b3bf3749f"
+    },
+    {
+      "path": "validation/frozen/vocabulary-runtime-20260908T173751421842Z/config.json",
+      "bytes": 4062,
+      "sha256": "a1c691b5171e8049d7d2b62f3f90010e9f84d23c6e4cfba265cd9f825e29add5"
+    },
+    {
+      "path": "validation/frozen/vocabulary-runtime-20260908T173751421842Z/driver.py",
+      "bytes": 14413,
+      "sha256": "bb5f1d6551c7da51328ac23f7982a12cd78932186cdf0b4a02cdf7f4ead47a3c"
+    },
+    {
+      "path": "validation/frozen/vocabulary-runtime-20260908T173751421842Z/execution-summary.json",
+      "bytes": 795,
+      "sha256": "5e3c8ad9ad933aa85af02cda40b3f24687db03d72829d6774abdc9f3769b569c"
+    },
+    {
+      "path": "validation/frozen/vocabulary-runtime-20260908T173751421842Z/manifest.json",
+      "bytes": 2886921,
+      "sha256": "b1ee3e042c4e644147fa8f604fc69e88c5ff4bfc78e0f5e8c996a763825abb2c"
+    },
+    {
+      "path": "validation/frozen/vocabulary-runtime-20260908T173751421842Z/results.json",
+      "bytes": 6192,
+      "sha256": "0afbe4c606252009eaa368a1cd94b42520d8fad8ac568e502bf8af892ae9c4f7"
+    },
+    {
+      "path": "validation/frozen/vocabulary-runtime-20260908T173751421842Z/sdk_core.py",
+      "bytes": 2755,
+      "sha256": "06f001a8138f926ad8646f440cbef278d33a13f30f179b4ce68eb39081468064"
+    },
+    {
       "path": "validation/offline/layer-parameterization/parameterized_driver.py",
       "bytes": 26582,
       "sha256": "adc055effe8d54805717ab47a6fe7ebc5ad39c47b01091dda96103e9bacbc00d"
@@ -2567,6 +3032,41 @@
       "sha256": "79e3a7d72b61acb51b33e7513c70fb04ed5050525761be35008f311bbfe551a7"
     },
     {
+      "path": "validation/reviews/s5-core-contract-candidate-review.json",
+      "bytes": 1176,
+      "sha256": "a82b0c167354e73d87540087c4aba0de944e448555854dae79265a108bf7bee4"
+    },
+    {
+      "path": "validation/reviews/s5-core-contract-execution-review.json",
+      "bytes": 1569,
+      "sha256": "2d00eb88cbddf4b3dc802fb647fde642f1e32943adf5ce0c0a49c5efbfad4eeb"
+    },
+    {
+      "path": "validation/reviews/s5-core-topology-audit-source-review.json",
+      "bytes": 1194,
+      "sha256": "f04b22f4b0ed9cf86020a67f7573d57f82b89353f0421b7ecfaa2973e11da231"
+    },
+    {
+      "path": "validation/reviews/s5-core-topology-symbol-failure-review.json",
+      "bytes": 823,
+      "sha256": "b465aab5bf544633723039f56959a795c2ebb44ecf6e09e8b67e588bf683a8e7"
+    },
+    {
+      "path": "validation/reviews/s5-existing-runtime-core-review.json",
+      "bytes": 16087,
+      "sha256": "9ccd18f71f1d63548b851d75d41eafe9fbd6e818ddc045491f73750795dd7cfb"
+    },
+    {
+      "path": "validation/reviews/s5-fulltopology-core-independent-review.json",
+      "bytes": 1472,
+      "sha256": "9ed9a1e1c577bc45824ba39c31cbf8b3f6f8fa39063baabcea7b8408f94630b3"
+    },
+    {
+      "path": "validation/reviews/s5-public-stopped-memory-candidate-review.json",
+      "bytes": 648,
+      "sha256": "e837dc8cc00089748771c1e23ff046213490bcf2d1a5960c5e2c804fcab24633"
+    },
+    {
       "path": "validation/reviews/s5-stream-output-fulltopology-numeric-review.json",
       "bytes": 2190,
       "sha256": "0b69620ced4017afe58ef8dcee528964856024c902fb5ffd264e757963e450c1"
@@ -2607,6 +3107,16 @@
       "sha256": "58a9bdd7ac6ab369e96fa137d4bb536d74bea0f7f80fb64b86567485465e1629"
     },
     {
+      "path": "validation/reviews/s5-vocabulary-case0-independent-numeric-review.json",
+      "bytes": 1384,
+      "sha256": "e07a4556ce1f01c253d27fee3f800e1f8eb2bfc3f6c9104163ac9c891826b5a5"
+    },
+    {
+      "path": "validation/reviews/s5-vocabulary-case1-independent-numeric-review.json",
+      "bytes": 1053,
+      "sha256": "d796d223a808f6e366fcd28f98893076990c1a261536fa21a80edf484bd2f086"
+    },
+    {
       "path": "validation/reviews/s5-vocabulary-compile-resource-failure-review.json",
       "bytes": 1162,
       "sha256": "b3f7e84429026ed9f24bf8c6667d73464076a1e05418602b43d613b077d2e750"
@@ -2625,6 +3135,116 @@
       "path": "validation/reviews/s5-vocabulary-partition-1024-2047-resource-review.json",
       "bytes": 917,
       "sha256": "c3cbb52bec461b9b895928c37b2f3d9a7b3b7215d702d87852e0b1ccea7b4d5e"
+    },
+    {
+      "path": "validation/reviews/s5-vocabulary-partition-2048-3071-initializer-review.json",
+      "bytes": 134770,
+      "sha256": "0241e4c0a7c337decb0b98a94af63e4a42a5f5b830a98c83ff117377c1bf0398"
+    },
+    {
+      "path": "validation/reviews/s5-vocabulary-partition-2048-3071-resource-review.json",
+      "bytes": 917,
+      "sha256": "d1a35617c67c70f2af79a981d3002b3156f4d9b33f7aca27b5c6aab9ee1ea4a3"
+    },
+    {
+      "path": "validation/reviews/s5-vocabulary-partition-3072-4095-initializer-review.json",
+      "bytes": 134827,
+      "sha256": "80cb3996a2021a61ddb8fd89a11a1af3750272b68501f2af2e4181594839275b"
+    },
+    {
+      "path": "validation/reviews/s5-vocabulary-partition-3072-4095-resource-review.json",
+      "bytes": 917,
+      "sha256": "cfc9c4ac19582cc6a1b26db3ed8da4f072e25a030f3900c27c4225e8a6515d72"
+    },
+    {
+      "path": "validation/reviews/s5-vocabulary-partition-4096-5119-initializer-review.json",
+      "bytes": 134827,
+      "sha256": "ee40d1a0fe0181a8faea596b2f8529e315c58d8a1add965cffb06ad100e92ced"
+    },
+    {
+      "path": "validation/reviews/s5-vocabulary-partition-4096-5119-resource-review.json",
+      "bytes": 917,
+      "sha256": "5fb95794296b63a017c666004e2f395e2accf6791f71fa0b3878d8d10996851f"
+    },
+    {
+      "path": "validation/reviews/s5-vocabulary-partition-5120-6143-initializer-review.json",
+      "bytes": 134827,
+      "sha256": "ec289a30d273fdf8bf3b2bae5b578e5a754c030be4f744d20153a8c034109e01"
+    },
+    {
+      "path": "validation/reviews/s5-vocabulary-partition-5120-6143-resource-review.json",
+      "bytes": 917,
+      "sha256": "ea92df8cbb64b9667b9d87b1754eec10099722f235e2c9f8e3d31ad3c2b633f2"
+    },
+    {
+      "path": "validation/reviews/s5-vocabulary-partition-6144-7167-initializer-review.json",
+      "bytes": 134827,
+      "sha256": "d4b23f22f8555cefa4f834e7cd966e02e83d7fb0d315d390fc16f63cc0505b62"
+    },
+    {
+      "path": "validation/reviews/s5-vocabulary-partition-6144-7167-resource-review.json",
+      "bytes": 917,
+      "sha256": "bba4b489d2ac046a532c5bb28223b5adab9a41685a18f66ad17383b5ed6355fe"
+    },
+    {
+      "path": "validation/reviews/s5-vocabulary-partition-7168-8191-initializer-review.json",
+      "bytes": 134827,
+      "sha256": "6923f3bbad395263ca40170020cc14143d651de39922fad8b4a8b84d52a7b20f"
+    },
+    {
+      "path": "validation/reviews/s5-vocabulary-partition-7168-8191-resource-review.json",
+      "bytes": 1065,
+      "sha256": "8d38e5261d1d1121dc3789cafab12997f2c5d5fdd3a9a1665783f8eb4e8f2c43"
+    },
+    {
+      "path": "validation/reviews/s5-vocabulary-partition-8192-9215-initializer-review.json",
+      "bytes": 134827,
+      "sha256": "a7efca993990cefc41b9f84837663223651861ae11f19f564c67d2df7727b432"
+    },
+    {
+      "path": "validation/reviews/s5-vocabulary-partition-8192-9215-resource-review.json",
+      "bytes": 1065,
+      "sha256": "af7f8f51747cee84203333ccca4edd5465f6d18b24622f7850b48baa4dcfba3f"
+    },
+    {
+      "path": "validation/reviews/s5-vocabulary-partition-9216-9495-initializer-review.json",
+      "bytes": 39177,
+      "sha256": "9552cf08c1d10f38ae884c89930000d2165beccb11e36b70408ee680aa824ab1"
+    },
+    {
+      "path": "validation/reviews/s5-vocabulary-partition-9216-9495-resource-review.json",
+      "bytes": 1061,
+      "sha256": "75e1117a41ed3ef3347c603338b554741114976f19ca862d1427958d4e94e7f7"
+    },
+    {
+      "path": "validation/reviews/vocabulary-assembled-20260908T172933194810Z-independent-static-review.json",
+      "bytes": 1449,
+      "sha256": "deecc89e2157fca873c804f16deb32f9eb30ec6645d39ddb9c7852e8a1a2636a"
+    },
+    {
+      "path": "validation/reviews/vocabulary-runtime-20260908T173751421842Z-acceptance.json",
+      "bytes": 2513,
+      "sha256": "b31dc019a2921d50253e60c9efa4ebff2b15e688b1fd94d8bda97045dc85d8e8"
+    },
+    {
+      "path": "validation/reviews/vocabulary-runtime-20260908T173751421842Z-case-0-independent-core-review.json",
+      "bytes": 1468,
+      "sha256": "63ddf5a5473e25dd292cb48d2758b2249291b2d9b8628ada140480da988886b7"
+    },
+    {
+      "path": "validation/reviews/vocabulary-runtime-20260908T173751421842Z-case-1-independent-core-review.json",
+      "bytes": 1468,
+      "sha256": "873e2121eb3301cff351e4fb2f398eb86b7b9b38ed93b3650758e9242ee6e0b3"
+    },
+    {
+      "path": "validation/reviews/vocabulary-runtime-20260908T173751421842Z-case-2-independent-core-review.json",
+      "bytes": 1751,
+      "sha256": "7d52d818aa27afab60d7aaed84d2aca3231f5d7086e58881f969dc6f3e9473ca"
+    },
+    {
+      "path": "validation/reviews/vocabulary-runtime-20260908T173751421842Z-independent-numeric-review.json",
+      "bytes": 3919,
+      "sha256": "b1b6f25809b24314dcccd2f375f9375b883325a0b125a68b53fc005e295cb012"
     }
   ]
 }

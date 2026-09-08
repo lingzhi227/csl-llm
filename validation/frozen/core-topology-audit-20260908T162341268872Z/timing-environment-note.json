@@ -1,0 +1,5 @@
+{
+  "correction": "Frozen timing_scope described planned compilation concurrency. At actual audit launch, vocabulary compile160641 had already completed; ELF/DSR resource inspection ran concurrently. No isolated performance claim.",
+  "measurement_scope": "load_seconds is StoppedCore construction; load_and_read_seconds also includes selected extraction, exact comparison and NPZ save, excluding initial artifact hashing. 9650progress and6272stream words, not full151936logits.",
+  "execution_sha256": "d6c04109c48d2bf1a8d60403c78dcf7267b3e0f62ef381e28a53f0525e122eda"
+}

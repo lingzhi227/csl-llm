@@ -1,0 +1,29 @@
+{
+  "reviewed_at": "2026-09-08T18:58:17.742729+00:00",
+  "run": "vocabulary-runtime-20260908T173751421842Z",
+  "manifest_sha256": "b1ee3e042c4e644147fa8f604fc69e88c5ff4bfc78e0f5e8c996a763825abb2c",
+  "execution_sha256": null,
+  "results_sha256": null,
+  "all_tracked_pids_absent": null,
+  "full_run_complete": false,
+  "cases": [
+    {
+      "case": 1,
+      "core_sha256": "45c13f69179a99698755fcf4941ffc1c7324fd1c6d8856a963d595460d863565",
+      "core_bytes": 552276088,
+      "counts": {
+        "weights": 9496,
+        "identity": 9650,
+        "control": 9650,
+        "progress": 9650,
+        "logit_roots": 1187
+      },
+      "full151936_logits_and896_lookup_exact": true,
+      "normal_device_winner_best_exact": true
+    }
+  ],
+  "actual_core_arrays_weights_metadata_accepted": true,
+  "method": "Independent manual ELF64 symbol parsing and SDK ELFObject actual standalone ET_CORE reads; no candidate sdk_core import, no initializer overlay, no zero-fill fallback, no SdkRuntime constructed.",
+  "scope": "One completed case core while whole SDK run remains unqualified; other cases and whole-run cleanup separately required. All original weights, metadata/progress, logits/lookup and normal device-winner equality. Separate numerical-oracle review required; not live read_symbol API, persistent full-model reset, 24-layer generation or hardware performance.",
+  "review_script_sha256": "5dc77cf8af957cb378e440d5eadb921d9f9bc4e7bcc0ca19c9f1e540e1fe9d2f"
+}

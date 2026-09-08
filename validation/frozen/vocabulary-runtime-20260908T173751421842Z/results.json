@@ -1,0 +1,103 @@
+{
+  "success": true,
+  "cases": [
+    {
+      "success": true,
+      "case": 0,
+      "runtime_manifest_sha256": "b1ee3e042c4e644147fa8f604fc69e88c5ff4bfc78e0f5e8c996a763825abb2c",
+      "compiled_files_sha256": "9b71ba44e4ec045e890d218cd9d567f7a5103a1ae078b33742198b752676f1d9",
+      "source_composition_sha256": "d410b8e706af2808ad25683dd3d43627efe344af277ba392f4522386496ca332",
+      "source_symbols_sha256": "176970055d314b5a62a287a763fc9a918d4a50cbc9efe95073bf144bfc335810",
+      "runtime_artifacts_sha256": "40cfd77b83296321e709078e37b501ee85f9db9a84e8c1be0ad0752181416b3a",
+      "actual_sha256": "c847af8df16370f7a7ede3b66cc0981d7256edb9567dd6e6129f7ec60b5aa865",
+      "normal_d2h_sha256": "3fa6bcd273f4ca165c7e66109d4d69373fdfad3d94c7af1a362b44d99f39585d",
+      "core_sha256": "9cfee805d723390b8147a21d7a6b8c9a83584166c4d6dcaea06840be33dfc010",
+      "core_bytes": 552276088,
+      "original_weights_sha256": "4d28668615ef106971477ab3dbadda515547506ad8a29d9830e67674fd93a165",
+      "all9496_original_weights_exact": true,
+      "all9650_identity_control_progress_exact": true,
+      "winner": 22,
+      "metrics": {
+        "expected": {
+          "max_abs": 7.152557373046875e-06,
+          "relative_l2": 3.19693871840076e-07,
+          "relative_peak": 3.1665498843069334e-07
+        },
+        "official": {
+          "max_abs": 1.0609626770019531e-05,
+          "relative_l2": 4.0209963992451126e-07,
+          "relative_peak": 4.69704780518039e-07
+        }
+      },
+      "controller_cycles": 262444,
+      "scope": "Complete original151936x896 tied lookup/head in three fresh sequential SDK processes. Each performs lookup then head, normal device winner D2H and stopped-core full logits, all original weights, identity, progress and control. Repeat is across fresh processes; not persistent repeat/reset, final RMS, 24 layers, generation or hardware performance.",
+      "results_sha256": "cae11e98557e6cf70f5e090c0edc6e44a7bdaeafb6d5f585c2dfe819bdbe9b8f"
+    },
+    {
+      "success": true,
+      "case": 1,
+      "runtime_manifest_sha256": "b1ee3e042c4e644147fa8f604fc69e88c5ff4bfc78e0f5e8c996a763825abb2c",
+      "compiled_files_sha256": "9b71ba44e4ec045e890d218cd9d567f7a5103a1ae078b33742198b752676f1d9",
+      "source_composition_sha256": "d410b8e706af2808ad25683dd3d43627efe344af277ba392f4522386496ca332",
+      "source_symbols_sha256": "176970055d314b5a62a287a763fc9a918d4a50cbc9efe95073bf144bfc335810",
+      "runtime_artifacts_sha256": "40cfd77b83296321e709078e37b501ee85f9db9a84e8c1be0ad0752181416b3a",
+      "actual_sha256": "35eafc13ef6bc7593d27af65192843c3e055b4fb95f3c3d090ad2f2bfb08abbd",
+      "normal_d2h_sha256": "bacd46021cfc1c4d590a572ae22dfe014b15b5591ead58f08c4103d0b091dbea",
+      "core_sha256": "45c13f69179a99698755fcf4941ffc1c7324fd1c6d8856a963d595460d863565",
+      "core_bytes": 552276088,
+      "original_weights_sha256": "4d28668615ef106971477ab3dbadda515547506ad8a29d9830e67674fd93a165",
+      "all9496_original_weights_exact": true,
+      "all9650_identity_control_progress_exact": true,
+      "winner": 0,
+      "metrics": {
+        "expected": {
+          "max_abs": 0.0,
+          "relative_l2": 0.0,
+          "relative_peak": 0.0
+        },
+        "official": {
+          "max_abs": 0.0,
+          "relative_l2": 0.0,
+          "relative_peak": 0.0
+        }
+      },
+      "controller_cycles": 268359,
+      "scope": "Complete original151936x896 tied lookup/head in three fresh sequential SDK processes. Each performs lookup then head, normal device winner D2H and stopped-core full logits, all original weights, identity, progress and control. Repeat is across fresh processes; not persistent repeat/reset, final RMS, 24 layers, generation or hardware performance.",
+      "results_sha256": "63c1aad946516cf43c214fb64f0f72f3a7cbf8595abc0fb7bbc4a831bc978e39"
+    },
+    {
+      "success": true,
+      "case": 2,
+      "runtime_manifest_sha256": "b1ee3e042c4e644147fa8f604fc69e88c5ff4bfc78e0f5e8c996a763825abb2c",
+      "compiled_files_sha256": "9b71ba44e4ec045e890d218cd9d567f7a5103a1ae078b33742198b752676f1d9",
+      "source_composition_sha256": "d410b8e706af2808ad25683dd3d43627efe344af277ba392f4522386496ca332",
+      "source_symbols_sha256": "176970055d314b5a62a287a763fc9a918d4a50cbc9efe95073bf144bfc335810",
+      "runtime_artifacts_sha256": "40cfd77b83296321e709078e37b501ee85f9db9a84e8c1be0ad0752181416b3a",
+      "actual_sha256": "d0801c6184ee9254067349fd0b700d23ac0cb6470d87c5a996d10bcc0b025fe2",
+      "normal_d2h_sha256": "3fa6bcd273f4ca165c7e66109d4d69373fdfad3d94c7af1a362b44d99f39585d",
+      "core_sha256": "47adbe560962d7422a9e0def956569b8277572cc7b9cd1f9c2aab090c1b9cd2e",
+      "core_bytes": 552276088,
+      "original_weights_sha256": "4d28668615ef106971477ab3dbadda515547506ad8a29d9830e67674fd93a165",
+      "all9496_original_weights_exact": true,
+      "all9650_identity_control_progress_exact": true,
+      "winner": 22,
+      "metrics": {
+        "expected": {
+          "max_abs": 7.152557373046875e-06,
+          "relative_l2": 3.19693871840076e-07,
+          "relative_peak": 3.1665498843069334e-07
+        },
+        "official": {
+          "max_abs": 1.0609626770019531e-05,
+          "relative_l2": 4.0209963992451126e-07,
+          "relative_peak": 4.69704780518039e-07
+        }
+      },
+      "controller_cycles": 262444,
+      "scope": "Complete original151936x896 tied lookup/head in three fresh sequential SDK processes. Each performs lookup then head, normal device winner D2H and stopped-core full logits, all original weights, identity, progress and control. Repeat is across fresh processes; not persistent repeat/reset, final RMS, 24 layers, generation or hardware performance.",
+      "results_sha256": "dccfa09737850f981d90f7adfa09965ada14550597aae740d8424b2b3bf3749f"
+    }
+  ],
+  "fresh_process_repeat_bit_exact": true,
+  "scope": "Complete original151936x896 tied lookup/head in three fresh sequential SDK processes. Each performs lookup then head, normal device winner D2H and stopped-core full logits, all original weights, identity, progress and control. Repeat is across fresh processes; not persistent repeat/reset, final RMS, 24 layers, generation or hardware performance."
+}

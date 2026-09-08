@@ -1,0 +1,32 @@
+{
+  "reviewed_at": "2026-09-08T19:34:45.246784+00:00",
+  "run": "vocabulary-runtime-20260908T173751421842Z",
+  "manifest_sha256": "b1ee3e042c4e644147fa8f604fc69e88c5ff4bfc78e0f5e8c996a763825abb2c",
+  "execution_sha256": null,
+  "results_sha256": null,
+  "all_tracked_pids_absent": null,
+  "full_run_complete": false,
+  "cases": [
+    {
+      "case": 2,
+      "core_sha256": "47adbe560962d7422a9e0def956569b8277572cc7b9cd1f9c2aab090c1b9cd2e",
+      "core_bytes": 552276088,
+      "counts": {
+        "weights": 9496,
+        "identity": 9650,
+        "control": 9650,
+        "progress": 9650,
+        "logit_roots": 1187
+      },
+      "case_results_sha256": "dccfa09737850f981d90f7adfa09965ada14550597aae740d8424b2b3bf3749f",
+      "actual_sha256": "d0801c6184ee9254067349fd0b700d23ac0cb6470d87c5a996d10bcc0b025fe2",
+      "normal_d2h_sha256": "3fa6bcd273f4ca165c7e66109d4d69373fdfad3d94c7af1a362b44d99f39585d",
+      "full151936_logits_and896_lookup_exact": true,
+      "normal_device_winner_best_exact": true
+    }
+  ],
+  "actual_core_arrays_weights_metadata_accepted": true,
+  "method": "Independent manual ELF64 symbol parsing and SDK ELFObject actual standalone ET_CORE reads; no candidate sdk_core import, no initializer overlay, no zero-fill fallback, no SdkRuntime constructed.",
+  "scope": "One completed case core while whole SDK run remains unqualified; other cases and whole-run cleanup separately required. All original weights, metadata/progress, logits/lookup and normal device-winner equality. Separate numerical-oracle review required; not live read_symbol API, persistent full-model reset, 24-layer generation or hardware performance.",
+  "review_script_sha256": "c5e680c7b85a50f3e3ddfec3187d56d2bae837d4cc6c007e7ac6c7e59440cdd8"
+}

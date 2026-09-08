@@ -1,0 +1,22 @@
+{
+  "reviewed_at": "2026-09-08T16:23:34.535702+00:00",
+  "run": "core-topology-audit-20260908T162043250895Z",
+  "manifest_sha256": "e5cac56f0149c3c093c1575b1abd57a79342585c6ed6f9c17830309d025c96c9",
+  "all17_manifest_files_independently_verified": true,
+  "success": false,
+  "elapsed_seconds": 4.089830571087077,
+  "peak_rss_kib": 86512,
+  "failure": "KeyError output after core construction/progress checks; not core data mismatch",
+  "actual_symbol_independently_found": {
+    "file": "bin/out_2_0.elf",
+    "coordinate": [
+      188,
+      1
+    ],
+    "symbol": "$$csl_base_address$$0$$output",
+    "address": 3256,
+    "size": 512,
+    "type": "STT_OBJECT"
+  },
+  "next": "Explicit exact compiledsymbol binding in newauditfreeze, reject ambiguity and preservemissing-byte checks; do not modify streamPE orrerunSDK"
+}

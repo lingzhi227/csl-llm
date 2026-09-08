@@ -1,0 +1,46 @@
+{
+  "runs": [
+    {
+      "run": "vocabulary-runtime-20260908T173751421842Z",
+      "manifest_sha256": "b1ee3e042c4e644147fa8f604fc69e88c5ff4bfc78e0f5e8c996a763825abb2c",
+      "execution_sha256": "dc8b66aa9d1dbc79634c55a83e66a26cdb04055b8ea072555a3a629a35023161",
+      "results_sha256": "0afbe4c606252009eaa368a1cd94b42520d8fad8ac568e502bf8af892ae9c4f7",
+      "remote_manifest_entries_verified": 28523
+    },
+    {
+      "run": "vocabulary-assembled-20260908T172933194810Z",
+      "manifest_sha256": "fb3413671b084ffeae6d53dc924bde49cbf1e4e41f3585637906a403935eeb6e",
+      "execution_sha256": "90648e6cb5ba048800bcacd71a9ad647d6244ac41dd98edb240fd97562c68d05",
+      "results_sha256": "d0d5891fda6e80120dc4eb50e8e9a9e7fbf0bdb5302fe64d41629913f3fd74d1",
+      "remote_manifest_entries_verified": 38893
+    },
+    {
+      "run": "core-contract-audit-20260908T190039713537Z",
+      "manifest_sha256": "1b5a0ea4576b429a52f26311297ca0fa499e7ac099a7bfe037a7af1a415a3999",
+      "execution_sha256": "409989fca5a7e1c4d2cac25d292f64c8890f6dd50471284cff5d7dfd2e058c5b",
+      "results_sha256": "bbafc474a597871cca9ce2c87fc535164d523c3ef4746fa6a9f5cb91465af54a",
+      "remote_manifest_entries_verified": 14
+    },
+    {
+      "run": "core-topology-audit-20260908T162341268872Z",
+      "manifest_sha256": "4dd614060af091ebbbe6d96478d15a148d47283d41b553181ac54d177fe6bd3c",
+      "execution_sha256": "d6c04109c48d2bf1a8d60403c78dcf7267b3e0f62ef381e28a53f0525e122eda",
+      "results_sha256": "e0b42db74eecddc820ffc7bd9320a367f28c94ada56c5f8d4994451f872f2853",
+      "remote_manifest_entries_verified": 17
+    }
+  ],
+  "batch_coverage_exact_9496": true,
+  "all_case_result_and_actual_hashes_checked": true,
+  "normal_d2h_hashes_checked": true,
+  "repeat_logits_bit_exact": true,
+  "zero_logits_and_smallest_index_winner_checked": true,
+  "all_9650_progress_values_checked": true,
+  "host_contract_test_source_sha256": "cfd558eb5b1a00a9c45e5bd7d80ea8e0212db913ec5469cce5fe695b24b95aa5",
+  "scope": "Publication identity and saved-output checks; no new SDK simulation. Original reference/core numerical proofs remain in independent reviews. Only selected weight-free code and metadata distributed.",
+  "host_tests": {
+    "total": 11,
+    "passed": 10,
+    "skipped_linux_only": 1
+  },
+  "python_compileall_passed": true
+}

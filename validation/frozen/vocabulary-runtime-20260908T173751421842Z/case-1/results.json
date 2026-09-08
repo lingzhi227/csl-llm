@@ -1,0 +1,31 @@
+{
+  "success": true,
+  "case": 1,
+  "runtime_manifest_sha256": "b1ee3e042c4e644147fa8f604fc69e88c5ff4bfc78e0f5e8c996a763825abb2c",
+  "compiled_files_sha256": "9b71ba44e4ec045e890d218cd9d567f7a5103a1ae078b33742198b752676f1d9",
+  "source_composition_sha256": "d410b8e706af2808ad25683dd3d43627efe344af277ba392f4522386496ca332",
+  "source_symbols_sha256": "176970055d314b5a62a287a763fc9a918d4a50cbc9efe95073bf144bfc335810",
+  "runtime_artifacts_sha256": "40cfd77b83296321e709078e37b501ee85f9db9a84e8c1be0ad0752181416b3a",
+  "actual_sha256": "35eafc13ef6bc7593d27af65192843c3e055b4fb95f3c3d090ad2f2bfb08abbd",
+  "normal_d2h_sha256": "bacd46021cfc1c4d590a572ae22dfe014b15b5591ead58f08c4103d0b091dbea",
+  "core_sha256": "45c13f69179a99698755fcf4941ffc1c7324fd1c6d8856a963d595460d863565",
+  "core_bytes": 552276088,
+  "original_weights_sha256": "4d28668615ef106971477ab3dbadda515547506ad8a29d9830e67674fd93a165",
+  "all9496_original_weights_exact": true,
+  "all9650_identity_control_progress_exact": true,
+  "winner": 0,
+  "metrics": {
+    "expected": {
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    "official": {
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    }
+  },
+  "controller_cycles": 268359,
+  "scope": "Complete original151936x896 tied lookup/head in three fresh sequential SDK processes. Each performs lookup then head, normal device winner D2H and stopped-core full logits, all original weights, identity, progress and control. Repeat is across fresh processes; not persistent repeat/reset, final RMS, 24 layers, generation or hardware performance."
+}

@@ -2,7 +2,7 @@
 
 CSL kernels and distributed execution components for real-model inference on Cerebras WSE-3, developed with SDK 2.10.1. The target is **Qwen2.5-0.5B-Instruct**, using official weights, all 24 layers and the full vocabulary.
 
-**This is an early research release of validated components, not a working end-to-end LLM runtime.** A complete native decoder layer0 now passes a bounded five-call SDK test; complete24-layer generation and full-model capacity acceptance remain under development. The project builds on Pragma HLS experience; this release contains handwritten CSL and Python planning/validation tools, not a complete HLS model compiler.
+**This is an early research release of validated components, not a working end-to-end LLM runtime.** The complete 151936-token tied embedding/head now passes three isolated SDK cases, and a complete native decoder layer0 passes a bounded five-call SDK test; complete24-layer generation and full-model capacity acceptance remain under development. The project builds on Pragma HLS experience; this release contains handwritten CSL and Python planning/validation tools, not a complete HLS model compiler.
 
 ## Start here
 
@@ -20,10 +20,14 @@ CSL kernels and distributed execution components for real-model inference on Cer
 | Regional communication | Two translated eight-PE regions, repeated device epochs and reset sequences |
 | Vector operators | 21 cases covering RMSNorm, residual addition, SwiGLU slices, finite softmax and selected alias behavior |
 | Qwen RoPE | 14 query / 2 key heads; nine position/alias cases, including position 2047 |
-| Embedding and selection | Seven cases for a 128×112 embedding tile and 128-logit argmax/pair merge; not the full vocabulary |
+| Embedding and selection | Original 151936 × 896 tied embedding/head, three isolated SDK cases, complete logits checked from actual stopped cores and ordinary device winner transfer; earlier tile tests retained |
 | Model reference | Verified checkpoint inventory and independent equations compared with official FP32 reference over 42 fixed-prefix steps |
 
 Recorded SDK results belong to the original development snapshots. Publication changes make host paths portable; they have not received a fresh complete SDK qualification. See [release checks](release/CHECKS.md).
+
+## Latest accepted component
+
+**The complete original vocabulary now passes actual SDK execution.** All 9496 weight tiles are assembled; three cases verify all 151936 logits, zero/tie behavior, three original embedding rows and fresh-process bit-repeat. [Full evidence, source map and remaining limits](docs/FULL-VOCABULARY.md). Device final normalization, the integrated 24-layer model and persistent generation remain unfinished.
 
 ## New accepted milestones
 

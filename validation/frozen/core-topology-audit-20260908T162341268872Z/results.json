@@ -1,0 +1,12 @@
+{
+  "success": true,
+  "core_sha256": "67c0a571bb1c69539934c87c46b86799f8226fca89beebe36892b95d134d470b",
+  "core_bytes": 552276088,
+  "load_seconds": 0.546156131895259,
+  "load_and_read_seconds": 1.0483811188023537,
+  "actual_sha256": "f442ee98a9be281e42da9dd4832e97a08ccd16a31cfa6c222fb3102b226daed1",
+  "progress_words": 9650,
+  "streamed_words": 6272,
+  "scope": "Offline existing193x50 ET_CORE actual9650progress and49x128streamedwords comparison only. No new simulation, live snapshot, neural inference or hardware bandwidth.",
+  "timing_scope": "SDK core construction then selected memory extraction/comparison/NPZ save; initial artifact hashing excluded. Concurrent with vocabulary compilation, not isolated performance. Not a full151936logit-read benchmark."
+}

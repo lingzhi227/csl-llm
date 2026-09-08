@@ -1,0 +1,21 @@
+{
+  "reviewed_at": "2026-09-08T18:21:40.091311+00:00",
+  "run": "vocabulary-runtime-20260908T173751421842Z",
+  "case": 0,
+  "case_results_sha256": "cae11e98557e6cf70f5e090c0edc6e44a7bdaeafb6d5f585c2dfe819bdbe9b8f",
+  "actual_sha256": "c847af8df16370f7a7ede3b66cc0981d7256edb9567dd6e6129f7ec60b5aa865",
+  "core_sha256": "9cfee805d723390b8147a21d7a6b8c9a83584166c4d6dcaea06840be33dfc010",
+  "normal_d2h_sha256": "3fa6bcd273f4ca165c7e66109d4d69373fdfad3d94c7af1a362b44d99f39585d",
+  "runtime_manifest_sha256": "b1ee3e042c4e644147fa8f604fc69e88c5ff4bfc78e0f5e8c996a763825abb2c",
+  "independent_original_float64_metrics": {
+    "max_abs": 5.950141378718854e-06,
+    "relative_l2": 2.5468193304946034e-07,
+    "relative_peak": 2.634220995075942e-07
+  },
+  "winner": 22,
+  "controller_cycles": 262444,
+  "full151936_numerical_outputs_passed": true,
+  "full_vocabulary_runtime_accepted": false,
+  "scope": "Completed case0 outputs independently checked against previously qualified original-BF16 float64 oracle, frozen official-finalnorm input identity and qualified lookup fixture; normal winner and progress/timestamps match. Other cases still active. Full actual-core independent readback, zero/repeat and whole-run execution/cleanup pending; no persistent24layer/model inference acceptance.",
+  "review_script_sha256": "cc5e75ffafce5e59f2a914b59d464cfb210996f2ccaf4559b069b05530d14d18"
+}

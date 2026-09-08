@@ -1,0 +1,92 @@
+{
+  "reviewed_at": "2026-09-08T19:34:35.604145+00:00",
+  "run": "vocabulary-runtime-20260908T173751421842Z",
+  "manifest_sha256": "b1ee3e042c4e644147fa8f604fc69e88c5ff4bfc78e0f5e8c996a763825abb2c",
+  "execution_sha256": "dc8b66aa9d1dbc79634c55a83e66a26cdb04055b8ea072555a3a629a35023161",
+  "results_sha256": "0afbe4c606252009eaa368a1cd94b42520d8fad8ac568e502bf8af892ae9c4f7",
+  "independent_oracle_sha256": "97a1c210b2c35c739dd8b60a4a3e2315ae3d71e1f5998c9e97ee7d586d5fcdcc",
+  "elapsed_seconds": 6399.9052472510375,
+  "peak_rss_kib": 5620748,
+  "all_tracked_pids_absent": true,
+  "cases": [
+    {
+      "case": 0,
+      "winner": 22,
+      "controller_cycles": 262444,
+      "checks": {
+        "independent_original_bf16_float64": {
+          "max_abs": 5.950141378718854e-06,
+          "relative_l2": 2.5468193304946034e-07,
+          "relative_peak": 2.634220995075942e-07
+        },
+        "official": {
+          "max_abs": 1.0609626770019531e-05,
+          "relative_l2": 4.02099639924511e-07,
+          "relative_peak": 4.69704780518039e-07
+        },
+        "frozen_expected": {
+          "max_abs": 7.152557373046875e-06,
+          "relative_l2": 3.196938718400753e-07,
+          "relative_peak": 3.1665498843069334e-07
+        }
+      },
+      "core_sha256": "9cfee805d723390b8147a21d7a6b8c9a83584166c4d6dcaea06840be33dfc010",
+      "case_results_sha256": "cae11e98557e6cf70f5e090c0edc6e44a7bdaeafb6d5f585c2dfe819bdbe9b8f",
+      "actual_sha256": "c847af8df16370f7a7ede3b66cc0981d7256edb9567dd6e6129f7ec60b5aa865"
+    },
+    {
+      "case": 1,
+      "winner": 0,
+      "controller_cycles": 268359,
+      "checks": {
+        "independent_original_bf16_float64": {
+          "max_abs": 0.0,
+          "relative_l2": 0.0,
+          "relative_peak": 0.0
+        },
+        "official": {
+          "max_abs": 0.0,
+          "relative_l2": 0.0,
+          "relative_peak": 0.0
+        },
+        "frozen_expected": {
+          "max_abs": 0.0,
+          "relative_l2": 0.0,
+          "relative_peak": 0.0
+        }
+      },
+      "core_sha256": "45c13f69179a99698755fcf4941ffc1c7324fd1c6d8856a963d595460d863565",
+      "case_results_sha256": "63c1aad946516cf43c214fb64f0f72f3a7cbf8595abc0fb7bbc4a831bc978e39",
+      "actual_sha256": "35eafc13ef6bc7593d27af65192843c3e055b4fb95f3c3d090ad2f2bfb08abbd"
+    },
+    {
+      "case": 2,
+      "winner": 22,
+      "controller_cycles": 262444,
+      "checks": {
+        "independent_original_bf16_float64": {
+          "max_abs": 5.950141378718854e-06,
+          "relative_l2": 2.5468193304946034e-07,
+          "relative_peak": 2.634220995075942e-07
+        },
+        "official": {
+          "max_abs": 1.0609626770019531e-05,
+          "relative_l2": 4.02099639924511e-07,
+          "relative_peak": 4.69704780518039e-07
+        },
+        "frozen_expected": {
+          "max_abs": 7.152557373046875e-06,
+          "relative_l2": 3.196938718400753e-07,
+          "relative_peak": 3.1665498843069334e-07
+        }
+      },
+      "core_sha256": "47adbe560962d7422a9e0def956569b8277572cc7b9cd1f9c2aab090c1b9cd2e",
+      "case_results_sha256": "dccfa09737850f981d90f7adfa09965ada14550597aae740d8424b2b3bf3749f",
+      "actual_sha256": "d0801c6184ee9254067349fd0b700d23ac0cb6470d87c5a996d10bcc0b025fe2"
+    }
+  ],
+  "numerical_outputs_accepted": true,
+  "all_runtime_artifact_and_core_hashes_verified": true,
+  "scope": "Full151936 logits against independently derived original-BF16 float64 oracle and official reference; three original896-element lookup rows, ordinary device winner, zero tie and fresh-process repeat; full reported progress and file bindings. Independent actual core-to-array/weight comparison and assembled initializer/resource reviews separately required. Not persistent model reset, final RMS, 24 layers, generation, hardware or full S0\u2013S6 acceptance.",
+  "review_script_sha256": "570dc164f7b035612a612495e6494a26ecea222f39f100a5b43caae43277ddc1"
+}

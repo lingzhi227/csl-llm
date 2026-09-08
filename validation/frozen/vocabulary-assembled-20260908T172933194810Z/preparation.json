@@ -1,0 +1,5 @@
+{
+  "snapshot_seconds": 3.686442065052688,
+  "snapshot_bytes": 2311884147,
+  "scope": "Batch snapshot copying and receipt hashing only, before final manifest hashing. Separate from guarded assembly-worker wall time; not compiler or inference performance."
+}

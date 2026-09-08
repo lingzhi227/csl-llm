@@ -1,0 +1,17 @@
+{
+  "reviewed_at": "2026-09-08T16:17:46.968376+00:00",
+  "source_sha256": "70b6278dcf0eb2783d71516a812295acbf02c3c693ce9f29e467cbd7be7bb12b",
+  "status": "Bounded offline audit design reviewed; frozen candidate not yet inspected",
+  "scope": "Load existing154513 ET_CORE, compare9650progress and49x128 last-stream words; no SdkRuntime/compiler/simulator",
+  "budget": "90s4GiB wholeprocess tree while singlecompilecontinues, subjectto availablememory",
+  "requested_binding": "Copiedbin must match independently accepted154513elf-memory hashes",
+  "timing_limit": "Load/read reportedinterval includes comparison/NPZsave; hashes excluded frominnerinterval butexecutor totalcapturesrun. Concurrentcompiler, nonisolated andnotfull151936logitsbenchmark.",
+  "latest_developer_report": {
+    "recorded_at": "2026-09-08T16:20:18.312892+00:00",
+    "failed_audit_prefix": "161657",
+    "elapsed_seconds": 1.025412,
+    "peak_rss_kib": 21752,
+    "reason": "Wrapper cleancontainer binds onlyworkingdirectory; externalparent inaccessible, core parsing not reached",
+    "retry": "Selfcontainedcopy coreandparentmetadata/ELFs/actualD2H withmanifest andacceptedresourcehash binding; awaitingfreeze"
+  }
+}
