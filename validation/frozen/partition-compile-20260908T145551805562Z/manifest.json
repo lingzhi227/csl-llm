@@ -1,0 +1,29 @@
+{
+  "sdk_sha256": "fff17e81c61dcb6012bdee2941a6fdc570f5c8604967530e7b7108651258193d",
+  "files": {
+    "driver.py": "37dce2bb4b67e5e8d8ed2d10b9a0f3ea98e37c242eb5988342a75f93044399e8",
+    "compare_elf_images.py": "64bdf83955560a94e1e0389f9f6ee81c91632c370e70560462d1f285f1852f6f",
+    "elf_partition.py": "5dae892140996777bc981c4be61bd7dc7edf9e5cad0cc4bd5c2fdeb93a31e628",
+    "config.json": "e99f5056a87c77a82bae5688763b015ec2db6e9271238fee78b5834dc89e8ab0",
+    "executor.py": "9ccab37dc8b6ecfb0d23d56bf0826da7b87ce5d3c22d0a4ba94cb4aea6501e1c",
+    "inputs.npz": "0f143d5fc9418ff3d2d7f2a7221860dc66baf8a9689ef20504194dc824444c86",
+    "baseline/zero.csl": "946404c62cf3106007d73d49c97035b5c0dcd0b56917cce45467e03790cc28fc",
+    "baseline/pe.csl": "08ac309456c95c8f2cf6a240dd2da30dac028443882679f5fbaed4250750b8e8",
+    "baseline/weights_0.csl": "9b35e2357ccf8fccb34236925c49071c774aedcf69f0fa61efe5e590f0b9478e",
+    "baseline/kernel.csl": "3e92175efe12b28065bb77934c54136db3c9287c68c81877781a0e527354304c",
+    "baseline/layout.csl": "c6da82d36d3ea5731b36d4a03ddd1b57ad5344a12b0eacfcf03b65bccdec5e3a",
+    "baseline/weights_1.csl": "57a375f69cf1fd0a82a88408e575c3e055dd221c9abab1d01138d8da03cba10f",
+    "batch1/zero.csl": "946404c62cf3106007d73d49c97035b5c0dcd0b56917cce45467e03790cc28fc",
+    "batch1/pe.csl": "08ac309456c95c8f2cf6a240dd2da30dac028443882679f5fbaed4250750b8e8",
+    "batch1/weights_0.csl": "9b35e2357ccf8fccb34236925c49071c774aedcf69f0fa61efe5e590f0b9478e",
+    "batch1/kernel.csl": "3e92175efe12b28065bb77934c54136db3c9287c68c81877781a0e527354304c",
+    "batch1/layout.csl": "85745d91f49a02e6320b067d769bd8d175c6e9867c701d05cd71ca59b534cb8f",
+    "batch1/weights_1.csl": "57a375f69cf1fd0a82a88408e575c3e055dd221c9abab1d01138d8da03cba10f",
+    "batch0/zero.csl": "946404c62cf3106007d73d49c97035b5c0dcd0b56917cce45467e03790cc28fc",
+    "batch0/pe.csl": "08ac309456c95c8f2cf6a240dd2da30dac028443882679f5fbaed4250750b8e8",
+    "batch0/weights_0.csl": "9b35e2357ccf8fccb34236925c49071c774aedcf69f0fa61efe5e590f0b9478e",
+    "batch0/kernel.csl": "3e92175efe12b28065bb77934c54136db3c9287c68c81877781a0e527354304c",
+    "batch0/layout.csl": "562e8391ec0b0319d89263fed6532b8f1d0af387176e5490d3a1154fb8d3701c",
+    "batch0/weights_1.csl": "57a375f69cf1fd0a82a88408e575c3e055dd221c9abab1d01138d8da03cba10f"
+  }
+}

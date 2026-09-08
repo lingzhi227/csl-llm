@@ -1,0 +1,39 @@
+{
+  "runs": [
+    {
+      "run": "partition-runtime-20260908T150631332380Z",
+      "recursive_manifest_entries_verified_on_remote": 31,
+      "manifest_sha256": "2997502bfdd3c74473c1d5a961afc2adbae75c2ef0f61d490cb9d742fe4b0393",
+      "execution_sha256": "1f35f0dfcc7c836e24f11ae0e26099200207ccce8414dc1dfe42ebf5b9951fd2",
+      "results_sha256": "ec8e91add6c9c1a3139fe58b69d81f822a2c418737340712bb5035a7a66c4968",
+      "scope": "SDK runtime"
+    },
+    {
+      "run": "partition-compile-20260908T145551805562Z",
+      "recursive_manifest_entries_verified_on_remote": 24,
+      "manifest_sha256": "69cef0a2ff71a3abb8d3accddf8e9fb016b1ddef6fad619a4d7973ee58752017",
+      "execution_sha256": "4341a4d9c954412c9788ac43bcee6f11211c62ed783d5efd4fef3d493def35d6",
+      "results_sha256": "c60898fc73e2b5654abcbdf6bd56222c5fef12daed4dc40af1cc01ea1897ae84",
+      "scope": "compile/static only"
+    },
+    {
+      "run": "compact-vocabulary-compile-20260908T143328679854Z",
+      "recursive_manifest_entries_verified_on_remote": 269,
+      "manifest_sha256": "d730f336516d8e2a7d24b0a9ee355ea6880a91b8091132165fd93366b92aad78",
+      "execution_sha256": "1d16fb1ddf3f2b1a9cf947b38b56d99fdf3bcfca69310f3c3d3a87cd20b84734",
+      "results_sha256": "d5b4c2fc479e3bb0f3a99db08a99647ff4a1bee11ce12594777b85bc364fe446",
+      "scope": "compile/static only"
+    },
+    {
+      "run": "compact-vocabulary-compile-20260908T144210950745Z",
+      "recursive_manifest_entries_verified_on_remote": 1037,
+      "manifest_sha256": "4def8d16529f3c61a91ae5bf4450ab9c82dad1c759d4e9dbbe0a76f7c3ef0fac",
+      "execution_sha256": "6c9d228905a931ddbfd51dfc2a140e706fc16188b06083a08915f43da3ff6a2c",
+      "results_sha256": "c82d870d60b4da06bc30cc60ed6fbbc442eb67704528c8e79d8fac406b94e30e",
+      "scope": "compile/static only"
+    }
+  ],
+  "eight_actual_outputs_hash_verified": true,
+  "baseline_composed_non_timing_arrays_bit_equal": true,
+  "scope": "Publication identity/comparison checks; no new SDK run. Intact-ELF experimental composition is not claimed as official SDK support or collective/model qualification. Original failed same-process run retained."
+}

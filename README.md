@@ -47,6 +47,8 @@ An accepted **DSD-copy optimization reduces measured controller cycles by49.57% 
 
 A **one-tile native-u8 static-weight SDK probe** now passes full before/after weight readback and four GEMVs. Related compact initializer and streamed-layer checks are explicitly compile-only. [Source and reproduction boundaries](docs/NATIVE-U8.md).
 
+An **experimental two-PE intact-artifact composition** now passes isolated SDK runtime comparison.256/1024 real-tile compilation probes remain separately scoped compiler results with zero-filled placeholders. [Limits and source prerequisites](docs/PARTITION-EXPERIMENT.md).
+
 ## Repository layout
 
 ```text

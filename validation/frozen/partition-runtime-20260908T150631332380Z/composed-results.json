@@ -1,0 +1,77 @@
+{
+  "success": true,
+  "variants": [
+    {
+      "variant": "composed",
+      "cases": [
+        {
+          "case": "canonical-shards",
+          "metrics": [
+            {
+              "pe": 0,
+              "relative_l2": 1.5019927825880166e-07,
+              "relative_peak": 1.6533719995004264e-07
+            },
+            {
+              "pe": 1,
+              "relative_l2": 1.6719883080073194e-07,
+              "relative_peak": 2.3331000605748748e-07
+            }
+          ],
+          "actual_sha256": "7385378bac477fccfd56da4d4c385c2909fb2e164b48fc48e0f4efced989fad4"
+        },
+        {
+          "case": "negative",
+          "metrics": [
+            {
+              "pe": 0,
+              "relative_l2": 1.5019927825880166e-07,
+              "relative_peak": 1.6533719995004264e-07
+            },
+            {
+              "pe": 1,
+              "relative_l2": 1.6719883080073194e-07,
+              "relative_peak": 2.3331000605748748e-07
+            }
+          ],
+          "actual_sha256": "922cee259aa384d523a6f531bae9e5b6240242c62d2f3346a65882b999119509"
+        },
+        {
+          "case": "zero",
+          "metrics": [
+            {
+              "pe": 0,
+              "relative_l2": 0.0,
+              "relative_peak": 0.0
+            },
+            {
+              "pe": 1,
+              "relative_l2": 0.0,
+              "relative_peak": 0.0
+            }
+          ],
+          "actual_sha256": "8327b4c7296741be5cdea4bcf24fa96334d51a582bee8c45986071dde25d07ff"
+        },
+        {
+          "case": "repeat",
+          "metrics": [
+            {
+              "pe": 0,
+              "relative_l2": 1.5019927825880166e-07,
+              "relative_peak": 1.6533719995004264e-07
+            },
+            {
+              "pe": 1,
+              "relative_l2": 1.6719883080073194e-07,
+              "relative_peak": 2.3331000605748748e-07
+            }
+          ],
+          "actual_sha256": "78b7d9ba6fcb56e44765e1bc2ae7247c728ec198b9a4c6abd88f1de7cc47bd00"
+        }
+      ],
+      "initial_weights_sha256": "3d4bbafce466ba0c77b4dcc3a5fd85175b7d64e18da6f860f09004897cc9732e",
+      "final_weights_sha256": "3d4bbafce466ba0c77b4dcc3a5fd85175b7d64e18da6f860f09004897cc9732e"
+    }
+  ],
+  "scope": "Actual SDK direct and experimentally composed intact compiler ELF binaries, 2 original128x112 tied matrix tiles, four cases each; collective=False. Full raw weight readback before/after; no host weight H2D or neural arithmetic. Not official SDK composition support, full vocabulary or model inference."
+}

@@ -1,5 +1,5 @@
 {
-  "scope": "Scoped native-u8 runtime and separately qualified compiler support, 2026-09-08",
+  "scope": "Scoped two-PE isolated artifact-composition runtime and supporting partial-weight compilation probes, 2026-09-08",
   "files": [
     {
       "path": ".gitignore",
@@ -13,8 +13,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 5748,
-      "sha256": "a5b0f12eb67c7719a8e30728c02a6bb9209798bdfce761e9fc082c48ceec2d2f"
+      "bytes": 6023,
+      "sha256": "d9b4dd9e4b6d9d0531943ac4c31b7f032c67b793027ce15c01a0e5e24859b30f"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
@@ -297,6 +297,11 @@
       "sha256": "1f905925315b702612f162b1a4d0daa5a7dd0e4f5383e1c9a3d35b33e57e38bf"
     },
     {
+      "path": "docs/PARTITION-EXPERIMENT.md",
+      "bytes": 2731,
+      "sha256": "ae7f224b233a79f76a44aec778000d73f1e8df47ae669269f409df0051f64419"
+    },
+    {
       "path": "docs/REFERENCE.md",
       "bytes": 1386,
       "sha256": "f28f34c4ecd534216da282cd46070bb34b162d76ea6f07c21a95e39ff090a4cd"
@@ -318,8 +323,8 @@
     },
     {
       "path": "docs/STATUS.md",
-      "bytes": 2594,
-      "sha256": "e0bf6c0e2632032e0cc5dd792b79221ccc2257eef2c49fdac479380f86e657d1"
+      "bytes": 2894,
+      "sha256": "f88d34b312f20f79ff90308874e6dcb0a49d409a78c5dfe666a69cfff2604c0a"
     },
     {
       "path": "evidence/model-inventory.json",
@@ -333,8 +338,8 @@
     },
     {
       "path": "release/CHECKS.md",
-      "bytes": 8267,
-      "sha256": "73a9fcbebc93053a7d56fde412eecd365074c07b04323970b66f0ab80e9ccfca"
+      "bytes": 9025,
+      "sha256": "3a4b7769f7f011c2d5312c57cb7cc0a4e46d38b0f6b4e38d59ca9d8108d9fb31"
     },
     {
       "path": "release/DECODER-CHECKS.json",
@@ -375,6 +380,11 @@
       "path": "release/NATIVE-UP-CHECKS.json",
       "bytes": 4694,
       "sha256": "8fbbca59ad82e52c4d161a25e56a842b9c93129e79362aaf5041d9f1c612c610"
+    },
+    {
+      "path": "release/PARTITION-CHECKS.json",
+      "bytes": 2138,
+      "sha256": "0377ce70a475180260e3598b884d834da46d6fecf18ef83762d339bd2e09ab27"
     },
     {
       "path": "release/RAW-OUTPUT-CHECKS-20260908.json",
@@ -482,9 +492,24 @@
       "sha256": "6a3e2a2c222e6f7e8408e28ec2a299d05c0c13cd2b85b62e52a3e8eb833187c3"
     },
     {
+      "path": "tools/compact_vocabulary_1024_probe.py",
+      "bytes": 8318,
+      "sha256": "e1e38da49d5ecdb499a2fe617bed241e1d8d7037b7baa6e57db84e6c6c6e1f8b"
+    },
+    {
+      "path": "tools/compact_vocabulary_256_probe.py",
+      "bytes": 7687,
+      "sha256": "ebb1199ed3cc6a572c20b73dcdc30f88967de1925ee4e34767bff2cc6973d063"
+    },
+    {
       "path": "tools/compact_words_compile_probe.py",
       "bytes": 4911,
       "sha256": "61419ccca92aa68270d55acd0c54664c9735fba279898241f061876cc58e0957"
+    },
+    {
+      "path": "tools/compare_elf_images.py",
+      "bytes": 2353,
+      "sha256": "64bdf83955560a94e1e0389f9f6ee81c91632c370e70560462d1f285f1852f6f"
     },
     {
       "path": "tools/distributed_linear_probe.py",
@@ -500,6 +525,11 @@
       "path": "tools/elf_memory.py",
       "bytes": 2976,
       "sha256": "88a2c2d6cceefc3186499b12d9c97979d8f565402cda2b9ac493f56f3fe6d136"
+    },
+    {
+      "path": "tools/elf_partition.py",
+      "bytes": 6022,
+      "sha256": "5dae892140996777bc981c4be61bd7dc7edf9e5cad0cc4bd5c2fdeb93a31e628"
     },
     {
       "path": "tools/fetch_model.py",
@@ -555,6 +585,26 @@
       "path": "tools/packet_probe.py",
       "bytes": 7678,
       "sha256": "9fba7d15dc37aa03e1f3c7cc309c2b2fc8f462f971cfdfd519cd74cfdb8cd6aa"
+    },
+    {
+      "path": "tools/partition_compile_probe.py",
+      "bytes": 6953,
+      "sha256": "27803be8d556b952da6afa94a4606b0bd15612ee2f60d84ae6bb1e05f4a8f224"
+    },
+    {
+      "path": "tools/partition_encoder.py",
+      "bytes": 5554,
+      "sha256": "a2ee795313ceeaa2976a016402082a3ef851dd93277f40d1a88656a1f7c6917a"
+    },
+    {
+      "path": "tools/partition_executor.py",
+      "bytes": 8573,
+      "sha256": "1e4d555f3eee06e1a4dd3e2c2fee7339f5ae78e2aeb92cf16514a0490661ead6"
+    },
+    {
+      "path": "tools/partition_runtime_probe.py",
+      "bytes": 9866,
+      "sha256": "5577767edc68721df02dfcfb2b599495728aa75a5897d0083dd44810a4d5f65b"
     },
     {
       "path": "tools/plan_layout.py",
@@ -710,6 +760,86 @@
       "path": "validation/frozen/causal-gqa-4stripes-20260908T073816379977Z/results.json",
       "bytes": 4674,
       "sha256": "2027e19e0296057cf98cd49a0f89cdc491b8ea27b6f613ae6ae201d46f3f0a43"
+    },
+    {
+      "path": "validation/frozen/compact-vocabulary-compile-20260908T143328679854Z/config.json",
+      "bytes": 2821,
+      "sha256": "a5b92f6370c1483aa4abf2301570febac384f9edba2ddb36af94930a88eabdcc"
+    },
+    {
+      "path": "validation/frozen/compact-vocabulary-compile-20260908T143328679854Z/driver.py",
+      "bytes": 7686,
+      "sha256": "a23146caa34fb590f0be8451e9cc057121a00c6686ed88889acba345bf193dd0"
+    },
+    {
+      "path": "validation/frozen/compact-vocabulary-compile-20260908T143328679854Z/encoder.py",
+      "bytes": 5545,
+      "sha256": "7b12467f4b63acd2dd82d64e90fba994fd0df17d5909257b164e3156730f1f4c"
+    },
+    {
+      "path": "validation/frozen/compact-vocabulary-compile-20260908T143328679854Z/execution-summary.json",
+      "bytes": 614,
+      "sha256": "92656df6e5ac23f7bc08bb7de6b0948c2e7d985577e95bd03c5baae6315aa7f9"
+    },
+    {
+      "path": "validation/frozen/compact-vocabulary-compile-20260908T143328679854Z/layout.csl",
+      "bytes": 3589551,
+      "sha256": "0995fe2b6ff6f160146e8717c131853bdae07b7c0632ab929a5b9ed8fe7e7b0a"
+    },
+    {
+      "path": "validation/frozen/compact-vocabulary-compile-20260908T143328679854Z/manifest.json",
+      "bytes": 24846,
+      "sha256": "d730f336516d8e2a7d24b0a9ee355ea6880a91b8091132165fd93366b92aad78"
+    },
+    {
+      "path": "validation/frozen/compact-vocabulary-compile-20260908T143328679854Z/pe.csl",
+      "bytes": 6561,
+      "sha256": "fb5e0f177f6808fdbcc9c491a7e07ea143b9392480de4a3ff71f131dbc65098a"
+    },
+    {
+      "path": "validation/frozen/compact-vocabulary-compile-20260908T143328679854Z/results.json",
+      "bytes": 526763,
+      "sha256": "d5b4c2fc479e3bb0f3a99db08a99647ff4a1bee11ce12594777b85bc364fe446"
+    },
+    {
+      "path": "validation/frozen/compact-vocabulary-compile-20260908T144210950745Z/config.json",
+      "bytes": 9834,
+      "sha256": "e030a93b12353260049fa534d65b3f71a5038f0b4d5e214961e050fd666933d9"
+    },
+    {
+      "path": "validation/frozen/compact-vocabulary-compile-20260908T144210950745Z/driver.py",
+      "bytes": 8317,
+      "sha256": "b3b9ebfc916652cfeead8a21a4aed3180abc23b0e48d2fe6234ba903693a5f4c"
+    },
+    {
+      "path": "validation/frozen/compact-vocabulary-compile-20260908T144210950745Z/encoder.py",
+      "bytes": 5545,
+      "sha256": "7b12467f4b63acd2dd82d64e90fba994fd0df17d5909257b164e3156730f1f4c"
+    },
+    {
+      "path": "validation/frozen/compact-vocabulary-compile-20260908T144210950745Z/execution-summary.json",
+      "bytes": 612,
+      "sha256": "df8d9bccd43ce39cf11800f6fae3f31adeb45ac4c74ece833f652801fb391990"
+    },
+    {
+      "path": "validation/frozen/compact-vocabulary-compile-20260908T144210950745Z/layout.csl",
+      "bytes": 3596023,
+      "sha256": "02a4f23a5c89af3871a7d0db13fdb47a9877b3bc5882a37e417ab02a1f36c09f"
+    },
+    {
+      "path": "validation/frozen/compact-vocabulary-compile-20260908T144210950745Z/manifest.json",
+      "bytes": 95830,
+      "sha256": "4def8d16529f3c61a91ae5bf4450ab9c82dad1c759d4e9dbbe0a76f7c3ef0fac"
+    },
+    {
+      "path": "validation/frozen/compact-vocabulary-compile-20260908T144210950745Z/pe.csl",
+      "bytes": 6561,
+      "sha256": "fb5e0f177f6808fdbcc9c491a7e07ea143b9392480de4a3ff71f131dbc65098a"
+    },
+    {
+      "path": "validation/frozen/compact-vocabulary-compile-20260908T144210950745Z/results.json",
+      "bytes": 718809,
+      "sha256": "c82d870d60b4da06bc30cc60ed6fbbc442eb67704528c8e79d8fac406b94e30e"
     },
     {
       "path": "validation/frozen/compact-weights-compile-20260908T135146210938Z/config.json",
@@ -1115,6 +1245,76 @@
       "path": "validation/frozen/packets-20260908T080512021034Z/results.json",
       "bytes": 706,
       "sha256": "f32d2cd551f29de1e9ec51c2b69f79e310fb41023a3f2c03023f05de059644f0"
+    },
+    {
+      "path": "validation/frozen/partition-compile-20260908T145551805562Z/compare_elf_images.py",
+      "bytes": 2353,
+      "sha256": "64bdf83955560a94e1e0389f9f6ee81c91632c370e70560462d1f285f1852f6f"
+    },
+    {
+      "path": "validation/frozen/partition-compile-20260908T145551805562Z/config.json",
+      "bytes": 782,
+      "sha256": "e99f5056a87c77a82bae5688763b015ec2db6e9271238fee78b5834dc89e8ab0"
+    },
+    {
+      "path": "validation/frozen/partition-compile-20260908T145551805562Z/driver.py",
+      "bytes": 6939,
+      "sha256": "37dce2bb4b67e5e8d8ed2d10b9a0f3ea98e37c242eb5988342a75f93044399e8"
+    },
+    {
+      "path": "validation/frozen/partition-compile-20260908T145551805562Z/elf_partition.py",
+      "bytes": 6022,
+      "sha256": "5dae892140996777bc981c4be61bd7dc7edf9e5cad0cc4bd5c2fdeb93a31e628"
+    },
+    {
+      "path": "validation/frozen/partition-compile-20260908T145551805562Z/execution-summary.json",
+      "bytes": 610,
+      "sha256": "d83b2de8389a599a352b2ecb8c67991d94f5f862a46527ac87b13477dd95a35a"
+    },
+    {
+      "path": "validation/frozen/partition-compile-20260908T145551805562Z/manifest.json",
+      "bytes": 2324,
+      "sha256": "69cef0a2ff71a3abb8d3accddf8e9fb016b1ddef6fad619a4d7973ee58752017"
+    },
+    {
+      "path": "validation/frozen/partition-compile-20260908T145551805562Z/results.json",
+      "bytes": 499,
+      "sha256": "c60898fc73e2b5654abcbdf6bd56222c5fef12daed4dc40af1cc01ea1897ae84"
+    },
+    {
+      "path": "validation/frozen/partition-runtime-20260908T150631332380Z/baseline-results.json",
+      "bytes": 2540,
+      "sha256": "a6a616a10dae01633fde0aacbae5a7348e4fefa73dad9fc6ecaa14b200ebbf98"
+    },
+    {
+      "path": "validation/frozen/partition-runtime-20260908T150631332380Z/composed-results.json",
+      "bytes": 2540,
+      "sha256": "57fa8d197947f4f3252b1cf59a830211841fad9f895078236f6f33d80350e05e"
+    },
+    {
+      "path": "validation/frozen/partition-runtime-20260908T150631332380Z/config.json",
+      "bytes": 976,
+      "sha256": "68e8fb1e6b18a0553eeb97173a02f33d25f0c0097edf89605dc82963cc714b8f"
+    },
+    {
+      "path": "validation/frozen/partition-runtime-20260908T150631332380Z/driver.py",
+      "bytes": 9848,
+      "sha256": "7dd9958b5ccb50e5c14c401a611e21e1c155ea6bdaa1df7416e6c7ace54d1aa6"
+    },
+    {
+      "path": "validation/frozen/partition-runtime-20260908T150631332380Z/execution-summary.json",
+      "bytes": 605,
+      "sha256": "ba8c13dede3c38469cce9f0fd101b1da0e747961c8e71f3a8f6913eb3653e180"
+    },
+    {
+      "path": "validation/frozen/partition-runtime-20260908T150631332380Z/manifest.json",
+      "bytes": 3185,
+      "sha256": "2997502bfdd3c74473c1d5a961afc2adbae75c2ef0f61d490cb9d742fe4b0393"
+    },
+    {
+      "path": "validation/frozen/partition-runtime-20260908T150631332380Z/results.json",
+      "bytes": 4810,
+      "sha256": "ec8e91add6c9c1a3139fe58b69d81f822a2c418737340712bb5035a7a66c4968"
     },
     {
       "path": "validation/frozen/projection-down-20260908T094329141262Z/bf16_transport.py",
@@ -1822,6 +2022,26 @@
       "sha256": "0a0120e9bd165fb54ffdf371bdd1f3ad3a0ff316a6fb09e2934449047ddaba50"
     },
     {
+      "path": "validation/reviews/s1-native-u8-1024-initializer-review.json",
+      "bytes": 133671,
+      "sha256": "5218e6f4cfa0acccc8aa55807a9d1eb9aa2f388c7c64f6bbafd07db2fafd4e66"
+    },
+    {
+      "path": "validation/reviews/s1-native-u8-1024-resource-review.json",
+      "bytes": 917,
+      "sha256": "a98840997298bbcac06da9e68064c68bee7b124538877b57938653323e10443c"
+    },
+    {
+      "path": "validation/reviews/s1-native-u8-256-initializer-review.json",
+      "bytes": 36090,
+      "sha256": "10c8ddf7fd2a774fae472921b23038a973e6a13faec946ce111ff45403f9dfa6"
+    },
+    {
+      "path": "validation/reviews/s1-native-u8-256-resource-review.json",
+      "bytes": 913,
+      "sha256": "993e10dc842c994a23d8b3d794c4ca99a34c1fb3db397bb36860fb61c04ada8d"
+    },
+    {
       "path": "validation/reviews/s1-native-u8-initializer-review.json",
       "bytes": 883,
       "sha256": "d7a281770c2ffcc6c6b94ca316615e6f7520af204f73be40f7e698c67955f5c7"
@@ -1850,6 +2070,21 @@
       "path": "validation/reviews/s1-packets-review.json",
       "bytes": 1114,
       "sha256": "a5eb860753dd74db09fb77b784051c5b8efcb142fa5e47abd3b76978ed8052cd"
+    },
+    {
+      "path": "validation/reviews/s1-partition-compile-static-review.json",
+      "bytes": 1019,
+      "sha256": "289541c26d5c1d51196ad85234d048d057455a7010bdb9d2489bf92f52a62284"
+    },
+    {
+      "path": "validation/reviews/s1-partition-isolated-runtime-numeric-review.json",
+      "bytes": 4273,
+      "sha256": "68c60e8c9606bec655d029638bd136a6d7026e5d60cab8bf2569bb7707bac7e7"
+    },
+    {
+      "path": "validation/reviews/s1-partition-same-process-failure-review.json",
+      "bytes": 645,
+      "sha256": "cf74c5f4500f4a2a69ed8127a99162dace30a3675c1784c90f2618f65bfbd3e5"
     },
     {
       "path": "validation/reviews/s1-regional-linear-dsr-review.json",

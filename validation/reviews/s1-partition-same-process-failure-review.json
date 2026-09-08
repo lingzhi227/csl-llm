@@ -1,0 +1,13 @@
+{
+  "reviewed_at": "2026-09-08T15:08:19.171132+00:00",
+  "run": "partition-runtime-20260908T145950859527Z",
+  "execution_sha256": "147ae4160847fb889977da9c1f936b2cd8fccd81a6860d8f43007dcd75e541b3",
+  "manifest_and_samples_binding_verified": true,
+  "all4_observed_pids_absent": true,
+  "success": false,
+  "exit_code_in_execution_error": 134,
+  "elapsed_seconds": 22.43678535404615,
+  "peak_rss_kib": 124064,
+  "developer_report": "Baseline completed; composed second-runtime failed at Simfabric::Create; no composed numerical evidence.",
+  "root_cause": "Unresolved; process isolation and buffer-shape changes in retry cannot isolate cause."
+}

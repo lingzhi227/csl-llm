@@ -16,3 +16,5 @@ Complete24-layer/full-vocabulary generation and full-model2048total/256generated
 Earlier bounded components, failed attempts and baseline versions are retained with their original review scope. Historical run manifests list omitted raw inputs, model-bearing generated modules and binaries; these are not directly runnable public bundles. Public preparation tools create new local evidence using an independently obtained checkpoint and SDK. Publication host-path edits have not received a fresh SDK rerun.
 
 Native-u8 static initialization now has a one-tile SDK pass with4GEMVs and complete before/after weight readback. Supporting compact/streamed-layer checks are compile-only. The later full-vocabulary124830 attempt was explicitly stopped early without a complete weight-block result; it is not a timeout or pass. See [native-u8 scope](NATIVE-U8.md).
+
+Experimental intact-artifact composition passes two independent GEMVs in isolated SDK processes, not application collectives.256/1024 real-tile compilation probes include zero-filled placeholders; they do not qualify full9496real-tile vocabulary deployment. [Exact limits](PARTITION-EXPERIMENT.md).
