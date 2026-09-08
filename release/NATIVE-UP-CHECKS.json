@@ -1,0 +1,95 @@
+{
+  "run": "projection-up-20260908T080741918764Z",
+  "manifest_files_verified": 10,
+  "raw_outputs_verified": 4,
+  "review_manifest_match": true,
+  "review_results_match": true,
+  "execution_success": true,
+  "files": [
+    {
+      "source": "line.csl",
+      "published": "validation/frozen/projection-up-20260908T080741918764Z/line.csl",
+      "source_sha256": "21f8628d937c6e481c24a45747895fb27caa1bd2a6b18d7338e138d492a4a529",
+      "published_sha256": "21f8628d937c6e481c24a45747895fb27caa1bd2a6b18d7338e138d492a4a529"
+    },
+    {
+      "source": "kernel.csl",
+      "published": "validation/frozen/projection-up-20260908T080741918764Z/kernel.csl",
+      "source_sha256": "3e92175efe12b28065bb77934c54136db3c9287c68c81877781a0e527354304c",
+      "published_sha256": "3e92175efe12b28065bb77934c54136db3c9287c68c81877781a0e527354304c"
+    },
+    {
+      "source": "layout.csl",
+      "published": "validation/frozen/projection-up-20260908T080741918764Z/layout.csl",
+      "source_sha256": "7c555991561b2a591a8e158b50ceaad92f90d923cfaf230c953e3f28454472db",
+      "published_sha256": "7c555991561b2a591a8e158b50ceaad92f90d923cfaf230c953e3f28454472db"
+    },
+    {
+      "source": "pe.csl",
+      "published": "validation/frozen/projection-up-20260908T080741918764Z/pe.csl",
+      "source_sha256": "dfcf54c6439ceae42504c96fe451349115bdcfd6a6d4bef37f323cde3c9e4962",
+      "published_sha256": "dfcf54c6439ceae42504c96fe451349115bdcfd6a6d4bef37f323cde3c9e4962"
+    },
+    {
+      "source": "config.json",
+      "published": "validation/frozen/projection-up-20260908T080741918764Z/config.json",
+      "source_sha256": "3f8e9702fac1bc030850af01ba113193526c62a226bd5b772fa345a25d0fd602",
+      "published_sha256": "3f8e9702fac1bc030850af01ba113193526c62a226bd5b772fa345a25d0fd602"
+    },
+    {
+      "source": "regions.py",
+      "published": "validation/frozen/projection-up-20260908T080741918764Z/regions.py",
+      "source_sha256": "2b23cc1644fc6e28ebe461bb68dfe0b4c77ac03570c094411d78d477377728c2",
+      "published_sha256": "2b23cc1644fc6e28ebe461bb68dfe0b4c77ac03570c094411d78d477377728c2"
+    },
+    {
+      "source": "results.json",
+      "published": "validation/frozen/projection-up-20260908T080741918764Z/results.json",
+      "source_sha256": "1b40ed8528230354a987c6f1e2463543f491e37069cdca58c151e72c5eef6870",
+      "published_sha256": "1b40ed8528230354a987c6f1e2463543f491e37069cdca58c151e72c5eef6870"
+    },
+    {
+      "source": "manifest.json",
+      "published": "validation/frozen/projection-up-20260908T080741918764Z/manifest.json",
+      "source_sha256": "7973415e065d36ddb02eaadea2b96619a78fecf66319867d351daf8d557f51b4",
+      "published_sha256": "7973415e065d36ddb02eaadea2b96619a78fecf66319867d351daf8d557f51b4"
+    },
+    {
+      "source": "driver.py",
+      "published": "validation/frozen/projection-up-20260908T080741918764Z/driver.py",
+      "source_sha256": "d092423f3dd776115fe434a5dad21675deb7b534a2fb552cf86ebfa8b092d878",
+      "published_sha256": "d092423f3dd776115fe434a5dad21675deb7b534a2fb552cf86ebfa8b092d878"
+    },
+    {
+      "source": "precision.json",
+      "published": "validation/frozen/projection-up-20260908T080741918764Z/precision.json",
+      "source_sha256": "c5da7df9c06537cb205b8c5a760703fd39b7c519bb27666906cafb1d6e45b3b0",
+      "published_sha256": "c5da7df9c06537cb205b8c5a760703fd39b7c519bb27666906cafb1d6e45b3b0"
+    },
+    {
+      "source": "s2-native-up-review.json",
+      "published": "validation/reviews/s2-native-up-review.json",
+      "source_sha256": "6c037384c5331476d9861cccdfc3edce84da7d3bb0b69a1147ba65334305a388",
+      "published_sha256": "6c037384c5331476d9861cccdfc3edce84da7d3bb0b69a1147ba65334305a388"
+    },
+    {
+      "source": "line.csl",
+      "published": "csl/runtime/line_projection_f32.csl",
+      "source_sha256": "21f8628d937c6e481c24a45747895fb27caa1bd2a6b18d7338e138d492a4a529",
+      "published_sha256": "21f8628d937c6e481c24a45747895fb27caa1bd2a6b18d7338e138d492a4a529"
+    },
+    {
+      "source": "regions.py",
+      "published": "src/csl_llm/projection_regions.py",
+      "source_sha256": "2b23cc1644fc6e28ebe461bb68dfe0b4c77ac03570c094411d78d477377728c2",
+      "published_sha256": "2b23cc1644fc6e28ebe461bb68dfe0b4c77ac03570c094411d78d477377728c2"
+    },
+    {
+      "source": "driver.py",
+      "published": "tools/projection_probe.py",
+      "source_sha256": "d092423f3dd776115fe434a5dad21675deb7b534a2fb552cf86ebfa8b092d878",
+      "published_sha256": "d4ed795eed327d88e0b0080680ec078eaa7f9fc1bf0e3284b87d98ff3fca9eb5"
+    }
+  ],
+  "scope": "Publication identity verification of accepted old u16-transfer frozen run. No new SDK simulation; no qualification of newer u32 transfer/batched reads."
+}

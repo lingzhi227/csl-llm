@@ -9,3 +9,5 @@ S2 has initial vector, RoPE and embedding/selection component passes. These do n
 S3 now has accepted bounded real-trace GQA and separate KV capacity diagnostics; selected frozen implementations are included. The complete stage remains open. See [milestones](MILESTONES.md). S4 complete layer, S5 complete model generation and S6 capacity/performance acceptance remain pending. No model-generated tokens from a complete CSL pipeline are claimed.
 
 The independent review files retain original evidence hashes and exact measured scope. Full original binary outputs and execution snapshots are not included. This publication is a selected checkpoint, not a live development mirror.
+
+The complete layer-0 UP4864×896 projection now has a recorded SDK pass: 304 resident-weight PEs, 38 output roots, four input cases. Canonical relative L2 is 2.4136e-7; last-feature one-hot and zero are exact. GATE/DOWN and full FFN/layer remain pending. All 304 progress values are checked; output replicas beyond the 38 roots are not read back.

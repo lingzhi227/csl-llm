@@ -29,6 +29,8 @@ Recorded SDK results belong to the original development snapshots. Publication c
 
 Stateful GQA (34 real reference tokens), a separately scoped 2048-position KV diagnostic, sequential packet ACK completion and exact full-checkpoint BF16 packing are now included. [Read their acceptance boundaries](docs/MILESTONES.md). These are component milestones, not complete-model generation.
 
+The full layer-0 **UP 4864×896 projection** also passes four input cases on 304 PEs. This is a complete single projection, not a complete MLP. The published tool selects the accepted u16-transfer snapshot; later transport optimizations are not included.
+
 ## Repository layout
 
 ```text

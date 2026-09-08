@@ -1,5 +1,5 @@
 {
-  "scope": "Selected accepted CSL-LLM stateful-component milestone update, 2026-09-08",
+  "scope": "Accepted full native UP projection milestone, 2026-09-08",
   "files": [
     {
       "path": ".gitignore",
@@ -13,8 +13,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 3560,
-      "sha256": "c010314c99ce812b73d046d5fdc70202ec7596aad7b7a99d14c5c66c59c023c4"
+      "bytes": 3816,
+      "sha256": "8078dc0c7c250e910879bc6206b89808d91feb02ef5b1b5004ac8a366e56660a"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
@@ -112,6 +112,11 @@
       "sha256": "21f8628d937c6e481c24a45747895fb27caa1bd2a6b18d7338e138d492a4a529"
     },
     {
+      "path": "csl/runtime/line_projection_f32.csl",
+      "bytes": 3947,
+      "sha256": "21f8628d937c6e481c24a45747895fb27caa1bd2a6b18d7338e138d492a4a529"
+    },
+    {
       "path": "csl/runtime/line_statistics_f32.csl",
       "bytes": 3947,
       "sha256": "21f8628d937c6e481c24a45747895fb27caa1bd2a6b18d7338e138d492a4a529"
@@ -133,8 +138,8 @@
     },
     {
       "path": "docs/MILESTONES.md",
-      "bytes": 1940,
-      "sha256": "f350447e4f70a6f6a6fa811e0dd6e40a7de6f24f418711895427d70120f9a25f"
+      "bytes": 2151,
+      "sha256": "697eeb2813327af286dfec445a51b40426d5fe9b5141043da68b56090d3202bd"
     },
     {
       "path": "docs/REFERENCE.md",
@@ -148,13 +153,13 @@
     },
     {
       "path": "docs/REPRODUCING.md",
-      "bytes": 3975,
-      "sha256": "a54dcf870d1d1946260ec8f753789f8e88ffb05ebaf951b7dd642f2cc556711e"
+      "bytes": 4491,
+      "sha256": "60ec787d234ca3a5fe3928b6c74d2f3226c553eac5a79ae04982957d5f601dcb"
     },
     {
       "path": "docs/STATUS.md",
-      "bytes": 1603,
-      "sha256": "32bca641a2818758c7d989b3097ccccca808f4382af52700e2f7e58016e2da1b"
+      "bytes": 1951,
+      "sha256": "10cbf1f95b60a98de62b021cb42a5d4cd4b08927e79737b9458d44a47d0263d6"
     },
     {
       "path": "evidence/model-inventory.json",
@@ -168,8 +173,8 @@
     },
     {
       "path": "release/CHECKS.md",
-      "bytes": 2635,
-      "sha256": "bddb8d1a1041ed9e02acc7e166e4a40aa8a8676e4d9b48a792d0c24fc0ccf7f1"
+      "bytes": 3243,
+      "sha256": "b669adb54dcde4839f785ffc0e5df975a90844c953a4bf0c2e373b3df7205fdf"
     },
     {
       "path": "release/KERNEL-MATCHES.json",
@@ -180,6 +185,11 @@
       "path": "release/MILESTONE-SOURCES-20260908.json",
       "bytes": 15618,
       "sha256": "8f10e9540eccb3d12c1f49fe80766917aba755c8dc1b12725eba00182c856c2b"
+    },
+    {
+      "path": "release/NATIVE-UP-CHECKS.json",
+      "bytes": 4694,
+      "sha256": "8fbbca59ad82e52c4d161a25e56a842b9c93129e79362aaf5041d9f1c612c610"
     },
     {
       "path": "release/RAW-OUTPUT-CHECKS-20260908.json",
@@ -210,6 +220,11 @@
       "path": "src/csl_llm/layout.py",
       "bytes": 4286,
       "sha256": "1c8a833ec48f7cc016680c641d9e00a740597439893852750b6d5f3b0a74fa0f"
+    },
+    {
+      "path": "src/csl_llm/projection_regions.py",
+      "bytes": 2413,
+      "sha256": "2b23cc1644fc6e28ebe461bb68dfe0b4c77ac03570c094411d78d477377728c2"
     },
     {
       "path": "src/csl_llm/regions.py",
@@ -295,6 +310,11 @@
       "path": "tools/prepare_gemv_probe.py",
       "bytes": 5994,
       "sha256": "fe89fc35b93fee23bfea819d7f7097f58d8009215d7627a89b68199a5916c9ca"
+    },
+    {
+      "path": "tools/projection_probe.py",
+      "bytes": 9583,
+      "sha256": "d4ed795eed327d88e0b0080680ec078eaa7f9fc1bf0e3284b87d98ff3fca9eb5"
     },
     {
       "path": "tools/reference_run.py",
@@ -497,6 +517,61 @@
       "sha256": "f32d2cd551f29de1e9ec51c2b69f79e310fb41023a3f2c03023f05de059644f0"
     },
     {
+      "path": "validation/frozen/projection-up-20260908T080741918764Z/config.json",
+      "bytes": 1829,
+      "sha256": "3f8e9702fac1bc030850af01ba113193526c62a226bd5b772fa345a25d0fd602"
+    },
+    {
+      "path": "validation/frozen/projection-up-20260908T080741918764Z/driver.py",
+      "bytes": 9595,
+      "sha256": "d092423f3dd776115fe434a5dad21675deb7b534a2fb552cf86ebfa8b092d878"
+    },
+    {
+      "path": "validation/frozen/projection-up-20260908T080741918764Z/execution-summary.json",
+      "bytes": 567,
+      "sha256": "aa8856a05c674a658907c92857e433b9bb3be7a977074b26150297e211866549"
+    },
+    {
+      "path": "validation/frozen/projection-up-20260908T080741918764Z/kernel.csl",
+      "bytes": 1387,
+      "sha256": "3e92175efe12b28065bb77934c54136db3c9287c68c81877781a0e527354304c"
+    },
+    {
+      "path": "validation/frozen/projection-up-20260908T080741918764Z/layout.csl",
+      "bytes": 41772,
+      "sha256": "7c555991561b2a591a8e158b50ceaad92f90d923cfaf230c953e3f28454472db"
+    },
+    {
+      "path": "validation/frozen/projection-up-20260908T080741918764Z/line.csl",
+      "bytes": 3947,
+      "sha256": "21f8628d937c6e481c24a45747895fb27caa1bd2a6b18d7338e138d492a4a529"
+    },
+    {
+      "path": "validation/frozen/projection-up-20260908T080741918764Z/manifest.json",
+      "bytes": 963,
+      "sha256": "7973415e065d36ddb02eaadea2b96619a78fecf66319867d351daf8d557f51b4"
+    },
+    {
+      "path": "validation/frozen/projection-up-20260908T080741918764Z/pe.csl",
+      "bytes": 1459,
+      "sha256": "dfcf54c6439ceae42504c96fe451349115bdcfd6a6d4bef37f323cde3c9e4962"
+    },
+    {
+      "path": "validation/frozen/projection-up-20260908T080741918764Z/precision.json",
+      "bytes": 1396,
+      "sha256": "c5da7df9c06537cb205b8c5a760703fd39b7c519bb27666906cafb1d6e45b3b0"
+    },
+    {
+      "path": "validation/frozen/projection-up-20260908T080741918764Z/regions.py",
+      "bytes": 2413,
+      "sha256": "2b23cc1644fc6e28ebe461bb68dfe0b4c77ac03570c094411d78d477377728c2"
+    },
+    {
+      "path": "validation/frozen/projection-up-20260908T080741918764Z/results.json",
+      "bytes": 3817,
+      "sha256": "1b40ed8528230354a987c6f1e2463543f491e37069cdca58c151e72c5eef6870"
+    },
+    {
       "path": "validation/frozen/resident-weights-20260908T080621344705Z/manifest.json",
       "bytes": 773,
       "sha256": "788ce538ac7ca41f2547b4ce8b86bee283b2cbd75b739f3841fdafafca9e0c9b"
@@ -625,6 +700,11 @@
       "path": "validation/reviews/s1-simulator-cost-64x64-review.json",
       "bytes": 1439,
       "sha256": "2593f15501ffcc35e243e40a84539130e351404862bc06454c68f4eac0eae2a1"
+    },
+    {
+      "path": "validation/reviews/s2-native-up-review.json",
+      "bytes": 1759,
+      "sha256": "6c037384c5331476d9861cccdfc3edce84da7d3bb0b69a1147ba65334305a388"
     },
     {
       "path": "validation/reviews/s2-rope-review.json",

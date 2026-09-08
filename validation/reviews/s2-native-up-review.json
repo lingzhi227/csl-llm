@@ -1,0 +1,47 @@
+{
+  "manifest_sha256": "7973415e065d36ddb02eaadea2b96619a78fecf66319867d351daf8d557f51b4",
+  "results_sha256": "1b40ed8528230354a987c6f1e2463543f491e37069cdca58c151e72c5eef6870",
+  "official_source_inputs_and_all_packed_tiles_verified": true,
+  "cases": [
+    {
+      "name": "canonical",
+      "l2": 2.4135874870056814e-07,
+      "peak": 1.1472177535232414e-07,
+      "all_304_progress": true,
+      "root_cycle_min": 19502,
+      "root_cycle_max": 19502,
+      "actual_sha256": "9c684b77d6fa429fa12ec943b783ed3e4a5f2552d4fbd8fd484b8a42c8755e88"
+    },
+    {
+      "name": "last-feature-onehot",
+      "l2": 0.0,
+      "peak": 0.0,
+      "all_304_progress": true,
+      "root_cycle_min": 19502,
+      "root_cycle_max": 19502,
+      "actual_sha256": "6451356f7100bb7a78145776f65c6d0a79198825b243c9ba42fc2003a56a51d1"
+    },
+    {
+      "name": "zero",
+      "l2": 0.0,
+      "peak": 0.0,
+      "all_304_progress": true,
+      "root_cycle_min": 19502,
+      "root_cycle_max": 19502,
+      "actual_sha256": "db29cbacd98f128e8a99df4fb3a7d736c1e1fc3cdf1fc70c0e926e40826c3f47"
+    },
+    {
+      "name": "canonical-repeat",
+      "l2": 2.4135874870056814e-07,
+      "peak": 1.1472177535232414e-07,
+      "all_304_progress": true,
+      "root_cycle_min": 19502,
+      "root_cycle_max": 19502,
+      "actual_sha256": "2a5b2bf1998bca9403dbd8c87b030225cdc1715ee23325a46e456efc7c688c5e"
+    }
+  ],
+  "elapsed_seconds": 876.5624217130244,
+  "peak_rss_kib": 595572,
+  "scope": "Complete layer0 UP4864x896 matrix projection,38root outputs and304PE progress,4 inputs with resident weights. Independent original-weight fsum canonical oracle. Not wholeMLP/decoder layer/fullmodel and not allPE replica-output readback.",
+  "reviewed_at": "2026-09-08T08:34:37.733790+00:00"
+}

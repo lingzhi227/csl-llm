@@ -17,3 +17,7 @@ The three new SDK run manifests match every original listed file, successful exe
 Frozen CSL/driver inspection snapshots, small results/config/manifests and derived execution summaries are included. Public preparation tools use the accepted frozen driver and exact protocol dependencies, with explicit publication-only path selection. The earlier capacity preparation entry now has its accepted frozen implementation and required KV/collective dependencies. Earlier regional sum-only code remains unchanged.
 
 After the update, all four host tests passed on Linux in 4.045 seconds. Python syntax, documentation links and public payload checks passed. No new SDK simulation was launched for publishing. Full-model acceptance remains open.
+
+## Full native UP milestone
+
+Verified every file in the accepted projection-up manifest, all four actual output hashes, independent review hashes and successful execution/results. Published the exact frozen kernel, collective and region helper; the public driver changes only reference/dependency paths and limits its selector to accepted UP. The newer u32/batched-read implementation is excluded. Python syntax and CLI checks pass; local host regression passes three tests with the Linux-only cleanup test skipped. Public payload and reader links checked; no new SDK simulation. See NATIVE-UP-CHECKS.json.
