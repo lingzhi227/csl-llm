@@ -39,6 +39,8 @@ The complete layer-0 **DOWN 896×4864 projection** now also passes four cases on
 
 **UP/GATE/SwiGLU/DOWN now run together with device-only intermediates**,916 resident weight tiles and four independently checked input cases. [Evidence, reproduction and limits](docs/RESIDENT-MLP.md). RMSNorm/residual and complete-model integration remain pending. Generated CSL weight literals are excluded from this repository.
 
+An accepted **DSD-copy optimization reduces measured controller cycles by49.57% on the nonzero MLP cases**, with bit-identical results and protocol observations. This is a simulator interval comparison, not a hardware speedup. Both implementations and [comparison limits](docs/RESIDENT-MLP.md) are retained.
+
 ## Repository layout
 
 ```text

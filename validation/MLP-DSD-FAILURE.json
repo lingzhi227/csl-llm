@@ -1,0 +1,5 @@
+{
+  "run": "resident-mlp-static-20260908T104323973145Z",
+  "sdk_log_sha256": "f2455ac650b844c4314bf271f63f5bd527316cfe273a0999a4add241af717e01",
+  "scope": "Earlier DSD-copy draft failed compilation on pointer-type handling. It is not an accepted numerical result; original failure is retained in development. Later accepted code does not overwrite that evidence."
+}

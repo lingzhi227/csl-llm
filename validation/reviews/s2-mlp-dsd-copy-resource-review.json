@@ -1,0 +1,16 @@
+{
+  "reviewed_at": "2026-09-08T11:11:56.085725+00:00",
+  "run": "resident-mlp-static-20260908T105127784294Z",
+  "manifest_sha256": "2b3b38aaec76bf9bc1c1a2e3ce842ea48b1722dbdb2f11e7077565a57b528238",
+  "elf_report_sha256": "fe9a6ae02964566709f26c36dd04bfa73521c4faba86b143b2109f2b176a9f0a",
+  "dsr_report_sha256": "f5c6102a65708049f58337b8e6ddf8df6308d4a3ea5d5cb3134bc11444a05d72",
+  "application_elf_classes_verified": 921,
+  "max_static_high_water_bytes": 39056,
+  "final_dsr_families_verified": 920,
+  "nodes_checked": 8988,
+  "interference_edges_checked": 36491,
+  "method": "Independent actualELF64 hash/allocsection parsing and final graph edge/assignment/range/explicitDSR checks.",
+  "limitations": [
+    "No dynamic-stack, hardware performance or full decoder/model fit proof."
+  ]
+}

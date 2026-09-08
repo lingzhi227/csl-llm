@@ -1,0 +1,78 @@
+{
+  "run": "resident-mlp-static-20260908T105127784294Z",
+  "baseline": "resident-mlp-static-20260908T103112494535Z",
+  "manifest_files_verified": 930,
+  "original_driver_sha256": "1d9f43734677dc4106525ef66330259ae333ef8664564ffda8c87bf5e58aa638",
+  "published_driver_sha256": "37c733200e9c0d095176b897796858cab0308f750327d2978ae3654373fdbd0c",
+  "bitwise_comparison": [
+    {
+      "case": 0,
+      "bit_equal_arrays": [
+        "output",
+        "activation",
+        "progress",
+        "ready",
+        "up_column_0",
+        "up_column_8",
+        "up",
+        "gate_column_16",
+        "gate_column_24",
+        "gate",
+        "down_column_32",
+        "down"
+      ]
+    },
+    {
+      "case": 1,
+      "bit_equal_arrays": [
+        "output",
+        "activation",
+        "progress",
+        "ready",
+        "up_column_0",
+        "up_column_8",
+        "up",
+        "gate_column_16",
+        "gate_column_24",
+        "gate",
+        "down_column_32",
+        "down"
+      ]
+    },
+    {
+      "case": 2,
+      "bit_equal_arrays": [
+        "output",
+        "activation",
+        "progress",
+        "ready",
+        "up_column_0",
+        "up_column_8",
+        "up",
+        "gate_column_16",
+        "gate_column_24",
+        "gate",
+        "down_column_32",
+        "down"
+      ]
+    },
+    {
+      "case": 3,
+      "bit_equal_arrays": [
+        "output",
+        "activation",
+        "progress",
+        "ready",
+        "up_column_0",
+        "up_column_8",
+        "up",
+        "gate_column_16",
+        "gate_column_24",
+        "gate",
+        "down_column_32",
+        "down"
+      ]
+    }
+  ],
+  "scope": "Publication manifest/output/source checks; cycle and resource reports independently reviewed by coordinator. No new SDK simulation. Baseline preserved."
+}

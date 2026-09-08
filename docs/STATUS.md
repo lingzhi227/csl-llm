@@ -17,3 +17,5 @@ Full native GATE4864×896 passes four inputs: canonical relative L2 2.2213e-7, p
 Full native DOWN896×4864 passes canonical, last-feature one-hot, zero and repeated canonical input. Relative L2 is 1.1876e-7, peak 7.9498e-8; one-hot/zero are exact. Seven roots cover896 outputs, all308PE progress values pass;44 shards include a final48 valid features plus64 padding. Input is prepared on the host from independently checked trace-derived SiLU, not a device-composed SwiGLU result. Independent static application-ELF review covers44 classes with maximum35712 bytes; no dynamic stack, IO-class, DSR or composed-MLP fit claim.
 
 The complete resident layer-0 MLP is now accepted for four inputs and device-only intermediate computation. See [resident MLP](RESIDENT-MLP.md). S2 as a whole, complete layers and full-model S0–S6 acceptance remain open.
+
+The accepted DSD-copy MLP variant preserves all four baseline cases bitwise and reduces nonzero controller intervals247737→124942 cycles. This remains an MLP-only simulator comparison; complete decoder/model acceptance is pending.

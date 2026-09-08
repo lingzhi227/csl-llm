@@ -1,0 +1,11 @@
+{
+  "success": true,
+  "sdk_sha256": "fff17e81c61dcb6012bdee2941a6fdc570f5c8604967530e7b7108651258193d",
+  "manifest_sha256": "2b3b38aaec76bf9bc1c1a2e3ce842ea48b1722dbdb2f11e7077565a57b528238",
+  "results_sha256": "ccd636ce7386c1efc12c194086fb4f99ea7ca33ba57420df85e0a45d2da8b68f",
+  "elapsed_seconds": 799.8770336699672,
+  "peak_rss_kib": 14214328,
+  "timeout_seconds": 1800,
+  "original_execution_sha256": "43f98e46146fc8a6e9cb9a976a63327d1368d73e72eec0d8e9960e25b6ae5cfe",
+  "scope": "Derived summary; personal paths, command and process identities omitted."
+}

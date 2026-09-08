@@ -1,0 +1,44 @@
+// Event-driven fixed-length adapter over the SDK's public message-passing API.
+// A packet contains1..31 u32 wavelets, including application metadata.
+// Routing bank14 occupies the SDK-defined message-passing colors, not DSR14.
+param input_queue_id:u16=6;
+param output_queue_id:u16=6;
+param sent_task_id:local_task_id;
+param received_task_id:local_task_id;
+param on_sent:fn()void;
+param on_received:fn([*]u32,u16)void;
+const mp=@import_module("<message_passing>",.{.enable_asserts=true,.bank_id=14,.input_queue_id=input_queue_id,.output_queue_id=output_queue_id});
+const header_id=@get_data_task_id(mp.mp_input_queue);
+const rd=@get_dsr(dsr_dest,6);const rs=@get_dsr(dsr_src1,6);
+var receive_buffer=@zeros([31]u32);var receive_length:u16=0;
+var sending:bool=false;var receiving:bool=false;var initialized:bool=false;
+fn init() void {@assert(!initialized);mp.init();initialized=true;}
+// Source remains owned until on_sent. That callback is not a delivery ACK.
+fn send(x:u16,y:u16,source:[*]u32,length:u16) void {
+ @assert(initialized and !sending and length>0 and length<=31);sending=true;
+ mp.send_message(x,y,source,length,.{.activate=sent_task_id});
+}
+// Bit-preserving synchronous copy for application payload assembly/retention.
+// Callers supply valid disjoint ranges; count is a packet-sized runtime extent.
+fn copy_words(source:[*]u32,destination:[*]u32,count:u16) void {
+ @assert(count>0 and count<=31);
+ const src=@get_dsd(mem1d_dsd,.{.base_address=source,.extent=count});
+ const dst=@get_dsd(mem1d_dsd,.{.base_address=destination,.extent=count});
+ @mov32(dst,src);
+}
+task sent() void {@assert(sending);sending=false;on_sent();}
+task header(word:u32) void {
+ @assert(initialized and !receiving);receiving=true;@block(header_id);
+ receive_length=mp.get_header_len(word);@assert(receive_length>0 and receive_length<=31);
+ const dst=@get_dsd(mem1d_dsd,.{.base_address=&receive_buffer,.extent=receive_length});
+ const base=@get_dsd(fabin_dsd,.{.input_queue=mp.mp_input_queue,.extent=1,.simd_mode=.{.simd_off=true}});
+ const src=@set_dsd_length(base,receive_length);
+ @load_to_dsr(rd,dst);@load_to_dsr(rs,src,.{.async=true,.activate=received_task_id});@mov32(rd,rs,.{.async=true});
+}
+task received() void {
+ @assert(receiving);
+ // The callback must copy any retained data before returning. This buffer is
+ // reused by the next packet; the receive queue stays leased to this module.
+ on_received(&receive_buffer,receive_length);receiving=false;@unblock(header_id);
+}
+comptime {@bind_data_task(header,header_id);@bind_local_task(sent,sent_task_id);@bind_local_task(received,received_task_id);}

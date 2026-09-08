@@ -1,5 +1,5 @@
 {
-  "scope": "Accepted resident MLP and supporting transport/initialization milestones, 2026-09-08; no model-weight payloads",
+  "scope": "Accepted MLP DSD-copy optimization, 2026-09-08; original baseline preserved",
   "files": [
     {
       "path": ".gitignore",
@@ -13,8 +13,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 4773,
-      "sha256": "edeb2b3a97b6f7fa47145fa21b9771c45332dd911ad95a90ea8882c8aaafe060"
+      "bytes": 5082,
+      "sha256": "8120eea27fd1614a13e9e9c34e85d09caa39109bd0c24be25035af4141a56c9b"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
@@ -147,6 +147,36 @@
       "sha256": "e923d62d7c3527d80282bb6b4714bb00b537510d8c4a48455f84aa939571b26b"
     },
     {
+      "path": "csl/programs/resident_mlp_dsd/input.csl",
+      "bytes": 709,
+      "sha256": "e9b289a13f821df69a08e58e9bf6847f4b542d94d617c60d8df143413d2a61af"
+    },
+    {
+      "path": "csl/programs/resident_mlp_dsd/kernel.csl",
+      "bytes": 1387,
+      "sha256": "3e92175efe12b28065bb77934c54136db3c9287c68c81877781a0e527354304c"
+    },
+    {
+      "path": "csl/programs/resident_mlp_dsd/line.csl",
+      "bytes": 3947,
+      "sha256": "21f8628d937c6e481c24a45747895fb27caa1bd2a6b18d7338e138d492a4a529"
+    },
+    {
+      "path": "csl/programs/resident_mlp_dsd/packets.csl",
+      "bytes": 2601,
+      "sha256": "151009e07423dc16bb2b2304f29e7e6c52e84e57613c809eb5188470e8bcc6c7"
+    },
+    {
+      "path": "csl/programs/resident_mlp_dsd/pe.csl",
+      "bytes": 7096,
+      "sha256": "b5687ab46108b5ff7bb9812e95ce8c264d58d01be0ac8180939229811563ee26"
+    },
+    {
+      "path": "csl/programs/resident_mlp_dsd/vector.csl",
+      "bytes": 2509,
+      "sha256": "e923d62d7c3527d80282bb6b4714bb00b537510d8c4a48455f84aa939571b26b"
+    },
+    {
       "path": "csl/programs/static_weights/kernel.csl",
       "bytes": 1387,
       "sha256": "3e92175efe12b28065bb77934c54136db3c9287c68c81877781a0e527354304c"
@@ -213,13 +243,13 @@
     },
     {
       "path": "docs/RESIDENT-MLP.md",
-      "bytes": 3247,
-      "sha256": "49ece005ab152c2f0280cd2b22b463c4ea7f5df989ef8827302464852a20c9db"
+      "bytes": 4541,
+      "sha256": "5cd9d14a32e20d273f35ac2ffe420a1fb2513fb1fdc3b65f8d94a99697edd811"
     },
     {
       "path": "docs/STATUS.md",
-      "bytes": 3247,
-      "sha256": "0d9341f16bf1b19ecf28402f3633120debac26907923cf6c53cb847758d09aa1"
+      "bytes": 3481,
+      "sha256": "3c3746141478030b3fe8bbb5dfb484fee43eddeababb86cbe2657a3d849030f6"
     },
     {
       "path": "evidence/model-inventory.json",
@@ -233,8 +263,8 @@
     },
     {
       "path": "release/CHECKS.md",
-      "bytes": 5611,
-      "sha256": "d5ec46df390330eccd8cf49d5d5d6cd571e373f9af97a9c0e7bede0fe7712870"
+      "bytes": 6259,
+      "sha256": "6aed4e42f60dc812c97b9d386ed34508507abdaaf0a4847e60dc8a6478ec26bb"
     },
     {
       "path": "release/KERNEL-MATCHES.json",
@@ -245,6 +275,11 @@
       "path": "release/MILESTONE-SOURCES-20260908.json",
       "bytes": 15618,
       "sha256": "8f10e9540eccb3d12c1f49fe80766917aba755c8dc1b12725eba00182c856c2b"
+    },
+    {
+      "path": "release/MLP-DSD-CHECKS.json",
+      "bytes": 1789,
+      "sha256": "70608224338f84741d14f4326eb26e806d58004cfe208dd5a7a30c1f256eff2c"
     },
     {
       "path": "release/NATIVE-DOWN-CHECKS.json",
@@ -442,6 +477,11 @@
       "sha256": "7fb906b48caaab351302b9a045989f0450e6f8cdc4c46e3045aaf51049678e71"
     },
     {
+      "path": "tools/resident_mlp_dsd_probe.py",
+      "bytes": 17769,
+      "sha256": "37c733200e9c0d095176b897796858cab0308f750327d2978ae3654373fdbd0c"
+    },
+    {
       "path": "tools/resident_mlp_probe.py",
       "bytes": 17745,
       "sha256": "3e628012d0f0dcdfb660319879db974e816128c2cf1fe695f2f723d6807a915b"
@@ -480,6 +520,11 @@
       "path": "tools/verify_weight_pack.py",
       "bytes": 3593,
       "sha256": "0e73b0020e8c99eef84ea528f740f7f052560a0e91cd619240c2c4318f38bfa4"
+    },
+    {
+      "path": "validation/MLP-DSD-FAILURE.json",
+      "bytes": 367,
+      "sha256": "f8384dc62981799cba3005e8da6b956150d0875ba52e6cb928d5c5ac7e1475d1"
     },
     {
       "path": "validation/PACKET-FAILURES.json",
@@ -992,6 +1037,101 @@
       "sha256": "e923d62d7c3527d80282bb6b4714bb00b537510d8c4a48455f84aa939571b26b"
     },
     {
+      "path": "validation/frozen/resident-mlp-static-20260908T105127784294Z/bf16_transport.py",
+      "bytes": 730,
+      "sha256": "6a3e2a2c222e6f7e8408e28ec2a299d05c0c13cd2b85b62e52a3e8eb833187c3"
+    },
+    {
+      "path": "validation/frozen/resident-mlp-static-20260908T105127784294Z/config.json",
+      "bytes": 4140,
+      "sha256": "e4145b862f6bed18a7466b1f14ee9675023d3da34d4204205bd1196a3f6177d7"
+    },
+    {
+      "path": "validation/frozen/resident-mlp-static-20260908T105127784294Z/cycle-comparison.json",
+      "bytes": 1382,
+      "sha256": "7742563628e61b45716db41c9ada49550a3c77b4009d9c189d59b35b6d39a0cd"
+    },
+    {
+      "path": "validation/frozen/resident-mlp-static-20260908T105127784294Z/driver.py",
+      "bytes": 17719,
+      "sha256": "1d9f43734677dc4106525ef66330259ae333ef8664564ffda8c87bf5e58aa638"
+    },
+    {
+      "path": "validation/frozen/resident-mlp-static-20260908T105127784294Z/dsr-allocation.json",
+      "bytes": 344406,
+      "sha256": "f5c6102a65708049f58337b8e6ddf8df6308d4a3ea5d5cb3134bc11444a05d72"
+    },
+    {
+      "path": "validation/frozen/resident-mlp-static-20260908T105127784294Z/elf-memory.json",
+      "bytes": 4448813,
+      "sha256": "fe9a6ae02964566709f26c36dd04bfa73521c4faba86b143b2109f2b176a9f0a"
+    },
+    {
+      "path": "validation/frozen/resident-mlp-static-20260908T105127784294Z/execution-summary.json",
+      "bytes": 564,
+      "sha256": "2d052c9286f9e86e69bed5d166951c891944d2422635bb22e77d0a3704e52ac4"
+    },
+    {
+      "path": "validation/frozen/resident-mlp-static-20260908T105127784294Z/initialized-weights-audit.json",
+      "bytes": 328532,
+      "sha256": "f1159fe9252e4dab8af93bf0cfb3c11be8db81035d19fc72fa84cdd906fb8a34"
+    },
+    {
+      "path": "validation/frozen/resident-mlp-static-20260908T105127784294Z/input.csl",
+      "bytes": 709,
+      "sha256": "e9b289a13f821df69a08e58e9bf6847f4b542d94d617c60d8df143413d2a61af"
+    },
+    {
+      "path": "validation/frozen/resident-mlp-static-20260908T105127784294Z/kernel.csl",
+      "bytes": 1387,
+      "sha256": "3e92175efe12b28065bb77934c54136db3c9287c68c81877781a0e527354304c"
+    },
+    {
+      "path": "validation/frozen/resident-mlp-static-20260908T105127784294Z/layout.csl",
+      "bytes": 450733,
+      "sha256": "c29262b1aa4de110d60e8992fb8606fc472afb4db602ec216a787377a04586e6"
+    },
+    {
+      "path": "validation/frozen/resident-mlp-static-20260908T105127784294Z/line.csl",
+      "bytes": 3947,
+      "sha256": "21f8628d937c6e481c24a45747895fb27caa1bd2a6b18d7338e138d492a4a529"
+    },
+    {
+      "path": "validation/frozen/resident-mlp-static-20260908T105127784294Z/manifest.json",
+      "bytes": 85772,
+      "sha256": "2b3b38aaec76bf9bc1c1a2e3ce842ea48b1722dbdb2f11e7077565a57b528238"
+    },
+    {
+      "path": "validation/frozen/resident-mlp-static-20260908T105127784294Z/packets.csl",
+      "bytes": 2601,
+      "sha256": "151009e07423dc16bb2b2304f29e7e6c52e84e57613c809eb5188470e8bcc6c7"
+    },
+    {
+      "path": "validation/frozen/resident-mlp-static-20260908T105127784294Z/pe.csl",
+      "bytes": 7096,
+      "sha256": "b5687ab46108b5ff7bb9812e95ce8c264d58d01be0ac8180939229811563ee26"
+    },
+    {
+      "path": "validation/frozen/resident-mlp-static-20260908T105127784294Z/precision.json",
+      "bytes": 1396,
+      "sha256": "c5da7df9c06537cb205b8c5a760703fd39b7c519bb27666906cafb1d6e45b3b0"
+    },
+    {
+      "path": "validation/frozen/resident-mlp-static-20260908T105127784294Z/regions.py",
+      "bytes": 2413,
+      "sha256": "2b23cc1644fc6e28ebe461bb68dfe0b4c77ac03570c094411d78d477377728c2"
+    },
+    {
+      "path": "validation/frozen/resident-mlp-static-20260908T105127784294Z/results.json",
+      "bytes": 3835,
+      "sha256": "ccd636ce7386c1efc12c194086fb4f99ea7ca33ba57420df85e0a45d2da8b68f"
+    },
+    {
+      "path": "validation/frozen/resident-mlp-static-20260908T105127784294Z/vector.csl",
+      "bytes": 2509,
+      "sha256": "e923d62d7c3527d80282bb6b4714bb00b537510d8c4a48455f84aa939571b26b"
+    },
+    {
       "path": "validation/frozen/resident-weights-20260908T080621344705Z/manifest.json",
       "bytes": 773,
       "sha256": "788ce538ac7ca41f2547b4ce8b86bee283b2cbd75b739f3841fdafafca9e0c9b"
@@ -1215,6 +1355,21 @@
       "path": "validation/reviews/s2-filtered-input-review.json",
       "bytes": 1824,
       "sha256": "e54260ef13d160142e33ae8a0c98de1bd3cedeaa4fecc9ab3e71aa62eb1c1e9d"
+    },
+    {
+      "path": "validation/reviews/s2-mlp-dsd-copy-comparison-review.json",
+      "bytes": 1697,
+      "sha256": "083c4855c714dab282be589f2fb7f3074a54973f14fc3987165ece2d8d29fd57"
+    },
+    {
+      "path": "validation/reviews/s2-mlp-dsd-copy-initializer-review.json",
+      "bytes": 533,
+      "sha256": "988a44253bd72164ae28c551ac83c963d2c332563d6cdc2652fa6f6e6d8e60f0"
+    },
+    {
+      "path": "validation/reviews/s2-mlp-dsd-copy-resource-review.json",
+      "bytes": 792,
+      "sha256": "00911ea5f6b5c21a53e632c1c10b1c3b56c5cb87b1d232f8a30b1db15e1e6f1e"
     },
     {
       "path": "validation/reviews/s2-native-down-resource-review.json",
