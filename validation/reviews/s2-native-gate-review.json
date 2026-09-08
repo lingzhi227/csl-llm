@@ -1,0 +1,71 @@
+{
+  "reviewed_at": "2026-09-08T09:45:02.331764+00:00",
+  "run": "projection-gate-20260908T093225528957Z",
+  "manifest_sha256": "b9e7a744172e84037d7dbd96a0acfcb5b56cff27ac6eae83a40e50cc6e41f574",
+  "results_sha256": "3a3b43440180bb2bffc2813ec89196c31e7c3da7e74290ed2f5b17e9cb96a930",
+  "sdk_sha256": "fff17e81c61dcb6012bdee2941a6fdc570f5c8604967530e7b7108651258193d",
+  "manifest_file_count": 11,
+  "official_source_inputs_and_all_304_packed_tiles_verified": true,
+  "reference": "Independent math.fsum from original checkpoint and canonical trace input; exact onehot/zero",
+  "cases": [
+    {
+      "name": "canonical",
+      "relative_l2": 2.2213311108193575e-07,
+      "relative_peak": 5.035012622891479e-07,
+      "all_304_progress": true,
+      "column_output_timing_bindings_verified": true,
+      "root_cycles_min": 19502,
+      "root_cycles_max": 19502
+    },
+    {
+      "name": "last-feature-onehot",
+      "relative_l2": 0.0,
+      "relative_peak": 0.0,
+      "all_304_progress": true,
+      "column_output_timing_bindings_verified": true,
+      "root_cycles_min": 19502,
+      "root_cycles_max": 19502
+    },
+    {
+      "name": "zero",
+      "relative_l2": 0.0,
+      "relative_peak": 0.0,
+      "all_304_progress": true,
+      "column_output_timing_bindings_verified": true,
+      "root_cycles_min": 19502,
+      "root_cycles_max": 19502
+    },
+    {
+      "name": "canonical-repeat",
+      "relative_l2": 2.2213311108193575e-07,
+      "relative_peak": 5.035012622891479e-07,
+      "all_304_progress": true,
+      "column_output_timing_bindings_verified": true,
+      "root_cycles_min": 19502,
+      "root_cycles_max": 19502
+    }
+  ],
+  "elapsed_seconds": 376.00509999506176,
+  "peak_rss_kib": 548492,
+  "scope": "Complete layer0 GATE4864x896,38roots and304PE progress,4calls; actual new u32 paired-BF16 H2D and batched column readback. Not wholeMLP/layer/model; not allPE replica outputs.",
+  "limitations": [
+    "No new independent ELF/DSR graph audit in this review.",
+    "No cross-run speedup attribution from UP/GATE different source and transport."
+  ],
+  "official_stage_gate_independently_verified": [
+    {
+      "case": 0,
+      "max_abs": 9.5367431640625e-07,
+      "relative_l2": 2.9008688875033065e-07,
+      "relative_peak": 2.47195169114249e-07,
+      "passed": true
+    },
+    {
+      "case": 3,
+      "max_abs": 9.5367431640625e-07,
+      "relative_l2": 2.9008688875033065e-07,
+      "relative_peak": 2.47195169114249e-07,
+      "passed": true
+    }
+  ]
+}

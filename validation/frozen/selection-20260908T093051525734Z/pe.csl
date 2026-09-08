@@ -1,0 +1,6 @@
+param memcpy_params;const sys=@import_module("<memcpy/memcpy>",memcpy_params);
+const e=@import_module("embedding.csl",.{});const a=@import_module("argmax.csl");
+var weights=@zeros([7168]u32);var values=@zeros([128]f32);var candidate=@zeros([1]f32);var lookup=@zeros([112]f32);var best=@zeros([1]f32);var index=@zeros([1]u32);var control=@zeros([3]u32);var progress=@zeros([1]u32);
+fn compute() void {e.lookup(@ptrcast([*]u16,&weights),@as(u16,control[0]),&lookup);a.select(&values,128,control[1],&best[0],&index[0]);a.merge(candidate[0],control[2],&best[0],&index[0]);progress[0]+=1;sys.unblock_cmd_stream();}
+const wp:[*]u32=&weights;const vp:[*]f32=&values;const cp:[*]f32=&candidate;const lp:[*]f32=&lookup;const bp:[*]f32=&best;const ip:[*]u32=&index;const ctrl:[*]u32=&control;const pp:[*]u32=&progress;
+comptime{@export_symbol(wp,"weights");@export_symbol(vp,"values");@export_symbol(cp,"candidate");@export_symbol(lp,"lookup");@export_symbol(bp,"best");@export_symbol(ip,"index");@export_symbol(ctrl,"control");@export_symbol(pp,"progress");@export_symbol(compute);}

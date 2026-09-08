@@ -2,6 +2,8 @@
 
 | Milestone | Accepted scope | Remaining limitation |
 | --- | --- | --- |
+| Full layer-0 GATE projection | Complete 4864×896 matrix, 304 PEs, 38 roots; 4 original-input cases; paired u32 BF16 transfer and column reads | Not whole MLP; no new independent ELF/DSR audit; not every replica output |
+| Paired BF16 transport | Exact u32 transfer/readback of one real 128×112 tile; 7 lookup/selection cases | Not exhaustive SDK bit-pattern coverage or full-vocabulary selection |
 | Full layer-0 UP projection | Complete 4864×896 matrix, resident BF16 on 304 PEs, 38 roots covering all outputs, 4 input cases | Not whole MLP/layer/model; all PE progress but only root output vectors read |
 | Stateful causal GQA | 34 real reference tokens, reset then 3 changed tokens; independent 14-head causal results at 8 root checkpoints | Cache content sampled in 3 stripes per KV head; not every-position readback or full layer |
 | KV capacity diagnostic | 2048, then reset to 65 and 1 positions; all 132 PE counts verified, root contexts and 3 cache stripes per head checked | Inputs are device-generated diagnostic trajectories from real seeds, not 2048 actual model-generated tokens |

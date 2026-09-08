@@ -1,0 +1,49 @@
+{
+  "success": true,
+  "cases": [
+    {
+      "name": "official-logits",
+      "index": 151643,
+      "lookup_exact": true,
+      "actual_sha256": "ae5c9a20a78856acaaf5ad0ca29cea267068dba4743d0480dfc82216abad1bcf"
+    },
+    {
+      "name": "lower-index-tie",
+      "index": 0,
+      "lookup_exact": true,
+      "actual_sha256": "5e4309dc9bb569aa897d67e5be0fc955f273752214f9ea4c9add2a510e4e1699"
+    },
+    {
+      "name": "higher-index-tie",
+      "index": 151643,
+      "lookup_exact": true,
+      "actual_sha256": "de5953a4da70c128c3a3ac77954167ca52a04c146cf31fc7a98c6c9b8715eab9"
+    },
+    {
+      "name": "negative-constant",
+      "index": 151552,
+      "lookup_exact": true,
+      "actual_sha256": "7ca1e0dd936b8a231c25bf64463321f9da037a4763a2a7b0724116176edc8fe4"
+    },
+    {
+      "name": "all-zero",
+      "index": 151552,
+      "lookup_exact": true,
+      "actual_sha256": "596a58cbd78ce01348cb42a7fc37663856f109c6c4bcab76178cd46cbb1717df"
+    },
+    {
+      "name": "last-maximum",
+      "index": 151679,
+      "lookup_exact": true,
+      "actual_sha256": "e27e6ed369d9364887ac87782152eab1c97eb9b51635f56b9a60aad320656b1f"
+    },
+    {
+      "name": "signed-zero-tie",
+      "index": 151552,
+      "lookup_exact": true,
+      "actual_sha256": "9fc5af433b84a46054c2d8a46594a6a4c038812ba57dae2acdbe014c96138635"
+    }
+  ],
+  "weight_readback_sha256": "16142b9e64c85cd2413e6fd588e83141f0e57133e57e2e75dfe65b905fe432bd",
+  "scope": "One actual128x112 tied embedding tile including EOS row; exact lookup and128-value FP32 argmax with global-index pair merge. Not full vocabulary reduction or model generation."
+}

@@ -1,0 +1,44 @@
+{
+  "base": 151552,
+  "cases": [
+    {
+      "name": "official-logits",
+      "row": 0,
+      "candidate_index": 151643
+    },
+    {
+      "name": "lower-index-tie",
+      "row": 1,
+      "candidate_index": 0
+    },
+    {
+      "name": "higher-index-tie",
+      "row": 63,
+      "candidate_index": 151935
+    },
+    {
+      "name": "negative-constant",
+      "row": 93,
+      "candidate_index": 151935
+    },
+    {
+      "name": "all-zero",
+      "row": 94,
+      "candidate_index": 151935
+    },
+    {
+      "name": "last-maximum",
+      "row": 127,
+      "candidate_index": 151935
+    },
+    {
+      "name": "signed-zero-tie",
+      "row": 0,
+      "candidate_index": 151935
+    }
+  ],
+  "weight_transfer": "BF16 pairs via raw u32 H2D/D2H, no numeric conversion",
+  "model_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+  "trace_sha256": "8bd2f53a798a3d81948619fe19c15aac55a952866f4b23440a3ffe6dc444e7c0",
+  "scope": "One actual128x112 tied embedding tile including EOS row; exact lookup and128-value FP32 argmax with global-index pair merge. Not full vocabulary reduction or model generation."
+}

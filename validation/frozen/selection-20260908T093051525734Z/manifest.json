@@ -1,0 +1,14 @@
+{
+  "sdk_sha256": "fff17e81c61dcb6012bdee2941a6fdc570f5c8604967530e7b7108651258193d",
+  "files": {
+    "argmax.csl": "f2d70dae54e1bea001256f345dd870ee9a9cafdcbda1703d7899e7eabce0e096",
+    "driver.py": "add0fa3c448def9f6aaa4ff03b0418b28d77ae18c1d5036ae8a52a85e4a8411d",
+    "pe.csl": "b3fb06870fe9cba2f3cd2b688a57d3f72f5eb4f3765fda9a9b4715e8857c99b6",
+    "bf16_transport.py": "6a3e2a2c222e6f7e8408e28ec2a299d05c0c13cd2b85b62e52a3e8eb833187c3",
+    "config.json": "cdc3a7ee53fdd128692282c08da1522772906ae94994bb694e2c63ff159591a2",
+    "executor.py": "a126d22d650e21205370b323139aeb1c5e3aa1cb6951e5c3527aa2201c97b0f9",
+    "embedding.csl": "a97ff65ee153bb5caedfd4085f659011cba3d686715c132ab95e8e6a25cf64a0",
+    "layout.csl": "1972b176f9150ac820c8255fa0dec2222bc184720b433f6847b3ba2593d39bff",
+    "inputs.npz": "7bbe3ada177ccf694337b2fdd6e9e86485f37796c76e86c5a48be5af7a4e7fd2"
+  }
+}

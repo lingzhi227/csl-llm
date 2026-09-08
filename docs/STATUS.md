@@ -10,4 +10,6 @@ S3 now has accepted bounded real-trace GQA and separate KV capacity diagnostics;
 
 The independent review files retain original evidence hashes and exact measured scope. Full original binary outputs and execution snapshots are not included. This publication is a selected checkpoint, not a live development mirror.
 
-The complete layer-0 UP4864×896 projection now has a recorded SDK pass: 304 resident-weight PEs, 38 output roots, four input cases. Canonical relative L2 is 2.4136e-7; last-feature one-hot and zero are exact. GATE/DOWN and full FFN/layer remain pending. All 304 progress values are checked; output replicas beyond the 38 roots are not read back.
+The complete layer-0 UP4864×896 projection now has a recorded SDK pass: 304 resident-weight PEs, 38 output roots, four input cases. Canonical relative L2 is 2.4136e-7; last-feature one-hot and zero are exact. GATE subsequently passed in its separately recorded run; DOWN and full FFN/layer remain pending. All 304 progress values are checked; output replicas beyond the 38 roots are not read back.
+
+Full native GATE4864×896 passes four inputs: canonical relative L2 2.2213e-7, peak 5.0350e-7; one-hot and zero are exact. Thirty-eight roots cover final outputs and all304PE progress values pass. Paired-u32 transfer and column readback are bound to this frozen run. No new independent ELF/DSR audit is claimed. Whole MLP/layer/model remain pending.

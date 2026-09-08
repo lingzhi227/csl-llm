@@ -70,3 +70,7 @@ Verify the printed pack directory with `python tools/verify_weight_pack.py evide
 ## Full native UP projection
 
 After preparing the same reference, run `python tools/projection_probe.py --prepare --projection up`, then `python tools/projection_probe.py --execute evidence/projection-up-REPLACE_WITH_PRINTED_TIMESTAMP`. Only UP is exposed by the published preparation CLI. It retains the accepted u16 weight-transfer path and separately names its frozen region/collective dependencies. The original SDK experiment took about 877 seconds; that wall time is not a full-model performance measurement.
+
+## Full native GATE and paired transport
+
+`python tools/gate_projection_probe.py --prepare --projection gate` creates a frozen GATE bundle; execute its printed directory using the same script with `--execute`. The accepted implementation packs original BF16 words into u32 transfers and reads roots by column. `selection_u32_probe.py` offers the same preparation/execution workflow for the separately accepted local transport/lookup probe. UP retains `projection_probe.py` and its u16 transport. These different workloads are not a controlled speedup comparison.

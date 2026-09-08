@@ -21,3 +21,7 @@ After the update, all four host tests passed on Linux in 4.045 seconds. Python s
 ## Full native UP milestone
 
 Verified every file in the accepted projection-up manifest, all four actual output hashes, independent review hashes and successful execution/results. Published the exact frozen kernel, collective and region helper; the public driver changes only reference/dependency paths and limits its selector to accepted UP. The newer u32/batched-read implementation is excluded. Python syntax and CLI checks pass; local host regression passes three tests with the Linux-only cleanup test skipped. Public payload and reader links checked; no new SDK simulation. See NATIVE-UP-CHECKS.json.
+
+## Full native GATE milestone
+
+Verified frozen GATE and paired-u32 selection manifests, successful execution/result identities, independent review hashes, and 11 actual output files against results. Shared kernel/region/collective and transport dependencies match exact frozen bytes. UP/u16 is preserved; GATE/u32 has its own preparation entry. Six local host tests pass, including BF16 bit-pattern/byte-order/shape tests; one Linux-only test is skipped. These host pattern tests do not constitute exhaustive SDK transport testing. Python syntax, CLI, reader links and public payload checks pass. No new SDK execution or ELF/DSR qualification was performed.

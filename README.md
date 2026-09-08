@@ -31,6 +31,8 @@ Stateful GQA (34 real reference tokens), a separately scoped 2048-position KV di
 
 The full layer-0 **UP 4864×896 projection** also passes four input cases on 304 PEs. This is a complete single projection, not a complete MLP. The published tool selects the accepted u16-transfer snapshot; later transport optimizations are not included.
 
+The complete layer-0 **GATE 4864×896 projection** now also passes four cases on 304 PEs using paired u32 BF16 transfer and column readback. Its separate entry point preserves the historical UP/u16 qualification. Different UP/GATE runs do not establish a transport speedup ratio.
+
 ## Repository layout
 
 ```text
