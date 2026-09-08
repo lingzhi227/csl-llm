@@ -1,0 +1,30 @@
+{
+  "width": 193,
+  "height": 50,
+  "last_row_groups": 11,
+  "sequences": [
+    [
+      0,
+      184,
+      0
+    ],
+    [
+      184
+    ]
+  ],
+  "output_color": 8,
+  "output_queue": 5,
+  "completion_task": 14,
+  "simulator_threads": 8,
+  "timeout_seconds": 900,
+  "rss_limit_kib": 8388608,
+  "example_files": {
+    "layout.csl": "31a769abb6869028bcad101d8b0c3ee26cb2309eb64238f05e4eea911a35adb2",
+    "pe_program.csl": "cf3188912a2b4d193c8bd82e8a17b13a02f45710829cff9728fec86cc07b95eb",
+    "run.py": "05b1f0bfde02aa2dd8f57873f753d8ddeb1b5c590c766c54c3eb46fa3811f274",
+    "commands_wse3.sh": "ef611195648d4cb1417af57b9ebe5a5eae70f01c9664bfcc04ff68e358a19321"
+  },
+  "scope": "Tagged streaming D2H transport only. Scalar selected-column export, one source per row, nonblocking launch then exact128word per-source stream receive/task_wait and source completion counters; full application progress before reset/exit. No neural kernel, hardware bandwidth or full vocabulary numerical acceptance.",
+  "original_config_sha256": "ce5b50208b1b36f473eb5dbe25c2a78b7a3bd692890c034c960ef5183e8b76a9",
+  "publication_note": "Derived configuration summary; original host-specific SDK example path omitted. Example file hashes unchanged."
+}

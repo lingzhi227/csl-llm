@@ -1,0 +1,43 @@
+{
+  "success": true,
+  "cases": [
+    {
+      "tag": 1,
+      "call": 1,
+      "column": 0,
+      "rows": 50,
+      "words": 6400,
+      "api_elapsed_seconds": 79.99409432592802,
+      "actual_sha256": "2a4f5368fc5da260143922b1e84fec99300f9f9a103c691d00b1e37656c0bf68"
+    },
+    {
+      "tag": 1,
+      "call": 2,
+      "column": 184,
+      "rows": 49,
+      "words": 6272,
+      "api_elapsed_seconds": 70.64871568698436,
+      "actual_sha256": "d3d263da8b6dda09d88de2d232685a24f3699ce317cf69d5e9c8bcc3167691f0"
+    },
+    {
+      "tag": 1,
+      "call": 3,
+      "column": 0,
+      "rows": 50,
+      "words": 6400,
+      "api_elapsed_seconds": 72.72048079199158,
+      "actual_sha256": "8ea824ab8c98881c5f2d2ff0378b28730d26c589a1067697994bb6537e6d4104"
+    },
+    {
+      "tag": 2,
+      "call": 1,
+      "column": 184,
+      "rows": 49,
+      "words": 6272,
+      "api_elapsed_seconds": 77.62854161579162,
+      "actual_sha256": "ba9eeb8fd4a6816841a0cf25152bb5b1a96b281e529aaf1f9598d6a4b6179375"
+    }
+  ],
+  "scope": "Tagged streaming D2H transport only. Scalar selected-column export, one source per row, nonblocking launch then exact128word per-source stream receive/task_wait and source completion counters; full application progress before reset/exit. No neural kernel, hardware bandwidth or full vocabulary numerical acceptance.",
+  "timing_scope": "Host API launch/receive/task_wait interval; not device kernel cycles or hardware bandwidth."
+}

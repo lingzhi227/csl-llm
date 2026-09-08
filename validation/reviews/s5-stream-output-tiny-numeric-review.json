@@ -1,0 +1,79 @@
+{
+  "reviewed_at": "2026-09-08T15:45:53.557506+00:00",
+  "run": "stream-output-20260908T154051566254Z",
+  "manifest_sha256": "e60cd17c6744c0f5708149d8fff475da88adacadc56ece1b9cffdbca60f66393",
+  "execution_sha256": "48541d738117d954f5b03df9f2e568e089a19309845bee13476ebff434e75d2c",
+  "results_sha256": "26ce940614eb32851457a1369bf7c7d824c2a4f67e5d7ae121119e8e505757fe",
+  "elapsed_seconds": 9.183839605888352,
+  "peak_rss_kib": 368972,
+  "all_tracked_pids_absent": true,
+  "observed_pid_count": 6,
+  "all_payload_words_exact_independent": true,
+  "selected_source_progress_exact": true,
+  "global_progress": [
+    {
+      "tag": 1,
+      "sha256": "fd01d6ff97b248db4a91f418d5cdffdf1631fbe5ad488f686962890b40d501f2",
+      "all_application_pes": 34,
+      "expected_progress": 4
+    },
+    {
+      "tag": 2,
+      "sha256": "ea6d6ee6f977cd3d4de15180b433b3add56361655c12171c4dc49f59eae7bdda",
+      "all_application_pes": 34,
+      "expected_progress": 2
+    }
+  ],
+  "cases": [
+    {
+      "tag": 1,
+      "call": 1,
+      "column": 0,
+      "words": 256,
+      "api_elapsed_seconds": 0.7081781511660665,
+      "actual_sha256": "6ee128dd527b67c49af5fd4afd8ff84c4f9ed5ce9cb96a3f3f1d081e8211744c"
+    },
+    {
+      "tag": 1,
+      "call": 2,
+      "column": 8,
+      "words": 256,
+      "api_elapsed_seconds": 0.5729886209592223,
+      "actual_sha256": "bc96c0db5885ce76df6c05c6bf572b4f23c32175701cf7546f7599b9ccd0ba6e"
+    },
+    {
+      "tag": 1,
+      "call": 3,
+      "column": 16,
+      "words": 128,
+      "api_elapsed_seconds": 0.4675580761395395,
+      "actual_sha256": "0133dafe0f8386287368c4a9369dee7ea045c2ebc3a8a94048fd8c2bd9b6f154"
+    },
+    {
+      "tag": 1,
+      "call": 4,
+      "column": 0,
+      "words": 256,
+      "api_elapsed_seconds": 0.5794137211050838,
+      "actual_sha256": "8b838e9bae077a3feb0b4322c2082f0d6ee377fcc2a97c380d6dd192a634d2f7"
+    },
+    {
+      "tag": 2,
+      "call": 1,
+      "column": 16,
+      "words": 128,
+      "api_elapsed_seconds": 0.5992007530294359,
+      "actual_sha256": "f242d9a885258272d4dd1750af3bbf063702e704bc269d1f87b75f530b716217"
+    },
+    {
+      "tag": 2,
+      "call": 2,
+      "column": 0,
+      "words": 256,
+      "api_elapsed_seconds": 0.6217202900443226,
+      "actual_sha256": "ac255faefa5f0b329418a01e33ef14851dbaf9c5000a377fec53433c0356d4b9"
+    }
+  ],
+  "numeric_transport_accepted_scoped": true,
+  "scope": "Actual taggedstream transport only, including selectedcolumn ordering/padding/repeat/tagreset and allPE completion counters. Not neural/fullvocab/hardware bandwidth or rootcause proof for prior simulator signal11. Compiled resources separate."
+}

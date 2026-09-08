@@ -1,0 +1,11 @@
+{
+  "success": true,
+  "sdk_sha256": "fff17e81c61dcb6012bdee2941a6fdc570f5c8604967530e7b7108651258193d",
+  "manifest_sha256": "668e7f9fd647f62679e03d88b1bdc8df3faac0a8899a3a76a0fb9c5e015ebce0",
+  "results_sha256": "d2bbb0c904e7cfa042e2590f63c7b824681148129d5810a6b0d25721ccc86f30",
+  "elapsed_seconds": 559.1275849279482,
+  "peak_rss_kib": 9695112,
+  "timeout_seconds": 900,
+  "original_execution_sha256": "64b1637cb6f5baef4179bca174c165e13c10221f8d151c7ce2a6761c28d47974",
+  "scope": "Derived public execution summary; host paths, commands, process identities and exception paths omitted. Original failure retained in independent review."
+}

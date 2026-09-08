@@ -1,5 +1,5 @@
 {
-  "scope": "Eight-PE cross-partition collective SDK acceptance and prior scoped milestones, 2026-09-08",
+  "scope": "Full-grid tagged streaming SDK transport, partial-weight compile support and prior scoped milestones, 2026-09-08",
   "files": [
     {
       "path": ".gitignore",
@@ -13,8 +13,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 6367,
-      "sha256": "be60687088ee9f110a386ba75441b4c11a75a5fe16c6781afa17b0284280f354"
+      "bytes": 6626,
+      "sha256": "c79eeef9d4bcb1b7868b06a3644262ced58586b1927910d3aaffc789fc2d7cf2"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
@@ -247,6 +247,11 @@
       "sha256": "3e92175efe12b28065bb77934c54136db3c9287c68c81877781a0e527354304c"
     },
     {
+      "path": "csl/programs/stream_output/pe.csl",
+      "bytes": 1905,
+      "sha256": "5c1cc36e4366f0f656cdcec33ff693a435de56bbcc194e0a56498253f3c2dfb4"
+    },
+    {
       "path": "csl/programs/token_sequence/pe.csl",
       "bytes": 1514,
       "sha256": "46f27114b599d39c04a0268b2cf5eb635b1ec1f372ed0ee0a8afaaf0bfe67e61"
@@ -338,8 +343,13 @@
     },
     {
       "path": "docs/STATUS.md",
-      "bytes": 3255,
-      "sha256": "3c86c7609c20e0183c38a12d916edf958f3ade7c21d7c1dbc44c2b4f1cc7db2c"
+      "bytes": 3583,
+      "sha256": "501f5759828b482b859dbb2866ff79b3747ac9d63d23c6f11f081f7b0a0d562f"
+    },
+    {
+      "path": "docs/STREAM-OUTPUT.md",
+      "bytes": 4427,
+      "sha256": "8263c1d0647c9e4c1bf34abfc5ac29a502dc2e4b7c730ea878a23ba2f3b09feb"
     },
     {
       "path": "evidence/model-inventory.json",
@@ -353,8 +363,8 @@
     },
     {
       "path": "release/CHECKS.md",
-      "bytes": 9286,
-      "sha256": "18577750fae14f911f0516bea87efa3066cdbf4cf30142eb1a4c66df4290476a"
+      "bytes": 9614,
+      "sha256": "a3db7e8bd0e26ae55e5417aba665a8262112a3a635da7c76fb7104c281eff823"
     },
     {
       "path": "release/COLLECTIVE-CHECKS.json",
@@ -420,6 +430,11 @@
       "path": "release/SOURCE-SNAPSHOT.json",
       "bytes": 10641,
       "sha256": "d0a0bc12012f011c05c436f54b59522df89f533870510aa189c2880979340bfc"
+    },
+    {
+      "path": "release/STREAM-CHECKS.json",
+      "bytes": 1752,
+      "sha256": "843f2987ff83dd4f8e40f6069dbc45dd229511f7b85cd7aca229d8f7849dc2a4"
     },
     {
       "path": "release/verify_manifest.py",
@@ -520,6 +535,11 @@
       "path": "tools/compact_vocabulary_256_probe.py",
       "bytes": 7687,
       "sha256": "ebb1199ed3cc6a572c20b73dcdc30f88967de1925ee4e34767bff2cc6973d063"
+    },
+    {
+      "path": "tools/compact_vocabulary_interval_probe.py",
+      "bytes": 8954,
+      "sha256": "b62ec173012d62a0d46d920a57ae3e511ea742d61ffe7f8c8d4b0fbbd1c02778"
     },
     {
       "path": "tools/compact_words_compile_probe.py",
@@ -712,6 +732,11 @@
       "sha256": "f3809a3a9ad5fd7669f2e9d740b8f6cea8ede1a9100e135b7b0738a550bfd7fb"
     },
     {
+      "path": "tools/stream_output_probe.py",
+      "bytes": 7920,
+      "sha256": "4c1abbb52f39f50640379478444b171189331b2f0da1504db2ec198610bbbb98"
+    },
+    {
       "path": "tools/token_sequence_probe.py",
       "bytes": 8491,
       "sha256": "f654395d9b60a3b91ad32908d3d216aa5d0d4792ccd26ce18b5ee6ea89b53929"
@@ -870,6 +895,46 @@
       "path": "validation/frozen/compact-vocabulary-compile-20260908T144210950745Z/results.json",
       "bytes": 718809,
       "sha256": "c82d870d60b4da06bc30cc60ed6fbbc442eb67704528c8e79d8fac406b94e30e"
+    },
+    {
+      "path": "validation/frozen/compact-vocabulary-compile-20260908T151839929786Z/config.json",
+      "bytes": 10946,
+      "sha256": "bec0a443687ee90b06504cdcf94c23d4427d71a71d21ce1d9b1512fa674a8746"
+    },
+    {
+      "path": "validation/frozen/compact-vocabulary-compile-20260908T151839929786Z/driver.py",
+      "bytes": 8953,
+      "sha256": "ce0f1a63616faf0aa523ca882ac0b99516033a56301aff0f6164db30cf96941e"
+    },
+    {
+      "path": "validation/frozen/compact-vocabulary-compile-20260908T151839929786Z/encoder.py",
+      "bytes": 5545,
+      "sha256": "7b12467f4b63acd2dd82d64e90fba994fd0df17d5909257b164e3156730f1f4c"
+    },
+    {
+      "path": "validation/frozen/compact-vocabulary-compile-20260908T151839929786Z/execution-summary.json",
+      "bytes": 642,
+      "sha256": "e21693f38fd6b473f94738ef4cc9596fe7cf8342b922e90c22d5caa735d5498b"
+    },
+    {
+      "path": "validation/frozen/compact-vocabulary-compile-20260908T151839929786Z/layout.csl",
+      "bytes": 3596189,
+      "sha256": "03c67ee4ed59247d6f019f89fefdebdcb245d2482db3dbb8d135e60c05d40f2d"
+    },
+    {
+      "path": "validation/frozen/compact-vocabulary-compile-20260908T151839929786Z/manifest.json",
+      "bytes": 95996,
+      "sha256": "668e7f9fd647f62679e03d88b1bdc8df3faac0a8899a3a76a0fb9c5e015ebce0"
+    },
+    {
+      "path": "validation/frozen/compact-vocabulary-compile-20260908T151839929786Z/pe.csl",
+      "bytes": 6561,
+      "sha256": "fb5e0f177f6808fdbcc9c491a7e07ea143b9392480de4a3ff71f131dbc65098a"
+    },
+    {
+      "path": "validation/frozen/compact-vocabulary-compile-20260908T151839929786Z/results.json",
+      "bytes": 721019,
+      "sha256": "d2bbb0c904e7cfa042e2590f63c7b824681148129d5810a6b0d25721ccc86f30"
     },
     {
       "path": "validation/frozen/compact-weights-compile-20260908T135146210938Z/config.json",
@@ -1987,6 +2052,106 @@
       "sha256": "d594ec0cd12d2e3af57f2f2f638e21b24cec3a5018ed4eb5ea97b0444aefec86"
     },
     {
+      "path": "validation/frozen/stream-output-20260908T153144064218Z/config-summary.json",
+      "bytes": 1242,
+      "sha256": "82bd3e0353b5c5dcd77e095024b4c9bbaa140319ad31db34648cbdf7c6c4b0a4"
+    },
+    {
+      "path": "validation/frozen/stream-output-20260908T153144064218Z/driver.py",
+      "bytes": 7911,
+      "sha256": "b3b3048319b6ec0e11f88e37de9299e22ae937fe5dbe05c8789ee906b5fc4123"
+    },
+    {
+      "path": "validation/frozen/stream-output-20260908T153144064218Z/execution-summary.json",
+      "bytes": 555,
+      "sha256": "4b842efc3fdd3e76ae36e19fe72a94cbc16f189e2104f0f669a0e5d2acab2638"
+    },
+    {
+      "path": "validation/frozen/stream-output-20260908T153144064218Z/layout.csl",
+      "bytes": 3406,
+      "sha256": "6be802f1d0ee266d16ef70bfee4521157c98ab1afb28624d24121dee718807b0"
+    },
+    {
+      "path": "validation/frozen/stream-output-20260908T153144064218Z/manifest.json",
+      "bytes": 531,
+      "sha256": "cc99002b58c338f5be910db6ec08cfabcc5b1c54d1ff62f5556c239d0aed0ed9"
+    },
+    {
+      "path": "validation/frozen/stream-output-20260908T153144064218Z/pe.csl",
+      "bytes": 1596,
+      "sha256": "924e89a70d25fb92e2b5600e76cdc380b052eb8ef82c7435c437ab028c12a751"
+    },
+    {
+      "path": "validation/frozen/stream-output-20260908T154051566254Z/config-summary.json",
+      "bytes": 1242,
+      "sha256": "82bd3e0353b5c5dcd77e095024b4c9bbaa140319ad31db34648cbdf7c6c4b0a4"
+    },
+    {
+      "path": "validation/frozen/stream-output-20260908T154051566254Z/driver.py",
+      "bytes": 7911,
+      "sha256": "b3b3048319b6ec0e11f88e37de9299e22ae937fe5dbe05c8789ee906b5fc4123"
+    },
+    {
+      "path": "validation/frozen/stream-output-20260908T154051566254Z/execution-summary.json",
+      "bytes": 641,
+      "sha256": "5af2bb6d4614406f9155cf253c1f5d50e349aaa56f15da81091cb5bbfecb416d"
+    },
+    {
+      "path": "validation/frozen/stream-output-20260908T154051566254Z/layout.csl",
+      "bytes": 3406,
+      "sha256": "6be802f1d0ee266d16ef70bfee4521157c98ab1afb28624d24121dee718807b0"
+    },
+    {
+      "path": "validation/frozen/stream-output-20260908T154051566254Z/manifest.json",
+      "bytes": 531,
+      "sha256": "e60cd17c6744c0f5708149d8fff475da88adacadc56ece1b9cffdbca60f66393"
+    },
+    {
+      "path": "validation/frozen/stream-output-20260908T154051566254Z/pe.csl",
+      "bytes": 1905,
+      "sha256": "5c1cc36e4366f0f656cdcec33ff693a435de56bbcc194e0a56498253f3c2dfb4"
+    },
+    {
+      "path": "validation/frozen/stream-output-20260908T154051566254Z/results.json",
+      "bytes": 1930,
+      "sha256": "26ce940614eb32851457a1369bf7c7d824c2a4f67e5d7ae121119e8e505757fe"
+    },
+    {
+      "path": "validation/frozen/stream-output-20260908T154513964476Z/config-summary.json",
+      "bytes": 1229,
+      "sha256": "c316d60aa114630e31f2e47d1c075a8137bd2a0e305c42c319a14adc1990248a"
+    },
+    {
+      "path": "validation/frozen/stream-output-20260908T154513964476Z/driver.py",
+      "bytes": 7911,
+      "sha256": "b3b3048319b6ec0e11f88e37de9299e22ae937fe5dbe05c8789ee906b5fc4123"
+    },
+    {
+      "path": "validation/frozen/stream-output-20260908T154513964476Z/execution-summary.json",
+      "bytes": 642,
+      "sha256": "71862777b451a89782771d8aa9e08555652b64aa4f9220b61a2c9fbdfbf75756"
+    },
+    {
+      "path": "validation/frozen/stream-output-20260908T154513964476Z/layout.csl",
+      "bytes": 922226,
+      "sha256": "afd290c7d62894bf148a270925cf6d1cdea154d64d2843f3451e8ee22132c804"
+    },
+    {
+      "path": "validation/frozen/stream-output-20260908T154513964476Z/manifest.json",
+      "bytes": 531,
+      "sha256": "463aba512c3a65ab0d231b8cc736e5e124ef2dc96e3fd747d0a96844e4e7a28d"
+    },
+    {
+      "path": "validation/frozen/stream-output-20260908T154513964476Z/pe.csl",
+      "bytes": 1905,
+      "sha256": "5c1cc36e4366f0f656cdcec33ff693a435de56bbcc194e0a56498253f3c2dfb4"
+    },
+    {
+      "path": "validation/frozen/stream-output-20260908T154513964476Z/results.json",
+      "bytes": 1454,
+      "sha256": "64b7497054f43c10642241ade23ec21b5259f14346d84ad783bae2ec300ac5ae"
+    },
+    {
       "path": "validation/frozen/token-sequence-20260908T115731949949Z/config.json",
       "bytes": 1210,
       "sha256": "0faee0fc6df6c2f62fa4cd7d497f4b77cbad75eb71edebccd9b4b90d50484538"
@@ -2402,6 +2567,36 @@
       "sha256": "79e3a7d72b61acb51b33e7513c70fb04ed5050525761be35008f311bbfe551a7"
     },
     {
+      "path": "validation/reviews/s5-stream-output-fulltopology-numeric-review.json",
+      "bytes": 2190,
+      "sha256": "0b69620ced4017afe58ef8dcee528964856024c902fb5ffd264e757963e450c1"
+    },
+    {
+      "path": "validation/reviews/s5-stream-output-fulltopology-resource-review.json",
+      "bytes": 888,
+      "sha256": "a09407a29da095a72400f031f156b7be5d50724df70b94e40c7b9f1975e1a24e"
+    },
+    {
+      "path": "validation/reviews/s5-stream-output-release-rpc-candidate-review.json",
+      "bytes": 573,
+      "sha256": "3cd3612d50a517786f62bc61a0f657d2c0e77950b69b35ea6defd61aa857579a"
+    },
+    {
+      "path": "validation/reviews/s5-stream-output-tiny-failure-review.json",
+      "bytes": 1757,
+      "sha256": "cdce7ed4abf8e0570891a32a35d37e51dc913b0bc169199693652a944521435f"
+    },
+    {
+      "path": "validation/reviews/s5-stream-output-tiny-numeric-review.json",
+      "bytes": 2631,
+      "sha256": "579b679d630c3fcb3d080ad6c7b5f87651a0e25dbd17fa49b8cf48b2853c0ed8"
+    },
+    {
+      "path": "validation/reviews/s5-stream-output-tiny-resource-review.json",
+      "bytes": 888,
+      "sha256": "e8d793b15c73237c34bc4e34f7d111b929165d3a63c5dd8f335e646e2fbec7d0"
+    },
+    {
       "path": "validation/reviews/s5-token-sequence-numeric-review.json",
       "bytes": 3550,
       "sha256": "f001243352a1b3419566c052c94623fa72c72345010ca76e3ed995277054be11"
@@ -2420,6 +2615,16 @@
       "path": "validation/reviews/s5-vocabulary-early-stop-review.json",
       "bytes": 691,
       "sha256": "1d8f675f9dab0b315bca7b868ad630e4b7a59a41e1557d2b6f48cadbec264ca0"
+    },
+    {
+      "path": "validation/reviews/s5-vocabulary-partition-1024-2047-initializer-review.json",
+      "bytes": 134770,
+      "sha256": "3b48033966ed81a3333c140baf736c2afc9ae5d91516ef15ff6ddfef474bdf8f"
+    },
+    {
+      "path": "validation/reviews/s5-vocabulary-partition-1024-2047-resource-review.json",
+      "bytes": 917,
+      "sha256": "c3cbb52bec461b9b895928c37b2f3d9a7b3b7215d702d87852e0b1ccea7b4d5e"
     }
   ]
 }

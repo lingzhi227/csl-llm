@@ -1,0 +1,10 @@
+{
+  "reviewed_at": "2026-09-08T15:42:05.127889+00:00",
+  "run": "stream-output-20260908T154051566254Z",
+  "manifest_sha256": "e60cd17c6744c0f5708149d8fff475da88adacadc56ece1b9cffdbca60f66393",
+  "all5_manifest_files_verified": true,
+  "only_pe_changed_from153144": true,
+  "change": "Release RPC command stream after arming asyncsend; sendcallback only clears sending/increments progress.",
+  "unchanged": "driver/config/layout/executor,6exports/2tags,selected/globalprogress,data/API sequence",
+  "plan": "120s1GiB total compile+runtime; candidate only, no runtimepass"
+}

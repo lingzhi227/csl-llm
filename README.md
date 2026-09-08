@@ -51,6 +51,8 @@ An **experimental two-PE intact-artifact composition** now passes isolated SDK r
 
 The **eight-PE cross-partition line allreduce** now also passes actual SDK execution for a complete 128 × 896 contraction, with independent numerical checks and exact direct/composed output comparison. [Evidence and boundaries](docs/PARTITION-EXPERIMENT.md#eight-pe-cross-partition-collective-acceptance). Full-model acceptance remains open.
 
+**Tagged streaming output on a 193 × 50 PE grid** now passes actual SDK transport and independent payload/completion checks. This uses diagnostic integer patterns, not model logits. [Accepted scope, failure history and reproduction](docs/STREAM-OUTPUT.md).
+
 ## Repository layout
 
 ```text

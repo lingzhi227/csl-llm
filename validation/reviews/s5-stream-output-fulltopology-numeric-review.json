@@ -1,0 +1,63 @@
+{
+  "reviewed_at": "2026-09-08T15:58:26.200585+00:00",
+  "run": "stream-output-20260908T154513964476Z",
+  "manifest_sha256": "463aba512c3a65ab0d231b8cc736e5e124ef2dc96e3fd747d0a96844e4e7a28d",
+  "execution_sha256": "391c6cb0963c2582e2a2acc95a5429dcca0ecd6799f51d9ef5a31d0f78c8cd86",
+  "results_sha256": "64b7497054f43c10642241ade23ec21b5259f14346d84ad783bae2ec300ac5ae",
+  "elapsed_seconds": 581.5354053459596,
+  "peak_rss_kib": 4834956,
+  "all_tracked_pids_absent": true,
+  "observed_pid_count": 7,
+  "all_payload_words_exact_independent": true,
+  "selected_source_progress_exact": true,
+  "global_progress": [
+    {
+      "tag": 1,
+      "sha256": "d8b434b4497b25d2465a5350917a4a2f46feb2458a0770d0460ac0570eaa1960",
+      "all_application_pes": 9650,
+      "expected_progress": 3
+    },
+    {
+      "tag": 2,
+      "sha256": "77ad4d829926ea6ca9ee6ba14a3377ad313e8a194493f560a9ca4fbce1190e11",
+      "all_application_pes": 9650,
+      "expected_progress": 1
+    }
+  ],
+  "cases": [
+    {
+      "tag": 1,
+      "call": 1,
+      "column": 0,
+      "words": 6400,
+      "api_elapsed_seconds": 79.99409432592802,
+      "actual_sha256": "2a4f5368fc5da260143922b1e84fec99300f9f9a103c691d00b1e37656c0bf68"
+    },
+    {
+      "tag": 1,
+      "call": 2,
+      "column": 184,
+      "words": 6272,
+      "api_elapsed_seconds": 70.64871568698436,
+      "actual_sha256": "d3d263da8b6dda09d88de2d232685a24f3699ce317cf69d5e9c8bcc3167691f0"
+    },
+    {
+      "tag": 1,
+      "call": 3,
+      "column": 0,
+      "words": 6400,
+      "api_elapsed_seconds": 72.72048079199158,
+      "actual_sha256": "8ea824ab8c98881c5f2d2ff0378b28730d26c589a1067697994bb6537e6d4104"
+    },
+    {
+      "tag": 2,
+      "call": 1,
+      "column": 184,
+      "words": 6272,
+      "api_elapsed_seconds": 77.62854161579162,
+      "actual_sha256": "ba9eeb8fd4a6816841a0cf25152bb5b1a96b281e529aaf1f9598d6a4b6179375"
+    }
+  ],
+  "numeric_transport_accepted_scoped": true,
+  "scope": "Actual taggedstream transport only, including selectedcolumn ordering/padding/repeat/tagreset and allPE completion counters. Not neural/fullvocab/hardware bandwidth or rootcause proof for prior simulator signal11. Compiled resources separate."
+}

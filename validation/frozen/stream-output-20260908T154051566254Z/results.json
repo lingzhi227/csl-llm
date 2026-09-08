@@ -1,0 +1,61 @@
+{
+  "success": true,
+  "cases": [
+    {
+      "tag": 1,
+      "call": 1,
+      "column": 0,
+      "rows": 2,
+      "words": 256,
+      "api_elapsed_seconds": 0.7081781511660665,
+      "actual_sha256": "6ee128dd527b67c49af5fd4afd8ff84c4f9ed5ce9cb96a3f3f1d081e8211744c"
+    },
+    {
+      "tag": 1,
+      "call": 2,
+      "column": 8,
+      "rows": 2,
+      "words": 256,
+      "api_elapsed_seconds": 0.5729886209592223,
+      "actual_sha256": "bc96c0db5885ce76df6c05c6bf572b4f23c32175701cf7546f7599b9ccd0ba6e"
+    },
+    {
+      "tag": 1,
+      "call": 3,
+      "column": 16,
+      "rows": 1,
+      "words": 128,
+      "api_elapsed_seconds": 0.4675580761395395,
+      "actual_sha256": "0133dafe0f8386287368c4a9369dee7ea045c2ebc3a8a94048fd8c2bd9b6f154"
+    },
+    {
+      "tag": 1,
+      "call": 4,
+      "column": 0,
+      "rows": 2,
+      "words": 256,
+      "api_elapsed_seconds": 0.5794137211050838,
+      "actual_sha256": "8b838e9bae077a3feb0b4322c2082f0d6ee377fcc2a97c380d6dd192a634d2f7"
+    },
+    {
+      "tag": 2,
+      "call": 1,
+      "column": 16,
+      "rows": 1,
+      "words": 128,
+      "api_elapsed_seconds": 0.5992007530294359,
+      "actual_sha256": "f242d9a885258272d4dd1750af3bbf063702e704bc269d1f87b75f530b716217"
+    },
+    {
+      "tag": 2,
+      "call": 2,
+      "column": 0,
+      "rows": 2,
+      "words": 256,
+      "api_elapsed_seconds": 0.6217202900443226,
+      "actual_sha256": "ac255faefa5f0b329418a01e33ef14851dbaf9c5000a377fec53433c0356d4b9"
+    }
+  ],
+  "scope": "Tagged streaming D2H transport only. Scalar selected-column export, one source per row, nonblocking launch then exact128word per-source stream receive/task_wait and source completion counters; full application progress before reset/exit. No neural kernel, hardware bandwidth or full vocabulary numerical acceptance.",
+  "timing_scope": "Host API launch/receive/task_wait interval; not device kernel cycles or hardware bandwidth."
+}

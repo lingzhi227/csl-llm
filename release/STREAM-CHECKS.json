@@ -1,0 +1,38 @@
+{
+  "runs": [
+    {
+      "run": "stream-output-20260908T154513964476Z",
+      "manifest_sha256": "463aba512c3a65ab0d231b8cc736e5e124ef2dc96e3fd747d0a96844e4e7a28d",
+      "execution_sha256": "391c6cb0963c2582e2a2acc95a5429dcca0ecd6799f51d9ef5a31d0f78c8cd86",
+      "remote_manifest_entries_verified": 5,
+      "success": true
+    },
+    {
+      "run": "stream-output-20260908T154051566254Z",
+      "manifest_sha256": "e60cd17c6744c0f5708149d8fff475da88adacadc56ece1b9cffdbca60f66393",
+      "execution_sha256": "48541d738117d954f5b03df9f2e568e089a19309845bee13476ebff434e75d2c",
+      "remote_manifest_entries_verified": 5,
+      "success": true
+    },
+    {
+      "run": "compact-vocabulary-compile-20260908T151839929786Z",
+      "manifest_sha256": "668e7f9fd647f62679e03d88b1bdc8df3faac0a8899a3a76a0fb9c5e015ebce0",
+      "execution_sha256": "64b1637cb6f5baef4179bca174c165e13c10221f8d151c7ce2a6761c28d47974",
+      "remote_manifest_entries_verified": 1037,
+      "success": true
+    },
+    {
+      "run": "stream-output-20260908T153144064218Z",
+      "manifest_sha256": "cc99002b58c338f5be910db6ec08cfabcc5b1c54d1ff62f5556c239d0aed0ed9",
+      "execution_sha256": "0a9121348441ecfcbbc044a05837e5274dcf8d8f6334d67663dd47c8b855c4f3",
+      "remote_manifest_entries_verified": 5,
+      "success": false
+    }
+  ],
+  "all_ten_stream_output_hashes_and_payloads_checked": true,
+  "all_four_global_progress_arrays_hash_and_values_checked": true,
+  "tiny_fix_only_pe_changed": true,
+  "full_tiny_pe_identical": true,
+  "portable_executor_matches_frozen_source": true,
+  "scope": "Publication inspection and actual-output checks only; no new SDK execution. Full-topology transport is not neural inference. Interval compiler support remains compile-only."
+}

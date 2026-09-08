@@ -1,0 +1,26 @@
+{
+  "reviewed_at": "2026-09-08T15:37:11.366768+00:00",
+  "run": "stream-output-20260908T153144064218Z",
+  "execution_sha256": "0a9121348441ecfcbbc044a05837e5274dcf8d8f6334d67663dd47c8b855c4f3",
+  "success": false,
+  "elapsed_seconds": 6.1253497779835016,
+  "peak_rss_kib": 368880,
+  "all6_tracked_pids_absent": true,
+  "observed_logs": [
+    "compile/load/run/prepare1 completed",
+    "first export received0bytes expected1024",
+    "sim.log Caught signal11 at23173",
+    "host exit134 with stack smashing message"
+  ],
+  "pinned_source_check": "csl-libs/layout.csl get_x/y_coord subtract rectangle offsets, logical coordinate comparison valid",
+  "root_cause": "Unresolved. Simulator abnormal termination; generic host possible-kernel-stall text is not proof of ordinary kernel deadlock.",
+  "scope": "Failure evidence only, no streaming transport accepted.",
+  "protocol_source_review": {
+    "reviewed_at": "2026-09-08T15:41:01.172417+00:00",
+    "memcpyd2h_sha256": "352c56bbf4f3b5c0ea7a3851128270e9175dd1023d997cffaf9314a89f785b43",
+    "wse3_memcpy_sha256": "4a5b6b699cfe7ffc699e9e8824cf569f14532eedfcad1ae0d5c3fcca42a38c52",
+    "evidence": "Stream colors initially backpressured; D2H command must bind/unblock IQ0. User export holds command stream until sendcallback; queued D2H configuration cannot proceed. Independent source inspection supports circular-wait defect.",
+    "planned_single_variable_fix": "After arming asyncsend release RPC command stream; callback only clears sending/incrementsprogress, no second unblock. Keep buffer ownership; blockingstreamreceive and progress checks establish actual completion.",
+    "boundary": "Explains protocol defect; does not establish internal simulator signal11 cause or actual fix success."
+  }
+}
