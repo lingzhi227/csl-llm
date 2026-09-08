@@ -1,0 +1,13 @@
+{
+  "reviewed_at": "2026-09-08T13:37:16.329921+00:00",
+  "run": "resident-vocabulary-20260908T124830150992Z",
+  "success": false,
+  "termination": "Explicit early diagnostic transition via identity-checked executorSIGINT; recordedKeyboardInterrupt, not10800stimeout/numericalfailure",
+  "execution_sha256": "ef911b1e7b5c87c4ae3f6a0544c509d3481f000f52c63f0b11d9b6ebc80ecd85",
+  "elapsed_seconds": 2605.7084892399143,
+  "peak_rss_kib": 4947936,
+  "all18_tracked_pids_absent_independently": true,
+  "manifest_samples_hashes_verified": true,
+  "completed_weight_blocks": 0,
+  "accepted_subscope": "Compilation30ELFs/resources andall9650identityreadback only; nofullweight/numericalacceptance"
+}

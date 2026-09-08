@@ -1,0 +1,19 @@
+{
+  "reviewed_at": "2026-09-08T14:26:23.380007+00:00",
+  "run": "compact-weights-compile-20260908T141727347577Z",
+  "manifest_sha256": "886ede97c122708f946cc7574e953f35dbc59b7dfef6034c369b2d97cac15d83",
+  "execution_sha256": "650d34ea475dd8e96b37502a2272c424ef8c2f33bf50c0eca3195f4738154484",
+  "all_original_tile_bytes_exact": true,
+  "loaded_bytes_sha256": "584d4297de1b4891838c80a571a14e571329e9fd5e17dab33bcb550d45559bea",
+  "weights_address": 2828,
+  "weights_bytes": 28672,
+  "four_byte_aligned": true,
+  "fabric_coordinate": [
+    4,
+    1
+  ],
+  "all_tracked_pids_absent_independently": true,
+  "elapsed_seconds": 4.1026575767900795,
+  "peak_rss_kib": 192292,
+  "scope": "Compile-onlysymbol/manualELFparse+SDKELFObjectloadedcoordinatebytes matchespriorindependentoriginalcheckpointtile. NoSdkRuntime/exportABI/kernelnumerical/scalabilityproof; SDKparser shareddependency."
+}

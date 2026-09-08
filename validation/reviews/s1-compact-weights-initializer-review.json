@@ -1,0 +1,19 @@
+{
+  "reviewed_at": "2026-09-08T13:56:24.859119+00:00",
+  "run": "compact-weights-compile-20260908T135146210938Z",
+  "manifest_sha256": "a616d03d68f56c0bd79123d7c046dfdbcb6a9497c7e42d87ddd00e2f82694a8e",
+  "execution_sha256": "7a18e6400d9d1479bb2e6c8c88dc97c2560d7ac0aeca86b978835646310d0260",
+  "actual_loaded_bytes_sha256": "584d4297de1b4891838c80a571a14e571329e9fd5e17dab33bcb550d45559bea",
+  "symbol": "weights",
+  "address": 2828,
+  "bytes": 28672,
+  "fabric_coordinate": [
+    4,
+    1
+  ],
+  "all_original_tile_bits_exact": true,
+  "all_tracked_pids_absent_independently": true,
+  "elapsed_seconds": 5.132469083881006,
+  "peak_rss_kib": 208992,
+  "scope": "Compile-only1tilemechanism. IndependentELFsymbolparse plusSDKloaderread_data bindsall28672bytes topriorindependentraworiginalcheckpointtilehash. NoSdkRuntime/actualdevice/numerical/fullvocabcompilefit proof. SDKELFparser shareddependency."
+}

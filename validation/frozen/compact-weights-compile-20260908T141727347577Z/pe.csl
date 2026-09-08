@@ -1,0 +1,1 @@
+param memcpy_params;const sys=@import_module("<memcpy/memcpy>",memcpy_params);const initial=@import_module("weights.csl");var weights=initial.values;const wp:[*]u8=&weights;fn noop()void{sys.unblock_cmd_stream();}comptime{@export_symbol(wp,"weights");@export_symbol(noop);}

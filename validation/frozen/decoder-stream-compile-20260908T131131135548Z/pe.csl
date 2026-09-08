@@ -1,0 +1,249 @@
+// Complete layer candidate. Numerical and resource qualification is separate.
+// Roles:0 guard,1 UP,2 GATE,3 DOWN,4 controller,5 Q,6 K,7 V,8 O,9 KV.
+param memcpy_params;
+param role:u16;param group:u16;param ordinal:u16;param participants:u16;
+param negative:direction;param positive:direction;
+param stripe:u16=0;
+param destination_x:u16;param destination_y:u16;
+// Standalone probes keep host input/output. Composed layers exchange the
+// same activation buffers through the SDK message-passing adapter.
+param streamed_input:bool=false;param streamed_output:bool=false;
+param next_x:u16=0;param next_y:u16=0;
+param static_weights:bool=true;param runtime_identity:bool=false;
+param weight_file="<empty>";param auxiliary_file="<empty>";
+const matrix=(role>=1 and role<=3) or (role>=5 and role<=8);
+const kv_role=role==9;const controller=role==4;
+const root=(matrix or kv_role) and ordinal==0;
+const gate_root=role==2 and root;
+const biased=root and role>=5 and role<=7;
+const sys=@import_module("<memcpy/memcpy>",memcpy_params);
+const clock=@import_module("<time>");
+const initial=@import_module(if(static_weights) weight_file else "<empty>");
+const auxiliary=@import_module(if(static_weights) auxiliary_file else "<empty>");
+const kernel=@import_module(if(matrix) "kernel.csl" else "<empty>",if(matrix) .{.rows=128,.columns=112} else .{});
+const vector=@import_module(if(controller or gate_root) "vector.csl" else "<empty>",if(controller or gate_root) .{.length=if(controller) 896 else 128} else .{});
+const rope=@import_module(if(controller) "rope.csl" else "<empty>",if(controller) .{.heads=1} else .{});
+const kv=@import_module(if(kv_role) "kv.csl" else "<empty>",if(kv_role) .{.stripe=stripe} else .{});
+const line=@import_module(if(matrix or kv_role) "line.csl" else "<empty>",if(matrix or kv_role) .{.ordinal=ordinal,.participants=participants,.length=if(kv_role) 455 else 128,.negative=negative,.positive=positive,.colors=[3]color{@get_color(0),@get_color(1),@get_color(2)},.task_id=@get_local_task_id(10),.on_complete=reduced} else .{});
+const input_task=@get_local_task_id(11);
+const input_color=@get_color(if(role==3) 4 else if(role>=5 and role<=7) 5 else if(kv_role) 6 else if(role==8) 7 else 3);
+const receiver=@import_module(if(matrix or kv_role) "input.csl" else "<empty>",if(matrix or kv_role) .{.length=if(kv_role) 576 else 112,.input_color=input_color,.completion_task=input_task} else .{});
+const packets=@import_module("packets.csl",.{.sent_task_id=@get_local_task_id(12),.received_task_id=@get_local_task_id(13),.on_sent=sent,.on_received=received});
+const boundary=@import_module(if(controller and (streamed_input or streamed_output)) "activation_stream.csl" else "<empty>",.{});
+var weights=if(matrix and static_weights) initial.values else @zeros([if(matrix) 7168 else 1]u32);
+var norms=if(controller and static_weights) auxiliary.norms else @zeros([if(controller) 896 else 1]u32);
+var frequency=if(controller and static_weights) auxiliary.frequency else @zeros([if(controller) 32 else 1]f32);
+var bias=if(biased and static_weights) auxiliary.bias else @zeros([if(biased) 64 else 1]u32);
+// Numerical identity does not specialize code. Routing role/ordinal remain
+// compile-time. Loaded once with weights, before prepare or any packet traffic.
+var identity=@zeros([if(runtime_identity) 3 else 1]u32);
+fn packet_group() u16 {if(comptime runtime_identity){return @as(u16,identity[0]);}else{return group;}}
+fn packet_x() u16 {if(comptime runtime_identity){return @as(u16,identity[1]);}else{return destination_x;}}
+fn packet_y() u16 {if(comptime runtime_identity){return @as(u16,identity[2]);}else{return destination_y;}}
+var input=@zeros([if(controller) 896 else if(kv_role) 576 else if(matrix) 112 else 1]f32);
+var partial=@zeros([if(kv_role) 455 else if(matrix) 128 else 1]f32);
+var result=@zeros([if(kv_role) 455 else if(matrix) 128 else 1]f32);
+var context=@zeros([if(kv_role and root) 448 else 1]f32);
+var up=@zeros([if(gate_root) 128 else 1]f32);
+var activation=@zeros([if(controller) 4928 else 1]f32);
+var hidden=@zeros([if(controller) 896 else 1]f32);
+var output=@zeros([if(controller) 896 else 1]f32);
+var counts=@zeros([if(controller) 38 else 1]u16);
+var tx=@zeros([31]u32);var epoch:u32=0;var position:u16=0;
+var progress=@zeros([1]u32);var status=@zeros([2]u32);
+var timing=@zeros([6]u16);var started=@zeros([3]u16);var ended=@zeros([3]u16);
+var up_count:u16=0;var complete_groups:u16=0;var tx_offset:u16=0;var tx_count:u16=0;
+var line_ready:bool=false;var activated:bool=false;var command_waiting:bool=false;
+var controller_phase:u16=0;var distribution_sent:bool=false;var kv_phase:u16=0;
+const dest=@get_dsr(dsr_dest,5);const source=@get_dsr(dsr_src1,5);
+const qkv_queue=@get_output_queue(2);const kv_queue=@get_output_queue(3);
+const mlp_queue=@get_output_queue(4);const down_queue=@get_output_queue(5);const o_queue=@get_output_queue(7);
+
+fn initialize() void {packets.init();sys.unblock_cmd_stream();}
+fn reset_model() void {
+ @assert(!packets.sending and !packets.receiving);
+ if(comptime kv_role){kv.reset();status[0]=0;status[1]=0;}
+ if(comptime controller){position=0;}
+ sys.unblock_cmd_stream();
+}
+fn prepare() void {
+ @assert(!packets.sending and !packets.receiving);
+ // All packet headers carry a 16-bit invocation. A global drained reset is
+ // required before wrap; never silently alias an old in-flight invocation.
+ @assert(epoch<65535);
+ if(comptime runtime_identity){
+  @assert(identity[0]<65535 and identity[1]<=65535 and identity[2]<=65535);
+  if(comptime matrix){@assert(identity[0]<(if(role==1 or role==2) @as(u32,38) else if(role>=5 and role<=7) @as(u32,9) else @as(u32,7)));}
+  if(comptime kv_role){@assert(identity[0]<2);}
+ }
+ epoch+=1;up_count=0;complete_groups=0;tx_offset=0;line_ready=false;activated=false;
+ command_waiting=false;controller_phase=0;distribution_sent=false;kv_phase=0;
+ if(comptime controller and (streamed_input or streamed_output)){boundary.reset(epoch);}
+ if(comptime controller){for(@range(u16,38))|i|{counts[i]=0;}}
+ progress[0]=epoch*2-1;sys.unblock_cmd_stream();
+}
+fn finish() void {
+ clock.get_timestamp(&ended);clock.disable_tsc();
+ for(@range(u16,3))|i|{timing[i]=started[i];timing[i+3]=ended[i];}
+ if(comptime kv_role){status[0]=@as(u32,kv.seen);status[1]=@as(u32,kv.valid);}
+ if(comptime controller){position+=1;status[0]=@as(u32,position);}
+ progress[0]=epoch*2;command_waiting=false;sys.unblock_cmd_stream();
+}
+fn decode_bf16(words:[*]u32,index:u16) f32 {
+ const halves=@ptrcast([*]u16,words);return @bitcast(f32,@as(u32,halves[index])<<16);
+}
+fn normalize_hidden(norm_offset:u16) void {
+ if(comptime controller){
+  for(@range(u16,896))|i|{activation[i]=decode_bf16(&norms,norm_offset+i);}
+  vector.rmsnorm(&hidden,&activation,&input);
+ }
+}
+fn compute() void {
+ clock.enable_tsc();clock.get_timestamp(&started);command_waiting=true;
+ if(comptime controller){
+  @assert(position<2048);
+  if(comptime streamed_input){boundary.arm();start_from_stream();}else{start_controller();}
+ }else if(comptime matrix or kv_role){receiver.arm(&input);}else{finish();}
+}
+fn start_from_stream() void {
+ if(comptime controller and streamed_input){if(boundary.take_ready()){start_controller();}}
+}
+fn start_controller() void {
+ if(comptime controller){
+  const src=@get_dsd(mem1d_dsd,.{.base_address=&input,.extent=896});
+  const dst=@get_dsd(mem1d_dsd,.{.base_address=&hidden,.extent=896});@mov32(dst,src);
+  normalize_hidden(0);distribute();
+ }
+}
+fn distribute() void {
+ if(comptime controller){
+  distribution_sent=false;
+  if(controller_phase==0){
+   const mem=@get_dsd(mem1d_dsd,.{.base_address=&input,.extent=896});const out=@get_dsd(fabout_dsd,.{.output_queue=qkv_queue,.extent=896});
+   @load_to_dsr(dest,out,.{.async=true,.activate=input_task});@load_to_dsr(source,mem);
+  }else if(controller_phase==1){
+   const mem=@get_dsd(mem1d_dsd,.{.base_address=&activation,.extent=1152});const out=@get_dsd(fabout_dsd,.{.output_queue=kv_queue,.extent=1152});
+   @load_to_dsr(dest,out,.{.async=true,.activate=input_task});@load_to_dsr(source,mem);
+  }else if(controller_phase==2){
+   const mem=@get_dsd(mem1d_dsd,.{.base_address=&input,.extent=896});const out=@get_dsd(fabout_dsd,.{.output_queue=o_queue,.extent=896});
+   @load_to_dsr(dest,out,.{.async=true,.activate=input_task});@load_to_dsr(source,mem);
+  }else if(controller_phase==3){
+   const mem=@get_dsd(mem1d_dsd,.{.base_address=&input,.extent=896});const out=@get_dsd(fabout_dsd,.{.output_queue=mlp_queue,.extent=896});
+   @load_to_dsr(dest,out,.{.async=true,.activate=input_task});@load_to_dsr(source,mem);
+  }else{
+   @assert(controller_phase==4);
+   const mem=@get_dsd(mem1d_dsd,.{.base_address=&activation,.extent=4928});const out=@get_dsd(fabout_dsd,.{.output_queue=down_queue,.extent=4928});
+   @load_to_dsr(dest,out,.{.async=true,.activate=input_task});@load_to_dsr(source,mem);
+  }
+  @mov32(dest,source,.{.async=true});
+ }
+}
+task input_complete() void {
+ if(comptime matrix){kernel.compute(@ptrcast([*]u16,&weights),&input,&partial);line.start(&partial,&result);}
+ else if(comptime kv_role){
+  const current=kv.seen;kv.append(current,@ptrcast([*]f32,&input[448]),@ptrcast([*]f32,&input[512]));
+  kv.peaks(&input,current,&partial);line.start_count(&partial,&result,7,true);
+ }else if(comptime controller){distribution_sent=true;advance_controller();}
+}
+fn reduced() void {
+ if(comptime kv_role){
+  if(kv_phase==0){kv_phase=1;kv.statistics(&result,&partial);line.start_count(&partial,&result,455,false);}
+  else{if(comptime root){kv.normalize(&result,&context);transmit();}else{finish();}}
+ }else if(comptime root){
+  if(comptime biased){
+   for(@range(u16,128))|i|{partial[i]=decode_bf16(&bias,i);}
+   const p=@get_dsd(mem1d_dsd,.{.base_address=&partial,.extent=128});const r=@get_dsd(mem1d_dsd,.{.base_address=&result,.extent=128});@fadds(r,r,p);
+  }
+  if(comptime gate_root){line_ready=true;activate_gate();}else{transmit();}
+ }else{finish();}
+}
+fn activate_gate() void {
+ if(comptime gate_root){if(line_ready and up_count==128 and !activated){activated=true;vector.swiglu(&result,&up,&partial);transmit();}}
+}
+fn transmit() void {
+ if(comptime root){
+  const length:u16=if(kv_role) 448 else 128;@assert(tx_offset<length);
+  tx_count=if(length-tx_offset<29) length-tx_offset else 29;
+  tx[0]=(epoch<<16)|@as(u32,packet_group());tx[1]=@as(u32,tx_offset);
+  const payload:[*]u32=if(kv_role) @ptrcast([*]u32,&context[tx_offset]) else if(gate_root) @ptrcast([*]u32,&partial[tx_offset]) else @ptrcast([*]u32,&result[tx_offset]);
+  packets.copy_words(payload,@ptrcast([*]u32,&tx[2]),tx_count);packets.send(packet_x(),packet_y(),&tx,tx_count+2);
+ }
+}
+fn sent() void {
+ if(comptime controller and streamed_output){
+  if(boundary.complete_send()){finish();}else{transmit_output();}
+  return;
+ }
+ @assert(root);tx_offset+=tx_count;
+ if(tx_offset<(if(kv_role) 448 else 128)){transmit();}else{finish();}
+}
+fn received(data:[*]u32,length:u16) void {
+ @assert(length>=3 and length<=31 and (data[0]>>16)==epoch);
+ const owner=@as(u16,data[0]&0xffff);const begin=@as(u16,data[1]);const n=length-2;
+ if(comptime controller and streamed_input){
+  if(owner==65535){
+   const offset=boundary.accept(data,length);
+   packets.copy_words(@ptrcast([*]u32,&data[2]),@ptrcast([*]u32,&input[offset]),n);
+   start_from_stream();return;
+  }
+ }
+ if(comptime gate_root){
+  @assert(owner==packet_group() and begin==up_count and begin+n<=128);
+  packets.copy_words(@ptrcast([*]u32,&data[2]),@ptrcast([*]u32,&up[begin]),n);up_count+=n;activate_gate();
+ }else if(comptime controller){
+  const groups:u16=if(controller_phase==0) 9 else if(controller_phase==1) 2 else if(controller_phase==3) 38 else 7;
+  const extent:u16=if(controller_phase==1) 448 else 128;
+  @assert(owner<groups and begin==counts[owner] and begin+n<=extent);
+  if(controller_phase==0 or controller_phase==3){packets.copy_words(@ptrcast([*]u32,&data[2]),@ptrcast([*]u32,&activation[owner*128+begin]),n);}
+  else if(controller_phase==1){packets.copy_words(@ptrcast([*]u32,&data[2]),@ptrcast([*]u32,&input[owner*448+begin]),n);}
+  else{packets.copy_words(@ptrcast([*]u32,&data[2]),@ptrcast([*]u32,&output[owner*128+begin]),n);}
+  counts[owner]+=n;if(counts[owner]==extent){complete_groups+=1;}advance_controller();
+ }else{@assert(false);}
+}
+fn advance_controller() void {
+ if(comptime controller){
+  const groups:u16=if(controller_phase==0) 9 else if(controller_phase==1) 2 else if(controller_phase==3) 38 else 7;
+  if(!distribution_sent or complete_groups!=groups){return;}
+  if(controller_phase==0){
+   rope.prepare(position,&frequency);
+   for(@range(u16,16))|h|{rope.apply(@ptrcast([*]f32,&activation[h*64]),@ptrcast([*]f32,&activation[h*64]));}
+   // Save Q and K/V before the in-place regrouping into two576-word frames.
+   const q=@get_dsd(mem1d_dsd,.{.base_address=&activation,.extent=896});const qtmp=@get_dsd(mem1d_dsd,.{.base_address=&input,.extent=896});@mov32(qtmp,q);
+   const k=@get_dsd(mem1d_dsd,.{.base_address=&activation[896],.extent=256});const ktmp=@get_dsd(mem1d_dsd,.{.base_address=&output,.extent=256});@mov32(ktmp,k);
+   for(@range(u16,2))|h|{
+    for(@range(u16,448))|i|{activation[h*576+i]=input[h*448+i];}
+    for(@range(u16,64))|i|{activation[h*576+448+i]=output[h*64+i];activation[h*576+512+i]=output[128+h*64+i];}
+   }
+  }else if(controller_phase==2){vector.residual(&hidden,&output,&hidden);normalize_hidden(896);}
+  else if(controller_phase==4){
+   vector.residual(&hidden,&output,&output);@assert(command_waiting);
+   if(comptime streamed_output){transmit_output();}else{finish();}
+   return;
+  }
+  controller_phase+=1;complete_groups=0;
+  for(@range(u16,38))|i|{counts[i]=0;}
+  distribute();
+ }
+}
+fn transmit_output() void {
+ if(comptime controller and streamed_output){
+  const n=boundary.frame(&tx);
+  packets.copy_words(@ptrcast([*]u32,&output[boundary.sent_count]),@ptrcast([*]u32,&tx[2]),n);
+  packets.send(next_x,next_y,&tx,n+2);
+ }
+}
+const wp:[*]u32=&weights;const ip:[*]f32=&input;const rp:[*]f32=&result;const cp:[*]f32=&context;
+const ap:[*]f32=&activation;const hp:[*]f32=&hidden;const op:[*]f32=&output;const pp:[*]u32=&progress;const sp:[*]u32=&status;const tp:[*]u16=&timing;
+const cache_k:[*]f32=if(kv_role) &kv.keys else &input;
+const cache_v:[*]f32=if(kv_role) &kv.values else &input;
+const identity_ptr:[*]u32=&identity;const norms_ptr:[*]u32=&norms;
+const frequency_ptr:[*]f32=&frequency;const bias_ptr:[*]u32=&bias;
+comptime {
+ if(controller){@initialize_queue(qkv_queue,.{.color=@get_color(5)});@initialize_queue(kv_queue,.{.color=@get_color(6)});@initialize_queue(mlp_queue,.{.color=@get_color(3)});@initialize_queue(down_queue,.{.color=@get_color(4)});@initialize_queue(o_queue,.{.color=@get_color(7)});}
+ @bind_local_task(input_complete,input_task);
+ @export_symbol(wp,"weights");@export_symbol(ip,"input");@export_symbol(rp,"result");@export_symbol(cp,"context");@export_symbol(ap,"activation");@export_symbol(hp,"hidden");@export_symbol(op,"output");@export_symbol(pp,"progress");@export_symbol(sp,"status");@export_symbol(tp,"timing");
+ @export_symbol(cache_k,"cache_k");@export_symbol(cache_v,"cache_v");
+ @export_symbol(identity_ptr,"identity");@export_symbol(norms_ptr,"norms");
+ @export_symbol(frequency_ptr,"frequency");@export_symbol(bias_ptr,"bias");
+ @export_symbol(initialize);@export_symbol(reset_model);@export_symbol(prepare);@export_symbol(compute);
+}

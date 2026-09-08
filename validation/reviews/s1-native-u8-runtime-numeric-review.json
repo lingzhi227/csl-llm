@@ -1,0 +1,45 @@
+{
+  "reviewed_at": "2026-09-08T14:33:41.568986+00:00",
+  "run": "compact-weights-runtime-20260908T142527930638Z",
+  "manifest_sha256": "8e135f14ea5ef7424df2a37988932fc77129687626e4ba6c2f4923d8df73e9d0",
+  "results_sha256": "e6f12f22d58332e1bd8f8aaea423fa2f5dec2913ef51f0f23238c3738f4bd253",
+  "execution_sha256": "a279d361617850d30984a31c0eead7aabc94a9b8a37f353d4b219df6e7723ef0",
+  "all7168_words_original_exact_before_after": true,
+  "cases": [
+    {
+      "case": "canonical-shard",
+      "actual_sha256": "fc3594202b1c0d3d8a2945b299f73bfb42ab26621f73c4f46b03df538ef46eaa",
+      "relative_l2": 1.5019927825880166e-07,
+      "relative_peak": 1.6533719995004264e-07,
+      "cycles": 19184
+    },
+    {
+      "case": "negative",
+      "actual_sha256": "800687b383a16b324618f412328da180e6cb605ddbae9dc5b285495befe9b6e2",
+      "relative_l2": 1.5019927825880166e-07,
+      "relative_peak": 1.6533719995004264e-07,
+      "cycles": 19184
+    },
+    {
+      "case": "zero",
+      "actual_sha256": "52d555db8c0a18174bc8a6826f66536579bc06de994ca7d7ca8820e317731541",
+      "relative_l2": 0.0,
+      "relative_peak": 0.0,
+      "cycles": 19184
+    },
+    {
+      "case": "repeat",
+      "actual_sha256": "158a1238fb8f80809efccba51b699c169e5b6c0f21c841bd363d38459ebace2f",
+      "relative_l2": 1.5019927825880166e-07,
+      "relative_peak": 1.6533719995004264e-07,
+      "cycles": 19184
+    }
+  ],
+  "repeat_bit_exact": true,
+  "zero_exact": true,
+  "all6_tracked_pids_absent_independently": true,
+  "elapsed_seconds": 20.388707336969674,
+  "peak_rss_kib": 241424,
+  "numeric_and_ABI_accepted": true,
+  "scope": "Actual1PEu8export/get_id/MEMCPY32fullweightreadback and4nativeGEMVs runtimeu16view. OriginalcheckpointtileSHA plusindependentfsum equations. NoH2Dweights; notfullvocab/model/scaleperformance. Finalcompiledresource/initializerreviewseparate."
+}

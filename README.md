@@ -45,6 +45,8 @@ An accepted **DSD-copy optimization reduces measured controller cycles by49.57% 
 
 **The complete native layer0 now passes five calls with causal GQA, persistent KV, both RMSNorm/residual paths and MLP.** [Scope and reproduction](docs/DECODER.md). The separate token-controller tests are scripted metadata only;24-layer layout checks are offline only. Neither is complete-model inference.
 
+A **one-tile native-u8 static-weight SDK probe** now passes full before/after weight readback and four GEMVs. Related compact initializer and streamed-layer checks are explicitly compile-only. [Source and reproduction boundaries](docs/NATIVE-U8.md).
+
 ## Repository layout
 
 ```text

@@ -1,0 +1,14 @@
+{
+  "accepted_at": "2026-09-08T13:16:35.765557+00:00",
+  "run": "decoder-stream-compile-20260908T131131135548Z",
+  "compile_only_accepted": true,
+  "manifest_sha256": "4c911e7833096a82de726e8d3c29943d85b0741483ed1e4ad0d77e888321e590",
+  "results_sha256": "c8081562949fc04f522305d51d4508760fea369e4de98768446209aea79180c8",
+  "execution_sha256": "8cf66aeccdc7ae2bb5aac89142dc3175f882a3061a78acf92f680af148e5f777",
+  "all_manifest_files_verified": 14,
+  "elapsed_seconds": 74.77582238800824,
+  "peak_rss_kib": 616680,
+  "all8_tracked_pids_absent_independently": true,
+  "resource_review": "s4-streamed-decoder-compile-resource-review.json",
+  "scope": "Compiler/staticELF/DSR only, full64x20 singlelayer withmutableweights/aux/runtimeIDs/streamedinout. Workerinvokescompileronly; noSdkRuntime/weightinit/delivery/numericalproof."
+}

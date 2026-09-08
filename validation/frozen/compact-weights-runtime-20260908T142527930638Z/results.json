@@ -1,0 +1,32 @@
+{
+  "success": true,
+  "cases": [
+    {
+      "case": "canonical-shard",
+      "relative_l2": 1.5019927825880166e-07,
+      "relative_peak": 1.6533719995004264e-07,
+      "actual_sha256": "fc3594202b1c0d3d8a2945b299f73bfb42ab26621f73c4f46b03df538ef46eaa"
+    },
+    {
+      "case": "negative",
+      "relative_l2": 1.5019927825880166e-07,
+      "relative_peak": 1.6533719995004264e-07,
+      "actual_sha256": "800687b383a16b324618f412328da180e6cb605ddbae9dc5b285495befe9b6e2"
+    },
+    {
+      "case": "zero",
+      "relative_l2": 0.0,
+      "relative_peak": 0.0,
+      "actual_sha256": "52d555db8c0a18174bc8a6826f66536579bc06de994ca7d7ca8820e317731541"
+    },
+    {
+      "case": "repeat",
+      "relative_l2": 1.5019927825880166e-07,
+      "relative_peak": 1.6533719995004264e-07,
+      "actual_sha256": "158a1238fb8f80809efccba51b699c169e5b6c0f21c841bd363d38459ebace2f"
+    }
+  ],
+  "initial_weights_sha256": "db66e8acde9a575fda88cee9f37be5bbbbe72941aade73adf5ed339fb6475a11",
+  "final_weights_sha256": "db66e8acde9a575fda88cee9f37be5bbbbe72941aade73adf5ed339fb6475a11",
+  "scope": "One original tied-vocabulary128x112 BF16 tile stored asu8 CSL byte-string initializer. Actual SDK get_id/MEMCPY_32BIT fullrawreadback before/after4native GEMVs using runtimeu16pointerview. Already-normalized original reference shard input plusnegative/zero/repeat; not fullvocab or model inference."
+}

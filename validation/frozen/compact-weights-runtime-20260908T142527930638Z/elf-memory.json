@@ -1,0 +1,193 @@
+{
+  "passed": true,
+  "classes": [
+    {
+      "elf": "out_0_0.elf",
+      "sha256": "5c31d96894ab31d96e0af00899475edf18ca244055adac3024a0eb82f673adb0",
+      "static_high_water_bytes": 34864,
+      "static_free_bytes": 14288,
+      "sections": [
+        {
+          "name": ".data.lo",
+          "start": 0,
+          "size": 64,
+          "flags": 3,
+          "type": "SHT_PROGBITS",
+          "address_space": "SRAM"
+        },
+        {
+          "name": ".text",
+          "start": 64,
+          "size": 3284,
+          "flags": 6,
+          "type": "SHT_PROGBITS",
+          "address_space": "SRAM"
+        },
+        {
+          "name": ".data",
+          "start": 3348,
+          "size": 28722,
+          "flags": 3,
+          "type": "SHT_PROGBITS",
+          "address_space": "SRAM"
+        },
+        {
+          "name": ".bss",
+          "start": 32072,
+          "size": 1768,
+          "flags": 3,
+          "type": "SHT_NOBITS",
+          "address_space": "SRAM"
+        },
+        {
+          "name": ".task_table",
+          "start": 33840,
+          "size": 1024,
+          "flags": 6,
+          "type": "SHT_PROGBITS",
+          "address_space": "SRAM"
+        },
+        {
+          "name": ".data.hi",
+          "start": 34864,
+          "size": 0,
+          "flags": 6,
+          "type": "SHT_PROGBITS",
+          "address_space": "SRAM"
+        },
+        {
+          "name": ".entry_ival",
+          "start": 64572,
+          "size": 2,
+          "flags": 6,
+          "type": "SHT_PROGBITS",
+          "address_space": "SDK configuration outside SRAM"
+        },
+        {
+          "name": ".fpcw",
+          "start": 64536,
+          "size": 2,
+          "flags": 6,
+          "type": "SHT_PROGBITS",
+          "address_space": "SDK configuration outside SRAM"
+        },
+        {
+          "name": ".fscale",
+          "start": 64538,
+          "size": 2,
+          "flags": 6,
+          "type": "SHT_PROGBITS",
+          "address_space": "SDK configuration outside SRAM"
+        },
+        {
+          "name": ".blocked_ival",
+          "start": 64520,
+          "size": 4,
+          "flags": 6,
+          "type": "SHT_PROGBITS",
+          "address_space": "SDK configuration outside SRAM"
+        },
+        {
+          "name": ".active_ival",
+          "start": 64524,
+          "size": 4,
+          "flags": 6,
+          "type": "SHT_PROGBITS",
+          "address_space": "SDK configuration outside SRAM"
+        },
+        {
+          "name": ".blocked_ut_ival",
+          "start": 64516,
+          "size": 4,
+          "flags": 6,
+          "type": "SHT_PROGBITS",
+          "address_space": "SDK configuration outside SRAM"
+        },
+        {
+          "name": ".fabric_routes",
+          "start": 63488,
+          "size": 48,
+          "flags": 6,
+          "type": "SHT_PROGBITS",
+          "address_space": "SDK configuration outside SRAM"
+        },
+        {
+          "name": ".fabric_switches",
+          "start": 63744,
+          "size": 192,
+          "flags": 6,
+          "type": "SHT_PROGBITS",
+          "address_space": "SDK configuration outside SRAM"
+        },
+        {
+          "name": ".ce_in_q",
+          "start": 63360,
+          "size": 8,
+          "flags": 6,
+          "type": "SHT_PROGBITS",
+          "address_space": "SDK configuration outside SRAM"
+        },
+        {
+          "name": ".ce_out_q",
+          "start": 63232,
+          "size": 2,
+          "flags": 6,
+          "type": "SHT_PROGBITS",
+          "address_space": "SDK configuration outside SRAM"
+        },
+        {
+          "name": ".prng_state",
+          "start": 64416,
+          "size": 16,
+          "flags": 6,
+          "type": "SHT_PROGBITS",
+          "address_space": "SDK configuration outside SRAM"
+        },
+        {
+          "name": ".filters",
+          "start": 63104,
+          "size": 96,
+          "flags": 6,
+          "type": "SHT_PROGBITS",
+          "address_space": "SDK configuration outside SRAM"
+        },
+        {
+          "name": ".user_cfg_0",
+          "start": 64528,
+          "size": 2,
+          "flags": 6,
+          "type": "SHT_PROGBITS",
+          "address_space": "SDK configuration outside SRAM"
+        },
+        {
+          "name": ".user_cfg_1",
+          "start": 64530,
+          "size": 2,
+          "flags": 6,
+          "type": "SHT_PROGBITS",
+          "address_space": "SDK configuration outside SRAM"
+        },
+        {
+          "name": ".user_cfg_2",
+          "start": 64548,
+          "size": 2,
+          "flags": 6,
+          "type": "SHT_PROGBITS",
+          "address_space": "SDK configuration outside SRAM"
+        },
+        {
+          "name": ".user_cfg_3",
+          "start": 64574,
+          "size": 2,
+          "flags": 6,
+          "type": "SHT_PROGBITS",
+          "address_space": "SDK configuration outside SRAM"
+        }
+      ]
+    }
+  ],
+  "max_static_high_water_bytes": 34864,
+  "manifest_sha256": "8e135f14ea5ef7424df2a37988932fc77129687626e4ba6c2f4923d8df73e9d0",
+  "driver_sha256": "88a2c2d6cceefc3186499b12d9c97979d8f565402cda2b9ac493f56f3fe6d136",
+  "scope": "All allocatable sections listed and classified. Known SDK configuration windows explicitly retained; unrecognized sections or SRAM overflow fail. Static SRAM span is not a dynamic-stack, protocol or full-model fit proof."
+}

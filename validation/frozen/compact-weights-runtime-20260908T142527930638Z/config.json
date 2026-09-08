@@ -1,0 +1,17 @@
+{
+  "source_bundle": "compact-weights-compile-20260908T141727347577Z",
+  "source_manifest_sha256": "886ede97c122708f946cc7574e953f35dbc59b7dfef6034c369b2d97cac15d83",
+  "original_inputs_sha256": "ba7327dfbe631a83dbf8655110f3fb43938d58f71cfd9043122fee6f0d30d499",
+  "cases": [
+    "canonical-shard",
+    "negative",
+    "zero",
+    "repeat"
+  ],
+  "simulator_threads": 1,
+  "gate": {
+    "relative_l2": 2e-06,
+    "relative_peak": 3e-06
+  },
+  "scope": "One original tied-vocabulary128x112 BF16 tile stored asu8 CSL byte-string initializer. Actual SDK get_id/MEMCPY_32BIT fullrawreadback before/after4native GEMVs using runtimeu16pointerview. Already-normalized original reference shard input plusnegative/zero/repeat; not fullvocab or model inference."
+}

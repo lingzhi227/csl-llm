@@ -1,0 +1,17 @@
+param memcpy_params;
+const sys=@import_module("<memcpy/memcpy>",memcpy_params);
+const clock=@import_module("<time>");
+const kernel=@import_module("kernel.csl",.{.rows=128,.columns=112});
+const initial=@import_module("weights.csl");var weights=initial.values;
+var input=@zeros([112]f32);var output=@zeros([128]f32);var progress=@zeros([1]u32);
+var timing=@zeros([6]u16);var started=@zeros([3]u16);var ended=@zeros([3]u16);
+fn compute() void {
+ clock.enable_tsc();clock.get_timestamp(&started);
+ kernel.compute(@ptrcast([*]u16,&weights),&input,&output);
+ clock.get_timestamp(&ended);clock.disable_tsc();
+ for(@range(u16,3))|i|{timing[i]=started[i];timing[i+3]=ended[i];}
+ progress[0]+=1;sys.unblock_cmd_stream();
+}
+const wp:[*]u8=&weights;const ip:[*]f32=&input;const op:[*]f32=&output;
+const pp:[*]u32=&progress;const tp:[*]u16=&timing;
+comptime{@export_symbol(wp,"weights");@export_symbol(ip,"input");@export_symbol(op,"output");@export_symbol(pp,"progress");@export_symbol(tp,"timing");@export_symbol(compute);}

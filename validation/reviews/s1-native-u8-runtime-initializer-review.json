@@ -1,0 +1,19 @@
+{
+  "reviewed_at": "2026-09-08T14:40:20.497255+00:00",
+  "run": "compact-weights-runtime-20260908T142527930638Z",
+  "manifest_sha256": "8e135f14ea5ef7424df2a37988932fc77129687626e4ba6c2f4923d8df73e9d0",
+  "execution_sha256": "a279d361617850d30984a31c0eead7aabc94a9b8a37f353d4b219df6e7723ef0",
+  "all_original_tile_bytes_exact": true,
+  "loaded_bytes_sha256": "584d4297de1b4891838c80a571a14e571329e9fd5e17dab33bcb550d45559bea",
+  "weights_address": 3348,
+  "weights_bytes": 28672,
+  "four_byte_aligned": true,
+  "fabric_coordinate": [
+    4,
+    1
+  ],
+  "all_tracked_pids_absent_independently": true,
+  "elapsed_seconds": 20.388707336969674,
+  "peak_rss_kib": 241424,
+  "scope": "Runtime-bundle symbol/manualELFparse+SDKELFObject loaded-coordinate bytes match prior independent original checkpoint tile. Runtime numerics and ABI reviewed separately; SDK parser shared dependency."
+}

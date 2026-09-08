@@ -13,3 +13,7 @@ evidence/*/
 weights_*.csl
 bias*.csl
 controller_aux.csl
+weights.csl
+expected.bin
+*.npy
+*.npz

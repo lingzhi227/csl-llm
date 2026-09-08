@@ -1,0 +1,8 @@
+{
+  "success": true,
+  "compile_only": true,
+  "initializer_exact": true,
+  "elf_sha256": "76ef2cec8fcf8930526ffd30e98d2711d7c79712e832bbf390b60ea30af689e1",
+  "actual_bytes_sha256": "584d4297de1b4891838c80a571a14e571329e9fd5e17dab33bcb550d45559bea",
+  "scope": "One actual original128x112 BF16 tile compiled from a byte-string constant and compared with allocated ELF contents. No SdkRuntime, numerical computation or large-scale compiler-memory qualification."
+}

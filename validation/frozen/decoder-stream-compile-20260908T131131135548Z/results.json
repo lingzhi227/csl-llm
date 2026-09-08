@@ -1,0 +1,6 @@
+{
+  "success": true,
+  "compile_only": true,
+  "elf_count": 323,
+  "scope": "Compile-only 64x20 resident decoder, mutable weights/auxiliaries/runtime IDs and streamed controller input/output. No initialized weights, execution, destination consumption or numerical acceptance."
+}

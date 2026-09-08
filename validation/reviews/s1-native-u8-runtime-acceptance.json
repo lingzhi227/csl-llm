@@ -1,0 +1,12 @@
+{
+  "reviewed_at": "2026-09-08T14:41:32.061678+00:00",
+  "run": "compact-weights-runtime-20260908T142527930638Z",
+  "accepted_scoped": true,
+  "reviews": [
+    "s1-native-u8-runtime-numeric-review.json",
+    "s1-native-u8-runtime-initializer-review.json",
+    "s1-native-u8-runtime-resource-review.json"
+  ],
+  "scope": "One original BF16 tile, actual native-u8 static initializer and export ABI, before/after complete weight readback, four native GEMVs, independent original-weight numerical reference and compiled resource checks.",
+  "full_vocabulary_or_model_accepted": false
+}

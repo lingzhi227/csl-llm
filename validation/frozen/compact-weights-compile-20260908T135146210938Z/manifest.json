@@ -1,0 +1,12 @@
+{
+  "sdk_sha256": "fff17e81c61dcb6012bdee2941a6fdc570f5c8604967530e7b7108651258193d",
+  "files": {
+    "driver.py": "65c9bfbb8a067ebeb3363ae5d32d109e0ea75ce223cc4b834e4d800869044985",
+    "pe.csl": "2fd2cc89af86cc393ad5de45dacceb8326e5f54ca790f039ae852957c9309c15",
+    "weights.csl": "d2ebe0a2c86af0610b3923dd48f6ff82cc463ff30cedc5b6bc89a8bdddede4ac",
+    "config.json": "21a84bda80cbc42c685bd1134d9630ea562be2d24c4198629354412e7045c024",
+    "executor.py": "9ccab37dc8b6ecfb0d23d56bf0826da7b87ce5d3c22d0a4ba94cb4aea6501e1c",
+    "expected.bin": "584d4297de1b4891838c80a571a14e571329e9fd5e17dab33bcb550d45559bea",
+    "layout.csl": "765ac614deee57941eb14d3b7b52ba2e032f0ccedd6d7ed0c5a80d6e76a0112f"
+  }
+}

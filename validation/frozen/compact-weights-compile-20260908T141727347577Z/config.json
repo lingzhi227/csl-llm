@@ -1,0 +1,10 @@
+{
+  "parent": "resident-vocabulary-20260908T124830150992Z",
+  "parent_manifest_sha256": "0b2ba612406020efebff6c334c3d8a39b04d7b31aa2814f6619012c6003fe2b3",
+  "source_packed_sha256": "4d28668615ef106971477ab3dbadda515547506ad8a29d9830e67674fd93a165",
+  "tile_index": 0,
+  "byte_offset": 0,
+  "bytes": 28672,
+  "representation": "bytes",
+  "scope": "One actual original128x112 BF16 tile compiled from a byte-string constant and compared with allocated ELF contents. No SdkRuntime, numerical computation or large-scale compiler-memory qualification."
+}

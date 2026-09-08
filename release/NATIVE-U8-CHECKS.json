@@ -1,0 +1,38 @@
+{
+  "runs": [
+    {
+      "run": "compact-weights-runtime-20260908T142527930638Z",
+      "scope": "SDK runtime",
+      "manifest_files_verified_on_remote": 9,
+      "manifest_sha256": "8e135f14ea5ef7424df2a37988932fc77129687626e4ba6c2f4923d8df73e9d0",
+      "results_sha256": "e6f12f22d58332e1bd8f8aaea423fa2f5dec2913ef51f0f23238c3738f4bd253",
+      "original_driver_sha256": "2ac1b79c1318d2abd83564dbd9701993dedb49c8219df50a05f5c4965ad41e94"
+    },
+    {
+      "run": "compact-weights-compile-20260908T135146210938Z",
+      "scope": "compile only",
+      "manifest_files_verified_on_remote": 7,
+      "manifest_sha256": "a616d03d68f56c0bd79123d7c046dfdbcb6a9497c7e42d87ddd00e2f82694a8e",
+      "results_sha256": "f0fc5fea1964313d7b1149772800432e4dbce0333b8ad7fc4360fedb5a276855",
+      "original_driver_sha256": "65c9bfbb8a067ebeb3363ae5d32d109e0ea75ce223cc4b834e4d800869044985"
+    },
+    {
+      "run": "compact-weights-compile-20260908T141727347577Z",
+      "scope": "compile only",
+      "manifest_files_verified_on_remote": 7,
+      "manifest_sha256": "886ede97c122708f946cc7574e953f35dbc59b7dfef6034c369b2d97cac15d83",
+      "results_sha256": "90538fe26e69f5dc0be11a5ef668adbc474e7fb44a59ae22126ac3e577794bf7",
+      "original_driver_sha256": "7b12467f4b63acd2dd82d64e90fba994fd0df17d5909257b164e3156730f1f4c"
+    },
+    {
+      "run": "decoder-stream-compile-20260908T131131135548Z",
+      "scope": "compile only",
+      "manifest_files_verified_on_remote": 14,
+      "manifest_sha256": "4c911e7833096a82de726e8d3c29943d85b0741483ed1e4ad0d77e888321e590",
+      "results_sha256": "c8081562949fc04f522305d51d4508760fea369e4de98768446209aea79180c8",
+      "original_driver_sha256": "f7efadd18704ed0f0386f29ae0bab2544c82d5c23e9dc5f1a6dc4817fe49cf15"
+    }
+  ],
+  "actual_runtime_output_hashes_verified": 4,
+  "scope": "Remote manifest checks and local output/review identity checks. Supporting compiler passes remain compile-only. New executor path settings are isolated; no SDK rerun. Source generators require locally reconstructed parent fixtures."
+}
