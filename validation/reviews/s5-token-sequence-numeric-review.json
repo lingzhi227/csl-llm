@@ -1,0 +1,104 @@
+{
+  "created_at": "2026-09-08T12:03:38.531182+00:00",
+  "run": "token-sequence-20260908T115731949949Z",
+  "manifest_sha256": "85262c2ae3212ec33d2237ddf5ec38b7d213ffa47c9e09b34789841125ae9ac8",
+  "results_sha256": "3d7602920bd89984c9a6b4fc8f6699d9de67b4bc4154dd8a3a0324e92dda8733",
+  "cases": [
+    {
+      "case": "one-prefill",
+      "actual_sha256": "5347f05ff5e4472b852e21cd29eaf3e402bbc6227fa6fa80f0b6c54b5f04e6e2",
+      "generated_exact": true,
+      "summary_exact": true,
+      "consumed": 1,
+      "generated": 0,
+      "reason": 3
+    },
+    {
+      "case": "prompt-eos-is-data",
+      "actual_sha256": "141025fc270f251251f650918466e504d1b3c724b0c34d8c64465e29a8a5f192",
+      "generated_exact": true,
+      "summary_exact": true,
+      "consumed": 5,
+      "generated": 3,
+      "reason": 1
+    },
+    {
+      "case": "first-generated-eos",
+      "actual_sha256": "825376b189f58d45ff3c4a04a3995587e0e9f9472c167048719aa84d1f93849b",
+      "generated_exact": true,
+      "summary_exact": true,
+      "consumed": 1,
+      "generated": 1,
+      "reason": 2
+    },
+    {
+      "case": "second-generated-eos",
+      "actual_sha256": "bdd4af2096fdd24440c832dd3b4c150fb3d7176ff1be7259b895f89609846950",
+      "generated_exact": true,
+      "summary_exact": true,
+      "consumed": 3,
+      "generated": 2,
+      "reason": 2
+    },
+    {
+      "case": "eos-at-limit",
+      "actual_sha256": "bc4d0dbfdc13b22634edfc076a382cd3db17d1feaf166fce81c837cc431f7411",
+      "generated_exact": true,
+      "summary_exact": true,
+      "consumed": 3,
+      "generated": 2,
+      "reason": 2
+    },
+    {
+      "case": "capacity-maxgen",
+      "actual_sha256": "442329726cf4aa1ece5aa3ac4671da18bd9652692b66f9ed032247672e005183",
+      "generated_exact": true,
+      "summary_exact": true,
+      "consumed": 2047,
+      "generated": 256,
+      "reason": 1
+    },
+    {
+      "case": "capacity-prefill",
+      "actual_sha256": "69a0b27654793b19ef35bc44474f30ed96b2e252a569314a7bc7e6b1b674986e",
+      "generated_exact": true,
+      "summary_exact": true,
+      "consumed": 2048,
+      "generated": 0,
+      "reason": 3
+    },
+    {
+      "case": "reset-small",
+      "actual_sha256": "e5acadf388cdbaef312a9c1b48a89f06d9b76adf12550c5d1ced811c669905f1",
+      "generated_exact": true,
+      "summary_exact": true,
+      "consumed": 2,
+      "generated": 1,
+      "reason": 1
+    },
+    {
+      "case": "repeat-small",
+      "actual_sha256": "a61cffffb67c74a94296144b1f9008a07504758b9d9210c1215bbdeb8ae88b52",
+      "generated_exact": true,
+      "summary_exact": true,
+      "consumed": 2,
+      "generated": 1,
+      "reason": 1
+    }
+  ],
+  "all_nine_exact": true,
+  "runtime_accepted": true,
+  "scope": "Scripted token metadata only. All active generated IDs and11status/checksum values checked; per-step token/position/head stream checked via checksum, not full per-step trace. No neural arithmetic/KV capacity/inference proof. Resource/execution and cleanup independently reviewed; acceptance is this metadata component only.",
+  "execution_review": {
+    "execution_sha256": "e31efebc4cec3b4059044a170d993a055262beff861bbd27d14531314ff5a3fc",
+    "success": true,
+    "elapsed_seconds": 133.9969284068793,
+    "peak_rss_kib": 348320,
+    "manifest_results_samples_hashes_verified": true,
+    "all_observed_pids_absent_independently": true,
+    "checked_at": "2026-09-08T12:05:27.286684+00:00"
+  },
+  "accepted_at": "2026-09-08T12:06:25.969054+00:00",
+  "all_frozen_inputs_sources_verified": 7,
+  "resource_review": "s5-token-sequence-resource-review.json"
+}

@@ -1,0 +1,51 @@
+{
+  "cases": [
+    {
+      "name": "one-prefill",
+      "prompt_length": 1,
+      "generation_limit": 0
+    },
+    {
+      "name": "prompt-eos-is-data",
+      "prompt_length": 3,
+      "generation_limit": 3
+    },
+    {
+      "name": "first-generated-eos",
+      "prompt_length": 1,
+      "generation_limit": 3
+    },
+    {
+      "name": "second-generated-eos",
+      "prompt_length": 2,
+      "generation_limit": 3
+    },
+    {
+      "name": "eos-at-limit",
+      "prompt_length": 2,
+      "generation_limit": 2
+    },
+    {
+      "name": "capacity-maxgen",
+      "prompt_length": 1792,
+      "generation_limit": 256
+    },
+    {
+      "name": "capacity-prefill",
+      "prompt_length": 2048,
+      "generation_limit": 0
+    },
+    {
+      "name": "reset-small",
+      "prompt_length": 2,
+      "generation_limit": 1
+    },
+    {
+      "name": "repeat-small",
+      "prompt_length": 2,
+      "generation_limit": 1
+    }
+  ],
+  "generation_config_sha256": "e558847a8b4402616f1273797b015104dc266fe4b520056fca88823ba8f8ebe6",
+  "scope": "1PE/1thread scripted token metadata only: prompt/generated selection, both EOS, reset,2048total/256generation counters. No actual logits, KV cache or LLM inference claim."
+}

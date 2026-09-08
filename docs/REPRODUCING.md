@@ -82,3 +82,7 @@ Run `python tools/down_projection_probe.py --prepare --projection down`, then ex
 ## Complete resident MLP
 
 Use the [resident MLP workflow](RESIDENT-MLP.md) to prepare fixtures, generate local static weight modules, and execute the accepted route. Do not publish the generated weight-bearing CSL or ELFs.
+
+## Complete decoder layer0
+
+Use the [accepted decoder workflow](DECODER.md). The frozen layer0 driver is separate from the unexecuted parameterized layer interface. Generated bias/norm/weight source is model payload and must remain local.

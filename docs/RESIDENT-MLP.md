@@ -27,7 +27,7 @@ Supporting `packet_fanin_probe.py` and `filtered_input_probe.py` use `--prepare`
 
 The earlier runtime-H2D MLP run `resident-mlp-20260908T095813614456Z` hit its1800-second budget without a retained actual numerical result. The API within the coarse stage was not localized. Do not call it an established deadlock, infer a specific SDK cause, or attribute the static success to a proven deadlock fix. Its independent timeout review is retained. Earlier fan-in and filtered-input compile failures are disclosed in their reviews.
 
-RMSNorm, residual connection, attention integration, complete decoder layers and24-layer/full-vocabulary generation remain pending. The new DSD-copy experiment is not part of this accepted release. Static initialization of this block does not qualify full-model loading.
+RMSNorm, residual and attention were subsequently integrated in the bounded [layer0 decoder](DECODER.md). Complete24-layer/full-vocabulary generation remains pending. The new DSD-copy experiment is not part of this accepted release. Static initialization of this block does not qualify full-model loading.
 
 ## Accepted DSD-copy optimization
 

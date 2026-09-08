@@ -39,3 +39,9 @@ Published drivers select their own exact frozen libraries and region helper. Reg
 ## MLP DSD-copy performance milestone
 
 Verified every frozen manifest entry, SDK/result/review bindings, same fixture/precision/layout/916weight modules, and directly compared all four actual output containers to baseline bitwise (excluding timing/cycle arrays). Resource report hashes match the independent review. Public generator reproduces the exact frozen static layout; original scalar-copy implementation is preserved. Six host tests pass/one Linux-only skip; syntax, links and source-content scans pass. Generated model-weight sources and binaries remain excluded. No new SDK experiment or hardware speedup claim. See MLP-DSD-CHECKS.json.
+
+## Complete native decoder layer0 milestone
+
+All1068 original manifest entries were verified read-only on the remote immutable decoder run, including generated weights omitted from the local mirror/public package. Mirrored source and metadata hashes, five actual output identities and final execution/results/review bindings also match. All supporting reviews match hashes in the final numerical acceptance. The9case scripted token-controller manifest/results/execution and resource bindings were separately checked.
+
+The portable frozen layer0 generator reproduces the exact accepted layout. Eight host tests pass, including24-layer offline ownership; one Linux-only test is skipped. Python syntax, reader links and public content checks pass. The parameterized driver/source match their independently reviewed hashes but are identified as offline interfaces, not SDK-qualified multilayer execution. Weight/bias/controller-aux source payloads, NPZ and ELFs are excluded. No new SDK or publication-side numerical rerun; no full-model or physical-hardware acceptance claim.

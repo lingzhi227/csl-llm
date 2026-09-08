@@ -1,0 +1,613 @@
+{
+  "cases": [
+    {
+      "sequence": 0,
+      "position": 0,
+      "reset": true,
+      "cache_read": false,
+      "label": "canonical-prefix-0"
+    },
+    {
+      "sequence": 0,
+      "position": 1,
+      "reset": false,
+      "cache_read": false,
+      "label": "canonical-prefix-1"
+    },
+    {
+      "sequence": 0,
+      "position": 2,
+      "reset": false,
+      "cache_read": true,
+      "label": "canonical-prefix-2"
+    },
+    {
+      "sequence": 1,
+      "position": 0,
+      "reset": true,
+      "cache_read": false,
+      "label": "changed-reset-0"
+    },
+    {
+      "sequence": 1,
+      "position": 1,
+      "reset": false,
+      "cache_read": true,
+      "label": "changed-reset-1"
+    }
+  ],
+  "changed_token_ids": [
+    825,
+    11652
+  ],
+  "compile_parallelism": 8,
+  "model_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+  "model_config_sha256": "18e18afcaccafade98daf13a54092927904649e1dd4eba8299ab717d5d94ff45",
+  "trace_sha256": "8bd2f53a798a3d81948619fe19c15aac55a952866f4b23440a3ffe6dc444e7c0",
+  "reference_report_sha256": "ed7a56c88ffe6b6b629715b847fbc7415bbc82e6856c48ebbc03a6a080d16340",
+  "cpu_checks": [
+    {
+      "sequence": 0,
+      "stage": "input_norm",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "sequence": 0,
+      "stage": "q",
+      "max_abs": 7.62939453125e-06,
+      "relative_l2": 6.202760056900179e-08,
+      "relative_peak": 9.517322335623232e-08
+    },
+    {
+      "sequence": 0,
+      "stage": "k",
+      "max_abs": 1.52587890625e-05,
+      "relative_l2": 5.910653179273665e-08,
+      "relative_peak": 1.1752968123952443e-07
+    },
+    {
+      "sequence": 0,
+      "stage": "v",
+      "max_abs": 4.842877388000488e-08,
+      "relative_l2": 3.9063635271757525e-07,
+      "relative_peak": 1.589732422108492e-07
+    },
+    {
+      "sequence": 0,
+      "stage": "o",
+      "max_abs": 4.470348358154297e-07,
+      "relative_l2": 1.896527913337659e-06,
+      "relative_peak": 9.574113435500186e-07
+    },
+    {
+      "sequence": 0,
+      "stage": "post_norm",
+      "max_abs": 1.33514404296875e-05,
+      "relative_l2": 1.5985782968825997e-06,
+      "relative_peak": 9.86136609786307e-07
+    },
+    {
+      "sequence": 0,
+      "stage": "up",
+      "max_abs": 5.811452865600586e-06,
+      "relative_l2": 1.500040194029802e-06,
+      "relative_peak": 1.2776164326580042e-06
+    },
+    {
+      "sequence": 0,
+      "stage": "gate",
+      "max_abs": 1.1920928955078125e-05,
+      "relative_l2": 1.9294870188142685e-06,
+      "relative_peak": 2.4436074057334457e-06
+    },
+    {
+      "sequence": 0,
+      "stage": "down",
+      "max_abs": 7.62939453125e-06,
+      "relative_l2": 2.1013442118592316e-06,
+      "relative_peak": 2.513481095126855e-06
+    },
+    {
+      "sequence": 0,
+      "stage": "output",
+      "max_abs": 7.62939453125e-06,
+      "relative_l2": 2.1056051828616466e-06,
+      "relative_peak": 2.5304592166678817e-06
+    },
+    {
+      "sequence": 1,
+      "stage": "input_norm",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "sequence": 1,
+      "stage": "q",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "sequence": 1,
+      "stage": "k",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "sequence": 1,
+      "stage": "v",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "sequence": 1,
+      "stage": "o",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "sequence": 1,
+      "stage": "post_norm",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "sequence": 1,
+      "stage": "up",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "sequence": 1,
+      "stage": "gate",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "sequence": 1,
+      "stage": "down",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "sequence": 1,
+      "stage": "output",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    }
+  ],
+  "roots": {
+    "up": [
+      [
+        0,
+        0
+      ],
+      [
+        8,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        8,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        8,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        8,
+        4
+      ],
+      [
+        0,
+        5
+      ],
+      [
+        8,
+        5
+      ],
+      [
+        0,
+        6
+      ],
+      [
+        8,
+        6
+      ],
+      [
+        0,
+        7
+      ],
+      [
+        8,
+        7
+      ],
+      [
+        0,
+        8
+      ],
+      [
+        8,
+        8
+      ],
+      [
+        0,
+        9
+      ],
+      [
+        8,
+        9
+      ],
+      [
+        0,
+        10
+      ],
+      [
+        8,
+        10
+      ],
+      [
+        0,
+        11
+      ],
+      [
+        8,
+        11
+      ],
+      [
+        0,
+        12
+      ],
+      [
+        8,
+        12
+      ],
+      [
+        0,
+        13
+      ],
+      [
+        8,
+        13
+      ],
+      [
+        0,
+        14
+      ],
+      [
+        8,
+        14
+      ],
+      [
+        0,
+        15
+      ],
+      [
+        8,
+        15
+      ],
+      [
+        0,
+        16
+      ],
+      [
+        8,
+        16
+      ],
+      [
+        0,
+        17
+      ],
+      [
+        8,
+        17
+      ],
+      [
+        0,
+        18
+      ],
+      [
+        8,
+        18
+      ]
+    ],
+    "gate": [
+      [
+        16,
+        0
+      ],
+      [
+        24,
+        0
+      ],
+      [
+        16,
+        1
+      ],
+      [
+        24,
+        1
+      ],
+      [
+        16,
+        2
+      ],
+      [
+        24,
+        2
+      ],
+      [
+        16,
+        3
+      ],
+      [
+        24,
+        3
+      ],
+      [
+        16,
+        4
+      ],
+      [
+        24,
+        4
+      ],
+      [
+        16,
+        5
+      ],
+      [
+        24,
+        5
+      ],
+      [
+        16,
+        6
+      ],
+      [
+        24,
+        6
+      ],
+      [
+        16,
+        7
+      ],
+      [
+        24,
+        7
+      ],
+      [
+        16,
+        8
+      ],
+      [
+        24,
+        8
+      ],
+      [
+        16,
+        9
+      ],
+      [
+        24,
+        9
+      ],
+      [
+        16,
+        10
+      ],
+      [
+        24,
+        10
+      ],
+      [
+        16,
+        11
+      ],
+      [
+        24,
+        11
+      ],
+      [
+        16,
+        12
+      ],
+      [
+        24,
+        12
+      ],
+      [
+        16,
+        13
+      ],
+      [
+        24,
+        13
+      ],
+      [
+        16,
+        14
+      ],
+      [
+        24,
+        14
+      ],
+      [
+        16,
+        15
+      ],
+      [
+        24,
+        15
+      ],
+      [
+        16,
+        16
+      ],
+      [
+        24,
+        16
+      ],
+      [
+        16,
+        17
+      ],
+      [
+        24,
+        17
+      ],
+      [
+        16,
+        18
+      ],
+      [
+        24,
+        18
+      ]
+    ],
+    "down": [
+      [
+        32,
+        0
+      ],
+      [
+        32,
+        2
+      ],
+      [
+        32,
+        4
+      ],
+      [
+        32,
+        6
+      ],
+      [
+        32,
+        8
+      ],
+      [
+        32,
+        10
+      ],
+      [
+        32,
+        12
+      ]
+    ],
+    "q": [
+      [
+        54,
+        0
+      ],
+      [
+        54,
+        1
+      ],
+      [
+        54,
+        2
+      ],
+      [
+        54,
+        3
+      ],
+      [
+        54,
+        4
+      ],
+      [
+        54,
+        5
+      ],
+      [
+        54,
+        6
+      ]
+    ],
+    "k": [
+      [
+        54,
+        7
+      ]
+    ],
+    "v": [
+      [
+        54,
+        8
+      ]
+    ],
+    "o": [
+      [
+        54,
+        9
+      ],
+      [
+        54,
+        10
+      ],
+      [
+        54,
+        11
+      ],
+      [
+        54,
+        12
+      ],
+      [
+        54,
+        13
+      ],
+      [
+        54,
+        14
+      ],
+      [
+        54,
+        15
+      ]
+    ],
+    "kv": [
+      [
+        32,
+        14
+      ],
+      [
+        43,
+        14
+      ]
+    ]
+  },
+  "scope": "Complete native layer0 with1044 original weight tiles, biases/norms/RoPE,132 persistent KV PEs and device-only intermediate computation. Three canonical prefix positions, reset to two changed token IDs. Not24layers/full vocabulary/2048model trajectory."
+}

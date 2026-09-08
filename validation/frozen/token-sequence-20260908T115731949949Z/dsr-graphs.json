@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "graphs": [
+    {
+      "nodes": 1,
+      "edges": 0,
+      "assigned_indices": [
+        0
+      ],
+      "file": "out_0.greedy.dot",
+      "sha256": "b227231b97edda3af919e4d18349e408aa797802fdf634518e6fad4f0934f486"
+    }
+  ],
+  "elf_count": 1,
+  "family_count": 1,
+  "elf_sha256": {
+    "out_0_0.elf": "22dc9f96954119dd6b656def715c88e20fdb60a5afaf9345ea76c3086e2778c3"
+  },
+  "manifest_sha256": "85262c2ae3212ec33d2237ddf5ec38b7d213ffa47c9e09b34789841125ae9ac8",
+  "tool_sha256": "b43d3b0cd5c6935b6e33143fc9cfca1f1855516ce29fd06987f047f0c745e111",
+  "scope": "Validate every final application allocation graph: node assignment, declared bounds, explicit DSR equality and every interference edge. Graph colors are DSR indices, not router colors. Does not prove runtime lifetimes, task ordering, dynamic stack or whole-model fit."
+}

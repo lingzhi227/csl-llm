@@ -1,0 +1,13 @@
+{
+  "reviewed_at": "2026-09-08T11:47:22.592717+00:00",
+  "run": "resident-decoder-20260908T113615465376Z",
+  "baseline": "resident-decoder-20260908T110618410220Z",
+  "application_elf_count": 1180,
+  "whole_file_hashes_changed": 1180,
+  "all_allocated_sections_metadata_and_backed_bytes_identical": true,
+  "method": "Independent ELF64 section parsing; allSHF_ALLOC names/types/flags/address/size/alignment and filebacked bytes compared, including SDKconfiguration; NOBITS extent retained.",
+  "limitations": [
+    "Coordinates/segment loader mapping reviewed separately.",
+    "Does not claim wholeELF identity or runtime numerical completion."
+  ]
+}

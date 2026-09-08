@@ -1,0 +1,66 @@
+// One32-position stripe of a persistent FP32 KV head, shared by seven Q heads.
+// Caller performs regional max before statistics and sum after statistics.
+param stripe:u16;
+comptime {@comptime_assert(stripe<66);}
+const math=@import_module("<math>");
+var keys=@zeros([2048]f32); // [feature64, token32]
+var values=@zeros([2048]f32); // [token32, feature64]
+var scores=@zeros([224]f32); // [query_head7, token32]
+var seen:u16=0;var valid:u16=0;
+fn reset() void {seen=0;valid=0;}
+fn append(position:u16,key:[*]f32,value:[*]f32) void {
+ @assert(position==seen and position<2048);
+ if(position/32==stripe){
+  const slot=position%32;@assert(slot==valid);
+  const source_k=@get_dsd(mem1d_dsd,.{.base_address=key,.extent=64});
+  const source_v=@get_dsd(mem1d_dsd,.{.base_address=value,.extent=64});
+  const key_base=@get_dsd(mem1d_dsd,.{.base_address=&keys,.extent=64,.stride=32});
+  const value_base=@get_dsd(mem1d_dsd,.{.base_address=&values,.extent=64});
+  const key_dst=@increment_dsd_offset(key_base,@as(i16,slot),f32);
+  const value_dst=@increment_dsd_offset(value_base,@as(i16,slot*64),f32);
+  @mov32(key_dst,source_k);@mov32(value_dst,source_v);valid+=1;
+ }
+ seen+=1;
+}
+const dot_dest=@get_dsr(dsr_dest,4);const dot_accum=@get_dsr(dsr_src0,4);const dot_key=@get_dsr(dsr_src1,4);
+fn dot_step(value:f32) void {@fmacs(dot_dest,dot_accum,dot_key,value);}
+// Inputs are post-RoPE Q/K, already containing projection biases.
+fn peaks(query:[*]f32,position:u16,output:[*]f32) void {
+ @assert(position+1==seen);
+ for(@range(u16,7))|h|{
+  var maximum:f32=@bitcast(f32,@as(u32,0xff7fffff));
+  const score_base=@get_dsd(mem1d_dsd,.{.base_address=&scores,.extent=32});const sd=@increment_dsd_offset(score_base,@as(i16,h*32),f32);@fmovs(sd,0.0);
+  if(valid>0){
+   const kd=@get_dsd(mem1d_dsd,.{.base_address=&keys,.extent=32});
+   const q_base=@get_dsd(mem1d_dsd,.{.base_address=query,.extent=64});const qd=@increment_dsd_offset(q_base,@as(i16,h*64),f32);
+   @load_to_dsr(dot_dest,sd,.{.save_address=false});@load_to_dsr(dot_accum,sd,.{.save_address=false});@load_to_dsr(dot_key,kd,.{.save_address=true});
+   @map(dot_step,qd);@fmuls(sd,sd,0.125);
+   // Padded lanes may be computed, but only visible slots contribute to max,
+   // exponential, sum or context. Reset leaves old SRAM logically invisible.
+   for(@range(u16,32))|t|{if(t<valid and scores[h*32+t]>maximum){maximum=scores[h*32+t];}}
+  }
+  output[h]=maximum;
+ }
+}
+// statistics_buffer output =7 denominator partials followed by7x64 numerator partials.
+fn statistics(global_peaks:[*]f32,statistics_buffer:[*]f32) void {
+ const dst=@get_dsd(mem1d_dsd,.{.base_address=statistics_buffer,.extent=455});@fmovs(dst,0.0);
+ for(@range(u16,7))|h|{
+  for(@range(u16,32))|t|{
+   if(t<valid){
+    const probability=math.exp_f32(scores[h*32+t]-global_peaks[h]);statistics_buffer[h]+=probability;
+    const v_base=@get_dsd(mem1d_dsd,.{.base_address=&values,.extent=64});const v=@increment_dsd_offset(v_base,@as(i16,t*64),f32);
+    const y_base=@get_dsd(mem1d_dsd,.{.base_address=statistics_buffer,.extent=64});const y=@increment_dsd_offset(y_base,@as(i16,7+h*64),f32);
+    @fmacs(y,y,v,probability);
+   }
+  }
+ }
+}
+fn normalize(statistics_buffer:[*]f32,output:[*]f32) void {
+ for(@range(u16,7))|h|{
+  @assert(statistics_buffer[h]>0.0 and math.isFinite_f32(statistics_buffer[h]));
+  const p_base=@get_dsd(mem1d_dsd,.{.base_address=statistics_buffer,.extent=64});const p=@increment_dsd_offset(p_base,@as(i16,7+h*64),f32);
+  const y_base=@get_dsd(mem1d_dsd,.{.base_address=output,.extent=64});const y=@increment_dsd_offset(y_base,@as(i16,h*64),f32);
+  @fmuls(y,p,1.0/statistics_buffer[h]);
+ }
+}

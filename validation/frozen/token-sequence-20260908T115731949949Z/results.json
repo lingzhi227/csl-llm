@@ -1,0 +1,87 @@
+{
+  "success": true,
+  "cases": [
+    {
+      "case": {
+        "name": "one-prefill",
+        "prompt_length": 1,
+        "generation_limit": 0
+      },
+      "exact": true,
+      "actual_sha256": "5347f05ff5e4472b852e21cd29eaf3e402bbc6227fa6fa80f0b6c54b5f04e6e2"
+    },
+    {
+      "case": {
+        "name": "prompt-eos-is-data",
+        "prompt_length": 3,
+        "generation_limit": 3
+      },
+      "exact": true,
+      "actual_sha256": "141025fc270f251251f650918466e504d1b3c724b0c34d8c64465e29a8a5f192"
+    },
+    {
+      "case": {
+        "name": "first-generated-eos",
+        "prompt_length": 1,
+        "generation_limit": 3
+      },
+      "exact": true,
+      "actual_sha256": "825376b189f58d45ff3c4a04a3995587e0e9f9472c167048719aa84d1f93849b"
+    },
+    {
+      "case": {
+        "name": "second-generated-eos",
+        "prompt_length": 2,
+        "generation_limit": 3
+      },
+      "exact": true,
+      "actual_sha256": "bdd4af2096fdd24440c832dd3b4c150fb3d7176ff1be7259b895f89609846950"
+    },
+    {
+      "case": {
+        "name": "eos-at-limit",
+        "prompt_length": 2,
+        "generation_limit": 2
+      },
+      "exact": true,
+      "actual_sha256": "bc4d0dbfdc13b22634edfc076a382cd3db17d1feaf166fce81c837cc431f7411"
+    },
+    {
+      "case": {
+        "name": "capacity-maxgen",
+        "prompt_length": 1792,
+        "generation_limit": 256
+      },
+      "exact": true,
+      "actual_sha256": "442329726cf4aa1ece5aa3ac4671da18bd9652692b66f9ed032247672e005183"
+    },
+    {
+      "case": {
+        "name": "capacity-prefill",
+        "prompt_length": 2048,
+        "generation_limit": 0
+      },
+      "exact": true,
+      "actual_sha256": "69a0b27654793b19ef35bc44474f30ed96b2e252a569314a7bc7e6b1b674986e"
+    },
+    {
+      "case": {
+        "name": "reset-small",
+        "prompt_length": 2,
+        "generation_limit": 1
+      },
+      "exact": true,
+      "actual_sha256": "e5acadf388cdbaef312a9c1b48a89f06d9b76adf12550c5d1ced811c669905f1"
+    },
+    {
+      "case": {
+        "name": "repeat-small",
+        "prompt_length": 2,
+        "generation_limit": 1
+      },
+      "exact": true,
+      "actual_sha256": "a61cffffb67c74a94296144b1f9008a07504758b9d9210c1215bbdeb8ae88b52"
+    }
+  ],
+  "scope": "1PE/1thread scripted token metadata only: prompt/generated selection, both EOS, reset,2048total/256generation counters. No actual logits, KV cache or LLM inference claim."
+}

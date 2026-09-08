@@ -1,0 +1,16 @@
+{
+  "reviewed_at": "2026-09-08T12:12:40.453545+00:00",
+  "source_sha256": "20fa5b2f051dcad58cb2c44f7d7f511b41fde243113c61a338ac2c661877ec13",
+  "probe_sha256": "adc055effe8d54805717ab47a6fe7ebc5ad39c47b01091dda96103e9bacbc00d",
+  "layers": 24,
+  "matrix_tiles": 25056,
+  "kv_tiles": 3168,
+  "matrix_parameters_exactly_covered": 357826560,
+  "all_layer_owners_disjoint": true,
+  "all_weight_row_column_ranges_exact": true,
+  "kv_physical_stripe_map_exact": true,
+  "default_emitted_layout_byte_identical_to_113615": true,
+  "method": "Independent explicit24origin/physicalKV map and inventory shape tiling sets; full nonoverlap and exact tensor coverage, default emitter compared with frozen SDK layout.",
+  "scope": "Offline geometry/tensor ownership only. No actual multi-layer routes/SDK program or selected-layer23 runtime acceptance.",
+  "reviewer_correction": "Initial coordinator checker used defaultdict(set()) and omitted the emitter regions argument; corrected both before successful review. Not an implementation/SDK failure."
+}

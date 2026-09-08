@@ -11,3 +11,5 @@ evidence/*/
 
 # Generated CSL may contain model weights.
 weights_*.csl
+bias*.csl
+controller_aux.csl

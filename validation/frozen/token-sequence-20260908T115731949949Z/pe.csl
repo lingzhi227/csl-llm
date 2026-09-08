@@ -1,0 +1,26 @@
+param memcpy_params;
+const sys=@import_module("<memcpy/memcpy>",memcpy_params);
+const seq=@import_module("sequence.csl");
+var script=@zeros([256]u32);var control=@zeros([2]u32);var summary=@zeros([11]u32);
+var progress=@zeros([1]u32);
+fn mix(value:u32) void {summary[5]=((summary[5]*257)%65521+value)%65521;}
+fn compute() void {
+ seq.reset(@as(u16,control[0]),@as(u16,control[1]));
+ for(@range(u16,11))|i|{summary[i]=0;}
+ summary[5]=17;summary[10]=@as(u32,0xffffffff);
+ while(!seq.finished){
+  const position=seq.consumed;const token=seq.start();
+  if(position==0){summary[8]=token;}summary[9]=token;
+  mix(token);mix(@as(u32,position));mix(if(seq.head_expected) @as(u32,1) else @as(u32,0));
+  if(seq.head_expected){
+   if(summary[6]==0){summary[10]=@as(u32,position);}
+   summary[6]+=1;seq.complete_head(script[seq.generated_count]);
+  }else{summary[7]+=1;seq.complete_prefill();}
+ }
+ summary[0]=@as(u32,seq.consumed);summary[1]=@as(u32,seq.generated_count);summary[2]=@as(u32,seq.reason);
+ summary[3]=if(seq.finished) @as(u32,1) else @as(u32,0);summary[4]=if(seq.busy) @as(u32,1) else @as(u32,0);
+ progress[0]+=1;sys.unblock_cmd_stream();
+}
+const pp:[*]u32=&seq.prompt;const gp:[*]u32=&seq.generated;const sp:[*]u32=&script;
+const cp:[*]u32=&control;const rp:[*]u32=&summary;const ep:[*]u32=&progress;
+comptime{@export_symbol(pp,"prompt");@export_symbol(gp,"generated");@export_symbol(sp,"script");@export_symbol(cp,"control");@export_symbol(rp,"summary");@export_symbol(ep,"progress");@export_symbol(compute);}

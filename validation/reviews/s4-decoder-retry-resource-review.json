@@ -1,0 +1,17 @@
+{
+  "reviewed_at": "2026-09-08T11:47:22.239308+00:00",
+  "run": "resident-decoder-20260908T113615465376Z",
+  "manifest_sha256": "abb67d0829c8ecd2d57be77501be2c7bebd3afa35dff67c9ff15b0740b2a9828",
+  "elf_report_sha256": "56de4fec7d01f6d0d7e52bf3c1063f13127637722241633cfc3ddd0d3595746c",
+  "dsr_report_sha256": "d461ac4d3fbcc6ff10fe0fbf49e2cf9c01978138dc9ac9da4254772dddb503cc",
+  "review_script_sha256": "d7fdf1eaffbc1f7ef3f174c23499f39035d81a10f55cb6447c8249831c873e79",
+  "application_elf_classes_verified": 1180,
+  "max_static_high_water_bytes": 44032,
+  "final_dsr_families_verified": 1180,
+  "nodes_checked": 12278,
+  "interference_edges_checked": 50226,
+  "method": "Independent actualELF64 hash/allocsection parsing and final graph edge/assignment/range/explicitDSR checks.",
+  "limitations": [
+    "No dynamic-stack, runtime numerical/protocol, hardware performance or full-model fit proof."
+  ]
+}
