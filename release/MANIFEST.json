@@ -1,5 +1,5 @@
 {
-  "scope": "Accepted native decoder layer0, scripted token control and offline layer interfaces, 2026-09-08",
+  "scope": "Accepted decoder release with current full-vocabulary compile-resource boundary, 2026-09-08",
   "files": [
     {
       "path": ".gitignore",
@@ -268,8 +268,8 @@
     },
     {
       "path": "docs/DECODER.md",
-      "bytes": 2937,
-      "sha256": "d1426890fd80664dbd14610eec4bd4cb379ebfdbb2d677dd118fe5d45d0be333"
+      "bytes": 3122,
+      "sha256": "355377294fe34a17dac77b17f03673ccab6b943af31d8d459e6fb97a5a97c894"
     },
     {
       "path": "docs/LAYOUT-CANDIDATE.md",
@@ -303,8 +303,8 @@
     },
     {
       "path": "docs/STATUS.md",
-      "bytes": 2011,
-      "sha256": "0b8d007d26aab05c996edb33ee71b7282741459e5f37a299c77d5ae0a0ecde9c"
+      "bytes": 2245,
+      "sha256": "627a94735c2c95fd57e6af0cabff715f1816983ad06df12b1a7eb39e9c5f8a8e"
     },
     {
       "path": "evidence/model-inventory.json",
@@ -1720,6 +1720,11 @@
       "path": "validation/reviews/s5-token-sequence-resource-review.json",
       "bytes": 890,
       "sha256": "58a9bdd7ac6ab369e96fa137d4bb536d74bea0f7f80fb64b86567485465e1629"
+    },
+    {
+      "path": "validation/reviews/s5-vocabulary-compile-resource-failure-review.json",
+      "bytes": 1162,
+      "sha256": "b3f7e84429026ed9f24bf8c6667d73464076a1e05418602b43d613b077d2e750"
     }
   ]
 }

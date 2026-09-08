@@ -1,0 +1,20 @@
+{
+  "reviewed_at": "2026-09-08T12:19:49.954688+00:00",
+  "run": "resident-vocabulary-20260908T113409290877Z",
+  "accepted": false,
+  "failure_kind": "compile_resource_guard",
+  "elapsed_seconds": 165.58458139002323,
+  "peak_tree_rss_kib": 25166188,
+  "budget_seconds": 7200,
+  "memory_guard_kib": 25165824,
+  "application_elf_count": 0,
+  "weight_source_bytes": 748978008,
+  "sample_count": 159,
+  "max_sample_processes": 5,
+  "execution_sha256": "8108a1f234073591bec6257660477c993f77b84a8141685b77b5b743bd7b0f7c",
+  "manifest_sha256": "1d0913ea82aa284f17159afacfa4f18aef8a2be2fb2cf32205756a96b6f138b4",
+  "manifest_samples_hashes_verified": true,
+  "all5_observed_pids_absent_independently": true,
+  "interpretation": "Compile resource budget triggered before any applicationELF/numerical output. Samples only aggregateRSS; large literal-front-end pressure is a hypothesis, not per-process attribution. No runtime/numerical failure claim.",
+  "next_candidate": "Developer diagnosing compiler initialization form; consider ordinary writable SRAM with verified raw-u32 bulkH2D from originalBF16, bounded chunks and explicit rawreadback, notblindguardincrease."
+}

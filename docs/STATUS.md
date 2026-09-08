@@ -11,6 +11,6 @@
 | Layer parameterization | Offline24-layer tensor/ownership coverage, default layout matches accepted layer0 | No actual24-layer routes/execution; layer23 unexecuted |
 | Resources | Accepted layer0 static application ELF/DSR/initializer checks | No dynamic-stack, full-model fit or hardware proof |
 
-Complete24-layer/full-vocabulary generation and full-model2048total/256generated acceptance remain pending. A bounded layer0 pass does not close all S4 coverage or S5–S6. The active vocabulary experiment is not a published pass.
+Complete24-layer/full-vocabulary generation and full-model2048total/256generated acceptance remain pending. A bounded layer0 pass does not close all S4 coverage or S5–S6. The full-vocabulary113409 attempt stopped during compilation at its24GiB process-tree memory guard, before any application ELF or numerical output. The initialization approach is being revised without reducing the151936-token vocabulary target. This does not invalidate the accepted decoder.
 
 Earlier bounded components, failed attempts and baseline versions are retained with their original review scope. Historical run manifests list omitted raw inputs, model-bearing generated modules and binaries; these are not directly runnable public bundles. Public preparation tools create new local evidence using an independently obtained checkpoint and SDK. Publication host-path edits have not received a fresh SDK rerun.

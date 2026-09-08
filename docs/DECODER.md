@@ -23,4 +23,4 @@ The published executable is derived from the accepted frozen layer-0 driver, wit
 
 `src/csl_llm/decoder_layout.py` has independently checked offline24-layer tensor/ownership mapping:25056 matrix tiles and3168KV owners. The newer parameterized driver is retained for source inspection under `validation/offline/layer-parameterization/`, not offered as a qualified runtime. The default emitter matches the accepted layer-0 layout; neither layer23 nor a24-layer execution has been accepted.
 
-Complete24-layer/full-vocabulary generation, full-model2048/256 acceptance and hardware execution remain pending. The current vocabulary experiment is not published as a pass.
+Complete24-layer/full-vocabulary generation, full-model2048/256 acceptance and hardware execution remain pending. The subsequent full-vocabulary113409 attempt hit its24GiB compile-memory guard before producing any application ELF or numerical output. Initialization changes are under investigation; this is not a decoder regression or an SDK numerical failure.
