@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "checked_parameter_words": 494032768,
+  "matrix_tiles": 34552,
+  "manifest_sha256": "788ce538ac7ca41f2547b4ce8b86bee283b2cbd75b739f3841fdafafca9e0c9b",
+  "checker_sha256": "0e73b0020e8c99eef84ea528f740f7f052560a0e91cd619240c2c4318f38bfa4",
+  "scope": "Every BF16 matrix/auxiliary word matches the original checkpoint; exact coverage and zero padding. No device execution claim."
+}

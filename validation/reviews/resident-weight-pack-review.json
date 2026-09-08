@@ -1,0 +1,13 @@
+{
+  "manifest_sha256": "788ce538ac7ca41f2547b4ce8b86bee283b2cbd75b739f3841fdafafca9e0c9b",
+  "matrices_sha256": "280faf20c78ac3bccfebf7162be8e714e30cb9c68ebb577ef332d086bfffd8da",
+  "layout_sha256": "a46b7718a016e94f35cdcb58fc7ea307874118a3c4fe2f99ea1f85e98ca886c5",
+  "checked_parameter_words": 494032768,
+  "tiles": 34552,
+  "auxiliary_tensors": 121,
+  "padding_zero": true,
+  "coverage_exact": true,
+  "scope": "Coordinator read-only raw safetensors header/memmap comparison of every original BF16 parameter and all packed padding. No repacking or SDK execution.",
+  "reviewed_at": "2026-09-08T08:08:52.491257+00:00",
+  "developer_checker_hash_verified": true
+}

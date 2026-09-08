@@ -1,0 +1,17 @@
+{
+  "lengths": [
+    1,
+    2,
+    7,
+    30,
+    31,
+    31,
+    2,
+    1
+  ],
+  "sessions": [
+    1,
+    2
+  ],
+  "scope": "Public SDK message-passing send with event-driven receive; opposite-corner XY packets and explicit application ACKs, sequential31-wavelet maximum packets. Not concurrent traffic, full model routing or throughput qualification."
+}

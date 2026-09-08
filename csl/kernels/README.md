@@ -10,3 +10,5 @@ These modules are bounded research implementations. Consult source comments and 
 - `tied_embedding_f32.csl` and `argmax_f32.csl`: exact lookup from a selected embedding tile and deterministic local selection/pair merging. Seven cases pass; full embedding assembly and full-vocabulary selection remain pending.
 
 The license text for attributed upstream material is retained in [LICENSE](LICENSE). All performance numbers concern the tested component and SDK configuration, not full-model latency.
+
+`kv_block_f32.csl` and `kv_capacity_f32.csl` retain the exact modules from the accepted real-trace and capacity runs, respectively. Their paired line-statistics protocols are selected explicitly by the preparation scripts. Accepted limits and cache sampling are in [milestones](../../docs/MILESTONES.md).

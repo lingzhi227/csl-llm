@@ -1,0 +1,31 @@
+param memcpy_params;param role:u16;
+const sys=@import_module("<memcpy/memcpy>",memcpy_params);
+const packets=@import_module("packets.csl",.{.sent_task_id=@get_local_task_id(12),.received_task_id=@get_local_task_id(13),.on_sent=sent,.on_received=received});
+const lengths=[8]u16{1,2,7,30,31,31,2,1};
+var control=@zeros([1]u32);var progress=@zeros([1]u32);var history=@constants([248]u32,0xcafebabe);var observed=@zeros([8]u32);var tx=@zeros([31]u32);var sequence:u16=0;var waiting_ack:bool=false;var acked:bool=false;var running:bool=false;var command_waiting:bool=false;
+fn initialize() void {packets.init();sys.unblock_cmd_stream();}
+fn reset() void {@assert(!packets.sending and !packets.receiving);sequence=0;progress[0]=0;waiting_ack=false;acked=false;running=(role==1);command_waiting=false;const d=@get_dsd(mem1d_dsd,.{.base_address=&history,.extent=248});@mov32(d,0xcafebabe);for(@range(u16,8))|i|{observed[i]=0;}sys.unblock_cmd_stream();}
+fn value(seq:u16,i:u16) u32 {return if(i==0) (control[0]<<16)|@as(u32,seq) else @as(u32,0xa5a55a5a)^(@as(u32,i)*0x01010101)^(@as(u32,seq)<<20)^(control[0]<<12);}
+fn transmit() void {
+ @assert(role==0 and !waiting_ack);const length=lengths[sequence];for(@range(u16,31))|i|{if(i<length){tx[i]=value(sequence,i);}}
+ waiting_ack=true;acked=false;packets.send(3,2,&tx,length);
+}
+fn run() void {if(comptime role==0){running=true;transmit();}else if(comptime role==1){command_waiting=true;if(progress[0]==8){command_waiting=false;sys.unblock_cmd_stream();}}else{sys.unblock_cmd_stream();}}
+fn advance() void {
+ if(waiting_ack and acked and !packets.sending){waiting_ack=false;sequence+=1;progress[0]=@as(u32,sequence);if(sequence<8){transmit();}else{running=false;sys.unblock_cmd_stream();}}
+}
+fn sent() void {
+ if(comptime role==0){advance();}else if(comptime role==1){progress[0]=@as(u32,sequence);if(sequence==8){running=false;if(command_waiting){command_waiting=false;sys.unblock_cmd_stream();}}}
+}
+fn received(data:[*]u32,length:u16) void {
+ @assert(running);
+ if(comptime role==0){
+  @assert(waiting_ack and length==3 and data[0]==value(sequence,0) and data[1]==@as(u32,lengths[sequence]));var checksum:u32=0;for(@range(u16,31))|i|{if(i<lengths[sequence]){checksum^=value(sequence,i);}}@assert(data[2]==checksum);acked=true;advance();
+ }else if(comptime role==1){
+  @assert(sequence<8 and length==lengths[sequence]);var checksum:u32=0;
+  for(@range(u16,31))|i|{if(i<length){@assert(data[i]==value(sequence,i));history[sequence*31+i]=data[i];checksum^=data[i];}}
+  observed[sequence]=@as(u32,length);tx[0]=data[0];tx[1]=@as(u32,length);tx[2]=checksum;sequence+=1;packets.send(0,0,&tx,3);
+ }else{@assert(false);}
+}
+const cp:[*]u32=&control;const pp:[*]u32=&progress;const hp:[*]u32=&history;const lp:[*]u32=&observed;
+comptime{@export_symbol(cp,"control");@export_symbol(pp,"progress");@export_symbol(hp,"history");@export_symbol(lp,"lengths");@export_symbol(initialize);@export_symbol(reset);@export_symbol(run);}

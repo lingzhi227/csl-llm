@@ -1,0 +1,44 @@
+{
+  "stripes": 4,
+  "width": 4,
+  "height": 1,
+  "app_width": 12,
+  "app_height": 3,
+  "origins": [
+    [
+      1,
+      1
+    ],
+    [
+      7,
+      1
+    ]
+  ],
+  "sequence_lengths": [
+    34,
+    3
+  ],
+  "checkpoints": [
+    [
+      0,
+      29,
+      30,
+      31,
+      32,
+      33
+    ],
+    [
+      0,
+      2
+    ]
+  ],
+  "trace_files": {
+    "step-000.npz": "8bd2f53a798a3d81948619fe19c15aac55a952866f4b23440a3ffe6dc444e7c0",
+    "step-001.npz": "1b25cf2ad808b6c2f87d05609ac1b9f7685b41322268b8a2b7d7de06f656d87e",
+    "step-002.npz": "9046641baf98e2cfc139a0bdf7f7f80b9548b236b461d87e564778a392fbdc93",
+    "step-003.npz": "f5c6507e330f8abe90aaa3f4f3225b5c75f8fcf2f0ca88b1da8357b000eb256c",
+    "step-004.npz": "42490a7989fa5564689ba50919284a6a54b5856b02e978594ba6791544ea8c7f"
+  },
+  "model_config_sha256": "18e18afcaccafade98daf13a54092927904649e1dd4eba8299ab717d5d94ff45",
+  "scope": "Actual14Q/2KV causal attention across32-token stripes,34 sequential cache appends and dirty-cache reset to3 changed tokens. Empty stripes use negative finite maximum sentinel and zero sum/context. Full declared context capacity and full layer/model remain unqualified."
+}

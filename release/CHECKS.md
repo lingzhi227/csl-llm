@@ -9,3 +9,11 @@
 No fresh SDK simulations or full-model runs were launched for this publication. Historical reviews retain their bounded scope and do not certify a complete model or every published parameter combination. Original raw execution bundles are not distributed; new runs must generate and verify their own evidence.
 
 `SOURCE-SNAPSHOT.json` identifies selected original inputs before publication edits. `MANIFEST.json` hashes every published file other than itself. `verify_manifest.py` checks that payload independently of the SDK.
+
+## Stateful-component milestone update
+
+The three new SDK run manifests match every original listed file, successful execution/result records match each other, and their hashes match the independent coordinator reviews. Fifteen locally retained raw output/cache NPZ files also match review hashes (see `RAW-OUTPUT-CHECKS-20260908.json`). This verifies recorded artifact identity, not a new numerical rerun.
+
+Frozen CSL/driver inspection snapshots, small results/config/manifests and derived execution summaries are included. Public preparation tools use the accepted frozen driver and exact protocol dependencies, with explicit publication-only path selection. The earlier capacity preparation entry now has its accepted frozen implementation and required KV/collective dependencies. Earlier regional sum-only code remains unchanged.
+
+After the update, all four host tests passed on Linux in 4.045 seconds. Python syntax, documentation links and public payload checks passed. No new SDK simulation was launched for publishing. Full-model acceptance remains open.

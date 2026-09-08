@@ -1,0 +1,16 @@
+{
+  "kind": "resident_weight_input_pack",
+  "full_model_sdk_pass": false,
+  "model_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+  "matrix_tiles": 34552,
+  "auxiliary_tensors": 121,
+  "byte_order": "little",
+  "matrix_storage": "BF16 bits [inner112, outputs128], zero padding",
+  "files": {
+    "tile-index.json": "55f2d69ba3c133f48695b337c09b656442daa9fe9e32eb16f7626529c69010f5",
+    "pack_driver.py": "b217a9063ae52df97a0cf28717adf5abece2da65e446e862b6f9c461d2c83dd5",
+    "matrices.bf16": "280faf20c78ac3bccfebf7162be8e714e30cb9c68ebb577ef332d086bfffd8da",
+    "layout.json": "a46b7718a016e94f35cdcb58fc7ea307874118a3c4fe2f99ea1f85e98ca886c5",
+    "auxiliary.npz": "22e01dde27b542ee4b6d4fb5ff9fcb1d46a1ec963d1f6cd5b05fe37efde948b5"
+  }
+}

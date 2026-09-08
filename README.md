@@ -2,7 +2,7 @@
 
 CSL kernels and distributed execution components for real-model inference on Cerebras WSE-3, developed with SDK 2.10.1. The target is **Qwen2.5-0.5B-Instruct**, using official weights, all 24 layers and the full vocabulary.
 
-**This is an early research release of validated components, not a working end-to-end LLM runtime.** Full decoder layers, stateful causal attention acceptance and complete-model generation remain under development. The project builds on Pragma HLS experience; this release contains handwritten CSL and Python planning/validation tools, not a complete HLS model compiler.
+**This is an early research release of validated components, not a working end-to-end LLM runtime.** Full decoder layers, complete attention-stage acceptance and complete-model generation remain under development. The project builds on Pragma HLS experience; this release contains handwritten CSL and Python planning/validation tools, not a complete HLS model compiler.
 
 ## Start here
 
@@ -25,6 +25,10 @@ CSL kernels and distributed execution components for real-model inference on Cer
 
 Recorded SDK results belong to the original development snapshots. Publication changes make host paths portable; they have not received a fresh complete SDK qualification. See [release checks](release/CHECKS.md).
 
+## New accepted milestones
+
+Stateful GQA (34 real reference tokens), a separately scoped 2048-position KV diagnostic, sequential packet ACK completion and exact full-checkpoint BF16 packing are now included. [Read their acceptance boundaries](docs/MILESTONES.md). These are component milestones, not complete-model generation.
+
 ## Repository layout
 
 ```text
@@ -42,4 +46,4 @@ release/           Source snapshot hashes and publication checks
 
 The current full-model placement candidate is **192×210 application PE positions**. It is a static proposal, not an accepted full-model deployment. Batch 1, total context 2048 and up to 256 generated tokens are targets, not demonstrated capacity.
 
-Model weights, activation traces, SDK binaries, compiled device artifacts and active unfinished attention experiments are not distributed. Obtain the pinned model and your own SDK installation as described in the reproduction guide. Physical-wafer execution has not been validated.
+Model weights, activation traces, SDK binaries, compiled device artifacts and unfinished experiments are not distributed. Obtain the pinned model and your own SDK installation as described in the reproduction guide. Physical-wafer execution has not been validated.

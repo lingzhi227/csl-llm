@@ -1,0 +1,31 @@
+{
+  "counts": [
+    2048,
+    65,
+    1
+  ],
+  "layers": [
+    0,
+    12,
+    23
+  ],
+  "origins": [
+    [
+      1,
+      1
+    ],
+    [
+      14,
+      1
+    ]
+  ],
+  "trace_sha256": "8bd2f53a798a3d81948619fe19c15aac55a952866f4b23440a3ffe6dc444e7c0",
+  "model_config_sha256": "18e18afcaccafade98daf13a54092927904649e1dd4eba8299ab717d5d94ff45",
+  "cache_observed_stripes": [
+    0,
+    2,
+    63
+  ],
+  "formula": "Q,K: fixed actual projection seeds, Qwen FP32 half-split RoPE at each position. V: float32(float32(seed * float32(1 + position/2048)) + float32((position%7)/32)); separate multiply/add rounding.",
+  "scope": "Full2048 KV capacity,66-stripe serpentine regions per KV head (last2 empty),14Q/2KV, reset to65 then1. Synthetic diagnostic trajectory from real seeds. All stripe counts read; cache contents sampled in three stripes per head. Not2048-token actual model inference."
+}

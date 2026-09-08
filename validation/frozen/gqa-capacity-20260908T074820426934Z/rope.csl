@@ -1,0 +1,21 @@
+// Qwen half-split RoPE. Frequencies are immutable model constants supplied
+// from the pinned configuration, not host-computed token activations.
+param heads:u16;
+comptime {@comptime_assert(heads>0 and heads<=14);}
+const math=@import_module("<math>");
+var cosine=@zeros([32]f32);var sine=@zeros([32]f32);
+fn prepare(position:u16,frequency:[*]f32) void {
+ @assert(position<2048);
+ for(@range(u16,32))|i|{const angle=@as(f32,position)*frequency[i];cosine[i]=math.cos_f32(angle);sine[i]=math.sin_f32(angle);}
+}
+// input/output may alias: each pair is loaded before either member is stored.
+// Call prepare for the current position before applying Q and K.
+fn apply(input:[*]f32,output:[*]f32) void {
+ for(@range(u16,heads))|h|{
+  for(@range(u16,32))|i|{
+   const a=input[h*64+i];const b=input[h*64+i+32];
+   output[h*64+i]=a*cosine[i]-b*sine[i];
+   output[h*64+i+32]=b*cosine[i]+a*sine[i];
+  }
+ }
+}

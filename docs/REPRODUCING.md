@@ -54,3 +54,15 @@ python tools/plan_layout.py evidence/model-inventory.json evidence/local-layout.
 ```
 
 This is static accounting, not deployment or end-to-end inference. There is no complete-model runner in this release.
+
+## Stateful attention, packet transport and weight packing
+
+After generating the same FP32 reference, `attention_probe.py`, `attention_capacity_probe.py` and `packet_probe.py` use the same `--prepare` / `--execute` pattern. The capacity experiment uses synthetic diagnostic trajectories from real projection seeds. Keep it separate from real-model inference claims. Frozen inspection snapshots under `validation/frozen/` omit inputs/executors and must not be launched directly.
+
+Generate a local placement plan using the command above, then pack locally:
+
+```sh
+python tools/pack_weights.py --plan evidence/local-layout.json
+```
+
+Verify the printed pack directory with `python tools/verify_weight_pack.py evidence/resident-weights-REPLACE_WITH_PRINTED_TIMESTAMP models/qwen2.5-0.5b-7ae5576/model.safetensors`. Packing produces approximately 1 GB of weights plus metadata; those outputs remain local and ignored. Packing success is not device execution.

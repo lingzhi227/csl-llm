@@ -1,0 +1,14 @@
+[
+  {
+    "run": "packets-20260908T080215903907Z",
+    "sdk_log_sha256": "1d5193bd6154e6911db4d55e5232246d4fc164fe1b0d2fb13740c43c0e21f045",
+    "outcome": "compile failure",
+    "scope": "Original failed attempts retained in development archive; not accepted passes. Successful later run adds explicit ACK completion handshake."
+  },
+  {
+    "run": "packets-20260908T080300283118Z",
+    "sdk_log_sha256": "4c2157c700f031a3d681f5ee5aaafc4a422e173355a7571752773e4f6da372dd",
+    "outcome": "all-PE progress assertion failed",
+    "scope": "Original failed attempts retained in development archive; not accepted passes. Successful later run adds explicit ACK completion handshake."
+  }
+]

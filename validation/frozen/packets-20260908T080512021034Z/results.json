@@ -1,0 +1,16 @@
+{
+  "success": true,
+  "cases": [
+    {
+      "session": 1,
+      "actual_sha256": "36043cdcd56a6e3f297aa0c5f3a733f6053f477d23c14fe274cf27cd5dd0e73f",
+      "reset_sha256": "cea6bdf6f1d1ac8724551f160eaaf95b315b512accafc84823e0d21c6b6c3e7b"
+    },
+    {
+      "session": 2,
+      "actual_sha256": "1425a1616151eb7013a1e83693a736bc8efd5f3d849f3b8b5a74c347dd1525d3",
+      "reset_sha256": "cea6bdf6f1d1ac8724551f160eaaf95b315b512accafc84823e0d21c6b6c3e7b"
+    }
+  ],
+  "scope": "Public SDK message-passing send with event-driven receive; opposite-corner XY packets and explicit application ACKs, sequential31-wavelet maximum packets. Not concurrent traffic, full model routing or throughput qualification."
+}

@@ -1,0 +1,72 @@
+{
+  "success": true,
+  "cases": [
+    {
+      "count": 2048,
+      "checks": [
+        {
+          "group": 0,
+          "context": {
+            "max_abs": 5.071494481034833e-07,
+            "relative_l2": 1.2890190671878796e-06,
+            "relative_peak": 7.190195091407764e-07
+          }
+        },
+        {
+          "group": 1,
+          "context": {
+            "max_abs": 8.86127029836592e-07,
+            "relative_l2": 3.657082442445474e-06,
+            "relative_peak": 5.251688619085397e-06
+          }
+        }
+      ],
+      "actual_sha256": "44192a8065bd887e94d2deed2ba1f3f15cc2ad46a68d4617bfdf2710ca774846"
+    },
+    {
+      "count": 65,
+      "checks": [
+        {
+          "group": 0,
+          "context": {
+            "max_abs": 4.366994712512451e-07,
+            "relative_l2": 1.0040758692204781e-07,
+            "relative_peak": 1.454733400936525e-07
+          }
+        },
+        {
+          "group": 1,
+          "context": {
+            "max_abs": 2.926102469213987e-07,
+            "relative_l2": 9.216278693777735e-08,
+            "relative_peak": 1.4563486433816933e-07
+          }
+        }
+      ],
+      "actual_sha256": "e1da56e160a580f2d519c24eafae214e68090a30c5db822e84fa973fdebaf5bf"
+    },
+    {
+      "count": 1,
+      "checks": [
+        {
+          "group": 0,
+          "context": {
+            "max_abs": 0.0,
+            "relative_l2": 0.0,
+            "relative_peak": 0.0
+          }
+        },
+        {
+          "group": 1,
+          "context": {
+            "max_abs": 0.0,
+            "relative_l2": 0.0,
+            "relative_peak": 0.0
+          }
+        }
+      ],
+      "actual_sha256": "035b5f47d1aafb38c49871448bf5d174b339f8207dd334571815aa8efb309b5a"
+    }
+  ],
+  "scope": "Full2048 KV capacity,66-stripe serpentine regions per KV head (last2 empty),14Q/2KV, reset to65 then1. Synthetic diagnostic trajectory from real seeds. All stripe counts read; cache contents sampled in three stripes per head. Not2048-token actual model inference."
+}

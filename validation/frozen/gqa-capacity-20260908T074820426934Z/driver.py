@@ -20,7 +20,7 @@ def prepare():
     sys.path.insert(0,str(ROOT/'src'))
     from csl_llm.regions import Region,layout
     out=ROOT/'evidence'/('gqa-capacity-'+datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%S%fZ'));out.mkdir()
-    trace=ROOT/'evidence/reference-f32/arithmetic/step-000.npz';model=ROOT/'models/qwen2.5-0.5b-7ae5576';r=np.load(trace)
+    trace=ROOT/'evidence/reference-f32-greedy-20260908T0554/arithmetic/step-000.npz';model=ROOT/'models/qwen2.5-0.5b-7ae5576';r=np.load(trace)
     rotary=Qwen2RotaryEmbedding(AutoConfig.from_pretrained(model,local_files_only=True));frequency=rotary.inv_freq.numpy().copy()
     counts=[2048,65,1];layers=[0,12,23];queries=[];keys=[];values=[];cache_keys=[];cache_values=[];expected=[]
     for count,layer in zip(counts,layers):
@@ -41,7 +41,7 @@ def prepare():
         padded_k=np.zeros((2048,2,64),np.float32);padded_v=np.zeros_like(padded_k);padded_k[:count]=key_cache;padded_v[:count]=value_cache
         queries.append(q);keys.append(k);values.append(v);cache_keys.append(padded_k);cache_values.append(padded_v);expected.append(np.stack(contexts))
     np.savez(out/'inputs.npz',query=np.stack(queries),key=np.stack(keys),value=np.stack(values),frequency=frequency,expected=np.stack(expected),expected_cache_k=np.stack(cache_keys),expected_cache_v=np.stack(cache_values))
-    for src,dst in [(Path(__file__),'driver.py'),(ROOT/'tools/sdk_probe.py','executor.py'),(ROOT/'csl/kernels/kv_capacity_f32.csl','kv.csl'),(ROOT/'csl/kernels/qwen_position_f32.csl','rope.csl'),(ROOT/'csl/runtime/line_capacity_f32.csl','line.csl'),(ROOT/'configs/precision.json','precision.json'),(ROOT/'src/csl_llm/regions.py','regions.py')]:shutil.copy2(src,out/dst)
+    for src,dst in [(Path(__file__),'driver.py'),(ROOT/'tools/sdk_probe.py','executor.py'),(ROOT/'csl/kernels/kv_block_f32.csl','kv.csl'),(ROOT/'csl/kernels/qwen_position_f32.csl','rope.csl'),(ROOT/'csl/runtime/line_allreduce_f32.csl','line.csl'),(ROOT/'configs/precision.json','precision.json'),(ROOT/'src/csl_llm/regions.py','regions.py')]:shutil.copy2(src,out/dst)
     (out/'pe.csl').write_text('''param memcpy_params;param group:i16=-1;param ordinal:u16=0;param participants:u16;param negative:direction;param positive:direction;
 const sys=@import_module("<memcpy/memcpy>",memcpy_params);const kv=@import_module("kv.csl",.{.stripe=ordinal});const qr=@import_module("rope.csl",.{.heads=7});const kr=@import_module("rope.csl",.{.heads=1});
 const line=@import_module(if(group>=0) "line.csl" else "<empty>",if(group>=0) .{.ordinal=ordinal,.participants=participants,.length=455,.negative=negative,.positive=positive,.colors=[3]color{@get_color(0),@get_color(1),@get_color(2)},.task_id=@get_local_task_id(10),.on_complete=continued} else .{});

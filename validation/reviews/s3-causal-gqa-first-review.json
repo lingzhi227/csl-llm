@@ -1,0 +1,183 @@
+{
+  "manifest_sha256": "1ef407c5c371ee12a9876cf05b7b1db6adeb88cfcba4229214b7f040eb4c8b07",
+  "results_sha256": "2027e19e0296057cf98cd49a0f89cdc491b8ea27b6f613ae6ae201d46f3f0a43",
+  "input_rotation_max_abs": 7.673125196561159e-06,
+  "input_rotation_gate": "Existing precision stage gate; float32 frequency/cosine reference rounding differs from independent scalar math.",
+  "real_trace_bindings_verified": true,
+  "checkpoints": [
+    {
+      "sequence": 0,
+      "position": 0,
+      "checks": [
+        {
+          "group": 0,
+          "max_abs": 0.0,
+          "l2": 0.0,
+          "peak": 0.0
+        },
+        {
+          "group": 1,
+          "max_abs": 0.0,
+          "l2": 0.0,
+          "peak": 0.0
+        }
+      ],
+      "actual_sha256": "9b92fc4a166abf1358e3b0b643f500fcaf008126d05e0204204171d2f16b6f0b"
+    },
+    {
+      "sequence": 0,
+      "position": 29,
+      "checks": [
+        {
+          "group": 0,
+          "max_abs": 1.4346996477232477e-06,
+          "l2": 5.610985117507805e-06,
+          "peak": 4.709682055215334e-06
+        },
+        {
+          "group": 1,
+          "max_abs": 4.810651666950494e-07,
+          "l2": 6.757757198603087e-06,
+          "peak": 7.479663644361151e-06
+        }
+      ],
+      "actual_sha256": "2aabcafb0b830a4921d62aae376dce76958abeced1e65b5e234ae2651590a86e"
+    },
+    {
+      "sequence": 0,
+      "position": 30,
+      "checks": [
+        {
+          "group": 0,
+          "max_abs": 2.0163245627868864e-06,
+          "l2": 8.8159567027162e-06,
+          "peak": 1.2085807882325054e-05
+        },
+        {
+          "group": 1,
+          "max_abs": 3.438355960574957e-07,
+          "l2": 3.904462713658695e-06,
+          "peak": 5.345935224936474e-06
+        }
+      ],
+      "actual_sha256": "590ef75abb004c0dfcc8b8c35bdef81b630cb9eff0c178185af78573abad0eca"
+    },
+    {
+      "sequence": 0,
+      "position": 31,
+      "checks": [
+        {
+          "group": 0,
+          "max_abs": 1.065370726711229e-06,
+          "l2": 8.057283704518826e-06,
+          "peak": 8.776252809604055e-06
+        },
+        {
+          "group": 1,
+          "max_abs": 5.86063899674083e-07,
+          "l2": 5.418928482449223e-06,
+          "peak": 5.688113613917928e-06
+        }
+      ],
+      "actual_sha256": "5d17c0ed53010daebfead7cf1316b348df28bcc9ec695f44cdd5ceb2d7fcdd67"
+    },
+    {
+      "sequence": 0,
+      "position": 32,
+      "checks": [
+        {
+          "group": 0,
+          "max_abs": 4.7089547533518683e-07,
+          "l2": 2.9799591968345397e-06,
+          "peak": 1.8098898162544014e-06
+        },
+        {
+          "group": 1,
+          "max_abs": 3.5928503449786375e-07,
+          "l2": 5.265715676760716e-06,
+          "peak": 5.485678835112646e-06
+        }
+      ],
+      "actual_sha256": "46856581e8cecfa045b2a95b4e7671c6ab54edd11daac3d912a9d33a2b066a1d"
+    },
+    {
+      "sequence": 0,
+      "position": 33,
+      "checks": [
+        {
+          "group": 0,
+          "max_abs": 1.2018545793024416e-06,
+          "l2": 7.367839103441131e-06,
+          "peak": 9.583086501633457e-06
+        },
+        {
+          "group": 1,
+          "max_abs": 2.592189455585814e-07,
+          "l2": 4.094594818593332e-06,
+          "peak": 4.030326315847852e-06
+        }
+      ],
+      "actual_sha256": "f0d92f54f253de72e43590839dd526d83078fa3df3ae43bb171fbb6d76e15aed"
+    },
+    {
+      "sequence": 1,
+      "position": 0,
+      "checks": [
+        {
+          "group": 0,
+          "max_abs": 0.0,
+          "l2": 0.0,
+          "peak": 0.0
+        },
+        {
+          "group": 1,
+          "max_abs": 0.0,
+          "l2": 0.0,
+          "peak": 0.0
+        }
+      ],
+      "actual_sha256": "15a02737075cfa8fe69fdc9a4d3632a2907344ae5f6aae9030449ff18a884ce4"
+    },
+    {
+      "sequence": 1,
+      "position": 2,
+      "checks": [
+        {
+          "group": 0,
+          "max_abs": 1.0478306169403595e-06,
+          "l2": 1.1701027722740774e-07,
+          "peak": 8.363996884217373e-07
+        },
+        {
+          "group": 1,
+          "max_abs": 5.072312878606766e-07,
+          "l2": 9.864386625630524e-08,
+          "peak": 4.713754261670761e-07
+        }
+      ],
+      "actual_sha256": "487789a7452e861e72879149f70577191cb6119eafc6130bd9c66882b231395e"
+    }
+  ],
+  "caches": [
+    {
+      "sequence": 0,
+      "observed_stripes": [
+        0,
+        1,
+        3
+      ],
+      "cache_sha256": "083c17887b06e7493806d4a4f6f5e35703c1efaec5d237da4842a81ba4a6f6e4"
+    },
+    {
+      "sequence": 1,
+      "observed_stripes": [
+        0,
+        1,
+        3
+      ],
+      "cache_sha256": "534d5cbeddcc60753cd33e27a28af8a9ba938b069fd2931f12c3de5cead0093b"
+    }
+  ],
+  "scope": "Independent fsum/exp causal contexts at8 root checkpoints for14heads; sampled caches/status in3 stripes/head.34 real tokens then3 changed reset tokens. No full2048 capacity, every-position readback or full-model acceptance.",
+  "reviewed_at": "2026-09-08T07:50:54.288777+00:00"
+}
