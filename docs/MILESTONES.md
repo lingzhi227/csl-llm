@@ -2,6 +2,7 @@
 
 | Milestone | Accepted scope | Remaining limitation |
 | --- | --- | --- |
+| Full layer-0 DOWN projection | Complete 896×4864 matrix, 308 PEs/7 roots, 44 input shards with padded tail; 4 cases | Input is a host fixture; not device-composed SwiGLU or complete MLP |
 | Full layer-0 GATE projection | Complete 4864×896 matrix, 304 PEs, 38 roots; 4 original-input cases; paired u32 BF16 transfer and column reads | Not whole MLP; no new independent ELF/DSR audit; not every replica output |
 | Paired BF16 transport | Exact u32 transfer/readback of one real 128×112 tile; 7 lookup/selection cases | Not exhaustive SDK bit-pattern coverage or full-vocabulary selection |
 | Full layer-0 UP projection | Complete 4864×896 matrix, resident BF16 on 304 PEs, 38 roots covering all outputs, 4 input cases | Not whole MLP/layer/model; all PE progress but only root output vectors read |

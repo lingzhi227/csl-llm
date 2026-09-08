@@ -1,0 +1,90 @@
+{
+  "success": true,
+  "cases": [
+    {
+      "name": "canonical",
+      "relative_l2": 1.1875672436273703e-07,
+      "relative_peak": 7.949791688766008e-08,
+      "official": {
+        "max_abs": 1.1920928955078125e-07,
+        "relative_l2": 1.854207114242676e-07,
+        "relative_peak": 6.635398017051115e-08
+      },
+      "root_cycles": [
+        19816,
+        19816,
+        19816,
+        19816,
+        19816,
+        19816,
+        19816
+      ],
+      "column_readback_sha256": {
+        "column-read-0-0.npz": "5e3b51da9ee55878abb7afc60574b1314a162d21df288ca56de1fd5957aa5ee8"
+      },
+      "actual_sha256": "272654ca9edba365b1d29ec685fb99895695090103b921474ec82b11993fcb3f"
+    },
+    {
+      "name": "last-feature-onehot",
+      "relative_l2": 0.0,
+      "relative_peak": 0.0,
+      "official": null,
+      "root_cycles": [
+        19816,
+        19816,
+        19816,
+        19816,
+        19816,
+        19816,
+        19816
+      ],
+      "column_readback_sha256": {
+        "column-read-1-0.npz": "75e51e48cf7214547fe9dc74d1585043cca5938b778124caefea6070b95484ef"
+      },
+      "actual_sha256": "b8e61c06de86281e341718ed115d10e2e191b08ffcbce7a1375e0afcb2118c0f"
+    },
+    {
+      "name": "zero",
+      "relative_l2": 0.0,
+      "relative_peak": 0.0,
+      "official": null,
+      "root_cycles": [
+        19816,
+        19816,
+        19816,
+        19816,
+        19816,
+        19816,
+        19816
+      ],
+      "column_readback_sha256": {
+        "column-read-2-0.npz": "2e0059beab8f329687528c8f8cfaa24dca51e69d6c21ae14e3d6d2f9619b0a67"
+      },
+      "actual_sha256": "f7e8ba51747642d537d9476dd40fb3aa0a84ecb67e8822c2fa8a5606a56b6b8c"
+    },
+    {
+      "name": "canonical-repeat",
+      "relative_l2": 1.1875672436273703e-07,
+      "relative_peak": 7.949791688766008e-08,
+      "official": {
+        "max_abs": 1.1920928955078125e-07,
+        "relative_l2": 1.854207114242676e-07,
+        "relative_peak": 6.635398017051115e-08
+      },
+      "root_cycles": [
+        19816,
+        19816,
+        19816,
+        19816,
+        19816,
+        19816,
+        19816
+      ],
+      "column_readback_sha256": {
+        "column-read-3-0.npz": "5e3b51da9ee55878abb7afc60574b1314a162d21df288ca56de1fd5957aa5ee8"
+      },
+      "actual_sha256": "34f6d3aeaa2b2e78f0988930c736148b4c8a206ac89871446cb454502235ba1a"
+    }
+  ],
+  "scope": "Complete native-dimension layer0 matrix projection, all output roots and all PE completion read, resident weights across four calls; not whole FFN/layer/model."
+}

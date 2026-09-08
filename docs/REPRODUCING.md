@@ -74,3 +74,7 @@ After preparing the same reference, run `python tools/projection_probe.py --prep
 ## Full native GATE and paired transport
 
 `python tools/gate_projection_probe.py --prepare --projection gate` creates a frozen GATE bundle; execute its printed directory using the same script with `--execute`. The accepted implementation packs original BF16 words into u32 transfers and reads roots by column. `selection_u32_probe.py` offers the same preparation/execution workflow for the separately accepted local transport/lookup probe. UP retains `projection_probe.py` and its u16 transport. These different workloads are not a controlled speedup comparison.
+
+## Full native DOWN
+
+Run `python tools/down_projection_probe.py --prepare --projection down`, then execute the printed directory with the same tool and `--execute`. The host prepares this standalone projection input from the retained reference. This does not demonstrate a device-connected UP/GATE/SwiGLU/DOWN pipeline. The resource report covers static application ELF sections, not complete runtime memory safety.

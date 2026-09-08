@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "canonical_reference": "Pinned official Transformers 4.51.3 Qwen2 implementation, exact checkpoint weights promoted to float32, eager attention, CPU deterministic settings",
+  "comparison_reference": "Official bfloat16 checkpoint execution retained separately; equality of free-running tokens across arithmetic dtypes is not required or claimed",
+  "weight_storage": "Preserve original BF16 bits; lossless expansion into f32. FP32 resident storage also lossless. No implicit BF16-to-f16 conversion",
+  "activations_and_accumulation": "float32",
+  "generation": {"do_sample": false, "repetition_penalty": 1.0, "selection": "raw-logit argmax, smallest index on exact ties", "fixed_prompt_tokens_must_match_reference": true},
+  "stage_gate": {"all_finite": true, "absolute_or_normwise": {"max_abs": 0.00001, "both": {"relative_l2": 0.0002, "relative_peak": 0.0005}}},
+  "logit_gate": {"all_finite": true, "all_required": {"max_abs": 0.01, "relative_l2": 0.0002, "relative_peak": 0.0005}, "greedy_token_exact": true},
+  "scope": "Initial numerical policy fixed after CPU activation/dtype characterization and before CSL layer/model candidate results. Includes all original fixed prompts; later adversarial/capacity inputs are additive. A failure requires implementation diagnosis, not post-hoc tolerance relaxation.",
+  "evidence": "evidence/reference-semantics-v1/report.json"
+}

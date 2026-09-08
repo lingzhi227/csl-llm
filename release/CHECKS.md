@@ -25,3 +25,7 @@ Verified every file in the accepted projection-up manifest, all four actual outp
 ## Full native GATE milestone
 
 Verified frozen GATE and paired-u32 selection manifests, successful execution/result identities, independent review hashes, and 11 actual output files against results. Shared kernel/region/collective and transport dependencies match exact frozen bytes. UP/u16 is preserved; GATE/u32 has its own preparation entry. Six local host tests pass, including BF16 bit-pattern/byte-order/shape tests; one Linux-only test is skipped. These host pattern tests do not constitute exhaustive SDK transport testing. Python syntax, CLI, reader links and public payload checks pass. No new SDK execution or ELF/DSR qualification was performed.
+
+## Full native DOWN milestone
+
+Verified all frozen manifest inputs, successful execution/results and independent numerical review hashes, four actual output hashes and the independently reviewed ELF report identity. Shared code dependencies match accepted frozen bytes. The new DOWN entry adapts paths/selector only. Six host tests pass with one Linux-only skip; Python syntax/CLI, payload and links pass. No new SDK run or publication-side ELF/DSR audit. Inputs remain host-prepared fixtures; separate UP/GATE/DOWN passes do not qualify a connected device MLP. See NATIVE-DOWN-CHECKS.json.

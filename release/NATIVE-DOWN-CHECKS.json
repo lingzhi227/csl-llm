@@ -1,0 +1,11 @@
+{
+  "run": "projection-down-20260908T094329141262Z",
+  "manifest_files_verified": 11,
+  "actual_outputs_verified": 4,
+  "manifest_sha256": "2dc43cb49d532aef6cf668cfd8ed1dda9c5fdfe7fabf1e00349afa182dd8d66d",
+  "results_sha256": "b15190779ad72942c05641647b0638b352793813c3f912765972b4649a95791d",
+  "resource_report_sha256": "b7025eac3579592c4a17ca43e748c4b57e3479b88ed78595810fd5f1882b14c1",
+  "original_driver_sha256": "b912b89acdbeb2a9c1cfeec9f437c52dc13f2a8a598a37784f0e1772f752f4cd",
+  "published_driver_sha256": "ff86f619d472cb3fa6f9a12354eeba9a21d6c37733a65b8f910e7c525b787fff",
+  "scope": "Frozen identity checks and independently reviewed resource report. Public driver path/selector edits only. No new SDK execution, ELF/DSR audit, or device-composed SwiGLU claim."
+}

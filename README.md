@@ -33,6 +33,8 @@ The full layer-0 **UP 4864×896 projection** also passes four input cases on 304
 
 The complete layer-0 **GATE 4864×896 projection** now also passes four cases on 304 PEs using paired u32 BF16 transfer and column readback. Its separate entry point preserves the historical UP/u16 qualification. Different UP/GATE runs do not establish a transport speedup ratio.
 
+The complete layer-0 **DOWN 896×4864 projection** now also passes four cases on 308 PEs, including the padded final input shard. UP, GATE and DOWN have each passed separately; their device-side MLP composition is still pending.
+
 ## Repository layout
 
 ```text

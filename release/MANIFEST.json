@@ -1,5 +1,5 @@
 {
-  "scope": "Accepted native GATE and paired BF16 transport milestone, 2026-09-08",
+  "scope": "Accepted native DOWN projection milestone, 2026-09-08",
   "files": [
     {
       "path": ".gitignore",
@@ -13,8 +13,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 4097,
-      "sha256": "ff00caa98f694e4530b36dc3d19b43a449af7ebfdf9eb6935218de3e48119273"
+      "bytes": 4327,
+      "sha256": "81b987e3da461eb98bcde6d0d584f393a34b74ba5c1fd7426fc4d5efbe122932"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
@@ -138,8 +138,8 @@
     },
     {
       "path": "docs/MILESTONES.md",
-      "bytes": 2553,
-      "sha256": "ebf3a79e50eecdd8d0b4b58c71933d6a007606b983a824c3882533eaed9dae50"
+      "bytes": 2744,
+      "sha256": "47bb0b7441040891386958b126e79d9904fff8ce11b1dda1b03e6db530a9235d"
     },
     {
       "path": "docs/REFERENCE.md",
@@ -153,13 +153,13 @@
     },
     {
       "path": "docs/REPRODUCING.md",
-      "bytes": 5055,
-      "sha256": "05f9f3769f7208c6a66a0f75c0c8e7cdb5e5065ed3c15d3ca8453834270abbbe"
+      "bytes": 5472,
+      "sha256": "e35fb83002dc0a9913155d035714ce2eb2d3768b76c6dc36536d760fc725ddcb"
     },
     {
       "path": "docs/STATUS.md",
-      "bytes": 2354,
-      "sha256": "01fac1714dc2262bc80f2a144adedb398e045eb953ac3a3fb172b08e5dfe92dd"
+      "bytes": 2927,
+      "sha256": "968c0f1653c9dec0f360bdac34a29ecc1ea61897b02b289bafad176bedac65fb"
     },
     {
       "path": "evidence/model-inventory.json",
@@ -173,8 +173,8 @@
     },
     {
       "path": "release/CHECKS.md",
-      "bytes": 3902,
-      "sha256": "16381c3ba167eefee926b14a657105f6b7eaafc4807875b49743e847ecaee058"
+      "bytes": 4494,
+      "sha256": "5bcc5ac1f39176dbadca7b24f825874914061d9f1f14193afa61761041ca4985"
     },
     {
       "path": "release/KERNEL-MATCHES.json",
@@ -185,6 +185,11 @@
       "path": "release/MILESTONE-SOURCES-20260908.json",
       "bytes": 15618,
       "sha256": "8f10e9540eccb3d12c1f49fe80766917aba755c8dc1b12725eba00182c856c2b"
+    },
+    {
+      "path": "release/NATIVE-DOWN-CHECKS.json",
+      "bytes": 776,
+      "sha256": "20b457f0eb9a74e16b0eb8a81bb6f8e8f875f977a88f154969531de08bad327f"
     },
     {
       "path": "release/NATIVE-GATE-CHECKS.json",
@@ -285,6 +290,11 @@
       "path": "tools/distributed_linear_probe.py",
       "bytes": 7094,
       "sha256": "6113d6a129c2595cc89801daa86e341960405c0b8b44ad6c6e1a0d6d26de1f73"
+    },
+    {
+      "path": "tools/down_projection_probe.py",
+      "bytes": 10133,
+      "sha256": "ff86f619d472cb3fa6f9a12354eeba9a21d6c37733a65b8f910e7c525b787fff"
     },
     {
       "path": "tools/elf_memory.py",
@@ -540,6 +550,71 @@
       "path": "validation/frozen/packets-20260908T080512021034Z/results.json",
       "bytes": 706,
       "sha256": "f32d2cd551f29de1e9ec51c2b69f79e310fb41023a3f2c03023f05de059644f0"
+    },
+    {
+      "path": "validation/frozen/projection-down-20260908T094329141262Z/bf16_transport.py",
+      "bytes": 730,
+      "sha256": "6a3e2a2c222e6f7e8408e28ec2a299d05c0c13cd2b85b62e52a3e8eb833187c3"
+    },
+    {
+      "path": "validation/frozen/projection-down-20260908T094329141262Z/config.json",
+      "bytes": 981,
+      "sha256": "036ae8089a52fd4d25c9c6a83f129eb22f59647c9372ffce62d18791729950dd"
+    },
+    {
+      "path": "validation/frozen/projection-down-20260908T094329141262Z/driver.py",
+      "bytes": 10141,
+      "sha256": "b912b89acdbeb2a9c1cfeec9f437c52dc13f2a8a598a37784f0e1772f752f4cd"
+    },
+    {
+      "path": "validation/frozen/projection-down-20260908T094329141262Z/elf-memory.json",
+      "bytes": 212781,
+      "sha256": "b7025eac3579592c4a17ca43e748c4b57e3479b88ed78595810fd5f1882b14c1"
+    },
+    {
+      "path": "validation/frozen/projection-down-20260908T094329141262Z/execution-summary.json",
+      "bytes": 568,
+      "sha256": "d940c39efafddb0d05dc0aff37f63a80aa91558f3c668abc4f54a53ee82a079b"
+    },
+    {
+      "path": "validation/frozen/projection-down-20260908T094329141262Z/kernel.csl",
+      "bytes": 1387,
+      "sha256": "3e92175efe12b28065bb77934c54136db3c9287c68c81877781a0e527354304c"
+    },
+    {
+      "path": "validation/frozen/projection-down-20260908T094329141262Z/layout.csl",
+      "bytes": 42924,
+      "sha256": "48bdcfc16cd093476075110661c92bebebd9f3ef2a0597ca84cf530217d93345"
+    },
+    {
+      "path": "validation/frozen/projection-down-20260908T094329141262Z/line.csl",
+      "bytes": 3947,
+      "sha256": "21f8628d937c6e481c24a45747895fb27caa1bd2a6b18d7338e138d492a4a529"
+    },
+    {
+      "path": "validation/frozen/projection-down-20260908T094329141262Z/manifest.json",
+      "bytes": 1056,
+      "sha256": "2dc43cb49d532aef6cf668cfd8ed1dda9c5fdfe7fabf1e00349afa182dd8d66d"
+    },
+    {
+      "path": "validation/frozen/projection-down-20260908T094329141262Z/pe.csl",
+      "bytes": 1475,
+      "sha256": "a36c84692958cd5d5b1f8642cb4b0c23faf6658c20837af901bc8a88d6c68e3b"
+    },
+    {
+      "path": "validation/frozen/projection-down-20260908T094329141262Z/precision.json",
+      "bytes": 1396,
+      "sha256": "c5da7df9c06537cb205b8c5a760703fd39b7c519bb27666906cafb1d6e45b3b0"
+    },
+    {
+      "path": "validation/frozen/projection-down-20260908T094329141262Z/regions.py",
+      "bytes": 2413,
+      "sha256": "2b23cc1644fc6e28ebe461bb68dfe0b4c77ac03570c094411d78d477377728c2"
+    },
+    {
+      "path": "validation/frozen/projection-down-20260908T094329141262Z/results.json",
+      "bytes": 2521,
+      "sha256": "b15190779ad72942c05641647b0638b352793813c3f912765972b4649a95791d"
     },
     {
       "path": "validation/frozen/projection-gate-20260908T093225528957Z/bf16_transport.py",
@@ -835,6 +910,16 @@
       "path": "validation/reviews/s1-simulator-cost-64x64-review.json",
       "bytes": 1439,
       "sha256": "2593f15501ffcc35e243e40a84539130e351404862bc06454c68f4eac0eae2a1"
+    },
+    {
+      "path": "validation/reviews/s2-native-down-resource-review.json",
+      "bytes": 3830,
+      "sha256": "1a6c12295d32e2d40a847e014766ecc140fc39e2d3af1655a23c9164ef695e4c"
+    },
+    {
+      "path": "validation/reviews/s2-native-down-review.json",
+      "bytes": 2525,
+      "sha256": "5846e84d056cd61cf36e3f09b91e032ca9a153384ebc4edd58252eb1fe924063"
     },
     {
       "path": "validation/reviews/s2-native-gate-review.json",
