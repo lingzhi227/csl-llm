@@ -1,0 +1,37 @@
+{
+  "parent": "resident-vocabulary-20260908T124830150992Z",
+  "parent_manifest_sha256": "0b2ba612406020efebff6c334c3d8a39b04d7b31aa2814f6619012c6003fe2b3",
+  "template": "compact-weights-runtime-20260908T142527930638Z",
+  "template_manifest_sha256": "8e135f14ea5ef7424df2a37988932fc77129687626e4ba6c2f4923d8df73e9d0",
+  "cases": [
+    "canonical-shards",
+    "negative",
+    "zero",
+    "repeat"
+  ],
+  "gate": {
+    "relative_l2": 2e-06,
+    "relative_peak": 3e-06
+  },
+  "width": 8,
+  "partitions": [
+    [
+      0,
+      1
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      6,
+      7
+    ]
+  ],
+  "collective": true,
+  "scope": "8 original tied matrix tiles, collective=True, direct compilation and full-layout partitions. Select/copy complete unmodified ELF files; require identical SDK loader segments/coordinates/sections/RPC/I/O to direct baseline. Compile-only experimental artifact composition, no SdkRuntime or model acceptance."
+}

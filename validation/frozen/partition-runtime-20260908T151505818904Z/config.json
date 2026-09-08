@@ -1,0 +1,41 @@
+{
+  "parent": "partition-compile-20260908T150732487335Z",
+  "parent_manifest_sha256": "bdf8871d4f7ebecaa27a4ab58ac0ca8c1faf481dd69de32fb03e1790102a0575",
+  "template": "compact-weights-runtime-20260908T142527930638Z",
+  "template_manifest_sha256": "8e135f14ea5ef7424df2a37988932fc77129687626e4ba6c2f4923d8df73e9d0",
+  "cases": [
+    "canonical-shards",
+    "negative",
+    "zero",
+    "repeat"
+  ],
+  "gate": {
+    "relative_l2": 2e-06,
+    "relative_peak": 3e-06
+  },
+  "width": 8,
+  "partitions": [
+    [
+      0,
+      1
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      6,
+      7
+    ]
+  ],
+  "collective": true,
+  "scope": "Actual SDK direct and experimentally composed intact compiler ELF binaries, 8 original128x112 tied matrix tiles, four cases each; collective=True. Full raw weight readback before/after; no host weight H2D or neural arithmetic. Not official SDK composition support, full vocabulary or model inference.",
+  "parent_execution_sha256": "628090ea2fab294c071c467fe889387b9f3b61ccf2da3afe5455e4aeb8c25596",
+  "simulator_threads": 1,
+  "independent_variant_processes": true,
+  "timeout_seconds": 360
+}

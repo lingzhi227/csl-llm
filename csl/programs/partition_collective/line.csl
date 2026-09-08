@@ -1,0 +1,67 @@
+// Static, region-relative nearest-neighbor FP32 sum then multicast.
+// Based on the SDK/WaferLLM fabric-DSD reduction pattern; no SDK internals
+// are modified. Colors and queues belong to this instance for its lifetime.
+param ordinal:u16;
+param participants:u16;
+param length:u16;
+param negative:direction=WEST;
+param positive:direction=EAST;
+param colors:[3]color;
+param queues:[2]u16=[2]u16{2,3};
+param task_id:local_task_id;
+param on_complete:fn()void;
+comptime {
+ @comptime_assert(participants>=2 and ordinal<participants and length>0);
+ @comptime_assert(colors[0]!=colors[1] and colors[0]!=colors[2] and colors[1]!=colors[2]);
+ @comptime_assert(queues[0]!=queues[1]);
+}
+const recv_color=colors[ordinal%2];
+const send_color=colors[(ordinal+1)%2];
+const reduce_iq=@get_input_queue(queues[0]);
+const reduce_oq=@get_output_queue(queues[0]);
+const broadcast_iq=@get_input_queue(queues[1]);
+const broadcast_oq=@get_output_queue(queues[1]);
+const din=@get_dsd(fabin_dsd,.{.input_queue=reduce_iq,.extent=length});
+const dout=@get_dsd(fabout_dsd,.{.output_queue=reduce_oq,.extent=length});
+const bin=@get_dsd(fabin_dsd,.{.input_queue=broadcast_iq,.extent=length});
+const bout=@get_dsd(fabout_dsd,.{.output_queue=broadcast_oq,.extent=length});
+const d=@get_dsr(dsr_dest,1);const a=@get_dsr(dsr_src0,1);const b=@get_dsr(dsr_src1,1);
+var busy:bool=false;var phase:u16=0;
+var destination:[*]f32;var operation_count:u16=length;var use_max:bool=false;
+// Local input and output must be disjoint, and stay owned through completion.
+fn start(input:[*]f32,output:[*]f32) void {start_count(input,output,length,false);}
+// All participants must issue the same count/kind in the same protocol order.
+fn start_count(input:[*]f32,output:[*]f32,count:u16,maximize:bool) void {
+ @assert(count>0 and count<=length);operation_count=count;use_max=maximize;
+ @assert(!busy);busy=true;phase=0;destination=output;
+ const src=@get_dsd(mem1d_dsd,.{.base_address=input,.extent=count});
+ const dst=@get_dsd(mem1d_dsd,.{.base_address=output,.extent=count});
+ if(comptime ordinal==participants-1){
+  @load_to_dsr(d,@set_dsd_length(dout,count),.{.async=true,.activate=task_id});@load_to_dsr(b,src);
+  @mov32(d,b,.{.async=true});
+ }else if(comptime ordinal==0){
+  @load_to_dsr(d,dst);@load_to_dsr(a,@set_dsd_length(din,count),.{.async=true,.activate=task_id});@load_to_dsr(b,src);
+  if(use_max){@fmaxs(d,a,b,.{.async=true});}else{@fadds(d,a,b,.{.async=true});}
+ }else{
+  @load_to_dsr(d,@set_dsd_length(dout,count),.{.async=true,.activate=task_id});@load_to_dsr(a,@set_dsd_length(din,count),.{.async=true});@load_to_dsr(b,src);
+  if(use_max){@fmaxs(d,a,b,.{.async=true});}else{@fadds(d,a,b,.{.async=true});}
+ }
+}
+task advance() void {
+ @assert(busy);
+ if(phase==0){
+  phase=1;const mem=@get_dsd(mem1d_dsd,.{.base_address=destination,.extent=operation_count});
+  if(comptime ordinal==0){@load_to_dsr(d,@set_dsd_length(bout,operation_count),.{.async=true,.activate=task_id});@load_to_dsr(b,mem);@mov32(d,b,.{.async=true});}
+  else{@load_to_dsr(d,mem);@load_to_dsr(b,@set_dsd_length(bin,operation_count),.{.async=true,.activate=task_id});@mov32(d,b,.{.async=true});}
+ }else{@assert(phase==1);busy=false;on_complete();}
+}
+comptime {
+ @bind_local_task(advance,task_id);
+ @initialize_queue(reduce_iq,.{.color=recv_color});@initialize_queue(reduce_oq,.{.color=send_color});
+ @initialize_queue(broadcast_iq,.{.color=colors[2]});@initialize_queue(broadcast_oq,.{.color=colors[2]});
+ if(ordinal<participants-1){@set_local_color_config(recv_color,.{.routes=.{.rx=.{positive},.tx=.{RAMP}}});}
+ if(ordinal>0){@set_local_color_config(send_color,.{.routes=.{.rx=.{RAMP},.tx=.{negative}}});}
+ if(ordinal==0){@set_local_color_config(colors[2],.{.routes=.{.rx=.{RAMP},.tx=.{positive}}});}
+ else if(ordinal==participants-1){@set_local_color_config(colors[2],.{.routes=.{.rx=.{negative},.tx=.{RAMP}}});}
+ else{@set_local_color_config(colors[2],.{.routes=.{.rx=.{negative},.tx=.{RAMP,positive}}});}
+}

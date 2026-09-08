@@ -18,3 +18,5 @@ Earlier bounded components, failed attempts and baseline versions are retained w
 Native-u8 static initialization now has a one-tile SDK pass with4GEMVs and complete before/after weight readback. Supporting compact/streamed-layer checks are compile-only. The later full-vocabulary124830 attempt was explicitly stopped early without a complete weight-block result; it is not a timeout or pass. See [native-u8 scope](NATIVE-U8.md).
 
 Experimental intact-artifact composition passes two independent GEMVs in isolated SDK processes, not application collectives.256/1024 real-tile compilation probes include zero-filled placeholders; they do not qualify full9496real-tile vocabulary deployment. [Exact limits](PARTITION-EXPERIMENT.md).
+
+Eight-PE cross-partition line allreduce is now accepted for the full group-0 128 × 896 contraction, four cases per isolated variant. This supersedes the earlier statement that no application collective is qualified; full vocabulary/model inference remains unaccepted. [Scoped evidence](PARTITION-EXPERIMENT.md#eight-pe-cross-partition-collective-acceptance).

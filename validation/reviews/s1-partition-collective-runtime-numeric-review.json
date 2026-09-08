@@ -1,0 +1,452 @@
+{
+  "reviewed_at": "2026-09-08T15:19:34.478925+00:00",
+  "run": "partition-runtime-20260908T151505818904Z",
+  "manifest_sha256": "f1ff0fd927206409913de4bf601965c0e245f36711e03175db6257ad242486a0",
+  "execution_sha256": "1707cea62e638b422f98053c817a365f90dfb1cb59ebf2589a63b85c49469cb7",
+  "results_sha256": "ea851ce8efef320f64873c14e40974bfa0cb103650fe617fa59091745e9eaae3",
+  "elapsed_seconds": 111.09574175206944,
+  "peak_rss_kib": 204880,
+  "all_tracked_pids_absent": true,
+  "observed_pid_count": 5,
+  "original_weights_initial_final_exact_both_variants": true,
+  "official_trace_inputs_exact": true,
+  "independent_fsum_numeric_gates_pass": true,
+  "repeat_zero_progress_and_baseline_composed_bit_exact": true,
+  "cases": [
+    {
+      "variant": "composed",
+      "case": 0,
+      "metrics": [
+        {
+          "pe": 0,
+          "relative_l2": 1.1639505420063034e-07,
+          "relative_peak": 1.4761302587201107e-07,
+          "cycles": 19622
+        },
+        {
+          "pe": 1,
+          "relative_l2": 1.1639505420063034e-07,
+          "relative_peak": 1.4761302587201107e-07,
+          "cycles": 19630
+        },
+        {
+          "pe": 2,
+          "relative_l2": 1.1639505420063034e-07,
+          "relative_peak": 1.4761302587201107e-07,
+          "cycles": 19630
+        },
+        {
+          "pe": 3,
+          "relative_l2": 1.1639505420063034e-07,
+          "relative_peak": 1.4761302587201107e-07,
+          "cycles": 19630
+        },
+        {
+          "pe": 4,
+          "relative_l2": 1.1639505420063034e-07,
+          "relative_peak": 1.4761302587201107e-07,
+          "cycles": 19630
+        },
+        {
+          "pe": 5,
+          "relative_l2": 1.1639505420063034e-07,
+          "relative_peak": 1.4761302587201107e-07,
+          "cycles": 19630
+        },
+        {
+          "pe": 6,
+          "relative_l2": 1.1639505420063034e-07,
+          "relative_peak": 1.4761302587201107e-07,
+          "cycles": 19630
+        },
+        {
+          "pe": 7,
+          "relative_l2": 1.1639505420063034e-07,
+          "relative_peak": 1.4761302587201107e-07,
+          "cycles": 19630
+        }
+      ]
+    },
+    {
+      "variant": "composed",
+      "case": 1,
+      "metrics": [
+        {
+          "pe": 0,
+          "relative_l2": 1.1639505420063034e-07,
+          "relative_peak": 1.4761302587201107e-07,
+          "cycles": 19622
+        },
+        {
+          "pe": 1,
+          "relative_l2": 1.1639505420063034e-07,
+          "relative_peak": 1.4761302587201107e-07,
+          "cycles": 19630
+        },
+        {
+          "pe": 2,
+          "relative_l2": 1.1639505420063034e-07,
+          "relative_peak": 1.4761302587201107e-07,
+          "cycles": 19630
+        },
+        {
+          "pe": 3,
+          "relative_l2": 1.1639505420063034e-07,
+          "relative_peak": 1.4761302587201107e-07,
+          "cycles": 19630
+        },
+        {
+          "pe": 4,
+          "relative_l2": 1.1639505420063034e-07,
+          "relative_peak": 1.4761302587201107e-07,
+          "cycles": 19630
+        },
+        {
+          "pe": 5,
+          "relative_l2": 1.1639505420063034e-07,
+          "relative_peak": 1.4761302587201107e-07,
+          "cycles": 19630
+        },
+        {
+          "pe": 6,
+          "relative_l2": 1.1639505420063034e-07,
+          "relative_peak": 1.4761302587201107e-07,
+          "cycles": 19630
+        },
+        {
+          "pe": 7,
+          "relative_l2": 1.1639505420063034e-07,
+          "relative_peak": 1.4761302587201107e-07,
+          "cycles": 19630
+        }
+      ]
+    },
+    {
+      "variant": "composed",
+      "case": 2,
+      "metrics": [
+        {
+          "pe": 0,
+          "relative_l2": 0.0,
+          "relative_peak": 0.0,
+          "cycles": 19622
+        },
+        {
+          "pe": 1,
+          "relative_l2": 0.0,
+          "relative_peak": 0.0,
+          "cycles": 19630
+        },
+        {
+          "pe": 2,
+          "relative_l2": 0.0,
+          "relative_peak": 0.0,
+          "cycles": 19630
+        },
+        {
+          "pe": 3,
+          "relative_l2": 0.0,
+          "relative_peak": 0.0,
+          "cycles": 19630
+        },
+        {
+          "pe": 4,
+          "relative_l2": 0.0,
+          "relative_peak": 0.0,
+          "cycles": 19630
+        },
+        {
+          "pe": 5,
+          "relative_l2": 0.0,
+          "relative_peak": 0.0,
+          "cycles": 19630
+        },
+        {
+          "pe": 6,
+          "relative_l2": 0.0,
+          "relative_peak": 0.0,
+          "cycles": 19630
+        },
+        {
+          "pe": 7,
+          "relative_l2": 0.0,
+          "relative_peak": 0.0,
+          "cycles": 19630
+        }
+      ]
+    },
+    {
+      "variant": "composed",
+      "case": 3,
+      "metrics": [
+        {
+          "pe": 0,
+          "relative_l2": 1.1639505420063034e-07,
+          "relative_peak": 1.4761302587201107e-07,
+          "cycles": 19622
+        },
+        {
+          "pe": 1,
+          "relative_l2": 1.1639505420063034e-07,
+          "relative_peak": 1.4761302587201107e-07,
+          "cycles": 19630
+        },
+        {
+          "pe": 2,
+          "relative_l2": 1.1639505420063034e-07,
+          "relative_peak": 1.4761302587201107e-07,
+          "cycles": 19630
+        },
+        {
+          "pe": 3,
+          "relative_l2": 1.1639505420063034e-07,
+          "relative_peak": 1.4761302587201107e-07,
+          "cycles": 19630
+        },
+        {
+          "pe": 4,
+          "relative_l2": 1.1639505420063034e-07,
+          "relative_peak": 1.4761302587201107e-07,
+          "cycles": 19630
+        },
+        {
+          "pe": 5,
+          "relative_l2": 1.1639505420063034e-07,
+          "relative_peak": 1.4761302587201107e-07,
+          "cycles": 19630
+        },
+        {
+          "pe": 6,
+          "relative_l2": 1.1639505420063034e-07,
+          "relative_peak": 1.4761302587201107e-07,
+          "cycles": 19630
+        },
+        {
+          "pe": 7,
+          "relative_l2": 1.1639505420063034e-07,
+          "relative_peak": 1.4761302587201107e-07,
+          "cycles": 19630
+        }
+      ]
+    },
+    {
+      "variant": "baseline",
+      "case": 0,
+      "metrics": [
+        {
+          "pe": 0,
+          "relative_l2": 1.1639505420063034e-07,
+          "relative_peak": 1.4761302587201107e-07,
+          "cycles": 19622
+        },
+        {
+          "pe": 1,
+          "relative_l2": 1.1639505420063034e-07,
+          "relative_peak": 1.4761302587201107e-07,
+          "cycles": 19630
+        },
+        {
+          "pe": 2,
+          "relative_l2": 1.1639505420063034e-07,
+          "relative_peak": 1.4761302587201107e-07,
+          "cycles": 19630
+        },
+        {
+          "pe": 3,
+          "relative_l2": 1.1639505420063034e-07,
+          "relative_peak": 1.4761302587201107e-07,
+          "cycles": 19630
+        },
+        {
+          "pe": 4,
+          "relative_l2": 1.1639505420063034e-07,
+          "relative_peak": 1.4761302587201107e-07,
+          "cycles": 19630
+        },
+        {
+          "pe": 5,
+          "relative_l2": 1.1639505420063034e-07,
+          "relative_peak": 1.4761302587201107e-07,
+          "cycles": 19630
+        },
+        {
+          "pe": 6,
+          "relative_l2": 1.1639505420063034e-07,
+          "relative_peak": 1.4761302587201107e-07,
+          "cycles": 19630
+        },
+        {
+          "pe": 7,
+          "relative_l2": 1.1639505420063034e-07,
+          "relative_peak": 1.4761302587201107e-07,
+          "cycles": 19630
+        }
+      ]
+    },
+    {
+      "variant": "baseline",
+      "case": 1,
+      "metrics": [
+        {
+          "pe": 0,
+          "relative_l2": 1.1639505420063034e-07,
+          "relative_peak": 1.4761302587201107e-07,
+          "cycles": 19622
+        },
+        {
+          "pe": 1,
+          "relative_l2": 1.1639505420063034e-07,
+          "relative_peak": 1.4761302587201107e-07,
+          "cycles": 19630
+        },
+        {
+          "pe": 2,
+          "relative_l2": 1.1639505420063034e-07,
+          "relative_peak": 1.4761302587201107e-07,
+          "cycles": 19630
+        },
+        {
+          "pe": 3,
+          "relative_l2": 1.1639505420063034e-07,
+          "relative_peak": 1.4761302587201107e-07,
+          "cycles": 19630
+        },
+        {
+          "pe": 4,
+          "relative_l2": 1.1639505420063034e-07,
+          "relative_peak": 1.4761302587201107e-07,
+          "cycles": 19630
+        },
+        {
+          "pe": 5,
+          "relative_l2": 1.1639505420063034e-07,
+          "relative_peak": 1.4761302587201107e-07,
+          "cycles": 19630
+        },
+        {
+          "pe": 6,
+          "relative_l2": 1.1639505420063034e-07,
+          "relative_peak": 1.4761302587201107e-07,
+          "cycles": 19630
+        },
+        {
+          "pe": 7,
+          "relative_l2": 1.1639505420063034e-07,
+          "relative_peak": 1.4761302587201107e-07,
+          "cycles": 19630
+        }
+      ]
+    },
+    {
+      "variant": "baseline",
+      "case": 2,
+      "metrics": [
+        {
+          "pe": 0,
+          "relative_l2": 0.0,
+          "relative_peak": 0.0,
+          "cycles": 19622
+        },
+        {
+          "pe": 1,
+          "relative_l2": 0.0,
+          "relative_peak": 0.0,
+          "cycles": 19630
+        },
+        {
+          "pe": 2,
+          "relative_l2": 0.0,
+          "relative_peak": 0.0,
+          "cycles": 19630
+        },
+        {
+          "pe": 3,
+          "relative_l2": 0.0,
+          "relative_peak": 0.0,
+          "cycles": 19630
+        },
+        {
+          "pe": 4,
+          "relative_l2": 0.0,
+          "relative_peak": 0.0,
+          "cycles": 19630
+        },
+        {
+          "pe": 5,
+          "relative_l2": 0.0,
+          "relative_peak": 0.0,
+          "cycles": 19630
+        },
+        {
+          "pe": 6,
+          "relative_l2": 0.0,
+          "relative_peak": 0.0,
+          "cycles": 19630
+        },
+        {
+          "pe": 7,
+          "relative_l2": 0.0,
+          "relative_peak": 0.0,
+          "cycles": 19630
+        }
+      ]
+    },
+    {
+      "variant": "baseline",
+      "case": 3,
+      "metrics": [
+        {
+          "pe": 0,
+          "relative_l2": 1.1639505420063034e-07,
+          "relative_peak": 1.4761302587201107e-07,
+          "cycles": 19622
+        },
+        {
+          "pe": 1,
+          "relative_l2": 1.1639505420063034e-07,
+          "relative_peak": 1.4761302587201107e-07,
+          "cycles": 19630
+        },
+        {
+          "pe": 2,
+          "relative_l2": 1.1639505420063034e-07,
+          "relative_peak": 1.4761302587201107e-07,
+          "cycles": 19630
+        },
+        {
+          "pe": 3,
+          "relative_l2": 1.1639505420063034e-07,
+          "relative_peak": 1.4761302587201107e-07,
+          "cycles": 19630
+        },
+        {
+          "pe": 4,
+          "relative_l2": 1.1639505420063034e-07,
+          "relative_peak": 1.4761302587201107e-07,
+          "cycles": 19630
+        },
+        {
+          "pe": 5,
+          "relative_l2": 1.1639505420063034e-07,
+          "relative_peak": 1.4761302587201107e-07,
+          "cycles": 19630
+        },
+        {
+          "pe": 6,
+          "relative_l2": 1.1639505420063034e-07,
+          "relative_peak": 1.4761302587201107e-07,
+          "cycles": 19630
+        },
+        {
+          "pe": 7,
+          "relative_l2": 1.1639505420063034e-07,
+          "relative_peak": 1.4761302587201107e-07,
+          "cycles": 19630
+        }
+      ]
+    }
+  ],
+  "accepted_scoped": true,
+  "static_proof": "s1-partition-collective-static-review.json plus candidate artifact trees exact",
+  "scope": "Actual isolated-process SDK comparison, eight original tiles, full128x896 contraction with line allreduce across four compiler partitions. No full-vocabulary or model inference proof; no claim of root cause for145950 or official support for artifact composition."
+}

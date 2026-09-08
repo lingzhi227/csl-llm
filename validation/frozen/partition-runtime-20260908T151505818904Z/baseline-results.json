@@ -1,0 +1,197 @@
+{
+  "success": true,
+  "variants": [
+    {
+      "variant": "baseline",
+      "cases": [
+        {
+          "case": "canonical-shards",
+          "metrics": [
+            {
+              "pe": 0,
+              "relative_l2": 1.1639505420063034e-07,
+              "relative_peak": 1.4761302587201107e-07
+            },
+            {
+              "pe": 1,
+              "relative_l2": 1.1639505420063034e-07,
+              "relative_peak": 1.4761302587201107e-07
+            },
+            {
+              "pe": 2,
+              "relative_l2": 1.1639505420063034e-07,
+              "relative_peak": 1.4761302587201107e-07
+            },
+            {
+              "pe": 3,
+              "relative_l2": 1.1639505420063034e-07,
+              "relative_peak": 1.4761302587201107e-07
+            },
+            {
+              "pe": 4,
+              "relative_l2": 1.1639505420063034e-07,
+              "relative_peak": 1.4761302587201107e-07
+            },
+            {
+              "pe": 5,
+              "relative_l2": 1.1639505420063034e-07,
+              "relative_peak": 1.4761302587201107e-07
+            },
+            {
+              "pe": 6,
+              "relative_l2": 1.1639505420063034e-07,
+              "relative_peak": 1.4761302587201107e-07
+            },
+            {
+              "pe": 7,
+              "relative_l2": 1.1639505420063034e-07,
+              "relative_peak": 1.4761302587201107e-07
+            }
+          ],
+          "actual_sha256": "fb6fa480876992bd19b8445822a14ae3362cb253d7fc1856280daf934e489479"
+        },
+        {
+          "case": "negative",
+          "metrics": [
+            {
+              "pe": 0,
+              "relative_l2": 1.1639505420063034e-07,
+              "relative_peak": 1.4761302587201107e-07
+            },
+            {
+              "pe": 1,
+              "relative_l2": 1.1639505420063034e-07,
+              "relative_peak": 1.4761302587201107e-07
+            },
+            {
+              "pe": 2,
+              "relative_l2": 1.1639505420063034e-07,
+              "relative_peak": 1.4761302587201107e-07
+            },
+            {
+              "pe": 3,
+              "relative_l2": 1.1639505420063034e-07,
+              "relative_peak": 1.4761302587201107e-07
+            },
+            {
+              "pe": 4,
+              "relative_l2": 1.1639505420063034e-07,
+              "relative_peak": 1.4761302587201107e-07
+            },
+            {
+              "pe": 5,
+              "relative_l2": 1.1639505420063034e-07,
+              "relative_peak": 1.4761302587201107e-07
+            },
+            {
+              "pe": 6,
+              "relative_l2": 1.1639505420063034e-07,
+              "relative_peak": 1.4761302587201107e-07
+            },
+            {
+              "pe": 7,
+              "relative_l2": 1.1639505420063034e-07,
+              "relative_peak": 1.4761302587201107e-07
+            }
+          ],
+          "actual_sha256": "cdca5f733ed053bbae718d20e7f3ccb0e6ef136a6123b759e0d97cf861effb83"
+        },
+        {
+          "case": "zero",
+          "metrics": [
+            {
+              "pe": 0,
+              "relative_l2": 0.0,
+              "relative_peak": 0.0
+            },
+            {
+              "pe": 1,
+              "relative_l2": 0.0,
+              "relative_peak": 0.0
+            },
+            {
+              "pe": 2,
+              "relative_l2": 0.0,
+              "relative_peak": 0.0
+            },
+            {
+              "pe": 3,
+              "relative_l2": 0.0,
+              "relative_peak": 0.0
+            },
+            {
+              "pe": 4,
+              "relative_l2": 0.0,
+              "relative_peak": 0.0
+            },
+            {
+              "pe": 5,
+              "relative_l2": 0.0,
+              "relative_peak": 0.0
+            },
+            {
+              "pe": 6,
+              "relative_l2": 0.0,
+              "relative_peak": 0.0
+            },
+            {
+              "pe": 7,
+              "relative_l2": 0.0,
+              "relative_peak": 0.0
+            }
+          ],
+          "actual_sha256": "d60ff1dd258f49145c2a4044bb35ca25200a3a3948ed3060d7b41a5967ea714b"
+        },
+        {
+          "case": "repeat",
+          "metrics": [
+            {
+              "pe": 0,
+              "relative_l2": 1.1639505420063034e-07,
+              "relative_peak": 1.4761302587201107e-07
+            },
+            {
+              "pe": 1,
+              "relative_l2": 1.1639505420063034e-07,
+              "relative_peak": 1.4761302587201107e-07
+            },
+            {
+              "pe": 2,
+              "relative_l2": 1.1639505420063034e-07,
+              "relative_peak": 1.4761302587201107e-07
+            },
+            {
+              "pe": 3,
+              "relative_l2": 1.1639505420063034e-07,
+              "relative_peak": 1.4761302587201107e-07
+            },
+            {
+              "pe": 4,
+              "relative_l2": 1.1639505420063034e-07,
+              "relative_peak": 1.4761302587201107e-07
+            },
+            {
+              "pe": 5,
+              "relative_l2": 1.1639505420063034e-07,
+              "relative_peak": 1.4761302587201107e-07
+            },
+            {
+              "pe": 6,
+              "relative_l2": 1.1639505420063034e-07,
+              "relative_peak": 1.4761302587201107e-07
+            },
+            {
+              "pe": 7,
+              "relative_l2": 1.1639505420063034e-07,
+              "relative_peak": 1.4761302587201107e-07
+            }
+          ],
+          "actual_sha256": "7602ba8d76211617b3b4ff7a8807e7576e6ae6cebf7b596563b960c5a9595a01"
+        }
+      ],
+      "initial_weights_sha256": "a176c8c26cf0816c0703d34e8f74de3479c15f52b5644bd45b4138daca9f5c78",
+      "final_weights_sha256": "a176c8c26cf0816c0703d34e8f74de3479c15f52b5644bd45b4138daca9f5c78"
+    }
+  ],
+  "scope": "Actual SDK direct and experimentally composed intact compiler ELF binaries, 8 original128x112 tied matrix tiles, four cases each; collective=True. Full raw weight readback before/after; no host weight H2D or neural arithmetic. Not official SDK composition support, full vocabulary or model inference."
+}

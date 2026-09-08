@@ -1,0 +1,32 @@
+// Original128x896 contraction across eight resident matrix shards.
+// Used to qualify intact compiler partitions across real reduction routes.
+param memcpy_params;
+param weight_file;
+param ordinal:u16;
+const sys=@import_module("<memcpy/memcpy>",memcpy_params);
+const clock=@import_module("<time>");
+const initial=@import_module(weight_file);
+const kernel=@import_module("kernel.csl",.{.rows=128,.columns=112});
+const line=@import_module("line.csl",.{.ordinal=ordinal,.participants=8,.length=128,
+ .colors=[3]color{@get_color(0),@get_color(1),@get_color(2)},
+ .task_id=@get_local_task_id(10),.on_complete=finished});
+var weights=initial.values;
+var input=@zeros([112]f32);var partial=@zeros([128]f32);var output=@zeros([128]f32);
+var progress=@zeros([1]u32);var timing=@zeros([6]u16);
+var started=@zeros([3]u16);var ended=@zeros([3]u16);var active:bool=false;
+fn compute() void {
+ @assert(!active);active=true;clock.enable_tsc();clock.get_timestamp(&started);
+ kernel.compute(@ptrcast([*]u16,&weights),&input,&partial);
+ line.start(&partial,&output);
+}
+fn finished() void {
+ @assert(active);clock.get_timestamp(&ended);clock.disable_tsc();
+ for(@range(u16,3))|i|{timing[i]=started[i];timing[i+3]=ended[i];}
+ active=false;progress[0]+=1;sys.unblock_cmd_stream();
+}
+const wp:[*]u8=&weights;const ip:[*]f32=&input;const op:[*]f32=&output;
+const pp:[*]u32=&progress;const tp:[*]u16=&timing;
+comptime {
+ @export_symbol(wp,"weights");@export_symbol(ip,"input");@export_symbol(op,"output");
+ @export_symbol(pp,"progress");@export_symbol(tp,"timing");@export_symbol(compute);
+}

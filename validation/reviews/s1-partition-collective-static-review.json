@@ -1,0 +1,21 @@
+{
+  "reviewed_at": "2026-09-08T15:15:30.159222+00:00",
+  "run": "partition-compile-20260908T150732487335Z",
+  "manifest_sha256": "bdf8871d4f7ebecaa27a4ab58ac0ca8c1faf481dd69de32fb03e1790102a0575",
+  "execution_sha256": "628090ea2fab294c071c467fe889387b9f3b61ccf2da3afe5455e4aeb8c25596",
+  "composition_sha256": "4bb379fa5da20a4b8be515bca8da66413f20ca30d9abdfde1b5cbab028ef7197",
+  "all_manifest_files_exact": true,
+  "all_tracked_pids_absent": true,
+  "elapsed_seconds": 21.418433725833893,
+  "peak_rss_kib": 379428,
+  "direct_baseline_ordered_loader_segments_and_allocated_sections_exact": true,
+  "all_application_coordinates_exact": true,
+  "eight_original_weight_tiles_loaded_exact": true,
+  "selected_elf_files_unchanged": true,
+  "io_and_rpc_metadata_exact": true,
+  "accepted_compile_static_only": true,
+  "limitations": [
+    "SDK ELFObject is a shared dependency; manual ELF64 sections parsed independently.",
+    "No SdkRuntime, inter-PE communication, full vocabulary scalability or model inference proof."
+  ]
+}

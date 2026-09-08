@@ -49,6 +49,8 @@ A **one-tile native-u8 static-weight SDK probe** now passes full before/after we
 
 An **experimental two-PE intact-artifact composition** now passes isolated SDK runtime comparison.256/1024 real-tile compilation probes remain separately scoped compiler results with zero-filled placeholders. [Limits and source prerequisites](docs/PARTITION-EXPERIMENT.md).
 
+The **eight-PE cross-partition line allreduce** now also passes actual SDK execution for a complete 128 × 896 contraction, with independent numerical checks and exact direct/composed output comparison. [Evidence and boundaries](docs/PARTITION-EXPERIMENT.md#eight-pe-cross-partition-collective-acceptance). Full-model acceptance remains open.
+
 ## Repository layout
 
 ```text

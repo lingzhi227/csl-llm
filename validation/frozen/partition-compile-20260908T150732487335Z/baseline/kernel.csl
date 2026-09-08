@@ -1,0 +1,30 @@
+// Exact BF16 storage in [columns, rows] order; synchronous DSR3/4 lease.
+// Packed contiguous reads and persistent descriptors avoid per-column setup.
+param rows: u16;
+param columns: u16;
+comptime { @comptime_assert(rows > 0 and columns > 0); }
+var expanded = @zeros([rows]f32);
+const pack_dst=@get_dsr(dsr_dest,3);
+const pack_src=@get_dsr(dsr_src0,3);
+const result_dst=@get_dsr(dsr_dest,4);
+const result_src=@get_dsr(dsr_src0,4);
+const weight_src=@get_dsr(dsr_src1,4);
+fn step(value:f32) void {
+  @mov16(pack_dst,pack_src);
+  @fmacs(result_dst,result_src,weight_src,value);
+}
+fn compute(weights:[*]u16,input:[*]f32,output:[*]f32) void {
+  const yd=@get_dsd(mem1d_dsd,.{.base_address=output,.extent=rows});
+  const fd=@get_dsd(mem1d_dsd,.{.base_address=&expanded,.extent=rows});
+  const low=@get_dsd(mem1d_dsd,.{.base_address=@ptrcast([*]u16,&expanded),.extent=rows,.stride=2});
+  const high=@increment_dsd_offset(low,1,u16);
+  const wd=@get_dsd(mem1d_dsd,.{.base_address=weights,.extent=rows});
+  const xd=@get_dsd(mem1d_dsd,.{.base_address=input,.extent=columns});
+  @fmovs(yd,0.0);@fmovs(fd,0.0);
+  @load_to_dsr(pack_dst,high,.{.save_address=false});
+  @load_to_dsr(pack_src,wd,.{.save_address=true});
+  @load_to_dsr(result_dst,yd,.{.save_address=false});
+  @load_to_dsr(result_src,yd,.{.save_address=false});
+  @load_to_dsr(weight_src,fd,.{.save_address=false});
+  @map(step,xd);
+}

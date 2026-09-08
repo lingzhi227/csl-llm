@@ -1,5 +1,5 @@
 {
-  "scope": "Scoped two-PE isolated artifact-composition runtime and supporting partial-weight compilation probes, 2026-09-08",
+  "scope": "Eight-PE cross-partition collective SDK acceptance and prior scoped milestones, 2026-09-08",
   "files": [
     {
       "path": ".gitignore",
@@ -13,8 +13,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 6023,
-      "sha256": "d9b4dd9e4b6d9d0531943ac4c31b7f032c67b793027ce15c01a0e5e24859b30f"
+      "bytes": 6367,
+      "sha256": "be60687088ee9f110a386ba75441b4c11a75a5fe16c6781afa17b0284280f354"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
@@ -125,6 +125,21 @@
       "path": "csl/programs/packet_fanin/pe.csl",
       "bytes": 2514,
       "sha256": "0ac7cde83348e5e3af2add718502acb66574ae1d604bfa582c7f95190c3e7630"
+    },
+    {
+      "path": "csl/programs/partition_collective/kernel.csl",
+      "bytes": 1387,
+      "sha256": "3e92175efe12b28065bb77934c54136db3c9287c68c81877781a0e527354304c"
+    },
+    {
+      "path": "csl/programs/partition_collective/line.csl",
+      "bytes": 3947,
+      "sha256": "21f8628d937c6e481c24a45747895fb27caa1bd2a6b18d7338e138d492a4a529"
+    },
+    {
+      "path": "csl/programs/partition_collective/pe.csl",
+      "bytes": 1570,
+      "sha256": "ed33402bf04fde9c242bb084c01245a3c70081caed5e8b9b3fba7947a80c3b70"
     },
     {
       "path": "csl/programs/resident_decoder/input.csl",
@@ -298,8 +313,8 @@
     },
     {
       "path": "docs/PARTITION-EXPERIMENT.md",
-      "bytes": 2731,
-      "sha256": "ae7f224b233a79f76a44aec778000d73f1e8df47ae669269f409df0051f64419"
+      "bytes": 4957,
+      "sha256": "893e715c04f79305b8db1ef6cea29b43166a501a731b5fe99c5070231c2a81f8"
     },
     {
       "path": "docs/REFERENCE.md",
@@ -323,8 +338,8 @@
     },
     {
       "path": "docs/STATUS.md",
-      "bytes": 2894,
-      "sha256": "f88d34b312f20f79ff90308874e6dcb0a49d409a78c5dfe666a69cfff2604c0a"
+      "bytes": 3255,
+      "sha256": "3c86c7609c20e0183c38a12d916edf958f3ade7c21d7c1dbc44c2b4f1cc7db2c"
     },
     {
       "path": "evidence/model-inventory.json",
@@ -338,8 +353,13 @@
     },
     {
       "path": "release/CHECKS.md",
-      "bytes": 9025,
-      "sha256": "3a4b7769f7f011c2d5312c57cb7cc0a4e46d38b0f6b4e38d59ca9d8108d9fb31"
+      "bytes": 9286,
+      "sha256": "18577750fae14f911f0516bea87efa3066cdbf4cf30142eb1a4c66df4290476a"
+    },
+    {
+      "path": "release/COLLECTIVE-CHECKS.json",
+      "bytes": 1250,
+      "sha256": "b45323a0d46587123ebf481411705061492345de45930ef0755787d653f53f21"
     },
     {
       "path": "release/DECODER-CHECKS.json",
@@ -585,6 +605,16 @@
       "path": "tools/packet_probe.py",
       "bytes": 7678,
       "sha256": "9fba7d15dc37aa03e1f3c7cc309c2b2fc8f462f971cfdfd519cd74cfdb8cd6aa"
+    },
+    {
+      "path": "tools/partition_collective_compile_probe.py",
+      "bytes": 8054,
+      "sha256": "58823d4537c1da3cb590b3cf98a8e532dda14dd14beb7b2d8fe8d0dfe51724bf"
+    },
+    {
+      "path": "tools/partition_collective_runtime_probe.py",
+      "bytes": 10119,
+      "sha256": "d4650ef9e06ed9a5d70f7650584ecb866cab61d3ed45f47a93e1e9efbabcdd4a"
     },
     {
       "path": "tools/partition_compile_probe.py",
@@ -1282,6 +1312,66 @@
       "sha256": "c60898fc73e2b5654abcbdf6bd56222c5fef12daed4dc40af1cc01ea1897ae84"
     },
     {
+      "path": "validation/frozen/partition-compile-20260908T150732487335Z/baseline/kernel.csl",
+      "bytes": 1387,
+      "sha256": "3e92175efe12b28065bb77934c54136db3c9287c68c81877781a0e527354304c"
+    },
+    {
+      "path": "validation/frozen/partition-compile-20260908T150732487335Z/baseline/layout.csl",
+      "bytes": 1180,
+      "sha256": "ae2cd0163104b562b3da31f342760a29fa9841ef8f1e07fdae7858ccba172eda"
+    },
+    {
+      "path": "validation/frozen/partition-compile-20260908T150732487335Z/baseline/line.csl",
+      "bytes": 3947,
+      "sha256": "21f8628d937c6e481c24a45747895fb27caa1bd2a6b18d7338e138d492a4a529"
+    },
+    {
+      "path": "validation/frozen/partition-compile-20260908T150732487335Z/baseline/pe.csl",
+      "bytes": 1570,
+      "sha256": "ed33402bf04fde9c242bb084c01245a3c70081caed5e8b9b3fba7947a80c3b70"
+    },
+    {
+      "path": "validation/frozen/partition-compile-20260908T150732487335Z/baseline/zero.csl",
+      "bytes": 32,
+      "sha256": "946404c62cf3106007d73d49c97035b5c0dcd0b56917cce45467e03790cc28fc"
+    },
+    {
+      "path": "validation/frozen/partition-compile-20260908T150732487335Z/compare_elf_images.py",
+      "bytes": 2353,
+      "sha256": "64bdf83955560a94e1e0389f9f6ee81c91632c370e70560462d1f285f1852f6f"
+    },
+    {
+      "path": "validation/frozen/partition-compile-20260908T150732487335Z/config.json",
+      "bytes": 971,
+      "sha256": "f1d58cf5722147a12dfb568542fbf88d854921ff21c457b4a912c1f473898d36"
+    },
+    {
+      "path": "validation/frozen/partition-compile-20260908T150732487335Z/driver.py",
+      "bytes": 8017,
+      "sha256": "cf4135675b405c1a1fa9c96ae2271f994948aaeae305e3650afc6012a8e520a2"
+    },
+    {
+      "path": "validation/frozen/partition-compile-20260908T150732487335Z/elf_partition.py",
+      "bytes": 6022,
+      "sha256": "5dae892140996777bc981c4be61bd7dc7edf9e5cad0cc4bd5c2fdeb93a31e628"
+    },
+    {
+      "path": "validation/frozen/partition-compile-20260908T150732487335Z/execution-summary.json",
+      "bytes": 590,
+      "sha256": "399255b9970ca1c5278a13c948b78c3ef8bb0f9abe4016fb02739b8fb7d5196a"
+    },
+    {
+      "path": "validation/frozen/partition-compile-20260908T150732487335Z/manifest.json",
+      "bytes": 6789,
+      "sha256": "bdf8871d4f7ebecaa27a4ab58ac0ca8c1faf481dd69de32fb03e1790102a0575"
+    },
+    {
+      "path": "validation/frozen/partition-compile-20260908T150732487335Z/results.json",
+      "bytes": 510,
+      "sha256": "644ccae27692fd28bdb086e09e8bce318d5e68bbf5ad3d00e962797da9ccd5b8"
+    },
+    {
       "path": "validation/frozen/partition-runtime-20260908T150631332380Z/baseline-results.json",
       "bytes": 2540,
       "sha256": "a6a616a10dae01633fde0aacbae5a7348e4fefa73dad9fc6ecaa14b200ebbf98"
@@ -1315,6 +1405,41 @@
       "path": "validation/frozen/partition-runtime-20260908T150631332380Z/results.json",
       "bytes": 4810,
       "sha256": "ec8e91add6c9c1a3139fe58b69d81f822a2c418737340712bb5035a7a66c4968"
+    },
+    {
+      "path": "validation/frozen/partition-runtime-20260908T151505818904Z/baseline-results.json",
+      "bytes": 6127,
+      "sha256": "1e274509f30ce354e9da909fbce70db9e6ac610245e7ba74f19dd28c5c115826"
+    },
+    {
+      "path": "validation/frozen/partition-runtime-20260908T151505818904Z/composed-results.json",
+      "bytes": 6127,
+      "sha256": "3f1d97b88072df8e20b84c7465642893fed4284f7ca1c120117abbcfdeb6d77b"
+    },
+    {
+      "path": "validation/frozen/partition-runtime-20260908T151505818904Z/config.json",
+      "bytes": 1153,
+      "sha256": "bec94987908c7ed57aef68a152f0d0f4e99936cea7d6ecca209d323841bf0f35"
+    },
+    {
+      "path": "validation/frozen/partition-runtime-20260908T151505818904Z/driver.py",
+      "bytes": 10101,
+      "sha256": "9de8d0cb39570e865d9ce05c510e446bcce4bdb63e98446ee4133a149e692745"
+    },
+    {
+      "path": "validation/frozen/partition-runtime-20260908T151505818904Z/execution-summary.json",
+      "bytes": 590,
+      "sha256": "7c960114b72eee6af2bd9190b8d148b146c3386fec0c4a76c3ab7458586f4144"
+    },
+    {
+      "path": "validation/frozen/partition-runtime-20260908T151505818904Z/manifest.json",
+      "bytes": 7305,
+      "sha256": "f1ff0fd927206409913de4bf601965c0e245f36711e03175db6257ad242486a0"
+    },
+    {
+      "path": "validation/frozen/partition-runtime-20260908T151505818904Z/results.json",
+      "bytes": 11985,
+      "sha256": "ea851ce8efef320f64873c14e40974bfa0cb103650fe617fa59091745e9eaae3"
     },
     {
       "path": "validation/frozen/projection-down-20260908T094329141262Z/bf16_transport.py",
@@ -2070,6 +2195,21 @@
       "path": "validation/reviews/s1-packets-review.json",
       "bytes": 1114,
       "sha256": "a5eb860753dd74db09fb77b784051c5b8efcb142fa5e47abd3b76978ed8052cd"
+    },
+    {
+      "path": "validation/reviews/s1-partition-collective-resource-review.json",
+      "bytes": 896,
+      "sha256": "cb2d6516bef5bfa4e791be9321b561e1107cddbf16eb29f7d57595ad93afb367"
+    },
+    {
+      "path": "validation/reviews/s1-partition-collective-runtime-numeric-review.json",
+      "bytes": 11834,
+      "sha256": "3fb9873057a4a424889d5e4312513df18ca1ecc96094a6e34c1c63287bfdfce2"
+    },
+    {
+      "path": "validation/reviews/s1-partition-collective-static-review.json",
+      "bytes": 1024,
+      "sha256": "ba5013d31ae3f4afecbc3464dae49fe6827b0c99b13bc206fcb1272ea49450b0"
     },
     {
       "path": "validation/reviews/s1-partition-compile-static-review.json",

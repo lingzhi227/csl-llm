@@ -1,0 +1,7 @@
+{
+  "success": true,
+  "compile_only": true,
+  "full_direct_baseline_loader_image_equal": true,
+  "composition_sha256": "4bb379fa5da20a4b8be515bca8da66413f20ca30d9abdfde1b5cbab028ef7197",
+  "scope": "8 original tied matrix tiles, collective=True, direct compilation and full-layout partitions. Select/copy complete unmodified ELF files; require identical SDK loader segments/coordinates/sections/RPC/I/O to direct baseline. Compile-only experimental artifact composition, no SdkRuntime or model acceptance."
+}

@@ -55,3 +55,5 @@ New tools retain frozen generator/worker behavior with isolated SDK executor and
 ## Isolated two-PE artifact-composition milestone
 
 Independently checked all remote recursive manifests for runtime/static composition and256/1024compile probes (31/24/269/1037entries). Mirrored files and review/execution/results identities match; all8actual output hashes match and direct/composed non-timing arrays compare bitwise. Generators/helpers use frozen source with isolated public SDK paths. The256/1024encoder snapshots match. Eight host tests pass/oneLinux-only skip; syntax/runtime CLI, public content and reader links pass. No new SDK experiment or claim of official artifact-composition support. Source-only reproduction prerequisites, zero-placeholder limits, same-process failure134 and unqualified collective/model scope remain explicit.
+
+Eight-PE collective publication: both frozen recursive manifests verified on the original evidence host; review/run hashes, eight actual-output hashes and non-timing array bit equality checked locally. See `COLLECTIVE-CHECKS.json`. No duplicate SDK execution.
