@@ -78,3 +78,7 @@ After preparing the same reference, run `python tools/projection_probe.py --prep
 ## Full native DOWN
 
 Run `python tools/down_projection_probe.py --prepare --projection down`, then execute the printed directory with the same tool and `--execute`. The host prepares this standalone projection input from the retained reference. This does not demonstrate a device-connected UP/GATE/SwiGLU/DOWN pipeline. The resource report covers static application ELF sections, not complete runtime memory safety.
+
+## Complete resident MLP
+
+Use the [resident MLP workflow](RESIDENT-MLP.md) to prepare fixtures, generate local static weight modules, and execute the accepted route. Do not publish the generated weight-bearing CSL or ELFs.

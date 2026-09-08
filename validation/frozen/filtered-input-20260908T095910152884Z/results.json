@@ -1,0 +1,22 @@
+{
+  "success": true,
+  "cases": [
+    {
+      "epoch": 0,
+      "actual_sha256": "45a9eb29b5362597982fcb0120462867b9a58adc28ec01136c569dc9d8df905d"
+    },
+    {
+      "epoch": 1,
+      "actual_sha256": "79bb39e55ba4aa9989b1892fe63343165bd7a386b2c70544df86432995f47bfa"
+    },
+    {
+      "epoch": 2,
+      "actual_sha256": "8d7b5aa0fbb85c57ea47b337f5e61f00974ffec41daed8078983b778cee3c242"
+    },
+    {
+      "epoch": 3,
+      "actual_sha256": "637bd914bcf5d76fc93037f38e6f1bf13b50a7ffdf560b9d497c3dc73882efde"
+    }
+  ],
+  "scope": "Four fixed-period frames, two44-shard replicas, counter-filter112 elements perPE including64 padded tail values; no filter/queue reconfiguration. Not full layer or global multicast qualification."
+}

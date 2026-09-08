@@ -1,0 +1,42 @@
+{
+  "reviewed_at": "2026-09-08T10:27:23.476240+00:00",
+  "run": "static-weights-20260908T102026192675Z",
+  "manifest_sha256": "2c6771bfa097bf44f1439cd6138f4e32fe8c0d1f43932496c2b3106ecdb20e33",
+  "results_sha256": "d594ec0cd12d2e3af57f2f2f638e21b24cec3a5018ed4eb5ea97b0444aefec86",
+  "elf_sha256": "04cc902a377d90148f3cf30a169736822bf23e70cdbe65cc704fdc06d8a40a20",
+  "elf_weights_symbol": {
+    "address": 3348,
+    "size": 28672
+  },
+  "binding": "Previously independently accepted original GATE tile \u2192 all7168 CSL u32 initializer literals \u2192 actual ELF weights symbol bytes \u2192 initial/final complete SDK readback, all exact.",
+  "cases": [
+    {
+      "case": "canonical",
+      "relative_l2": 1.6993548067691733e-07,
+      "relative_peak": 1.503079591807383e-07
+    },
+    {
+      "case": "negative",
+      "relative_l2": 1.6993548067691733e-07,
+      "relative_peak": 1.503079591807383e-07
+    },
+    {
+      "case": "zero",
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "case": "repeat",
+      "relative_l2": 1.6993548067691733e-07,
+      "relative_peak": 1.503079591807383e-07
+    }
+  ],
+  "elapsed_seconds": 24.544618838932365,
+  "peak_rss_kib": 366984,
+  "scope": "One actual128x112 BF16 tile through ordinary CSL global initializers and SDK load/run; full raw weight readback before/after four actual GEMVs. No debugger memory writes, no patched ELFs, no runtime weight H2D, not whole MLP/model or large-grid loading qualification.",
+  "limitations": [
+    "One PE/one unique tile only; not916tile/full-model compilation or load feasibility.",
+    "Overlapped original MLP; walltime is not matched performance comparison.",
+    "No debugger writes, patched ELF or runtime weight H2D in this frozen driver."
+  ]
+}

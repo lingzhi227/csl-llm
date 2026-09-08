@@ -1,0 +1,13 @@
+{
+  "reviewed_at": "2026-09-08T10:40:39.432608+00:00",
+  "run": "resident-mlp-static-20260908T103112494535Z",
+  "manifest_sha256": "e05591a601487854cbd5c17b0dcf2a28890ef6251b4c6984979a1bf12a723d09",
+  "initializer_report_sha256": "0dbe18c36f29a81ab5330b5bb77516efd54d98c3c0b68a90930a7d4dccb2ef45",
+  "source_literal_tiles_checked": 916,
+  "actual_elf_weights_symbols_checked": 916,
+  "payload_bytes": 26263552,
+  "method": "Independent CSL literal parser and ELF64 symbol/section parsing; all raw bytes equal frozen fixture tiles and developer report hashes. Complete reported coordinate coverage checked.",
+  "coordinate_boundary": "Coordinate values are from developer SDK ELFMemory report; this review does not independently decode SDK ELF coordinate metadata.",
+  "source_boundary": "Fixture bytes equal old fullMLP fixture previously checked for unchanged precision; original checkpoint fullMLP binding still part of upcoming numerical acceptance.",
+  "runtime_accepted": false
+}

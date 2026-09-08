@@ -1,0 +1,47 @@
+{
+  "reviewed_at": "2026-09-08T10:02:24.273007+00:00",
+  "run": "filtered-input-20260908T095910152884Z",
+  "manifest_sha256": "15d4f8fa60794ece8b9a3cfab423e76dffc2cc9733a7e82be26c91aa193fdfa4",
+  "results_sha256": "9d2bfb533a5a2ed7f2e49928cac8ae1baae435b15152621fbc0ef8905621a70d",
+  "sdk_sha256": "fff17e81c61dcb6012bdee2941a6fdc570f5c8604967530e7b7108651258193d",
+  "cases": [
+    {
+      "epoch": 0,
+      "receiver_words_exact": 9856,
+      "all_115_pe_progress_exact": true,
+      "guard_input_sentinel_exact": true,
+      "tail_bits_exact": true
+    },
+    {
+      "epoch": 1,
+      "receiver_words_exact": 9856,
+      "all_115_pe_progress_exact": true,
+      "guard_input_sentinel_exact": true,
+      "tail_bits_exact": true
+    },
+    {
+      "epoch": 2,
+      "receiver_words_exact": 9856,
+      "all_115_pe_progress_exact": true,
+      "guard_input_sentinel_exact": true,
+      "tail_bits_exact": true
+    },
+    {
+      "epoch": 3,
+      "receiver_words_exact": 9856,
+      "all_115_pe_progress_exact": true,
+      "guard_input_sentinel_exact": true,
+      "tail_bits_exact": true
+    }
+  ],
+  "elapsed_seconds": 41.875478219939396,
+  "peak_rss_kib": 4177948,
+  "scope": "Four fixed-period frames, two44-shard replicas, counter-filter112 elements perPE including64 padded tail values; no filter/queue reconfiguration. Not full layer or global multicast qualification.",
+  "limitations": [
+    "Transport validation against frozen frames; not fresh independent source SiLU accuracy qualification.",
+    "No filter or queue reconfiguration qualification; fixed period only.",
+    "No independent ELF/DSR audit in this review.",
+    "Not full residentMLP or model acceptance."
+  ],
+  "prior_failure": "095231626063Z compile rejected color identifier shadowing builtin; renamed flow_color, prior failure retained."
+}

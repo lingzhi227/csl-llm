@@ -1,0 +1,11 @@
+{
+  "sdk_sha256": "fff17e81c61dcb6012bdee2941a6fdc570f5c8604967530e7b7108651258193d",
+  "files": {
+    "layout.csl": "8313eb57e2a5a882acb8d306ae9de5e8b5d0997c33e0054cbae6b642c5a43908",
+    "pe.csl": "0ac7cde83348e5e3af2add718502acb66574ae1d604bfa582c7f95190c3e7630",
+    "config.json": "b5d5e55310a8fa3d919791a4d262a05015d0502553b39dbc23f3b5ab8ce04f99",
+    "packets.csl": "e24ddf97eccd0af29b6216ce92760ad97f13a8bce23425fce24d7fd4675dae6c",
+    "driver.py": "cd104b5a295df7e8ef5ef859c62b72a58344ede91266899d97b3815e4470c0c1",
+    "executor.py": "a126d22d650e21205370b323139aeb1c5e3aa1cb6951e5c3527aa2201c97b0f9"
+  }
+}

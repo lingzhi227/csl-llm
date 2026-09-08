@@ -1,0 +1,14 @@
+// Fixed-period counter-filter receiver. Layout configures the matching filter
+// and multicast tree. No reconfiguration occurs between frames.
+param length:u16;
+param input_color:color;
+param queue_id:u16=4;
+param completion_task:local_task_id;
+const iq=@get_input_queue(queue_id);
+const dest=@get_dsr(dsr_dest,5);const source=@get_dsr(dsr_src1,5);
+const incoming=@get_dsd(fabin_dsd,.{.input_queue=iq,.extent=length});
+fn arm(buffer:[*]f32) void {
+ const mem=@get_dsd(mem1d_dsd,.{.base_address=buffer,.extent=length});
+ @load_to_dsr(dest,mem);@load_to_dsr(source,incoming,.{.async=true,.activate=completion_task});@mov32(dest,source,.{.async=true});
+}
+comptime {@initialize_queue(iq,.{.color=input_color});}

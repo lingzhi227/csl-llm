@@ -1,0 +1,29 @@
+{
+  "reviewed_at": "2026-09-08T09:59:31.832060+00:00",
+  "run": "packet-fanin-20260908T095259518148Z",
+  "manifest_sha256": "dacc9ddf7ab89a0ea2789726546be297dd10beed93ee68ac0e9590bff77829af",
+  "results_sha256": "f5a000018cd87610b733dda80dc889df371cbfa9a5076eb640bee0556eedf022",
+  "sdk_sha256": "fff17e81c61dcb6012bdee2941a6fdc570f5c8604967530e7b7108651258193d",
+  "checks": [
+    {
+      "epoch": 1,
+      "exact_payload_words": 4864,
+      "exact_progress_pe": 1216
+    },
+    {
+      "epoch": 2,
+      "exact_payload_words": 4864,
+      "exact_progress_pe": 1216
+    }
+  ],
+  "elapsed_seconds": 226.06005193199962,
+  "peak_rss_kib": 1236144,
+  "scope": "38 concurrent sources,128 arbitrary u32 words each, five packets each, at FFN gate-root geometry. Two reset-separated calls, exact controller payload and everyPE progress; not numerical MLP or arbitrary bidirectional traffic.",
+  "protocol_source_review": "Receiver checks epoch,group,per-source offset/count,128-word limit; root completion joins run command and38 completed sources; sender buffer reused only in send callback. Two host-reset-separated calls were executed.",
+  "limitations": [
+    "No arbitrary bidirectional/concurrent protocol or completeMLP acceptance.",
+    "Two successful calls do not prove general global reset readiness; composed MLP requires its explicit readiness barrier.",
+    "No independent ELF/DSR review in this payload/protocol review."
+  ],
+  "prior_failure": "094652549750Z compile failed on negative source_id to unsigned; later transmit body guarded by comptime source_id>=0. Failure retained."
+}

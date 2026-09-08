@@ -1,0 +1,17 @@
+{
+  "source_bundle": "projection-gate-20260908T093225528957Z",
+  "source_manifest_sha256": "b9e7a744172e84037d7dbd96a0acfcb5b56cff27ac6eae83a40e50cc6e41f574",
+  "source_inputs_sha256": "7c23ee19439001d224522f2676393845b52f58db72d6c3fb4ca5a730fab873d1",
+  "cases": [
+    "canonical",
+    "negative",
+    "zero",
+    "repeat"
+  ],
+  "simulator_threads": 1,
+  "gate": {
+    "relative_l2": 2e-06,
+    "relative_peak": 3e-06
+  },
+  "scope": "One actual128x112 BF16 tile through ordinary CSL global initializers and SDK load/run; full raw weight readback before/after four actual GEMVs. No debugger memory writes, no patched ELFs, no runtime weight H2D, not whole MLP/model or large-grid loading qualification."
+}

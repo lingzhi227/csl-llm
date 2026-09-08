@@ -2,6 +2,7 @@
 
 | Milestone | Accepted scope | Remaining limitation |
 | --- | --- | --- |
+| Complete resident layer-0 MLP | UP/GATE/SwiGLU/DOWN on device;916 weight tiles;4 cases;1280 readiness/progress locations | Not RMSNorm/residual/decoder/model; static initialization only |
 | Full layer-0 DOWN projection | Complete 896×4864 matrix, 308 PEs/7 roots, 44 input shards with padded tail; 4 cases | Input is a host fixture; not device-composed SwiGLU or complete MLP |
 | Full layer-0 GATE projection | Complete 4864×896 matrix, 304 PEs, 38 roots; 4 original-input cases; paired u32 BF16 transfer and column reads | Not whole MLP; no new independent ELF/DSR audit; not every replica output |
 | Paired BF16 transport | Exact u32 transfer/readback of one real 128×112 tile; 7 lookup/selection cases | Not exhaustive SDK bit-pattern coverage or full-vocabulary selection |
@@ -15,4 +16,4 @@ Original manifests, results, frozen CSL/driver inputs and selected independent r
 
 The old sum-only regional collective is retained. The accepted real-trace and capacity attention snapshots use separately named collective/KV modules, so later protocol changes do not silently replace the earlier qualified code.
 
-S3 has component milestones but is not closed. Other native projections, composed FFN, complete decoder layers, 24-layer/full-vocabulary generation and full-model 2048/256 acceptance remain pending. Physical hardware validation remains separate.
+S3 has component milestones but is not closed. Other native projections and complete decoder layers, 24-layer/full-vocabulary generation and full-model 2048/256 acceptance remain pending. Physical hardware validation remains separate.

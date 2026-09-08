@@ -1,0 +1,124 @@
+{
+  "success": true,
+  "cases": [
+    {
+      "case": "canonical",
+      "checks": {
+        "up": {
+          "max_abs": 4.76837158203125e-07,
+          "relative_l2": 2.8998644465968195e-07,
+          "relative_peak": 1.3989485922065554e-07
+        },
+        "gate": {
+          "max_abs": 1.9073486328125e-06,
+          "relative_l2": 2.470202168623243e-07,
+          "relative_peak": 4.94390277123054e-07
+        },
+        "activation": {
+          "max_abs": 2.980232238769531e-07,
+          "relative_l2": 3.062674880575138e-07,
+          "relative_peak": 3.2400056194657463e-07
+        },
+        "output": {
+          "max_abs": 4.76837158203125e-07,
+          "relative_l2": 2.865429984312175e-07,
+          "relative_peak": 2.6541599112767425e-07
+        },
+        "official": {
+          "max_abs": 2.384185791015625e-07,
+          "relative_l2": 2.5970086418057995e-07,
+          "relative_peak": 1.327079603410223e-07
+        }
+      },
+      "controller_cycles": 247737,
+      "actual_sha256": "8f38ab7607a359a6f67ca40da7651ccb2014442c51e41d360e341169680904fd"
+    },
+    {
+      "case": "negative",
+      "checks": {
+        "up": {
+          "max_abs": 4.76837158203125e-07,
+          "relative_l2": 2.8998644465968195e-07,
+          "relative_peak": 1.3989485922065554e-07
+        },
+        "gate": {
+          "max_abs": 1.9073486328125e-06,
+          "relative_l2": 2.470202168623243e-07,
+          "relative_peak": 4.94390277123054e-07
+        },
+        "activation": {
+          "max_abs": 9.5367431640625e-07,
+          "relative_l2": 2.2635604742328428e-07,
+          "relative_peak": 2.1356174758859422e-07
+        },
+        "output": {
+          "max_abs": 5.960464477539062e-07,
+          "relative_l2": 2.5708899398992336e-07,
+          "relative_peak": 1.269307306508571e-07
+        }
+      },
+      "controller_cycles": 247737,
+      "actual_sha256": "5058148becf13201782cedb21c4188f997b7bb05d3e717ac9ac7be08257db996"
+    },
+    {
+      "case": "zero",
+      "checks": {
+        "up": {
+          "max_abs": 0.0,
+          "relative_l2": 0.0,
+          "relative_peak": 0.0
+        },
+        "gate": {
+          "max_abs": 0.0,
+          "relative_l2": 0.0,
+          "relative_peak": 0.0
+        },
+        "activation": {
+          "max_abs": 0.0,
+          "relative_l2": 0.0,
+          "relative_peak": 0.0
+        },
+        "output": {
+          "max_abs": 0.0,
+          "relative_l2": 0.0,
+          "relative_peak": 0.0
+        }
+      },
+      "controller_cycles": 237753,
+      "actual_sha256": "c1f22af0e8c4620c9bac16b49f31c29e009a3d3bc273b69be09dfcf54007891f"
+    },
+    {
+      "case": "canonical-repeat",
+      "checks": {
+        "up": {
+          "max_abs": 4.76837158203125e-07,
+          "relative_l2": 2.8998644465968195e-07,
+          "relative_peak": 1.3989485922065554e-07
+        },
+        "gate": {
+          "max_abs": 1.9073486328125e-06,
+          "relative_l2": 2.470202168623243e-07,
+          "relative_peak": 4.94390277123054e-07
+        },
+        "activation": {
+          "max_abs": 2.980232238769531e-07,
+          "relative_l2": 3.062674880575138e-07,
+          "relative_peak": 3.2400056194657463e-07
+        },
+        "output": {
+          "max_abs": 4.76837158203125e-07,
+          "relative_l2": 2.865429984312175e-07,
+          "relative_peak": 2.6541599112767425e-07
+        },
+        "official": {
+          "max_abs": 2.384185791015625e-07,
+          "relative_l2": 2.5970086418057995e-07,
+          "relative_peak": 1.327079603410223e-07
+        }
+      },
+      "controller_cycles": 247737,
+      "actual_sha256": "395f19b879da492a6323ace42011a0f65b1d7e0b50147586266dbfe902774ad2"
+    }
+  ],
+  "scope": "Full native layer0 resident UP/GATE/SwiGLU/DOWN, device-only intermediate computation and transfer; not RMS/residual, decoder layer or model."
+}

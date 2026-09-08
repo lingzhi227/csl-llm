@@ -29,3 +29,9 @@ Verified frozen GATE and paired-u32 selection manifests, successful execution/re
 ## Full native DOWN milestone
 
 Verified all frozen manifest inputs, successful execution/results and independent numerical review hashes, four actual output hashes and the independently reviewed ELF report identity. Shared code dependencies match accepted frozen bytes. The new DOWN entry adapts paths/selector only. Six host tests pass with one Linux-only skip; Python syntax/CLI, payload and links pass. No new SDK run or publication-side ELF/DSR audit. Inputs remain host-prepared fixtures; separate UP/GATE/DOWN passes do not qualify a connected device MLP. See NATIVE-DOWN-CHECKS.json.
+
+## Complete resident MLP milestone
+
+All original manifests were verified for the accepted static MLP, packet fan-in, filtered-input and one-PE static-weight experiments, together with successful execution/results and matching independent reviews. Retained actual-output hashes match the results. Static MLP resource/initializer report hashes match their independent reviews. Publication did not rerun numerical or SDK experiments.
+
+Published drivers select their own exact frozen libraries and region helper. Regenerating the full916-tile static layout from the portable driver produces byte-identical layout CSL. Six host tests pass, with one Linux-only skip; Python syntax, Markdown links and credential/personal-path checks pass. Weight-bearing generated source was excluded by explicit per-run selection and content inspection:916 weights modules, static1PE pe.csl, NPZ and ELFs are not published. Metadata lists original hashes but not weight values. No complete-layer/model, dynamic-stack or hardware-performance qualification is implied. Original H2D timeout and supporting compile failures remain disclosed.

@@ -1,0 +1,32 @@
+{
+  "success": true,
+  "cases": [
+    {
+      "case": "canonical",
+      "relative_l2": 1.6993548067691733e-07,
+      "relative_peak": 1.503079591807383e-07,
+      "actual_sha256": "c999923442d531fcfb706d6e235511d6b156174d655f4de310e7b666cb95633e"
+    },
+    {
+      "case": "negative",
+      "relative_l2": 1.6993548067691733e-07,
+      "relative_peak": 1.503079591807383e-07,
+      "actual_sha256": "e60eb6e38c0292bdb22218076d9d89c6fa04fae92c6aa7c5d2bbd7f4f3cb41ce"
+    },
+    {
+      "case": "zero",
+      "relative_l2": 0.0,
+      "relative_peak": 0.0,
+      "actual_sha256": "52d555db8c0a18174bc8a6826f66536579bc06de994ca7d7ca8820e317731541"
+    },
+    {
+      "case": "repeat",
+      "relative_l2": 1.6993548067691733e-07,
+      "relative_peak": 1.503079591807383e-07,
+      "actual_sha256": "b543f05e9a9cdc32ff4a7ee2d04d8f2ceb937dbf9ced0bbd32c49041a499b158"
+    }
+  ],
+  "initial_weights_sha256": "833f392b6c584e0cd7751c09df8155faef98cfb40d9ced3f48764bd968a83083",
+  "final_weights_sha256": "833f392b6c584e0cd7751c09df8155faef98cfb40d9ced3f48764bd968a83083",
+  "scope": "One actual128x112 BF16 tile through ordinary CSL global initializers and SDK load/run; full raw weight readback before/after four actual GEMVs. No debugger memory writes, no patched ELFs, no runtime weight H2D, not whole MLP/model or large-grid loading qualification."
+}

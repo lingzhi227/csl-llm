@@ -8,3 +8,6 @@ evidence/*/
 *.elf
 *.core
 .DS_Store
+
+# Generated CSL may contain model weights.
+weights_*.csl

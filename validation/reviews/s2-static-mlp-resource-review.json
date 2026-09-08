@@ -1,0 +1,18 @@
+{
+  "reviewed_at": "2026-09-08T10:44:16.361252+00:00",
+  "run": "resident-mlp-static-20260908T103112494535Z",
+  "manifest_sha256": "e05591a601487854cbd5c17b0dcf2a28890ef6251b4c6984979a1bf12a723d09",
+  "elf_report_sha256": "c64772966b4636b6841c3f802f75c789893712c421ad65f24cfade5df5ff3cbb",
+  "dsr_report_sha256": "d0d0b67c1ade0452a919d7f9fe9ae672c9d33a80873c9fefea604ad7237506f2",
+  "application_elf_classes_verified": 921,
+  "max_static_high_water_bytes": 39008,
+  "min_static_free_bytes": 10144,
+  "final_dsr_families_verified": 920,
+  "nodes_checked": 8820,
+  "interference_edges_checked": 34998,
+  "method": "Independent ELF64 alloc-section parsing/hash comparison; independent final graph assignments/ranges/explicit DSR/all edges with exact family coverage.",
+  "limitations": [
+    "No dynamic-stack or runtime protocol proof.",
+    "No full-model fit or numerical-completion claim."
+  ]
+}

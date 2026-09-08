@@ -1,0 +1,9 @@
+{
+  "trace_sha256": "8bd2f53a798a3d81948619fe19c15aac55a952866f4b23440a3ffe6dc444e7c0",
+  "frame_length": 4928,
+  "valid_features": 4864,
+  "shards": 44,
+  "replicas": 2,
+  "cases": 4,
+  "scope": "Four fixed-period frames, two44-shard replicas, counter-filter112 elements perPE including64 padded tail values; no filter/queue reconfiguration. Not full layer or global multicast qualification."
+}

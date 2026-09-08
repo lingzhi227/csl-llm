@@ -1,0 +1,14 @@
+{
+  "success": true,
+  "cases": [
+    {
+      "epoch": 1,
+      "actual_sha256": "7dde428ae94880b55923a8f0d7881e7e707dec8bde1498690be2c74843aabf50"
+    },
+    {
+      "epoch": 2,
+      "actual_sha256": "53006a1b98f0990bda51497290a54fcc99f86423cbd7ddbdfb9652658585c15f"
+    }
+  ],
+  "scope": "38 concurrent sources,128 arbitrary u32 words each, five packets each, at FFN gate-root geometry. Two reset-separated calls, exact controller payload and everyPE progress; not numerical MLP or arbitrary bidirectional traffic."
+}
