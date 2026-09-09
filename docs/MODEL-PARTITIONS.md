@@ -88,3 +88,15 @@ Original intervals 11776–12799 and 12800–13823 independently close, extendin
 | 12800–13823 | 683.831056 s | 10494616 KiB | model-elf-audit-20260909T040300560930Z | model-contract-20260909T040841471502Z |
 
 The [fixed ledger](../release/MODEL-PARTITION-LEDGER.json) and [publication checks](../release/MODEL-PARTITION-13-14-CHECKS.json) bind both new intervals, their independent reviews, original manifests and execution/result identities. Six complete remote manifests were reverified. Selected source and derived summaries exclude model literals, raw tensors, binaries and private paths; original hashes retain their meanings. No compiler, SDK simulation or CPU model calculation was repeated. This remains static deployment coverage, not full-model assembly or neural inference acceptance.
+
+
+## Fifteenth and sixteenth partitions — 2026-09-09
+
+Original intervals 13824–14847 and 14848–15871 independently close, extending static coverage to **15872 of 34552 matrix blocks** across sixteen intervals. Both have 1401 ELF classes, 45456-byte maximum static high-water and 1222 DSR families. Independent initializer checks cover all 40530 application coordinates; whole-ELF compatibility verifies selected original blocks, 5978 common coordinates and ordered SDK I/O/RPC metadata. Process cleanup is independently recorded.
+
+| Interval | Compile time | Compile peak RSS | Initializer/resource audit | Whole-ELF contract |
+| --- | ---: | ---: | --- | --- |
+| 13824–14847 | 672.427124 s | 10493680 KiB | model-elf-audit-20260909T042756388119Z | model-contract-20260909T043227875920Z |
+| 14848–15871 | 675.515288 s | 10493828 KiB | model-elf-audit-20260909T043504093883Z | model-contract-20260909T044054425908Z |
+
+The [fixed ledger](../release/MODEL-PARTITION-LEDGER.json) and [publication checks](../release/MODEL-PARTITION-15-16-CHECKS.json) bind both new intervals, their independent reviews, original manifests and execution/result identities. Six complete remote manifests were reverified. Selected source and derived summaries exclude model literals, raw tensors, binaries and private paths; original hashes retain their meanings. No compiler, SDK simulation or CPU model calculation was repeated. This remains static deployment coverage, not full-model assembly or neural inference acceptance.

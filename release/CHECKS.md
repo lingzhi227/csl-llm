@@ -84,3 +84,5 @@ Partitions 9–10 and guarded generation source: six complete static remote mani
 Partitions 11–12: six complete remote manifests, local selected source, exact original intervals and independent review/execution/results bindings verified. No compiler/SDK/CPU reference rerun. See [publication record](MODEL-PARTITION-11-12-CHECKS.json).
 
 Partitions 13–14: six complete remote manifests, local selected source, exact original intervals and independent review/execution/results bindings verified. No compiler/SDK/CPU reference rerun. See [publication record](MODEL-PARTITION-13-14-CHECKS.json).
+
+Partitions 15–16: six complete remote manifests, local selected source, exact original intervals and independent review/execution/results bindings verified. No compiler/SDK/CPU reference rerun. See [publication record](MODEL-PARTITION-15-16-CHECKS.json).
