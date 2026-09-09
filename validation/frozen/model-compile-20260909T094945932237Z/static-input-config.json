@@ -1,0 +1,8187 @@
+{
+  "original_pack": "resident-weights-20260908T080621344705Z",
+  "mapping_audit": {
+    "passed": true,
+    "matrix_tiles": 34552,
+    "decoder_tiles": 25056,
+    "vocabulary_tiles": 9496,
+    "pack_manifest_sha256": "788ce538ac7ca41f2547b4ce8b86bee283b2cbd75b739f3841fdafafca9e0c9b",
+    "pack_verification_sha256": "d2ed7130847ec83853410c870ac3536369c279996bf02a37a32b1c68df522c0f",
+    "auditor_sha256": "f1fcc1e4ff033031383a209e78bc0ad2eac412af8c8a8f97321c6e7af403d16f",
+    "source_sha256": {
+      "src/csl_llm/decoder_layout.py": "20fa5b2f051dcad58cb2c44f7d7f511b41fde243113c61a338ac2c661877ec13",
+      "src/csl_llm/regions.py": "2b23cc1644fc6e28ebe461bb68dfe0b4c77ac03570c094411d78d477377728c2",
+      "tools/verify_weight_pack.py": "0e73b0020e8c99eef84ea528f740f7f052560a0e91cd619240c2c4318f38bfa4"
+    },
+    "scope": "Existing hash-verified input pack and its prior raw-checkpoint verification bind every matrix coordinate/tensor slice to current full-model ownership. No old controller layout reuse, new CSL initializer, compilation, SDK loading or numerical inference acceptance."
+  },
+  "frequency_fixture": "resident-decoder-20260908T113615465376Z",
+  "frequency_fixture_manifest_sha256": "abb67d0829c8ecd2d57be77501be2c7bebd3afa35dff67c9ff15b0740b2a9828",
+  "frequency_auxiliary_sha256": "37613816d4a497714fcd28a4a55f3d3e8463bb0cc0f21cd2624084316658f543",
+  "matrices": [
+    {
+      "coordinate": [
+        32,
+        208
+      ],
+      "file": "weights_32_208.csl",
+      "original_record": {
+        "x": 32,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 147968,
+        "column": 0,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 983564288,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "ccc1156271e347e35025daaddbbaa135fd2a769dbca31214fef286e170ec59cd"
+    },
+    {
+      "coordinate": [
+        33,
+        208
+      ],
+      "file": "weights_33_208.csl",
+      "original_record": {
+        "x": 33,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 147968,
+        "column": 112,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 983592960,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "0519fd4a247fa73879eee55b20047b6a06afedad8feae50d427d062d4d1cbd53"
+    },
+    {
+      "coordinate": [
+        34,
+        208
+      ],
+      "file": "weights_34_208.csl",
+      "original_record": {
+        "x": 34,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 147968,
+        "column": 224,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 983621632,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "9788000dac1e8124722d2deaea2494612605a290fbe02b4553684fe33a238344"
+    },
+    {
+      "coordinate": [
+        35,
+        208
+      ],
+      "file": "weights_35_208.csl",
+      "original_record": {
+        "x": 35,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 147968,
+        "column": 336,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 983650304,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "fb21274a9c1cc4fc77b98e8e2308ee32a48e62c11c1a5a9a28cba21b59683a69"
+    },
+    {
+      "coordinate": [
+        36,
+        208
+      ],
+      "file": "weights_36_208.csl",
+      "original_record": {
+        "x": 36,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 147968,
+        "column": 448,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 983678976,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "728e6c28649ef4ba03ceb221116d52f407eb76fa33576ef0e5d6ddca83e7b948"
+    },
+    {
+      "coordinate": [
+        37,
+        208
+      ],
+      "file": "weights_37_208.csl",
+      "original_record": {
+        "x": 37,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 147968,
+        "column": 560,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 983707648,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "b93d47b9d3c506338053d589bf019dc84cc1ac7a8eda2930a1657493be4a8312"
+    },
+    {
+      "coordinate": [
+        38,
+        208
+      ],
+      "file": "weights_38_208.csl",
+      "original_record": {
+        "x": 38,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 147968,
+        "column": 672,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 983736320,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "2e19d0d177e408faa663144fad75043f1e0e5f650d7114366f2aa9766a8e6908"
+    },
+    {
+      "coordinate": [
+        39,
+        208
+      ],
+      "file": "weights_39_208.csl",
+      "original_record": {
+        "x": 39,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 147968,
+        "column": 784,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 983764992,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "c39aa84386413c0b20be83f74640328ecc132cd8929d2d6c9a891578a8a32cf5"
+    },
+    {
+      "coordinate": [
+        40,
+        208
+      ],
+      "file": "weights_40_208.csl",
+      "original_record": {
+        "x": 40,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 148096,
+        "column": 0,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 983793664,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "c869e390b2ffa7b6e95b3726826d2effd88d9171db69255239fa43d9b6158eab"
+    },
+    {
+      "coordinate": [
+        41,
+        208
+      ],
+      "file": "weights_41_208.csl",
+      "original_record": {
+        "x": 41,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 148096,
+        "column": 112,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 983822336,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "a1d560508808d43e449b2e34bc13d4024e1561d4e1199abf47f0445baf36cf7c"
+    },
+    {
+      "coordinate": [
+        42,
+        208
+      ],
+      "file": "weights_42_208.csl",
+      "original_record": {
+        "x": 42,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 148096,
+        "column": 224,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 983851008,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "0411bc1b03b99fabe2da290300ca0cfe53e84b464a3fe59b67b7b3e3917b340d"
+    },
+    {
+      "coordinate": [
+        43,
+        208
+      ],
+      "file": "weights_43_208.csl",
+      "original_record": {
+        "x": 43,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 148096,
+        "column": 336,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 983879680,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "9c240066b3070b6cb0b0411be43def87b121db9cd9540e380dbc10542ac4b686"
+    },
+    {
+      "coordinate": [
+        44,
+        208
+      ],
+      "file": "weights_44_208.csl",
+      "original_record": {
+        "x": 44,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 148096,
+        "column": 448,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 983908352,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "710faeb45a8d57b4640129e9fb068fd7ad066ec1d16b1f9b96562089ef6559dc"
+    },
+    {
+      "coordinate": [
+        45,
+        208
+      ],
+      "file": "weights_45_208.csl",
+      "original_record": {
+        "x": 45,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 148096,
+        "column": 560,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 983937024,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "83fcec35bcb54e5f8a3bb8ddfd3d5bf283583772a80d83dd4310716eb576e747"
+    },
+    {
+      "coordinate": [
+        46,
+        208
+      ],
+      "file": "weights_46_208.csl",
+      "original_record": {
+        "x": 46,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 148096,
+        "column": 672,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 983965696,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "b95c9be715704b469cfd54b632ea7dd7c24dade9fc268744f96bcf1280e9349f"
+    },
+    {
+      "coordinate": [
+        47,
+        208
+      ],
+      "file": "weights_47_208.csl",
+      "original_record": {
+        "x": 47,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 148096,
+        "column": 784,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 983994368,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "935d5d7ab99e50bc3ce930485040dc6c1de6c3f828f0431c489d37126efbd65f"
+    },
+    {
+      "coordinate": [
+        48,
+        208
+      ],
+      "file": "weights_48_208.csl",
+      "original_record": {
+        "x": 48,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 148224,
+        "column": 0,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 984023040,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "5c657d3665e1058a61a34d7dedbfb1dd255cb11ac338dc886a6351f46e9afd18"
+    },
+    {
+      "coordinate": [
+        49,
+        208
+      ],
+      "file": "weights_49_208.csl",
+      "original_record": {
+        "x": 49,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 148224,
+        "column": 112,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 984051712,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "e5f34594c92a66cb405f53859ba008a113801fa204afc035628e846184f824b2"
+    },
+    {
+      "coordinate": [
+        50,
+        208
+      ],
+      "file": "weights_50_208.csl",
+      "original_record": {
+        "x": 50,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 148224,
+        "column": 224,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 984080384,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "c03b8cd0c4bac0f7aaee8b1631e3bba8a6bb013265ff2bc1707fc82b7fdd1809"
+    },
+    {
+      "coordinate": [
+        51,
+        208
+      ],
+      "file": "weights_51_208.csl",
+      "original_record": {
+        "x": 51,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 148224,
+        "column": 336,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 984109056,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "c96ffcf9d24eb961dcb8672bef9a9d771992a9bef4c972163684fc0514b5b265"
+    },
+    {
+      "coordinate": [
+        52,
+        208
+      ],
+      "file": "weights_52_208.csl",
+      "original_record": {
+        "x": 52,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 148224,
+        "column": 448,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 984137728,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "93f84c0647c910b676da1827e1fb4e67c0f161b3d66e45d1788e69bc56756396"
+    },
+    {
+      "coordinate": [
+        53,
+        208
+      ],
+      "file": "weights_53_208.csl",
+      "original_record": {
+        "x": 53,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 148224,
+        "column": 560,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 984166400,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "fe195cd32462b7ea94eca91def42d9c90a6e5ae50719c600f165e5ec20ddf060"
+    },
+    {
+      "coordinate": [
+        54,
+        208
+      ],
+      "file": "weights_54_208.csl",
+      "original_record": {
+        "x": 54,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 148224,
+        "column": 672,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 984195072,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "8ac8b5b89eed0b56359bc97ad2871f2af4e255f17921aa93701a86f02de0e8fe"
+    },
+    {
+      "coordinate": [
+        55,
+        208
+      ],
+      "file": "weights_55_208.csl",
+      "original_record": {
+        "x": 55,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 148224,
+        "column": 784,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 984223744,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "31db5d92b8296afa4e3f6f8da6bdd4b64095179c8ebec6c550c73a06dcf6460b"
+    },
+    {
+      "coordinate": [
+        56,
+        208
+      ],
+      "file": "weights_56_208.csl",
+      "original_record": {
+        "x": 56,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 148352,
+        "column": 0,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 984252416,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "999d2b1f26b3bb69cc0a0ecd8c3f05c94e296ad7ae8c1d2d0178781213193285"
+    },
+    {
+      "coordinate": [
+        57,
+        208
+      ],
+      "file": "weights_57_208.csl",
+      "original_record": {
+        "x": 57,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 148352,
+        "column": 112,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 984281088,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "55b062d6979960393bdf39bfec91076dffdbe5fdec38cea5405c018fbb712333"
+    },
+    {
+      "coordinate": [
+        58,
+        208
+      ],
+      "file": "weights_58_208.csl",
+      "original_record": {
+        "x": 58,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 148352,
+        "column": 224,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 984309760,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "fe486b19eebf33b5cef8ffe60c1c16c846323ed4c2726ec85bcd41ea86549769"
+    },
+    {
+      "coordinate": [
+        59,
+        208
+      ],
+      "file": "weights_59_208.csl",
+      "original_record": {
+        "x": 59,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 148352,
+        "column": 336,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 984338432,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "f7ae597120c89394fdc03c16f2aad36d066896a8b2012b8772453d5834f090ad"
+    },
+    {
+      "coordinate": [
+        60,
+        208
+      ],
+      "file": "weights_60_208.csl",
+      "original_record": {
+        "x": 60,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 148352,
+        "column": 448,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 984367104,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "28e7b7aa9eff4e89f165f2d2dbeb4cab0a70b9a7a15ab51059e95742855214cd"
+    },
+    {
+      "coordinate": [
+        61,
+        208
+      ],
+      "file": "weights_61_208.csl",
+      "original_record": {
+        "x": 61,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 148352,
+        "column": 560,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 984395776,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "fca10515fd81a415f503848aadbed698696b783f769a1b1c1c735ce8bd635f79"
+    },
+    {
+      "coordinate": [
+        62,
+        208
+      ],
+      "file": "weights_62_208.csl",
+      "original_record": {
+        "x": 62,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 148352,
+        "column": 672,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 984424448,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "b80d70ddac3dd3e0d6e7f67cdd90e2619cff58fb720eadce33091ce9112ab8f5"
+    },
+    {
+      "coordinate": [
+        63,
+        208
+      ],
+      "file": "weights_63_208.csl",
+      "original_record": {
+        "x": 63,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 148352,
+        "column": 784,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 984453120,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "9d2b5b04ca15d8c4c807ae1868f10111326312ba73649b482f5f2fb8f83fe083"
+    },
+    {
+      "coordinate": [
+        64,
+        208
+      ],
+      "file": "weights_64_208.csl",
+      "original_record": {
+        "x": 64,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 148480,
+        "column": 0,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 984481792,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "b7b938b6fbfe11408942bbb3a1548e6dcab098741f14d0e1f99b375b86472dd3"
+    },
+    {
+      "coordinate": [
+        65,
+        208
+      ],
+      "file": "weights_65_208.csl",
+      "original_record": {
+        "x": 65,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 148480,
+        "column": 112,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 984510464,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "2de417da747f30505d3b04f282267b239d4752f2b0f2f3cb6ff95904e88c3103"
+    },
+    {
+      "coordinate": [
+        66,
+        208
+      ],
+      "file": "weights_66_208.csl",
+      "original_record": {
+        "x": 66,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 148480,
+        "column": 224,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 984539136,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "0559da75c2c1339bed81d06addb6046a9293c945d4a572b948e1e839e2daa1b3"
+    },
+    {
+      "coordinate": [
+        67,
+        208
+      ],
+      "file": "weights_67_208.csl",
+      "original_record": {
+        "x": 67,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 148480,
+        "column": 336,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 984567808,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "51b471adeea2290964e788be8c3e65a2731788dd00e9bf77d80039353499b2f5"
+    },
+    {
+      "coordinate": [
+        68,
+        208
+      ],
+      "file": "weights_68_208.csl",
+      "original_record": {
+        "x": 68,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 148480,
+        "column": 448,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 984596480,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "f3b9bae79e7df784d993f1bebe9a5fc0552e91ea1ab76451e53c854b9bc78898"
+    },
+    {
+      "coordinate": [
+        69,
+        208
+      ],
+      "file": "weights_69_208.csl",
+      "original_record": {
+        "x": 69,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 148480,
+        "column": 560,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 984625152,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "37934b7d167f7110c6710a0e96941d6284356d181d2142bbe99d5275ff561b4c"
+    },
+    {
+      "coordinate": [
+        70,
+        208
+      ],
+      "file": "weights_70_208.csl",
+      "original_record": {
+        "x": 70,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 148480,
+        "column": 672,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 984653824,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "75dc3b15ae3c510eefa72f655ad790da93cb0f622f1ea0b4d14f9e73754b0a12"
+    },
+    {
+      "coordinate": [
+        71,
+        208
+      ],
+      "file": "weights_71_208.csl",
+      "original_record": {
+        "x": 71,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 148480,
+        "column": 784,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 984682496,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "84f9214beb5669a3050d6770eb7341e4ed9fe60c86097e8953b0caf71bf49042"
+    },
+    {
+      "coordinate": [
+        72,
+        208
+      ],
+      "file": "weights_72_208.csl",
+      "original_record": {
+        "x": 72,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 148608,
+        "column": 0,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 984711168,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "0083f2d1f70e10bb2f773f281f75219d27c02235c557b4798458d207d8d23a4c"
+    },
+    {
+      "coordinate": [
+        73,
+        208
+      ],
+      "file": "weights_73_208.csl",
+      "original_record": {
+        "x": 73,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 148608,
+        "column": 112,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 984739840,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "95c585501a0f4664fbf3879c1c1a3e964c37f68febbfe32cf49476df6cb8469d"
+    },
+    {
+      "coordinate": [
+        74,
+        208
+      ],
+      "file": "weights_74_208.csl",
+      "original_record": {
+        "x": 74,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 148608,
+        "column": 224,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 984768512,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "e3e79c3982271083194f0d8cf313eba71d8be7183ffbcad625dbbbc131db78b1"
+    },
+    {
+      "coordinate": [
+        75,
+        208
+      ],
+      "file": "weights_75_208.csl",
+      "original_record": {
+        "x": 75,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 148608,
+        "column": 336,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 984797184,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "39596d0ee8ad32409569c754d7cf5bd8d8c4243b5cbee62d449c3f96f543cc45"
+    },
+    {
+      "coordinate": [
+        76,
+        208
+      ],
+      "file": "weights_76_208.csl",
+      "original_record": {
+        "x": 76,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 148608,
+        "column": 448,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 984825856,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "db950d808f36819bc9a7a5ce4ea21931c38c3f8c6a2ecf34be9ba0f22d893c52"
+    },
+    {
+      "coordinate": [
+        77,
+        208
+      ],
+      "file": "weights_77_208.csl",
+      "original_record": {
+        "x": 77,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 148608,
+        "column": 560,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 984854528,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "1fdb56dbaf1bbd14f6132459ea1fae76f8304ce294b8207cb51117638e78b792"
+    },
+    {
+      "coordinate": [
+        78,
+        208
+      ],
+      "file": "weights_78_208.csl",
+      "original_record": {
+        "x": 78,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 148608,
+        "column": 672,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 984883200,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "cfc67eac540d6f25007bbe4e1a03765f03592abc2db873ffb359ef18bf8213bd"
+    },
+    {
+      "coordinate": [
+        79,
+        208
+      ],
+      "file": "weights_79_208.csl",
+      "original_record": {
+        "x": 79,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 148608,
+        "column": 784,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 984911872,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "a244fe215fb9a5ecb79ddd4bbe048c540fe491283ce6a447f5aa1206b1493751"
+    },
+    {
+      "coordinate": [
+        80,
+        208
+      ],
+      "file": "weights_80_208.csl",
+      "original_record": {
+        "x": 80,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 148736,
+        "column": 0,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 984940544,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "6e16995dff5e9b99459466bbac956bc48d3fed67d3e6519a9f1da6395ef2394c"
+    },
+    {
+      "coordinate": [
+        81,
+        208
+      ],
+      "file": "weights_81_208.csl",
+      "original_record": {
+        "x": 81,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 148736,
+        "column": 112,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 984969216,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "dbdc34cfd39db5a349ea3a648419ec0b76ed105a2a36698d5a9c7812caa618f3"
+    },
+    {
+      "coordinate": [
+        82,
+        208
+      ],
+      "file": "weights_82_208.csl",
+      "original_record": {
+        "x": 82,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 148736,
+        "column": 224,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 984997888,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "f589198ebfc36c8b7da188fad1096cba2bfebf97f327f16060d498aa8eb80d55"
+    },
+    {
+      "coordinate": [
+        83,
+        208
+      ],
+      "file": "weights_83_208.csl",
+      "original_record": {
+        "x": 83,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 148736,
+        "column": 336,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 985026560,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "56e127cca11d3923d941bb26da3a093aee381dc3517d58de00f0642bf572e11e"
+    },
+    {
+      "coordinate": [
+        84,
+        208
+      ],
+      "file": "weights_84_208.csl",
+      "original_record": {
+        "x": 84,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 148736,
+        "column": 448,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 985055232,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "8358f22eb9e56a5f1c0723c7492e5aedd517b609e6d4d7137001341bdeba8009"
+    },
+    {
+      "coordinate": [
+        85,
+        208
+      ],
+      "file": "weights_85_208.csl",
+      "original_record": {
+        "x": 85,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 148736,
+        "column": 560,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 985083904,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "e13144d793333c8da51f8ea01a18e1b3c4f49e443260b4b51618a572c6056b93"
+    },
+    {
+      "coordinate": [
+        86,
+        208
+      ],
+      "file": "weights_86_208.csl",
+      "original_record": {
+        "x": 86,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 148736,
+        "column": 672,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 985112576,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "a34d26f2b2f0e029148a6074269eeb96c0d719b657e86207bd269e60306dfd5e"
+    },
+    {
+      "coordinate": [
+        87,
+        208
+      ],
+      "file": "weights_87_208.csl",
+      "original_record": {
+        "x": 87,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 148736,
+        "column": 784,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 985141248,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "77552d9030a89b18c889b3eed6fb40591d457a60ac3947e49382cde8082eacfe"
+    },
+    {
+      "coordinate": [
+        88,
+        208
+      ],
+      "file": "weights_88_208.csl",
+      "original_record": {
+        "x": 88,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 148864,
+        "column": 0,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 985169920,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "e06b059b6e25b0958ef7780011152d94dce8718af375959b6e457d3d58f7a2b6"
+    },
+    {
+      "coordinate": [
+        89,
+        208
+      ],
+      "file": "weights_89_208.csl",
+      "original_record": {
+        "x": 89,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 148864,
+        "column": 112,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 985198592,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "3f5b4fcf48a453c1cc6edefdfa7d072442f7533197cca14843be5bffd1342d26"
+    },
+    {
+      "coordinate": [
+        90,
+        208
+      ],
+      "file": "weights_90_208.csl",
+      "original_record": {
+        "x": 90,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 148864,
+        "column": 224,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 985227264,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "4917b3060565d6c2724e1820dc8a35c0bc8f233a1e490241eb40d75fb980b48a"
+    },
+    {
+      "coordinate": [
+        91,
+        208
+      ],
+      "file": "weights_91_208.csl",
+      "original_record": {
+        "x": 91,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 148864,
+        "column": 336,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 985255936,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "e55d28a02a7b8afcbecfac849a68be41ef1164ff0ffbbb39895fda4bf9facc47"
+    },
+    {
+      "coordinate": [
+        92,
+        208
+      ],
+      "file": "weights_92_208.csl",
+      "original_record": {
+        "x": 92,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 148864,
+        "column": 448,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 985284608,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "7caf3d51e7d9db88c7d68cee7f661a315c6613f8ea02087382f7ff208d8d570c"
+    },
+    {
+      "coordinate": [
+        93,
+        208
+      ],
+      "file": "weights_93_208.csl",
+      "original_record": {
+        "x": 93,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 148864,
+        "column": 560,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 985313280,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "5a6c0387cdc29720bdc223f331945af078b23e1c907d325c62c4a57c0ba06114"
+    },
+    {
+      "coordinate": [
+        94,
+        208
+      ],
+      "file": "weights_94_208.csl",
+      "original_record": {
+        "x": 94,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 148864,
+        "column": 672,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 985341952,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "de0c55215bcbf5e514c60dc4ce500cc3d9df738ff892961fd8402a8e729b059c"
+    },
+    {
+      "coordinate": [
+        95,
+        208
+      ],
+      "file": "weights_95_208.csl",
+      "original_record": {
+        "x": 95,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 148864,
+        "column": 784,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 985370624,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "c03da2301a296c554b982c85c6c000ca953a0c247b0c1a33d19babf106923f7f"
+    },
+    {
+      "coordinate": [
+        96,
+        208
+      ],
+      "file": "weights_96_208.csl",
+      "original_record": {
+        "x": 96,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 148992,
+        "column": 0,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 985399296,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "b319b6a990b6b83825ad2adf358808e5b0785ed149b0faee896daac8fb846fed"
+    },
+    {
+      "coordinate": [
+        97,
+        208
+      ],
+      "file": "weights_97_208.csl",
+      "original_record": {
+        "x": 97,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 148992,
+        "column": 112,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 985427968,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "c7a01c617761f96e9badf16a26e4dce67a81aec7dbc268b9eaacc413ca1e7a96"
+    },
+    {
+      "coordinate": [
+        98,
+        208
+      ],
+      "file": "weights_98_208.csl",
+      "original_record": {
+        "x": 98,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 148992,
+        "column": 224,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 985456640,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "e72676e2a80741f7a6d159aee0f7d572021d77178e2504988a91a8fece4f2107"
+    },
+    {
+      "coordinate": [
+        99,
+        208
+      ],
+      "file": "weights_99_208.csl",
+      "original_record": {
+        "x": 99,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 148992,
+        "column": 336,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 985485312,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "acfb7f784476bd4e07fd9ec551faa36541bfd13c801bc34b229eb5f51f11812a"
+    },
+    {
+      "coordinate": [
+        100,
+        208
+      ],
+      "file": "weights_100_208.csl",
+      "original_record": {
+        "x": 100,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 148992,
+        "column": 448,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 985513984,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "11f93bc8b817a0f6af38599b47989d94619fcb39543ed0e99d91ac8fa05e5906"
+    },
+    {
+      "coordinate": [
+        101,
+        208
+      ],
+      "file": "weights_101_208.csl",
+      "original_record": {
+        "x": 101,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 148992,
+        "column": 560,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 985542656,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "a0b97dbc26dc389a73ba406788c97d05222a3270b797b2e06da463aaef4f96fb"
+    },
+    {
+      "coordinate": [
+        102,
+        208
+      ],
+      "file": "weights_102_208.csl",
+      "original_record": {
+        "x": 102,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 148992,
+        "column": 672,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 985571328,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "a78158e6f78b7deae91242f439a85244662705e4cb6befa4478278c3d5e98af0"
+    },
+    {
+      "coordinate": [
+        103,
+        208
+      ],
+      "file": "weights_103_208.csl",
+      "original_record": {
+        "x": 103,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 148992,
+        "column": 784,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 985600000,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "3c4cc2a4e4ece6fb6bc02d8c079183489f3cb17e85854cccbd20c226c13ab9f1"
+    },
+    {
+      "coordinate": [
+        104,
+        208
+      ],
+      "file": "weights_104_208.csl",
+      "original_record": {
+        "x": 104,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 149120,
+        "column": 0,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 985628672,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "4926e2b4dc6f3a409658b49c3cf0843a49a4c88cd68478d14a3a822e14e0069f"
+    },
+    {
+      "coordinate": [
+        105,
+        208
+      ],
+      "file": "weights_105_208.csl",
+      "original_record": {
+        "x": 105,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 149120,
+        "column": 112,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 985657344,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "d243fd0026eefb036bd1b07b7fbcb460f33f7ce7c4b75c7e1779919961025572"
+    },
+    {
+      "coordinate": [
+        106,
+        208
+      ],
+      "file": "weights_106_208.csl",
+      "original_record": {
+        "x": 106,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 149120,
+        "column": 224,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 985686016,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "03cde90904afb7abab237839157e560158ff9c3118c3f49b957dba43eb653cf2"
+    },
+    {
+      "coordinate": [
+        107,
+        208
+      ],
+      "file": "weights_107_208.csl",
+      "original_record": {
+        "x": 107,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 149120,
+        "column": 336,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 985714688,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "3a3f40c85b7bb2f6864da36057862a26f277c4464235cf276a20e1171d93e23a"
+    },
+    {
+      "coordinate": [
+        108,
+        208
+      ],
+      "file": "weights_108_208.csl",
+      "original_record": {
+        "x": 108,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 149120,
+        "column": 448,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 985743360,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "3a39c54f6d804d85ee071a9b1a2dda8f4318c28f412c77e8e8908e416d60b7bf"
+    },
+    {
+      "coordinate": [
+        109,
+        208
+      ],
+      "file": "weights_109_208.csl",
+      "original_record": {
+        "x": 109,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 149120,
+        "column": 560,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 985772032,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "10ba9215b7d352585d94bc8096401568b329af860d7a082a5d71d3a2d6ea8ac7"
+    },
+    {
+      "coordinate": [
+        110,
+        208
+      ],
+      "file": "weights_110_208.csl",
+      "original_record": {
+        "x": 110,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 149120,
+        "column": 672,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 985800704,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "1134eeddc9689a3e973becb32d38914638ad8fb24c2ced038068437b71997b7f"
+    },
+    {
+      "coordinate": [
+        111,
+        208
+      ],
+      "file": "weights_111_208.csl",
+      "original_record": {
+        "x": 111,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 149120,
+        "column": 784,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 985829376,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "c260ffd09019db9e3eaf4e0514ee817a9535a459c7b520db8f75078e1da7ab0c"
+    },
+    {
+      "coordinate": [
+        112,
+        208
+      ],
+      "file": "weights_112_208.csl",
+      "original_record": {
+        "x": 112,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 149248,
+        "column": 0,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 985858048,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "6ac8f636ec7ab48349842c324a262590aaa521ac7dc52dfec0e6db1c9c3694a2"
+    },
+    {
+      "coordinate": [
+        113,
+        208
+      ],
+      "file": "weights_113_208.csl",
+      "original_record": {
+        "x": 113,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 149248,
+        "column": 112,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 985886720,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "29445dea3c5dbf48f0f13b8ee5b35665119b2f16bed59dc89262a9dce9ff1a9f"
+    },
+    {
+      "coordinate": [
+        114,
+        208
+      ],
+      "file": "weights_114_208.csl",
+      "original_record": {
+        "x": 114,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 149248,
+        "column": 224,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 985915392,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "5d3e173adde3e0dde3e643483565db3aad93e04b9b327e6e28cccb934de35957"
+    },
+    {
+      "coordinate": [
+        115,
+        208
+      ],
+      "file": "weights_115_208.csl",
+      "original_record": {
+        "x": 115,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 149248,
+        "column": 336,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 985944064,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "503403257b6a74c7087006ec70fb0cbc3cff88e48496bec3ae31564386f13b72"
+    },
+    {
+      "coordinate": [
+        116,
+        208
+      ],
+      "file": "weights_116_208.csl",
+      "original_record": {
+        "x": 116,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 149248,
+        "column": 448,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 985972736,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "25f8fef1554314636889180f8ae1f3579818a2e807fa382c808c1eae2ff3c71e"
+    },
+    {
+      "coordinate": [
+        117,
+        208
+      ],
+      "file": "weights_117_208.csl",
+      "original_record": {
+        "x": 117,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 149248,
+        "column": 560,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 986001408,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "00dfdb4dfec1cca219643014167604225482604f3b45a541886bd0b9c2ded242"
+    },
+    {
+      "coordinate": [
+        118,
+        208
+      ],
+      "file": "weights_118_208.csl",
+      "original_record": {
+        "x": 118,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 149248,
+        "column": 672,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 986030080,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "66ea5b62a7481777e2a177de4281885e2c9307886d0c6b4844fba7fab3bd9f99"
+    },
+    {
+      "coordinate": [
+        119,
+        208
+      ],
+      "file": "weights_119_208.csl",
+      "original_record": {
+        "x": 119,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 149248,
+        "column": 784,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 986058752,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "340948f0be9c2d21c61aabd84f7decdac0676f145ccbcaa52cca1155634df799"
+    },
+    {
+      "coordinate": [
+        120,
+        208
+      ],
+      "file": "weights_120_208.csl",
+      "original_record": {
+        "x": 120,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 149376,
+        "column": 0,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 986087424,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "7950829def5797bed5b9e46bd38a1f34cd0b7730f8a21bd90d943821d9d402d2"
+    },
+    {
+      "coordinate": [
+        121,
+        208
+      ],
+      "file": "weights_121_208.csl",
+      "original_record": {
+        "x": 121,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 149376,
+        "column": 112,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 986116096,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "bc25b2eed8c88e9448ab18f1494adf492af7226c5066d462d0db43d8af5fa963"
+    },
+    {
+      "coordinate": [
+        122,
+        208
+      ],
+      "file": "weights_122_208.csl",
+      "original_record": {
+        "x": 122,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 149376,
+        "column": 224,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 986144768,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "0bdc5afecde0d428aae6117d4ec0c1c9ee6e8f3016083453548a349ef7b89b28"
+    },
+    {
+      "coordinate": [
+        123,
+        208
+      ],
+      "file": "weights_123_208.csl",
+      "original_record": {
+        "x": 123,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 149376,
+        "column": 336,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 986173440,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "8031e9ec23e6712a3d88d2db4e37b95c0a25e68ffebb6175a14eb0c23c9b0181"
+    },
+    {
+      "coordinate": [
+        124,
+        208
+      ],
+      "file": "weights_124_208.csl",
+      "original_record": {
+        "x": 124,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 149376,
+        "column": 448,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 986202112,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "13bf541e8c79c4d6c06e45d45b93d63d08a7465a4a52bd1043a2376fa191f8a9"
+    },
+    {
+      "coordinate": [
+        125,
+        208
+      ],
+      "file": "weights_125_208.csl",
+      "original_record": {
+        "x": 125,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 149376,
+        "column": 560,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 986230784,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "9debc5aa3753c387487b48ba70593d9bf8fd411f5ea575e9c648a729f7b71bd7"
+    },
+    {
+      "coordinate": [
+        126,
+        208
+      ],
+      "file": "weights_126_208.csl",
+      "original_record": {
+        "x": 126,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 149376,
+        "column": 672,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 986259456,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "f43bb94e6e977a68e409a40749bda30dc046c830b270a12b4de2240166888e63"
+    },
+    {
+      "coordinate": [
+        127,
+        208
+      ],
+      "file": "weights_127_208.csl",
+      "original_record": {
+        "x": 127,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 149376,
+        "column": 784,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 986288128,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "dc369d5f048fa47dcb3a4a409e58648595e8b80a14a7446f610a91ef3a481930"
+    },
+    {
+      "coordinate": [
+        128,
+        208
+      ],
+      "file": "weights_128_208.csl",
+      "original_record": {
+        "x": 128,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 149504,
+        "column": 0,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 986316800,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "f03063f62fb6df09bcdd0e2568761901927844bcd7eca7919f18a7dd88ba58f4"
+    },
+    {
+      "coordinate": [
+        129,
+        208
+      ],
+      "file": "weights_129_208.csl",
+      "original_record": {
+        "x": 129,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 149504,
+        "column": 112,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 986345472,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "23d704a2e20f4b1cf6ec6811d175d0aba10721ed8bdf159fa770caa35dde10ac"
+    },
+    {
+      "coordinate": [
+        130,
+        208
+      ],
+      "file": "weights_130_208.csl",
+      "original_record": {
+        "x": 130,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 149504,
+        "column": 224,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 986374144,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "b95719ecd2e6a30e31ae8ec2d35870b74a247b90d364faed2063dcdc68e17a1e"
+    },
+    {
+      "coordinate": [
+        131,
+        208
+      ],
+      "file": "weights_131_208.csl",
+      "original_record": {
+        "x": 131,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 149504,
+        "column": 336,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 986402816,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "57bde300c923e02899a83a382a2582fba64491f61ce3175b93ee20f4179e7fd7"
+    },
+    {
+      "coordinate": [
+        132,
+        208
+      ],
+      "file": "weights_132_208.csl",
+      "original_record": {
+        "x": 132,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 149504,
+        "column": 448,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 986431488,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "61ef7e8e5bdc0a7a1966f38857bf90f62b3c492377c18ecb0e6d39560363a728"
+    },
+    {
+      "coordinate": [
+        133,
+        208
+      ],
+      "file": "weights_133_208.csl",
+      "original_record": {
+        "x": 133,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 149504,
+        "column": 560,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 986460160,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "ab588d1ed44ad25a9bb192ac7a3b338de1012a0d9503d7af1027eb219cc002e9"
+    },
+    {
+      "coordinate": [
+        134,
+        208
+      ],
+      "file": "weights_134_208.csl",
+      "original_record": {
+        "x": 134,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 149504,
+        "column": 672,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 986488832,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "55d211645b5affd30410ab57b3f82694830a3ab3996a06861cbeb2f9a0ffcbd9"
+    },
+    {
+      "coordinate": [
+        135,
+        208
+      ],
+      "file": "weights_135_208.csl",
+      "original_record": {
+        "x": 135,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 149504,
+        "column": 784,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 986517504,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "7f2259a38eb305e7c4b349c1acfd118ec9e513a2fbdfecfc6a5af8747d1fdef6"
+    },
+    {
+      "coordinate": [
+        136,
+        208
+      ],
+      "file": "weights_136_208.csl",
+      "original_record": {
+        "x": 136,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 149632,
+        "column": 0,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 986546176,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "9d4a47c95edc306ef4035f1d3460b764cb5bc3d64aa705b8136ba54112de49f0"
+    },
+    {
+      "coordinate": [
+        137,
+        208
+      ],
+      "file": "weights_137_208.csl",
+      "original_record": {
+        "x": 137,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 149632,
+        "column": 112,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 986574848,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "ba4e0b0397da045aacec2c606569040a4fe218d587ff60be0d6237b80160b884"
+    },
+    {
+      "coordinate": [
+        138,
+        208
+      ],
+      "file": "weights_138_208.csl",
+      "original_record": {
+        "x": 138,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 149632,
+        "column": 224,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 986603520,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "a6f683699c8c60d9f09c223284bf4727f0a1bf38b9e44b48970bd31c81c75a17"
+    },
+    {
+      "coordinate": [
+        139,
+        208
+      ],
+      "file": "weights_139_208.csl",
+      "original_record": {
+        "x": 139,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 149632,
+        "column": 336,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 986632192,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "d4b2170ea9b032365c9458a2de698075ec57996e8ce56ba8747dbd0a74776c89"
+    },
+    {
+      "coordinate": [
+        140,
+        208
+      ],
+      "file": "weights_140_208.csl",
+      "original_record": {
+        "x": 140,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 149632,
+        "column": 448,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 986660864,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "33106aa2571eeca5f3951848ac05c5ba274e65ac0f3644d30f7e1b6bc2ab672b"
+    },
+    {
+      "coordinate": [
+        141,
+        208
+      ],
+      "file": "weights_141_208.csl",
+      "original_record": {
+        "x": 141,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 149632,
+        "column": 560,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 986689536,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "adeaf16c1ff7d4754dd9d7a1fa2aed7447ff3761ab9c454f566dfb88a2d3c9d3"
+    },
+    {
+      "coordinate": [
+        142,
+        208
+      ],
+      "file": "weights_142_208.csl",
+      "original_record": {
+        "x": 142,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 149632,
+        "column": 672,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 986718208,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "074936976bdf5411e7b69e67dd3638945d47cde056bf511b5136c4be50db37d9"
+    },
+    {
+      "coordinate": [
+        143,
+        208
+      ],
+      "file": "weights_143_208.csl",
+      "original_record": {
+        "x": 143,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 149632,
+        "column": 784,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 986746880,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "a8152f736090864188ca114f72cf7c9a35b4be43555163ae07215c0a05ebc153"
+    },
+    {
+      "coordinate": [
+        144,
+        208
+      ],
+      "file": "weights_144_208.csl",
+      "original_record": {
+        "x": 144,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 149760,
+        "column": 0,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 986775552,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "530cf79582fe32fe2c26b53d2e959f41ca1145721c12a94f7ce3d6cedc7651bb"
+    },
+    {
+      "coordinate": [
+        145,
+        208
+      ],
+      "file": "weights_145_208.csl",
+      "original_record": {
+        "x": 145,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 149760,
+        "column": 112,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 986804224,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "eb428f72b9f8716adf033dc1d3fccf1da1d37e3a90efd24e6ba3de4c6dcb7b09"
+    },
+    {
+      "coordinate": [
+        146,
+        208
+      ],
+      "file": "weights_146_208.csl",
+      "original_record": {
+        "x": 146,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 149760,
+        "column": 224,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 986832896,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "2dcb1e3ba7ce182b1d23f89e224cec1b4c8548c46796e695cfaa5603caef3190"
+    },
+    {
+      "coordinate": [
+        147,
+        208
+      ],
+      "file": "weights_147_208.csl",
+      "original_record": {
+        "x": 147,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 149760,
+        "column": 336,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 986861568,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "ba0cd8e6853a89aa102ce2ec0acf09083c694c34cc6c27b930ccba71929be119"
+    },
+    {
+      "coordinate": [
+        148,
+        208
+      ],
+      "file": "weights_148_208.csl",
+      "original_record": {
+        "x": 148,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 149760,
+        "column": 448,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 986890240,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "d99a57716d5d1b7af06c2847f9c7a765426f3a95f805c905c84af93271cd90ce"
+    },
+    {
+      "coordinate": [
+        149,
+        208
+      ],
+      "file": "weights_149_208.csl",
+      "original_record": {
+        "x": 149,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 149760,
+        "column": 560,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 986918912,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "99a9fe60f176d7cd1bda8a28f97f6d864da5b5c265452876a64f4faa947a7928"
+    },
+    {
+      "coordinate": [
+        150,
+        208
+      ],
+      "file": "weights_150_208.csl",
+      "original_record": {
+        "x": 150,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 149760,
+        "column": 672,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 986947584,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "19afee34cd2d54f5313c874dc78e9edba34895d056cf04a1dff789a9b575b4f7"
+    },
+    {
+      "coordinate": [
+        151,
+        208
+      ],
+      "file": "weights_151_208.csl",
+      "original_record": {
+        "x": 151,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 149760,
+        "column": 784,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 986976256,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "25e85b0037886d27de032c7d7630b73390506a6997463864f13a3fafdc10970c"
+    },
+    {
+      "coordinate": [
+        152,
+        208
+      ],
+      "file": "weights_152_208.csl",
+      "original_record": {
+        "x": 152,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 149888,
+        "column": 0,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 987004928,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "44d782c96a386d00a05dda6c8e007d0fc8f73785cb34bbedf4a98b0a7dbe017c"
+    },
+    {
+      "coordinate": [
+        153,
+        208
+      ],
+      "file": "weights_153_208.csl",
+      "original_record": {
+        "x": 153,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 149888,
+        "column": 112,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 987033600,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "f918f7c194801514495e99ba8b7c4867906e61eb6f75d31a2eb6f60c41361777"
+    },
+    {
+      "coordinate": [
+        154,
+        208
+      ],
+      "file": "weights_154_208.csl",
+      "original_record": {
+        "x": 154,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 149888,
+        "column": 224,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 987062272,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "789fd929aa5fc7006e19be19eae8b51622ab933ccafbfea9e09042820e18ad83"
+    },
+    {
+      "coordinate": [
+        155,
+        208
+      ],
+      "file": "weights_155_208.csl",
+      "original_record": {
+        "x": 155,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 149888,
+        "column": 336,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 987090944,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "faf76d93ca7d7bc22a87fe210616790371bca00a969a6a29a30082348e759e01"
+    },
+    {
+      "coordinate": [
+        156,
+        208
+      ],
+      "file": "weights_156_208.csl",
+      "original_record": {
+        "x": 156,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 149888,
+        "column": 448,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 987119616,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "072ef6f4efebc954685e1901736a7e636ad1b1ad9f28f3413925140a725a5f89"
+    },
+    {
+      "coordinate": [
+        157,
+        208
+      ],
+      "file": "weights_157_208.csl",
+      "original_record": {
+        "x": 157,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 149888,
+        "column": 560,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 987148288,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "4b68872dbe8574a8529060fc1ad52b88a6ee500b302b083f97975a4baa8a9756"
+    },
+    {
+      "coordinate": [
+        158,
+        208
+      ],
+      "file": "weights_158_208.csl",
+      "original_record": {
+        "x": 158,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 149888,
+        "column": 672,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 987176960,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "56199ede2abd274c81c79c37617a2f61c73c0a8e135bf2cdd33520dfe388d075"
+    },
+    {
+      "coordinate": [
+        159,
+        208
+      ],
+      "file": "weights_159_208.csl",
+      "original_record": {
+        "x": 159,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 149888,
+        "column": 784,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 987205632,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "e14348e54ac78069ac8a18835739b638f92869d8c7899fe3b54567c1be811084"
+    },
+    {
+      "coordinate": [
+        160,
+        208
+      ],
+      "file": "weights_160_208.csl",
+      "original_record": {
+        "x": 160,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 150016,
+        "column": 0,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 987234304,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "c902241d3c55f12a27b103787d04655079df96aeaf9350a0b4aa287b4d6cb241"
+    },
+    {
+      "coordinate": [
+        161,
+        208
+      ],
+      "file": "weights_161_208.csl",
+      "original_record": {
+        "x": 161,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 150016,
+        "column": 112,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 987262976,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "23386ee363c7228ec319c11ac0917debcc1668fbd471dfd3fe94bc14092ea870"
+    },
+    {
+      "coordinate": [
+        162,
+        208
+      ],
+      "file": "weights_162_208.csl",
+      "original_record": {
+        "x": 162,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 150016,
+        "column": 224,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 987291648,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "3dda191622ab1d3e1c4ea5d1ab406545a186c755497824ca5083620d61a13092"
+    },
+    {
+      "coordinate": [
+        163,
+        208
+      ],
+      "file": "weights_163_208.csl",
+      "original_record": {
+        "x": 163,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 150016,
+        "column": 336,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 987320320,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "0e3a89bd19e3a8ca35bda7ae917df5e165d3d110b73156b3767158a566095025"
+    },
+    {
+      "coordinate": [
+        164,
+        208
+      ],
+      "file": "weights_164_208.csl",
+      "original_record": {
+        "x": 164,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 150016,
+        "column": 448,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 987348992,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "db4891e2e0a2b79c4fe965da40761921e1391a727ff6876ec8a2c166cba36b20"
+    },
+    {
+      "coordinate": [
+        165,
+        208
+      ],
+      "file": "weights_165_208.csl",
+      "original_record": {
+        "x": 165,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 150016,
+        "column": 560,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 987377664,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "55a1f7328b773d967e6e16cc8427b2431568a07f17e4061931c071de87aec909"
+    },
+    {
+      "coordinate": [
+        166,
+        208
+      ],
+      "file": "weights_166_208.csl",
+      "original_record": {
+        "x": 166,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 150016,
+        "column": 672,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 987406336,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "d7d2d978fd963002ce8114f123ba500f476d65ee18b05856aabbc1d4c9455efb"
+    },
+    {
+      "coordinate": [
+        167,
+        208
+      ],
+      "file": "weights_167_208.csl",
+      "original_record": {
+        "x": 167,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 150016,
+        "column": 784,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 987435008,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "99ec1c90256cd5bfb6f6ffea51808e03711316c60358513e8cd570b5c9c48247"
+    },
+    {
+      "coordinate": [
+        168,
+        208
+      ],
+      "file": "weights_168_208.csl",
+      "original_record": {
+        "x": 168,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 150144,
+        "column": 0,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 987463680,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "5f703ac592c6753293e439d6310a333257d57b72de0228ee67875c192f7da1d2"
+    },
+    {
+      "coordinate": [
+        169,
+        208
+      ],
+      "file": "weights_169_208.csl",
+      "original_record": {
+        "x": 169,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 150144,
+        "column": 112,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 987492352,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "9d045a59e9fa34f0067e57368b8be4adffe42525cc43c742b405b4360e844f9e"
+    },
+    {
+      "coordinate": [
+        170,
+        208
+      ],
+      "file": "weights_170_208.csl",
+      "original_record": {
+        "x": 170,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 150144,
+        "column": 224,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 987521024,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "bf7b6c85756ef8a9e67d7f95eb48b741a8a0263bc204833b6141f6390c95075c"
+    },
+    {
+      "coordinate": [
+        171,
+        208
+      ],
+      "file": "weights_171_208.csl",
+      "original_record": {
+        "x": 171,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 150144,
+        "column": 336,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 987549696,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "c61df7cd0df22b43353c42c5b5b6f1b96f649349ac1a9ef9485216cad3dc871b"
+    },
+    {
+      "coordinate": [
+        172,
+        208
+      ],
+      "file": "weights_172_208.csl",
+      "original_record": {
+        "x": 172,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 150144,
+        "column": 448,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 987578368,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "a75a8024dd9d0afcc63c8e7c1dde3d8c0460e14b1ae17ccf01b9bb1e9e5809bc"
+    },
+    {
+      "coordinate": [
+        173,
+        208
+      ],
+      "file": "weights_173_208.csl",
+      "original_record": {
+        "x": 173,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 150144,
+        "column": 560,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 987607040,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "c6444e96f518a7ab295c797545919e87faff0a744e08b53d9a1960b9d2638835"
+    },
+    {
+      "coordinate": [
+        174,
+        208
+      ],
+      "file": "weights_174_208.csl",
+      "original_record": {
+        "x": 174,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 150144,
+        "column": 672,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 987635712,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "e6dc5fc97c9e3cfba8b23defc514c853dfec73288ea11a3680ffa8784f606dab"
+    },
+    {
+      "coordinate": [
+        175,
+        208
+      ],
+      "file": "weights_175_208.csl",
+      "original_record": {
+        "x": 175,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 150144,
+        "column": 784,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 987664384,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "02e5acbf433d5445cc7f6a72203156d8c3141af41135a9282becca8347a24fe6"
+    },
+    {
+      "coordinate": [
+        176,
+        208
+      ],
+      "file": "weights_176_208.csl",
+      "original_record": {
+        "x": 176,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 150272,
+        "column": 0,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 987693056,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "7b32654954554ed9de6cc2ebc43a19c79d1b606667cba3ec7a2c27153ab1ccf3"
+    },
+    {
+      "coordinate": [
+        177,
+        208
+      ],
+      "file": "weights_177_208.csl",
+      "original_record": {
+        "x": 177,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 150272,
+        "column": 112,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 987721728,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "ff25abffb8d2e2ff9878220f6b1480c8f54ad441b1de1f3cb97f1de64eda929d"
+    },
+    {
+      "coordinate": [
+        178,
+        208
+      ],
+      "file": "weights_178_208.csl",
+      "original_record": {
+        "x": 178,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 150272,
+        "column": 224,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 987750400,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "b6aed75b432c4eee6ec58e4881d07ccf612d9fcd59137252aa5682b13f4dca66"
+    },
+    {
+      "coordinate": [
+        179,
+        208
+      ],
+      "file": "weights_179_208.csl",
+      "original_record": {
+        "x": 179,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 150272,
+        "column": 336,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 987779072,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "e5390e9c34dcbcebb56cac1310712523100a5131a42a046572ae58639be68ed9"
+    },
+    {
+      "coordinate": [
+        180,
+        208
+      ],
+      "file": "weights_180_208.csl",
+      "original_record": {
+        "x": 180,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 150272,
+        "column": 448,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 987807744,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "657f67acc23fa49ff424653e59643d6e9c34680b7a26c08aa61a17858a55bcf2"
+    },
+    {
+      "coordinate": [
+        181,
+        208
+      ],
+      "file": "weights_181_208.csl",
+      "original_record": {
+        "x": 181,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 150272,
+        "column": 560,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 987836416,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "df2084ff71ccd47f010a75dc03bf8174e61febc0b11cd3d8dbe8612b4afc5138"
+    },
+    {
+      "coordinate": [
+        182,
+        208
+      ],
+      "file": "weights_182_208.csl",
+      "original_record": {
+        "x": 182,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 150272,
+        "column": 672,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 987865088,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "000193392ceefe66df19769e6d434000d67a4fe93f2c8537aafd7e05f17bf196"
+    },
+    {
+      "coordinate": [
+        183,
+        208
+      ],
+      "file": "weights_183_208.csl",
+      "original_record": {
+        "x": 183,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 150272,
+        "column": 784,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 987893760,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "70010237e2a4a3d6df4d1a0b6d2d4d018c8f99e10f7599f10dbbf970d1e823dc"
+    },
+    {
+      "coordinate": [
+        184,
+        208
+      ],
+      "file": "weights_184_208.csl",
+      "original_record": {
+        "x": 184,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 150400,
+        "column": 0,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 987922432,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "e62f8af33d564acdb8054ba24ec1734ee8a529d10ec86f1664fb78002f1ba28f"
+    },
+    {
+      "coordinate": [
+        185,
+        208
+      ],
+      "file": "weights_185_208.csl",
+      "original_record": {
+        "x": 185,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 150400,
+        "column": 112,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 987951104,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "709dcf9e2d30ec16387443b9165bc3bf719601bcaa1dca25c266cc98b0a4c8af"
+    },
+    {
+      "coordinate": [
+        186,
+        208
+      ],
+      "file": "weights_186_208.csl",
+      "original_record": {
+        "x": 186,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 150400,
+        "column": 224,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 987979776,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "078161aea75962d1dec171090129da0fc438bd575a898067a9c7949ed87818fd"
+    },
+    {
+      "coordinate": [
+        187,
+        208
+      ],
+      "file": "weights_187_208.csl",
+      "original_record": {
+        "x": 187,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 150400,
+        "column": 336,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 988008448,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "9614e588db62ce99b3df2f54b74d4a3b39ae32737f432f39a3a744b118b148f4"
+    },
+    {
+      "coordinate": [
+        188,
+        208
+      ],
+      "file": "weights_188_208.csl",
+      "original_record": {
+        "x": 188,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 150400,
+        "column": 448,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 988037120,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "1c15e26f41be3ff75ecafa03cff846ee2866c9b85092b3e98fb8910dda7541d9"
+    },
+    {
+      "coordinate": [
+        189,
+        208
+      ],
+      "file": "weights_189_208.csl",
+      "original_record": {
+        "x": 189,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 150400,
+        "column": 560,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 988065792,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "98d878acdbd87c95fed99d46474f32593a4a5d8ff1db9071467e523eebb308ee"
+    },
+    {
+      "coordinate": [
+        190,
+        208
+      ],
+      "file": "weights_190_208.csl",
+      "original_record": {
+        "x": 190,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 150400,
+        "column": 672,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 988094464,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "5b002f04636124a3af1bc18be9363f51d3c8841cf49de18dcad2473c8b6b3e88"
+    },
+    {
+      "coordinate": [
+        191,
+        208
+      ],
+      "file": "weights_191_208.csl",
+      "original_record": {
+        "x": 191,
+        "y": 208,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 150400,
+        "column": 784,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 988123136,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "e408e1059f296999b7d44a4d2b9608ebd6bd8789fc503ab3c8f9558167f02f17"
+    },
+    {
+      "coordinate": [
+        0,
+        209
+      ],
+      "file": "weights_0_209.csl",
+      "original_record": {
+        "x": 0,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 150528,
+        "column": 0,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 988151808,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "e3cf86f37987c378762f071330e1eee87fdbbacaba10a4376499267b8a117827"
+    },
+    {
+      "coordinate": [
+        1,
+        209
+      ],
+      "file": "weights_1_209.csl",
+      "original_record": {
+        "x": 1,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 150528,
+        "column": 112,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 988180480,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "a941f42a4488000d62537fda52a752c5b213d9c58f98a284f00f8b05b66a48cd"
+    },
+    {
+      "coordinate": [
+        2,
+        209
+      ],
+      "file": "weights_2_209.csl",
+      "original_record": {
+        "x": 2,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 150528,
+        "column": 224,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 988209152,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "323d7f183e408af8892082d2a0de147aeda2569f65f9d3faea1ad57014a472cb"
+    },
+    {
+      "coordinate": [
+        3,
+        209
+      ],
+      "file": "weights_3_209.csl",
+      "original_record": {
+        "x": 3,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 150528,
+        "column": 336,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 988237824,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "102f6d7b12f9c6fd551037c2bb655abaa7c1ab346748185fa084461122116a40"
+    },
+    {
+      "coordinate": [
+        4,
+        209
+      ],
+      "file": "weights_4_209.csl",
+      "original_record": {
+        "x": 4,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 150528,
+        "column": 448,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 988266496,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "c4c8cf395859c1390947db5bb39a1e7b286229c5c23d9e9cca2b45a8ed29a688"
+    },
+    {
+      "coordinate": [
+        5,
+        209
+      ],
+      "file": "weights_5_209.csl",
+      "original_record": {
+        "x": 5,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 150528,
+        "column": 560,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 988295168,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "b2467155af1de9416f7c0be2edbb63f79a4668d477ef6c046b692ecd4aa52488"
+    },
+    {
+      "coordinate": [
+        6,
+        209
+      ],
+      "file": "weights_6_209.csl",
+      "original_record": {
+        "x": 6,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 150528,
+        "column": 672,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 988323840,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "26103329dadcdb5892150217d307e1e717fd4020414981d7465001fd9a0b07fe"
+    },
+    {
+      "coordinate": [
+        7,
+        209
+      ],
+      "file": "weights_7_209.csl",
+      "original_record": {
+        "x": 7,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 150528,
+        "column": 784,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 988352512,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "dfc01704fd796ab8b0070376dd42043b29595173c2d8f21e7ab95bb02d4fe6a6"
+    },
+    {
+      "coordinate": [
+        8,
+        209
+      ],
+      "file": "weights_8_209.csl",
+      "original_record": {
+        "x": 8,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 150656,
+        "column": 0,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 988381184,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "758377406a7d6f442c335e262249d59d989023f3c2bf5971880f14745f53ad41"
+    },
+    {
+      "coordinate": [
+        9,
+        209
+      ],
+      "file": "weights_9_209.csl",
+      "original_record": {
+        "x": 9,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 150656,
+        "column": 112,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 988409856,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "ff8a4732fa9908881097b494747970ac9bc6331049d37a2c807a324cf6d75a6c"
+    },
+    {
+      "coordinate": [
+        10,
+        209
+      ],
+      "file": "weights_10_209.csl",
+      "original_record": {
+        "x": 10,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 150656,
+        "column": 224,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 988438528,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "cfd68d887b499b7aaf9fd289b90985782c76b84f11cbb3c1a0e15bb60bdc6608"
+    },
+    {
+      "coordinate": [
+        11,
+        209
+      ],
+      "file": "weights_11_209.csl",
+      "original_record": {
+        "x": 11,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 150656,
+        "column": 336,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 988467200,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "f7a12fa6c47a21ea673a653b16bf9035c2805774e6c9725a8ca5ce627e0e4ab5"
+    },
+    {
+      "coordinate": [
+        12,
+        209
+      ],
+      "file": "weights_12_209.csl",
+      "original_record": {
+        "x": 12,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 150656,
+        "column": 448,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 988495872,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "75a6789358f9dc1088adae3bf528e805004c77eb9a67d65ac2ed074772ffb9ad"
+    },
+    {
+      "coordinate": [
+        13,
+        209
+      ],
+      "file": "weights_13_209.csl",
+      "original_record": {
+        "x": 13,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 150656,
+        "column": 560,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 988524544,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "94a265b13298f2c8150b44dace2eb38eedfc74f9334a818d226fcda8f5ee4a80"
+    },
+    {
+      "coordinate": [
+        14,
+        209
+      ],
+      "file": "weights_14_209.csl",
+      "original_record": {
+        "x": 14,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 150656,
+        "column": 672,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 988553216,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "f9b092f75ed2101e335ca64cc3c226b065e5d283019c7f960d08ada483b7ae90"
+    },
+    {
+      "coordinate": [
+        15,
+        209
+      ],
+      "file": "weights_15_209.csl",
+      "original_record": {
+        "x": 15,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 150656,
+        "column": 784,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 988581888,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "cf928fef6ac3538aa04819107f8db8237ac6b624ce9ca87d36b53a9260969358"
+    },
+    {
+      "coordinate": [
+        16,
+        209
+      ],
+      "file": "weights_16_209.csl",
+      "original_record": {
+        "x": 16,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 150784,
+        "column": 0,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 988610560,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "d70d55dde2960d873bbe13a26d0a1bdfdf97e5de0ad614b6296894715c6771f8"
+    },
+    {
+      "coordinate": [
+        17,
+        209
+      ],
+      "file": "weights_17_209.csl",
+      "original_record": {
+        "x": 17,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 150784,
+        "column": 112,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 988639232,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "84394cc7c35060920286049c6b9a91c400a320eae7a66f9f5ac822da8f3bfd39"
+    },
+    {
+      "coordinate": [
+        18,
+        209
+      ],
+      "file": "weights_18_209.csl",
+      "original_record": {
+        "x": 18,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 150784,
+        "column": 224,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 988667904,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "2045163ee9d3bca5829260df94d5b446c9e5dab4d9b07d9cd8b16b6eaa299406"
+    },
+    {
+      "coordinate": [
+        19,
+        209
+      ],
+      "file": "weights_19_209.csl",
+      "original_record": {
+        "x": 19,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 150784,
+        "column": 336,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 988696576,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "070e816d7589deb84c78282f516d6690739d492cbcb343ce59af909c412ba7a6"
+    },
+    {
+      "coordinate": [
+        20,
+        209
+      ],
+      "file": "weights_20_209.csl",
+      "original_record": {
+        "x": 20,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 150784,
+        "column": 448,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 988725248,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "324b4cce398c3c5e3018b62a1ad0c260a9af55cf9ede72424fe6a95ca2156c01"
+    },
+    {
+      "coordinate": [
+        21,
+        209
+      ],
+      "file": "weights_21_209.csl",
+      "original_record": {
+        "x": 21,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 150784,
+        "column": 560,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 988753920,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "ba89de6031bd34fa8073fd6182e17d11a00fd02d3c50c1aa2b1c6146164e3961"
+    },
+    {
+      "coordinate": [
+        22,
+        209
+      ],
+      "file": "weights_22_209.csl",
+      "original_record": {
+        "x": 22,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 150784,
+        "column": 672,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 988782592,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "a2bd1d313da35b8339f6aab40aaf340a9dc6dad39dc800bf5fa7516cb27a62a5"
+    },
+    {
+      "coordinate": [
+        23,
+        209
+      ],
+      "file": "weights_23_209.csl",
+      "original_record": {
+        "x": 23,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 150784,
+        "column": 784,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 988811264,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "55d44b4b665016a945918d39357f8239bbeae6d3e156bdc699714145f3983d8e"
+    },
+    {
+      "coordinate": [
+        24,
+        209
+      ],
+      "file": "weights_24_209.csl",
+      "original_record": {
+        "x": 24,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 150912,
+        "column": 0,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 988839936,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "4f03b672fd094b030b804270c02a0487e1db282d5c79e0415a8034526f24ac42"
+    },
+    {
+      "coordinate": [
+        25,
+        209
+      ],
+      "file": "weights_25_209.csl",
+      "original_record": {
+        "x": 25,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 150912,
+        "column": 112,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 988868608,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "f1084317efc575e50d239020ca629bea00cbfd82e830dbda8cf322435de53352"
+    },
+    {
+      "coordinate": [
+        26,
+        209
+      ],
+      "file": "weights_26_209.csl",
+      "original_record": {
+        "x": 26,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 150912,
+        "column": 224,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 988897280,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "1405bc1d074c8b09852d808310e89a725dbf20d0ad7c157f0b5073e9cbbef8bf"
+    },
+    {
+      "coordinate": [
+        27,
+        209
+      ],
+      "file": "weights_27_209.csl",
+      "original_record": {
+        "x": 27,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 150912,
+        "column": 336,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 988925952,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "a7dcf90879c1a5c9880cb0e7fd6998789ba85aee82a5d18f61280da197810b23"
+    },
+    {
+      "coordinate": [
+        28,
+        209
+      ],
+      "file": "weights_28_209.csl",
+      "original_record": {
+        "x": 28,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 150912,
+        "column": 448,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 988954624,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "8bceba8c17bc7de8c7e7e83e6766a8be5f1147ff632e884d02fac182b4e16eeb"
+    },
+    {
+      "coordinate": [
+        29,
+        209
+      ],
+      "file": "weights_29_209.csl",
+      "original_record": {
+        "x": 29,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 150912,
+        "column": 560,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 988983296,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "55f7513ebad30bdf9b3d6a664f5f15986a7cc3a3636bc5b030ee154ad0e97e4c"
+    },
+    {
+      "coordinate": [
+        30,
+        209
+      ],
+      "file": "weights_30_209.csl",
+      "original_record": {
+        "x": 30,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 150912,
+        "column": 672,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 989011968,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "111769d57dfcafb396d5020950c62f28424bbf53e97101a3267a2dff3d51648e"
+    },
+    {
+      "coordinate": [
+        31,
+        209
+      ],
+      "file": "weights_31_209.csl",
+      "original_record": {
+        "x": 31,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 150912,
+        "column": 784,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 989040640,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "9f79f356dfbe22357cc697664b1183fddd2ee99117d34e7202abc1565aeadfd8"
+    },
+    {
+      "coordinate": [
+        32,
+        209
+      ],
+      "file": "weights_32_209.csl",
+      "original_record": {
+        "x": 32,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 151040,
+        "column": 0,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 989069312,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "976a74dbfbbcf1a5eb4cd0bfbd15916434396dbbaf783c35326841de8b5cf68d"
+    },
+    {
+      "coordinate": [
+        33,
+        209
+      ],
+      "file": "weights_33_209.csl",
+      "original_record": {
+        "x": 33,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 151040,
+        "column": 112,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 989097984,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "7a654b90471c86a83ccecb3f66bcc3a9eee07e1b9063b454c00eae73caa3273f"
+    },
+    {
+      "coordinate": [
+        34,
+        209
+      ],
+      "file": "weights_34_209.csl",
+      "original_record": {
+        "x": 34,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 151040,
+        "column": 224,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 989126656,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "c67c5047a9c4a6ca8cfe5982b6cd5f4c0e070fc94d50fc6a2ef8c8ffb516a849"
+    },
+    {
+      "coordinate": [
+        35,
+        209
+      ],
+      "file": "weights_35_209.csl",
+      "original_record": {
+        "x": 35,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 151040,
+        "column": 336,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 989155328,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "2942f8cbdf3f40a8abc38a26641f3bad5eb589485569dcf007e44bf325ed4ff6"
+    },
+    {
+      "coordinate": [
+        36,
+        209
+      ],
+      "file": "weights_36_209.csl",
+      "original_record": {
+        "x": 36,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 151040,
+        "column": 448,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 989184000,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "20ec1ac8304caae36f102fd5f6e296775065afa5a29832c8ed7e6448bedc98d9"
+    },
+    {
+      "coordinate": [
+        37,
+        209
+      ],
+      "file": "weights_37_209.csl",
+      "original_record": {
+        "x": 37,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 151040,
+        "column": 560,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 989212672,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "124f49f7ad0839ef0dbcc211a37366d3a47e50071edd1cd0dd33adbd534622ad"
+    },
+    {
+      "coordinate": [
+        38,
+        209
+      ],
+      "file": "weights_38_209.csl",
+      "original_record": {
+        "x": 38,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 151040,
+        "column": 672,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 989241344,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "6793369c3eeb6c0ff0dff65a4b557eb7513774d1d454bb28b902e7ceaf1111a7"
+    },
+    {
+      "coordinate": [
+        39,
+        209
+      ],
+      "file": "weights_39_209.csl",
+      "original_record": {
+        "x": 39,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 151040,
+        "column": 784,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 989270016,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "514a098d8c0f594baee510d4ba583537e8f50d15d82c701052eeb503460ce148"
+    },
+    {
+      "coordinate": [
+        40,
+        209
+      ],
+      "file": "weights_40_209.csl",
+      "original_record": {
+        "x": 40,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 151168,
+        "column": 0,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 989298688,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "fb4228c3ea703a755fd62238eb78fb1c99823632653a3534772ac3236075d2c2"
+    },
+    {
+      "coordinate": [
+        41,
+        209
+      ],
+      "file": "weights_41_209.csl",
+      "original_record": {
+        "x": 41,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 151168,
+        "column": 112,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 989327360,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "625b7ad0709c74bf81642547457c5c7017276f0418f388fe93e0b6048199d591"
+    },
+    {
+      "coordinate": [
+        42,
+        209
+      ],
+      "file": "weights_42_209.csl",
+      "original_record": {
+        "x": 42,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 151168,
+        "column": 224,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 989356032,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "a3913d2428ecb4b043df14586115283162d928336a4b544b1645fd4d77a1410b"
+    },
+    {
+      "coordinate": [
+        43,
+        209
+      ],
+      "file": "weights_43_209.csl",
+      "original_record": {
+        "x": 43,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 151168,
+        "column": 336,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 989384704,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "c870ec3be929d87d2f612912acee1dfef1c597c526e3d1bdfda01b99d9de8e2a"
+    },
+    {
+      "coordinate": [
+        44,
+        209
+      ],
+      "file": "weights_44_209.csl",
+      "original_record": {
+        "x": 44,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 151168,
+        "column": 448,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 989413376,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "9d9f195de0bf6632945b7443e58f5cb1d88a95ce275e14df1540434e5d333a7c"
+    },
+    {
+      "coordinate": [
+        45,
+        209
+      ],
+      "file": "weights_45_209.csl",
+      "original_record": {
+        "x": 45,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 151168,
+        "column": 560,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 989442048,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "4fa0a51cf317449fd8ce2dc334d0f9619a1a3770be96a5e728c5f88ccb4c5c12"
+    },
+    {
+      "coordinate": [
+        46,
+        209
+      ],
+      "file": "weights_46_209.csl",
+      "original_record": {
+        "x": 46,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 151168,
+        "column": 672,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 989470720,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "09ef464cb1ac5aaea44c53d32131329b25b47e461aec60233fb00bcc09eb1a3c"
+    },
+    {
+      "coordinate": [
+        47,
+        209
+      ],
+      "file": "weights_47_209.csl",
+      "original_record": {
+        "x": 47,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 151168,
+        "column": 784,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 989499392,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "ed97bb5d391bb44d740817081cefb2aa1aed00f2da2eb6ec51113d58967ae830"
+    },
+    {
+      "coordinate": [
+        48,
+        209
+      ],
+      "file": "weights_48_209.csl",
+      "original_record": {
+        "x": 48,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 151296,
+        "column": 0,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 989528064,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "75fff0691371a4bd1b7756613fe0a2f90b4acb3d9e513cf15cba23daa009d6dd"
+    },
+    {
+      "coordinate": [
+        49,
+        209
+      ],
+      "file": "weights_49_209.csl",
+      "original_record": {
+        "x": 49,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 151296,
+        "column": 112,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 989556736,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "26498c0b9b83c75a26da58b1dd93cdd5e5309789fe0a32d22946a656c1245cee"
+    },
+    {
+      "coordinate": [
+        50,
+        209
+      ],
+      "file": "weights_50_209.csl",
+      "original_record": {
+        "x": 50,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 151296,
+        "column": 224,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 989585408,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "d76143e1b2ccf0fc18cdd74aa6e26c7144a269b69f96d61214fdb9b58c12a60d"
+    },
+    {
+      "coordinate": [
+        51,
+        209
+      ],
+      "file": "weights_51_209.csl",
+      "original_record": {
+        "x": 51,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 151296,
+        "column": 336,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 989614080,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "dd811327c0a88ac29267e989fd41333db0d585bdac8733acfbe22f3fa93a993f"
+    },
+    {
+      "coordinate": [
+        52,
+        209
+      ],
+      "file": "weights_52_209.csl",
+      "original_record": {
+        "x": 52,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 151296,
+        "column": 448,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 989642752,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "7549afeded7ff99d4cf0a29721fc6fb54003399c28853a3630953511ef2ee8f7"
+    },
+    {
+      "coordinate": [
+        53,
+        209
+      ],
+      "file": "weights_53_209.csl",
+      "original_record": {
+        "x": 53,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 151296,
+        "column": 560,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 989671424,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "5a64a43cb1d324c9270bc689f297d60df8effe62224ced83ff4a750ba392904e"
+    },
+    {
+      "coordinate": [
+        54,
+        209
+      ],
+      "file": "weights_54_209.csl",
+      "original_record": {
+        "x": 54,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 151296,
+        "column": 672,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 989700096,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "30a9446e470abbe501b6f83ec0bf92fe45feb95165eef5df4b298ace966fa9ba"
+    },
+    {
+      "coordinate": [
+        55,
+        209
+      ],
+      "file": "weights_55_209.csl",
+      "original_record": {
+        "x": 55,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 151296,
+        "column": 784,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 989728768,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "9402066a7ab9275ae26a3121334397a391759f829e377fb2937ab67222be6daf"
+    },
+    {
+      "coordinate": [
+        56,
+        209
+      ],
+      "file": "weights_56_209.csl",
+      "original_record": {
+        "x": 56,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 151424,
+        "column": 0,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 989757440,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "d0e826701dbb70fd528e55445932732076d3308471944f624d08a1f007d11a37"
+    },
+    {
+      "coordinate": [
+        57,
+        209
+      ],
+      "file": "weights_57_209.csl",
+      "original_record": {
+        "x": 57,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 151424,
+        "column": 112,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 989786112,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "62030864a8cf60d67564fc316f029f938a7166a00ed9535b02fa07d635076909"
+    },
+    {
+      "coordinate": [
+        58,
+        209
+      ],
+      "file": "weights_58_209.csl",
+      "original_record": {
+        "x": 58,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 151424,
+        "column": 224,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 989814784,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "6dcd8b68ef2f8b0e674ec726913b1611b021ed53eb9093f26b91d8149e4f7bf2"
+    },
+    {
+      "coordinate": [
+        59,
+        209
+      ],
+      "file": "weights_59_209.csl",
+      "original_record": {
+        "x": 59,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 151424,
+        "column": 336,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 989843456,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "bd4e47f47dbcf46bc817cc6cf6da7482c7425032c6552f1f18f30c4e5c128aee"
+    },
+    {
+      "coordinate": [
+        60,
+        209
+      ],
+      "file": "weights_60_209.csl",
+      "original_record": {
+        "x": 60,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 151424,
+        "column": 448,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 989872128,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "98c0f74a07107713f42df0758573ba914d36463f72d05b86aedf241bfd7e5d44"
+    },
+    {
+      "coordinate": [
+        61,
+        209
+      ],
+      "file": "weights_61_209.csl",
+      "original_record": {
+        "x": 61,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 151424,
+        "column": 560,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 989900800,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "ef95c76901b1e758af1e9d41d901ebddd0c8a1b0fb037e218cd14065deb77632"
+    },
+    {
+      "coordinate": [
+        62,
+        209
+      ],
+      "file": "weights_62_209.csl",
+      "original_record": {
+        "x": 62,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 151424,
+        "column": 672,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 989929472,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "ea0aac0b40670675d4e1ea754310c9d889a039b97f8a072ad2c88e55c6110241"
+    },
+    {
+      "coordinate": [
+        63,
+        209
+      ],
+      "file": "weights_63_209.csl",
+      "original_record": {
+        "x": 63,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 151424,
+        "column": 784,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 989958144,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "d2b91e65f8f1941210201641e0a7688ce1af2cb30555eac125a6e3d98a6fb7de"
+    },
+    {
+      "coordinate": [
+        64,
+        209
+      ],
+      "file": "weights_64_209.csl",
+      "original_record": {
+        "x": 64,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 151552,
+        "column": 0,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 989986816,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "9107c07981a5934cc277a1b4f95f86b98e87e7c4b379dfb3ab19dc2a1c66aef3"
+    },
+    {
+      "coordinate": [
+        65,
+        209
+      ],
+      "file": "weights_65_209.csl",
+      "original_record": {
+        "x": 65,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 151552,
+        "column": 112,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 990015488,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "b03c1b9ccb0ff1a4d7557ca73cc696889f14cefd2c2d735572d6c2f4064ebb75"
+    },
+    {
+      "coordinate": [
+        66,
+        209
+      ],
+      "file": "weights_66_209.csl",
+      "original_record": {
+        "x": 66,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 151552,
+        "column": 224,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 990044160,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "2fcbbf19c5f1186202e910ec7075478feee126bc9c929eff616f0c8040011f7b"
+    },
+    {
+      "coordinate": [
+        67,
+        209
+      ],
+      "file": "weights_67_209.csl",
+      "original_record": {
+        "x": 67,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 151552,
+        "column": 336,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 990072832,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "c4f3b05e6e9b92c93c691700f3527a92904536bbbcd3dd6810e7ab2d14da0a2e"
+    },
+    {
+      "coordinate": [
+        68,
+        209
+      ],
+      "file": "weights_68_209.csl",
+      "original_record": {
+        "x": 68,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 151552,
+        "column": 448,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 990101504,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "7fee63944c2ed9e5f440ce955f17a07af2a34d0a3e33755a4db6be7b68e61d9d"
+    },
+    {
+      "coordinate": [
+        69,
+        209
+      ],
+      "file": "weights_69_209.csl",
+      "original_record": {
+        "x": 69,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 151552,
+        "column": 560,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 990130176,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "57d2ef7639ec34415a566a669a93a2d2d2355253d717c75225f31a49d1098d7e"
+    },
+    {
+      "coordinate": [
+        70,
+        209
+      ],
+      "file": "weights_70_209.csl",
+      "original_record": {
+        "x": 70,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 151552,
+        "column": 672,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 990158848,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "e524403626bef290b6df77c2a42edf906c4f8f64d6ab2729f7baa6f9b4c7f32d"
+    },
+    {
+      "coordinate": [
+        71,
+        209
+      ],
+      "file": "weights_71_209.csl",
+      "original_record": {
+        "x": 71,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 151552,
+        "column": 784,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 990187520,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "5306793c743e237598a7fd1be4d595e460f503b3879c08b183cfea8f42bfd2d5"
+    },
+    {
+      "coordinate": [
+        72,
+        209
+      ],
+      "file": "weights_72_209.csl",
+      "original_record": {
+        "x": 72,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 151680,
+        "column": 0,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 990216192,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "883f54afb0d3d76aea8ac4e68cb188d319649b21507ec61a08d1cb2abe89b1da"
+    },
+    {
+      "coordinate": [
+        73,
+        209
+      ],
+      "file": "weights_73_209.csl",
+      "original_record": {
+        "x": 73,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 151680,
+        "column": 112,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 990244864,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "560064a1d7988e0cbeea031049bc58b94d1f7319210d20698888caa72a548b97"
+    },
+    {
+      "coordinate": [
+        74,
+        209
+      ],
+      "file": "weights_74_209.csl",
+      "original_record": {
+        "x": 74,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 151680,
+        "column": 224,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 990273536,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "54c1c2f119a6d3ca2e2c8975e5056240e4f3501f18ed802686899b91b2ced838"
+    },
+    {
+      "coordinate": [
+        75,
+        209
+      ],
+      "file": "weights_75_209.csl",
+      "original_record": {
+        "x": 75,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 151680,
+        "column": 336,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 990302208,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "497d58f2eba648d96eaa6037bc9ed0484f617ba0e3d4faa3846f213a4ade6214"
+    },
+    {
+      "coordinate": [
+        76,
+        209
+      ],
+      "file": "weights_76_209.csl",
+      "original_record": {
+        "x": 76,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 151680,
+        "column": 448,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 990330880,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "deff553151c069e59497b258e9e7771accc6a13a481877a58b12e49d841609c4"
+    },
+    {
+      "coordinate": [
+        77,
+        209
+      ],
+      "file": "weights_77_209.csl",
+      "original_record": {
+        "x": 77,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 151680,
+        "column": 560,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 990359552,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "ae2414419d633edad7b6e944c3e4e274795cd11c9d414dd233876b7fefc73757"
+    },
+    {
+      "coordinate": [
+        78,
+        209
+      ],
+      "file": "weights_78_209.csl",
+      "original_record": {
+        "x": 78,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 151680,
+        "column": 672,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 990388224,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "f74cf99b4ac1a20881455a0a0500a73e9420c03ed7e243762e7c3bb951cdccdf"
+    },
+    {
+      "coordinate": [
+        79,
+        209
+      ],
+      "file": "weights_79_209.csl",
+      "original_record": {
+        "x": 79,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 151680,
+        "column": 784,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 990416896,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "9cdd9d996257ce66086fca456817fe5bb4371fe89628eaa94263160d1dc298d2"
+    },
+    {
+      "coordinate": [
+        80,
+        209
+      ],
+      "file": "weights_80_209.csl",
+      "original_record": {
+        "x": 80,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 151808,
+        "column": 0,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 990445568,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "8d63bdce3c325d0cdc9c6ba33898f7f995b2057b29660003bd7b465e4970538b"
+    },
+    {
+      "coordinate": [
+        81,
+        209
+      ],
+      "file": "weights_81_209.csl",
+      "original_record": {
+        "x": 81,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 151808,
+        "column": 112,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 990474240,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "79836eb008f0b855816bde16fcb7f5d2d0217fc19ece24b1331f8de63fbd4008"
+    },
+    {
+      "coordinate": [
+        82,
+        209
+      ],
+      "file": "weights_82_209.csl",
+      "original_record": {
+        "x": 82,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 151808,
+        "column": 224,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 990502912,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "ea2877e744a7e7619b9053674c6ce0647f0b419352d4221ce65856377f3151be"
+    },
+    {
+      "coordinate": [
+        83,
+        209
+      ],
+      "file": "weights_83_209.csl",
+      "original_record": {
+        "x": 83,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 151808,
+        "column": 336,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 990531584,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "b46183e894d5c817a95cf4fc6f8604084e53b946a0ce3253f776b17394fc04c7"
+    },
+    {
+      "coordinate": [
+        84,
+        209
+      ],
+      "file": "weights_84_209.csl",
+      "original_record": {
+        "x": 84,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 151808,
+        "column": 448,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 990560256,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "6dfe49250b3f23810ae8995d548a2d5c3ff342a2212ab538b0cb3159314551e9"
+    },
+    {
+      "coordinate": [
+        85,
+        209
+      ],
+      "file": "weights_85_209.csl",
+      "original_record": {
+        "x": 85,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 151808,
+        "column": 560,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 990588928,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "007ed4f7336207814326eed4505f9ce0b410900baa6adcf15083171107bf38c9"
+    },
+    {
+      "coordinate": [
+        86,
+        209
+      ],
+      "file": "weights_86_209.csl",
+      "original_record": {
+        "x": 86,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 151808,
+        "column": 672,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 990617600,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "04145a5c3a1559b2d2292042706a7f3fea641cb307d62bfe01696f3643aba67e"
+    },
+    {
+      "coordinate": [
+        87,
+        209
+      ],
+      "file": "weights_87_209.csl",
+      "original_record": {
+        "x": 87,
+        "y": 209,
+        "role": "matrix",
+        "layer": -1,
+        "tensor": "model.embed_tokens.weight",
+        "row": 151808,
+        "column": 784,
+        "valid_rows": 128,
+        "valid_columns": 112,
+        "head": -1,
+        "stripe": -1,
+        "offset": 990646272,
+        "bytes": 28672
+      },
+      "original_bytes_sha256": "a58c7f925db142178c496f3764a9358c3d222545f9fbace86700d7a26cb226e6"
+    }
+  ],
+  "auxiliaries": [
+    {
+      "coordinate": [
+        62,
+        0
+      ],
+      "file": "controller_aux_0.csl",
+      "tensors": [
+        "model.layers.0.input_layernorm.weight",
+        "model.layers.0.post_attention_layernorm.weight"
+      ],
+      "kind": "decoder_norms_frequency"
+    },
+    {
+      "coordinate": [
+        54,
+        0
+      ],
+      "file": "bias_54_0.csl",
+      "tensor": "model.layers.0.self_attn.q_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        1
+      ],
+      "file": "bias_54_1.csl",
+      "tensor": "model.layers.0.self_attn.q_proj.bias",
+      "row": 128,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        2
+      ],
+      "file": "bias_54_2.csl",
+      "tensor": "model.layers.0.self_attn.q_proj.bias",
+      "row": 256,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        3
+      ],
+      "file": "bias_54_3.csl",
+      "tensor": "model.layers.0.self_attn.q_proj.bias",
+      "row": 384,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        4
+      ],
+      "file": "bias_54_4.csl",
+      "tensor": "model.layers.0.self_attn.q_proj.bias",
+      "row": 512,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        5
+      ],
+      "file": "bias_54_5.csl",
+      "tensor": "model.layers.0.self_attn.q_proj.bias",
+      "row": 640,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        6
+      ],
+      "file": "bias_54_6.csl",
+      "tensor": "model.layers.0.self_attn.q_proj.bias",
+      "row": 768,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        7
+      ],
+      "file": "bias_54_7.csl",
+      "tensor": "model.layers.0.self_attn.k_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        8
+      ],
+      "file": "bias_54_8.csl",
+      "tensor": "model.layers.0.self_attn.v_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        126,
+        0
+      ],
+      "file": "controller_aux_1.csl",
+      "tensors": [
+        "model.layers.1.input_layernorm.weight",
+        "model.layers.1.post_attention_layernorm.weight"
+      ],
+      "kind": "decoder_norms_frequency"
+    },
+    {
+      "coordinate": [
+        118,
+        0
+      ],
+      "file": "bias_118_0.csl",
+      "tensor": "model.layers.1.self_attn.q_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        1
+      ],
+      "file": "bias_118_1.csl",
+      "tensor": "model.layers.1.self_attn.q_proj.bias",
+      "row": 128,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        2
+      ],
+      "file": "bias_118_2.csl",
+      "tensor": "model.layers.1.self_attn.q_proj.bias",
+      "row": 256,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        3
+      ],
+      "file": "bias_118_3.csl",
+      "tensor": "model.layers.1.self_attn.q_proj.bias",
+      "row": 384,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        4
+      ],
+      "file": "bias_118_4.csl",
+      "tensor": "model.layers.1.self_attn.q_proj.bias",
+      "row": 512,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        5
+      ],
+      "file": "bias_118_5.csl",
+      "tensor": "model.layers.1.self_attn.q_proj.bias",
+      "row": 640,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        6
+      ],
+      "file": "bias_118_6.csl",
+      "tensor": "model.layers.1.self_attn.q_proj.bias",
+      "row": 768,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        7
+      ],
+      "file": "bias_118_7.csl",
+      "tensor": "model.layers.1.self_attn.k_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        8
+      ],
+      "file": "bias_118_8.csl",
+      "tensor": "model.layers.1.self_attn.v_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        190,
+        0
+      ],
+      "file": "controller_aux_2.csl",
+      "tensors": [
+        "model.layers.2.input_layernorm.weight",
+        "model.layers.2.post_attention_layernorm.weight"
+      ],
+      "kind": "decoder_norms_frequency"
+    },
+    {
+      "coordinate": [
+        182,
+        0
+      ],
+      "file": "bias_182_0.csl",
+      "tensor": "model.layers.2.self_attn.q_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        1
+      ],
+      "file": "bias_182_1.csl",
+      "tensor": "model.layers.2.self_attn.q_proj.bias",
+      "row": 128,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        2
+      ],
+      "file": "bias_182_2.csl",
+      "tensor": "model.layers.2.self_attn.q_proj.bias",
+      "row": 256,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        3
+      ],
+      "file": "bias_182_3.csl",
+      "tensor": "model.layers.2.self_attn.q_proj.bias",
+      "row": 384,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        4
+      ],
+      "file": "bias_182_4.csl",
+      "tensor": "model.layers.2.self_attn.q_proj.bias",
+      "row": 512,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        5
+      ],
+      "file": "bias_182_5.csl",
+      "tensor": "model.layers.2.self_attn.q_proj.bias",
+      "row": 640,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        6
+      ],
+      "file": "bias_182_6.csl",
+      "tensor": "model.layers.2.self_attn.q_proj.bias",
+      "row": 768,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        7
+      ],
+      "file": "bias_182_7.csl",
+      "tensor": "model.layers.2.self_attn.k_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        8
+      ],
+      "file": "bias_182_8.csl",
+      "tensor": "model.layers.2.self_attn.v_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        62,
+        20
+      ],
+      "file": "controller_aux_3.csl",
+      "tensors": [
+        "model.layers.3.input_layernorm.weight",
+        "model.layers.3.post_attention_layernorm.weight"
+      ],
+      "kind": "decoder_norms_frequency"
+    },
+    {
+      "coordinate": [
+        54,
+        20
+      ],
+      "file": "bias_54_20.csl",
+      "tensor": "model.layers.3.self_attn.q_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        21
+      ],
+      "file": "bias_54_21.csl",
+      "tensor": "model.layers.3.self_attn.q_proj.bias",
+      "row": 128,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        22
+      ],
+      "file": "bias_54_22.csl",
+      "tensor": "model.layers.3.self_attn.q_proj.bias",
+      "row": 256,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        23
+      ],
+      "file": "bias_54_23.csl",
+      "tensor": "model.layers.3.self_attn.q_proj.bias",
+      "row": 384,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        24
+      ],
+      "file": "bias_54_24.csl",
+      "tensor": "model.layers.3.self_attn.q_proj.bias",
+      "row": 512,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        25
+      ],
+      "file": "bias_54_25.csl",
+      "tensor": "model.layers.3.self_attn.q_proj.bias",
+      "row": 640,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        26
+      ],
+      "file": "bias_54_26.csl",
+      "tensor": "model.layers.3.self_attn.q_proj.bias",
+      "row": 768,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        27
+      ],
+      "file": "bias_54_27.csl",
+      "tensor": "model.layers.3.self_attn.k_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        28
+      ],
+      "file": "bias_54_28.csl",
+      "tensor": "model.layers.3.self_attn.v_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        126,
+        20
+      ],
+      "file": "controller_aux_4.csl",
+      "tensors": [
+        "model.layers.4.input_layernorm.weight",
+        "model.layers.4.post_attention_layernorm.weight"
+      ],
+      "kind": "decoder_norms_frequency"
+    },
+    {
+      "coordinate": [
+        118,
+        20
+      ],
+      "file": "bias_118_20.csl",
+      "tensor": "model.layers.4.self_attn.q_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        21
+      ],
+      "file": "bias_118_21.csl",
+      "tensor": "model.layers.4.self_attn.q_proj.bias",
+      "row": 128,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        22
+      ],
+      "file": "bias_118_22.csl",
+      "tensor": "model.layers.4.self_attn.q_proj.bias",
+      "row": 256,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        23
+      ],
+      "file": "bias_118_23.csl",
+      "tensor": "model.layers.4.self_attn.q_proj.bias",
+      "row": 384,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        24
+      ],
+      "file": "bias_118_24.csl",
+      "tensor": "model.layers.4.self_attn.q_proj.bias",
+      "row": 512,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        25
+      ],
+      "file": "bias_118_25.csl",
+      "tensor": "model.layers.4.self_attn.q_proj.bias",
+      "row": 640,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        26
+      ],
+      "file": "bias_118_26.csl",
+      "tensor": "model.layers.4.self_attn.q_proj.bias",
+      "row": 768,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        27
+      ],
+      "file": "bias_118_27.csl",
+      "tensor": "model.layers.4.self_attn.k_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        28
+      ],
+      "file": "bias_118_28.csl",
+      "tensor": "model.layers.4.self_attn.v_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        190,
+        20
+      ],
+      "file": "controller_aux_5.csl",
+      "tensors": [
+        "model.layers.5.input_layernorm.weight",
+        "model.layers.5.post_attention_layernorm.weight"
+      ],
+      "kind": "decoder_norms_frequency"
+    },
+    {
+      "coordinate": [
+        182,
+        20
+      ],
+      "file": "bias_182_20.csl",
+      "tensor": "model.layers.5.self_attn.q_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        21
+      ],
+      "file": "bias_182_21.csl",
+      "tensor": "model.layers.5.self_attn.q_proj.bias",
+      "row": 128,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        22
+      ],
+      "file": "bias_182_22.csl",
+      "tensor": "model.layers.5.self_attn.q_proj.bias",
+      "row": 256,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        23
+      ],
+      "file": "bias_182_23.csl",
+      "tensor": "model.layers.5.self_attn.q_proj.bias",
+      "row": 384,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        24
+      ],
+      "file": "bias_182_24.csl",
+      "tensor": "model.layers.5.self_attn.q_proj.bias",
+      "row": 512,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        25
+      ],
+      "file": "bias_182_25.csl",
+      "tensor": "model.layers.5.self_attn.q_proj.bias",
+      "row": 640,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        26
+      ],
+      "file": "bias_182_26.csl",
+      "tensor": "model.layers.5.self_attn.q_proj.bias",
+      "row": 768,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        27
+      ],
+      "file": "bias_182_27.csl",
+      "tensor": "model.layers.5.self_attn.k_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        28
+      ],
+      "file": "bias_182_28.csl",
+      "tensor": "model.layers.5.self_attn.v_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        62,
+        40
+      ],
+      "file": "controller_aux_6.csl",
+      "tensors": [
+        "model.layers.6.input_layernorm.weight",
+        "model.layers.6.post_attention_layernorm.weight"
+      ],
+      "kind": "decoder_norms_frequency"
+    },
+    {
+      "coordinate": [
+        54,
+        40
+      ],
+      "file": "bias_54_40.csl",
+      "tensor": "model.layers.6.self_attn.q_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        41
+      ],
+      "file": "bias_54_41.csl",
+      "tensor": "model.layers.6.self_attn.q_proj.bias",
+      "row": 128,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        42
+      ],
+      "file": "bias_54_42.csl",
+      "tensor": "model.layers.6.self_attn.q_proj.bias",
+      "row": 256,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        43
+      ],
+      "file": "bias_54_43.csl",
+      "tensor": "model.layers.6.self_attn.q_proj.bias",
+      "row": 384,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        44
+      ],
+      "file": "bias_54_44.csl",
+      "tensor": "model.layers.6.self_attn.q_proj.bias",
+      "row": 512,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        45
+      ],
+      "file": "bias_54_45.csl",
+      "tensor": "model.layers.6.self_attn.q_proj.bias",
+      "row": 640,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        46
+      ],
+      "file": "bias_54_46.csl",
+      "tensor": "model.layers.6.self_attn.q_proj.bias",
+      "row": 768,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        47
+      ],
+      "file": "bias_54_47.csl",
+      "tensor": "model.layers.6.self_attn.k_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        48
+      ],
+      "file": "bias_54_48.csl",
+      "tensor": "model.layers.6.self_attn.v_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        126,
+        40
+      ],
+      "file": "controller_aux_7.csl",
+      "tensors": [
+        "model.layers.7.input_layernorm.weight",
+        "model.layers.7.post_attention_layernorm.weight"
+      ],
+      "kind": "decoder_norms_frequency"
+    },
+    {
+      "coordinate": [
+        118,
+        40
+      ],
+      "file": "bias_118_40.csl",
+      "tensor": "model.layers.7.self_attn.q_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        41
+      ],
+      "file": "bias_118_41.csl",
+      "tensor": "model.layers.7.self_attn.q_proj.bias",
+      "row": 128,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        42
+      ],
+      "file": "bias_118_42.csl",
+      "tensor": "model.layers.7.self_attn.q_proj.bias",
+      "row": 256,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        43
+      ],
+      "file": "bias_118_43.csl",
+      "tensor": "model.layers.7.self_attn.q_proj.bias",
+      "row": 384,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        44
+      ],
+      "file": "bias_118_44.csl",
+      "tensor": "model.layers.7.self_attn.q_proj.bias",
+      "row": 512,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        45
+      ],
+      "file": "bias_118_45.csl",
+      "tensor": "model.layers.7.self_attn.q_proj.bias",
+      "row": 640,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        46
+      ],
+      "file": "bias_118_46.csl",
+      "tensor": "model.layers.7.self_attn.q_proj.bias",
+      "row": 768,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        47
+      ],
+      "file": "bias_118_47.csl",
+      "tensor": "model.layers.7.self_attn.k_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        48
+      ],
+      "file": "bias_118_48.csl",
+      "tensor": "model.layers.7.self_attn.v_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        190,
+        40
+      ],
+      "file": "controller_aux_8.csl",
+      "tensors": [
+        "model.layers.8.input_layernorm.weight",
+        "model.layers.8.post_attention_layernorm.weight"
+      ],
+      "kind": "decoder_norms_frequency"
+    },
+    {
+      "coordinate": [
+        182,
+        40
+      ],
+      "file": "bias_182_40.csl",
+      "tensor": "model.layers.8.self_attn.q_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        41
+      ],
+      "file": "bias_182_41.csl",
+      "tensor": "model.layers.8.self_attn.q_proj.bias",
+      "row": 128,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        42
+      ],
+      "file": "bias_182_42.csl",
+      "tensor": "model.layers.8.self_attn.q_proj.bias",
+      "row": 256,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        43
+      ],
+      "file": "bias_182_43.csl",
+      "tensor": "model.layers.8.self_attn.q_proj.bias",
+      "row": 384,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        44
+      ],
+      "file": "bias_182_44.csl",
+      "tensor": "model.layers.8.self_attn.q_proj.bias",
+      "row": 512,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        45
+      ],
+      "file": "bias_182_45.csl",
+      "tensor": "model.layers.8.self_attn.q_proj.bias",
+      "row": 640,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        46
+      ],
+      "file": "bias_182_46.csl",
+      "tensor": "model.layers.8.self_attn.q_proj.bias",
+      "row": 768,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        47
+      ],
+      "file": "bias_182_47.csl",
+      "tensor": "model.layers.8.self_attn.k_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        48
+      ],
+      "file": "bias_182_48.csl",
+      "tensor": "model.layers.8.self_attn.v_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        62,
+        60
+      ],
+      "file": "controller_aux_9.csl",
+      "tensors": [
+        "model.layers.9.input_layernorm.weight",
+        "model.layers.9.post_attention_layernorm.weight"
+      ],
+      "kind": "decoder_norms_frequency"
+    },
+    {
+      "coordinate": [
+        54,
+        60
+      ],
+      "file": "bias_54_60.csl",
+      "tensor": "model.layers.9.self_attn.q_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        61
+      ],
+      "file": "bias_54_61.csl",
+      "tensor": "model.layers.9.self_attn.q_proj.bias",
+      "row": 128,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        62
+      ],
+      "file": "bias_54_62.csl",
+      "tensor": "model.layers.9.self_attn.q_proj.bias",
+      "row": 256,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        63
+      ],
+      "file": "bias_54_63.csl",
+      "tensor": "model.layers.9.self_attn.q_proj.bias",
+      "row": 384,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        64
+      ],
+      "file": "bias_54_64.csl",
+      "tensor": "model.layers.9.self_attn.q_proj.bias",
+      "row": 512,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        65
+      ],
+      "file": "bias_54_65.csl",
+      "tensor": "model.layers.9.self_attn.q_proj.bias",
+      "row": 640,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        66
+      ],
+      "file": "bias_54_66.csl",
+      "tensor": "model.layers.9.self_attn.q_proj.bias",
+      "row": 768,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        67
+      ],
+      "file": "bias_54_67.csl",
+      "tensor": "model.layers.9.self_attn.k_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        68
+      ],
+      "file": "bias_54_68.csl",
+      "tensor": "model.layers.9.self_attn.v_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        126,
+        60
+      ],
+      "file": "controller_aux_10.csl",
+      "tensors": [
+        "model.layers.10.input_layernorm.weight",
+        "model.layers.10.post_attention_layernorm.weight"
+      ],
+      "kind": "decoder_norms_frequency"
+    },
+    {
+      "coordinate": [
+        118,
+        60
+      ],
+      "file": "bias_118_60.csl",
+      "tensor": "model.layers.10.self_attn.q_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        61
+      ],
+      "file": "bias_118_61.csl",
+      "tensor": "model.layers.10.self_attn.q_proj.bias",
+      "row": 128,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        62
+      ],
+      "file": "bias_118_62.csl",
+      "tensor": "model.layers.10.self_attn.q_proj.bias",
+      "row": 256,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        63
+      ],
+      "file": "bias_118_63.csl",
+      "tensor": "model.layers.10.self_attn.q_proj.bias",
+      "row": 384,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        64
+      ],
+      "file": "bias_118_64.csl",
+      "tensor": "model.layers.10.self_attn.q_proj.bias",
+      "row": 512,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        65
+      ],
+      "file": "bias_118_65.csl",
+      "tensor": "model.layers.10.self_attn.q_proj.bias",
+      "row": 640,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        66
+      ],
+      "file": "bias_118_66.csl",
+      "tensor": "model.layers.10.self_attn.q_proj.bias",
+      "row": 768,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        67
+      ],
+      "file": "bias_118_67.csl",
+      "tensor": "model.layers.10.self_attn.k_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        68
+      ],
+      "file": "bias_118_68.csl",
+      "tensor": "model.layers.10.self_attn.v_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        190,
+        60
+      ],
+      "file": "controller_aux_11.csl",
+      "tensors": [
+        "model.layers.11.input_layernorm.weight",
+        "model.layers.11.post_attention_layernorm.weight"
+      ],
+      "kind": "decoder_norms_frequency"
+    },
+    {
+      "coordinate": [
+        182,
+        60
+      ],
+      "file": "bias_182_60.csl",
+      "tensor": "model.layers.11.self_attn.q_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        61
+      ],
+      "file": "bias_182_61.csl",
+      "tensor": "model.layers.11.self_attn.q_proj.bias",
+      "row": 128,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        62
+      ],
+      "file": "bias_182_62.csl",
+      "tensor": "model.layers.11.self_attn.q_proj.bias",
+      "row": 256,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        63
+      ],
+      "file": "bias_182_63.csl",
+      "tensor": "model.layers.11.self_attn.q_proj.bias",
+      "row": 384,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        64
+      ],
+      "file": "bias_182_64.csl",
+      "tensor": "model.layers.11.self_attn.q_proj.bias",
+      "row": 512,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        65
+      ],
+      "file": "bias_182_65.csl",
+      "tensor": "model.layers.11.self_attn.q_proj.bias",
+      "row": 640,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        66
+      ],
+      "file": "bias_182_66.csl",
+      "tensor": "model.layers.11.self_attn.q_proj.bias",
+      "row": 768,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        67
+      ],
+      "file": "bias_182_67.csl",
+      "tensor": "model.layers.11.self_attn.k_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        68
+      ],
+      "file": "bias_182_68.csl",
+      "tensor": "model.layers.11.self_attn.v_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        62,
+        80
+      ],
+      "file": "controller_aux_12.csl",
+      "tensors": [
+        "model.layers.12.input_layernorm.weight",
+        "model.layers.12.post_attention_layernorm.weight"
+      ],
+      "kind": "decoder_norms_frequency"
+    },
+    {
+      "coordinate": [
+        54,
+        80
+      ],
+      "file": "bias_54_80.csl",
+      "tensor": "model.layers.12.self_attn.q_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        81
+      ],
+      "file": "bias_54_81.csl",
+      "tensor": "model.layers.12.self_attn.q_proj.bias",
+      "row": 128,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        82
+      ],
+      "file": "bias_54_82.csl",
+      "tensor": "model.layers.12.self_attn.q_proj.bias",
+      "row": 256,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        83
+      ],
+      "file": "bias_54_83.csl",
+      "tensor": "model.layers.12.self_attn.q_proj.bias",
+      "row": 384,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        84
+      ],
+      "file": "bias_54_84.csl",
+      "tensor": "model.layers.12.self_attn.q_proj.bias",
+      "row": 512,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        85
+      ],
+      "file": "bias_54_85.csl",
+      "tensor": "model.layers.12.self_attn.q_proj.bias",
+      "row": 640,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        86
+      ],
+      "file": "bias_54_86.csl",
+      "tensor": "model.layers.12.self_attn.q_proj.bias",
+      "row": 768,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        87
+      ],
+      "file": "bias_54_87.csl",
+      "tensor": "model.layers.12.self_attn.k_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        88
+      ],
+      "file": "bias_54_88.csl",
+      "tensor": "model.layers.12.self_attn.v_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        126,
+        80
+      ],
+      "file": "controller_aux_13.csl",
+      "tensors": [
+        "model.layers.13.input_layernorm.weight",
+        "model.layers.13.post_attention_layernorm.weight"
+      ],
+      "kind": "decoder_norms_frequency"
+    },
+    {
+      "coordinate": [
+        118,
+        80
+      ],
+      "file": "bias_118_80.csl",
+      "tensor": "model.layers.13.self_attn.q_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        81
+      ],
+      "file": "bias_118_81.csl",
+      "tensor": "model.layers.13.self_attn.q_proj.bias",
+      "row": 128,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        82
+      ],
+      "file": "bias_118_82.csl",
+      "tensor": "model.layers.13.self_attn.q_proj.bias",
+      "row": 256,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        83
+      ],
+      "file": "bias_118_83.csl",
+      "tensor": "model.layers.13.self_attn.q_proj.bias",
+      "row": 384,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        84
+      ],
+      "file": "bias_118_84.csl",
+      "tensor": "model.layers.13.self_attn.q_proj.bias",
+      "row": 512,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        85
+      ],
+      "file": "bias_118_85.csl",
+      "tensor": "model.layers.13.self_attn.q_proj.bias",
+      "row": 640,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        86
+      ],
+      "file": "bias_118_86.csl",
+      "tensor": "model.layers.13.self_attn.q_proj.bias",
+      "row": 768,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        87
+      ],
+      "file": "bias_118_87.csl",
+      "tensor": "model.layers.13.self_attn.k_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        88
+      ],
+      "file": "bias_118_88.csl",
+      "tensor": "model.layers.13.self_attn.v_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        190,
+        80
+      ],
+      "file": "controller_aux_14.csl",
+      "tensors": [
+        "model.layers.14.input_layernorm.weight",
+        "model.layers.14.post_attention_layernorm.weight"
+      ],
+      "kind": "decoder_norms_frequency"
+    },
+    {
+      "coordinate": [
+        182,
+        80
+      ],
+      "file": "bias_182_80.csl",
+      "tensor": "model.layers.14.self_attn.q_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        81
+      ],
+      "file": "bias_182_81.csl",
+      "tensor": "model.layers.14.self_attn.q_proj.bias",
+      "row": 128,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        82
+      ],
+      "file": "bias_182_82.csl",
+      "tensor": "model.layers.14.self_attn.q_proj.bias",
+      "row": 256,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        83
+      ],
+      "file": "bias_182_83.csl",
+      "tensor": "model.layers.14.self_attn.q_proj.bias",
+      "row": 384,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        84
+      ],
+      "file": "bias_182_84.csl",
+      "tensor": "model.layers.14.self_attn.q_proj.bias",
+      "row": 512,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        85
+      ],
+      "file": "bias_182_85.csl",
+      "tensor": "model.layers.14.self_attn.q_proj.bias",
+      "row": 640,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        86
+      ],
+      "file": "bias_182_86.csl",
+      "tensor": "model.layers.14.self_attn.q_proj.bias",
+      "row": 768,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        87
+      ],
+      "file": "bias_182_87.csl",
+      "tensor": "model.layers.14.self_attn.k_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        88
+      ],
+      "file": "bias_182_88.csl",
+      "tensor": "model.layers.14.self_attn.v_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        62,
+        100
+      ],
+      "file": "controller_aux_15.csl",
+      "tensors": [
+        "model.layers.15.input_layernorm.weight",
+        "model.layers.15.post_attention_layernorm.weight"
+      ],
+      "kind": "decoder_norms_frequency"
+    },
+    {
+      "coordinate": [
+        54,
+        100
+      ],
+      "file": "bias_54_100.csl",
+      "tensor": "model.layers.15.self_attn.q_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        101
+      ],
+      "file": "bias_54_101.csl",
+      "tensor": "model.layers.15.self_attn.q_proj.bias",
+      "row": 128,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        102
+      ],
+      "file": "bias_54_102.csl",
+      "tensor": "model.layers.15.self_attn.q_proj.bias",
+      "row": 256,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        103
+      ],
+      "file": "bias_54_103.csl",
+      "tensor": "model.layers.15.self_attn.q_proj.bias",
+      "row": 384,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        104
+      ],
+      "file": "bias_54_104.csl",
+      "tensor": "model.layers.15.self_attn.q_proj.bias",
+      "row": 512,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        105
+      ],
+      "file": "bias_54_105.csl",
+      "tensor": "model.layers.15.self_attn.q_proj.bias",
+      "row": 640,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        106
+      ],
+      "file": "bias_54_106.csl",
+      "tensor": "model.layers.15.self_attn.q_proj.bias",
+      "row": 768,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        107
+      ],
+      "file": "bias_54_107.csl",
+      "tensor": "model.layers.15.self_attn.k_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        108
+      ],
+      "file": "bias_54_108.csl",
+      "tensor": "model.layers.15.self_attn.v_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        126,
+        100
+      ],
+      "file": "controller_aux_16.csl",
+      "tensors": [
+        "model.layers.16.input_layernorm.weight",
+        "model.layers.16.post_attention_layernorm.weight"
+      ],
+      "kind": "decoder_norms_frequency"
+    },
+    {
+      "coordinate": [
+        118,
+        100
+      ],
+      "file": "bias_118_100.csl",
+      "tensor": "model.layers.16.self_attn.q_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        101
+      ],
+      "file": "bias_118_101.csl",
+      "tensor": "model.layers.16.self_attn.q_proj.bias",
+      "row": 128,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        102
+      ],
+      "file": "bias_118_102.csl",
+      "tensor": "model.layers.16.self_attn.q_proj.bias",
+      "row": 256,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        103
+      ],
+      "file": "bias_118_103.csl",
+      "tensor": "model.layers.16.self_attn.q_proj.bias",
+      "row": 384,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        104
+      ],
+      "file": "bias_118_104.csl",
+      "tensor": "model.layers.16.self_attn.q_proj.bias",
+      "row": 512,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        105
+      ],
+      "file": "bias_118_105.csl",
+      "tensor": "model.layers.16.self_attn.q_proj.bias",
+      "row": 640,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        106
+      ],
+      "file": "bias_118_106.csl",
+      "tensor": "model.layers.16.self_attn.q_proj.bias",
+      "row": 768,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        107
+      ],
+      "file": "bias_118_107.csl",
+      "tensor": "model.layers.16.self_attn.k_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        108
+      ],
+      "file": "bias_118_108.csl",
+      "tensor": "model.layers.16.self_attn.v_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        190,
+        100
+      ],
+      "file": "controller_aux_17.csl",
+      "tensors": [
+        "model.layers.17.input_layernorm.weight",
+        "model.layers.17.post_attention_layernorm.weight"
+      ],
+      "kind": "decoder_norms_frequency"
+    },
+    {
+      "coordinate": [
+        182,
+        100
+      ],
+      "file": "bias_182_100.csl",
+      "tensor": "model.layers.17.self_attn.q_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        101
+      ],
+      "file": "bias_182_101.csl",
+      "tensor": "model.layers.17.self_attn.q_proj.bias",
+      "row": 128,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        102
+      ],
+      "file": "bias_182_102.csl",
+      "tensor": "model.layers.17.self_attn.q_proj.bias",
+      "row": 256,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        103
+      ],
+      "file": "bias_182_103.csl",
+      "tensor": "model.layers.17.self_attn.q_proj.bias",
+      "row": 384,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        104
+      ],
+      "file": "bias_182_104.csl",
+      "tensor": "model.layers.17.self_attn.q_proj.bias",
+      "row": 512,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        105
+      ],
+      "file": "bias_182_105.csl",
+      "tensor": "model.layers.17.self_attn.q_proj.bias",
+      "row": 640,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        106
+      ],
+      "file": "bias_182_106.csl",
+      "tensor": "model.layers.17.self_attn.q_proj.bias",
+      "row": 768,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        107
+      ],
+      "file": "bias_182_107.csl",
+      "tensor": "model.layers.17.self_attn.k_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        108
+      ],
+      "file": "bias_182_108.csl",
+      "tensor": "model.layers.17.self_attn.v_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        62,
+        120
+      ],
+      "file": "controller_aux_18.csl",
+      "tensors": [
+        "model.layers.18.input_layernorm.weight",
+        "model.layers.18.post_attention_layernorm.weight"
+      ],
+      "kind": "decoder_norms_frequency"
+    },
+    {
+      "coordinate": [
+        54,
+        120
+      ],
+      "file": "bias_54_120.csl",
+      "tensor": "model.layers.18.self_attn.q_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        121
+      ],
+      "file": "bias_54_121.csl",
+      "tensor": "model.layers.18.self_attn.q_proj.bias",
+      "row": 128,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        122
+      ],
+      "file": "bias_54_122.csl",
+      "tensor": "model.layers.18.self_attn.q_proj.bias",
+      "row": 256,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        123
+      ],
+      "file": "bias_54_123.csl",
+      "tensor": "model.layers.18.self_attn.q_proj.bias",
+      "row": 384,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        124
+      ],
+      "file": "bias_54_124.csl",
+      "tensor": "model.layers.18.self_attn.q_proj.bias",
+      "row": 512,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        125
+      ],
+      "file": "bias_54_125.csl",
+      "tensor": "model.layers.18.self_attn.q_proj.bias",
+      "row": 640,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        126
+      ],
+      "file": "bias_54_126.csl",
+      "tensor": "model.layers.18.self_attn.q_proj.bias",
+      "row": 768,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        127
+      ],
+      "file": "bias_54_127.csl",
+      "tensor": "model.layers.18.self_attn.k_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        128
+      ],
+      "file": "bias_54_128.csl",
+      "tensor": "model.layers.18.self_attn.v_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        126,
+        120
+      ],
+      "file": "controller_aux_19.csl",
+      "tensors": [
+        "model.layers.19.input_layernorm.weight",
+        "model.layers.19.post_attention_layernorm.weight"
+      ],
+      "kind": "decoder_norms_frequency"
+    },
+    {
+      "coordinate": [
+        118,
+        120
+      ],
+      "file": "bias_118_120.csl",
+      "tensor": "model.layers.19.self_attn.q_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        121
+      ],
+      "file": "bias_118_121.csl",
+      "tensor": "model.layers.19.self_attn.q_proj.bias",
+      "row": 128,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        122
+      ],
+      "file": "bias_118_122.csl",
+      "tensor": "model.layers.19.self_attn.q_proj.bias",
+      "row": 256,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        123
+      ],
+      "file": "bias_118_123.csl",
+      "tensor": "model.layers.19.self_attn.q_proj.bias",
+      "row": 384,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        124
+      ],
+      "file": "bias_118_124.csl",
+      "tensor": "model.layers.19.self_attn.q_proj.bias",
+      "row": 512,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        125
+      ],
+      "file": "bias_118_125.csl",
+      "tensor": "model.layers.19.self_attn.q_proj.bias",
+      "row": 640,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        126
+      ],
+      "file": "bias_118_126.csl",
+      "tensor": "model.layers.19.self_attn.q_proj.bias",
+      "row": 768,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        127
+      ],
+      "file": "bias_118_127.csl",
+      "tensor": "model.layers.19.self_attn.k_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        128
+      ],
+      "file": "bias_118_128.csl",
+      "tensor": "model.layers.19.self_attn.v_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        190,
+        120
+      ],
+      "file": "controller_aux_20.csl",
+      "tensors": [
+        "model.layers.20.input_layernorm.weight",
+        "model.layers.20.post_attention_layernorm.weight"
+      ],
+      "kind": "decoder_norms_frequency"
+    },
+    {
+      "coordinate": [
+        182,
+        120
+      ],
+      "file": "bias_182_120.csl",
+      "tensor": "model.layers.20.self_attn.q_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        121
+      ],
+      "file": "bias_182_121.csl",
+      "tensor": "model.layers.20.self_attn.q_proj.bias",
+      "row": 128,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        122
+      ],
+      "file": "bias_182_122.csl",
+      "tensor": "model.layers.20.self_attn.q_proj.bias",
+      "row": 256,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        123
+      ],
+      "file": "bias_182_123.csl",
+      "tensor": "model.layers.20.self_attn.q_proj.bias",
+      "row": 384,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        124
+      ],
+      "file": "bias_182_124.csl",
+      "tensor": "model.layers.20.self_attn.q_proj.bias",
+      "row": 512,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        125
+      ],
+      "file": "bias_182_125.csl",
+      "tensor": "model.layers.20.self_attn.q_proj.bias",
+      "row": 640,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        126
+      ],
+      "file": "bias_182_126.csl",
+      "tensor": "model.layers.20.self_attn.q_proj.bias",
+      "row": 768,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        127
+      ],
+      "file": "bias_182_127.csl",
+      "tensor": "model.layers.20.self_attn.k_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        128
+      ],
+      "file": "bias_182_128.csl",
+      "tensor": "model.layers.20.self_attn.v_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        62,
+        140
+      ],
+      "file": "controller_aux_21.csl",
+      "tensors": [
+        "model.layers.21.input_layernorm.weight",
+        "model.layers.21.post_attention_layernorm.weight"
+      ],
+      "kind": "decoder_norms_frequency"
+    },
+    {
+      "coordinate": [
+        54,
+        140
+      ],
+      "file": "bias_54_140.csl",
+      "tensor": "model.layers.21.self_attn.q_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        141
+      ],
+      "file": "bias_54_141.csl",
+      "tensor": "model.layers.21.self_attn.q_proj.bias",
+      "row": 128,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        142
+      ],
+      "file": "bias_54_142.csl",
+      "tensor": "model.layers.21.self_attn.q_proj.bias",
+      "row": 256,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        143
+      ],
+      "file": "bias_54_143.csl",
+      "tensor": "model.layers.21.self_attn.q_proj.bias",
+      "row": 384,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        144
+      ],
+      "file": "bias_54_144.csl",
+      "tensor": "model.layers.21.self_attn.q_proj.bias",
+      "row": 512,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        145
+      ],
+      "file": "bias_54_145.csl",
+      "tensor": "model.layers.21.self_attn.q_proj.bias",
+      "row": 640,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        146
+      ],
+      "file": "bias_54_146.csl",
+      "tensor": "model.layers.21.self_attn.q_proj.bias",
+      "row": 768,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        147
+      ],
+      "file": "bias_54_147.csl",
+      "tensor": "model.layers.21.self_attn.k_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        54,
+        148
+      ],
+      "file": "bias_54_148.csl",
+      "tensor": "model.layers.21.self_attn.v_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        126,
+        140
+      ],
+      "file": "controller_aux_22.csl",
+      "tensors": [
+        "model.layers.22.input_layernorm.weight",
+        "model.layers.22.post_attention_layernorm.weight"
+      ],
+      "kind": "decoder_norms_frequency"
+    },
+    {
+      "coordinate": [
+        118,
+        140
+      ],
+      "file": "bias_118_140.csl",
+      "tensor": "model.layers.22.self_attn.q_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        141
+      ],
+      "file": "bias_118_141.csl",
+      "tensor": "model.layers.22.self_attn.q_proj.bias",
+      "row": 128,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        142
+      ],
+      "file": "bias_118_142.csl",
+      "tensor": "model.layers.22.self_attn.q_proj.bias",
+      "row": 256,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        143
+      ],
+      "file": "bias_118_143.csl",
+      "tensor": "model.layers.22.self_attn.q_proj.bias",
+      "row": 384,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        144
+      ],
+      "file": "bias_118_144.csl",
+      "tensor": "model.layers.22.self_attn.q_proj.bias",
+      "row": 512,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        145
+      ],
+      "file": "bias_118_145.csl",
+      "tensor": "model.layers.22.self_attn.q_proj.bias",
+      "row": 640,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        146
+      ],
+      "file": "bias_118_146.csl",
+      "tensor": "model.layers.22.self_attn.q_proj.bias",
+      "row": 768,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        147
+      ],
+      "file": "bias_118_147.csl",
+      "tensor": "model.layers.22.self_attn.k_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        118,
+        148
+      ],
+      "file": "bias_118_148.csl",
+      "tensor": "model.layers.22.self_attn.v_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        190,
+        140
+      ],
+      "file": "controller_aux_23.csl",
+      "tensors": [
+        "model.layers.23.input_layernorm.weight",
+        "model.layers.23.post_attention_layernorm.weight"
+      ],
+      "kind": "decoder_norms_frequency"
+    },
+    {
+      "coordinate": [
+        182,
+        140
+      ],
+      "file": "bias_182_140.csl",
+      "tensor": "model.layers.23.self_attn.q_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        141
+      ],
+      "file": "bias_182_141.csl",
+      "tensor": "model.layers.23.self_attn.q_proj.bias",
+      "row": 128,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        142
+      ],
+      "file": "bias_182_142.csl",
+      "tensor": "model.layers.23.self_attn.q_proj.bias",
+      "row": 256,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        143
+      ],
+      "file": "bias_182_143.csl",
+      "tensor": "model.layers.23.self_attn.q_proj.bias",
+      "row": 384,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        144
+      ],
+      "file": "bias_182_144.csl",
+      "tensor": "model.layers.23.self_attn.q_proj.bias",
+      "row": 512,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        145
+      ],
+      "file": "bias_182_145.csl",
+      "tensor": "model.layers.23.self_attn.q_proj.bias",
+      "row": 640,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        146
+      ],
+      "file": "bias_182_146.csl",
+      "tensor": "model.layers.23.self_attn.q_proj.bias",
+      "row": 768,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        147
+      ],
+      "file": "bias_182_147.csl",
+      "tensor": "model.layers.23.self_attn.k_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        182,
+        148
+      ],
+      "file": "bias_182_148.csl",
+      "tensor": "model.layers.23.self_attn.v_proj.bias",
+      "row": 0,
+      "kind": "bias"
+    },
+    {
+      "coordinate": [
+        192,
+        160
+      ],
+      "file": "final_norm.csl",
+      "tensor": "model.norm.weight",
+      "kind": "final_norm"
+    }
+  ],
+  "scope": "Selected original BF16 matrix byte declarations and all24layer norms/biases/pinnedfrequencies plus final norm. Data authoring only: no placement binding, new ELF/alignment, SDK loading or model inference acceptance."
+}

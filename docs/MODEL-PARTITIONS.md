@@ -1,5 +1,7 @@
 # Model weight partition qualification
 
+**Latest: all 34552 original matrix blocks are statically qualified across 35 contiguous partitions.** This completes original matrix partition coverage, not full-model assembly or SDK inference. [Independent complete-coverage acceptance](../validation/reviews/s5-fullmodel-static-coverage-acceptance.json) and [fixed ledger](../release/MODEL-PARTITION-LEDGER.json) bind the evidence. The sections below preserve prior milestones and their narrower scopes.
+
 Two independently compiled partitions now cover original matrix blocks 0–1535, out of 34552 required by the full model. Their initializer, static resource and whole-ELF compatibility checks pass. They have not been assembled into a fully initialized model and do not add a neural runtime result.
 
 | Original block interval | Original blocks in this partition | Compile time | Compile peak RSS | Application ELF classes |
@@ -208,3 +210,14 @@ Original intervals 32256–33279 and 33280–34303 independently close, extendin
 | 33280–34303 | 748.491559 s | 10597528 KiB | model-elf-audit-20260909T095501540886Z | model-contract-20260909T100020639759Z |
 
 The [fixed ledger](../release/MODEL-PARTITION-LEDGER.json) and [publication checks](../release/MODEL-PARTITION-33-34-CHECKS.json) bind both new intervals, their independent reviews, original manifests and execution/result identities. Six complete remote manifests were reverified. Selected source and derived summaries exclude model literals, raw tensors, binaries and private paths; original hashes retain their meanings. No compiler, SDK simulation or CPU model calculation was repeated. This remains static deployment coverage, not full-model assembly or neural inference acceptance.
+
+
+## Final tail and complete static coverage — 2026-09-09
+
+The final interval 34304–34551 contributes 248 original blocks. Compile `model-compile-20260909T094945932237Z`, audit `model-elf-audit-20260909T101008842898Z` and contract `model-contract-20260909T101435906992Z` are independently accepted. The tail contains 616 ELF classes: 248 selected, 162 common and 206 placeholders. Static high-water is 45456 bytes, with 446 DSR families. Compile time was 272.121831 seconds with peak RSS 3517108 KiB; audit 138.483087 seconds / 112388 KiB; contract 8.186957 seconds / 212488 KiB. Process exit is independently confirmed.
+
+All 35 accepted intervals cover exactly 0–34551 without gaps or overlap. Publication verified the final three complete remote manifests, all 35 actual remote contract result index lists and their execution/result hash bindings, and the original development ledger SHA against the independent complete-coverage acceptance. [Tail publication checks](../release/MODEL-PARTITION-35-CHECKS.json) retain its source/evidence identities. The first interval has 512 blocks, intermediate intervals 1024, and the final interval 248; no uniform batch-size assumption is needed.
+
+The completed milestone is **original matrix partition static coverage and per-partition whole-ELF compatibility**. It does not establish complete original auxiliary deployment in a single image. Full intact-ELF model assembly, that assembly's own diagnostic ABI audit, full 24-layer first-token neural SDK execution, persistent generation and capacity acceptance remain required. Earlier separate vocabulary and two-layer SDK runs do not qualify that future complete assembly.
+
+No model data or binaries are included and no compiler/SDK/CPU model experiment was rerun for publication. Historical frozen snapshots and hash meanings remain unchanged.

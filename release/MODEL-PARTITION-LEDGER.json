@@ -1,8 +1,8 @@
 {
-  "original_ledger_sha256": "dc535bdbc624fe2466e4311f7f3728564579868cbf265c449dfb7934329161e0",
-  "publication_note": "Fixed selection of thirty-four independently accepted static intervals; no full model assembly/runtime inferred.",
+  "original_ledger_sha256": "f0849d6707801dea2e5c44ba35fd22a2f44c6aac7257692863682943dabba632",
+  "publication_note": "Fixed selection of thirty-five independently accepted static intervals; no full model assembly/runtime inferred.",
   "total_original_matrix_tiles": 34552,
-  "accepted_original_tiles": 34304,
+  "accepted_original_tiles": 34552,
   "accepted_intervals": [
     {
       "first": 0,
@@ -17,7 +17,8 @@
       "compile_peak_rss_kib": 5881412,
       "contract_review": "s5-model-first512-contract-independent-review.json",
       "selected_elves": 512,
-      "common_elves": 162
+      "common_elves": 162,
+      "contract": "model-contract-20260908T205030734366Z"
     },
     {
       "first": 512,
@@ -557,6 +558,23 @@
       "selected_elves": 1024,
       "common_elves": 162,
       "placeholder_elves": 215
+    },
+    {
+      "first": 34304,
+      "last": 34551,
+      "compile": "model-compile-20260909T094945932237Z",
+      "audit": "model-elf-audit-20260909T101008842898Z",
+      "contract": "model-contract-20260909T101435906992Z",
+      "initializer_review": "model-elf-audit-20260909T101008842898Z-independent-initializer-review.json",
+      "resource_review": "model-elf-audit-20260909T101008842898Z-independent-resource-review.json",
+      "contract_review": "model-contract-20260909T101435906992Z-independent-contract-review.json",
+      "elf_count": 616,
+      "max_static_bytes": 45456,
+      "compile_seconds": 272.1218310389668,
+      "compile_peak_rss_kib": 3517108,
+      "selected_elves": 248,
+      "common_elves": 162,
+      "placeholder_elves": 206
     }
   ],
   "assembled": false,

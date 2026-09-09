@@ -1,0 +1,576 @@
+{
+  "accepted_at": "2026-09-09T10:19:54.234954+00:00",
+  "accepted": true,
+  "ledger_sha256": "f0849d6707801dea2e5c44ba35fd22a2f44c6aac7257692863682943dabba632",
+  "partitions": 35,
+  "original_matrix_tiles": 34552,
+  "first": 0,
+  "last": 34551,
+  "ordered_intervals": [
+    {
+      "first": 0,
+      "last": 511,
+      "audit": "model-elf-audit-20260908T202809240433Z",
+      "contract": "model-contract-20260908T205030734366Z",
+      "initializer_review": "s5-model-first512-initializer-review.json",
+      "resource_review": "s5-model-first512-resource-review.json",
+      "contract_review": "s5-model-first512-contract-independent-review.json"
+    },
+    {
+      "first": 512,
+      "last": 1535,
+      "audit": "model-elf-audit-20260908T210836386387Z",
+      "contract": "model-contract-20260908T211332915171Z",
+      "initializer_review": "model-elf-audit-20260908T210836386387Z-independent-initializer-review.json",
+      "resource_review": "s5-model-second-partition-resource-review.json",
+      "contract_review": "s5-model-second-partition-contract-independent-review.json"
+    },
+    {
+      "first": 1536,
+      "last": 2559,
+      "audit": "model-elf-audit-20260908T213134326147Z",
+      "contract": "model-contract-20260908T213656824645Z",
+      "initializer_review": "model-elf-audit-20260908T213134326147Z-independent-initializer-review.json",
+      "resource_review": "model-elf-audit-20260908T213134326147Z-independent-resource-review.json",
+      "contract_review": "model-contract-20260908T213656824645Z-independent-contract-review.json"
+    },
+    {
+      "first": 2560,
+      "last": 3583,
+      "audit": "model-elf-audit-20260908T215942648812Z",
+      "contract": "model-contract-20260908T220541045120Z",
+      "initializer_review": "model-elf-audit-20260908T215942648812Z-independent-initializer-review.json",
+      "resource_review": "model-elf-audit-20260908T215942648812Z-independent-resource-review.json",
+      "contract_review": "model-contract-20260908T220541045120Z-independent-contract-review.json"
+    },
+    {
+      "first": 3584,
+      "last": 4607,
+      "audit": "model-elf-audit-20260909T000133487095Z",
+      "contract": "model-contract-20260909T002817703824Z",
+      "initializer_review": "model-elf-audit-20260909T000133487095Z-independent-initializer-review.json",
+      "resource_review": "model-elf-audit-20260909T000133487095Z-independent-resource-review.json",
+      "contract_review": "model-contract-20260909T002817703824Z-independent-contract-review.json"
+    },
+    {
+      "first": 4608,
+      "last": 5631,
+      "audit": "model-elf-audit-20260909T013324108058Z",
+      "contract": "model-contract-20260909T014038336694Z",
+      "initializer_review": "model-elf-audit-20260909T013324108058Z-independent-initializer-review.json",
+      "resource_review": "model-elf-audit-20260909T013324108058Z-independent-resource-review.json",
+      "contract_review": "model-contract-20260909T014038336694Z-independent-contract-review.json"
+    },
+    {
+      "first": 5632,
+      "last": 6655,
+      "audit": "model-elf-audit-20260909T020338568912Z",
+      "contract": "model-contract-20260909T020826832138Z",
+      "initializer_review": "model-elf-audit-20260909T020338568912Z-independent-initializer-review.json",
+      "resource_review": "model-elf-audit-20260909T020338568912Z-independent-resource-review.json",
+      "contract_review": "model-contract-20260909T020826832138Z-independent-contract-review.json"
+    },
+    {
+      "first": 6656,
+      "last": 7679,
+      "audit": "model-elf-audit-20260909T021121915327Z",
+      "contract": "model-contract-20260909T021804090838Z",
+      "initializer_review": "model-elf-audit-20260909T021121915327Z-independent-initializer-review.json",
+      "resource_review": "model-elf-audit-20260909T021121915327Z-independent-resource-review.json",
+      "contract_review": "model-contract-20260909T021804090838Z-independent-contract-review.json"
+    },
+    {
+      "first": 7680,
+      "last": 8703,
+      "audit": "model-elf-audit-20260909T023751025697Z",
+      "contract": "model-contract-20260909T024355577708Z",
+      "initializer_review": "model-elf-audit-20260909T023751025697Z-independent-initializer-review.json",
+      "resource_review": "model-elf-audit-20260909T023751025697Z-independent-resource-review.json",
+      "contract_review": "model-contract-20260909T024355577708Z-independent-contract-review.json"
+    },
+    {
+      "first": 8704,
+      "last": 9727,
+      "audit": "model-elf-audit-20260909T024607209690Z",
+      "contract": "model-contract-20260909T025150485738Z",
+      "initializer_review": "model-elf-audit-20260909T024607209690Z-independent-initializer-review.json",
+      "resource_review": "model-elf-audit-20260909T024607209690Z-independent-resource-review.json",
+      "contract_review": "model-contract-20260909T025150485738Z-independent-contract-review.json"
+    },
+    {
+      "first": 9728,
+      "last": 10751,
+      "audit": "model-elf-audit-20260909T031146048688Z",
+      "contract": "model-contract-20260909T031703587119Z",
+      "initializer_review": "model-elf-audit-20260909T031146048688Z-independent-initializer-review.json",
+      "resource_review": "model-elf-audit-20260909T031146048688Z-independent-resource-review.json",
+      "contract_review": "model-contract-20260909T031703587119Z-independent-contract-review.json"
+    },
+    {
+      "first": 10752,
+      "last": 11775,
+      "audit": "model-elf-audit-20260909T032652818925Z",
+      "contract": "model-contract-20260909T033259893327Z",
+      "initializer_review": "model-elf-audit-20260909T032652818925Z-independent-initializer-review.json",
+      "resource_review": "model-elf-audit-20260909T032652818925Z-independent-resource-review.json",
+      "contract_review": "model-contract-20260909T033259893327Z-independent-contract-review.json"
+    },
+    {
+      "first": 11776,
+      "last": 12799,
+      "audit": "model-elf-audit-20260909T035446861737Z",
+      "contract": "model-contract-20260909T035944013621Z",
+      "initializer_review": "model-elf-audit-20260909T035446861737Z-independent-initializer-review.json",
+      "resource_review": "model-elf-audit-20260909T035446861737Z-independent-resource-review.json",
+      "contract_review": "model-contract-20260909T035944013621Z-independent-contract-review.json"
+    },
+    {
+      "first": 12800,
+      "last": 13823,
+      "audit": "model-elf-audit-20260909T040300560930Z",
+      "contract": "model-contract-20260909T040841471502Z",
+      "initializer_review": "model-elf-audit-20260909T040300560930Z-independent-initializer-review.json",
+      "resource_review": "model-elf-audit-20260909T040300560930Z-independent-resource-review.json",
+      "contract_review": "model-contract-20260909T040841471502Z-independent-contract-review.json"
+    },
+    {
+      "first": 13824,
+      "last": 14847,
+      "audit": "model-elf-audit-20260909T042756388119Z",
+      "contract": "model-contract-20260909T043227875920Z",
+      "initializer_review": "model-elf-audit-20260909T042756388119Z-independent-initializer-review.json",
+      "resource_review": "model-elf-audit-20260909T042756388119Z-independent-resource-review.json",
+      "contract_review": "model-contract-20260909T043227875920Z-independent-contract-review.json"
+    },
+    {
+      "first": 14848,
+      "last": 15871,
+      "audit": "model-elf-audit-20260909T043504093883Z",
+      "contract": "model-contract-20260909T044054425908Z",
+      "initializer_review": "model-elf-audit-20260909T043504093883Z-independent-initializer-review.json",
+      "resource_review": "model-elf-audit-20260909T043504093883Z-independent-resource-review.json",
+      "contract_review": "model-contract-20260909T044054425908Z-independent-contract-review.json"
+    },
+    {
+      "first": 15872,
+      "last": 16895,
+      "audit": "model-elf-audit-20260909T045932334038Z",
+      "contract": "model-contract-20260909T050349517847Z",
+      "initializer_review": "model-elf-audit-20260909T045932334038Z-independent-initializer-review.json",
+      "resource_review": "model-elf-audit-20260909T045932334038Z-independent-resource-review.json",
+      "contract_review": "model-contract-20260909T050349517847Z-independent-contract-review.json"
+    },
+    {
+      "first": 16896,
+      "last": 17919,
+      "audit": "model-elf-audit-20260909T050655191197Z",
+      "contract": "model-contract-20260909T051245189026Z",
+      "initializer_review": "model-elf-audit-20260909T050655191197Z-independent-initializer-review.json",
+      "resource_review": "model-elf-audit-20260909T050655191197Z-independent-resource-review.json",
+      "contract_review": "model-contract-20260909T051245189026Z-independent-contract-review.json"
+    },
+    {
+      "first": 17920,
+      "last": 18943,
+      "audit": "model-elf-audit-20260909T053140055002Z",
+      "contract": "model-contract-20260909T053618409132Z",
+      "initializer_review": "model-elf-audit-20260909T053140055002Z-independent-initializer-review.json",
+      "resource_review": "model-elf-audit-20260909T053140055002Z-independent-resource-review.json",
+      "contract_review": "model-contract-20260909T053618409132Z-independent-contract-review.json"
+    },
+    {
+      "first": 18944,
+      "last": 19967,
+      "audit": "model-elf-audit-20260909T053922183984Z",
+      "contract": "model-contract-20260909T054533797924Z",
+      "initializer_review": "model-elf-audit-20260909T053922183984Z-independent-initializer-review.json",
+      "resource_review": "model-elf-audit-20260909T053922183984Z-independent-resource-review.json",
+      "contract_review": "model-contract-20260909T054533797924Z-independent-contract-review.json"
+    },
+    {
+      "first": 19968,
+      "last": 20991,
+      "audit": "model-elf-audit-20260909T060451410173Z",
+      "contract": "model-contract-20260909T060952504758Z",
+      "initializer_review": "model-elf-audit-20260909T060451410173Z-independent-initializer-review.json",
+      "resource_review": "model-elf-audit-20260909T060451410173Z-independent-resource-review.json",
+      "contract_review": "model-contract-20260909T060952504758Z-independent-contract-review.json"
+    },
+    {
+      "first": 20992,
+      "last": 22015,
+      "audit": "model-elf-audit-20260909T061310544381Z",
+      "contract": "model-contract-20260909T061920006420Z",
+      "initializer_review": "model-elf-audit-20260909T061310544381Z-independent-initializer-review.json",
+      "resource_review": "model-elf-audit-20260909T061310544381Z-independent-resource-review.json",
+      "contract_review": "model-contract-20260909T061920006420Z-independent-contract-review.json"
+    },
+    {
+      "first": 22016,
+      "last": 23039,
+      "audit": "model-elf-audit-20260909T063833559841Z",
+      "contract": "model-contract-20260909T064531185909Z",
+      "initializer_review": "model-elf-audit-20260909T063833559841Z-independent-initializer-review.json",
+      "resource_review": "model-elf-audit-20260909T063833559841Z-independent-resource-review.json",
+      "contract_review": "model-contract-20260909T064531185909Z-independent-contract-review.json"
+    },
+    {
+      "first": 23040,
+      "last": 24063,
+      "audit": "model-elf-audit-20260909T065159479171Z",
+      "contract": "model-contract-20260909T065846307824Z",
+      "initializer_review": "model-elf-audit-20260909T065159479171Z-independent-initializer-review.json",
+      "resource_review": "model-elf-audit-20260909T065159479171Z-independent-resource-review.json",
+      "contract_review": "model-contract-20260909T065846307824Z-independent-contract-review.json"
+    },
+    {
+      "first": 24064,
+      "last": 25087,
+      "audit": "model-elf-audit-20260909T072112386150Z",
+      "contract": "model-contract-20260909T072656215516Z",
+      "initializer_review": "model-elf-audit-20260909T072112386150Z-independent-initializer-review.json",
+      "resource_review": "model-elf-audit-20260909T072112386150Z-independent-resource-review.json",
+      "contract_review": "model-contract-20260909T072656215516Z-independent-contract-review.json"
+    },
+    {
+      "first": 25088,
+      "last": 26111,
+      "audit": "model-elf-audit-20260909T073027719980Z",
+      "contract": "model-contract-20260909T073616638123Z",
+      "initializer_review": "model-elf-audit-20260909T073027719980Z-independent-initializer-review.json",
+      "resource_review": "model-elf-audit-20260909T073027719980Z-independent-resource-review.json",
+      "contract_review": "model-contract-20260909T073616638123Z-independent-contract-review.json"
+    },
+    {
+      "first": 26112,
+      "last": 27135,
+      "audit": "model-elf-audit-20260909T080320354782Z",
+      "contract": "model-contract-20260909T080832266258Z",
+      "initializer_review": "model-elf-audit-20260909T080320354782Z-independent-initializer-review.json",
+      "resource_review": "model-elf-audit-20260909T080320354782Z-independent-resource-review.json",
+      "contract_review": "model-contract-20260909T080832266258Z-independent-contract-review.json"
+    },
+    {
+      "first": 27136,
+      "last": 28159,
+      "audit": "model-elf-audit-20260909T081218408065Z",
+      "contract": "model-contract-20260909T082617594657Z",
+      "initializer_review": "model-elf-audit-20260909T081218408065Z-independent-initializer-review.json",
+      "resource_review": "model-elf-audit-20260909T081218408065Z-independent-resource-review.json",
+      "contract_review": "model-contract-20260909T082617594657Z-independent-contract-review.json"
+    },
+    {
+      "first": 28160,
+      "last": 29183,
+      "audit": "model-elf-audit-20260909T084546102617Z",
+      "contract": "model-contract-20260909T085100208824Z",
+      "initializer_review": "model-elf-audit-20260909T084546102617Z-independent-initializer-review.json",
+      "resource_review": "model-elf-audit-20260909T084546102617Z-independent-resource-review.json",
+      "contract_review": "model-contract-20260909T085100208824Z-independent-contract-review.json"
+    },
+    {
+      "first": 29184,
+      "last": 30207,
+      "audit": "model-elf-audit-20260909T085253959265Z",
+      "contract": "model-contract-20260909T085742269396Z",
+      "initializer_review": "model-elf-audit-20260909T085253959265Z-independent-initializer-review.json",
+      "resource_review": "model-elf-audit-20260909T085253959265Z-independent-resource-review.json",
+      "contract_review": "model-contract-20260909T085742269396Z-independent-contract-review.json"
+    },
+    {
+      "first": 30208,
+      "last": 31231,
+      "audit": "model-elf-audit-20260909T091702936182Z",
+      "contract": "model-contract-20260909T092158983322Z",
+      "initializer_review": "model-elf-audit-20260909T091702936182Z-independent-initializer-review.json",
+      "resource_review": "model-elf-audit-20260909T091702936182Z-independent-resource-review.json",
+      "contract_review": "model-contract-20260909T092158983322Z-independent-contract-review.json"
+    },
+    {
+      "first": 31232,
+      "last": 32255,
+      "audit": "model-elf-audit-20260909T092351163640Z",
+      "contract": "model-contract-20260909T092849551921Z",
+      "initializer_review": "model-elf-audit-20260909T092351163640Z-independent-initializer-review.json",
+      "resource_review": "model-elf-audit-20260909T092351163640Z-independent-resource-review.json",
+      "contract_review": "model-contract-20260909T092849551921Z-independent-contract-review.json"
+    },
+    {
+      "first": 32256,
+      "last": 33279,
+      "audit": "model-elf-audit-20260909T094738916300Z",
+      "contract": "model-contract-20260909T095304093929Z",
+      "initializer_review": "model-elf-audit-20260909T094738916300Z-independent-initializer-review.json",
+      "resource_review": "model-elf-audit-20260909T094738916300Z-independent-resource-review.json",
+      "contract_review": "model-contract-20260909T095304093929Z-independent-contract-review.json"
+    },
+    {
+      "first": 33280,
+      "last": 34303,
+      "audit": "model-elf-audit-20260909T095501540886Z",
+      "contract": "model-contract-20260909T100020639759Z",
+      "initializer_review": "model-elf-audit-20260909T095501540886Z-independent-initializer-review.json",
+      "resource_review": "model-elf-audit-20260909T095501540886Z-independent-resource-review.json",
+      "contract_review": "model-contract-20260909T100020639759Z-independent-contract-review.json"
+    },
+    {
+      "first": 34304,
+      "last": 34551,
+      "audit": "model-elf-audit-20260909T101008842898Z",
+      "contract": "model-contract-20260909T101435906992Z",
+      "initializer_review": "model-elf-audit-20260909T101008842898Z-independent-initializer-review.json",
+      "resource_review": "model-elf-audit-20260909T101008842898Z-independent-resource-review.json",
+      "contract_review": "model-contract-20260909T101435906992Z-independent-contract-review.json"
+    }
+  ],
+  "actual_remote_index_checks": [
+    {
+      "audit": "model-elf-audit-20260908T202809240433Z",
+      "first": 0,
+      "last": 511,
+      "count": 512,
+      "config_sha256": "191d0aa396373112ae080ca0c7d29061568d89954e98d364b61f3a771b6c815a"
+    },
+    {
+      "audit": "model-elf-audit-20260908T210836386387Z",
+      "first": 512,
+      "last": 1535,
+      "count": 1024,
+      "config_sha256": "797c1b7b0b6e5675a61ba15b13b2b571fa559264f1c031a678f6197935498412"
+    },
+    {
+      "audit": "model-elf-audit-20260908T213134326147Z",
+      "first": 1536,
+      "last": 2559,
+      "count": 1024,
+      "config_sha256": "842b40a7bead53b664f94ab2ec1b48c80d1c6835d1338b7e56834fe88ad6b832"
+    },
+    {
+      "audit": "model-elf-audit-20260908T215942648812Z",
+      "first": 2560,
+      "last": 3583,
+      "count": 1024,
+      "config_sha256": "47de4410240f5d49a1ef4f15e804a82505ff02718e107d751165cff7b196e4ac"
+    },
+    {
+      "audit": "model-elf-audit-20260909T000133487095Z",
+      "first": 3584,
+      "last": 4607,
+      "count": 1024,
+      "config_sha256": "294f9efc40e61af543ccb9b9c472c7bde0b905569d12adf63603a18749a754b1"
+    },
+    {
+      "audit": "model-elf-audit-20260909T013324108058Z",
+      "first": 4608,
+      "last": 5631,
+      "count": 1024,
+      "config_sha256": "5e3f7cbf468ac11001a7cf046d6326c10ddb2a641528541406171f59a05b59ad"
+    },
+    {
+      "audit": "model-elf-audit-20260909T020338568912Z",
+      "first": 5632,
+      "last": 6655,
+      "count": 1024,
+      "config_sha256": "fdc6883efb95fe7d4f1aa3961e703510bf429793aa801d89d93e166ade94d13d"
+    },
+    {
+      "audit": "model-elf-audit-20260909T021121915327Z",
+      "first": 6656,
+      "last": 7679,
+      "count": 1024,
+      "config_sha256": "d36b67ee63eba2ee9fc3b5b3eff2b4ef191f4fc7c0715daa4d15b85c43a324a6"
+    },
+    {
+      "audit": "model-elf-audit-20260909T023751025697Z",
+      "first": 7680,
+      "last": 8703,
+      "count": 1024,
+      "config_sha256": "abb4374ff0a7806361545332715bde55b10ee12d709b532be1c7fab719be3708"
+    },
+    {
+      "audit": "model-elf-audit-20260909T024607209690Z",
+      "first": 8704,
+      "last": 9727,
+      "count": 1024,
+      "config_sha256": "40d43654d00fc43a432b3153c56cf22e35c01914a44d9ca7b50211658f397868"
+    },
+    {
+      "audit": "model-elf-audit-20260909T031146048688Z",
+      "first": 9728,
+      "last": 10751,
+      "count": 1024,
+      "config_sha256": "baa52a5012cd50e5e7b53d05c1b6f449e056459915d6fe7bd7bf9eebafac6965"
+    },
+    {
+      "audit": "model-elf-audit-20260909T032652818925Z",
+      "first": 10752,
+      "last": 11775,
+      "count": 1024,
+      "config_sha256": "09699a0a3e9a0e0d1d6797e742e06fc9d7dbcb2d5ba645fc8add25e98408bd08"
+    },
+    {
+      "audit": "model-elf-audit-20260909T035446861737Z",
+      "first": 11776,
+      "last": 12799,
+      "count": 1024,
+      "config_sha256": "064aeeda0dc72b83cff03b75c409c27d035083897b083027c4221a2e7e828b5e"
+    },
+    {
+      "audit": "model-elf-audit-20260909T040300560930Z",
+      "first": 12800,
+      "last": 13823,
+      "count": 1024,
+      "config_sha256": "228b766dc944154bea1cbc261b1ad435aca9da3a6487c4149e83405c3e246813"
+    },
+    {
+      "audit": "model-elf-audit-20260909T042756388119Z",
+      "first": 13824,
+      "last": 14847,
+      "count": 1024,
+      "config_sha256": "5eb825cb7442c12b6728805685840af9e495dc9c79ff03b52ca35dd380548065"
+    },
+    {
+      "audit": "model-elf-audit-20260909T043504093883Z",
+      "first": 14848,
+      "last": 15871,
+      "count": 1024,
+      "config_sha256": "fd17ec40e0028e63a927f15dc2b80e1080a3d23ed0fcf0f222830412edc24e5f"
+    },
+    {
+      "audit": "model-elf-audit-20260909T045932334038Z",
+      "first": 15872,
+      "last": 16895,
+      "count": 1024,
+      "config_sha256": "b716f6ed9aa51bbe98e81fad550414878e66e11241c056b0481103b6095f0d36"
+    },
+    {
+      "audit": "model-elf-audit-20260909T050655191197Z",
+      "first": 16896,
+      "last": 17919,
+      "count": 1024,
+      "config_sha256": "2358fa8d657028acaaf10ed74479f2e43e1a2c335e9cd4d68716e631294e80fa"
+    },
+    {
+      "audit": "model-elf-audit-20260909T053140055002Z",
+      "first": 17920,
+      "last": 18943,
+      "count": 1024,
+      "config_sha256": "4792ce877e2d2cbdfb1f1fe965df6f8eebe8a938ae873b11cb0130bd98098479"
+    },
+    {
+      "audit": "model-elf-audit-20260909T053922183984Z",
+      "first": 18944,
+      "last": 19967,
+      "count": 1024,
+      "config_sha256": "1984a8b734ed8369c10564d479470a958b7222ada1d83fdae51117713d30a0f0"
+    },
+    {
+      "audit": "model-elf-audit-20260909T060451410173Z",
+      "first": 19968,
+      "last": 20991,
+      "count": 1024,
+      "config_sha256": "2ec9fa947071448d2a8086e31acbb4c2f86ad7f8a777bbc53678343123b7130d"
+    },
+    {
+      "audit": "model-elf-audit-20260909T061310544381Z",
+      "first": 20992,
+      "last": 22015,
+      "count": 1024,
+      "config_sha256": "e7ae65a0cd033d42584fab548d56369208654d5cdaee074034dc3b4dd94f0fb1"
+    },
+    {
+      "audit": "model-elf-audit-20260909T063833559841Z",
+      "first": 22016,
+      "last": 23039,
+      "count": 1024,
+      "config_sha256": "9c6fd27bf7eb92969aa7a5cc7c1f850c7afa6c995361552a19ac3bced4130213"
+    },
+    {
+      "audit": "model-elf-audit-20260909T065159479171Z",
+      "first": 23040,
+      "last": 24063,
+      "count": 1024,
+      "config_sha256": "f07cbe7f1f7c2174986f20cc06f508ee29d7a10456346830bace7d75b12cc33b"
+    },
+    {
+      "audit": "model-elf-audit-20260909T072112386150Z",
+      "first": 24064,
+      "last": 25087,
+      "count": 1024,
+      "config_sha256": "66193c85cb605a8093f3299a66b1b31fcdc684b86d7797e0b206045f64c07016"
+    },
+    {
+      "audit": "model-elf-audit-20260909T073027719980Z",
+      "first": 25088,
+      "last": 26111,
+      "count": 1024,
+      "config_sha256": "81c867b4f3a7f7960ad5bb5edc5d1334a7d78f518232a2f211c6e1b9579476da"
+    },
+    {
+      "audit": "model-elf-audit-20260909T080320354782Z",
+      "first": 26112,
+      "last": 27135,
+      "count": 1024,
+      "config_sha256": "086b3413d8777dcc8cf9571809ca6e74e9f37a9079d07c7f81787285bfcf8cbe"
+    },
+    {
+      "audit": "model-elf-audit-20260909T081218408065Z",
+      "first": 27136,
+      "last": 28159,
+      "count": 1024,
+      "config_sha256": "176f095c931e4dd02746928e42066ccbbec0e2ea341bbfb3fb8ad50f0ea5a213"
+    },
+    {
+      "audit": "model-elf-audit-20260909T084546102617Z",
+      "first": 28160,
+      "last": 29183,
+      "count": 1024,
+      "config_sha256": "85066f4c3e5840cdacaaeb78798717055d842f6574c90d5349494442a4c3bbe1"
+    },
+    {
+      "audit": "model-elf-audit-20260909T085253959265Z",
+      "first": 29184,
+      "last": 30207,
+      "count": 1024,
+      "config_sha256": "278abc54c7e11c3c16cea899f9907f97ee9b23f93b862636fbc1fbaa55db01c3"
+    },
+    {
+      "audit": "model-elf-audit-20260909T091702936182Z",
+      "first": 30208,
+      "last": 31231,
+      "count": 1024,
+      "config_sha256": "15b263261975a510649cd9b6cc8ecdf4df78d9ccd617ecb1507baaea935a4fb6"
+    },
+    {
+      "audit": "model-elf-audit-20260909T092351163640Z",
+      "first": 31232,
+      "last": 32255,
+      "count": 1024,
+      "config_sha256": "f9d252c7600a42370479304d8af4e2bc3b4fd99428f1c6dd06af4a450190e0ee"
+    },
+    {
+      "audit": "model-elf-audit-20260909T094738916300Z",
+      "first": 32256,
+      "last": 33279,
+      "count": 1024,
+      "config_sha256": "aed709dfbcb58b8edcd4a4ecde1bf176a4df6e27ab4254f5100d8f3101ba87f8"
+    },
+    {
+      "audit": "model-elf-audit-20260909T095501540886Z",
+      "first": 33280,
+      "last": 34303,
+      "count": 1024,
+      "config_sha256": "270d5a373881b6a14f51f368682233adf948018ba847fb3ca75f9f151d560a60"
+    },
+    {
+      "audit": "model-elf-audit-20260909T101008842898Z",
+      "first": 34304,
+      "last": 34551,
+      "count": 248,
+      "config_sha256": "3943198f5ce932e85ce8be97059058edefaf17867c4e25de272a3e25724dc197"
+    }
+  ],
+  "assembled": false,
+  "sdk_complete": false,
+  "scope": "Complete original matrix partition static coverage and per-partition whole-ELF compatibility accepted. Full intact-ELF model assembly, own diagnostic ABI, SDK neural inference, generation and capacity remain required."
+}
