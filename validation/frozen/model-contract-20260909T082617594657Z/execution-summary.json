@@ -1,0 +1,14 @@
+{
+  "success": true,
+  "sdk_sha256": "fff17e81c61dcb6012bdee2941a6fdc570f5c8604967530e7b7108651258193d",
+  "manifest_sha256": "49e606c49fb7ec60ea9873bd189a67ac3b24fc144a575c0ff7cf1197ac9f4b8c",
+  "timeout_seconds": 180,
+  "rss_limit_kib": 2097152,
+  "rss_kind": "Sum of process-tree resident pages, may double-count shared mappings",
+  "peak_rss_kib": 193980,
+  "results_sha256": "027d78bca4f2e649314c9e5b874d0197b85431334dde5d5b6c8dd544e2f73247",
+  "elapsed_seconds": 9.214605662040412,
+  "samples_sha256": "a13b86fe7f70a569ad385899bceab1e5bd9028808317d21d91da33af5bc64246",
+  "original_file_sha256": "4c094e35e617469ee4d920bdb8fcf83cd55aa623206cd7a5d971c3f8a0a3cde3",
+  "publication_note": "Derived compact report; detailed object tables and private paths omitted; original hash meanings unchanged."
+}

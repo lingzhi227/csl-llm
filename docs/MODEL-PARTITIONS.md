@@ -160,3 +160,15 @@ Original intervals 24064–25087 and 25088–26111 independently close, extendin
 | 25088–26111 | 752.608032 s | 10599600 KiB | model-elf-audit-20260909T073027719980Z | model-contract-20260909T073616638123Z |
 
 The [fixed ledger](../release/MODEL-PARTITION-LEDGER.json) and [publication checks](../release/MODEL-PARTITION-25-26-CHECKS.json) bind both new intervals, their independent reviews, original manifests and execution/result identities. Six complete remote manifests were reverified. Selected source and derived summaries exclude model literals, raw tensors, binaries and private paths; original hashes retain their meanings. No compiler, SDK simulation or CPU model calculation was repeated. This remains static deployment coverage, not full-model assembly or neural inference acceptance.
+
+
+## Twenty-seventh and twenty-eighth partitions — 2026-09-09
+
+Original intervals 26112–27135 and 27136–28159 independently close, extending static coverage to **28160 of 34552 matrix blocks** across twenty-eight intervals. Both have 1401 ELF classes (1024 selected, 162 common, 215 placeholders), 45456-byte maximum static high-water and 1222 DSR families. Independent initializer checks cover all 40530 application coordinates; whole-ELF compatibility verifies selected original blocks, 5978 common coordinates and ordered SDK I/O/RPC metadata. Process cleanup is independently recorded.
+
+| Interval | Compile time | Compile peak RSS | Initializer/resource audit | Whole-ELF contract |
+| --- | ---: | ---: | --- | --- |
+| 26112–27135 | 744.405442 s | 10598580 KiB | model-elf-audit-20260909T080320354782Z | model-contract-20260909T080832266258Z |
+| 27136–28159 | 748.266003 s | 10598024 KiB | model-elf-audit-20260909T081218408065Z | model-contract-20260909T082617594657Z |
+
+The [fixed ledger](../release/MODEL-PARTITION-LEDGER.json) and [publication checks](../release/MODEL-PARTITION-27-28-CHECKS.json) bind both new intervals, their independent reviews, original manifests and execution/result identities. Six complete remote manifests were reverified. Selected source and derived summaries exclude model literals, raw tensors, binaries and private paths; original hashes retain their meanings. No compiler, SDK simulation or CPU model calculation was repeated. This remains static deployment coverage, not full-model assembly or neural inference acceptance.
