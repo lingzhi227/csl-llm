@@ -1,5 +1,9 @@
 # Staged implementation plan
 
+**Project state: temporarily development complete; paused pending physical Cerebras hardware validation (2026-09-09, by user decision).** Simulation, performance experiments and further development are stopped. Existing source and evidence are preserved. This is a project pause, not full-model SDK acceptance: no complete-model first output token, continuous generation or declared capacity has been verified. Work resumes only on a new user instruction. [Handoff and evidence boundaries](docs/PROJECT-PAUSE.md).
+
+The milestones and plans below describe the retained baseline; pending steps are deferred, not active work.
+
 Each stage has implementation, independent acceptance and a measured next-step decision. The original plan is a hypothesis, not a fixed compiler architecture. Update this document as evidence changes the best design, retaining decision history.
 
 | Stage | Deliverable | Exit evidence |

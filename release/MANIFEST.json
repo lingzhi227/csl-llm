@@ -1,5 +1,5 @@
 {
-  "scope": "Two-PE explicit diagnostic exports accepted; active shutdown and first full-model execution failed; no restore or full-model inference acceptance, 2026-09-09",
+  "scope": "Temporarily development complete by user decision; paused pending hardware validation; no full-model SDK inference or hardware acceptance, 2026-09-09",
   "files": [
     {
       "path": ".gitignore",
@@ -8,13 +8,13 @@
     },
     {
       "path": "DEVELOPMENT-PLAN.md",
-      "bytes": 3536,
-      "sha256": "0d7c67c16b4b7d35dba576d582b02efc129239f7239dc852d1e96d589ad28994"
+      "bytes": 4160,
+      "sha256": "4c2818c43968ade4ba43b540d48e27de539443592df8937a65d2449b9d8bb2db"
     },
     {
       "path": "README.md",
-      "bytes": 9463,
-      "sha256": "bb5d6f5f0302e9a4f141e7e2a8f7847585a2e0bf1da70cb08b3e7871c1e2d8a7"
+      "bytes": 9985,
+      "sha256": "b5ce15afeed21993e4bd6ec49ecb19740f8dc4b0510980306d3fb5038e41bce0"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
@@ -497,6 +497,11 @@
       "sha256": "893e715c04f79305b8db1ef6cea29b43166a501a731b5fe99c5070231c2a81f8"
     },
     {
+      "path": "docs/PROJECT-PAUSE.md",
+      "bytes": 3148,
+      "sha256": "55930bb8a61de6fc8370c9f72e9b4bb83f7c0e469f6d83b83d18da6fd2e03066"
+    },
+    {
       "path": "docs/REFERENCE.md",
       "bytes": 1386,
       "sha256": "f28f34c4ecd534216da282cd46070bb34b162d76ea6f07c21a95e39ff090a4cd"
@@ -523,8 +528,8 @@
     },
     {
       "path": "docs/STATUS.md",
-      "bytes": 9729,
-      "sha256": "928853320c3c20b8eaa3fab3a25523f28297d800cdef18238c26ceae6b32ef6b"
+      "bytes": 10348,
+      "sha256": "e904441150e91be5092871de85cd431d2e7c584c63e4adeaf1bf20a2b6d75c8d"
     },
     {
       "path": "docs/STREAM-OUTPUT.md",
@@ -553,8 +558,8 @@
     },
     {
       "path": "release/CHECKS.md",
-      "bytes": 16682,
-      "sha256": "68fbb67261f995cfc92c91a7c6f1a70b153059d98aef0253b515eac2dfbd00b6"
+      "bytes": 17050,
+      "sha256": "0fa2b9a22404d24349441445edd00aea13150babba22c5cb75582ee443a85f6a"
     },
     {
       "path": "release/COLLECTIVE-CHECKS.json",
@@ -725,6 +730,11 @@
       "path": "release/PARTITION-CHECKS.json",
       "bytes": 2138,
       "sha256": "0377ce70a475180260e3598b884d834da46d6fecf18ef83762d339bd2e09ab27"
+    },
+    {
+      "path": "release/PROJECT-STATE.json",
+      "bytes": 721,
+      "sha256": "4e37c6d1a724cd8877f73a8bd69aecbc81277c41da75e92eb1a22becbbe68e21"
     },
     {
       "path": "release/RAW-OUTPUT-CHECKS-20260908.json",
@@ -10665,6 +10675,11 @@
       "path": "validation/reviews/model-contract-20260909T101435906992Z-independent-contract-review.json",
       "bytes": 1292,
       "sha256": "66938f77201008432f7dc0fda445c9052b4e31ba2ac3c55ec445b281bc2c713c"
+    },
+    {
+      "path": "validation/reviews/model-core-export-20260909T191408869828Z-independent-closure-review.json",
+      "bytes": 1413,
+      "sha256": "02726a2b7611ca49620695c134639ddfdf5735e9b5f730f1e11b232c6efa09dd"
     },
     {
       "path": "validation/reviews/model-elf-audit-20260908T210836386387Z-independent-initializer-review.json",

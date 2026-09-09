@@ -1,8 +1,10 @@
 # CSL-LLM
 
+**Project state: temporarily development complete; paused pending physical Cerebras hardware validation (2026-09-09, by user decision).** Simulation, performance experiments and further development are stopped. Existing source and evidence are preserved. This is a project pause, not full-model SDK acceptance: no complete-model first output token, continuous generation or declared capacity has been verified. Work resumes only on a new user instruction. [Handoff and evidence boundaries](docs/PROJECT-PAUSE.md).
+
 CSL kernels and distributed execution components for real-model inference on Cerebras WSE-3, developed with SDK 2.10.1. The target is **Qwen2.5-0.5B-Instruct**, using official weights, all 24 layers and the full vocabulary.
 
-**This is an early research release of validated components, not a working end-to-end LLM runtime.** The complete 151936-token tied embedding/head now passes three isolated SDK cases, and a native two-layer chain passes cached position and reset checks; complete24-layer generation and full-model capacity acceptance remain under development. The project builds on Pragma HLS experience; this release contains handwritten CSL and Python planning/validation tools, not a complete HLS model compiler.
+**This is an early research release of validated components, not a working end-to-end LLM runtime.** The complete 151936-token tied embedding/head now passes three isolated SDK cases, and a native two-layer chain passes cached position and reset checks; complete24-layer generation and full-model capacity acceptance are deferred until work resumes. The project builds on Pragma HLS experience; this release contains handwritten CSL and Python planning/validation tools, not a complete HLS model compiler.
 
 ## Start here
 

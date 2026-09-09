@@ -112,3 +112,7 @@ Complete model assembly publication: remote full-manifest and exact selected-sou
 ## Explicit core diagnostic publication
 
 See [accepted cases, failure history and reproduction boundaries](../docs/SDK-CORE-EXPORT.md). Four explicit-export snapshots were independently checked; active executions retain failure status. Publication verifies source/receipt identities without rerunning SDK experiments. No core, tensor, ELF or SDK payload is included.
+
+## User-directed development pause
+
+Simulation and further experiment development are suspended pending a new user instruction for hardware work. [Project handoff](../docs/PROJECT-PAUSE.md) records the accepted boundaries and final diagnostic closure. This publication changes status and retains a compact existing review; no simulation or neural validation was run.

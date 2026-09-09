@@ -1,0 +1,14 @@
+{
+  "status": "temporarily_development_complete",
+  "activity": "paused",
+  "reason": "User requested stopping simulation and waiting for physical Cerebras hardware experiments.",
+  "date": "2026-09-09",
+  "resume_requires_new_user_instruction": true,
+  "simulation_queue_active": false,
+  "publication_heartbeat": "PAUSED",
+  "full_model_sdk_inference_accepted": false,
+  "hardware_validated": false,
+  "last_diagnostic_closure_review": "model-core-export-20260909T191408869828Z-independent-closure-review.json",
+  "last_diagnostic_closure_review_sha256": "02726a2b7611ca49620695c134639ddfdf5735e9b5f730f1e11b232c6efa09dd",
+  "scope": "Project status decision, not numerical or full S0\u2013S6 completion acceptance."
+}

@@ -1,5 +1,9 @@
 # Release status — 2026-09-09
 
+**Project state: temporarily development complete; paused pending physical Cerebras hardware validation (2026-09-09, by user decision).** Simulation, performance experiments and further development are stopped. Existing source and evidence are preserved. This is a project pause, not full-model SDK acceptance: no complete-model first output token, continuous generation or declared capacity has been verified. Work resumes only on a new user instruction. [Handoff and evidence boundaries](PROJECT-PAUSE.md).
+
+The milestones and plans below describe the retained baseline; pending steps are deferred, not active work.
+
 **Latest runtime outcome:** the first complete original-weight 24-layer attempt timed out after six hours with readiness only and no accepted neural output. Small two-PE explicit core exports now pass independent compute/communication state checks; active-case shutdown still times out. [Diagnostics and limits](SDK-CORE-EXPORT.md). Restoration and full-model inference remain unqualified.
 
 **Complete static matrix coverage:** all 34552 original blocks across 35 intervals independently accepted. Complete static assembly and its own diagnostic ABI are now independently accepted; neural SDK acceptance remains open. [Assembly evidence](FULL-MODEL-ASSEMBLY.md). [Complete coverage evidence](MODEL-PARTITIONS.md).

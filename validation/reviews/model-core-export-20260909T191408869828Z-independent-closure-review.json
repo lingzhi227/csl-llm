@@ -1,0 +1,33 @@
+{
+  "reviewed_at": "2026-09-09T20:23:22.094363+00:00",
+  "run": "model-core-export-20260909T191408869828Z",
+  "execution_sha256": "8833c824a3e888812839d28db6fc2dcc79dfd66e5c49c30e6d262c7a6349206f",
+  "export_receipt_sha256": "e440f05b34393b3cace4c56404d8e200ac44121620fd7969a4b0e469bed33e8e",
+  "samples_sha256": "2573257b535359991c933870b792610ac326285d4882a1999cd15e2c25ee2331",
+  "sample_container_type": "list",
+  "core_sha256": "4df58114353dbc9c590e766fb4324e68006f2f13849a7956f316a5eef8b70d79",
+  "core_bytes": 2251540088,
+  "actual_host_pid_identities": {
+    "1344143": null,
+    "1344187": null,
+    "1344166": null,
+    "1344623": null,
+    "1343807": null
+  },
+  "original_host_pid_identities": {
+    "1344143": "134485181",
+    "1344187": "134485192",
+    "1344166": "134485187",
+    "1344623": "134486912",
+    "1343807": "134482581"
+  },
+  "ready_values_checked": 40530,
+  "ready_all_one": true,
+  "export_api_seconds": 9.351981461979449,
+  "observation_seconds": 1200.0011282779742,
+  "elapsed_seconds": 3085.359674811829,
+  "recorded_peak_rss_kib": 20368016,
+  "execution_success": false,
+  "closure_and_explicit_export_accepted": true,
+  "scope": "Actual artifact hash/header/export receipt and all40530 ready checked; original host PID identities exited. Stop-phase timeout retained. Core neural state and weights not inspected here; no inference, restoration or global atomicity acceptance."
+}
