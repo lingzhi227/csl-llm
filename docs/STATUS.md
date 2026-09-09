@@ -1,6 +1,6 @@
 # Release status — 2026-09-09
 
-**Complete static matrix coverage:** all 34552 original blocks across 35 intervals independently accepted. Full-model assembly and neural SDK acceptance remain open. [Complete coverage evidence](MODEL-PARTITIONS.md).
+**Complete static matrix coverage:** all 34552 original blocks across 35 intervals independently accepted. Complete static assembly and its own diagnostic ABI are now independently accepted; neural SDK acceptance remains open. [Assembly evidence](FULL-MODEL-ASSEMBLY.md). [Complete coverage evidence](MODEL-PARTITIONS.md).
 
 Latest integration: the original-weight two-layer chain passes position 0, cached position 1 and reset-to-position-0 in one SDK instance, with 52 independent numerical checks and bit-exact reset outputs. [Scope, source and evidence](TWO-LAYER-CACHED.md). Full-model generation remains unaccepted.
 

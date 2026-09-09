@@ -25,6 +25,10 @@ CSL kernels and distributed execution components for real-model inference on Cer
 
 Recorded SDK results belong to the original development snapshots. Publication changes make host paths portable; they have not received a fresh complete SDK qualification. See [release checks](release/CHECKS.md).
 
+## Complete static model assembly
+
+**All 34552 original matrix blocks are now assembled across 40530 PE coordinates, with independent whole-ELF and actual assembly symbol checks.** [Source, evidence and runtime boundary](docs/FULL-MODEL-ASSEMBLY.md). This is static acceptance; full-model neural SDK execution remains pending.
+
 ## Latest accepted integration
 
 **Original-weight layer 0 → layer 1 now passes position 0, cached position 1 and reset-to-position-0 in one persistent SDK instance.** All 2088 matrix blocks are original; 52 independent numerical checks pass and reset outputs repeat bit for bit. [Cached/reset source and evidence](docs/TWO-LAYER-CACHED.md). Full 24-layer inference and generation remain unfinished.
@@ -35,7 +39,7 @@ Recorded SDK results belong to the original development snapshots. Publication c
 
 The **193 × 210 model layout now passes actual SDK initialization/reset/prepare** after independent static checks. Only 12 matrix blocks have original weights; no model computation was invoked. [Boot evidence and source boundaries](docs/MODEL-BOOT.md).
 
-All **34552 original matrix blocks** now have independently accepted static partition coverage across 35 intervals, including per-partition whole-ELF compatibility. Full-model assembly and SDK inference remain unaccepted. [Partition evidence and tools](docs/MODEL-PARTITIONS.md).
+All **34552 original matrix blocks** now have independently accepted static partition coverage across 35 intervals, including per-partition whole-ELF compatibility. The complete static assembly and its own diagnostic ABI are now independently accepted; full-model SDK inference remains unaccepted. [Partition evidence and tools](docs/MODEL-PARTITIONS.md).
 
 The full 24-layer single-token **CPU reference** now passes 459 independent checks. Expanded static symbol checks and source-reviewed full-model runtime tools are also published, with their evidence levels kept separate. [Validation preparation and limits](docs/MODEL-VALIDATION-PREPARATION.md). These do not establish full-model SDK inference.
 

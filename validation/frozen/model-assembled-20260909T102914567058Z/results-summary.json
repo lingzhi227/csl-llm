@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "offline_only": true,
+  "original_matrix_tiles": 34552,
+  "application_coordinates": 40530,
+  "scope": "Full original-model static intact-ELF assembly and actual diagnostic symbol qualification. No compiler, SdkRuntime or neural execution.",
+  "symbols_sha256": "cfbfa5e368685719c8aadda3c2c3351068e81507c8988ed39882b30e4cd1849c",
+  "success": true,
+  "original_file_sha256": "270db38889c00d82fe64b5bb6af101a82a2f0df1a79e7e85da0b1e8def4d0799",
+  "publication_note": "Derived compact report. Full manifest/object tables and private paths intentionally omitted; original hashes unchanged."
+}

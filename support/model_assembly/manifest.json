@@ -1,0 +1,17 @@
+{
+  "original_assembly_manifest_sha256": "fd31b5dfe546a9684bba96c8f1c651730a507b126aafbe22a16df40bf72e5f69",
+  "publication_note": "Isolated exact frozen generic helpers, except portable SDK paths; no new execution qualification.",
+  "files": {
+    "tools/model_symbols.py": "9e73d3b1eb4595fb47bc7d538aa30a610240c5069880de0a559b74e868f13e90",
+    "tools/model_partition_contract.py": "a192ee68425ade5f4d28648a69f0e1e5fc5a0526dd7c6d9bfc4e0c96c37c79d5",
+    "tools/compare_elf_images.py": "64bdf83955560a94e1e0389f9f6ee81c91632c370e70560462d1f285f1852f6f",
+    "tools/sdk_probe.py": "1e4d555f3eee06e1a4dd3e2c2fee7339f5ae78e2aeb92cf16514a0490661ead6",
+    "tools/elf_partition.py": "53c0c74f0731a9ff26424b9cf53b91dfb02ffd4bffc12e63d6edbbdaf9118878",
+    "tools/decoder_chain_symbols.py": "d5a3485726d8b8e192e3786dff4b5a54327e8d14f581f28c28455dffce7f0d35",
+    "tools/model_partition_assemble.py": "691c57c0ead50585ca579c47511e649c1e6616645f5537263b606a6ceb43c245",
+    "tools/sdk_core.py": "10ba97cebcccf4749e5ee0c22be5518f800e3820429f7d2ae1425b7f66b9e88d",
+    "src/csl_llm/regions.py": "2b23cc1644fc6e28ebe461bb68dfe0b4c77ac03570c094411d78d477377728c2",
+    "src/csl_llm/__init__.py": "e330d6b21720c96f282971a7ec9519f943e1c21b9bd944c611bbb4763ca390e2",
+    "src/csl_llm/decoder_layout.py": "20fa5b2f051dcad58cb2c44f7d7f511b41fde243113c61a338ac2c661877ec13"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "timeout_seconds": 1800,
+  "rss_limit_kib": 8388608,
+  "scope": "Full original-model static intact-ELF assembly and actual diagnostic symbol qualification. No compiler, SdkRuntime or neural execution.",
+  "original_file_sha256": "dddcc9bd5dfeac69b650e754348b0a695e264076773a8309653193b24d444c66",
+  "publication_note": "Derived compact report. Full manifest/object tables and private paths intentionally omitted; original hashes unchanged."
+}

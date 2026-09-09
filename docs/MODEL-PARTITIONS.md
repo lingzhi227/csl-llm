@@ -1,6 +1,6 @@
 # Model weight partition qualification
 
-**Latest: all 34552 original matrix blocks are statically qualified across 35 contiguous partitions.** This completes original matrix partition coverage, not full-model assembly or SDK inference. [Independent complete-coverage acceptance](../validation/reviews/s5-fullmodel-static-coverage-acceptance.json) and [fixed ledger](../release/MODEL-PARTITION-LEDGER.json) bind the evidence. The sections below preserve prior milestones and their narrower scopes.
+**Latest: all 34552 original matrix blocks are statically qualified across 35 contiguous partitions.** This completes original matrix partition coverage, not SDK inference. A subsequent [complete static assembly](FULL-MODEL-ASSEMBLY.md) is now independently accepted. [Independent complete-coverage acceptance](../validation/reviews/s5-fullmodel-static-coverage-acceptance.json) and [fixed ledger](../release/MODEL-PARTITION-LEDGER.json) bind the evidence. The sections below preserve prior milestones and their narrower scopes.
 
 Two independently compiled partitions now cover original matrix blocks 0–1535, out of 34552 required by the full model. Their initializer, static resource and whole-ELF compatibility checks pass. They have not been assembled into a fully initialized model and do not add a neural runtime result.
 

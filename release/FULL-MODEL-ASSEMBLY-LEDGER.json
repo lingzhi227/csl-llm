@@ -1,0 +1,10 @@
+{
+  "accepted": true,
+  "assembled": true,
+  "sdk_complete": false,
+  "original_matrix_tiles": 34552,
+  "assembly_run": "model-assembled-20260909T102914567058Z",
+  "acceptance": "s5-fullmodel-assembly-acceptance.json",
+  "static_coverage_ledger": "MODEL-PARTITION-LEDGER.json",
+  "scope": "Complete original static intact-ELF assembly and its actual diagnostic ABI accepted. Original bytes inherited through independently accepted partition initializers and exact output/source ELF equality. No SDK loading/neural inference/generation/capacity/hardware acceptance."
+}

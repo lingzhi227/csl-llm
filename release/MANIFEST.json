@@ -1,5 +1,5 @@
 {
-  "scope": "Complete original matrix static coverage across thirty-five partitions; SDK neural scope remains bounded two-layer cached/reset, 2026-09-09",
+  "scope": "Complete original-model static assembly and own diagnostic ABI; full neural SDK pending; SDK neural scope remains bounded two-layer cached/reset, 2026-09-09",
   "files": [
     {
       "path": ".gitignore",
@@ -13,8 +13,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 8512,
-      "sha256": "9f4cf238cb35ab6c417ba8c54235cd6db97f764e3631afff0c7fb0490e179bef"
+      "bytes": 8916,
+      "sha256": "d418c5fe1031a1f15746287a6bf87686612dd9f8557717aa320f800ef88afd2a"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
@@ -452,6 +452,11 @@
       "sha256": "355377294fe34a17dac77b17f03673ccab6b943af31d8d459e6fb97a5a97c894"
     },
     {
+      "path": "docs/FULL-MODEL-ASSEMBLY.md",
+      "bytes": 3894,
+      "sha256": "13d592a35d0a758bbf03879cfd4c3cba895407be8f3d6df20d1aa9f86cc1fb1a"
+    },
+    {
       "path": "docs/FULL-VOCABULARY.md",
       "bytes": 7661,
       "sha256": "99ec63cf0ba0b5f00eb13935c58f125319939fb07b3e9ba08ee5226e1dc221c0"
@@ -473,8 +478,8 @@
     },
     {
       "path": "docs/MODEL-PARTITIONS.md",
-      "bytes": 29650,
-      "sha256": "05fb2a53f3fb17bf2713e2d0a872a6216ab56a4a83107bc10edfc8f499c047ba"
+      "bytes": 29722,
+      "sha256": "38cfdb5fd3b4c483d59268d59a5c49bebf5ea2a934f092787cd1f0475e89f6a0"
     },
     {
       "path": "docs/MODEL-VALIDATION-PREPARATION.md",
@@ -513,8 +518,8 @@
     },
     {
       "path": "docs/STATUS.md",
-      "bytes": 9003,
-      "sha256": "24733921424f58813161498649c3dcafba7ae1dea4e0d28772d826225f4079a1"
+      "bytes": 9109,
+      "sha256": "f8e54a9f3c6bbf74944ae78e69969b48334d44900638aad748f1aa67d04a50a3"
     },
     {
       "path": "docs/STREAM-OUTPUT.md",
@@ -543,8 +548,8 @@
     },
     {
       "path": "release/CHECKS.md",
-      "bytes": 16022,
-      "sha256": "7c4b8f75bb8a346b65fc80f5b43d9eecd26ef8b88ec8533731475242fd41fe03"
+      "bytes": 16314,
+      "sha256": "fb40a8ad7cc4c59ac3de5195701d702108f8a7cb71be13bb09c8476abbe317f1"
     },
     {
       "path": "release/COLLECTIVE-CHECKS.json",
@@ -555,6 +560,16 @@
       "path": "release/DECODER-CHECKS.json",
       "bytes": 32065,
       "sha256": "d18fca58c012328ed21d097050ecae1a7cb58331e2f8211a575c5cc4a355a9f3"
+    },
+    {
+      "path": "release/FULL-MODEL-ASSEMBLY-CHECKS.json",
+      "bytes": 841,
+      "sha256": "c2695ab7d95bc6c4a3c18a877ca1bc860606398593ec81edd1c2d553265a2945"
+    },
+    {
+      "path": "release/FULL-MODEL-ASSEMBLY-LEDGER.json",
+      "bytes": 568,
+      "sha256": "a573a84e4a3f2a8612cb9693bce68c65c984193062f83e5e5040c9f49d47a301"
     },
     {
       "path": "release/KERNEL-MATCHES.json",
@@ -785,6 +800,66 @@
       "path": "src/csl_llm/resident_mlp_regions.py",
       "bytes": 2413,
       "sha256": "2b23cc1644fc6e28ebe461bb68dfe0b4c77ac03570c094411d78d477377728c2"
+    },
+    {
+      "path": "support/model_assembly/manifest.json",
+      "bytes": 1362,
+      "sha256": "b08e0cbe33c27a4f37120f239e19d604879651726c9b50040bde45d0da8e7d26"
+    },
+    {
+      "path": "support/model_assembly/src/csl_llm/__init__.py",
+      "bytes": 80,
+      "sha256": "e330d6b21720c96f282971a7ec9519f943e1c21b9bd944c611bbb4763ca390e2"
+    },
+    {
+      "path": "support/model_assembly/src/csl_llm/decoder_layout.py",
+      "bytes": 4528,
+      "sha256": "20fa5b2f051dcad58cb2c44f7d7f511b41fde243113c61a338ac2c661877ec13"
+    },
+    {
+      "path": "support/model_assembly/src/csl_llm/regions.py",
+      "bytes": 2413,
+      "sha256": "2b23cc1644fc6e28ebe461bb68dfe0b4c77ac03570c094411d78d477377728c2"
+    },
+    {
+      "path": "support/model_assembly/tools/compare_elf_images.py",
+      "bytes": 2353,
+      "sha256": "64bdf83955560a94e1e0389f9f6ee81c91632c370e70560462d1f285f1852f6f"
+    },
+    {
+      "path": "support/model_assembly/tools/decoder_chain_symbols.py",
+      "bytes": 4690,
+      "sha256": "d5a3485726d8b8e192e3786dff4b5a54327e8d14f581f28c28455dffce7f0d35"
+    },
+    {
+      "path": "support/model_assembly/tools/elf_partition.py",
+      "bytes": 6170,
+      "sha256": "53c0c74f0731a9ff26424b9cf53b91dfb02ffd4bffc12e63d6edbbdaf9118878"
+    },
+    {
+      "path": "support/model_assembly/tools/model_partition_assemble.py",
+      "bytes": 7643,
+      "sha256": "691c57c0ead50585ca579c47511e649c1e6616645f5537263b606a6ceb43c245"
+    },
+    {
+      "path": "support/model_assembly/tools/model_partition_contract.py",
+      "bytes": 8842,
+      "sha256": "a192ee68425ade5f4d28648a69f0e1e5fc5a0526dd7c6d9bfc4e0c96c37c79d5"
+    },
+    {
+      "path": "support/model_assembly/tools/model_symbols.py",
+      "bytes": 6727,
+      "sha256": "9e73d3b1eb4595fb47bc7d538aa30a610240c5069880de0a559b74e868f13e90"
+    },
+    {
+      "path": "support/model_assembly/tools/sdk_core.py",
+      "bytes": 7828,
+      "sha256": "10ba97cebcccf4749e5ee0c22be5518f800e3820429f7d2ae1425b7f66b9e88d"
+    },
+    {
+      "path": "support/model_assembly/tools/sdk_probe.py",
+      "bytes": 8573,
+      "sha256": "1e4d555f3eee06e1a4dd3e2c2fee7339f5ae78e2aeb92cf16514a0490661ead6"
     },
     {
       "path": "support/model_boot/manifest.json",
@@ -1210,6 +1285,11 @@
       "path": "tools/gate_projection_probe.py",
       "bytes": 10133,
       "sha256": "94f0df3d63f03faf7a28d0335a1cc8881f06486b4de8f8346c996397f2fac3ff"
+    },
+    {
+      "path": "tools/model_assembly_probe.py",
+      "bytes": 5219,
+      "sha256": "7b6303694aa6c3f096f7eab6ddd094429d3bb494e449ecc5775943dd0de68039"
     },
     {
       "path": "tools/model_boot_probe.py",
@@ -3205,6 +3285,86 @@
       "path": "validation/frozen/gqa-capacity-20260908T074820426934Z/rope.csl",
       "bytes": 897,
       "sha256": "8d7be77e4938a5d5b7e95525e8869b12d6b2b529fcc25d3152128de230ad7cf8"
+    },
+    {
+      "path": "validation/frozen/model-assembled-20260909T102914567058Z/config-summary.json",
+      "bytes": 447,
+      "sha256": "3b7feae69e1fb64522b6e2b7a3bc6df1ced4e6b633174e9618305866ab218ebc"
+    },
+    {
+      "path": "validation/frozen/model-assembled-20260909T102914567058Z/driver.py",
+      "bytes": 5192,
+      "sha256": "e63fbc386e3fbf1dc568362e843cd9c412adb2d566658bee468a43d7fde3712e"
+    },
+    {
+      "path": "validation/frozen/model-assembled-20260909T102914567058Z/execution-summary.json",
+      "bytes": 818,
+      "sha256": "b739a0466e14955869d6e1b3704167d057464e01c162919142ee1c7d8be97d76"
+    },
+    {
+      "path": "validation/frozen/model-assembled-20260909T102914567058Z/manifest-summary.json",
+      "bytes": 1701,
+      "sha256": "a96b39420a64ff9d636741e4089eb1e8d66fae8b5b6518c98f889be2ff5406b5"
+    },
+    {
+      "path": "validation/frozen/model-assembled-20260909T102914567058Z/results-summary.json",
+      "bytes": 611,
+      "sha256": "31f809fdbff4478b02b44e42571814e78436848e2830cd0d1668d305f9ebb304"
+    },
+    {
+      "path": "validation/frozen/model-assembled-20260909T102914567058Z/src/csl_llm/__init__.py",
+      "bytes": 80,
+      "sha256": "e330d6b21720c96f282971a7ec9519f943e1c21b9bd944c611bbb4763ca390e2"
+    },
+    {
+      "path": "validation/frozen/model-assembled-20260909T102914567058Z/src/csl_llm/decoder_layout.py",
+      "bytes": 4528,
+      "sha256": "20fa5b2f051dcad58cb2c44f7d7f511b41fde243113c61a338ac2c661877ec13"
+    },
+    {
+      "path": "validation/frozen/model-assembled-20260909T102914567058Z/src/csl_llm/regions.py",
+      "bytes": 2413,
+      "sha256": "2b23cc1644fc6e28ebe461bb68dfe0b4c77ac03570c094411d78d477377728c2"
+    },
+    {
+      "path": "validation/frozen/model-assembled-20260909T102914567058Z/symbols-summary.json",
+      "bytes": 586,
+      "sha256": "85a2908cdc409f35bd8c964121d15c5beda2e50cfaf6c5ca0ef5956609cbc5f5"
+    },
+    {
+      "path": "validation/frozen/model-assembled-20260909T102914567058Z/tools/compare_elf_images.py",
+      "bytes": 2353,
+      "sha256": "64bdf83955560a94e1e0389f9f6ee81c91632c370e70560462d1f285f1852f6f"
+    },
+    {
+      "path": "validation/frozen/model-assembled-20260909T102914567058Z/tools/decoder_chain_symbols.py",
+      "bytes": 4690,
+      "sha256": "d5a3485726d8b8e192e3786dff4b5a54327e8d14f581f28c28455dffce7f0d35"
+    },
+    {
+      "path": "validation/frozen/model-assembled-20260909T102914567058Z/tools/elf_partition.py",
+      "bytes": 6170,
+      "sha256": "53c0c74f0731a9ff26424b9cf53b91dfb02ffd4bffc12e63d6edbbdaf9118878"
+    },
+    {
+      "path": "validation/frozen/model-assembled-20260909T102914567058Z/tools/model_partition_assemble.py",
+      "bytes": 7643,
+      "sha256": "691c57c0ead50585ca579c47511e649c1e6616645f5537263b606a6ceb43c245"
+    },
+    {
+      "path": "validation/frozen/model-assembled-20260909T102914567058Z/tools/model_partition_contract.py",
+      "bytes": 8842,
+      "sha256": "a192ee68425ade5f4d28648a69f0e1e5fc5a0526dd7c6d9bfc4e0c96c37c79d5"
+    },
+    {
+      "path": "validation/frozen/model-assembled-20260909T102914567058Z/tools/model_symbols.py",
+      "bytes": 6727,
+      "sha256": "9e73d3b1eb4595fb47bc7d538aa30a610240c5069880de0a559b74e868f13e90"
+    },
+    {
+      "path": "validation/frozen/model-assembled-20260909T102914567058Z/tools/sdk_core.py",
+      "bytes": 7828,
+      "sha256": "10ba97cebcccf4749e5ee0c22be5518f800e3820429f7d2ae1425b7f66b9e88d"
     },
     {
       "path": "validation/frozen/model-boot-20260908T195258420390Z/config.json",
@@ -10022,6 +10182,16 @@
       "sha256": "3decae7a5b862a9577116d39734b283259e63ab304efc0b452d8ec46537e8f7b"
     },
     {
+      "path": "validation/reviews/model-assembled-20260909T102914567058Z-independent-contract-review.json",
+      "bytes": 1392,
+      "sha256": "a4af915c889d98d5d7e77541dad3e44396b942d5df5bee887c7f52e0d9f70564"
+    },
+    {
+      "path": "validation/reviews/model-assembled-20260909T102914567058Z-independent-symbol-review.json",
+      "bytes": 1427,
+      "sha256": "ec981a070abbdab699d720ecd49edcb419664dac2c0b57866e41aa8b81010210"
+    },
+    {
       "path": "validation/reviews/model-contract-20260908T213656824645Z-independent-contract-review.json",
       "bytes": 1292,
       "sha256": "be366f3970375d1a4a8baecf6ffadeecf59e148409877dfd1c378237d8fa8bb7"
@@ -10950,6 +11120,11 @@
       "path": "validation/reviews/s5-full-model-runtime-integration-source-snapshot-review.json",
       "bytes": 865,
       "sha256": "8100fd6d41eac0646d5098831b9587a004a697d2b23e4bcff7bda2940481108b"
+    },
+    {
+      "path": "validation/reviews/s5-fullmodel-assembly-acceptance.json",
+      "bytes": 1336,
+      "sha256": "97b8efad58a39f7b8c70b31cbe37ca523b4012ef2321e24e7a54bad613f0c150"
     },
     {
       "path": "validation/reviews/s5-fullmodel-compile-pair-012655-014628-outcome-review.json",

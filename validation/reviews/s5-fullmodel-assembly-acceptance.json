@@ -1,0 +1,22 @@
+{
+  "accepted_at": "2026-09-09T11:12:38.288021+00:00",
+  "accepted": true,
+  "assembled": true,
+  "sdk_complete": false,
+  "run": "model-assembled-20260909T102914567058Z",
+  "manifest_sha256": "fd31b5dfe546a9684bba96c8f1c651730a507b126aafbe22a16df40bf72e5f69",
+  "execution_sha256": "e3b1217685604d6446f097a410b3b5e3a68cbfa2a27679ce21f0b6f3b663bc83",
+  "results_sha256": "270db38889c00d82fe64b5bb6af101a82a2f0df1a79e7e85da0b1e8def4d0799",
+  "symbols_sha256": "cfbfa5e368685719c8aadda3c2c3351068e81507c8988ed39882b30e4cd1849c",
+  "original_matrix_tiles": 34552,
+  "application_coordinates": 40530,
+  "elf_count": 34714,
+  "common_coordinates": 5978,
+  "logical_symbol_coordinate_checks": 408684,
+  "private_aliases_across_images": 577,
+  "reviews": {
+    "model-assembled-20260909T102914567058Z-independent-contract-review.json": "a4af915c889d98d5d7e77541dad3e44396b942d5df5bee887c7f52e0d9f70564",
+    "model-assembled-20260909T102914567058Z-independent-symbol-review.json": "ec981a070abbdab699d720ecd49edcb419664dac2c0b57866e41aa8b81010210"
+  },
+  "scope": "Complete original static intact-ELF assembly and its actual diagnostic ABI accepted. Original bytes inherited through independently accepted partition initializers and exact output/source ELF equality. No SDK loading/neural inference/generation/capacity/hardware acceptance."
+}

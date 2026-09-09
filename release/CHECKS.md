@@ -106,3 +106,5 @@ Partitions 31–32: six complete remote manifests, local selected source, exact 
 Partitions 33–34: six complete remote manifests, local selected source, exact original intervals and independent review/execution/results bindings verified. No compiler/SDK/CPU reference rerun. See [publication record](MODEL-PARTITION-33-34-CHECKS.json).
 
 Final static coverage: three complete tail manifests and all 35 remote contract index lists/execution-result bindings verified; original ledger SHA matches complete-coverage acceptance. All 34552 indices contiguous and exact. No SDK/compiler/CPU model rerun. [Tail records](MODEL-PARTITION-35-CHECKS.json).
+
+Complete model assembly publication: remote full-manifest and exact selected-source/acceptance/review bindings verified. Public metadata is derived and excludes huge object tables and model-bearing artifacts. No assembly or SDK rerun. [Publication records](FULL-MODEL-ASSEMBLY-CHECKS.json).

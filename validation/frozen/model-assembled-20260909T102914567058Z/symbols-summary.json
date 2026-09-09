@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "application_coordinates": 40530,
+  "diagnostics": true,
+  "tool_sha256": "9e73d3b1eb4595fb47bc7d538aa30a610240c5069880de0a559b74e868f13e90",
+  "scope": "Actual ELF object names/addresses/sizes/alignment for full-model stopped-core validation. Static ABI only; not original-byte, core, numerical or generation acceptance.",
+  "original_file_sha256": "cfbfa5e368685719c8aadda3c2c3351068e81507c8988ed39882b30e4cd1849c",
+  "publication_note": "Derived compact report. Full manifest/object tables and private paths intentionally omitted; original hashes unchanged."
+}

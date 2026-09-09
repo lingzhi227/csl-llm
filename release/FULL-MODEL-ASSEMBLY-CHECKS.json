@@ -1,0 +1,14 @@
+{
+  "run": "model-assembled-20260909T102914567058Z",
+  "remote_manifest_entries_verified": 175557,
+  "original_records": {
+    "manifest.json": "fd31b5dfe546a9684bba96c8f1c651730a507b126aafbe22a16df40bf72e5f69",
+    "execution.json": "e3b1217685604d6446f097a410b3b5e3a68cbfa2a27679ce21f0b6f3b663bc83",
+    "results.json": "270db38889c00d82fe64b5bb6af101a82a2f0df1a79e7e85da0b1e8def4d0799",
+    "symbols.json": "cfbfa5e368685719c8aadda3c2c3351068e81507c8988ed39882b30e4cd1849c",
+    "config.json": "dddcc9bd5dfeac69b650e754348b0a695e264076773a8309653193b24d444c66"
+  },
+  "selected_source_hashes_verified": true,
+  "independent_acceptance_and_review_hashes_verified": true,
+  "scope": "Publication identity verification of completed static assembly and its own static ABI only. No large artifacts fetched, no assembly/SDK/CPU model rerun."
+}
