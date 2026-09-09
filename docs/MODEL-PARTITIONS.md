@@ -124,3 +124,15 @@ Original intervals 17920–18943 and 18944–19967 independently close, extendin
 | 18944–19967 | 675.511452 s | 10493496 KiB | model-elf-audit-20260909T053922183984Z | model-contract-20260909T054533797924Z |
 
 The [fixed ledger](../release/MODEL-PARTITION-LEDGER.json) and [publication checks](../release/MODEL-PARTITION-19-20-CHECKS.json) bind both new intervals, their independent reviews, original manifests and execution/result identities. Six complete remote manifests were reverified. Selected source and derived summaries exclude model literals, raw tensors, binaries and private paths; original hashes retain their meanings. No compiler, SDK simulation or CPU model calculation was repeated. This remains static deployment coverage, not full-model assembly or neural inference acceptance.
+
+
+## Twenty-first and twenty-second partitions — 2026-09-09
+
+Original intervals 19968–20991 and 20992–22015 independently close, extending static coverage to **22016 of 34552 matrix blocks** across twenty-two intervals. Both have 1401 ELF classes, 45456-byte maximum static high-water and 1222 DSR families. Independent initializer checks cover all 40530 application coordinates; whole-ELF compatibility verifies selected original blocks, 5978 common coordinates and ordered SDK I/O/RPC metadata. Process cleanup is independently recorded.
+
+| Interval | Compile time | Compile peak RSS | Initializer/resource audit | Whole-ELF contract |
+| --- | ---: | ---: | --- | --- |
+| 19968–20991 | 676.578832 s | 10492076 KiB | model-elf-audit-20260909T060451410173Z | model-contract-20260909T060952504758Z |
+| 20992–22015 | 676.675186 s | 10494084 KiB | model-elf-audit-20260909T061310544381Z | model-contract-20260909T061920006420Z |
+
+The [fixed ledger](../release/MODEL-PARTITION-LEDGER.json) and [publication checks](../release/MODEL-PARTITION-21-22-CHECKS.json) bind both new intervals, their independent reviews, original manifests and execution/result identities. Six complete remote manifests were reverified. Selected source and derived summaries exclude model literals, raw tensors, binaries and private paths; original hashes retain their meanings. No compiler, SDK simulation or CPU model calculation was repeated. This remains static deployment coverage, not full-model assembly or neural inference acceptance.
