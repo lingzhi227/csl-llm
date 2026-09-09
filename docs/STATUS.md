@@ -32,3 +32,5 @@ Full 193 × 210 model layout: independent static checks and SDK boot accepted fo
 Original model blocks 0–1535 now pass two independent initializer/resource/whole-ELF compatibility audits. Full 34552-block assembly and neural execution remain open. [Partition ledger and limits](MODEL-PARTITIONS.md).
 
 Latest published full-model static coverage: six accepted intervals cover original blocks 0–5631 of 34552. Full-model assembly and SDK inference remain open. [Evidence and limits](MODEL-PARTITIONS.md).
+
+Full-model validation preparation is published separately: independently accepted single-token CPU reference, expanded static symbols and source-only future integration tools. [Evidence levels and boundaries](MODEL-VALIDATION-PREPARATION.md). None extends the bounded two-layer neural SDK acceptance.

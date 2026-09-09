@@ -1,0 +1,20 @@
+{
+  "reviewed_at": "2026-09-09T01:14:02.822728+00:00",
+  "source_sha256": {
+    "tools/model_reference.py": "748cc583e5118c5c2d17a0b954fa6f4793e155cd3d05877b8e30dbff99645791",
+    "tools/model_core_validate.py": "575d976d46050e2d82754e179db3030395ae10829447c4fac17ca6b7a146acec",
+    "tools/model_runtime_probe.py": "f7c21893587d1041f7fdde388b64d503684a03c57bd1c9ec2d79a6d355836f01"
+  },
+  "source_approved": true,
+  "exact_frozen_single_token_stage_arrays": 312,
+  "total_returned_arrays": 318,
+  "all24_region_origins_and_operator_root_mappings_exact": true,
+  "findings": [
+    "Optional stage group is all-or-nothing24x13; first single-token runtime requires fullgroup rather than silently falling back.",
+    "Original010221 independent312arrays already validated againstrawBF16/float64; adapter returns exactlytheir one-token rows, correct896/128/4864 shapes.",
+    "Core reads originaltwo-layer-proven physicalsymbols shiftedtoeach24region:QKV/Ocolumnroots,input_norm8inputshards,UP/GATE/DOWNroots,KVcontextroots,controllerresidual/norm/activation/output.",
+    "Activation64padding bitszero; both officiallayeroutput and independentlycomputedstageoutput gates retained.",
+    "Previousordinaryofficialtrace path remainsstage-optional; its scope must not claim unobservedintermediates."
+  ],
+  "scope": "Incremental source/read-only actualreference/geometry review, no newSDK/core execution. Fullmodelactual312stageacceptance remainspending."
+}

@@ -1,0 +1,11 @@
+{
+  "python_sha256": "bf9c0f7057bc1a4c9169ed54ce941a86c07ede3ba3793186a074887dd36af137",
+  "timeout_seconds": 180,
+  "rss_limit_kib": 4194304,
+  "threads": 1,
+  "reference_kind": "model-single-token",
+  "prefix_length": 1,
+  "scope": "Host CPU reference construction only: model-single-token; no SDK execution.",
+  "original_file_sha256": "f44ad8a09f656a3009a583ee0293cfdd4c34bf5ab47e635aebe4f2c3c717b18a",
+  "publication_note": "Derived compact report; private paths and detailed tables omitted; original hash meanings unchanged."
+}

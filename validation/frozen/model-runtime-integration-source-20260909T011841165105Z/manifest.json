@@ -1,0 +1,25 @@
+{
+  "files": {
+    "tools/model_symbols.py": "9e73d3b1eb4595fb47bc7d538aa30a610240c5069880de0a559b74e868f13e90",
+    "tools/model_initializer_audit.py": "497abba2a3ce9927325ea8e56f9d2c97fb2ecd785f3fec3105aef70fb0511e29",
+    "tools/model_reference.py": "748cc583e5118c5c2d17a0b954fa6f4793e155cd3d05877b8e30dbff99645791",
+    "tools/model_assembly_probe.py": "e63fbc386e3fbf1dc568362e843cd9c412adb2d566658bee468a43d7fde3712e",
+    "tools/model_runtime_probe.py": "f7c21893587d1041f7fdde388b64d503684a03c57bd1c9ec2d79a6d355836f01",
+    "tools/model_runtime_io.py": "dce79641a31672797e78407a3a304a34b0554609eabad12bde0710ae0977a09d",
+    "tools/model_partition_contract.py": "a192ee68425ade5f4d28648a69f0e1e5fc5a0526dd7c6d9bfc4e0c96c37c79d5",
+    "tools/model_step_validate.py": "2d023b2b43f6eade8938a05b101f3a3349b85c70d130428ccb902325540ec022",
+    "tools/compare_elf_images.py": "64bdf83955560a94e1e0389f9f6ee81c91632c370e70560462d1f285f1852f6f",
+    "tools/sdk_probe.py": "9ccab37dc8b6ecfb0d23d56bf0826da7b87ce5d3c22d0a4ba94cb4aea6501e1c",
+    "tools/elf_partition.py": "53c0c74f0731a9ff26424b9cf53b91dfb02ffd4bffc12e63d6edbbdaf9118878",
+    "tools/model_core_validate.py": "5e1965232595251e5d17c36683baa0bbf539a4d4d75f40747820abf9cd96c7a7",
+    "tools/decoder_chain_symbols.py": "d5a3485726d8b8e192e3786dff4b5a54327e8d14f581f28c28455dffce7f0d35",
+    "tools/model_partition_assemble.py": "691c57c0ead50585ca579c47511e649c1e6616645f5537263b606a6ceb43c245",
+    "tools/sdk_core.py": "10ba97cebcccf4749e5ee0c22be5518f800e3820429f7d2ae1425b7f66b9e88d",
+    "docs/FULL-MODEL-RUNTIME-VALIDATION.md": "0d44e19f5b9f0974c25f8b78b6fe09268e34cef61e4271da17035435cdc77142",
+    "configs/precision.json": "c5da7df9c06537cb205b8c5a760703fd39b7c519bb27666906cafb1d6e45b3b0",
+    "src/csl_llm/coordinate_identity.py": "33943a93a0c562b0647fef94cb43e9942c88fa1f7116537bdaeddda186ad7f83",
+    "src/csl_llm/regions.py": "2b23cc1644fc6e28ebe461bb68dfe0b4c77ac03570c094411d78d477377728c2",
+    "src/csl_llm/__init__.py": "e330d6b21720c96f282971a7ec9519f943e1c21b9bd944c611bbb4763ca390e2",
+    "src/csl_llm/decoder_layout.py": "20fa5b2f051dcad58cb2c44f7d7f511b41fde243113c61a338ac2c661877ec13"
+  }
+}

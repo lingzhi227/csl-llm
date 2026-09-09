@@ -1,5 +1,5 @@
 {
-  "scope": "Six accepted full-model static partitions, original blocks 0 through 5631; bounded cached two-layer runtime remains separate, 2026-09-09",
+  "scope": "Full-model CPU reference, static symbols and source-only validation preparation; SDK scope remains bounded two-layer cached/reset, 2026-09-09",
   "files": [
     {
       "path": ".gitignore",
@@ -13,8 +13,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 8135,
-      "sha256": "6a4c47fc16925f4cbb51e6af1f4c24d2f8ec51ac70a93470bd34d23e1405c5b0"
+      "bytes": 8481,
+      "sha256": "f006daaf8d79b714ecab7a23f4609684133d587445775e91f08e3543ad7e0c55"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
@@ -477,6 +477,11 @@
       "sha256": "ce5050ea64ea5b9ffe20fe04af102fea8f956b8dc62ad5a4890e6e48cd814cdb"
     },
     {
+      "path": "docs/MODEL-VALIDATION-PREPARATION.md",
+      "bytes": 5233,
+      "sha256": "88c37748690e472eb0fff6b6964adfa5a50ec52e665ac5497f15ac9986c7ae8f"
+    },
+    {
       "path": "docs/NATIVE-U8.md",
       "bytes": 2817,
       "sha256": "1f905925315b702612f162b1a4d0daa5a7dd0e4f5383e1c9a3d35b33e57e38bf"
@@ -508,8 +513,8 @@
     },
     {
       "path": "docs/STATUS.md",
-      "bytes": 4982,
-      "sha256": "666e67f88cbf18c364692fca4ac47286b8e7e805c3d6bea66ead80b19aaec3be"
+      "bytes": 5284,
+      "sha256": "bf0a524f208dbb16e50502fd130f763dd233ab7f6dc132b8b537158501829890"
     },
     {
       "path": "docs/STREAM-OUTPUT.md",
@@ -538,8 +543,8 @@
     },
     {
       "path": "release/CHECKS.md",
-      "bytes": 11699,
-      "sha256": "e72419c0c2e008ccd0fad93aed9a5cfedc8f9069bb4201d5ee69d9c75fc7d32d"
+      "bytes": 11960,
+      "sha256": "3126442cbb29f11152b5c6dea3d05b2572520146b40304a55853ed449ef4bfd7"
     },
     {
       "path": "release/COLLECTIVE-CHECKS.json",
@@ -585,6 +590,11 @@
       "path": "release/MODEL-PARTITION-LEDGER.json",
       "bytes": 4661,
       "sha256": "6f92c2b9df3e059f49c049d35e953aaa96d3241c0adce6d2c258dcde1bf39e01"
+    },
+    {
+      "path": "release/MODEL-PREPARATION-CHECKS.json",
+      "bytes": 2865,
+      "sha256": "16eb5f882f55490c6cd6e21e22c3367a3c748a999b7ff950580c9b943388a9b3"
     },
     {
       "path": "release/NATIVE-DOWN-CHECKS.json",
@@ -3742,6 +3752,41 @@
       "sha256": "134a387da3962b5cac5f2bcad3a5ed2e99d3714c725b6ae9c1b954991a9e7ce0"
     },
     {
+      "path": "validation/frozen/model-diagnostic-symbol-source-20260909T004636435324Z/manifest.json",
+      "bytes": 723,
+      "sha256": "e0278f283dea415e9410b5b3e3ac075e1d49f9a58b9eedb857dfc44f7a130db9"
+    },
+    {
+      "path": "validation/frozen/model-diagnostic-symbol-source-20260909T004636435324Z/src/csl_llm/__init__.py",
+      "bytes": 80,
+      "sha256": "e330d6b21720c96f282971a7ec9519f943e1c21b9bd944c611bbb4763ca390e2"
+    },
+    {
+      "path": "validation/frozen/model-diagnostic-symbol-source-20260909T004636435324Z/src/csl_llm/decoder_layout.py",
+      "bytes": 4528,
+      "sha256": "20fa5b2f051dcad58cb2c44f7d7f511b41fde243113c61a338ac2c661877ec13"
+    },
+    {
+      "path": "validation/frozen/model-diagnostic-symbol-source-20260909T004636435324Z/src/csl_llm/regions.py",
+      "bytes": 2413,
+      "sha256": "2b23cc1644fc6e28ebe461bb68dfe0b4c77ac03570c094411d78d477377728c2"
+    },
+    {
+      "path": "validation/frozen/model-diagnostic-symbol-source-20260909T004636435324Z/tools/decoder_chain_symbols.py",
+      "bytes": 4690,
+      "sha256": "d5a3485726d8b8e192e3786dff4b5a54327e8d14f581f28c28455dffce7f0d35"
+    },
+    {
+      "path": "validation/frozen/model-diagnostic-symbol-source-20260909T004636435324Z/tools/model_symbol_probe.py",
+      "bytes": 4020,
+      "sha256": "02cace056f4cd4a11b641b4f0d031fd8a491da06bc94e3cf8e28e88d47835165"
+    },
+    {
+      "path": "validation/frozen/model-diagnostic-symbol-source-20260909T004636435324Z/tools/model_symbols.py",
+      "bytes": 6727,
+      "sha256": "9e73d3b1eb4595fb47bc7d538aa30a610240c5069880de0a559b74e868f13e90"
+    },
+    {
       "path": "validation/frozen/model-elf-audit-20260908T194004676554Z/config.json",
       "bytes": 475,
       "sha256": "a504f07f79924a2606be79c6edda97e4609d9f92ed7487f1d4567a91a69545a7"
@@ -3977,6 +4022,211 @@
       "sha256": "497abba2a3ce9927325ea8e56f9d2c97fb2ecd785f3fec3105aef70fb0511e29"
     },
     {
+      "path": "validation/frozen/model-reference-build-20260909T005940695866Z/config-summary.json",
+      "bytes": 534,
+      "sha256": "2bdadfc752c970618259f6f96ebcfc3d3b4e2343b0cf50f6026a330a3ca3a885"
+    },
+    {
+      "path": "validation/frozen/model-reference-build-20260909T005940695866Z/driver.py",
+      "bytes": 7844,
+      "sha256": "4bea0a5a83bd654d3d31c6223e7b63e99019666f6fb3120e8f44828d023f8500"
+    },
+    {
+      "path": "validation/frozen/model-reference-build-20260909T005940695866Z/execution-summary.json",
+      "bytes": 826,
+      "sha256": "4e62144f8000e424ce5b541dd8422ad922d280980f73f65a018a531c2e0236d7"
+    },
+    {
+      "path": "validation/frozen/model-reference-build-20260909T005940695866Z/manifest.json",
+      "bytes": 1273,
+      "sha256": "fbbcfe8264c106c121b24ce30986a15791a76e5e433950a34649951d2c71023a"
+    },
+    {
+      "path": "validation/frozen/model-reference-build-20260909T005940695866Z/results-summary.json",
+      "bytes": 644,
+      "sha256": "60d6faa2bffc8bfac30b59a78612bc670fdc355d343ba4ccb2ac8a4561afbb2b"
+    },
+    {
+      "path": "validation/frozen/model-runtime-integration-source-20260909T011841165105Z/configs/precision.json",
+      "bytes": 1396,
+      "sha256": "c5da7df9c06537cb205b8c5a760703fd39b7c519bb27666906cafb1d6e45b3b0"
+    },
+    {
+      "path": "validation/frozen/model-runtime-integration-source-20260909T011841165105Z/docs/FULL-MODEL-RUNTIME-VALIDATION.md",
+      "bytes": 4941,
+      "sha256": "0d44e19f5b9f0974c25f8b78b6fe09268e34cef61e4271da17035435cdc77142"
+    },
+    {
+      "path": "validation/frozen/model-runtime-integration-source-20260909T011841165105Z/manifest.json",
+      "bytes": 2179,
+      "sha256": "d5008a429e3d0f668bf7b612da11d07152ced668d83bc8503f40f19a3f7b3f68"
+    },
+    {
+      "path": "validation/frozen/model-runtime-integration-source-20260909T011841165105Z/src/csl_llm/__init__.py",
+      "bytes": 80,
+      "sha256": "e330d6b21720c96f282971a7ec9519f943e1c21b9bd944c611bbb4763ca390e2"
+    },
+    {
+      "path": "validation/frozen/model-runtime-integration-source-20260909T011841165105Z/src/csl_llm/coordinate_identity.py",
+      "bytes": 1702,
+      "sha256": "33943a93a0c562b0647fef94cb43e9942c88fa1f7116537bdaeddda186ad7f83"
+    },
+    {
+      "path": "validation/frozen/model-runtime-integration-source-20260909T011841165105Z/src/csl_llm/decoder_layout.py",
+      "bytes": 4528,
+      "sha256": "20fa5b2f051dcad58cb2c44f7d7f511b41fde243113c61a338ac2c661877ec13"
+    },
+    {
+      "path": "validation/frozen/model-runtime-integration-source-20260909T011841165105Z/src/csl_llm/regions.py",
+      "bytes": 2413,
+      "sha256": "2b23cc1644fc6e28ebe461bb68dfe0b4c77ac03570c094411d78d477377728c2"
+    },
+    {
+      "path": "validation/frozen/model-runtime-integration-source-20260909T011841165105Z/tools/compare_elf_images.py",
+      "bytes": 2353,
+      "sha256": "64bdf83955560a94e1e0389f9f6ee81c91632c370e70560462d1f285f1852f6f"
+    },
+    {
+      "path": "validation/frozen/model-runtime-integration-source-20260909T011841165105Z/tools/decoder_chain_symbols.py",
+      "bytes": 4690,
+      "sha256": "d5a3485726d8b8e192e3786dff4b5a54327e8d14f581f28c28455dffce7f0d35"
+    },
+    {
+      "path": "validation/frozen/model-runtime-integration-source-20260909T011841165105Z/tools/elf_partition.py",
+      "bytes": 6170,
+      "sha256": "53c0c74f0731a9ff26424b9cf53b91dfb02ffd4bffc12e63d6edbbdaf9118878"
+    },
+    {
+      "path": "validation/frozen/model-runtime-integration-source-20260909T011841165105Z/tools/model_assembly_probe.py",
+      "bytes": 5192,
+      "sha256": "e63fbc386e3fbf1dc568362e843cd9c412adb2d566658bee468a43d7fde3712e"
+    },
+    {
+      "path": "validation/frozen/model-runtime-integration-source-20260909T011841165105Z/tools/model_core_validate.py",
+      "bytes": 11952,
+      "sha256": "5e1965232595251e5d17c36683baa0bbf539a4d4d75f40747820abf9cd96c7a7"
+    },
+    {
+      "path": "validation/frozen/model-runtime-integration-source-20260909T011841165105Z/tools/model_initializer_audit.py",
+      "bytes": 8499,
+      "sha256": "497abba2a3ce9927325ea8e56f9d2c97fb2ecd785f3fec3105aef70fb0511e29"
+    },
+    {
+      "path": "validation/frozen/model-runtime-integration-source-20260909T011841165105Z/tools/model_partition_assemble.py",
+      "bytes": 7643,
+      "sha256": "691c57c0ead50585ca579c47511e649c1e6616645f5537263b606a6ceb43c245"
+    },
+    {
+      "path": "validation/frozen/model-runtime-integration-source-20260909T011841165105Z/tools/model_partition_contract.py",
+      "bytes": 8842,
+      "sha256": "a192ee68425ade5f4d28648a69f0e1e5fc5a0526dd7c6d9bfc4e0c96c37c79d5"
+    },
+    {
+      "path": "validation/frozen/model-runtime-integration-source-20260909T011841165105Z/tools/model_reference.py",
+      "bytes": 5559,
+      "sha256": "748cc583e5118c5c2d17a0b954fa6f4793e155cd3d05877b8e30dbff99645791"
+    },
+    {
+      "path": "validation/frozen/model-runtime-integration-source-20260909T011841165105Z/tools/model_runtime_io.py",
+      "bytes": 7271,
+      "sha256": "dce79641a31672797e78407a3a304a34b0554609eabad12bde0710ae0977a09d"
+    },
+    {
+      "path": "validation/frozen/model-runtime-integration-source-20260909T011841165105Z/tools/model_runtime_probe.py",
+      "bytes": 13123,
+      "sha256": "f7c21893587d1041f7fdde388b64d503684a03c57bd1c9ec2d79a6d355836f01"
+    },
+    {
+      "path": "validation/frozen/model-runtime-integration-source-20260909T011841165105Z/tools/model_step_validate.py",
+      "bytes": 8747,
+      "sha256": "2d023b2b43f6eade8938a05b101f3a3349b85c70d130428ccb902325540ec022"
+    },
+    {
+      "path": "validation/frozen/model-runtime-integration-source-20260909T011841165105Z/tools/model_symbols.py",
+      "bytes": 6727,
+      "sha256": "9e73d3b1eb4595fb47bc7d538aa30a610240c5069880de0a559b74e868f13e90"
+    },
+    {
+      "path": "validation/frozen/model-runtime-integration-source-20260909T011841165105Z/tools/sdk_core.py",
+      "bytes": 7828,
+      "sha256": "10ba97cebcccf4749e5ee0c22be5518f800e3820429f7d2ae1425b7f66b9e88d"
+    },
+    {
+      "path": "validation/frozen/model-single-token-reference-20260909T010221089813Z/driver.py",
+      "bytes": 8044,
+      "sha256": "d146d5e15217aabca518b2c2177b64434720993f36624706a3fc4d1d6d2f9e49"
+    },
+    {
+      "path": "validation/frozen/model-single-token-reference-20260909T010221089813Z/equations.py",
+      "bytes": 30845,
+      "sha256": "d0097925f9ee7e6fd7362285f8374c8e7d3b885272b43157ca2b8cd32997c673"
+    },
+    {
+      "path": "validation/frozen/model-single-token-reference-20260909T010221089813Z/manifest.json",
+      "bytes": 564,
+      "sha256": "89d1f64693e8dd641421a36285c0a74e040f6b1bfb227d10089cddb23c9a7b4c"
+    },
+    {
+      "path": "validation/frozen/model-single-token-reference-20260909T010221089813Z/precision.json",
+      "bytes": 1396,
+      "sha256": "c5da7df9c06537cb205b8c5a760703fd39b7c519bb27666906cafb1d6e45b3b0"
+    },
+    {
+      "path": "validation/frozen/model-single-token-reference-20260909T010221089813Z/report.json",
+      "bytes": 20484,
+      "sha256": "8c3c1349f46c0359e20088df597b9a1e25ce1053613aeeeeab68edc9151bf23f"
+    },
+    {
+      "path": "validation/frozen/model-single-token-reference-source-20260909T005930452387Z/configs/precision.json",
+      "bytes": 1396,
+      "sha256": "c5da7df9c06537cb205b8c5a760703fd39b7c519bb27666906cafb1d6e45b3b0"
+    },
+    {
+      "path": "validation/frozen/model-single-token-reference-source-20260909T005930452387Z/manifest.json",
+      "bytes": 1048,
+      "sha256": "a16d77affc0b842a794252475f15ab87b57b45a7486324decd863f968be1248a"
+    },
+    {
+      "path": "validation/frozen/model-single-token-reference-source-20260909T005930452387Z/src/csl_llm/__init__.py",
+      "bytes": 80,
+      "sha256": "e330d6b21720c96f282971a7ec9519f943e1c21b9bd944c611bbb4763ca390e2"
+    },
+    {
+      "path": "validation/frozen/model-single-token-reference-source-20260909T005930452387Z/src/csl_llm/decoder_layout.py",
+      "bytes": 4528,
+      "sha256": "20fa5b2f051dcad58cb2c44f7d7f511b41fde243113c61a338ac2c661877ec13"
+    },
+    {
+      "path": "validation/frozen/model-single-token-reference-source-20260909T005930452387Z/src/csl_llm/regions.py",
+      "bytes": 2413,
+      "sha256": "2b23cc1644fc6e28ebe461bb68dfe0b4c77ac03570c094411d78d477377728c2"
+    },
+    {
+      "path": "validation/frozen/model-single-token-reference-source-20260909T005930452387Z/src/csl_llm/static_data.py",
+      "bytes": 1256,
+      "sha256": "f27337570423a8524aa6070e7d9d807980a00756ed2969c11b9d272222d06494"
+    },
+    {
+      "path": "validation/frozen/model-single-token-reference-source-20260909T005930452387Z/tools/cpu_reference_probe.py",
+      "bytes": 7844,
+      "sha256": "4bea0a5a83bd654d3d31c6223e7b63e99019666f6fb3120e8f44828d023f8500"
+    },
+    {
+      "path": "validation/frozen/model-single-token-reference-source-20260909T005930452387Z/tools/decoder_chain_reference.py",
+      "bytes": 8437,
+      "sha256": "8c6cd8af416307ba871a54749d08c81e94f578bc4ae30c8e9517bcfe994a4dd0"
+    },
+    {
+      "path": "validation/frozen/model-single-token-reference-source-20260909T005930452387Z/tools/model_single_token_reference.py",
+      "bytes": 8044,
+      "sha256": "d146d5e15217aabca518b2c2177b64434720993f36624706a3fc4d1d6d2f9e49"
+    },
+    {
+      "path": "validation/frozen/model-single-token-reference-source-20260909T005930452387Z/tools/resident_decoder_probe.py",
+      "bytes": 30845,
+      "sha256": "d0097925f9ee7e6fd7362285f8374c8e7d3b885272b43157ca2b8cd32997c673"
+    },
+    {
       "path": "validation/frozen/model-symbols-20260908T214013350071Z/config.json",
       "bytes": 302,
       "sha256": "72c95fd5a452fb8ca207eed4cc0364a8d96f4f1663994482d248207744fd52ea"
@@ -4020,6 +4270,31 @@
       "path": "validation/frozen/model-symbols-20260908T214013350071Z/tools/model_symbols.py",
       "bytes": 4958,
       "sha256": "cb5663397d082a6ef2c435828996d2b5ff94465d4aa040c988fc3670f89781d6"
+    },
+    {
+      "path": "validation/frozen/model-symbols-20260909T004647566849Z/config-summary.json",
+      "bytes": 545,
+      "sha256": "172b5034b04114a353cfbeb5de2bef36f06b25617984e59e9eff041576122a17"
+    },
+    {
+      "path": "validation/frozen/model-symbols-20260909T004647566849Z/driver.py",
+      "bytes": 4020,
+      "sha256": "02cace056f4cd4a11b641b4f0d031fd8a491da06bc94e3cf8e28e88d47835165"
+    },
+    {
+      "path": "validation/frozen/model-symbols-20260909T004647566849Z/execution-summary.json",
+      "bytes": 798,
+      "sha256": "3b05c2baa5e7a3faacdf22a1897567d43d95bfbe79d578b98f0e822b121a48a6"
+    },
+    {
+      "path": "validation/frozen/model-symbols-20260909T004647566849Z/manifest.json",
+      "bytes": 596137,
+      "sha256": "5aa83a015b13d90f7b008b95a336f749642b2f8e8b1d83b26dd8099f8099c127"
+    },
+    {
+      "path": "validation/frozen/model-symbols-20260909T004647566849Z/results-summary.json",
+      "bytes": 635,
+      "sha256": "815185b510478188e3384212b7ca5e998a6b8f9e546fe59d822395430b37c8b9"
     },
     {
       "path": "validation/frozen/packet-fanin-20260908T095259518148Z/config.json",
@@ -5222,9 +5497,19 @@
       "sha256": "135fcc5be1cf7bf4b66a083bb0fd4cd9c6713a5ac3e2d5ea49c3e7dc50fc01c1"
     },
     {
+      "path": "validation/reviews/model-single-token-reference-20260909T010221089813Z-independent-reference-review.json",
+      "bytes": 86149,
+      "sha256": "f9bdd5fcc15e3ceedd2419f747e2bb12589d6542b112044dca715be407394cda"
+    },
+    {
       "path": "validation/reviews/model-symbols-20260908T214013350071Z-independent-symbol-review.json",
       "bytes": 1389,
       "sha256": "707e9982d93ccfdc21e93d12113825280e2edb14ab7fa6bed43155fc2351b1ea"
+    },
+    {
+      "path": "validation/reviews/model-symbols-20260909T004647566849Z-independent-symbol-review.json",
+      "bytes": 1410,
+      "sha256": "35e138e4bd64438e4b8a90e6c9bf8858edba7610771fa03cd92617a3af46f849"
     },
     {
       "path": "validation/reviews/resident-weight-pack-review.json",
@@ -5612,6 +5897,26 @@
       "sha256": "9ccd18f71f1d63548b851d75d41eafe9fbd6e818ddc045491f73750795dd7cfb"
     },
     {
+      "path": "validation/reviews/s5-full-model-312-stage-source-review.json",
+      "bytes": 1452,
+      "sha256": "4d1de044b2d4f91ffc4be6e8f1f1d33b5790d158119b10b0ab2a6b877c77254b"
+    },
+    {
+      "path": "validation/reviews/s5-full-model-diagnostic-symbol-source-review.json",
+      "bytes": 1929,
+      "sha256": "8d46e7d229684edb84d51ae730f0bfee0a948fbfed71ab4712aee0df78413583"
+    },
+    {
+      "path": "validation/reviews/s5-full-model-runtime-assembly-driver-source-review.json",
+      "bytes": 2884,
+      "sha256": "8b59624b231be272fa40440c94155cadce4e98b9ef4e9d71e10d4d2821538e7d"
+    },
+    {
+      "path": "validation/reviews/s5-full-model-runtime-integration-source-snapshot-review.json",
+      "bytes": 865,
+      "sha256": "8100fd6d41eac0646d5098831b9587a004a697d2b23e4bcff7bda2940481108b"
+    },
+    {
       "path": "validation/reviews/s5-fulltopology-core-independent-review.json",
       "bytes": 1472,
       "sha256": "9ed9a1e1c577bc45824ba39c31cbf8b3f6f8fa39063baabcea7b8408f94630b3"
@@ -5655,6 +5960,11 @@
       "path": "validation/reviews/s5-model-second-partition-resource-review.json",
       "bytes": 1000,
       "sha256": "8dbc09c9e18a21ed23aa1c9575d40d608ab8ce7e241fa200713e002fb62fd1b7"
+    },
+    {
+      "path": "validation/reviews/s5-model-single-token-reference-source-review.json",
+      "bytes": 2218,
+      "sha256": "1a7fa5b38c5461d22dd0e45d3da87e158696463a8e8ae3899f8043e44c99db70"
     },
     {
       "path": "validation/reviews/s5-public-stopped-memory-candidate-review.json",

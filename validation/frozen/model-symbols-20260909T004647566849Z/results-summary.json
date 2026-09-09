@@ -1,0 +1,10 @@
+{
+  "success": true,
+  "offline_only": true,
+  "source_execution_sha256": "aed6f06ae394613834ed8e1eb42eb2491b55a3c172cd249d2560ed79bddeb664",
+  "symbols_sha256": "50bd41d36236b635aa2797e95dc6de66da9a6d4b823458bbb191470e3d2e1ca7",
+  "application_coordinates": 40530,
+  "scope": "Full-layout actual ELF symbols only. No compiler, core, SDK runtime or numerical execution; selected original weights remain partial.",
+  "original_file_sha256": "778818c8f8a2894b157df112c57fc8d07088340e0705c6946bdda502e59a1785",
+  "publication_note": "Derived compact report; private paths and detailed tables omitted; original hash meanings unchanged."
+}

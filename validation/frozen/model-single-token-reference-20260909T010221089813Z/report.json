@@ -1,0 +1,748 @@
+{
+  "success": true,
+  "dtype": "float32",
+  "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+  "model_manifest_sha256": "9e4305503478f0f118ced0c5b87b148b73ae5823504f5636fb7c778e1252c75e",
+  "model_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+  "eager_attention": true,
+  "tied_embedding": true,
+  "deterministic": true,
+  "threads": 1,
+  "versions": {
+    "torch": "2.7.1+cpu",
+    "transformers": "4.51.3",
+    "numpy": "2.2.6",
+    "safetensors": "0.5.3"
+  },
+  "prompts": [
+    {
+      "id": "single-token",
+      "prompt_tokens": [
+        151644
+      ],
+      "generated_tokens": [
+        72030
+      ],
+      "official_generate_exact": true,
+      "steps": [
+        {
+          "step": 0,
+          "context_tokens": 1,
+          "selected_token": 72030,
+          "trace": "step-000.npz"
+        }
+      ]
+    }
+  ],
+  "cpu_checks": [
+    {
+      "stage": "model.embed_tokens",
+      "comparison": "accepted causal prompt position zero",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "stage": "model.layers.0",
+      "comparison": "accepted causal prompt position zero",
+      "max_abs": 5.4836273193359375e-06,
+      "relative_l2": 1.646087926332649e-06,
+      "relative_peak": 1.8226183449864683e-06
+    },
+    {
+      "stage": "model.layers.1",
+      "comparison": "accepted causal prompt position zero",
+      "max_abs": 5.4836273193359375e-06,
+      "relative_l2": 1.774450592205966e-06,
+      "relative_peak": 8.09171131532245e-07
+    },
+    {
+      "stage": "model.layers.10",
+      "comparison": "accepted causal prompt position zero",
+      "max_abs": 0.001220703125,
+      "relative_l2": 7.162154939086543e-07,
+      "relative_peak": 7.16264753800465e-07
+    },
+    {
+      "stage": "model.layers.11",
+      "comparison": "accepted causal prompt position zero",
+      "max_abs": 0.001220703125,
+      "relative_l2": 7.158657812948989e-07,
+      "relative_peak": 7.158575841424374e-07
+    },
+    {
+      "stage": "model.layers.12",
+      "comparison": "accepted causal prompt position zero",
+      "max_abs": 0.001220703125,
+      "relative_l2": 7.154987381836399e-07,
+      "relative_peak": 7.154577874539469e-07
+    },
+    {
+      "stage": "model.layers.13",
+      "comparison": "accepted causal prompt position zero",
+      "max_abs": 0.001220703125,
+      "relative_l2": 7.153424256522405e-07,
+      "relative_peak": 7.152426578731873e-07
+    },
+    {
+      "stage": "model.layers.14",
+      "comparison": "accepted causal prompt position zero",
+      "max_abs": 0.001220703125,
+      "relative_l2": 7.149143347777337e-07,
+      "relative_peak": 7.147589868434314e-07
+    },
+    {
+      "stage": "model.layers.15",
+      "comparison": "accepted causal prompt position zero",
+      "max_abs": 0.001220703125,
+      "relative_l2": 7.141873933498874e-07,
+      "relative_peak": 7.139545413720236e-07
+    },
+    {
+      "stage": "model.layers.16",
+      "comparison": "accepted causal prompt position zero",
+      "max_abs": 0.001220703125,
+      "relative_l2": 7.141211982203299e-07,
+      "relative_peak": 7.139060692367523e-07
+    },
+    {
+      "stage": "model.layers.17",
+      "comparison": "accepted causal prompt position zero",
+      "max_abs": 0.001220703125,
+      "relative_l2": 7.144025166021639e-07,
+      "relative_peak": 7.137470901423319e-07
+    },
+    {
+      "stage": "model.layers.18",
+      "comparison": "accepted causal prompt position zero",
+      "max_abs": 0.001220703125,
+      "relative_l2": 7.147623425194658e-07,
+      "relative_peak": 7.140078122450769e-07
+    },
+    {
+      "stage": "model.layers.19",
+      "comparison": "accepted causal prompt position zero",
+      "max_abs": 0.001220703125,
+      "relative_l2": 7.157690462696189e-07,
+      "relative_peak": 7.149058440407165e-07
+    },
+    {
+      "stage": "model.layers.2",
+      "comparison": "accepted causal prompt position zero",
+      "max_abs": 0.00067138671875,
+      "relative_l2": 8.207191599249014e-07,
+      "relative_peak": 8.114987304471226e-07
+    },
+    {
+      "stage": "model.layers.20",
+      "comparison": "accepted causal prompt position zero",
+      "max_abs": 0.001220703125,
+      "relative_l2": 7.175530918971415e-07,
+      "relative_peak": 7.165038053517102e-07
+    },
+    {
+      "stage": "model.layers.21",
+      "comparison": "accepted causal prompt position zero",
+      "max_abs": 0.0013427734375,
+      "relative_l2": 1.9404814726952687e-05,
+      "relative_peak": 2.628014153050766e-05
+    },
+    {
+      "stage": "model.layers.22",
+      "comparison": "accepted causal prompt position zero",
+      "max_abs": 0.000614166259765625,
+      "relative_l2": 1.306288547489913e-05,
+      "relative_peak": 2.0812997031497822e-05
+    },
+    {
+      "stage": "model.layers.23",
+      "comparison": "accepted causal prompt position zero",
+      "max_abs": 0.0002918243408203125,
+      "relative_l2": 1.3035491972416778e-05,
+      "relative_peak": 1.231615720439653e-05
+    },
+    {
+      "stage": "model.layers.3",
+      "comparison": "accepted causal prompt position zero",
+      "max_abs": 0.0010986328125,
+      "relative_l2": 6.586323260620171e-07,
+      "relative_peak": 6.564187064452513e-07
+    },
+    {
+      "stage": "model.layers.4",
+      "comparison": "accepted causal prompt position zero",
+      "max_abs": 0.0010986328125,
+      "relative_l2": 6.579202959623278e-07,
+      "relative_peak": 6.557674234854214e-07
+    },
+    {
+      "stage": "model.layers.5",
+      "comparison": "accepted causal prompt position zero",
+      "max_abs": 0.0010986328125,
+      "relative_l2": 6.47740692251662e-07,
+      "relative_peak": 6.458950641560391e-07
+    },
+    {
+      "stage": "model.layers.6",
+      "comparison": "accepted causal prompt position zero",
+      "max_abs": 0.001220703125,
+      "relative_l2": 7.172452432757201e-07,
+      "relative_peak": 7.174382918769986e-07
+    },
+    {
+      "stage": "model.layers.7",
+      "comparison": "accepted causal prompt position zero",
+      "max_abs": 0.001220703125,
+      "relative_l2": 7.171256329333459e-07,
+      "relative_peak": 7.172676006351548e-07
+    },
+    {
+      "stage": "model.layers.8",
+      "comparison": "accepted causal prompt position zero",
+      "max_abs": 0.001220703125,
+      "relative_l2": 7.169204185080813e-07,
+      "relative_peak": 7.17003413294749e-07
+    },
+    {
+      "stage": "model.layers.9",
+      "comparison": "accepted causal prompt position zero",
+      "max_abs": 0.001220703125,
+      "relative_l2": 7.167115879051325e-07,
+      "relative_peak": 7.1680014680067e-07
+    },
+    {
+      "stage": "model.norm",
+      "comparison": "accepted causal prompt position zero",
+      "max_abs": 0.000881195068359375,
+      "relative_l2": 1.1179682730722288e-05,
+      "relative_peak": 8.199145968437335e-06
+    },
+    {
+      "stage": "layer_0",
+      "comparison": "independent full-prefix equations",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "stage": "cache_0_key",
+      "comparison": "independent full-prefix equations",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "stage": "cache_0_value",
+      "comparison": "independent full-prefix equations",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "stage": "layer_1",
+      "comparison": "independent full-prefix equations",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "stage": "cache_1_key",
+      "comparison": "independent full-prefix equations",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "stage": "cache_1_value",
+      "comparison": "independent full-prefix equations",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "stage": "layer_2",
+      "comparison": "independent full-prefix equations",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "stage": "cache_2_key",
+      "comparison": "independent full-prefix equations",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "stage": "cache_2_value",
+      "comparison": "independent full-prefix equations",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "stage": "layer_3",
+      "comparison": "independent full-prefix equations",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "stage": "cache_3_key",
+      "comparison": "independent full-prefix equations",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "stage": "cache_3_value",
+      "comparison": "independent full-prefix equations",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "stage": "layer_4",
+      "comparison": "independent full-prefix equations",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "stage": "cache_4_key",
+      "comparison": "independent full-prefix equations",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "stage": "cache_4_value",
+      "comparison": "independent full-prefix equations",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "stage": "layer_5",
+      "comparison": "independent full-prefix equations",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "stage": "cache_5_key",
+      "comparison": "independent full-prefix equations",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "stage": "cache_5_value",
+      "comparison": "independent full-prefix equations",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "stage": "layer_6",
+      "comparison": "independent full-prefix equations",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "stage": "cache_6_key",
+      "comparison": "independent full-prefix equations",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "stage": "cache_6_value",
+      "comparison": "independent full-prefix equations",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "stage": "layer_7",
+      "comparison": "independent full-prefix equations",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "stage": "cache_7_key",
+      "comparison": "independent full-prefix equations",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "stage": "cache_7_value",
+      "comparison": "independent full-prefix equations",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "stage": "layer_8",
+      "comparison": "independent full-prefix equations",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "stage": "cache_8_key",
+      "comparison": "independent full-prefix equations",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "stage": "cache_8_value",
+      "comparison": "independent full-prefix equations",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "stage": "layer_9",
+      "comparison": "independent full-prefix equations",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "stage": "cache_9_key",
+      "comparison": "independent full-prefix equations",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "stage": "cache_9_value",
+      "comparison": "independent full-prefix equations",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "stage": "layer_10",
+      "comparison": "independent full-prefix equations",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "stage": "cache_10_key",
+      "comparison": "independent full-prefix equations",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "stage": "cache_10_value",
+      "comparison": "independent full-prefix equations",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "stage": "layer_11",
+      "comparison": "independent full-prefix equations",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "stage": "cache_11_key",
+      "comparison": "independent full-prefix equations",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "stage": "cache_11_value",
+      "comparison": "independent full-prefix equations",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "stage": "layer_12",
+      "comparison": "independent full-prefix equations",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "stage": "cache_12_key",
+      "comparison": "independent full-prefix equations",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "stage": "cache_12_value",
+      "comparison": "independent full-prefix equations",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "stage": "layer_13",
+      "comparison": "independent full-prefix equations",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "stage": "cache_13_key",
+      "comparison": "independent full-prefix equations",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "stage": "cache_13_value",
+      "comparison": "independent full-prefix equations",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "stage": "layer_14",
+      "comparison": "independent full-prefix equations",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "stage": "cache_14_key",
+      "comparison": "independent full-prefix equations",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "stage": "cache_14_value",
+      "comparison": "independent full-prefix equations",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "stage": "layer_15",
+      "comparison": "independent full-prefix equations",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "stage": "cache_15_key",
+      "comparison": "independent full-prefix equations",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "stage": "cache_15_value",
+      "comparison": "independent full-prefix equations",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "stage": "layer_16",
+      "comparison": "independent full-prefix equations",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "stage": "cache_16_key",
+      "comparison": "independent full-prefix equations",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "stage": "cache_16_value",
+      "comparison": "independent full-prefix equations",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "stage": "layer_17",
+      "comparison": "independent full-prefix equations",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "stage": "cache_17_key",
+      "comparison": "independent full-prefix equations",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "stage": "cache_17_value",
+      "comparison": "independent full-prefix equations",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "stage": "layer_18",
+      "comparison": "independent full-prefix equations",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "stage": "cache_18_key",
+      "comparison": "independent full-prefix equations",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "stage": "cache_18_value",
+      "comparison": "independent full-prefix equations",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "stage": "layer_19",
+      "comparison": "independent full-prefix equations",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "stage": "cache_19_key",
+      "comparison": "independent full-prefix equations",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "stage": "cache_19_value",
+      "comparison": "independent full-prefix equations",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "stage": "layer_20",
+      "comparison": "independent full-prefix equations",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "stage": "cache_20_key",
+      "comparison": "independent full-prefix equations",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "stage": "cache_20_value",
+      "comparison": "independent full-prefix equations",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "stage": "layer_21",
+      "comparison": "independent full-prefix equations",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "stage": "cache_21_key",
+      "comparison": "independent full-prefix equations",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "stage": "cache_21_value",
+      "comparison": "independent full-prefix equations",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "stage": "layer_22",
+      "comparison": "independent full-prefix equations",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "stage": "cache_22_key",
+      "comparison": "independent full-prefix equations",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "stage": "cache_22_value",
+      "comparison": "independent full-prefix equations",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "stage": "layer_23",
+      "comparison": "independent full-prefix equations",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "stage": "cache_23_key",
+      "comparison": "independent full-prefix equations",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "stage": "cache_23_value",
+      "comparison": "independent full-prefix equations",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "stage": "final_norm",
+      "comparison": "independent equations",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    },
+    {
+      "stage": "logits",
+      "comparison": "independent equations",
+      "max_abs": 0.0,
+      "relative_l2": 0.0,
+      "relative_peak": 0.0
+    }
+  ],
+  "accepted_official_report_sha256": "ed7a56c88ffe6b6b629715b847fbc7415bbc82e6856c48ebbc03a6a080d16340",
+  "scope": "Fresh official original24layer/full151936 CPU reference, single raw token151644 and one greedy output; not chat/cached/reset/capacity or SDK inference.",
+  "files": {
+    "precision.json": "c5da7df9c06537cb205b8c5a760703fd39b7c519bb27666906cafb1d6e45b3b0",
+    "driver.py": "d146d5e15217aabca518b2c2177b64434720993f36624706a3fc4d1d6d2f9e49",
+    "equations.py": "d0097925f9ee7e6fd7362285f8374c8e7d3b885272b43157ca2b8cd32997c673",
+    "modeling_qwen2.py": "1760c628019995d3564c8572be6c5149f488b6c3aa95ceda16099c2516e146ff",
+    "single-token/step-000.npz": "f901feb7653b1ec5bcde5848e16cb754a98c4215b1e81a50446c91148eddc99b"
+  }
+}

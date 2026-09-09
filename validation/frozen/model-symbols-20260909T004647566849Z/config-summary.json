@@ -1,0 +1,9 @@
+{
+  "source_execution_sha256": "aed6f06ae394613834ed8e1eb42eb2491b55a3c172cd249d2560ed79bddeb664",
+  "diagnostics": true,
+  "timeout_seconds": 180,
+  "rss_limit_kib": 2097152,
+  "scope": "Full-layout actual ELF symbols only. No compiler, core, SDK runtime or numerical execution; selected original weights remain partial.",
+  "original_file_sha256": "ecb4020a40567bc14f6067cf4d1dade2d54fbb84e6d78f91fd63190e7d0c0110",
+  "publication_note": "Derived compact report; private paths and detailed tables omitted; original hash meanings unchanged."
+}

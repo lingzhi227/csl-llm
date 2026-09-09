@@ -1,0 +1,29 @@
+{
+  "reviewed_at": "2026-09-09T01:12:10.653712+00:00",
+  "source_sha256": {
+    "tools/model_runtime_probe.py": "9c60cfff8f4f7def9ca060634e42f118d19dcefc4286e9245155f11f32fc7b76",
+    "tools/model_assembly_probe.py": "e63fbc386e3fbf1dc568362e843cd9c412adb2d566658bee468a43d7fde3712e",
+    "tools/model_partition_assemble.py": "691c57c0ead50585ca579c47511e649c1e6616645f5537263b606a6ceb43c245",
+    "tools/model_core_validate.py": "2ce35408442fb7b95d39b13242b6175977c50ef7e65bc6822addab3c8aa66055",
+    "tools/model_runtime_io.py": "dce79641a31672797e78407a3a304a34b0554609eabad12bde0710ae0977a09d",
+    "tools/model_step_validate.py": "2d023b2b43f6eade8938a05b101f3a3349b85c70d130428ccb902325540ec022",
+    "tools/model_reference.py": "49c34ba16c5db3705ab3fa59ff0b1cf712144623fdabf72f5025c1768c33186f"
+  },
+  "source_approved": true,
+  "tests": "python3 -B -m pytest -q tests/test_model_core_validate.py tests/test_model_step_validate.py tests/test_model_runtime_io.py tests/test_model_partition_assemble.py tests/test_model_symbols.py:16passed,11subtests passed",
+  "syntax_checked": [
+    "tools/model_runtime_probe.py",
+    "tools/model_assembly_probe.py"
+  ],
+  "findings": [
+    "Preparation rejects incomplete original34552 coverage; binds original pack788ce, complete accepted assembly/execution/source audits and source immutablefile hashes.",
+    "Final assembly extension audits actual own artifact diagnostic symbols and relates all physicalcoordinates/actualaddresses/ELF hashes through contract_symbols; previous partial symbol addresses are never reused blindly.",
+    "Single-token reference manifest/report and CPUbuild receipts fixed to independent accepted010221/005940. Worker keeps fixed stage/logit gates and original151644/onehead scope.",
+    "Host onlyprompt/control, initialize-reset-prepare/allready-compute/alldone-normalchecks; generatedwinner never sentback by host.",
+    "Nested finally preserves actualcore/normalreadback/report hashes even if SDK stop raises. References and helperexpectations never substitute absent core memory.",
+    "Simulator instance references released andgc before fullfabric core opens; originalinitializers stream bounded partitions and fully exhaust before success; all9496vocab replicas and writtenKV checked.",
+    "24GiB/16threads matches priorfull-layout bootstrap configuration, not proof that complete-original load/inference fits. Time budget explicit1800..86400 beforefreeze; no default selected or later extension implied."
+  ],
+  "dispatch_authorized": false,
+  "scope": "Source/host acceptance only. No complete original assembly exists yet, no fullmodel candidate prepared, and no actual fullmodel neural runtime accepted. Finalassembly independent original-byte/wholeELF/diagnosticABI review and resource-budget candidate review required before firstSDK. Cached235719 and nextcompile000754 order unchanged."
+}

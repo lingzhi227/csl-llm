@@ -1,0 +1,21 @@
+{
+  "reviewed_at": "2026-09-09T00:46:29.870292+00:00",
+  "source_sha256": {
+    "tools/model_symbols.py": "9e73d3b1eb4595fb47bc7d538aa30a610240c5069880de0a559b74e868f13e90",
+    "tools/model_symbol_probe.py": "02cace056f4cd4a11b641b4f0d031fd8a491da06bc94e3cf8e28e88d47835165",
+    "tools/decoder_chain_symbols.py": "d5a3485726d8b8e192e3786dff4b5a54327e8d14f581f28c28455dffce7f0d35",
+    "tests/test_model_symbols.py": "fe04ecc9d775bd3f546ff0850330a80f86e151945b02afb7cac7cd730bc16b8e"
+  },
+  "test_command": "python3 -B -m pytest -q tests/test_model_runtime_io.py tests/test_model_symbols.py tests/test_decoder_chain_validate.py",
+  "test_result": "12passed,3subtests passed",
+  "source_approved": true,
+  "findings": [
+    "diagnostics defaultsFalse preserving prior required symbols; explicit boolean rejected otherwise.",
+    "Fullmodel caller uses endpoint=False; physical application128,0 remains layer2UP matrix with448byteinput and28672byteweights, no probe boundary. Two-layer default endpoint inference retained.",
+    "Decoder diagnostic fields use actual prior qualified2byte bool/KVmetadata and4byte invocation; controller activation/stages, gate partial, KV cache/context and root packetflags included.",
+    "Full vocabulary all9496 matrix result512bytes included, all matrix/controller packetflags and modelcontroller boundary included. Presence at all actual complete-model aliases remains to be qualified by offline actualELF audit.",
+    "Self-contained driver copies chain symbols dependency only for diagnostics; existing actual audited artifacts reused with180s2GiB offline-only bounds, no compiler/simulator invocation."
+  ],
+  "actual_fullmodel_diagnostic_abi_accepted": false,
+  "scope": "Source and host tests only. Prepare fresh immutable candidate and verify actual ELF symbols across all40530 coordinates before actual core use. Final complete-model assembly must recheck its own symbol addresses."
+}

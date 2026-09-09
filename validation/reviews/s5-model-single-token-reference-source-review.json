@@ -1,0 +1,27 @@
+{
+  "reviewed_at": "2026-09-09T01:01:29.987859+00:00",
+  "source_manifest_sha256": "a16d77affc0b842a794252475f15ab87b57b45a7486324decd863f968be1248a",
+  "source_files": {
+    "tools/resident_decoder_probe.py": "d0097925f9ee7e6fd7362285f8374c8e7d3b885272b43157ca2b8cd32997c673",
+    "tools/model_single_token_reference.py": "d146d5e15217aabca518b2c2177b64434720993f36624706a3fc4d1d6d2f9e49",
+    "tools/cpu_reference_probe.py": "4bea0a5a83bd654d3d31c6223e7b63e99019666f6fb3120e8f44828d023f8500",
+    "tools/sdk_probe.py": "9ccab37dc8b6ecfb0d23d56bf0826da7b87ce5d3c22d0a4ba94cb4aea6501e1c",
+    "tools/decoder_chain_reference.py": "8c6cd8af416307ba871a54749d08c81e94f578bc4ae30c8e9517bcfe994a4dd0",
+    "configs/precision.json": "c5da7df9c06537cb205b8c5a760703fd39b7c519bb27666906cafb1d6e45b3b0",
+    "src/csl_llm/regions.py": "2b23cc1644fc6e28ebe461bb68dfe0b4c77ac03570c094411d78d477377728c2",
+    "src/csl_llm/__init__.py": "e330d6b21720c96f282971a7ec9519f943e1c21b9bd944c611bbb4763ca390e2",
+    "src/csl_llm/static_data.py": "f27337570423a8524aa6070e7d9d807980a00756ed2969c11b9d272222d06494",
+    "src/csl_llm/decoder_layout.py": "20fa5b2f051dcad58cb2c44f7d7f511b41fde243113c61a338ac2c661877ec13"
+  },
+  "source_approved": true,
+  "budget_seconds": 180,
+  "rss_limit_kib": 4194304,
+  "threads": 1,
+  "observations": [
+    "Original model manifest now bound to accepted report and exact9e43055 identity, original checkpoint and every pinned model file checked.",
+    "Fresh full24layer officialFP32 eager forward and separate greedy generate1 use raw151644; captures copied before generate and removed hooks prevent accidental overwrites.",
+    "Independent full24layer CPU equations propagate their own prior output and compare layer/KV/finalnorm/fullhead against freshofficial; oldtrace onlycausalposition0outputs, neveroldlastlogits.",
+    "Explicit CPU-only kind preserves previous decoder-chain2GiB budget; single-token4GiB, one-thread environment and180s/PIDcleanup receipts; no SDK runtime imported or launched by CPU worker."
+  ],
+  "scope": "Source only. Fresh prepared candidate/resource check and actual CPU numerical reference acceptance remain separate. Superseded005848 candidate must never dispatch."
+}

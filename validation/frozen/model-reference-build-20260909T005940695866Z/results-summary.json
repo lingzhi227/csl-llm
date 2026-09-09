@@ -1,0 +1,10 @@
+{
+  "success": true,
+  "cpu_only": true,
+  "reference_manifest_sha256": "89d1f64693e8dd641421a36285c0a74e040f6b1bfb227d10089cddb23c9a7b4c",
+  "reference_report_sha256": "8c3c1349f46c0359e20088df597b9a1e25ce1053613aeeeeab68edc9151bf23f",
+  "reference_trace_sha256": "f901feb7653b1ec5bcde5848e16cb754a98c4215b1e81a50446c91148eddc99b",
+  "scope": "Host CPU reference construction only: model-single-token; no SDK execution.",
+  "original_file_sha256": "26805f581449ba42be21696b2a790f7c450394bb0e5fa1a14aaf80e3c537f156",
+  "publication_note": "Derived compact report; private paths and detailed tables omitted; original hash meanings unchanged."
+}

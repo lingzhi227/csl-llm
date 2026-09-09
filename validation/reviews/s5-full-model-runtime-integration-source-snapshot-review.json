@@ -1,0 +1,11 @@
+{
+  "reviewed_at": "2026-09-09T01:21:10.949585+00:00",
+  "source": "model-runtime-integration-source-20260909T011841165105Z",
+  "manifest_sha256": "d5008a429e3d0f668bf7b612da11d07152ced668d83bc8503f40f19a3f7b3f68",
+  "files_verified": 21,
+  "local_and_remote_staging_exact": true,
+  "source_approved": true,
+  "core_sha256": "5e1965232595251e5d17c36683baa0bbf539a4d4d75f40747820abf9cd96c7a7",
+  "incremental_check": "First-request unused prompt/generated physicaltails must remainzero; multiple request histories may retain earlier SRAM. Complete-history precondition and strictfullsymbol reads preserved.",
+  "scope": "Frozen future complete-model integration source only. No complete original assembly or modelruntime candidate/execution, no selected timebudget or fullSDK acceptance. Source/host reviews and312stage reference review remain separately linked."
+}

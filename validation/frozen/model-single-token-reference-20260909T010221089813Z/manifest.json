@@ -1,0 +1,10 @@
+{
+  "files": {
+    "precision.json": "c5da7df9c06537cb205b8c5a760703fd39b7c519bb27666906cafb1d6e45b3b0",
+    "driver.py": "d146d5e15217aabca518b2c2177b64434720993f36624706a3fc4d1d6d2f9e49",
+    "report.json": "8c3c1349f46c0359e20088df597b9a1e25ce1053613aeeeeab68edc9151bf23f",
+    "equations.py": "d0097925f9ee7e6fd7362285f8374c8e7d3b885272b43157ca2b8cd32997c673",
+    "modeling_qwen2.py": "1760c628019995d3564c8572be6c5149f488b6c3aa95ceda16099c2516e146ff",
+    "single-token/step-000.npz": "f901feb7653b1ec5bcde5848e16cb754a98c4215b1e81a50446c91148eddc99b"
+  }
+}

@@ -37,6 +37,8 @@ The **193 × 210 model layout now passes actual SDK initialization/reset/prepare
 
 Six published static model-weight partitions independently qualify original blocks **0–5631 of 34552**, including whole-ELF compatibility. They are not a fully assembled or executed model. [Partition evidence and tools](docs/MODEL-PARTITIONS.md).
 
+The full 24-layer single-token **CPU reference** now passes 459 independent checks. Expanded static symbol checks and source-reviewed full-model runtime tools are also published, with their evidence levels kept separate. [Validation preparation and limits](docs/MODEL-VALIDATION-PREPARATION.md). These do not establish full-model SDK inference.
+
 ## New accepted milestones
 
 Stateful GQA (34 real reference tokens), a separately scoped 2048-position KV diagnostic, sequential packet ACK completion and exact full-checkpoint BF16 packing are now included. [Read their acceptance boundaries](docs/MILESTONES.md). These are component milestones, not complete-model generation.
