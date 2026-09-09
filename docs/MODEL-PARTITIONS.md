@@ -27,4 +27,16 @@ The previous [full-layout boot](MODEL-BOOT.md) remains a separate accepted run w
 
 ## Subsequent accepted coverage
 
-The third (1536–2559) and fourth (2560–3583) partitions extend original static coverage to 3584 of 34552 blocks. Their initializer/resource/whole-ELF compatibility reviews and frozen evidence accompany the [two-layer release](TWO-LAYER.md). The table above retains the first publication scope; the public ledger now contains all four accepted intervals. Full-model assembly and execution remain open.
+The third (1536–2559) and fourth (2560–3583) partitions extend original static coverage to 3584 of 34552 blocks. Their initializer/resource/whole-ELF compatibility reviews and frozen evidence accompany the [two-layer release](TWO-LAYER.md). The table above retains the first publication scope; that publication contained four accepted intervals. Full-model assembly and execution remain open.
+
+
+## Fifth and sixth partitions — 2026-09-09
+
+Two further independently accepted intervals, 3584–4607 and 4608–5631, extend the public ledger to **5632 of 34552 original matrix blocks**. This is static block coverage, not a percentage of completed LLM development. Each candidate has 1401 application ELF classes, 45456-byte maximum static high-water, and independently checked original initializers across the 40530-coordinate layout. Each whole-ELF contract verifies 1024 selected original blocks, 162 common ELF classes across 5978 coordinates, and ordered SDK I/O/RPC compatibility.
+
+| Interval | Compile time | Compile peak RSS | Initializer/resource audit | Whole-ELF contract |
+| --- | ---: | ---: | --- | --- |
+| 3584–4607 | 648.850070 s | 10493152 KiB | model-elf-audit-20260909T000133487095Z | model-contract-20260909T002817703824Z |
+| 4608–5631 | 648.773233 s | 10494512 KiB | model-elf-audit-20260909T013324108058Z | model-contract-20260909T014038336694Z |
+
+The [fixed six-interval ledger](../release/MODEL-PARTITION-LEDGER.json) links exact compile/audit/contract identities and all independent reviews. [Publication checks](../release/MODEL-PARTITION-5-6-CHECKS.json) bind the six newly verified complete remote manifests and original result hashes. Selected frozen Python drivers/dependencies accompany each run; runtime helpers from older milestones remain unchanged. Compact result/config/execution reports are derived and explicitly labeled; original manifests retain references to intentionally omitted model data and binaries. No SDK simulation or compiler was rerun for publication. Full 34552-block assembly and model inference remain unaccepted.

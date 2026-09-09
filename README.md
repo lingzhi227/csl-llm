@@ -35,7 +35,7 @@ Recorded SDK results belong to the original development snapshots. Publication c
 
 The **193 × 210 model layout now passes actual SDK initialization/reset/prepare** after independent static checks. Only 12 matrix blocks have original weights; no model computation was invoked. [Boot evidence and source boundaries](docs/MODEL-BOOT.md).
 
-Four published static model-weight partitions independently qualify original blocks **0–3583 of 34552**, including whole-ELF compatibility. They are not a fully assembled or executed model. [Partition evidence and tools](docs/MODEL-PARTITIONS.md).
+Six published static model-weight partitions independently qualify original blocks **0–5631 of 34552**, including whole-ELF compatibility. They are not a fully assembled or executed model. [Partition evidence and tools](docs/MODEL-PARTITIONS.md).
 
 ## New accepted milestones
 

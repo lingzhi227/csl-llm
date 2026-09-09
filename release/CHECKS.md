@@ -72,3 +72,5 @@ Two-layer publication: all selected execution/batch recursive manifests verified
 ## Cached two-layer publication — 2026-09-09
 
 See [cached source/evidence and validation](../docs/TWO-LAYER-CACHED.md). All 12 isolated host tests pass. Existing saved SDK outputs, complete remote manifest bindings and reset bit-repeat were checked without re-running the simulator. Model payloads and private paths are excluded.
+
+Static partitions five and six: complete remote manifests, independent review bindings, local selected source hashes and exact original block intervals verified. No SDK/compiler rerun. See [publication records](MODEL-PARTITION-5-6-CHECKS.json).

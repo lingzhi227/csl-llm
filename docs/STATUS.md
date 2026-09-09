@@ -30,3 +30,5 @@ Eight-PE cross-partition line allreduce is now accepted for the full group-0 128
 Full 193 × 210 model layout: independent static checks and SDK boot accepted for 40530 PEs. Only 12 of 34552 matrix blocks contain original weights; reset/prepare passes, no compute. [Exact scope](MODEL-BOOT.md).
 
 Original model blocks 0–1535 now pass two independent initializer/resource/whole-ELF compatibility audits. Full 34552-block assembly and neural execution remain open. [Partition ledger and limits](MODEL-PARTITIONS.md).
+
+Latest published full-model static coverage: six accepted intervals cover original blocks 0–5631 of 34552. Full-model assembly and SDK inference remain open. [Evidence and limits](MODEL-PARTITIONS.md).
