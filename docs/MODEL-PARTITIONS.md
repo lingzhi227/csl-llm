@@ -39,4 +39,16 @@ Two further independently accepted intervals, 3584–4607 and 4608–5631, exten
 | 3584–4607 | 648.850070 s | 10493152 KiB | model-elf-audit-20260909T000133487095Z | model-contract-20260909T002817703824Z |
 | 4608–5631 | 648.773233 s | 10494512 KiB | model-elf-audit-20260909T013324108058Z | model-contract-20260909T014038336694Z |
 
-The [fixed six-interval ledger](../release/MODEL-PARTITION-LEDGER.json) links exact compile/audit/contract identities and all independent reviews. [Publication checks](../release/MODEL-PARTITION-5-6-CHECKS.json) bind the six newly verified complete remote manifests and original result hashes. Selected frozen Python drivers/dependencies accompany each run; runtime helpers from older milestones remain unchanged. Compact result/config/execution reports are derived and explicitly labeled; original manifests retain references to intentionally omitted model data and binaries. No SDK simulation or compiler was rerun for publication. Full 34552-block assembly and model inference remain unaccepted.
+The [public interval ledger](../release/MODEL-PARTITION-LEDGER.json) links exact compile/audit/contract identities and all independent reviews. [Publication checks](../release/MODEL-PARTITION-5-6-CHECKS.json) bind the six newly verified complete remote manifests and original result hashes. Selected frozen Python drivers/dependencies accompany each run; runtime helpers from older milestones remain unchanged. Compact result/config/execution reports are derived and explicitly labeled; original manifests retain references to intentionally omitted model data and binaries. No SDK simulation or compiler was rerun for publication. Full 34552-block assembly and model inference remain unaccepted.
+
+
+## Seventh and eighth partitions — 2026-09-09
+
+Accepted intervals 5632–6655 and 6656–7679 extend original static coverage to **7680 of 34552 matrix blocks** across eight intervals. This is not a completion percentage for the LLM. Both retain 1401 ELF classes and maximum static high-water 45456 bytes; whole-ELF compatibility checks include 5978 common coordinates and ordered SDK I/O/RPC metadata.
+
+| Interval | Compile time | Compile peak RSS | Initializer/resource audit | Whole-ELF contract |
+| --- | ---: | ---: | --- | --- |
+| 5632–6655 | 679.507279 s | 10495080 KiB | model-elf-audit-20260909T020338568912Z | model-contract-20260909T020826832138Z |
+| 6656–7679 | 677.500871 s | 10494576 KiB | model-elf-audit-20260909T021121915327Z | model-contract-20260909T021804090838Z |
+
+The [ledger](../release/MODEL-PARTITION-LEDGER.json) and [new publication checks](../release/MODEL-PARTITION-7-8-CHECKS.json) bind both intervals and their independent reviews. All six remote manifests were reverified; missing local metadata for the eighth compile was retrieved read-only into a temporary publication area, without changing development evidence. The [paired-compiler outcome review](../validation/reviews/s5-fullmodel-compile-pair-012655-014628-outcome-review.json) only qualifies receipts, resources and process cleanup; it is not neural inference performance. No compiler or SDK run was repeated for publication. Full original assembly and model SDK execution remain open.

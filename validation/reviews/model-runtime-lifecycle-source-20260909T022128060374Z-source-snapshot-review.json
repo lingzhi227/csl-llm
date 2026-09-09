@@ -1,0 +1,28 @@
+{
+  "reviewed_at": "2026-09-09T02:23:01.467150+00:00",
+  "accepted": true,
+  "run": "model-runtime-lifecycle-source-20260909T022128060374Z",
+  "manifest_sha256": "8ad7493afc7f9e28ff83344f6d5d63cf2a332f9cd93d98b8fedced8c8cea240d",
+  "files_verified": 28,
+  "local_evidence_and_remote_staging_verified": true,
+  "changed_previous_files": [
+    "tools/model_runtime_probe.py",
+    "docs/FULL-MODEL-RUNTIME-VALIDATION.md"
+  ],
+  "added_files": [
+    "tests/test_model_generation_runtime.py",
+    "tests/test_model_request_sequence.py",
+    "tests/test_sdk_lifecycle.py",
+    "tools/model_fixed_requests.py",
+    "tools/model_generation_runtime.py",
+    "tools/model_request_sequence.py",
+    "tools/sdk_lifecycle.py"
+  ],
+  "source_reviews": [
+    "s5-sdk-lifecycle-shared-source-review.json",
+    "s5-model-request-sequence-source-review.json",
+    "s5-model-fixed-requests-source-review.json"
+  ],
+  "scope": "New source-only successor including repaired single-token lifecycle and unguarded persistent generation body. No complete original assembly, runtime candidate or explicit SDK budget prepared; no neural execution.",
+  "sdk_complete": false
+}

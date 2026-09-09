@@ -1,0 +1,27 @@
+{
+  "reviewed_at": "2026-09-09T02:20:35.307022+00:00",
+  "accepted": true,
+  "files": {
+    "tools/sdk_lifecycle.py": "b9d469ff88a21d9468684d46acbd377df590e63a7e7ba4e2723c910ecfb39949",
+    "tools/model_generation_runtime.py": "93e2bce197ade5ff62ff95b5cda09d1dcaed6aa3f37a0aba40b73c140d685750",
+    "tools/model_runtime_probe.py": "650b7e2fdb02a6c2055ad8247f4d59f62d1e38a20d431d637e5f58604a7c5197",
+    "tests/test_sdk_lifecycle.py": "eb1691a7f8e3aae5746a659141ea5645270725cac5c4dc2d7ef0968b6031cbe7",
+    "tests/test_model_generation_runtime.py": "a6748ab11e765d73f331734ad3d9b492b305cbe29a56e31a010f68e299466421"
+  },
+  "local_tests": "10pytest+2subtests PASS: sdk_lifecycle,model_generation_runtime,model_request_sequence",
+  "sdk_interpreter_host_tests": {
+    "python": "3.11.8 (main, Jan  8 2026, 00:21:07) [GCC 13.3.0]",
+    "tests": 3,
+    "passed": true,
+    "scope": "Python lifecycle fault tests only; no SdkRuntime or neural computation."
+  },
+  "single_token_diff": "Compared current model_runtime_probe to frozen011841: only helper source copy/import, primary-error capture, stop/close/evidence finally delegation, earlier reference close. Model/CSL/reference/numerical gates unchanged.",
+  "checks": [
+    "Stop logging, runner.stop, individual references.close all attempted independently",
+    "Primary exceptions preserved; cleanup and failed evidence-write appended to exception notes using actualSDK Python3.11 support",
+    "Only successful final actualcore validation permits single-token results success; generation body remains runtime_accepted=False",
+    "Original snapshot011841 immutable; successor freeze required before fullmodel SDK candidate"
+  ],
+  "scope": "Shared lifecycle source and host-only fault qualification; no actual fullmodel SDK or new execution authorization.",
+  "sdk_complete": false
+}

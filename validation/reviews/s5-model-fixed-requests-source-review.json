@@ -1,0 +1,47 @@
+{
+  "reviewed_at": "2026-09-09T02:12:35.165394+00:00",
+  "accepted": true,
+  "report_sha256": "ed7a56c88ffe6b6b629715b847fbc7415bbc82e6856c48ebbc03a6a080d16340",
+  "prompts_sha256": "3b17a15b7c3787f1b826b635d1017d7824d446c056bd2bc9cf34c7c31fe1fb30",
+  "cases": [
+    {
+      "prompt": "arithmetic",
+      "prompt_tokens": 30,
+      "generated_tokens": 10,
+      "steps": 39,
+      "reason": 2
+    },
+    {
+      "prompt": "english",
+      "prompt_tokens": 30,
+      "generated_tokens": 16,
+      "steps": 45,
+      "reason": 1
+    },
+    {
+      "prompt": "chinese",
+      "prompt_tokens": 28,
+      "generated_tokens": 16,
+      "steps": 43,
+      "reason": 1
+    },
+    {
+      "prompt": "arithmetic",
+      "prompt_tokens": 30,
+      "generated_tokens": 10,
+      "steps": 39,
+      "reason": 2
+    }
+  ],
+  "independent_schedule_checks": 166,
+  "boundary_array_bit_checks": 896,
+  "method": "Source evaluated in memory; exact original report/prompts/trace hashes, independent causal schedule and direct NPZ boundary rows. No neural recomputation or SDK runtime.",
+  "scope": "Fixed4request source/reference admission only; no frozen guarded execution bundle or actual persistent fullmodel result.",
+  "sdk_complete": false,
+  "source_sha256": {
+    "model_step_validate": "2d023b2b43f6eade8938a05b101f3a3349b85c70d130428ccb902325540ec022",
+    "model_reference": "748cc583e5118c5c2d17a0b954fa6f4793e155cd3d05877b8e30dbff99645791",
+    "model_fixed_requests": "8dc34f01f522ee19f528fc0743b28c4f39dc912d1acf46ff43d883367c1967b5"
+  },
+  "review_script_sha256": "2cb9461c73bc06948732368fd72b98b24a61c3ff8950faa5fcb778f570a976ab"
+}

@@ -33,3 +33,20 @@ The diagnostic design checks every layer's intermediate stages, normal outputs a
 The source snapshots are inspection material, not turnkey execution bundles. Each intentionally omits the original SDK helper containing private host paths, documented in the publication check record. The existing public `tools/partition_executor.py` demonstrates the portable SDK environment overrides, but substituting it would create a new local source identity requiring fresh verification. Raw tensors, checkpoint data, ELF/core/SDK binaries and the upstream Transformers source copy are omitted; the original manifest preserves their hashes. Obtain licensed upstream dependencies separately using the pinned versions in the report and [source notices](../THIRD_PARTY_NOTICES.md).
 
 The latest actual neural SDK integration remains the [bounded two-layer cached/reset sequence](TWO-LAYER-CACHED.md). Complete 24-layer SDK inference, continuous generation, full capacity and hardware validation remain open.
+
+
+## Lifecycle source successor — 2026-09-09
+
+The [new frozen source](../validation/frozen/model-runtime-lifecycle-source-20260909T022128060374Z) supersedes the earlier 011841 source for future single-token runtime preparation. The earlier snapshot and all original hashes remain unchanged. A reproduced fault showed that failure while logging the stop stage could skip the actual SDK stop call. The shared lifecycle helper now attempts stop logging, actual runner stop, every reference close and evidence writing independently, preserving the original exception and recording cleanup failures. Single-token and generation bodies share this helper.
+
+[Shared lifecycle review](../validation/reviews/s5-sdk-lifecycle-shared-source-review.json) binds the final source hashes. The [earlier generation finding and intermediate resolution](../validation/reviews/s5-model-generation-runtime-source-review.json) retain their historical hashes; the later shared review identifies the final frozen implementation. The [snapshot review](../validation/reviews/model-runtime-lifecycle-source-20260909T022128060374Z-source-snapshot-review.json) binds all 28 files.
+
+The source also adds fixed-request admission, request sequencing and a persistent generation body. These remain source-only. There is still no guarded fixed-prompt executable entry point, complete original assembly, prepared runtime candidate or accepted execution budget. The admission review's 166-step schedule and 896-element boundary checks are host checks, not observed wafer generation.
+
+Publication reran the supplied fault tests: **10 tests and 2 subtests passed**. Because the frozen original SDK helper is intentionally omitted for private paths, this host test used the previously published portable helper via `PYTHONPATH=support/two_layer_cached/tools`; no frozen source was edited. From the repository root, run:
+
+```sh
+PYTHONPATH=support/two_layer_cached/tools python3 -m pytest -q validation/frozen/model-runtime-lifecycle-source-20260909T022128060374Z/tests
+```
+
+The controller separately records three host fault tests under the SDK image's Python 3.11 interpreter. Neither test set constructs SdkRuntime or executes model arithmetic. [Publication bindings](../release/MODEL-LIFECYCLE-CHECKS.json) explicitly retain these limits.

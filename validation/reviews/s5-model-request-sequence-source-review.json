@@ -1,0 +1,35 @@
+{
+  "reviewed_at": "2026-09-09T02:08:25.879468+00:00",
+  "accepted": true,
+  "scope": "Source/host request scheduling and failure lifecycle only; no complete frozen fixed-prompt runner or SDK numerical acceptance.",
+  "files": {
+    "tools/model_request_sequence.py": "5ba6cc15ec81cdb6e9f70c520a16a0569045bdea67084350c70384aa0ba363fe",
+    "tests/test_model_request_sequence.py": "e970e29560d27e567a01976130bb03937bb2b5b6366e35284fdcdc94eb52bab9",
+    "tools/model_runtime_io.py": "dce79641a31672797e78407a3a304a34b0554609eabad12bde0710ae0977a09d",
+    "tools/model_step_validate.py": "2d023b2b43f6eade8938a05b101f3a3349b85c70d130428ccb902325540ec022",
+    "tools/model_reference.py": "748cc583e5118c5c2d17a0b954fa6f4793e155cd3d05877b8e30dbff99645791",
+    "tools/model_core_validate.py": "5e1965232595251e5d17c36683baa0bbf539a4d4d75f40747820abf9cd96c7a7"
+  },
+  "tests": {
+    "command": "python3 -B -m pytest -q -p no:cacheprovider tests/test_model_request_sequence.py",
+    "passed": 3,
+    "subtests_passed": 2,
+    "additional_independent_host_faults": [
+      "reference.step raises before launch",
+      "accept_step raises after durable-record callback"
+    ],
+    "additional_faults_passed": 2
+  },
+  "checks": [
+    "Fresh instance and full schedule preflight, independent original-input plan and65535 nonwrapping totalepochs",
+    "Only prompt/control reset writes through qualified IO; observed tokens never condition reference",
+    "Every step normal validate then durable record callback then accept; all run-path BaseException poison instance",
+    "Final request prefixes copied and retained for physical KV reset history; final reference diagnostic arrays copied",
+    "Return runtime_accepted=False; owner stop/actualcore/originalinitializer/protocol checks remain mandatory"
+  ],
+  "required_next": [
+    "Immutable fixed3prompt/reference/source bindings and guarded caller owning SDK start/stop/core/evidence",
+    "No completeSDK execution before fulloriginal34552 deployment and resource review"
+  ],
+  "sdk_complete": false
+}

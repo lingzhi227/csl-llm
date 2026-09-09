@@ -76,3 +76,5 @@ See [cached source/evidence and validation](../docs/TWO-LAYER-CACHED.md). All 12
 Static partitions five and six: complete remote manifests, independent review bindings, local selected source hashes and exact original block intervals verified. No SDK/compiler rerun. See [publication records](MODEL-PARTITION-5-6-CHECKS.json).
 
 Full-model preparation: six complete remote manifests, local source hashes, CPU trace/report/build and independent review bindings verified. Selected Python syntax checked; no new CPU model or SDK run. See [preparation records](MODEL-PREPARATION-CHECKS.json).
+
+Partitions 7–8 and lifecycle successor: six complete static remote manifests plus all 28 frozen lifecycle source files verified. Host fault tests passed (10 tests, 2 subtests) using the existing portable SDK helper; no SDK/model run. See [lifecycle bindings](MODEL-LIFECYCLE-CHECKS.json) and [static bindings](MODEL-PARTITION-7-8-CHECKS.json).

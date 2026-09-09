@@ -1,0 +1,27 @@
+{
+  "reviewed_at": "2026-09-09T02:14:37.904556+00:00",
+  "accepted": true,
+  "source_sha256": "0c63c10211a983843d6decdc1a523b320665f5365a726195f0e9419575746945",
+  "scope": "Source/host lifecycle review only; no SDK execution.",
+  "finding": {
+    "problem": "finally executes stage('stop') before runner.stop(); a stage callback error skips actual cleanup.",
+    "reproduction": "Injected runner.load failure and stage(stop) OSError with host-only lifecycle object: runner_stop_called=False, runtime-evidence.json written.",
+    "required_change": "Attempt runner.stop in an inner finally independent of stage logging; preserve the original failure and cleanup errors in evidence where possible. Ensure reference.close errors cannot prevent evidence preservation or closing remaining references."
+  },
+  "positive_checks": [
+    "No runtime success receipt before actual final core verification",
+    "Every normal step writes evidence and reset-repeat requires output bits equal",
+    "Complete fixed-reference helper and one initialized instance; unchangedCSL/single-token gate"
+  ],
+  "sdk_complete": false,
+  "resolution": {
+    "reviewed_at": "2026-09-09T02:17:07.228664+00:00",
+    "files": {
+      "tools/model_generation_runtime.py": "cbab0b8a5ca7fc883d3a945d859d8804841f05f463b988869caa9f0f8c71bab0",
+      "tests/test_model_generation_runtime.py": "a6748ab11e765d73f331734ad3d9b492b305cbe29a56e31a010f68e299466421"
+    },
+    "change": "Stage-stop, actual runner.stop and each reference.close attempted independently; original exception propagated and cleanup exceptions included in evidence. No acceptance emitted.",
+    "tests": "7pytest+2subtests PASS across generation_runtime/request_sequence; original independent load-failure+stop-log-failure reproduction now attempts stop, propagates original and records cleanup error.",
+    "scope": "Corrected source/host lifecycle body only. Future guarded owner, original assembly, first single-token actual acceptance, immutable source/reference and explicit budget remain mandatory."
+  }
+}

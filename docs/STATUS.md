@@ -34,3 +34,5 @@ Original model blocks 0–1535 now pass two independent initializer/resource/who
 Latest published full-model static coverage: six accepted intervals cover original blocks 0–5631 of 34552. Full-model assembly and SDK inference remain open. [Evidence and limits](MODEL-PARTITIONS.md).
 
 Full-model validation preparation is published separately: independently accepted single-token CPU reference, expanded static symbols and source-only future integration tools. [Evidence levels and boundaries](MODEL-VALIDATION-PREPARATION.md). None extends the bounded two-layer neural SDK acceptance.
+
+Latest static ledger covers eight intervals, original blocks 0–7679 of 34552. The [runtime lifecycle source successor](MODEL-VALIDATION-PREPARATION.md) fixes exception-safe cleanup and includes host-tested request helpers; complete model SDK execution remains open.
