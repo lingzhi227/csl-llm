@@ -82,3 +82,5 @@ Partitions 7–8 and lifecycle successor: six complete static remote manifests p
 Partitions 9–10 and guarded generation source: six complete static remote manifests and all 32 generation source files verified. Complete included host suite passes 16 tests and 9 subtests using the existing portable helper; no SDK/model run. [Guard publication records](MODEL-GENERATION-GUARD-CHECKS.json).
 
 Partitions 11–12: six complete remote manifests, local selected source, exact original intervals and independent review/execution/results bindings verified. No compiler/SDK/CPU reference rerun. See [publication record](MODEL-PARTITION-11-12-CHECKS.json).
+
+Partitions 13–14: six complete remote manifests, local selected source, exact original intervals and independent review/execution/results bindings verified. No compiler/SDK/CPU reference rerun. See [publication record](MODEL-PARTITION-13-14-CHECKS.json).

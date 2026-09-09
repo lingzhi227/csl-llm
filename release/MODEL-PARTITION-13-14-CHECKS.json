@@ -1,0 +1,58 @@
+{
+  "runs": [
+    {
+      "run": "model-compile-20260909T031539777195Z",
+      "manifest_sha256": "dd048ccf109677725248c54d0faf92386140e2c3f46c80a84235a87274d0b8e0",
+      "execution_sha256": "e10fe057855f383e5098ad551c8a7e2bd6c2fdc579663d6de6a9723a54387913",
+      "results_sha256": "337d365276843b1b011297ef894b7953c804e501e60e8f1ac0786188b5b4aec5",
+      "remote_manifest_entries_verified": 1284
+    },
+    {
+      "run": "model-elf-audit-20260909T035446861737Z",
+      "manifest_sha256": "e54e2d79fad9ba7b1733ee41ce1a1106fa9c9cc712d0e782777e0cb482c698d2",
+      "execution_sha256": "d60f49957e5a9962d6c09e0e163306b38eb86e00ce05cf001d48e07903fd018d",
+      "results_sha256": "ac86e01b9f4257b355538b0308b68acb0cef57c2b9e4b33868cbfd9a601071a8",
+      "remote_manifest_entries_verified": 5155
+    },
+    {
+      "run": "model-contract-20260909T035944013621Z",
+      "manifest_sha256": "71ebf3cb1db88b6731bf95d5c1876fab2eb22b9b819fef68ccb2d7707e664eb1",
+      "execution_sha256": "98bce547bf947faf31664a9b6d15c66660f48ee202868e5b2ba29d5f25148186",
+      "results_sha256": "2ed3e53d6e1d77d65c85f9d5ecb03685e3eed75bf502b7c1b7c3b1d4a1a2c99c",
+      "remote_manifest_entries_verified": 6287
+    },
+    {
+      "run": "model-compile-20260909T031632019633Z",
+      "manifest_sha256": "6403fb3ec7418c093639f7f3fefa00f6cf7eb2764bf8c942e508a8eb5519ead9",
+      "execution_sha256": "200961cc22bb083986ff403dceecd4baac1b702da32f1f18e959e0973586fe69",
+      "results_sha256": "337d365276843b1b011297ef894b7953c804e501e60e8f1ac0786188b5b4aec5",
+      "remote_manifest_entries_verified": 1284
+    },
+    {
+      "run": "model-elf-audit-20260909T040300560930Z",
+      "manifest_sha256": "85e1151796a10d9acb670b3ae7ea855e2d8cce298d6deb68374e31ce140231b3",
+      "execution_sha256": "b34aa2f23dd8708dbf1f6d85e265a880e6713c10c4dbdfe56257034de74e708f",
+      "results_sha256": "23cc9cf64904496c4067e8540d854947427a9632a1043f785c65dd1b29100405",
+      "remote_manifest_entries_verified": 5155
+    },
+    {
+      "run": "model-contract-20260909T040841471502Z",
+      "manifest_sha256": "648576d98ac8d1da8f9797fe442945ccf3278b27ea9e1e0976ec0a4621f8a683",
+      "execution_sha256": "51a1950e256019026c0713e5ae1f303e076d1c0d642d6197f10d9729fb3a1025",
+      "results_sha256": "08d5998c09e831a45dcff5fea23d9ee4470b26905182698f0fb13c0f17de6e50",
+      "remote_manifest_entries_verified": 6287
+    }
+  ],
+  "intervals": [
+    [
+      11776,
+      12799
+    ],
+    [
+      12800,
+      13823
+    ]
+  ],
+  "exact_original_pack_indices_verified": true,
+  "scope": "Publication hash/source/interval checks of existing compile and offline evidence. No SDK or compiler rerun; no full model assembly or neural acceptance."
+}
