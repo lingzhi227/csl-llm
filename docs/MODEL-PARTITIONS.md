@@ -148,3 +148,15 @@ Original intervals 22016–23039 and 23040–24063 independently close, extendin
 | 23040–24063 | 679.691890 s | 10493652 KiB | model-elf-audit-20260909T065159479171Z | model-contract-20260909T065846307824Z |
 
 The [fixed ledger](../release/MODEL-PARTITION-LEDGER.json) and [publication checks](../release/MODEL-PARTITION-23-24-CHECKS.json) bind both new intervals, their independent reviews, original manifests and execution/result identities. Six complete remote manifests were reverified. Selected source and derived summaries exclude model literals, raw tensors, binaries and private paths; original hashes retain their meanings. No compiler, SDK simulation or CPU model calculation was repeated. This remains static deployment coverage, not full-model assembly or neural inference acceptance.
+
+
+## Twenty-fifth and twenty-sixth partitions — 2026-09-09
+
+Original intervals 24064–25087 and 25088–26111 independently close, extending static coverage to **26112 of 34552 matrix blocks** across twenty-six intervals. Partition 25 has 1400 ELF classes (1024 selected, 162 common, 214 placeholders); partition 26 has 1401 (1024 selected, 162 common, 215 placeholders). This difference is accepted composition, not a missing artifact. Both have 45456-byte maximum static high-water and 1222 DSR families. Independent initializer checks cover all 40530 application coordinates; whole-ELF compatibility verifies selected original blocks, 5978 common coordinates and ordered SDK I/O/RPC metadata. Process cleanup is independently recorded.
+
+| Interval | Compile time | Compile peak RSS | Initializer/resource audit | Whole-ELF contract |
+| --- | ---: | ---: | --- | --- |
+| 24064–25087 | 684.176311 s | 10498172 KiB | model-elf-audit-20260909T072112386150Z | model-contract-20260909T072656215516Z |
+| 25088–26111 | 752.608032 s | 10599600 KiB | model-elf-audit-20260909T073027719980Z | model-contract-20260909T073616638123Z |
+
+The [fixed ledger](../release/MODEL-PARTITION-LEDGER.json) and [publication checks](../release/MODEL-PARTITION-25-26-CHECKS.json) bind both new intervals, their independent reviews, original manifests and execution/result identities. Six complete remote manifests were reverified. Selected source and derived summaries exclude model literals, raw tensors, binaries and private paths; original hashes retain their meanings. No compiler, SDK simulation or CPU model calculation was repeated. This remains static deployment coverage, not full-model assembly or neural inference acceptance.

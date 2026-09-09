@@ -1,8 +1,8 @@
 {
-  "original_ledger_sha256": "76d17f5d84a30eb8108db7199e1d2fa9090621cab1d3d14d65ad6409479bb4a4",
-  "publication_note": "Fixed selection of twenty-four independently accepted static intervals; no full model assembly/runtime inferred.",
+  "original_ledger_sha256": "73a4c6fbce49fd25a8c0f6fc82a6010bddbade6a3c95354c31ca59783e8fd661",
+  "publication_note": "Fixed selection of twenty-six independently accepted static intervals; no full model assembly/runtime inferred.",
   "total_original_matrix_tiles": 34552,
-  "accepted_original_tiles": 24064,
+  "accepted_original_tiles": 26112,
   "accepted_intervals": [
     {
       "first": 0,
@@ -387,6 +387,40 @@
       "compile_peak_rss_kib": 10493652,
       "selected_elves": 1024,
       "common_elves": 162
+    },
+    {
+      "first": 24064,
+      "last": 25087,
+      "compile": "model-compile-20260909T064551129798Z",
+      "audit": "model-elf-audit-20260909T072112386150Z",
+      "contract": "model-contract-20260909T072656215516Z",
+      "initializer_review": "model-elf-audit-20260909T072112386150Z-independent-initializer-review.json",
+      "resource_review": "model-elf-audit-20260909T072112386150Z-independent-resource-review.json",
+      "contract_review": "model-contract-20260909T072656215516Z-independent-contract-review.json",
+      "elf_count": 1400,
+      "max_static_bytes": 45456,
+      "compile_seconds": 684.176310623996,
+      "compile_peak_rss_kib": 10498172,
+      "selected_elves": 1024,
+      "common_elves": 162,
+      "placeholder_elves": 214
+    },
+    {
+      "first": 25088,
+      "last": 26111,
+      "compile": "model-compile-20260909T064839208795Z",
+      "audit": "model-elf-audit-20260909T073027719980Z",
+      "contract": "model-contract-20260909T073616638123Z",
+      "initializer_review": "model-elf-audit-20260909T073027719980Z-independent-initializer-review.json",
+      "resource_review": "model-elf-audit-20260909T073027719980Z-independent-resource-review.json",
+      "contract_review": "model-contract-20260909T073616638123Z-independent-contract-review.json",
+      "elf_count": 1401,
+      "max_static_bytes": 45456,
+      "compile_seconds": 752.6080322319176,
+      "compile_peak_rss_kib": 10599600,
+      "selected_elves": 1024,
+      "common_elves": 162,
+      "placeholder_elves": 215
     }
   ],
   "assembled": false,

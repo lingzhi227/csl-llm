@@ -1,0 +1,8 @@
+{
+  "success": true,
+  "compile_only": true,
+  "elf_count": 1400,
+  "scope": "Complete original-sized193x210 model CSL graph. Selected original matrix declarations, original norms/frequencies on all25controllers (frequencies on24decodercontrollers) and selected original bias roots; remaining matrices/biases zero. Unexecuted coordinate identity initialization and optional byte ABI. Compile-only role/route/resource qualification; no complete initialized model, SdkRuntime or neural result.",
+  "original_file_sha256": "0dbc71f01c1fe87807dd9c0f42ec5b2a036106f5b12ca68df8d0e6a898abdc39",
+  "publication_note": "Derived compact report; detailed object tables and private paths omitted; original hash meanings unchanged."
+}

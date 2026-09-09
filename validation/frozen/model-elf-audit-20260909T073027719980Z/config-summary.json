@@ -1,0 +1,10 @@
+{
+  "source_compile": "model-compile-20260909T064839208795Z",
+  "source_execution_sha256": "ef8390a6371a664fc33ced4f91b883e945d394a327edb097317caeb185f80f46",
+  "source_auditor_manifest_sha256": "2c4abc3946faa31d47259d2dcdcd20df46ff38802ff62662e2716136da890571",
+  "timeout_seconds": 600,
+  "rss_limit_kib": 4194304,
+  "scope": "Offline initial ELF bytes, static SRAM and DSR allocations. No compiler, simulator, runtime identity, full original model or neural execution.",
+  "original_file_sha256": "fb56c5f23f385ae69959418df315d0021b5d5e2c761ddccc3b022446788d84c8",
+  "publication_note": "Derived compact report; detailed object tables and private paths omitted; original hash meanings unchanged."
+}
