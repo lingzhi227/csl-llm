@@ -52,3 +52,15 @@ Accepted intervals 5632–6655 and 6656–7679 extend original static coverage t
 | 6656–7679 | 677.500871 s | 10494576 KiB | model-elf-audit-20260909T021121915327Z | model-contract-20260909T021804090838Z |
 
 The [ledger](../release/MODEL-PARTITION-LEDGER.json) and [new publication checks](../release/MODEL-PARTITION-7-8-CHECKS.json) bind both intervals and their independent reviews. All six remote manifests were reverified; missing local metadata for the eighth compile was retrieved read-only into a temporary publication area, without changing development evidence. The [paired-compiler outcome review](../validation/reviews/s5-fullmodel-compile-pair-012655-014628-outcome-review.json) only qualifies receipts, resources and process cleanup; it is not neural inference performance. No compiler or SDK run was repeated for publication. Full original assembly and model SDK execution remain open.
+
+
+## Ninth and tenth partitions — 2026-09-09
+
+Original intervals 7680–8703 and 8704–9727 independently close, extending static coverage to **9728 of 34552 matrix blocks** across ten intervals. Each candidate has 1401 ELF classes and 45456-byte maximum static high-water; the independent initializer checks cover all 40530 coordinates, while compatibility verifies 5978 common coordinates and ordered SDK I/O/RPC metadata.
+
+| Interval | Compile time | Compile peak RSS | Initializer/resource audit | Whole-ELF contract |
+| --- | ---: | ---: | --- | --- |
+| 7680–8703 | 679.560693 s | 10494312 KiB | model-elf-audit-20260909T023751025697Z | model-contract-20260909T024355577708Z |
+| 8704–9727 | 674.298945 s | 10493788 KiB | model-elf-audit-20260909T024607209690Z | model-contract-20260909T025150485738Z |
+
+The [ten-interval ledger](../release/MODEL-PARTITION-LEDGER.json) and [new publication checks](../release/MODEL-PARTITION-9-10-CHECKS.json) bind exact original intervals, source, execution/result hashes and independent reviews. Six complete remote manifests were reverified. The [second paired-compiler review](../validation/reviews/s5-fullmodel-compile-pair-021832-021844-outcome-review.json) covers resource/receipt/cleanup behavior only, not neural inference speed. Static block coverage is not a percentage of completed LLM work; complete original assembly and full-model SDK inference remain open.

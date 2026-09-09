@@ -1,0 +1,22 @@
+{
+  "reviewed_at": "2026-09-09T02:33:38.630781+00:00",
+  "accepted": true,
+  "run": "model-generation-integration-source-20260909T023236345664Z",
+  "manifest_sha256": "2d221bd4f85ece804fe4433677d88c594be77de4a710e8c6c553a494c202e341",
+  "files_verified": 32,
+  "local_evidence_and_remote_staging_verified": true,
+  "changed_previous_files": [
+    "docs/FULL-MODEL-RUNTIME-VALIDATION.md"
+  ],
+  "added_files": [
+    "tests/test_model_generation_probe.py",
+    "tests/test_model_integration_admission.py",
+    "tools/model_generation_probe.py",
+    "tools/model_integration_admission.py"
+  ],
+  "source_review": "s5-model-generation-guard-source-review.json",
+  "previous_source": "model-runtime-lifecycle-source-20260909T022128060374Z",
+  "single_token17_code_pins_unchanged": true,
+  "scope": "Comprehensive source-only snapshot with guarded generation authoring and repaired single-token lifecycle. No complete original assembly/first fullmodel SDK/candidate/selectedbudget/generation execution.",
+  "sdk_complete": false
+}

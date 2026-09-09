@@ -1,0 +1,32 @@
+{
+  "reviewed_at": "2026-09-09T02:31:27.157600+00:00",
+  "accepted": true,
+  "files": {
+    "tools/model_generation_probe.py": "e21a32418c376a1da04fea1c55da54ba2f8068e5471a81d3c91bb60728d64869",
+    "tools/model_integration_admission.py": "bb610ef546d5ebacd01098af0e76be3ba2c9ee7bfa42bb914b3b19f8b38d6b64",
+    "tests/test_model_generation_probe.py": "450ae295abe59637db41489d887e656345879534f71f0a9c4d8f777497f3639a",
+    "tests/test_model_integration_admission.py": "ce9a951b41a7d5c03a1b210270502ba4fae7a67be5aec12dbd5f962d9eaeed55"
+  },
+  "tests": {
+    "command": "python3 -B -m pytest -q -p no:cacheprovider tests/test_model_integration_admission.py tests/test_model_generation_probe.py",
+    "passed": 6,
+    "subtests_passed": 7
+  },
+  "independent_source_dependency_check": {
+    "code_pins": 17,
+    "copied_dependencies": 15,
+    "driver_and_executor": 2,
+    "all_exact_against_reviewed_single_prepare": true,
+    "precision": "Fixed separately by exact worker numerical-gate assertions"
+  },
+  "checks": [
+    "Prepare requires actual full single-token manifest/results/normal/core40530 success, same assembly, all six actual output digests and clean lifecycle/PID receipts",
+    "Exact17 code pins bind reviewed022128 single-token source; current actual PID absence and independent acceptance still dispatcher prerequisites",
+    "Prepare verifies complete original assembly/diagnostic symbols, fixed original reference, source manifest and explicit1800..86400s24GiB16thread budget before bundle construction",
+    "Worker verifies frozen copied first admission/source/assembly/reference provenance and unchanged numerical gates before one persistentSDK body",
+    "Runtime object released before actual fullfabric core loading; full original initializer iterator and final normal/history/protocol checks must complete before success",
+    "All actual per-step partial reports and final core included in output digest map; reset-repeat bit comparison performed by reviewed body"
+  ],
+  "scope": "Source and host admission/guard tests only. No complete original assembly, first fullmodel SDK acceptance, runtime candidate, chosen time budget or generation SDK execution exists yet.",
+  "sdk_complete": false
+}

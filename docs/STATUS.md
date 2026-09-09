@@ -36,3 +36,5 @@ Latest published full-model static coverage: six accepted intervals cover origin
 Full-model validation preparation is published separately: independently accepted single-token CPU reference, expanded static symbols and source-only future integration tools. [Evidence levels and boundaries](MODEL-VALIDATION-PREPARATION.md). None extends the bounded two-layer neural SDK acceptance.
 
 Latest static ledger covers eight intervals, original blocks 0–7679 of 34552. The [runtime lifecycle source successor](MODEL-VALIDATION-PREPARATION.md) fixes exception-safe cleanup and includes host-tested request helpers; complete model SDK execution remains open.
+
+Latest static coverage: ten intervals, original blocks 0–9727 of 34552. Guarded generation preparation now has a reviewed source-only owner and host admission tests; no actual full-model first-token or generation SDK acceptance yet. [Source/evidence levels](MODEL-VALIDATION-PREPARATION.md).

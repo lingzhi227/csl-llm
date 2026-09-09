@@ -1,0 +1,21 @@
+{
+  "source": "model-generation-integration-source-20260909T023236345664Z",
+  "manifest_sha256": "2d221bd4f85ece804fe4433677d88c594be77de4a710e8c6c553a494c202e341",
+  "all_32_local_and_remote_source_files_verified": true,
+  "shared_review_source_hashes_verified": true,
+  "omitted": [
+    {
+      "path": "tools/sdk_probe.py",
+      "sha256": "9ccab37dc8b6ecfb0d23d56bf0826da7b87ce5d3c22d0a4ba94cb4aea6501e1c",
+      "reason": "Original host-specific paths; retained original manifest binding."
+    }
+  ],
+  "scope": "Source-only guarded generation authoring; host admission tests only. No SDK runtime or CPU model execution, full-model assembly, candidate or budget acceptance.",
+  "publication_host_tests": {
+    "passed": 16,
+    "subtests_passed": 9,
+    "sdk_runtime_constructed": false,
+    "sdk_helper": "support/two_layer_cached/tools/sdk_probe.py",
+    "note": "Original helper intentionally omitted; existing public portable helper supplied through PYTHONPATH."
+  }
+}

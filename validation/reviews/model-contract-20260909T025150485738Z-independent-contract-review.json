@@ -1,0 +1,28 @@
+{
+  "reviewed_at": "2026-09-09T02:56:10.718905+00:00",
+  "run": "model-contract-20260909T025150485738Z",
+  "manifest_sha256": "facdea1abcc6704f367c252a374611b30bc46b6b7bd8778892798d8e0b281575",
+  "execution_sha256": "3b195506730e0ff6594564c2ace006704a9d63f156f91d32615862831322fc95",
+  "results_sha256": "2c21e247c701eaea30cffce83bbd7b1f878f5a3e0725f49184af7ef167cdb90d",
+  "all_files_hash_verified": true,
+  "all_prior_pids_absent": true,
+  "elapsed_seconds": 9.215908373938873,
+  "peak_rss_kib": 199032,
+  "class_elf_counts": {
+    "selected": 1024,
+    "common": 162,
+    "placeholder": 215
+  },
+  "selected_original_tiles": 1024,
+  "common_coordinates": 5978,
+  "application_coordinates": 40530,
+  "whole_elf_containment_and_common_loader_bytes_exact": true,
+  "ordered_sdk_io_rpc_metadata_exact": true,
+  "method": "Independent closed-form physical ownership, manual ELF64 allocated sections, SDK ELFObject ordered loader segments and actual coordinates; no candidate contract module import.",
+  "scope": "Selected original partition compatibility only. No complete34552tile composition, neural runtime, generation or hardware claim.",
+  "review_script_sha256": "91f565c3b42ee334f5bf9e32e3fd40ba3c77bd0399fe7c61ea469dd94c4aeaf9",
+  "original_record_interval": [
+    8704,
+    9727
+  ]
+}

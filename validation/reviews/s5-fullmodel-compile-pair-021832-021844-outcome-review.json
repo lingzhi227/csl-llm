@@ -1,0 +1,96 @@
+{
+  "reviewed_at": "2026-09-09T02:37:32.505095+00:00",
+  "runs": [
+    {
+      "run": "model-compile-20260909T021832612317Z",
+      "manifest_sha256": "5a8e965e18d3743de20179afa4c85c7f0905eb8e405eb73a15489df4e8722563",
+      "execution_sha256": "f8683e66aa30cd2b4e6c83988aa4ae4c16cea41de1d12c0fd3216409c08f6bd8",
+      "results_sha256": "337d365276843b1b011297ef894b7953c804e501e60e8f1ac0786188b5b4aec5",
+      "samples_sha256": "c90e2ec59bd250d2f4c96a295f97baf685fe1107e0cf7988ec684bdf7208310c",
+      "sample_count": 666,
+      "elapsed_seconds": 679.5606927359477,
+      "peak_sampled_rss_kib": 10494312,
+      "earliest_guarded_process_start_ticks": 128329211,
+      "all_observed_pids_actual_absent": true,
+      "observed_pid_count": 8,
+      "no_cleanup_signals": true
+    },
+    {
+      "run": "model-compile-20260909T021844563826Z",
+      "manifest_sha256": "0e390c003539526da84cb44d7a301b62b6d1fb32d702cd41030a8c0daeb16bec",
+      "execution_sha256": "7a3244ef3abee8df524b9d349ad3ec5da98977a7cd8bfc6db8fca67c4e0a06ff",
+      "results_sha256": "337d365276843b1b011297ef894b7953c804e501e60e8f1ac0786188b5b4aec5",
+      "samples_sha256": "a3abb346ae35a1b61ad95227c0f4214480634d8f684a828a1c7436a351b9a71d",
+      "sample_count": 661,
+      "elapsed_seconds": 674.2989451638423,
+      "peak_sampled_rss_kib": 10493788,
+      "earliest_guarded_process_start_ticks": 128344225,
+      "all_observed_pids_actual_absent": true,
+      "observed_pid_count": 13,
+      "no_cleanup_signals": true
+    }
+  ],
+  "clock_ticks_per_second": 100,
+  "disk_free_bytes": 162156183552,
+  "accepted": true,
+  "scope": "Completed bounded dual-compiler pilot, receipt/resource/cleanup only. Actual initializers/resources/wholeELF contracts still required independently and in interval order.",
+  "joint_samples": [
+    {
+      "file": "compile-pair-021832-021844-sample-20260909T0225278065140000.json",
+      "sha256": "b5393bbc4cec8cd42e68d035c7494876ee597ceaffc37cd5d8397b8b9e76bf79",
+      "at": "2026-09-09T02:25:27.806514+00:00",
+      "rss_kib": 5027656,
+      "mem_available_kib": 24317772,
+      "both_active": true
+    },
+    {
+      "file": "compile-pair-021832-021844-sample-20260909T0225528173860000.json",
+      "sha256": "795b6e43eac62ed58a03da30d56d0df88fcb36e57f99f84c8e16f713055f43a3",
+      "at": "2026-09-09T02:25:52.817386+00:00",
+      "rss_kib": 6979692,
+      "mem_available_kib": 22444140,
+      "both_active": true
+    },
+    {
+      "file": "compile-pair-021832-021844-sample-20260909T0231275185070000.json",
+      "sha256": "bc66a2c6445906825f6e98b38dfae2b1538aa1f498677f17f8adc98abf559b0b",
+      "at": "2026-09-09T02:31:27.518507+00:00",
+      "rss_kib": 20903444,
+      "mem_available_kib": 8641912,
+      "both_active": true
+    },
+    {
+      "file": "compile-pair-021832-021844-sample-20260909T0233389639210000.json",
+      "sha256": "26d4a09b38247c27d965b86b27ae019cf0284f4f59eac8be8abe78fadc2dc7d4",
+      "at": "2026-09-09T02:33:38.963921+00:00",
+      "rss_kib": 21026540,
+      "mem_available_kib": 8617120,
+      "both_active": true
+    },
+    {
+      "file": "compile-pair-021832-021844-sample-20260909T0236361237780000.json",
+      "sha256": "1713d54290def5b14a9f86c713dcc9381b58227552c1a5b24e7b3c9ae8d178d3",
+      "at": "2026-09-09T02:36:36.123778+00:00",
+      "rss_kib": 10483804,
+      "mem_available_kib": 18903092,
+      "both_active": false
+    },
+    {
+      "file": "compile-pair-021832-021844-sample-20260909T0237244597450000.json",
+      "sha256": "37d58660a36d1826a5e139a9b21c499e6955dc0b5e44e0a755c1b16e96aaee14",
+      "at": "2026-09-09T02:37:24.459745+00:00",
+      "rss_kib": 0,
+      "mem_available_kib": 29121912,
+      "both_active": false
+    }
+  ],
+  "sum_individual_sampled_maxima_kib": 20988100,
+  "maximum_observed_joint_family_rss_kib": 21026540,
+  "minimum_observed_mem_available_kib": 8617120,
+  "approximate_start_offset_seconds": 150.14,
+  "approximate_pair_makespan_seconds": 824.4389451638423,
+  "timing_method": "Start offset estimated from earliest guarded Linux PID start ticks; launch overhead and tick resolution mean this is approximate. Joint samples include outer wrappers; receipt maxima cover guarded trees. Neither is a continuous joint peak measurement.",
+  "future_dispatch_authorized": false,
+  "sdk_complete": false,
+  "review_script_sha256": "d25275dba13c3af5f0d251761eb6d44f4478a1cc8eac25168915b1a2354ec854"
+}

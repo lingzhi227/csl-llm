@@ -50,3 +50,16 @@ PYTHONPATH=support/two_layer_cached/tools python3 -m pytest -q validation/frozen
 ```
 
 The controller separately records three host fault tests under the SDK image's Python 3.11 interpreter. Neither test set constructs SdkRuntime or executes model arithmetic. [Publication bindings](../release/MODEL-LIFECYCLE-CHECKS.json) explicitly retain these limits.
+
+
+## Guarded generation source successor — 2026-09-09
+
+The [023236 snapshot](../validation/frozen/model-generation-integration-source-20260909T023236345664Z) adds a guarded fixed-four-request preparation/worker entry point and integration-admission helper. It follows the lifecycle successor above; the statement that no guarded entry point existed applies to the earlier 022128 snapshot. The new owner is authored and source-reviewed, but has not prepared or executed a full-model generation candidate.
+
+Preparation requires accepted actual first-token full-model evidence: matching original assembly, complete 40530-coordinate core/normal checks, six output digests, clean lifecycle/process receipts, and 17 exact single-token source pins. Current process absence and independent acceptance remain dispatch prerequisites. The allowed time-budget range is 1800–86400 seconds with a 24 GiB process-tree limit and 16 threads; this is a validated input constraint, **not a chosen or authorized execution budget**.
+
+The worker binds the assembly, original fixed references and frozen source before the persistent request sequence. Success is emitted only after the runtime object is released and full original-initializer/core/normal/history/protocol checks complete, with an exact output file set and hashes. These are source-level requirements, not observed generation results. There is still no complete original assembly, accepted full-model first-token SDK run, generation candidate or selected generation budget.
+
+[Independent guard review](../validation/reviews/s5-model-generation-guard-source-review.json) reports 6 admission/guard tests and 7 subtests. [Snapshot review](../validation/reviews/model-generation-integration-source-20260909T023236345664Z-source-snapshot-review.json) binds all 32 files and confirms unchanged 17 single-token code pins. Publication reverified all 32 files locally/remotely and ran the complete included suite: **16 tests and 9 subtests passed**. Tests used the existing public portable SDK helper through `PYTHONPATH=support/two_layer_cached/tools`; the private-path original helper remains omitted and no frozen source was edited. No SdkRuntime or CPU neural calculation was run.
+
+[Publication bindings](../release/MODEL-GENERATION-GUARD-CHECKS.json) record these checks. Original 011841 and 022128 snapshots and historical review hashes remain intact. All snapshots are inspection material requiring separately obtained SDK/model artifacts and reconstructed evidence; the presence of preparation code does not establish turnkey generation.
