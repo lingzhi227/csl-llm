@@ -60,3 +60,5 @@ Latest published static ledger: twenty-eight closed intervals, original blocks 0
 Latest published static ledger: thirty closed intervals, original blocks 0–30207 of 34552. [Evidence and limits](MODEL-PARTITIONS.md). Full-model assembly and SDK inference remain unaccepted; generation snapshot023236 remains source-only.
 
 Latest published static ledger: thirty-two closed intervals, original blocks 0–32255 of 34552. [Evidence and limits](MODEL-PARTITIONS.md). Full-model assembly and SDK inference remain unaccepted; generation snapshot023236 remains source-only.
+
+Latest published static ledger: thirty-four closed intervals, original blocks 0–34303 of 34552. [Evidence and limits](MODEL-PARTITIONS.md). Full-model assembly and SDK inference remain unaccepted; generation snapshot023236 remains source-only.
