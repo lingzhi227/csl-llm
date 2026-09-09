@@ -1,0 +1,43 @@
+// Two-PE protocol qualification; arbitrary raw words, no neural arithmetic.
+param memcpy_params;param sender:bool;
+const sys=@import_module("<memcpy/memcpy>",memcpy_params);
+const frame=@import_module("activation_stream.csl");
+const packets=@import_module("packets.csl",.{.sent_task_id=@get_local_task_id(12),.received_task_id=@get_local_task_id(13),.on_sent=sent,.on_received=received});
+var data=@zeros([896]u32);var tx=@zeros([31]u32);
+// mode 0: all data before arm; mode 1: arm before any data.
+var control=@zeros([2]u32);var status=@zeros([4]u32);
+fn initialize() void {packets.init();sys.unblock_cmd_stream();}
+fn prepare() void {
+ @assert(!packets.sending and !packets.receiving and control[1]<=1);
+ frame.reset(control[0]);for(@range(u16,4))|i|{status[i]=0;}
+ if(comptime !sender){
+  if(control[1]==1){frame.arm();@assert(!frame.take_ready());}
+ }
+ sys.unblock_cmd_stream();
+}
+fn send_next() void {
+ if(comptime sender){
+  const count=frame.frame(&tx);
+  packets.copy_words(@ptrcast([*]u32,&data[frame.sent_count]),@ptrcast([*]u32,&tx[2]),count);
+  packets.send(1,0,&tx,count+2);
+ }
+}
+fn compute() void {if(comptime sender){send_next();}else{sys.unblock_cmd_stream();}}
+fn sent() void {
+ @assert(sender);status[1]+=1;
+ if(frame.complete_send()){status[0]=control[0];status[2]=@as(u32,frame.sent_count);sys.unblock_cmd_stream();}
+ else{send_next();}
+}
+fn received(words:[*]u32,count:u16) void {
+ @assert(!sender);
+ const offset=frame.accept(words,count);
+ packets.copy_words(@ptrcast([*]u32,&words[2]),@ptrcast([*]u32,&data[offset]),count-2);
+ status[1]+=1;
+ if(frame.received_count==896){
+  if(control[1]==0){@assert(!frame.take_ready());frame.arm();}
+  @assert(frame.take_ready());@assert(!frame.take_ready());
+  status[0]=control[0];status[2]=@as(u32,frame.received_count);status[3]=1;
+ }else{@assert(!frame.take_ready());}
+}
+const dp:[*]u32=&data;const cp:[*]u32=&control;const sp:[*]u32=&status;
+comptime{@export_symbol(dp,"data");@export_symbol(cp,"control");@export_symbol(sp,"status");@export_symbol(initialize);@export_symbol(prepare);@export_symbol(compute);}

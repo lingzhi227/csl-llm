@@ -1,0 +1,328 @@
+{
+  "success": true,
+  "cases": [
+    {
+      "case": {
+        "label": "first",
+        "reset": true,
+        "position": 0,
+        "invocation": 1,
+        "input_index": 0
+      },
+      "passed": true,
+      "checks": {
+        "layer_0_output": {
+          "max_abs": 2.9802322387695312e-06,
+          "relative_l2": 1.0720623842843572e-06,
+          "relative_peak": 9.905528203970834e-07
+        },
+        "layer_1_output": {
+          "max_abs": 5.4836273193359375e-06,
+          "relative_l2": 1.3269662823021096e-06,
+          "relative_peak": 8.09171131532245e-07
+        }
+      },
+      "cycles": {
+        "endpoint_timing": 743855,
+        "layer_0_timing": 374983,
+        "layer_1_timing": 743759
+      },
+      "cycle_scope": "Endpoint covers both layers. Controller clocks include upstream wait and must not be summed."
+    },
+    {
+      "case": {
+        "label": "cached",
+        "reset": false,
+        "position": 1,
+        "invocation": 2,
+        "input_index": 1
+      },
+      "passed": true,
+      "checks": {
+        "layer_0_output": {
+          "max_abs": 1.6883015632629395e-05,
+          "relative_l2": 6.804982711328517e-06,
+          "relative_peak": 1.3746874254417102e-05
+        },
+        "layer_1_output": {
+          "max_abs": 9.28342342376709e-06,
+          "relative_l2": 5.813541545850866e-06,
+          "relative_peak": 1.899373010566831e-06
+        }
+      },
+      "cycles": {
+        "endpoint_timing": 746665,
+        "layer_0_timing": 376387,
+        "layer_1_timing": 746569
+      },
+      "cycle_scope": "Endpoint covers both layers. Controller clocks include upstream wait and must not be summed."
+    },
+    {
+      "case": {
+        "label": "reset-repeat",
+        "reset": true,
+        "position": 0,
+        "invocation": 3,
+        "input_index": 0
+      },
+      "passed": true,
+      "checks": {
+        "layer_0_output": {
+          "max_abs": 2.9802322387695312e-06,
+          "relative_l2": 1.0720623842843572e-06,
+          "relative_peak": 9.905528203970834e-07
+        },
+        "layer_1_output": {
+          "max_abs": 5.4836273193359375e-06,
+          "relative_l2": 1.3269662823021096e-06,
+          "relative_peak": 8.09171131532245e-07
+        }
+      },
+      "cycles": {
+        "endpoint_timing": 743855,
+        "layer_0_timing": 374983,
+        "layer_1_timing": 743759
+      },
+      "cycle_scope": "Endpoint covers both layers. Controller clocks include upstream wait and must not be summed."
+    }
+  ],
+  "reset_repeat": {
+    "passed": true,
+    "reset_repeat_bit_exact": true,
+    "scope": "Actual first and reset-repeat endpoint and both controller outputs are bit-exact."
+  },
+  "final_core": {
+    "passed": true,
+    "checks": {
+      "layer_0_input_norm": {
+        "max_abs": 1.6689300537109375e-06,
+        "relative_l2": 8.785134665454287e-07,
+        "relative_peak": 9.106636962551492e-07
+      },
+      "layer_0_q": {
+        "max_abs": 1.430511474609375e-05,
+        "relative_l2": 1.91389710881402e-07,
+        "relative_peak": 1.8588586013353048e-07
+      },
+      "layer_0_k": {
+        "max_abs": 7.62939453125e-06,
+        "relative_l2": 3.448020175205024e-08,
+        "relative_peak": 5.901460481637075e-08
+      },
+      "layer_0_v": {
+        "max_abs": 1.7881393432617188e-07,
+        "relative_l2": 9.10667988973228e-07,
+        "relative_peak": 9.968897041231358e-07
+      },
+      "layer_0_context": {
+        "max_abs": 1.7881393432617188e-07,
+        "relative_l2": 9.10667988973228e-07,
+        "relative_peak": 9.968897041231358e-07
+      },
+      "layer_0_o": {
+        "max_abs": 6.705522537231445e-08,
+        "relative_l2": 8.871838650327167e-07,
+        "relative_peak": 7.430203148358701e-07
+      },
+      "layer_0_attention_residual": {
+        "max_abs": 6.705522537231445e-08,
+        "relative_l2": 1.2923199867214793e-06,
+        "relative_peak": 7.375025279947766e-07
+      },
+      "layer_0_post_norm": {
+        "max_abs": 8.821487426757812e-06,
+        "relative_l2": 1.1107655489137925e-06,
+        "relative_peak": 6.51555234168599e-07
+      },
+      "layer_0_up": {
+        "max_abs": 2.86102294921875e-06,
+        "relative_l2": 7.602102735515054e-07,
+        "relative_peak": 6.289808591689842e-07
+      },
+      "layer_0_gate": {
+        "max_abs": 3.814697265625e-06,
+        "relative_l2": 6.998519604354771e-07,
+        "relative_peak": 8.134777812271496e-07
+      },
+      "layer_0_activation": {
+        "max_abs": 7.62939453125e-06,
+        "relative_l2": 1.222200505585258e-06,
+        "relative_peak": 1.3808255628093967e-06
+      },
+      "layer_0_down": {
+        "max_abs": 3.0994415283203125e-06,
+        "relative_l2": 1.0779795390096605e-06,
+        "relative_peak": 1.0320662180036648e-06
+      },
+      "layer_0_output": {
+        "max_abs": 2.9802322387695312e-06,
+        "relative_l2": 1.0720623842843572e-06,
+        "relative_peak": 9.905528203970834e-07
+      },
+      "layer_0_cache_k_0": {
+        "max_abs": 7.62939453125e-06,
+        "relative_l2": 3.9416222885237374e-08,
+        "relative_peak": 5.901460481637075e-08
+      },
+      "layer_0_cache_v_0": {
+        "max_abs": 1.7881393432617188e-07,
+        "relative_l2": 8.71368388847667e-07,
+        "relative_peak": 9.968897041231358e-07
+      },
+      "layer_0_retained_cache_k_0": {
+        "max_abs": 1.9073486328125e-06,
+        "relative_l2": 1.078969824681427e-08,
+        "relative_peak": 1.4691222241523223e-08
+      },
+      "layer_0_retained_cache_v_0": {
+        "max_abs": 1.4901161193847656e-07,
+        "relative_l2": 1.175543696934404e-06,
+        "relative_peak": 1.203298409401948e-06
+      },
+      "layer_0_cache_k_1": {
+        "max_abs": 3.814697265625e-06,
+        "relative_l2": 2.960680263114479e-08,
+        "relative_peak": 3.045309206688425e-08
+      },
+      "layer_0_cache_v_1": {
+        "max_abs": 6.705522537231445e-08,
+        "relative_l2": 1.039997736196017e-06,
+        "relative_peak": 6.504488566879766e-07
+      },
+      "layer_0_retained_cache_k_1": {
+        "max_abs": 3.814697265625e-06,
+        "relative_l2": 1.7266479221285436e-08,
+        "relative_peak": 3.0814126477444925e-08
+      },
+      "layer_0_retained_cache_v_1": {
+        "max_abs": 8.195638656616211e-08,
+        "relative_l2": 1.0803615609498214e-06,
+        "relative_peak": 1.073338277194489e-06
+      },
+      "layer_1_input_norm": {
+        "max_abs": 8.314847946166992e-06,
+        "relative_l2": 9.3070482276747e-07,
+        "relative_peak": 6.105361577106542e-07
+      },
+      "layer_1_q": {
+        "max_abs": 4.76837158203125e-06,
+        "relative_l2": 6.478878912728637e-07,
+        "relative_peak": 3.373881996722746e-07
+      },
+      "layer_1_k": {
+        "max_abs": 5.245208740234375e-06,
+        "relative_l2": 7.732161905499345e-08,
+        "relative_peak": 3.596816678598507e-08
+      },
+      "layer_1_v": {
+        "max_abs": 9.5367431640625e-07,
+        "relative_l2": 7.250894536828279e-07,
+        "relative_peak": 4.4577240042531147e-07
+      },
+      "layer_1_context": {
+        "max_abs": 9.5367431640625e-07,
+        "relative_l2": 7.250894536828279e-07,
+        "relative_peak": 4.4577240042531147e-07
+      },
+      "layer_1_o": {
+        "max_abs": 5.960464477539062e-07,
+        "relative_l2": 7.811750415127642e-07,
+        "relative_peak": 4.011801436048395e-07
+      },
+      "layer_1_attention_residual": {
+        "max_abs": 3.337860107421875e-06,
+        "relative_l2": 1.015247664506929e-06,
+        "relative_peak": 9.862959809425073e-07
+      },
+      "layer_1_post_norm": {
+        "max_abs": 5.7220458984375e-06,
+        "relative_l2": 9.817774167176231e-07,
+        "relative_peak": 4.135330909523991e-07
+      },
+      "layer_1_up": {
+        "max_abs": 5.245208740234375e-06,
+        "relative_l2": 9.438533435273637e-07,
+        "relative_peak": 9.07253533237027e-07
+      },
+      "layer_1_gate": {
+        "max_abs": 5.7220458984375e-06,
+        "relative_l2": 9.14072166837502e-07,
+        "relative_peak": 5.758170652216474e-07
+      },
+      "layer_1_activation": {
+        "max_abs": 2.3365020751953125e-05,
+        "relative_l2": 1.8314901283082272e-06,
+        "relative_peak": 2.229780825286479e-06
+      },
+      "layer_1_down": {
+        "max_abs": 2.86102294921875e-06,
+        "relative_l2": 1.6690832992214774e-06,
+        "relative_peak": 8.213872820500184e-07
+      },
+      "layer_1_output": {
+        "max_abs": 5.4836273193359375e-06,
+        "relative_l2": 1.3269662823021096e-06,
+        "relative_peak": 8.09171131532245e-07
+      },
+      "layer_1_cache_k_0": {
+        "max_abs": 3.6954879760742188e-06,
+        "relative_l2": 4.099604081680503e-07,
+        "relative_peak": 2.2637820805670404e-07
+      },
+      "layer_1_cache_v_0": {
+        "max_abs": 5.364418029785156e-07,
+        "relative_l2": 1.304573768266589e-06,
+        "relative_peak": 1.1447607891955441e-06
+      },
+      "layer_1_retained_cache_k_0": {
+        "max_abs": 2.2172927856445312e-05,
+        "relative_l2": 3.993798436901001e-06,
+        "relative_peak": 1.4121069984751675e-06
+      },
+      "layer_1_retained_cache_v_0": {
+        "max_abs": 1.5497207641601562e-06,
+        "relative_l2": 2.2338459573463647e-06,
+        "relative_peak": 1.7957390978952694e-06
+      },
+      "layer_1_cache_k_1": {
+        "max_abs": 5.245208740234375e-06,
+        "relative_l2": 5.970202937583695e-08,
+        "relative_peak": 3.596816678598507e-08
+      },
+      "layer_1_cache_v_1": {
+        "max_abs": 9.5367431640625e-07,
+        "relative_l2": 6.21080727977418e-07,
+        "relative_peak": 4.4577240042531147e-07
+      },
+      "layer_1_retained_cache_k_1": {
+        "max_abs": 3.9517879486083984e-05,
+        "relative_l2": 4.771262754697595e-07,
+        "relative_peak": 2.745180618873121e-07
+      },
+      "layer_1_retained_cache_v_1": {
+        "max_abs": 1.627206802368164e-05,
+        "relative_l2": 8.920167573656656e-06,
+        "relative_peak": 5.723242124001231e-06
+      }
+    },
+    "cycles": {
+      "endpoint_timing": 743855,
+      "layer_0_timing": 374983,
+      "layer_1_timing": 743759
+    },
+    "cycle_scope": "Endpoint interval covers both layers. Layer controller clocks include upstream waiting; do not add or interpret as isolated compute.",
+    "scope": "Original position-zero two-layer final core, all initializers, completion, KV and protocol states. Retained physical slot-one checks after reset."
+  },
+  "assembly_execution_sha256": "4e882b131a4700df10ed7861f3f09010cad5d5d368016990cbc8cc06e8b381fb",
+  "reference_build_execution_sha256": "992c2c55627d13133dae2c22222a31d21aa40b24645e24457e35d9497c370cc6",
+  "compiled_files_sha256": "1ab01b8d75a9300c2d120bda12a3c6183182f694a09b759133d45e66c2ffcf11",
+  "output_sha256": {
+    "actual.npz": "1bc1bd206a9c3c4615df31e8709227a629a2ef4034b2561e867f9fe48e154750",
+    "protocol.json": "99da09a8fbf6b0a044dd06be147184201b95489a55d53a998c00213acd85282d",
+    "normal-d2h.npz": "a108d82089bccf33438736863aba46b225f4a4f3e47e285bc922b71b3e374094",
+    "case-reports.json": "264262d571f79c27513e34963b36120d9798cb0f0c1142cd0e611373be03765a",
+    "runtime-evidence.json": "5175181a6a6cc235552829d3e06c6a116f00c10e8541791d2e60dbdd4e78efcf",
+    "out.core": "afd457989553a524975be4c7c339ad6058cdbe40bd2c394940900761b30f49c2"
+  },
+  "scope": "Three calls in one original two-layer SDK instance: position0, cached position1, reset position0. Per-call normal outputs/status and final actual-core detailed checks. No long-context, forced arrival ordering, full-model or continuous generation acceptance."
+}

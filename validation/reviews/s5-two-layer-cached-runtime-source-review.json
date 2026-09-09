@@ -1,0 +1,31 @@
+{
+  "reviewed_at": "2026-09-08T23:55:50.038789+00:00",
+  "source_sha256": {
+    "tools/decoder_chain_cached_probe.py": "b2a45fe99297c9726b2af1fe565c7d7c8c53ca34c8fdc8665766cd1c391731e6",
+    "tools/decoder_chain_cached_validate.py": "6b0868dffb6059b4f4b765a3db0cd80a9ecbf99624a1a08bf69a599a65f33376"
+  },
+  "status": "One final normal/core bit-binding addition requested before freeze",
+  "checks": [
+    "One SDK instance, exact fixed pos0\u2192pos1\u2192reset0 plan; global actualready before each compute, endpointonly originalembedding input",
+    "Normal endpoint and both controller outputs checked independently percase; all264KVseen/valid masks and controllerstatuses fixed perposition",
+    "Reset output bit equality stronger than numericalgate for both layers and endpoint",
+    "Bound original/cachedreference+CPUbuild receipts and unchanged assembledELF/symbols/precision; selfcontained13dependencies,3600s8GiB8threads",
+    "Finalcore invocation3 retains independently checkedslot1 and resetslogicalvisibility; stop failure preserves existing evidence",
+    "Normal MEMCPY16 timing in u32 buffers matches prior actual accepted113615 ABI; finalcore u16 timing exactcast comparison"
+  ],
+  "tests": {
+    "command": "python3 -B -m pytest -q tests/test_decoder_chain_cached_validate.py tests/test_decoder_chain_validate.py",
+    "passed": 7
+  },
+  "requested_fix": "Bit-compare final core outputs of both controllers to final normal controller outputs, alongside existing timing/endpoint equivalence.",
+  "scope": "Cached/reset runner and normalvalidator source only; no fresh frozen candidate or cachedSDK acceptance.",
+  "resolution": {
+    "reviewed_at": "2026-09-08T23:57:04.879132+00:00",
+    "source_sha256": {
+      "tools/decoder_chain_cached_probe.py": "44a7b593c95b1f5df1de3fa0e84fd64c12ce0c9683c6d5c9967b9c43f44d18d0",
+      "tools/decoder_chain_cached_validate.py": "6b0868dffb6059b4f4b765a3db0cd80a9ecbf99624a1a08bf69a599a65f33376"
+    },
+    "source_review_passed": true,
+    "fix": "Both final core controller outputs now bit-compared directly to final normal reads; existing3timing/endpoint/progress ties retained. No additional SDK reads."
+  }
+}

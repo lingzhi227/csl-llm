@@ -1,10 +1,10 @@
 # Release status — 2026-09-08
 
-Latest integration: original-sized, original-weight two-layer device chain passes one causal-position-zero SDK run, independently verified numerically and from actual core. [Scope and source](TWO-LAYER.md). This does not qualify cached/reset/full-model generation.
+Latest integration: the original-weight two-layer chain passes position 0, cached position 1 and reset-to-position-0 in one SDK instance, with 52 independent numerical checks and bit-exact reset outputs. [Scope, source and evidence](TWO-LAYER-CACHED.md). Full-model generation remains unaccepted.
 
 Latest acceptance: the complete original 151936 × 896 tied embedding/head passes three actual SDK cases on 193 × 50 PEs. Complete original weights, logits and metadata are checked from stopped cores; ordinary winner transfer, zero/tie and fresh-process bit-repeat pass. [Full-vocabulary evidence](FULL-VOCABULARY.md). Earlier partial-vocabulary limitations below describe historical milestones. Full S0–S6 / 24-layer persistent generation remains open.
 
-**Latest accepted integration: one complete native decoder layer0**, with three consecutive canonical positions and two changed tokens after reset. The full24-layer model has not run end to end. [Decoder evidence and reproduction](DECODER.md).
+**Earlier accepted integration: one complete native decoder layer0**, with three consecutive canonical positions and two changed tokens after reset. The full24-layer model has not run end to end. [Decoder evidence and reproduction](DECODER.md).
 
 | Area | Accepted evidence | Remaining boundary |
 | --- | --- | --- |

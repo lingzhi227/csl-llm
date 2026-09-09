@@ -1,0 +1,27 @@
+{
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+  "parameter_count": 494032768,
+  "upstream_dtype": "BF16",
+  "files_sha256": {
+    "config.json": "18e18afcaccafade98daf13a54092927904649e1dd4eba8299ab717d5d94ff45",
+    "generation_config.json": "e558847a8b4402616f1273797b015104dc266fe4b520056fca88823ba8f8ebe6"
+  },
+  "target_assumption": "one WSE-3 / SDK 2.10.1; actual hardware allocation must be confirmed",
+  "weights_bytes_16bit": 988065536,
+  "weights_bytes_32bit": 1976131072,
+  "kv_formula": "batch * layers * 2(K,V) * total_tokens * kv_heads * head_dim * bytes_per_element",
+  "kv_bytes_16bit_2048": 25165824,
+  "kv_bytes_32bit_2048": 50331648,
+  "kv_bytes_16bit_32768": 402653184,
+  "status": "implementation authorized; no SDK inference pass yet",
+  "sdk": "2.10.1",
+  "architecture": "wse3",
+  "batch_size": 1,
+  "total_context_tokens": 2048,
+  "max_new_tokens": 256,
+  "full_model_required": true,
+  "hardware_available": false,
+  "completion_boundary": "Full real-model SDK inference with all target semantics and fixed correctness gates; physical hardware validation deferred until user provides access",
+  "design_priority": "High-performance CSL inference library; measured hybrid CSL/HLS design, not universal programmability"
+}

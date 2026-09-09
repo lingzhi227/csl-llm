@@ -1,0 +1,25 @@
+{
+  "publication_note": "Selected exact frozen SDK helper dependencies; only SDK environment paths adapted. Host tests from frozen source. No new SDK execution.",
+  "runtime_manifest_sha256": "b50dcf66311de7049d6cfbf6bbd53a9245ee7719c995263ff6203ec6baf70e10",
+  "source_manifest_sha256": "2b9ff80942bc354d462e1a25e4d1ba3c52bc98a7b7d3b912f2d04be906e350c0",
+  "files": {
+    "tools/model_symbols.py": "8c5bca78d42cfa4beaa6a33f59e4aeeb12d5953695d0c4b401c7eef31c9793ca",
+    "tools/decoder_chain_cached_validate.py": "6b0868dffb6059b4f4b765a3db0cd80a9ecbf99624a1a08bf69a599a65f33376",
+    "tools/model_initializer_audit.py": "497abba2a3ce9927325ea8e56f9d2c97fb2ecd785f3fec3105aef70fb0511e29",
+    "tools/decoder_chain_assemble.py": "c560a8a603a331187375763b19ec5d053283e4aeb9061e54476373f1c379868c",
+    "tools/sdk_probe.py": "1e4d555f3eee06e1a4dd3e2c2fee7339f5ae78e2aeb92cf16514a0490661ead6",
+    "tools/decoder_chain_runtime_probe.py": "096e6a49cb4f0b1a5a54af0d72d85e6aa18f803b7ac2ac85be17690e3accc0b0",
+    "tools/decoder_chain_validate.py": "1cd2946ff15372273ae2cd7e5173d4b8e68dcf549d6f1879db33b8dd5a7f35ea",
+    "tools/decoder_chain_symbols.py": "d7c7c4b7df0f706fa5122295df5649b66db54f3f599f547dee496f3553032034",
+    "tools/sdk_core.py": "10ba97cebcccf4749e5ee0c22be5518f800e3820429f7d2ae1425b7f66b9e88d",
+    "tools/decoder_chain_audit_probe.py": "0d481c6a19aaaf03f93f5d8e2d18363f32f0381e078a2703d55c31b7ed153ab5",
+    "tests/test_decoder_chain_assemble.py": "d5eb45c145a78f59200fa502a773eda7783cd75550903c6e927a42b0e34d0f6e",
+    "tests/test_decoder_chain_validate.py": "238471cb06e8590c631a41c6b234d9321c568d7b48fcb439cd266b4874d598cb",
+    "tests/test_model_symbols.py": "5c47052c06553688d8286e56fa949162e28a1cb06db597419b9e4ddf1e430361",
+    "tests/test_decoder_chain_cached_validate.py": "fe7aa927ee63693e4358d59c40e1b0d05f8c1245554f2b03538e58f9a69d6d19",
+    "configs/precision.json": "c5da7df9c06537cb205b8c5a760703fd39b7c519bb27666906cafb1d6e45b3b0",
+    "src/csl_llm/regions.py": "2b23cc1644fc6e28ebe461bb68dfe0b4c77ac03570c094411d78d477377728c2",
+    "src/csl_llm/__init__.py": "e330d6b21720c96f282971a7ec9519f943e1c21b9bd944c611bbb4763ca390e2",
+    "src/csl_llm/decoder_layout.py": "20fa5b2f051dcad58cb2c44f7d7f511b41fde243113c61a338ac2c661877ec13"
+  }
+}

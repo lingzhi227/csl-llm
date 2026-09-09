@@ -1,0 +1,14 @@
+{
+  "assembly_execution_sha256": "4e882b131a4700df10ed7861f3f09010cad5d5d368016990cbc8cc06e8b381fb",
+  "reference_build_execution_sha256": "992c2c55627d13133dae2c22222a31d21aa40b24645e24457e35d9497c370cc6",
+  "original_reference_manifest_sha256": "9c2eb93b26f396e71f8ca43b5501d0ea8408f8c2595f5818456332b1a1f19ab5",
+  "original_reference_inputs_sha256": "da7667460d25f5b70acd47ad0e1728b3ebbd79d9aabe86f3ab983b7a20b69a73",
+  "cached_reference_manifest_sha256": "121d448dfdf79e726e6ce734a863c420d681725c467dcf993e867fa7811aa41a",
+  "cached_reference_inputs_sha256": "a14e7cce3ea5621859f119cbcc4ea03737d902f46704c5bb1e534c511f2746ed",
+  "timeout_seconds": 3600,
+  "rss_limit_kib": 8388608,
+  "simulator_threads": 8,
+  "scope": "Three calls in one original two-layer SDK instance: position0, cached position1, reset position0. Per-call normal outputs/status and final actual-core detailed checks. No long-context, forced arrival ordering, full-model or continuous generation acceptance.",
+  "original_file_sha256": "6cd970e20155091df35ae092a5d033f3f3f47d30c1e86c6911ce234fd2ccf97c",
+  "publication_note": "Derived compact report; private paths and detailed object tables omitted. Original hash meanings unchanged."
+}

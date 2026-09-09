@@ -1,0 +1,47 @@
+{
+  "accepted_at": "2026-09-09T01:19:27.924320+00:00",
+  "run": "decoder-chain-cached-runtime-20260908T235719778700Z",
+  "accepted_two_layer_cached_reset": true,
+  "manifest_sha256": "b50dcf66311de7049d6cfbf6bbd53a9245ee7719c995263ff6203ec6baf70e10",
+  "execution_sha256": "a5d6d6730c80eba281a9a7d648ef9044c43eb030bda535bbfdd886f7eac4d7ff",
+  "results_sha256": "038835c7140e66a3f3fcd6435957fa1676118b72b6bec320c35b731cf510e6cf",
+  "core_sha256": "afd457989553a524975be4c7c339ad6058cdbe40bd2c394940900761b30f49c2",
+  "normal_sha256": "a108d82089bccf33438736863aba46b225f4a4f3e47e285bc922b71b3e374094",
+  "actual_npz_sha256": "1bc1bd206a9c3c4615df31e8709227a629a2ef4034b2561e867f9fe48e154750",
+  "independent_reviews": [
+    "decoder-chain-cached-runtime-20260908T235719778700Z-independent-numeric-review.json",
+    "decoder-chain-cached-runtime-20260908T235719778700Z-independent-core-review.json"
+  ],
+  "independent_sdk_checks": 52,
+  "max_abs": 1.9008182339019797e-05,
+  "max_relative_l2": 4.867778062330396e-06,
+  "max_relative_peak": 8.095302586801189e-06,
+  "cycles": [
+    {
+      "endpoint_timing": 743855,
+      "layer_0_timing": 374983,
+      "layer_1_timing": 743759
+    },
+    {
+      "endpoint_timing": 746665,
+      "layer_0_timing": 376387,
+      "layer_1_timing": 746569
+    },
+    {
+      "endpoint_timing": 743855,
+      "layer_0_timing": 374983,
+      "layer_1_timing": 743759
+    }
+  ],
+  "elapsed_seconds": 2660.6811814380344,
+  "peak_rss_kib": 1661068,
+  "all_tracked_pids_absent": true,
+  "normal_cases": 3,
+  "diagnostic_arrays": 57,
+  "protocol_coordinates": 205,
+  "application_coordinates": 2580,
+  "original_matrix_tiles": 2088,
+  "reset_repeat_outputs_bit_exact": true,
+  "scope": "One persistent SDKinstance, original endpoint\u2192L0\u2192L1\u2192endpoint atpositions0/1/reset0,epochs1/2/3. Host supplies original token embeddings only at diagnostic endpoint; no interlayer host compute. Independent full-prefix originalBF16/float64 cached GQA/nonzeroRoPE/output checks, globalready/done,allimmutable originalweights/norms/bias,final26stages/logicalreset and retainedphysicalslot1,untouchedslots zero,allpacket/boundarydrain andnormal/core bindings. Not full24layer model/generation or2048/256capacity.",
+  "sdk_complete": false
+}

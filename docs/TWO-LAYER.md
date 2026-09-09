@@ -1,5 +1,7 @@
 # Original-weight two-layer device chain
 
+This page retains the original position-zero acceptance. A subsequent [three-call cached/reset milestone](TWO-LAYER-CACHED.md) extends the bounded two-layer scope.
+
 Two original-sized Qwen decoder layers now pass actual SDK execution in the chain `device endpoint → layer 0 → layer 1 → device endpoint`. Activations travel directly between device regions. The host supplies the initial embedding for token 151644 at causal position 0 and reads the final output and diagnostics. This is a single position-zero integration test, not a complete LLM or cached autoregressive sequence.
 
 ## Accepted runtime and numerical evidence

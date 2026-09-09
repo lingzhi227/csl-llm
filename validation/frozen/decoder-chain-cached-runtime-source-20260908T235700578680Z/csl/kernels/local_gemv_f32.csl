@@ -1,0 +1,14 @@
+// SPDX-License-Identifier: Apache-2.0
+// Adapted from Cerebras SDK gemv-02-memory-dsds (Copyright 2025 Cerebras Systems).
+// Changes: reusable pointer API, explicit descriptor reset, f32 accumulation.
+param rows: u16;
+param columns: u16;
+fn compute(weights: [*]f32, input: [*]f32, output: [*]f32) void {
+  const yd = @get_dsd(mem1d_dsd, .{ .base_address = output, .extent = rows });
+  var wd = @get_dsd(mem1d_dsd, .{ .base_address = weights, .extent = rows, .stride = columns });
+  @fmovs(yd, 0.0);
+  for (@range(u16, columns)) |i| {
+    @fmacs(yd, yd, wd, input[i]);
+    wd = @increment_dsd_offset(wd, 1, f32);
+  }
+}

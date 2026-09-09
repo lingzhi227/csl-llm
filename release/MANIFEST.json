@@ -1,5 +1,5 @@
 {
-  "scope": "Original-weight two-layer position-zero SDK integration and cumulative static model support, 2026-09-08",
+  "scope": "Original-weight two-layer persistent cached/reset SDK integration, 2026-09-09",
   "files": [
     {
       "path": ".gitignore",
@@ -13,8 +13,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 8100,
-      "sha256": "2e83b7ab4e801bdc00e7dbf51002475fdcf36ed2b5b815b04017a05c8b142334"
+      "bytes": 8136,
+      "sha256": "52bd25980ace03ba8d0b29b1140b7fb80b5a69c1958700efaa713b64462209ec"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
@@ -508,8 +508,8 @@
     },
     {
       "path": "docs/STATUS.md",
-      "bytes": 4744,
-      "sha256": "af720c4d5d32d3d96be1d337a82e6f069c222b62be65a5fde96162d2ef79b38c"
+      "bytes": 4777,
+      "sha256": "804be7a46980bf07f5b663df0f4d091370a891cc64b23e846513c81f871a943b"
     },
     {
       "path": "docs/STREAM-OUTPUT.md",
@@ -517,9 +517,14 @@
       "sha256": "8263c1d0647c9e4c1bf34abfc5ac29a502dc2e4b7c730ea878a23ba2f3b09feb"
     },
     {
+      "path": "docs/TWO-LAYER-CACHED.md",
+      "bytes": 4556,
+      "sha256": "fd7da42104129fda612b4ededadfd5746d556428e7b6a226fd7af532e8a78961"
+    },
+    {
       "path": "docs/TWO-LAYER.md",
-      "bytes": 6122,
-      "sha256": "ba9389a6aeb5da896a4d185242fbf19068efe37ea2efc5b85fe2a27aa4dcc27d"
+      "bytes": 6287,
+      "sha256": "a9baf5af53fffd4c33887ef019f761d7b3af665586f2593580880d3a761c19e7"
     },
     {
       "path": "evidence/model-inventory.json",
@@ -533,8 +538,8 @@
     },
     {
       "path": "release/CHECKS.md",
-      "bytes": 11119,
-      "sha256": "bfe03e2cafd537dd8b3dab827f11885a8ad0696a786e0993abf5b85382002905"
+      "bytes": 11453,
+      "sha256": "42cc34436b5f8c1cc2d1490898cd369d1b360a0c5f73d8fb780f55ed9693f31c"
     },
     {
       "path": "release/COLLECTIVE-CHECKS.json",
@@ -620,6 +625,11 @@
       "path": "release/STREAM-CHECKS.json",
       "bytes": 1752,
       "sha256": "843f2987ff83dd4f8e40f6069dbc45dd229511f7b85cd7aca229d8f7849dc2a4"
+    },
+    {
+      "path": "release/TWO-LAYER-CACHED-CHECKS.json",
+      "bytes": 977,
+      "sha256": "7fe7756f1a5eec9571f1255d095575e563147d884b98f691096ee047950eda2d"
     },
     {
       "path": "release/TWO-LAYER-CHECKS.json",
@@ -862,6 +872,101 @@
       "sha256": "1e4d555f3eee06e1a4dd3e2c2fee7339f5ae78e2aeb92cf16514a0490661ead6"
     },
     {
+      "path": "support/two_layer_cached/configs/precision.json",
+      "bytes": 1396,
+      "sha256": "c5da7df9c06537cb205b8c5a760703fd39b7c519bb27666906cafb1d6e45b3b0"
+    },
+    {
+      "path": "support/two_layer_cached/manifest.json",
+      "bytes": 2269,
+      "sha256": "4e9ce1e004ba8f7765a21655c724718a813bc85606ea92d58eecad0d4050a963"
+    },
+    {
+      "path": "support/two_layer_cached/src/csl_llm/__init__.py",
+      "bytes": 80,
+      "sha256": "e330d6b21720c96f282971a7ec9519f943e1c21b9bd944c611bbb4763ca390e2"
+    },
+    {
+      "path": "support/two_layer_cached/src/csl_llm/decoder_layout.py",
+      "bytes": 4528,
+      "sha256": "20fa5b2f051dcad58cb2c44f7d7f511b41fde243113c61a338ac2c661877ec13"
+    },
+    {
+      "path": "support/two_layer_cached/src/csl_llm/regions.py",
+      "bytes": 2413,
+      "sha256": "2b23cc1644fc6e28ebe461bb68dfe0b4c77ac03570c094411d78d477377728c2"
+    },
+    {
+      "path": "support/two_layer_cached/tests/test_decoder_chain_assemble.py",
+      "bytes": 2958,
+      "sha256": "d5eb45c145a78f59200fa502a773eda7783cd75550903c6e927a42b0e34d0f6e"
+    },
+    {
+      "path": "support/two_layer_cached/tests/test_decoder_chain_cached_validate.py",
+      "bytes": 2782,
+      "sha256": "fe7aa927ee63693e4358d59c40e1b0d05f8c1245554f2b03538e58f9a69d6d19"
+    },
+    {
+      "path": "support/two_layer_cached/tests/test_decoder_chain_validate.py",
+      "bytes": 5491,
+      "sha256": "238471cb06e8590c631a41c6b234d9321c568d7b48fcb439cd266b4874d598cb"
+    },
+    {
+      "path": "support/two_layer_cached/tests/test_model_symbols.py",
+      "bytes": 1360,
+      "sha256": "5c47052c06553688d8286e56fa949162e28a1cb06db597419b9e4ddf1e430361"
+    },
+    {
+      "path": "support/two_layer_cached/tools/decoder_chain_assemble.py",
+      "bytes": 7353,
+      "sha256": "c560a8a603a331187375763b19ec5d053283e4aeb9061e54476373f1c379868c"
+    },
+    {
+      "path": "support/two_layer_cached/tools/decoder_chain_audit_probe.py",
+      "bytes": 8360,
+      "sha256": "0d481c6a19aaaf03f93f5d8e2d18363f32f0381e078a2703d55c31b7ed153ab5"
+    },
+    {
+      "path": "support/two_layer_cached/tools/decoder_chain_cached_validate.py",
+      "bytes": 3047,
+      "sha256": "6b0868dffb6059b4f4b765a3db0cd80a9ecbf99624a1a08bf69a599a65f33376"
+    },
+    {
+      "path": "support/two_layer_cached/tools/decoder_chain_runtime_probe.py",
+      "bytes": 11161,
+      "sha256": "096e6a49cb4f0b1a5a54af0d72d85e6aa18f803b7ac2ac85be17690e3accc0b0"
+    },
+    {
+      "path": "support/two_layer_cached/tools/decoder_chain_symbols.py",
+      "bytes": 4282,
+      "sha256": "d7c7c4b7df0f706fa5122295df5649b66db54f3f599f547dee496f3553032034"
+    },
+    {
+      "path": "support/two_layer_cached/tools/decoder_chain_validate.py",
+      "bytes": 9512,
+      "sha256": "1cd2946ff15372273ae2cd7e5173d4b8e68dcf549d6f1879db33b8dd5a7f35ea"
+    },
+    {
+      "path": "support/two_layer_cached/tools/model_initializer_audit.py",
+      "bytes": 8499,
+      "sha256": "497abba2a3ce9927325ea8e56f9d2c97fb2ecd785f3fec3105aef70fb0511e29"
+    },
+    {
+      "path": "support/two_layer_cached/tools/model_symbols.py",
+      "bytes": 5150,
+      "sha256": "8c5bca78d42cfa4beaa6a33f59e4aeeb12d5953695d0c4b401c7eef31c9793ca"
+    },
+    {
+      "path": "support/two_layer_cached/tools/sdk_core.py",
+      "bytes": 7828,
+      "sha256": "10ba97cebcccf4749e5ee0c22be5518f800e3820429f7d2ae1425b7f66b9e88d"
+    },
+    {
+      "path": "support/two_layer_cached/tools/sdk_probe.py",
+      "bytes": 8573,
+      "sha256": "1e4d555f3eee06e1a4dd3e2c2fee7339f5ae78e2aeb92cf16514a0490661ead6"
+    },
+    {
       "path": "tests/test_bf16_transport.py",
       "bytes": 1115,
       "sha256": "3cfa0200548237147c3eed2e4f495d4c12d24f7ae0aebf774ccdeaf1c6d80e85"
@@ -960,6 +1065,11 @@
       "path": "tools/decoder_chain_assembly_probe.py",
       "bytes": 5244,
       "sha256": "ffb27930af92a2bc4e2b2d4550ae77e9d131d342caf4a861413f1bdc649aa689"
+    },
+    {
+      "path": "tools/decoder_chain_cached_probe.py",
+      "bytes": 14735,
+      "sha256": "1032209b50b9caeae5158ea022ddbdb8ec186c500fd2f668481b85d5de42bc2c"
     },
     {
       "path": "tools/decoder_chain_runtime_probe.py",
@@ -1955,6 +2065,656 @@
       "path": "validation/frozen/decoder-chain-audit-20260908T231345094257Z/results-summary.json",
       "bytes": 473,
       "sha256": "883703b53c303d0455e8bd66cae0dbb388787ccbfea082836e408b165c08b75e"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-20260908T235719778700Z/config-summary.json",
+      "bytes": 1212,
+      "sha256": "f3a5733dda0b1f0e356c657a4aa22cb82b64ad013e15f3fb168f01e2c93247e5"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-20260908T235719778700Z/driver.py",
+      "bytes": 14706,
+      "sha256": "44a7b593c95b1f5df1de3fa0e84fd64c12ce0c9683c6d5c9967b9c43f44d18d0"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-20260908T235719778700Z/execution-summary.json",
+      "bytes": 807,
+      "sha256": "17141cbc0d83d7b5acb75a7b0ac60edfc92de5c0ab0d34b9dfe4636bfe8f7d2d"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-20260908T235719778700Z/manifest.json",
+      "bytes": 2164340,
+      "sha256": "b50dcf66311de7049d6cfbf6bbd53a9245ee7719c995263ff6203ec6baf70e10"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-20260908T235719778700Z/precision.json",
+      "bytes": 1396,
+      "sha256": "c5da7df9c06537cb205b8c5a760703fd39b7c519bb27666906cafb1d6e45b3b0"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-20260908T235719778700Z/results.json",
+      "bytes": 11549,
+      "sha256": "038835c7140e66a3f3fcd6435957fa1676118b72b6bec320c35b731cf510e6cf"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/configs/precision.json",
+      "bytes": 1396,
+      "sha256": "c5da7df9c06537cb205b8c5a760703fd39b7c519bb27666906cafb1d6e45b3b0"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/configs/prompts.json",
+      "bytes": 713,
+      "sha256": "3b17a15b7c3787f1b826b635d1017d7824d446c056bd2bc9cf34c7c31fe1fb30"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/configs/target.json",
+      "bytes": 1301,
+      "sha256": "a960df2edd8b651df7c58529e3bfabbb3f7b9e4ece1905cb0171e029367f5270"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/csl/kernels/README.md",
+      "bytes": 2251,
+      "sha256": "bc37f847be493abc32d13e261b6c58eccb66b4aa4295a3048f5bde3bb0db7214"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/csl/kernels/argmax_f32.csl",
+      "bytes": 772,
+      "sha256": "f2d70dae54e1bea001256f345dd870ee9a9cafdcbda1703d7899e7eabce0e096"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/csl/kernels/kv_block_f32.csl",
+      "bytes": 3624,
+      "sha256": "9c1d6762937cd668c1668305f515995e97cc92a2e27b8ecd05411c921b9fc0f2"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/csl/kernels/local_gemv_bf16_f32.csl",
+      "bytes": 1246,
+      "sha256": "0880517060f5b5f12f20c4c5fee505e7a1ff7a7260d61d902a66c038475598e0"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/csl/kernels/local_gemv_bf16_f32_colmajor.csl",
+      "bytes": 1387,
+      "sha256": "3e92175efe12b28065bb77934c54136db3c9287c68c81877781a0e527354304c"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/csl/kernels/local_gemv_f32.csl",
+      "bytes": 619,
+      "sha256": "be1c4531f994e1d88991b2670daf0edda81839cc8fd0c6abff3d2999eaf43376"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/csl/kernels/qwen_position_f32.csl",
+      "bytes": 897,
+      "sha256": "8d7be77e4938a5d5b7e95525e8869b12d6b2b529fcc25d3152128de230ad7cf8"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/csl/kernels/tied_embedding_f32.csl",
+      "bytes": 811,
+      "sha256": "a97ff65ee153bb5caedfd4085f659011cba3d686715c132ab95e8e6a25cf64a0"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/csl/kernels/vector_f32.csl",
+      "bytes": 2509,
+      "sha256": "e923d62d7c3527d80282bb6b4714bb00b537510d8c4a48455f84aa939571b26b"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/csl/programs/activation_stream/pe.csl",
+      "bytes": 2079,
+      "sha256": "9fea6015e44ba9e944ea82f024d7675e9f7be44ebee3e6857e8305729d3f4b63"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/csl/programs/decoder_chain/endpoint.csl",
+      "bytes": 2775,
+      "sha256": "6281b82a113471935ad0fb3f5ae61c5a87188e3606c68876a2f21b74aa16a3b2"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/csl/programs/line_argmax/pe.csl",
+      "bytes": 1615,
+      "sha256": "f81b20655cc2902c3d2f29bf6ad4e85ce6a21dfcc9a7f8f6d33359d4bda21503"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/csl/programs/model_vocabulary/pe.csl",
+      "bytes": 12454,
+      "sha256": "b81c82d1ff18ca5da2657b5f115141af55989da3c2baffae471c363241f1bed8"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/csl/programs/partition_collective/pe.csl",
+      "bytes": 1570,
+      "sha256": "ed33402bf04fde9c242bb084c01245a3c70081caed5e8b9b3fba7947a80c3b70"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/csl/programs/resident_decoder/pe.csl",
+      "bytes": 16977,
+      "sha256": "e6dcd478742a1e0edde7c5040b3199b939dc1fc2d2bbfcee11a2892ad950a73d"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/csl/programs/resident_mlp/pe.csl",
+      "bytes": 7096,
+      "sha256": "b5687ab46108b5ff7bb9812e95ce8c264d58d01be0ac8180939229811563ee26"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/csl/programs/resident_vocabulary/pe.csl",
+      "bytes": 6562,
+      "sha256": "1f5df35fcc3b4b54c74ca641f133547f250c2b6b322b1a9b1f44729f51ede53d"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/csl/programs/stream_output/pe.csl",
+      "bytes": 1905,
+      "sha256": "5c1cc36e4366f0f656cdcec33ff693a435de56bbcc194e0a56498253f3c2dfb4"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/csl/runtime/activation_stream.csl",
+      "bytes": 1831,
+      "sha256": "93e824a8395f64b7e9aff193fc1fa0eb32e9912c4ec03ccca1e3b9ccc87616fa"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/csl/runtime/distributed_linear_pe.csl",
+      "bytes": 1825,
+      "sha256": "7eb773d6975d9463e930f9684e02f480d00ce24d36b29f21d75dfd21c5f27333"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/csl/runtime/filtered_input.csl",
+      "bytes": 709,
+      "sha256": "e9b289a13f821df69a08e58e9bf6847f4b542d94d617c60d8df143413d2a61af"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/csl/runtime/line_allreduce_f32.csl",
+      "bytes": 3947,
+      "sha256": "21f8628d937c6e481c24a45747895fb27caa1bd2a6b18d7338e138d492a4a529"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/csl/runtime/line_argmax_f32.csl",
+      "bytes": 2919,
+      "sha256": "e3c596d52fbc5d0630aae1ec91da886c9ee952c7ba704077ee05e21ae9e30fcd"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/csl/runtime/packets.csl",
+      "bytes": 2601,
+      "sha256": "151009e07423dc16bb2b2304f29e7e6c52e84e57613c809eb5188470e8bcc6c7"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/csl/runtime/token_sequence.csl",
+      "bytes": 2251,
+      "sha256": "43636c22795d3d83f02a6510cc5a8c6df95b62a06dd3f3f89173f0d5cd09da3e"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/manifest.json",
+      "bytes": 13396,
+      "sha256": "2b9ff80942bc354d462e1a25e4d1ba3c52bc98a7b7d3b912f2d04be906e350c0"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/src/csl_llm/__init__.py",
+      "bytes": 80,
+      "sha256": "e330d6b21720c96f282971a7ec9519f943e1c21b9bd944c611bbb4763ca390e2"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/src/csl_llm/argmax_routes.py",
+      "bytes": 1211,
+      "sha256": "2c58c1c12efe3700f48510d002658701971caa5bd1953bd4f0efb6ac1df7d5ce"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/src/csl_llm/coordinate_identity.py",
+      "bytes": 1702,
+      "sha256": "33943a93a0c562b0647fef94cb43e9942c88fa1f7116537bdaeddda186ad7f83"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/src/csl_llm/decoder_layout.py",
+      "bytes": 4528,
+      "sha256": "20fa5b2f051dcad58cb2c44f7d7f511b41fde243113c61a338ac2c661877ec13"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/src/csl_llm/decoder_storage.py",
+      "bytes": 5028,
+      "sha256": "9cb0750e539f54b005c2387885d569a89e0d9466da48e4e3d06becb4a665d0eb"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/src/csl_llm/layout.py",
+      "bytes": 4286,
+      "sha256": "1c8a833ec48f7cc016680c641d9e00a740597439893852750b6d5f3b0a74fa0f"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/src/csl_llm/model_storage.py",
+      "bytes": 3297,
+      "sha256": "544695bad4b9f66c30eac2c683bd01acb60eae9f04ae89de9161bab2a07eea2e"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/src/csl_llm/regions.py",
+      "bytes": 2413,
+      "sha256": "2b23cc1644fc6e28ebe461bb68dfe0b4c77ac03570c094411d78d477377728c2"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/src/csl_llm/static_data.py",
+      "bytes": 1256,
+      "sha256": "f27337570423a8524aa6070e7d9d807980a00756ed2969c11b9d272222d06494"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tests/test_decoder_chain_assemble.py",
+      "bytes": 2958,
+      "sha256": "d5eb45c145a78f59200fa502a773eda7783cd75550903c6e927a42b0e34d0f6e"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tests/test_decoder_chain_cached_validate.py",
+      "bytes": 2782,
+      "sha256": "fe7aa927ee63693e4358d59c40e1b0d05f8c1245554f2b03538e58f9a69d6d19"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tests/test_decoder_chain_validate.py",
+      "bytes": 5491,
+      "sha256": "238471cb06e8590c631a41c6b234d9321c568d7b48fcb439cd266b4874d598cb"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tests/test_model_symbols.py",
+      "bytes": 1360,
+      "sha256": "5c47052c06553688d8286e56fa949162e28a1cb06db597419b9e4ddf1e430361"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/activation_stream_probe.py",
+      "bytes": 6166,
+      "sha256": "17161f31796b28268a832924ee5afaf53493474dd08207bbbad8b3bb09a12ef4"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/api_profile.py",
+      "bytes": 2818,
+      "sha256": "1f6b0940f83d803b0b5a7b38d89424ea0ab3b0d5b4de17a58da2dafd2a6f1975"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/attention_capacity_probe.py",
+      "bytes": 12949,
+      "sha256": "4f98d750db33eac300946a5b7869bfb71cf5e6a68a120e899a0f98628c9c5c19"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/attention_probe.py",
+      "bytes": 13052,
+      "sha256": "66006003f4075294456df5ca227a5024b9dbb6589520dd3d5149a006cdda997a"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/audit_decoder_storage.py",
+      "bytes": 6115,
+      "sha256": "84e66173210e66e1225160d0445c5a897b9ce5bea8be31b08969972bbe60d189"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/audit_decoder_weights.py",
+      "bytes": 6566,
+      "sha256": "7310420f8f1be5a32ed20f1df5a0f62ff3c5f7ede08d552a23a819ef80ed762d"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/audit_model_weight_mapping.py",
+      "bytes": 4182,
+      "sha256": "f1fcc1e4ff033031383a209e78bc0ad2eac412af8c8a8f97321c6e7af403d16f"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/audit_runtime_core.py",
+      "bytes": 5112,
+      "sha256": "23ab84d1916e0377d42b1a0d575beabe586a84be54fc36a203a98c5b368a6dae"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/audit_static_weights.py",
+      "bytes": 4239,
+      "sha256": "534c2ef663e96153c96d8934e3ff2165db8c07ed8f9c329a6af19eda356f9888"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/audit_vocabulary_loads.py",
+      "bytes": 6664,
+      "sha256": "b429c85add3964adf927d07d30dfff6d474437310c482ca55a80a75641e16f86"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/audit_vocabulary_weights.py",
+      "bytes": 4386,
+      "sha256": "22e60f68adb13a96d73a51157d61abc9c46fdc0a3fca19ab1e7ba13d894d91f3"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/bf16_bits_probe.py",
+      "bytes": 4668,
+      "sha256": "fbdb069fea91de5179e42ad3848177b0beaf991a6e89afd56218338b1a211d52"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/bf16_stride_probe.py",
+      "bytes": 5992,
+      "sha256": "fe8e81f0bfcef3c3fc540ff9277fb0989c4f11a43d003e41d89df00f9b7e0f3a"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/bf16_transport.py",
+      "bytes": 730,
+      "sha256": "6a3e2a2c222e6f7e8408e28ec2a299d05c0c13cd2b85b62e52a3e8eb833187c3"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/check_resume.py",
+      "bytes": 2855,
+      "sha256": "8739ce9860faee53f57ce77256254b2c7b5c4e9ad48dc6fe462879a6aa663ff6"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/check_vocabulary_batch.py",
+      "bytes": 3180,
+      "sha256": "9cf29801aa9ab7ae5f6d4a0f2fea7a6c956b0ccfd87c7e354691b5400151d446"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/compact_vocabulary_compile.py",
+      "bytes": 8953,
+      "sha256": "ce0f1a63616faf0aa523ca882ac0b99516033a56301aff0f6164db30cf96941e"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/compact_weights_probe.py",
+      "bytes": 5545,
+      "sha256": "7b12467f4b63acd2dd82d64e90fba994fd0df17d5909257b164e3156730f1f4c"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/compact_weights_runtime.py",
+      "bytes": 5339,
+      "sha256": "2ac1b79c1318d2abd83564dbd9701993dedb49c8219df50a05f5c4965ad41e94"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/compare_elf_images.py",
+      "bytes": 2353,
+      "sha256": "64bdf83955560a94e1e0389f9f6ee81c91632c370e70560462d1f285f1852f6f"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/core_contract_audit.py",
+      "bytes": 8254,
+      "sha256": "5e12db9e0794fb85e46bcb13870450fb9269118f9ebba03d9940ed7cdd9b4dc1"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/core_topology_audit.py",
+      "bytes": 6374,
+      "sha256": "499aeb33482a55c8b37189c224a73d00553f748fed94a618845de7199c0ada24"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/cpu_reference_probe.py",
+      "bytes": 6556,
+      "sha256": "29c5b725898e8d1fa3babd85bd48f99994e603dbd48685a3af51346af89b7ae8"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/decoder_chain_assemble.py",
+      "bytes": 7353,
+      "sha256": "c560a8a603a331187375763b19ec5d053283e4aeb9061e54476373f1c379868c"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/decoder_chain_assembly_probe.py",
+      "bytes": 5222,
+      "sha256": "35b9c5302120da0cbc049f7cc650558fd0e946ca39cafcdf65c4c9b782cc3bf3"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/decoder_chain_audit_probe.py",
+      "bytes": 8360,
+      "sha256": "0d481c6a19aaaf03f93f5d8e2d18363f32f0381e078a2703d55c31b7ed153ab5"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/decoder_chain_cached_probe.py",
+      "bytes": 14706,
+      "sha256": "44a7b593c95b1f5df1de3fa0e84fd64c12ce0c9683c6d5c9967b9c43f44d18d0"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/decoder_chain_cached_validate.py",
+      "bytes": 3047,
+      "sha256": "6b0868dffb6059b4f4b765a3db0cd80a9ecbf99624a1a08bf69a599a65f33376"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/decoder_chain_compile_probe.py",
+      "bytes": 5762,
+      "sha256": "560528783da285668aab7ed10f3c23c3d39ff6db683d4694f0ba11141173aad1"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/decoder_chain_layout.py",
+      "bytes": 1982,
+      "sha256": "1ea26db52253d0716d308e24a194dd754947f6cb5312fbd70d496dd337f7e0e7"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/decoder_chain_reference.py",
+      "bytes": 8437,
+      "sha256": "8c6cd8af416307ba871a54749d08c81e94f578bc4ae30c8e9517bcfe994a4dd0"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/decoder_chain_runtime_probe.py",
+      "bytes": 11161,
+      "sha256": "096e6a49cb4f0b1a5a54af0d72d85e6aa18f803b7ac2ac85be17690e3accc0b0"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/decoder_chain_symbols.py",
+      "bytes": 4282,
+      "sha256": "d7c7c4b7df0f706fa5122295df5649b66db54f3f599f547dee496f3553032034"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/decoder_chain_validate.py",
+      "bytes": 9512,
+      "sha256": "1cd2946ff15372273ae2cd7e5173d4b8e68dcf549d6f1879db33b8dd5a7f35ea"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/decoder_compile_probe.py",
+      "bytes": 4132,
+      "sha256": "f7efadd18704ed0f0386f29ae0bab2544c82d5c23e9dc5f1a6dc4817fe49cf15"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/distributed_linear_probe.py",
+      "bytes": 7115,
+      "sha256": "e45676f774e690c7458f4b059f9cb9f6b5ff4ebc65c259652ea8dfab29b698f0"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/dsr_graph.py",
+      "bytes": 4021,
+      "sha256": "b43d3b0cd5c6935b6e33143fc9cfca1f1855516ce29fd06987f047f0c745e111"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/elf_memory.py",
+      "bytes": 2976,
+      "sha256": "88a2c2d6cceefc3186499b12d9c97979d8f565402cda2b9ac493f56f3fe6d136"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/elf_partition.py",
+      "bytes": 6170,
+      "sha256": "53c0c74f0731a9ff26424b9cf53b91dfb02ffd4bffc12e63d6edbbdaf9118878"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/fetch_model.py",
+      "bytes": 2741,
+      "sha256": "dae183dcad0c7c7a30f93b77130e774368d97c69c9336b59a33f9f6891c963d4"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/filtered_input_probe.py",
+      "bytes": 6736,
+      "sha256": "8e0b00f0afe58cf2f01f95da894b8279d4675c9302446ea29a39dcb16677ec2f"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/line_argmax_probe.py",
+      "bytes": 7238,
+      "sha256": "2760d2671fec1495ee75c031178bce180f3c4cdaa63655136bd53c2093ddd4df"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/model_audit_probe.py",
+      "bytes": 5295,
+      "sha256": "8d46e3e52498efae3a56d1fd57117bae65c6b11463d1d6ffa9de3a01c3a82402"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/model_boot_probe.py",
+      "bytes": 11386,
+      "sha256": "4beda8bb0f84fdfc304bf5364d1f9728ed6d1b1f7f5dc95d40219be343e42969"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/model_compile_probe.py",
+      "bytes": 6725,
+      "sha256": "6b9c3eabb072023805fe3201100418caac97981c0f0fd555bafcc1ad374d7f55"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/model_initializer_audit.py",
+      "bytes": 8499,
+      "sha256": "497abba2a3ce9927325ea8e56f9d2c97fb2ecd785f3fec3105aef70fb0511e29"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/model_inventory.py",
+      "bytes": 2435,
+      "sha256": "9fbe38e114c060af751171e0dcc5908ec8f16228480896e678c6032bf7d6d143"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/model_layout.py",
+      "bytes": 3679,
+      "sha256": "501fcc516307d824a1a0167d45f2a08f009ea05d928c2b3d2caaf68202aa2bdf"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/model_partition_contract.py",
+      "bytes": 8842,
+      "sha256": "a192ee68425ade5f4d28648a69f0e1e5fc5a0526dd7c6d9bfc4e0c96c37c79d5"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/model_static_inputs.py",
+      "bytes": 6353,
+      "sha256": "e991979a56d5cc1449a930ae993af3eced78343eb898247979a726c7253fbb96"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/model_static_layout.py",
+      "bytes": 4456,
+      "sha256": "aa12fdc818dcee2bab8d055977e273503206826611c595751dff0d00956a8d22"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/model_symbols.py",
+      "bytes": 5150,
+      "sha256": "8c5bca78d42cfa4beaa6a33f59e4aeeb12d5953695d0c4b401c7eef31c9793ca"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/observe_sdk_resources.py",
+      "bytes": 3684,
+      "sha256": "1184109c853e2b036776866ca7aa17bcd52e81b3469ee83d6d73031c3dcd2d40"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/observe_sdk_threads.py",
+      "bytes": 3015,
+      "sha256": "dda9562d119e5681a6655718175cb2d38fdf9179712780cc734ea816cb6e5d39"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/pack_weights.py",
+      "bytes": 2949,
+      "sha256": "b217a9063ae52df97a0cf28717adf5abece2da65e446e862b6f9c461d2c83dd5"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/packet_fanin_probe.py",
+      "bytes": 7154,
+      "sha256": "cd104b5a295df7e8ef5ef859c62b72a58344ede91266899d97b3815e4470c0c1"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/packet_probe.py",
+      "bytes": 7678,
+      "sha256": "9fba7d15dc37aa03e1f3c7cc309c2b2fc8f462f971cfdfd519cd74cfdb8cd6aa"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/partition_compile_probe.py",
+      "bytes": 8017,
+      "sha256": "cf4135675b405c1a1fa9c96ae2271f994948aaeae305e3650afc6012a8e520a2"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/partition_runtime_probe.py",
+      "bytes": 11784,
+      "sha256": "c66e2030498e31671a585da211a062af2fd8bf8328f67e91ee37549dcd60bc4b"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/plan_layout.py",
+      "bytes": 665,
+      "sha256": "85b9f0e67ca428a7b2aa1a8a486ecf3c8242f16247727f07875a0dc651d455b7"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/position_probe.py",
+      "bytes": 8619,
+      "sha256": "336ad07ae9dcc2a61c53353420ac0734d966178bfc83ca9546d4185bc17caf04"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/prepare_gemv_probe.py",
+      "bytes": 5994,
+      "sha256": "fe89fc35b93fee23bfea819d7f7097f58d8009215d7627a89b68199a5916c9ca"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/projection_probe.py",
+      "bytes": 10141,
+      "sha256": "b912b89acdbeb2a9c1cfeec9f437c52dc13f2a8a598a37784f0e1772f752f4cd"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/reference_run.py",
+      "bytes": 7586,
+      "sha256": "2a20ecf9856a5444119381a81acc24624a62801ee32ec56c65ea8d778e6de910"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/reference_semantics.py",
+      "bytes": 6779,
+      "sha256": "dd2120c5123d92a3b025067ee39bc733e161d0e694776ef9ca757248b3ac6bc5"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/regional_linear_probe.py",
+      "bytes": 8679,
+      "sha256": "79c34b1cd5b985ad7353117c5682747f118570f71272e3319ece24b4c0153f4c"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/resident_decoder_probe.py",
+      "bytes": 30845,
+      "sha256": "d0097925f9ee7e6fd7362285f8374c8e7d3b885272b43157ca2b8cd32997c673"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/resident_mlp_probe.py",
+      "bytes": 17719,
+      "sha256": "1d9f43734677dc4106525ef66330259ae333ef8664564ffda8c87bf5e58aa638"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/resident_vocabulary_probe.py",
+      "bytes": 26879,
+      "sha256": "14af6d5182e7da56b88f63856bcaf8502ca248d018450c0d1c07c564e57ba96e"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/sdk_core.py",
+      "bytes": 7828,
+      "sha256": "10ba97cebcccf4749e5ee0c22be5518f800e3820429f7d2ae1425b7f66b9e88d"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/selection_probe.py",
+      "bytes": 7864,
+      "sha256": "add0fa3c448def9f6aaa4ff03b0418b28d77ae18c1d5036ae8a52a85e4a8411d"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/simulator_cost_probe.py",
+      "bytes": 7141,
+      "sha256": "a637357f41bed8d0c39f231379871cd331bfcf1ceba382160099497e12fb84f3"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/static_weights_probe.py",
+      "bytes": 8329,
+      "sha256": "14edb681d8d153059728da6d71455c49a839a3b66bcaf44b1410a7d00ef8c912"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/stream_output_probe.py",
+      "bytes": 8195,
+      "sha256": "eec848bf810bc238b30a3379939e417a27b03d1f7363d967607f2301eac1c30e"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/token_sequence_probe.py",
+      "bytes": 8481,
+      "sha256": "77063f24ec9e33acec16606f3e0b09c0833d1fe7b2545212612de5c3585fbbcd"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/vector_probe.py",
+      "bytes": 9443,
+      "sha256": "eddf23dbab852355759058a91a254db892d8305cb7117914943138fbd68f723d"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/verify_weight_pack.py",
+      "bytes": 3593,
+      "sha256": "0e73b0020e8c99eef84ea528f740f7f052560a0e91cd619240c2c4318f38bfa4"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/vocabulary_batch_compatibility.py",
+      "bytes": 3579,
+      "sha256": "54ab5dd0878754c1c295650434455512b568407af2cb7f01babe60aa6da1d7f5"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/vocabulary_partition_assemble.py",
+      "bytes": 9115,
+      "sha256": "47c68604861357ee615a646bd4f02669f8d287eccaea40c70cf674b4f0dd85a8"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/vocabulary_runtime_probe.py",
+      "bytes": 14413,
+      "sha256": "bb5f1d6551c7da51328ac23f7982a12cd78932186cdf0b4a02cdf7f4ead47a3c"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/vocabulary_symbols.py",
+      "bytes": 3124,
+      "sha256": "95e4517a9c89ec3e0a066db3025ef518a1b71d5b8ae09317b40fbd35a57e95ec"
+    },
+    {
+      "path": "validation/frozen/decoder-chain-cached-runtime-source-20260908T235700578680Z/tools/vocabulary_transfer_probe.py",
+      "bytes": 6828,
+      "sha256": "02d382fee2eaec6ea4c94a096e3b9e9569eb42a85eff7e6e0a7f10f956db6faa"
     },
     {
       "path": "validation/frozen/decoder-chain-compile-20260908T224126125556Z/config.json",
@@ -4057,6 +4817,26 @@
       "sha256": "6e11eeb71b6b40ebb15e52fd67451b65ccf17daf92f6e84f9f1b97e9edffeb08"
     },
     {
+      "path": "validation/reviews/decoder-chain-cached-reference-20260908T234524449418Z-independent-reference-review.json",
+      "bytes": 21356,
+      "sha256": "44d3c6168817aa1f8736c1333f5449ae8ab7c3abb0ad1e687f5b654034c54c50"
+    },
+    {
+      "path": "validation/reviews/decoder-chain-cached-runtime-20260908T235719778700Z-acceptance.json",
+      "bytes": 2261,
+      "sha256": "ca676f2f9398179edb39743e117269a9e67636b244114a8caa7b00ae671da11f"
+    },
+    {
+      "path": "validation/reviews/decoder-chain-cached-runtime-20260908T235719778700Z-independent-core-review.json",
+      "bytes": 2116,
+      "sha256": "4bfe417f5e6c943185d1c0e5d85234a3c78ee9268c2e7af59967bfb327ef2d16"
+    },
+    {
+      "path": "validation/reviews/decoder-chain-cached-runtime-20260908T235719778700Z-independent-numeric-review.json",
+      "bytes": 10727,
+      "sha256": "777977f229cff34d67b5cc8d496f25838c87e149c57501e5c7628423eaf7c42f"
+    },
+    {
       "path": "validation/reviews/decoder-chain-compile-20260908T224822742528Z-independent-symbol-review.json",
       "bytes": 2012611,
       "sha256": "64b7d13393aec591a85ac47b0ae6503cba8ca86e1b8e742a5ee8b62af2fcf7eb"
@@ -4595,6 +5375,11 @@
       "path": "validation/reviews/s5-token-sequence-resource-review.json",
       "bytes": 890,
       "sha256": "58a9bdd7ac6ab369e96fa137d4bb536d74bea0f7f80fb64b86567485465e1629"
+    },
+    {
+      "path": "validation/reviews/s5-two-layer-cached-runtime-source-review.json",
+      "bytes": 2174,
+      "sha256": "fb508352dde0ce37d1899bd1b9b9fc136d92874114edac225c7eaf8d93fb43e9"
     },
     {
       "path": "validation/reviews/s5-two-layer-integration-source-snapshot-review.json",

@@ -27,7 +27,7 @@ Recorded SDK results belong to the original development snapshots. Publication c
 
 ## Latest accepted integration
 
-**Original-weight layer 0 → layer 1 now passes direct device activation transfer and actual SDK numerical/core checks at position 0.** All 2088 matrix blocks are original; 35 numerical checks pass. [Accepted two-layer code and evidence](docs/TWO-LAYER.md). Cached/reset behavior, the full 24-layer model and generation remain unfinished.
+**Original-weight layer 0 → layer 1 now passes position 0, cached position 1 and reset-to-position-0 in one persistent SDK instance.** All 2088 matrix blocks are original; 52 independent numerical checks pass and reset outputs repeat bit for bit. [Cached/reset source and evidence](docs/TWO-LAYER-CACHED.md). Full 24-layer inference and generation remain unfinished.
 
 ## Latest accepted component
 
@@ -35,7 +35,7 @@ Recorded SDK results belong to the original development snapshots. Publication c
 
 The **193 × 210 model layout now passes actual SDK initialization/reset/prepare** after independent static checks. Only 12 matrix blocks have original weights; no model computation was invoked. [Boot evidence and source boundaries](docs/MODEL-BOOT.md).
 
-Two static model-weight partitions now independently qualify original blocks **0–1535 of 34552**, including whole-ELF compatibility. They are not a fully assembled or executed model. [Partition evidence and tools](docs/MODEL-PARTITIONS.md).
+Four published static model-weight partitions independently qualify original blocks **0–3583 of 34552**, including whole-ELF compatibility. They are not a fully assembled or executed model. [Partition evidence and tools](docs/MODEL-PARTITIONS.md).
 
 ## New accepted milestones
 

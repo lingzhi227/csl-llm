@@ -1,0 +1,16 @@
+{
+  "runtime": "decoder-chain-cached-runtime-20260908T235719778700Z",
+  "source": "decoder-chain-cached-runtime-source-20260908T235700578680Z",
+  "runtime_manifest_sha256": "b50dcf66311de7049d6cfbf6bbd53a9245ee7719c995263ff6203ec6baf70e10",
+  "source_manifest_sha256": "2b9ff80942bc354d462e1a25e4d1ba3c52bc98a7b7d3b912f2d04be906e350c0",
+  "remote_runtime_manifest_files_verified": 17990,
+  "remote_source_manifest_files_verified": 126,
+  "remote_all_output_hashes_including_core_verified": true,
+  "local_actual_and_normal_hashes_verified": true,
+  "three_normal_ready_done_and_endpoint_layer1_bits_verified": true,
+  "first_reset_endpoint_both_layers_bits_verified": true,
+  "final_core_normal_bits_verified": true,
+  "diagnostic_arrays": 57,
+  "independent_acceptance": "decoder-chain-cached-runtime-20260908T235719778700Z-acceptance.json",
+  "scope": "Publication verification of saved accepted SDK evidence; no additional simulation. Full model acceptance remains open."
+}

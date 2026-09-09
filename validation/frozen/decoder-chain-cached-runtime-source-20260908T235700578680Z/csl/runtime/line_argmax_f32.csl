@@ -1,0 +1,77 @@
+// Finite FP32 / exact u32-index reduction along a statically routed line.
+// One IQ/OQ pair, one completion task and DSR2 by default. Intermediate
+// physical PEs forward both colors; only declared participants import this.
+// No broadcast: participant i completes with the winner of suffix i..last.
+param ordinal:u16;
+param participants:u16;
+param colors:[2]color;
+param negative:direction=WEST;
+param positive:direction=EAST;
+param queue_id:u16=7;
+param dsr_id:u16=2;
+param task_id:local_task_id;
+param on_complete:fn()void;
+const argmax=@import_module("argmax.csl");
+comptime {
+ @comptime_assert(participants>=2 and ordinal<participants);
+ @comptime_assert(colors[0]!=colors[1]);
+}
+const receive_color=colors[ordinal%2];
+const send_color=colors[(ordinal+1)%2];
+const iq=@get_input_queue(queue_id);
+const oq=@get_output_queue(queue_id);
+const d=@get_dsr(dsr_dest,dsr_id);
+const s=@get_dsr(dsr_src1,dsr_id);
+var receive_words=@zeros([4]u32);
+var send_words=@zeros([4]u32);
+var epoch:u32=0;
+var busy:bool=false;
+var phase:u16=0;
+var best:f32=0.0;
+var winner:u32=0;
+
+fn send() void {
+ phase=1;
+ send_words[0]=epoch;send_words[1]=@as(u32,ordinal);
+ send_words[2]=@bitcast(u32,best);send_words[3]=winner;
+ const memory=@get_dsd(mem1d_dsd,.{.base_address=&send_words,.extent=4});
+ const fabric=@get_dsd(fabout_dsd,.{.output_queue=oq,.extent=4});
+ @load_to_dsr(d,fabric,.{.async=true,.activate=task_id});
+ @load_to_dsr(s,memory);@mov32(d,s,.{.async=true});
+}
+
+fn start(invocation:u32,value:f32,index:u32) void {
+ @assert(!busy and invocation>0);
+ epoch=invocation;best=value;winner=index;
+ // Validate even the first/only local candidate, including its index.
+ argmax.merge(value,index,&best,&winner);
+ busy=true;phase=0;
+ if(comptime ordinal==participants-1){send();}
+ else{
+  const memory=@get_dsd(mem1d_dsd,.{.base_address=&receive_words,.extent=4});
+  const fabric=@get_dsd(fabin_dsd,.{.input_queue=iq,.extent=4,.simd_mode=.{.simd_off=true}});
+  @load_to_dsr(d,memory);@load_to_dsr(s,fabric,.{.async=true,.activate=task_id});
+  @mov32(d,s,.{.async=true});
+ }
+}
+
+task advance() void {
+ @assert(busy);
+ if(phase==0){
+  @assert(ordinal<participants-1);
+  @assert(receive_words[0]==epoch and receive_words[1]==@as(u32,ordinal)+1);
+  argmax.merge(@bitcast(f32,receive_words[2]),receive_words[3],&best,&winner);
+  if(comptime ordinal>0){send();return;}
+ }else{@assert(phase==1 and ordinal>0);}
+ // The send callback means the source buffer is released, not that every
+ // downstream participant has consumed it. The caller needs a global barrier.
+ busy=false;on_complete();
+}
+
+comptime {
+ @bind_local_task(advance,task_id);
+ @initialize_queue(iq,.{.color=receive_color});
+ @initialize_queue(oq,.{.color=send_color});
+ if(ordinal<participants-1){@set_local_color_config(receive_color,.{.routes=.{.rx=.{positive},.tx=.{RAMP}}});}
+ if(ordinal>0){@set_local_color_config(send_color,.{.routes=.{.rx=.{RAMP},.tx=.{negative}}});}
+}

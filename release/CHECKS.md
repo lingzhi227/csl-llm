@@ -67,3 +67,8 @@ Model boot publication: 1113 boot, 272 compile and 1106 audit manifest entries c
 Model partition publication: six complete frozen manifests verified on the original evidence host; review/execution/results identities and exact accepted block intervals checked locally. No SDK or compiler rerun. See `MODEL-PARTITION-CHECKS.json`.
 
 Two-layer publication: all selected execution/batch recursive manifests verified on the evidence host; complete 122-file integration source verified locally. Actual core/output hashes, 57 diagnostic arrays, ordinary readiness/progress and endpoint/layer1/final-transfer bit equality checked. Independent original-input/core reviews retained. Nine isolated support tests pass, plus the existing host suite; no new SDK run. See `TWO-LAYER-CHECKS.json`.
+
+
+## Cached two-layer publication — 2026-09-09
+
+See [cached source/evidence and validation](../docs/TWO-LAYER-CACHED.md). All 12 isolated host tests pass. Existing saved SDK outputs, complete remote manifest bindings and reset bit-repeat were checked without re-running the simulator. Model payloads and private paths are excluded.

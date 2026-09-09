@@ -1,0 +1,327 @@
+{
+  "reviewed_at": "2026-09-09T01:17:45.637818+00:00",
+  "run": "decoder-chain-cached-runtime-20260908T235719778700Z",
+  "manifest_sha256": "b50dcf66311de7049d6cfbf6bbd53a9245ee7719c995263ff6203ec6baf70e10",
+  "execution_sha256": "a5d6d6730c80eba281a9a7d648ef9044c43eb030bda535bbfdd886f7eac4d7ff",
+  "results_sha256": "038835c7140e66a3f3fcd6435957fa1676118b72b6bec320c35b731cf510e6cf",
+  "actual_sha256": "1bc1bd206a9c3c4615df31e8709227a629a2ef4034b2561e867f9fe48e154750",
+  "normal_sha256": "a108d82089bccf33438736863aba46b225f4a4f3e47e285bc922b71b3e374094",
+  "checks": [
+    {
+      "name": "SDK.final.layer0.input_norm",
+      "max_abs": 1.6633800632437357e-06,
+      "relative_l2": 9.022914155534809e-07,
+      "relative_peak": 9.076353012609119e-07
+    },
+    {
+      "name": "SDK.final.layer0.q",
+      "max_abs": 1.4578797927100595e-05,
+      "relative_l2": 1.949775390487417e-07,
+      "relative_peak": 1.8944220094230575e-07
+    },
+    {
+      "name": "SDK.final.layer0.k",
+      "max_abs": 4.805478909020167e-06,
+      "relative_l2": 3.797886975282051e-08,
+      "relative_peak": 3.7171158304310695e-08
+    },
+    {
+      "name": "SDK.final.layer0.v",
+      "max_abs": 2.2325211612717055e-07,
+      "relative_l2": 9.740528365682201e-07,
+      "relative_peak": 1.2446333780796457e-06
+    },
+    {
+      "name": "SDK.final.layer0.context",
+      "max_abs": 2.2325211612717055e-07,
+      "relative_l2": 9.740528365682201e-07,
+      "relative_peak": 1.2446333780796457e-06
+    },
+    {
+      "name": "SDK.final.layer0.o",
+      "max_abs": 1.441978533522903e-07,
+      "relative_l2": 9.5972678253174e-07,
+      "relative_peak": 1.5978199425696245e-06
+    },
+    {
+      "name": "SDK.final.layer0.attention_residual",
+      "max_abs": 1.441978533522903e-07,
+      "relative_l2": 1.3984754228657683e-06,
+      "relative_peak": 1.5859542513635342e-06
+    },
+    {
+      "name": "SDK.final.layer0.post_norm",
+      "max_abs": 8.368745392894894e-06,
+      "relative_l2": 1.1162747542226476e-06,
+      "relative_peak": 6.181154673168766e-07
+    },
+    {
+      "name": "SDK.final.layer0.up",
+      "max_abs": 3.3750815093824826e-06,
+      "relative_l2": 8.413731850676736e-07,
+      "relative_peak": 7.419936925447397e-07
+    },
+    {
+      "name": "SDK.final.layer0.gate",
+      "max_abs": 3.942884168717242e-06,
+      "relative_l2": 8.376936551546314e-07,
+      "relative_peak": 8.408133281544662e-07
+    },
+    {
+      "name": "SDK.final.layer0.activation",
+      "max_abs": 1.041838704241016e-05,
+      "relative_l2": 1.4135849585880691e-06,
+      "relative_peak": 1.8855990484020736e-06
+    },
+    {
+      "name": "SDK.final.layer0.down",
+      "max_abs": 3.5451389468477146e-06,
+      "relative_l2": 1.3053956039414776e-06,
+      "relative_peak": 1.1804770370033286e-06
+    },
+    {
+      "name": "SDK.final.layer0.output",
+      "max_abs": 3.622236066203044e-06,
+      "relative_l2": 1.302987997616502e-06,
+      "relative_peak": 1.2039388715901127e-06
+    },
+    {
+      "name": "SDK.case0.layer0.output",
+      "max_abs": 3.622236066203044e-06,
+      "relative_l2": 1.302987997616502e-06,
+      "relative_peak": 1.2039388715901127e-06
+    },
+    {
+      "name": "SDK.case1.layer0.output",
+      "max_abs": 9.942072826341075e-06,
+      "relative_l2": 4.270342143744902e-06,
+      "relative_peak": 8.095302586801189e-06
+    },
+    {
+      "name": "SDK.case2.layer0.output",
+      "max_abs": 3.622236066203044e-06,
+      "relative_l2": 1.302987997616502e-06,
+      "relative_peak": 1.2039388715901127e-06
+    },
+    {
+      "name": "SDK.final.layer0.head0.key0",
+      "max_abs": 4.805478909020167e-06,
+      "relative_l2": 3.354055285992573e-08,
+      "relative_peak": 3.7171158304310695e-08
+    },
+    {
+      "name": "SDK.final.layer0.head0.value0",
+      "max_abs": 2.2325211612717055e-07,
+      "relative_l2": 9.569490579789194e-07,
+      "relative_peak": 1.2446333780796457e-06
+    },
+    {
+      "name": "SDK.final.layer0.head0.key1",
+      "max_abs": 1.3166907677941708e-05,
+      "relative_l2": 6.281244973993993e-08,
+      "relative_peak": 1.0141719452048383e-07
+    },
+    {
+      "name": "SDK.final.layer0.head0.value1",
+      "max_abs": 1.2597274870462805e-07,
+      "relative_l2": 1.0193116605795593e-06,
+      "relative_peak": 1.0172549640563591e-06
+    },
+    {
+      "name": "SDK.final.layer0.head1.key0",
+      "max_abs": 4.7521157071628295e-06,
+      "relative_l2": 4.1402790117743154e-08,
+      "relative_peak": 3.793659255734169e-08
+    },
+    {
+      "name": "SDK.final.layer0.head1.value0",
+      "max_abs": 7.256030410546233e-08,
+      "relative_l2": 1.0333212101579164e-06,
+      "relative_peak": 7.038491659514321e-07
+    },
+    {
+      "name": "SDK.final.layer0.head1.key1",
+      "max_abs": 4.994151737491848e-06,
+      "relative_l2": 3.445002372858598e-08,
+      "relative_peak": 4.034145041714985e-08
+    },
+    {
+      "name": "SDK.final.layer0.head1.value1",
+      "max_abs": 7.50647292102613e-08,
+      "relative_l2": 9.65378622889897e-07,
+      "relative_peak": 9.830818955351925e-07
+    },
+    {
+      "name": "SDK.final.layer1.input_norm",
+      "max_abs": 8.367807851850095e-06,
+      "relative_l2": 1.0626795898271783e-06,
+      "relative_peak": 6.144251256284491e-07
+    },
+    {
+      "name": "SDK.final.layer1.q",
+      "max_abs": 8.181279900654204e-06,
+      "relative_l2": 7.640354815136994e-07,
+      "relative_peak": 5.788700859017177e-07
+    },
+    {
+      "name": "SDK.final.layer1.k",
+      "max_abs": 5.038829669956613e-06,
+      "relative_l2": 1.0453300030107985e-07,
+      "relative_peak": 3.455295464652589e-08
+    },
+    {
+      "name": "SDK.final.layer1.v",
+      "max_abs": 1.1355459832440573e-06,
+      "relative_l2": 8.87639322371345e-07,
+      "relative_peak": 5.307842455972686e-07
+    },
+    {
+      "name": "SDK.final.layer1.context",
+      "max_abs": 1.1355459832440573e-06,
+      "relative_l2": 8.876393223713452e-07,
+      "relative_peak": 5.307842455972686e-07
+    },
+    {
+      "name": "SDK.final.layer1.o",
+      "max_abs": 1.4509319501421203e-06,
+      "relative_l2": 1.009158154025499e-06,
+      "relative_peak": 9.765775223643987e-07
+    },
+    {
+      "name": "SDK.final.layer1.attention_residual",
+      "max_abs": 4.43706178376857e-06,
+      "relative_l2": 1.269275188745353e-06,
+      "relative_peak": 1.3110967761062933e-06
+    },
+    {
+      "name": "SDK.final.layer1.post_norm",
+      "max_abs": 4.802098409140143e-06,
+      "relative_l2": 1.0842634510285412e-06,
+      "relative_peak": 3.470485037776262e-07
+    },
+    {
+      "name": "SDK.final.layer1.up",
+      "max_abs": 2.8758151973118373e-06,
+      "relative_l2": 9.77983029047592e-07,
+      "relative_peak": 4.974244548923897e-07
+    },
+    {
+      "name": "SDK.final.layer1.gate",
+      "max_abs": 6.437912839274418e-06,
+      "relative_l2": 1.0613524786094522e-06,
+      "relative_peak": 6.478558174111483e-07
+    },
+    {
+      "name": "SDK.final.layer1.activation",
+      "max_abs": 1.499385465830727e-05,
+      "relative_l2": 1.6540091429791278e-06,
+      "relative_peak": 1.430898906944404e-06
+    },
+    {
+      "name": "SDK.final.layer1.down",
+      "max_abs": 3.863985257979152e-06,
+      "relative_l2": 1.525585455183518e-06,
+      "relative_peak": 1.1093330921753617e-06
+    },
+    {
+      "name": "SDK.final.layer1.output",
+      "max_abs": 4.2186466804317035e-06,
+      "relative_l2": 1.4060246943266915e-06,
+      "relative_peak": 6.22508956397916e-07
+    },
+    {
+      "name": "SDK.case0.layer1.output",
+      "max_abs": 4.2186466804317035e-06,
+      "relative_l2": 1.4060246943266915e-06,
+      "relative_peak": 6.22508956397916e-07
+    },
+    {
+      "name": "SDK.case0.endpoint",
+      "max_abs": 4.2186466804317035e-06,
+      "relative_l2": 1.4060246943266915e-06,
+      "relative_peak": 6.22508956397916e-07
+    },
+    {
+      "name": "SDK.case1.layer1.output",
+      "max_abs": 7.161898213148277e-06,
+      "relative_l2": 3.091665641996806e-06,
+      "relative_peak": 1.465315624662955e-06
+    },
+    {
+      "name": "SDK.case1.endpoint",
+      "max_abs": 7.161898213148277e-06,
+      "relative_l2": 3.091665641996806e-06,
+      "relative_peak": 1.465315624662955e-06
+    },
+    {
+      "name": "SDK.case2.layer1.output",
+      "max_abs": 4.2186466804317035e-06,
+      "relative_l2": 1.4060246943266915e-06,
+      "relative_peak": 6.22508956397916e-07
+    },
+    {
+      "name": "SDK.case2.endpoint",
+      "max_abs": 4.2186466804317035e-06,
+      "relative_l2": 1.4060246943266915e-06,
+      "relative_peak": 6.22508956397916e-07
+    },
+    {
+      "name": "SDK.final.layer1.head0.key0",
+      "max_abs": 4.705683181338571e-06,
+      "relative_l2": 6.064269428921262e-07,
+      "relative_peak": 2.882607544621715e-07
+    },
+    {
+      "name": "SDK.final.layer1.head0.value0",
+      "max_abs": 7.740496297814481e-07,
+      "relative_l2": 1.6499164892957672e-06,
+      "relative_peak": 1.651813341647285e-06
+    },
+    {
+      "name": "SDK.final.layer1.head0.key1",
+      "max_abs": 1.2514752806058738e-05,
+      "relative_l2": 2.0593135799985703e-06,
+      "relative_peak": 7.970153998445204e-07
+    },
+    {
+      "name": "SDK.final.layer1.head0.value1",
+      "max_abs": 1.238070651887746e-06,
+      "relative_l2": 1.7956336727204428e-06,
+      "relative_peak": 1.4346139542944352e-06
+    },
+    {
+      "name": "SDK.final.layer1.head1.key0",
+      "max_abs": 5.038829669956613e-06,
+      "relative_l2": 7.491493392511288e-08,
+      "relative_peak": 3.455295464652589e-08
+    },
+    {
+      "name": "SDK.final.layer1.head1.value0",
+      "max_abs": 1.1355459832440573e-06,
+      "relative_l2": 7.467502344491117e-07,
+      "relative_peak": 5.307842455972686e-07
+    },
+    {
+      "name": "SDK.final.layer1.head1.key1",
+      "max_abs": 1.9008182339019797e-05,
+      "relative_l2": 2.621080978566524e-07,
+      "relative_peak": 1.3204376143868667e-07
+    },
+    {
+      "name": "SDK.final.layer1.head1.value1",
+      "max_abs": 8.879156512403563e-06,
+      "relative_l2": 4.867778062330396e-06,
+      "relative_peak": 3.1229911746894196e-06
+    },
+    {
+      "name": "SDK.final.endpoint",
+      "max_abs": 4.2186466804317035e-06,
+      "relative_l2": 1.4060246943266915e-06,
+      "relative_peak": 6.22508956397916e-07
+    }
+  ],
+  "passed": true,
+  "method": "Independent raw BF16 float64 full-prefix L0 then L1; scalar causal GQA, half-split nonzero RoPE, original input in both layers. No developer equation imports.",
+  "scope": "All three normal endpoint and controller outputs; final reset 26 stages and original slot0 plus retained cached slot1, other slots bit-zero. Intermediate detailed stages are not observed. Full24layer and capacity remain pending.",
+  "review_script_sha256": "1233cca0be425f993e74c5ef1d69d00faf11cd3f07697036452b6f771ccf0740"
+}

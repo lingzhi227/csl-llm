@@ -1,0 +1,46 @@
+{
+  "reviewed_at": "2026-09-09T01:17:51.273598+00:00",
+  "run": "decoder-chain-cached-runtime-20260908T235719778700Z",
+  "manifest_sha256": "b50dcf66311de7049d6cfbf6bbd53a9245ee7719c995263ff6203ec6baf70e10",
+  "execution_sha256": "a5d6d6730c80eba281a9a7d648ef9044c43eb030bda535bbfdd886f7eac4d7ff",
+  "results_sha256": "038835c7140e66a3f3fcd6435957fa1676118b72b6bec320c35b731cf510e6cf",
+  "counts": {
+    "matrix": 2088,
+    "controller": 2,
+    "bias": 18
+  },
+  "actual_core_sha256": "afd457989553a524975be4c7c339ad6058cdbe40bd2c394940900761b30f49c2",
+  "actual_npz_sha256": "1bc1bd206a9c3c4615df31e8709227a629a2ef4034b2561e867f9fe48e154750",
+  "cycles": [
+    {
+      "endpoint_timing": 743855,
+      "layer_0_timing": 374983,
+      "layer_1_timing": 743759
+    },
+    {
+      "endpoint_timing": 746665,
+      "layer_0_timing": 376387,
+      "layer_1_timing": 746569
+    },
+    {
+      "endpoint_timing": 743855,
+      "layer_0_timing": 374983,
+      "layer_1_timing": 743759
+    }
+  ],
+  "normal_cases_verified": 3,
+  "diagnostic_arrays_verified": 57,
+  "protocol_coordinates_verified": 205,
+  "identity_coordinates_verified": 2579,
+  "coordinates": 2580,
+  "elf_count": 2226,
+  "selected_original_matrices": 2088,
+  "all_initializers_exact": true,
+  "all_manifest_and_report_hashes_verified": true,
+  "all_tracked_pids_absent": true,
+  "elapsed_seconds": 2660.6811814380344,
+  "peak_rss_kib": 1661068,
+  "method": "Independent manual ELF64 symbols and closed-form physical roles; actual ET_CORE read via SDK ELFObject without StoppedCore or validator imports. Exact core/diagnostic/normal data and original initializer comparisons.",
+  "scope": "Actual stopped-core complete immutableoriginal2088weights/norms/biases, all diagnostic arrays/identities/protocols and normalD2H provenance. Independent original-input numerical acceptance remains separate. Final reset position-zero core after three normal calls; epoch3 and logical reset visibility. Numerical cached slot1 validation is separate; no full-model claim.",
+  "review_script_sha256": "dff18e617c29a52618d43194772fc930f0d347e83f4d39310598a804695cad69"
+}

@@ -1,0 +1,130 @@
+// Candidate full151936-vocabulary tied storage. SDK qualification pending.
+// Every group owns128 rows across eight112-column matrix tiles.
+param memcpy_params;
+param matrix:bool;param controller:bool;
+param shard:u16=0;
+param controller_x:u16;param controller_y:u16;
+param weight_file="<empty>";
+param static_weights:bool=true;
+const sys=@import_module("<memcpy/memcpy>",memcpy_params);
+const clock=@import_module("<time>");
+const initial=@import_module(weight_file);
+const kernel=@import_module(if(matrix) "kernel.csl" else "<empty>",if(matrix) .{.rows=128,.columns=112} else .{});
+const embedding=@import_module(if(matrix) "embedding.csl" else "<empty>");
+const argmax=@import_module("argmax.csl");
+const line=@import_module(if(matrix) "line.csl" else "<empty>",if(matrix) .{.ordinal=shard,.participants=8,.length=128,.colors=[3]color{@get_color(0),@get_color(1),@get_color(2)},.task_id=@get_local_task_id(10),.on_complete=reduced} else .{});
+const input_task=@get_local_task_id(11);
+const receiver=@import_module(if(matrix) "input.csl" else "<empty>",if(matrix) .{.length=112,.input_color=@get_color(3),.completion_task=input_task} else .{});
+const packets=@import_module("packets.csl",.{.sent_task_id=@get_local_task_id(12),.received_task_id=@get_local_task_id(13),.on_sent=sent,.on_received=received});
+var weights=if(matrix and static_weights) initial.values else @zeros([if(matrix) 7168 else 1]u32);
+var input=@zeros([if(controller) 896 else if(matrix) 112 else 1]f32);
+var partial=@zeros([if(matrix) 128 else 1]f32);
+var result=@zeros([if(matrix) 128 else 1]f32);
+var lookup=@zeros([if(controller) 896 else if(matrix) 112 else 1]f32);
+var best=@zeros([1]f32);var winner=@zeros([1]u32);
+// mode0=lookup,mode1=LM head. Host/control inputs are metadata only.
+var control=@zeros([2]u32);var progress=@zeros([1]u32);
+// Numerical row identity is data, not a distinct compiler specialization.
+// The shard stays compile-time because it determines regional routing.
+var identity=@zeros([1]u32);
+var seen=@zeros([if(controller) 1187 else 1]u16);
+var epoch:u32=0;var completed:u16=0;var offset:u16=0;var count:u16=0;
+var sending_done:bool=false;var tx=@zeros([31]u32);
+var command_waiting:bool=false;
+var timing=@zeros([6]u16);var started=@zeros([3]u16);var ended=@zeros([3]u16);
+const outq=@get_output_queue(4);
+const dest=@get_dsr(dsr_dest,5);const source=@get_dsr(dsr_src1,5);
+
+fn initialize() void {packets.init();sys.unblock_cmd_stream();}
+fn prepare() void {
+ @assert(!packets.sending and !packets.receiving);
+ @assert(control[0]<=1 and control[1]<151936);
+ if(comptime matrix){@assert(identity[0]<1187);}
+ epoch+=1;completed=0;offset=0;sending_done=false;command_waiting=false;
+ if(comptime controller){for(@range(u16,1187))|i|{seen[i]=0;}}
+ progress[0]=epoch*2-1;sys.unblock_cmd_stream();
+}
+fn finish() void {
+ @assert(command_waiting);command_waiting=false;
+ clock.get_timestamp(&ended);clock.disable_tsc();
+ for(@range(u16,3))|i|{timing[i]=started[i];timing[i+3]=ended[i];}
+ progress[0]=epoch*2;sys.unblock_cmd_stream();
+}
+fn compute() void {
+ command_waiting=true;
+ clock.enable_tsc();clock.get_timestamp(&started);
+ if(control[0]==0){
+  if(comptime matrix){
+   if(control[1]/128==identity[0]){
+    embedding.lookup(@ptrcast([*]u16,&weights),@as(u16,control[1]%128),&lookup);transmit_lookup();
+   }else{finish();}
+  }else if(comptime controller){join_lookup();}else{finish();}
+ }else{
+  if(comptime controller){
+   const mem=@get_dsd(mem1d_dsd,.{.base_address=&input,.extent=896});
+   const out=@get_dsd(fabout_dsd,.{.output_queue=outq,.extent=896});
+   @load_to_dsr(dest,out,.{.async=true,.activate=input_task});@load_to_dsr(source,mem);@mov32(dest,source,.{.async=true});
+  }else if(comptime matrix){receiver.arm(&input);}else{finish();}
+ }
+}
+task input_complete() void {
+ if(comptime matrix){kernel.compute(@ptrcast([*]u16,&weights),&input,&partial);line.start(&partial,&result);}
+ else if(comptime controller){sending_done=true;join_head();}
+}
+fn reduced() void {
+ if(comptime matrix){
+  if(comptime shard==0){
+   argmax.select(&result,128,identity[0]*128,&best[0],&winner[0]);
+   tx[0]=epoch;tx[1]=identity[0];tx[2]=winner[0];tx[3]=@bitcast(u32,best[0]);
+   packets.send(controller_x,controller_y,&tx,4);
+  }else{finish();}
+ }
+}
+fn transmit_lookup() void {
+ if(comptime matrix){
+  @assert(offset<112);count=if(112-offset<28) 112-offset else 28;
+  tx[0]=epoch;tx[1]=@as(u32,shard);tx[2]=@as(u32,offset);
+  packets.copy_words(@ptrcast([*]u32,&lookup[offset]),@ptrcast([*]u32,&tx[3]),count);
+  packets.send(controller_x,controller_y,&tx,count+3);
+ }
+}
+fn sent() void {
+ if(control[0]==0){offset+=count;if(offset<112){transmit_lookup();}else{finish();}}
+ else{finish();}
+}
+fn join_head() void {if(comptime controller){if(command_waiting and completed==1187 and sending_done){finish();}}}
+fn join_lookup() void {if(comptime controller){if(command_waiting and completed==8){finish();}}}
+fn received(data:[*]u32,length:u16) void {
+ if(comptime controller){
+  @assert(length>=4 and data[0]==epoch);
+  if(control[0]==0){
+   @assert(data[1]<8);const part=@as(u16,data[1]);const begin=@as(u16,data[2]);
+   @assert(data[2]<112 and begin==seen[part] and begin+length-3<=112);
+   packets.copy_words(@ptrcast([*]u32,&data[3]),@ptrcast([*]u32,&lookup[part*112+begin]),length-3);
+   seen[part]+=length-3;if(seen[part]==112){completed+=1;}
+   join_lookup();
+  }else{
+   @assert(length==4 and data[1]<1187);const part=@as(u16,data[1]);
+   @assert(seen[part]==0 and data[2]>=data[1]*128 and data[2]<(data[1]+1)*128);
+   if(completed==0){best[0]=@bitcast(f32,data[3]);winner[0]=data[2];}
+   // merge also checks finiteness for the first candidate.
+   argmax.merge(@bitcast(f32,data[3]),data[2],&best[0],&winner[0]);
+   seen[part]=1;completed+=1;join_head();
+  }
+ }else{@assert(false);}
+}
+const ip:[*]f32=&input;const rp:[*]f32=&result;const lp:[*]f32=&lookup;
+const bp:[*]f32=&best;const wp:[*]u32=&winner;const cp:[*]u32=&control;
+const pp:[*]u32=&progress;const tp:[*]u16=&timing;
+const weight_ptr:[*]u32=&weights;
+const identity_ptr:[*]u32=&identity;
+comptime{
+ if(controller){@initialize_queue(outq,.{.color=@get_color(3)});}
+ @bind_local_task(input_complete,input_task);
+ @export_symbol(ip,"input");@export_symbol(rp,"result");@export_symbol(lp,"lookup");
+ @export_symbol(bp,"best");@export_symbol(wp,"winner");@export_symbol(cp,"control");
+ @export_symbol(pp,"progress");@export_symbol(tp,"timing");
+ @export_symbol(weight_ptr,"weights");
+ @export_symbol(identity_ptr,"identity");
+ @export_symbol(initialize);@export_symbol(prepare);@export_symbol(compute);
+}

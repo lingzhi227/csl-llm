@@ -1,0 +1,38 @@
+// Sparse static-reduction protocol probe; not vocabulary computation.
+param memcpy_params;
+param participant:bool;
+param ordinal:u16=0;
+const sys=@import_module("<memcpy/memcpy>",memcpy_params);
+const clock=@import_module("<time>");
+const reduction=@import_module(if(participant) "line_argmax.csl" else "<empty>",
+ if(participant) .{.ordinal=ordinal,.participants=4,.colors=[2]color{@get_color(5),@get_color(6)},
+ .task_id=@get_local_task_id(15),.on_complete=finish} else .{});
+var data=@zeros([2]u32);
+var control=@zeros([1]u32);
+var status=@zeros([4]u32);
+var timing=@zeros([6]u16);
+var start_time=@zeros([3]u16);
+var end_time=@zeros([3]u16);
+fn initialize() void {sys.unblock_cmd_stream();}
+fn prepare() void {
+ if(comptime participant){@assert(!reduction.busy);}
+ for(@range(u16,4))|i|{status[i]=0;}
+ sys.unblock_cmd_stream();
+}
+fn compute() void {
+ clock.enable_tsc();clock.get_timestamp(&start_time);
+ if(comptime participant){reduction.start(control[0],@bitcast(f32,data[0]),data[1]);}
+ else{finish();}
+}
+fn finish() void {
+ if(comptime participant){status[2]=@bitcast(u32,reduction.best);status[3]=reduction.winner;}
+ clock.get_timestamp(&end_time);clock.disable_tsc();
+ for(@range(u16,3))|i|{timing[i]=start_time[i];timing[i+3]=end_time[i];}
+ status[0]=control[0];status[1]=1;
+ sys.unblock_cmd_stream();
+}
+const dp:[*]u32=&data;const cp:[*]u32=&control;const sp:[*]u32=&status;const tp:[*]u16=&timing;
+comptime {
+ @export_symbol(dp,"data");@export_symbol(cp,"control");@export_symbol(sp,"status");@export_symbol(tp,"timing");
+ @export_symbol(initialize);@export_symbol(prepare);@export_symbol(compute);
+}
