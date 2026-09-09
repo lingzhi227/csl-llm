@@ -1,0 +1,65 @@
+{
+  "original_file_sha256": "ec38e68b6b76226f82c170db65371853dddf888818bcdc5ac0a3547b2a1f8723",
+  "original_bytes": 2043,
+  "publication_note": "Derived metadata; private paths replaced. Binary/tensor payloads omitted. Original SHA-256 identifies the retained private record, not this summary.",
+  "record": {
+    "success": false,
+    "sdk_sha256": "fff17e81c61dcb6012bdee2941a6fdc570f5c8604967530e7b7108651258193d",
+    "manifest_sha256": "4c003e21e2bb79e3352978862beb3bcbb4d689d7bc6949ff9c906ff6b724d83b",
+    "command": [
+      "<SDK_ROOT>/cs_python",
+      "<DEVELOPMENT_ROOT>/evidence/sdk-core-export-active-communication-20260909T184530225211Z/driver.py",
+      "--worker",
+      "<DEVELOPMENT_ROOT>/evidence/sdk-core-export-active-communication-20260909T184530225211Z"
+    ],
+    "timeout_seconds": 30,
+    "rss_limit_kib": 2097152,
+    "rss_kind": "Sum of process-tree resident pages, may double-count shared mappings",
+    "peak_rss_kib": 122856,
+    "error": "Traceback (most recent call last):\n  File \"<DEVELOPMENT_ROOT>/evidence/sdk-core-export-active-communication-20260909T184530225211Z/sdk_probe.py\", line 104, in execute\n    if time.monotonic()-start>timeout or rss>rss_limit_kib:raise TimeoutError('Probe resource/time budget reached')\n                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nTimeoutError: Probe resource/time budget reached\n",
+    "observed_process_identities": {
+      "1303045": "134240032",
+      "1303069": "134240037",
+      "1303090": "134240042"
+    },
+    "cleanup_signals": [
+      {
+        "pid": 1303090,
+        "starttime": "134240042",
+        "signal": 15
+      },
+      {
+        "pid": 1303069,
+        "starttime": "134240037",
+        "signal": 15
+      },
+      {
+        "pid": 1303045,
+        "starttime": "134240032",
+        "signal": 15
+      },
+      {
+        "pid": 1303090,
+        "starttime": "134240042",
+        "signal": 9
+      },
+      {
+        "pid": 1303069,
+        "starttime": "134240037",
+        "signal": 9
+      },
+      {
+        "pid": 1303045,
+        "starttime": "134240032",
+        "signal": 9
+      }
+    ],
+    "after_cleanup_identities": {
+      "1303045": null,
+      "1303069": null,
+      "1303090": null
+    },
+    "elapsed_seconds": 34.57352542504668,
+    "samples_sha256": "06c8b8d2c5b71d6a5f6a94166c3b894d6a6bedad29ac9a5454e6cc1dbf856433"
+  }
+}

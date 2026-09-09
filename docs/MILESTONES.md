@@ -17,3 +17,7 @@ Original manifests, results, frozen CSL/driver inputs and selected independent r
 The old sum-only regional collective is retained. The accepted real-trace and capacity attention snapshots use separately named collective/KV modules, so later protocol changes do not silently replace the earlier qualified code.
 
 S3 has component milestones but is not closed. Other native projections and complete decoder layers, 24-layer/full-vocabulary generation and full-model 2048/256 acceptance remain pending. Physical hardware validation remains separate.
+
+## Explicit diagnostic exports during unfinished two-PE work
+
+See [accepted cases, failure history and reproduction boundaries](SDK-CORE-EXPORT.md). Four explicit-export snapshots were independently checked; active executions retain failure status. Publication verifies source/receipt identities without rerunning SDK experiments. No core, tensor, ELF or SDK payload is included.

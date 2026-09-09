@@ -1,0 +1,87 @@
+{
+  "reviewed_at": "2026-09-09T18:08:31.843327+00:00",
+  "run": "sdk-stop-compile-20260909T180325524415Z",
+  "passed": true,
+  "compile_execution_sha256": "c6c404c9d8042a8f6b309c0c82ba5e62d22a36262230f079b654d56716506ee0",
+  "images": [
+    {
+      "role": 0,
+      "elf_sha256": "5a13045a597aec5f3e60a7e09a36814bfa9d55e668bfa39fc2de374ffa57720d",
+      "disassembly_sha256": "f55353d758665ae7a5dd0c03b1de7ff0504cc18a92564c799679f2e3a9d2d3d7",
+      "loop_region": [
+        "0570 d238816c                 \tld16rp d2 = [2458]",
+        "0574 c438816c                 \tld16rp d4 = [2456]",
+        "0578 a0406c66                 \tlteu32.and cflag0 = d4, d2",
+        "057c d05b800d                 \tcflag0 ? jmp 762",
+        "0580 42284465                 \tadd32.nf d2 = d2, 1",
+        "0584 ad30816a                 \tst32 [2458] = d2",
+        "0588 3239816c                 \tld16rp d2 = [2470]",
+        "058c 453bb065                 \tsll16.nf r5 = r3, 13",
+        "0590 c828a065                 \tslr16.nf r8 = r2, 3",
+        "0594 05520865                 \tor16 r5 = r5, r8",
+        "0598 442bb065                 \tsll16.nf r4 = r2, 13",
+        "059c 82401465                 \txor32 d2 = d4, d2",
+        "05a0 4a38a065                 \tslr16.nf r10 = r3, 1",
+        "05a4 84a01465                 \txor32 d4 = d10, d2",
+        "05a8 4839b065                 \tsll16.nf r8 = r3, 5",
+        "05ac c94aa065                 \tslr16.nf r9 = r4, 11",
+        "05b0 43820865                 \tor16 r3 = r8, r9",
+        "05b4 4249b065                 \tsll16.nf r2 = r4, 5",
+        "05b8 02211465                 \txor32 d2 = d2, d4",
+        "05bc a334816a                 \tst32 [2470] = d2",
+        "05c0 d238816c                 \tld16rp d2 = [2458]",
+        "05c4 a134816a                 \tst32 [2466] = d2",
+        "05c8 c438816c                 \tld16rp d4 = [2456]",
+        "05cc d238816c                 \tld16rp d2 = [2458]",
+        "05d0 20216466                 \tltu32.and cflag0 = d2, d4",
+        "05d4 005a800d                 \tcflag0 ? jmp 704"
+      ],
+      "ordered_stores": [
+        "issued",
+        "value",
+        "committed"
+      ],
+      "backedge_byte_target": 1408
+    },
+    {
+      "role": 1,
+      "elf_sha256": "079a2da0f3e8b1b40c8b724758befcaaacc52d57c7ba980d8cfba1d44a1e7d25",
+      "disassembly_sha256": "9518f831efbe9abdd93aaf093f6c4fdfffa473160aceb28a4f8a4e27134637f2",
+      "loop_region": [
+        "03a0 8229816c                 \tld16rp d2 = [2352]",
+        "03a4 7429816c                 \tld16rp d4 = [2350]",
+        "03a8 a0406c66                 \tlteu32.and cflag0 = d4, d2",
+        "03ac 9048800d                 \tcflag0 ? jmp 530",
+        "03b0 42284465                 \tadd32.nf d2 = d2, 1",
+        "03b4 a824816a                 \tst32 [2352] = d2",
+        "03b8 e229816c                 \tld16rp d2 = [2364]",
+        "03bc 453bb065                 \tsll16.nf r5 = r3, 13",
+        "03c0 c828a065                 \tslr16.nf r8 = r2, 3",
+        "03c4 05520865                 \tor16 r5 = r5, r8",
+        "03c8 442bb065                 \tsll16.nf r4 = r2, 13",
+        "03cc 82401465                 \txor32 d2 = d4, d2",
+        "03d0 4a38a065                 \tslr16.nf r10 = r3, 1",
+        "03d4 84a01465                 \txor32 d4 = d10, d2",
+        "03d8 4839b065                 \tsll16.nf r8 = r3, 5",
+        "03dc c94aa065                 \tslr16.nf r9 = r4, 11",
+        "03e0 43820865                 \tor16 r3 = r8, r9",
+        "03e4 4249b065                 \tsll16.nf r2 = r4, 5",
+        "03e8 02211465                 \txor32 d2 = d2, d4",
+        "03ec ae24816a                 \tst32 [2364] = d2",
+        "03f0 8229816c                 \tld16rp d2 = [2352]",
+        "03f4 ac24816a                 \tst32 [2360] = d2",
+        "03f8 7429816c                 \tld16rp d4 = [2350]",
+        "03fc 8229816c                 \tld16rp d2 = [2352]",
+        "0400 20216466                 \tltu32.and cflag0 = d2, d4",
+        "0404 c03a800d                 \tcflag0 ? jmp 472"
+      ],
+      "ordered_stores": [
+        "issued",
+        "value",
+        "committed"
+      ],
+      "backedge_byte_target": 944
+    }
+  ],
+  "scope": "Actual two-PE compiled xorshift loop retention and ordered SRAM state stores. Normal and active SDK verification still required; no restore/full-model acceptance."
+}

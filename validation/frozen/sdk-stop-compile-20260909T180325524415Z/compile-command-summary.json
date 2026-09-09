@@ -1,0 +1,16 @@
+{
+  "original_file_sha256": "4cc78d32df01627dbe34b7b2a696dcbb7a5e4b434ad0818296b1a3aaae27eddc",
+  "original_bytes": 147,
+  "publication_note": "Derived metadata; private paths replaced. Binary/tensor payloads omitted. Original SHA-256 identifies the retained private record, not this summary.",
+  "record": [
+    "cslc",
+    "layout.csl",
+    "--arch=wse3",
+    "--fabric-dims=9,3",
+    "--fabric-offsets=4,1",
+    "-o=out",
+    "--memcpy",
+    "--channels=1",
+    "--dump-dsr-alloc-graph"
+  ]
+}

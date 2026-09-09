@@ -88,3 +88,7 @@ Use the [resident MLP workflow](RESIDENT-MLP.md) to prepare fixtures, generate l
 Use the [accepted decoder workflow](DECODER.md). The frozen layer0 driver is separate from the unexecuted parameterized layer interface. Generated bias/norm/weight source is model payload and must remain local.
 
 For the complete vocabulary component, assembly helpers and separate offline readers, see [source map and prerequisites](FULL-VOCABULARY.md#source-organization-and-reproduction-prerequisites). The public snapshots omit required local checkpoint/SDK artifacts and are not standalone executable fixtures.
+
+## Two-PE explicit core diagnostics
+
+See [accepted cases, failure history and reproduction boundaries](SDK-CORE-EXPORT.md). Four explicit-export snapshots were independently checked; active executions retain failure status. Publication verifies source/receipt identities without rerunning SDK experiments. No core, tensor, ELF or SDK payload is included.

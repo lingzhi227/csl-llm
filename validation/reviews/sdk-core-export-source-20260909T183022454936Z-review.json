@@ -1,0 +1,19 @@
+{
+  "reviewed_at": "2026-09-09T18:32:32.521445+00:00",
+  "source": "sdk-core-export-source-20260909T183022454936Z",
+  "manifest_sha256": "efb4fe141fb4072ddeede4526a4bea091fc597cee2caea052cced51b9587f707",
+  "source_review_passed": true,
+  "driver_sha256": "0e45754f0e565e973ff9d1ca3fdcf046a7c3576dc9c4a150f334b636cb7a362c",
+  "checks": [
+    "Onlyhostdriver/provenance differ from accepted180325; all6CSL/helpers and compiled files exact",
+    "Sameowner publicdump_elf_core explicit.core distinct from automaticout.core; actual fileheader/size/hash receipt beforestop",
+    "Worker doesnot numericallyinspect activecore; offline inspector requires executionreceipt and actualhostPIDnamespace/process exit",
+    "Offline validates immutableinputs/compilefiles/actualexporthashunchanged and exactnormalD2H or legalperPEstate",
+    "Executionfailure and snapshotarrays acceptance reported separately; no globalatomic snapshot or restoration claim"
+  ],
+  "limitations": [
+    "Actualnormal explicitdump andpostmortem stillpending",
+    "Active30s mayfailstop; savedfilemust independentlyqualify afteractualexit",
+    "Inheritedsource provenance declared_cases contains historicalguard; executableCASES explicitlyhasno guard/compile and admission follows actualconfig"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "original_file_sha256": "2ac9d502a0cf3f528c3f41be4517dbd8fab50892a3a95f2cd44884b9ca6cfb6b",
+  "original_bytes": 2672,
+  "publication_note": "Derived metadata; private paths replaced. Binary/tensor payloads omitted. Original SHA-256 identifies the retained private record, not this summary.",
+  "record": {
+    "scope": "New small stop qualification; no current or historical runtime modified. No restore qualification.",
+    "borrowed": {
+      "sdk_probe.py": {
+        "path": "<DEVELOPMENT_ROOT>/staging/model-generation-integration-source-20260909T023236345664Z/tools/sdk_probe.py",
+        "sha256": "9ccab37dc8b6ecfb0d23d56bf0826da7b87ce5d3c22d0a4ba94cb4aea6501e1c"
+      },
+      "sdk_core.py": {
+        "path": "<DEVELOPMENT_ROOT>/staging/model-generation-integration-source-20260909T023236345664Z/tools/sdk_core.py",
+        "sha256": "10ba97cebcccf4749e5ee0c22be5518f800e3820429f7d2ae1425b7f66b9e88d"
+      },
+      "sdk_lifecycle.py": {
+        "path": "<DEVELOPMENT_ROOT>/staging/model-generation-integration-source-20260909T023236345664Z/tools/sdk_lifecycle.py",
+        "sha256": "b9d469ff88a21d9468684d46acbd377df590e63a7e7ba4e2723c910ecfb39949"
+      }
+    },
+    "packet_adapter": {
+      "path": "<DEVELOPMENT_ROOT>/csl/runtime/packets.csl",
+      "sha256": "e24ddf97eccd0af29b6216ce92760ad97f13a8bce23425fce24d7fd4675dae6c",
+      "modification": "Qualification copy adds observed u32 sending/receiving operation flags; production adapter unchanged."
+    },
+    "references": [
+      "tools/simulator_cost_probe.py",
+      "tools/packet_probe.py"
+    ],
+    "declared_cases": [
+      "normal-compute",
+      "normal-communication",
+      "active-compute",
+      "active-communication",
+      "guard"
+    ],
+    "guard_scope": "Expected timeout only verifies outer enforcement and cleanup; absent core never establishes successful state saving.",
+    "revision": {
+      "supersedes": "sdk-stop-source-20260909T173442785047Z",
+      "cause": "Actual active174634 core has both PEs done. Actual compiler disassembly role0 0x570..0x5b0 copies limit directly to issued/committed and computes 3*limit+7, with no loop backedge. SDK elf2lst could not locate objdump; inspection uses shipped LLVM Cerebras disassembler C API, target cs_sdr.",
+      "compute": "Masked xorshift32 13/17/5 from seed7; empty volatile assembly memory clobbers between issued/value/committed stores. All shifts mask away lost bits before shifting. Counts <=1e9 do not overflow. GF(2) 32x32 matrix exponentiation independently validates the stopped step count.",
+      "intermediate_states": "After n committed iterations: (issued=n, committed=n, value=f^n(7)); after next issued store: (n+1,n,f^n(7)); after next value store: (n+1,n,f^(n+1)(7)); after next committed store: (n+1,n+1,f^(n+1)(7)). Need actual compilation and disassembly to qualify ordered stores and retained loop.",
+      "diagnostic_scope": "The memory barriers instrument the test only. No production model mutation or restoration claim."
+    }
+  }
+}

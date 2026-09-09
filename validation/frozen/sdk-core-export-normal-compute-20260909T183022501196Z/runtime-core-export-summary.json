@@ -1,0 +1,64 @@
+{
+  "original_file_sha256": "1bf2a0141f3205bc384b75bf086465207103d1fc0dfeb0d8418d670e8eb6f460",
+  "original_bytes": 1426,
+  "publication_note": "Derived metadata; private paths replaced. Binary/tensor payloads omitted. Original SHA-256 identifies the retained private record, not this summary.",
+  "record": {
+    "api": "SdkRuntime.dump_elf_core",
+    "returned": true,
+    "file": "explicit.core",
+    "elf_header_hex": "7f454c460201010000000000000000000400",
+    "bytes": 1449042,
+    "sha256": "dd827ccda3e84e92e6575265937ece76c82fbc8482992a62dec4ae21307359bb",
+    "events": [
+      {
+        "stage": "load",
+        "elapsed_seconds": 0.0372352518606931
+      },
+      {
+        "stage": "run",
+        "elapsed_seconds": 0.03757867985405028
+      },
+      {
+        "stage": "initialize",
+        "elapsed_seconds": 0.06288822088390589
+      },
+      {
+        "stage": "launch-work",
+        "elapsed_seconds": 0.26025981386192143
+      },
+      {
+        "stage": "owner-control-returned",
+        "elapsed_seconds": 0.2605412539560348
+      },
+      {
+        "stage": "read-control",
+        "elapsed_seconds": 0.2689389828592539
+      },
+      {
+        "stage": "read-status",
+        "elapsed_seconds": 0.32536060200072825
+      },
+      {
+        "stage": "read-value",
+        "elapsed_seconds": 0.3844859579112381
+      },
+      {
+        "stage": "read-wire",
+        "elapsed_seconds": 0.4221408418379724
+      },
+      {
+        "stage": "read-last_payload",
+        "elapsed_seconds": 0.46341666602529585
+      },
+      {
+        "stage": "explicit-core-export",
+        "elapsed_seconds": 0.5913185130339116
+      },
+      {
+        "stage": "explicit-core-export-returned",
+        "elapsed_seconds": 0.6006484099198133
+      }
+    ],
+    "scope": "Export receipt only; inspect exact file after simulator processes exit."
+  }
+}

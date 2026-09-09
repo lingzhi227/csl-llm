@@ -1,0 +1,79 @@
+param memcpy_params;
+param role:u16;
+const sys=@import_module("<memcpy/memcpy>",memcpy_params);
+var control=@zeros([2]u32);
+// mode, limit, issued/acknowledged, done, started, pending, committed, errors
+var status=@zeros([8]u32);
+var value=@zeros([1]u32);
+var wire=@zeros([2]u32);
+var last_payload=@zeros([31]u32);
+var tx=@zeros([31]u32);
+var acked:bool=false;
+const packets=@import_module("packets.csl",.{.observed=&wire,
+ .sent_task_id=@get_local_task_id(12),.received_task_id=@get_local_task_id(13),
+ .on_sent=sent,.on_received=received});
+fn initialize() void {packets.init();sys.unblock_cmd_stream();}
+fn setup() void {
+ for(@range(u16,8))|i|{status[i]=0;}
+ status[0]=control[0];status[1]=control[1];value[0]=7;
+ sys.unblock_cmd_stream();
+}
+fn payload(seq:u32,i:u16) u32 {return seq^(@as(u32,i)*0x01010101)^0x5a5a5a5a;}
+fn finish() void {status[3]=1;status[5]=0;if(status[4]==1){sys.unblock_cmd_stream();}}
+fn transmit() void {
+ @assert(role==0 and status[5]==0);
+ for(@range(u16,31))|i|{tx[i]=payload(status[2],i);}
+ status[5]=1;acked=false;packets.send(1,0,&tx,31);
+}
+fn advance() void {
+ if(status[5]==1 and acked and !packets.sending){
+  status[5]=0;status[2]+=1;status[6]=status[2];
+  if(status[2]<status[1]){transmit();}else{finish();}
+ }
+}
+fn sent() void {
+ if(comptime role==0){advance();}
+ else {status[5]=0;if(status[2]==status[1]){finish();}}
+}
+fn received(data:[*]u32,length:u16) void {
+ if(comptime role==0){
+  @assert(status[5]==1 and length==2 and data[0]==status[2] and data[1]==0xcafebabe);
+  acked=true;advance();
+ }else{
+  @assert(length==31 and status[2]<status[1]);
+  for(@range(u16,31))|i|{@assert(data[i]==payload(status[2],i));last_payload[i]=data[i];}
+  tx[0]=status[2];tx[1]=0xcafebabe;status[2]+=1;status[6]=status[2];
+  status[5]=1;packets.send(0,0,&tx,2);
+ }
+}
+// Empty volatile assembly with a memory clobber makes diagnostic stores
+// observable in this order. This instrumentation is not a performance kernel.
+fn publish() void {asm volatile ("" : : : "memory");}
+fn next_value(old:u32) u32 {
+ // Mask before left shifts: every intermediate fits u32; no overflow assumption.
+ var x=old^((old&0x0007ffff)<<13);
+ x=x^(x>>17);
+ return x^((x&0x07ffffff)<<5);
+}
+fn work() void {
+ status[4]=1;
+ if(status[3]==1){sys.unblock_cmd_stream();return;}
+ if(status[0]==0){
+  while(status[2]<status[1]){
+   status[2]+=1;publish();
+   value[0]=next_value(value[0]);publish();
+   status[6]=status[2];publish();
+  }
+  finish();
+ }else{
+  if(comptime role==0){transmit();}
+  // Receiver remains command-blocked until the final ACK send completes.
+ }
+}
+const cp:[*]u32=&control;const sp:[*]u32=&status;const vp:[*]u32=&value;
+const wp:[*]u32=&wire;const lp:[*]u32=&last_payload;
+comptime{
+ @export_symbol(cp,"control");@export_symbol(sp,"status");@export_symbol(vp,"value");
+ @export_symbol(wp,"wire");@export_symbol(lp,"last_payload");
+ @export_symbol(initialize);@export_symbol(setup);@export_symbol(work);
+}

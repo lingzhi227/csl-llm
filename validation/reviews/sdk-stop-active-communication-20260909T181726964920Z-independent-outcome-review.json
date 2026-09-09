@@ -1,0 +1,91 @@
+{
+  "run": "sdk-stop-active-communication-20260909T181726964920Z",
+  "reviewed_at": "2026-09-09T18:22:29.175891+00:00",
+  "outcome_verified": true,
+  "active_stop_qualified": false,
+  "execution_sha256": "2924c50e9b09f0c1f3076710bb7091b04257658beb43164bd97944d1bdb57d40",
+  "manifest_sha256": "fbd872eb97adff2b423f1c234a04f224f8d09011dadbe5b8764c76a3b93b570a",
+  "elapsed_seconds": 124.22212369297631,
+  "peak_rss_kib": 122544,
+  "last_stage": {
+    "stage": "stop",
+    "elapsed_seconds": 1.273732844972983
+  },
+  "tracked_pids_absent": 3,
+  "cleanup_signals": [
+    {
+      "pid": 1270939,
+      "starttime": "134066477",
+      "signal": 15
+    },
+    {
+      "pid": 1270961,
+      "starttime": "134066482",
+      "signal": 15
+    },
+    {
+      "pid": 1270914,
+      "starttime": "134066472",
+      "signal": 15
+    },
+    {
+      "pid": 1270939,
+      "starttime": "134066477",
+      "signal": 9
+    },
+    {
+      "pid": 1270961,
+      "starttime": "134066482",
+      "signal": 9
+    },
+    {
+      "pid": 1270914,
+      "starttime": "134066472",
+      "signal": 9
+    }
+  ],
+  "artifacts": {
+    "sdk.log": {
+      "exists": true,
+      "size": 272,
+      "sha256": "77bfc52bb7710f9ee82ff82560b0ace9fbcbf6c036c8c4fe71b17c79fd6c58c4"
+    },
+    "stage.json": {
+      "exists": true,
+      "size": 56,
+      "sha256": "8f7e244cb8c930f6abbfde09bfeae5e16512f8fca307d3c9ddfa4523d44f5eab"
+    },
+    "events.jsonl": {
+      "exists": true,
+      "size": 524,
+      "sha256": "0fb9c00cd6b70dd26d977c62a95b91b4cf3bea834673021cd89f883f13671f2d"
+    },
+    "runtime/lifecycle.json": {
+      "exists": false,
+      "size": null,
+      "sha256": null
+    },
+    "runtime/out.core": {
+      "exists": false,
+      "size": null,
+      "sha256": null
+    },
+    "runtime/core-arrays.npz": {
+      "exists": false,
+      "size": null,
+      "sha256": null
+    },
+    "runtime/normal.npz": {
+      "exists": false,
+      "size": null,
+      "sha256": null
+    },
+    "runtime/setup.npy": {
+      "exists": true,
+      "size": 192,
+      "sha256": "655eeaa578d23eb3f5942b9d4411d788740230ba15db1c0cf7d2dbe63d489c37"
+    }
+  },
+  "scope": "Actual timeout/cleanup outcome only. A stop event records attempted entry, not successful completion. Missing core/state cannot establish active preservation or restoration.",
+  "review_script_sha256": "0179c11305ba218a3b0c27e0b92c735e194e6d796847345ab0122a770ea38f8c"
+}

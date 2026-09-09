@@ -1,0 +1,48 @@
+{
+  "run": "sdk-core-export-normal-communication-20260909T183959236362Z",
+  "reviewed_at": "2026-09-09T18:44:17.974915+00:00",
+  "passed": true,
+  "execution_sha256": "b10f51f828be1b64c9e6648880d617502545b05416208cca6487538fbadd25b2",
+  "results_sha256": "b68d4d14ab84fce427e6497d1fda89eca1fbdbdc891ca0efff457ed4dcf8a369",
+  "core_sha256": "2159f9349f229591100a8aaafdede08415cd728839b463c63c82b2e719402b68",
+  "core_bytes": 1449042,
+  "export_receipt_sha256": "8b6608219dc57f99602b3caa11076e252652c230d02e7bbb8290c91d815ad49d",
+  "host_pid_namespace": "pid:[4026531836]",
+  "core_object_bytes_independently_checked": 352,
+  "normal_core_bit_exact": true,
+  "status": [
+    [
+      1,
+      8,
+      8,
+      1,
+      1,
+      0,
+      8,
+      0
+    ],
+    [
+      1,
+      8,
+      8,
+      1,
+      1,
+      0,
+      8,
+      0
+    ]
+  ],
+  "value": [
+    [
+      7
+    ],
+    [
+      7
+    ]
+  ],
+  "elapsed_seconds": 4.087914637988433,
+  "peak_rss_kib": 122968,
+  "tracked_pids_absent": 3,
+  "scope": "Normal completed eight-round communication: public explicit.core export beforestop matches352B normalD2H and independent seq7 31-word payload oracle. Filehash unchanged afteractualhostPIDexit. Activeexport, restore andfullmodel unqualified.",
+  "review_script_sha256": "854c61c1c4cc6e646b286b7a8bbc32d427cb90dae7680df1add8f1a8502ae9ea"
+}

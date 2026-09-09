@@ -1,0 +1,200 @@
+{
+  "reviewed_at": "2026-09-09T18:33:33.773154+00:00",
+  "host_pid_namespace": "pid:[4026531836]",
+  "passed": true,
+  "records": [
+    {
+      "run": "sdk-stop-compile-20260909T173505867421Z",
+      "execution_sha256": "5684118adc2fe5bd9fe8552befecb487b3c4de6ec2c2b2fd4a90ad21962227c1",
+      "processes": [
+        {
+          "pid": "1223226",
+          "original_start": "133816127",
+          "current_start": null,
+          "original_absent": true
+        },
+        {
+          "pid": "1223268",
+          "original_start": "133816137",
+          "current_start": null,
+          "original_absent": true
+        },
+        {
+          "pid": "1223270",
+          "original_start": "133816156",
+          "current_start": null,
+          "original_absent": true
+        },
+        {
+          "pid": "1223306",
+          "original_start": "133816201",
+          "current_start": null,
+          "original_absent": true
+        },
+        {
+          "pid": "1223248",
+          "original_start": "133816132",
+          "current_start": null,
+          "original_absent": true
+        },
+        {
+          "pid": "1223380",
+          "original_start": "133816298",
+          "current_start": null,
+          "original_absent": true
+        },
+        {
+          "pid": "1223381",
+          "original_start": "133816298",
+          "current_start": null,
+          "original_absent": true
+        }
+      ]
+    },
+    {
+      "run": "sdk-stop-normal-compute-20260909T173822768097Z",
+      "execution_sha256": "e1e295a4f91b5e3755fb76b4b68b8fe70dec1339da9698a6a713920b204ba68c",
+      "processes": [
+        {
+          "pid": "1231473",
+          "original_start": "133863015",
+          "current_start": null,
+          "original_absent": true
+        },
+        {
+          "pid": "1231516",
+          "original_start": "133863026",
+          "current_start": null,
+          "original_absent": true
+        },
+        {
+          "pid": "1231495",
+          "original_start": "133863020",
+          "current_start": null,
+          "original_absent": true
+        }
+      ]
+    },
+    {
+      "run": "sdk-stop-active-compute-20260909T174634091110Z",
+      "execution_sha256": "5822a6af6606038f111fd06890c6961f04773c4c09eeb22febfc8cae9469ed39",
+      "processes": [
+        {
+          "pid": "1236072",
+          "original_start": "133890892",
+          "current_start": null,
+          "original_absent": true
+        },
+        {
+          "pid": "1236130",
+          "original_start": "133890902",
+          "current_start": null,
+          "original_absent": true
+        },
+        {
+          "pid": "1236107",
+          "original_start": "133890897",
+          "current_start": null,
+          "original_absent": true
+        }
+      ]
+    },
+    {
+      "run": "sdk-stop-compile-20260909T180325524415Z",
+      "execution_sha256": "c6c404c9d8042a8f6b309c0c82ba5e62d22a36262230f079b654d56716506ee0",
+      "processes": [
+        {
+          "pid": "1255878",
+          "original_start": "133994479",
+          "current_start": null,
+          "original_absent": true
+        },
+        {
+          "pid": "1255921",
+          "original_start": "133994488",
+          "current_start": null,
+          "original_absent": true
+        },
+        {
+          "pid": "1255924",
+          "original_start": "133994507",
+          "current_start": null,
+          "original_absent": true
+        },
+        {
+          "pid": "1255960",
+          "original_start": "133994553",
+          "current_start": null,
+          "original_absent": true
+        },
+        {
+          "pid": "1255900",
+          "original_start": "133994484",
+          "current_start": null,
+          "original_absent": true
+        },
+        {
+          "pid": "1256033",
+          "original_start": "133994649",
+          "current_start": null,
+          "original_absent": true
+        },
+        {
+          "pid": "1256034",
+          "original_start": "133994649",
+          "current_start": null,
+          "original_absent": true
+        }
+      ]
+    },
+    {
+      "run": "sdk-stop-normal-compute-20260909T180806046800Z",
+      "execution_sha256": "25e2c3c3369cf7c171a4a26d45f19e26d0c6a76bf78d6a9a38f983774438ef1e",
+      "processes": [
+        {
+          "pid": "1258965",
+          "original_start": "134008680",
+          "current_start": null,
+          "original_absent": true
+        },
+        {
+          "pid": "1258985",
+          "original_start": "134008686",
+          "current_start": null,
+          "original_absent": true
+        },
+        {
+          "pid": "1259005",
+          "original_start": "134008691",
+          "current_start": null,
+          "original_absent": true
+        }
+      ]
+    },
+    {
+      "run": "sdk-stop-normal-communication-20260909T181456241476Z",
+      "execution_sha256": "7240be5af6607e90bd430cece155e35b0f30857daf282216e028eeca110fcffc",
+      "processes": [
+        {
+          "pid": "1267701",
+          "original_start": "134050883",
+          "current_start": null,
+          "original_absent": true
+        },
+        {
+          "pid": "1267722",
+          "original_start": "134050889",
+          "current_start": null,
+          "original_absent": true
+        },
+        {
+          "pid": "1267742",
+          "original_start": "134050895",
+          "current_start": null,
+          "original_absent": true
+        }
+      ]
+    }
+  ],
+  "scope": "Independent SSH-host PID identity audit. Complements prior numerical/core reviewers whose cs_python wrapper used singularity -C and therefore could not establish host PID absence. Original actual process identities are now checked directly in host namespace; numerical/hash reviews unchanged."
+}

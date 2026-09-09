@@ -1,0 +1,135 @@
+{
+  "original_file_sha256": "f5a21e461e8987d45d42e86ef265f3e895b9b1176aad28f696c036fe6b6a185c",
+  "publication_note": "Derived report; private path prefixes replaced. Original hash is unchanged.",
+  "report": {
+    "reviewed_at": "2026-09-09T17:26:36.395355+00:00",
+    "run": "model-runtime-20260909T111353596920Z",
+    "execution_sha256": "e3ee27527caa6e6cbf1860e0ac57c2051a9a17512180eb35576ed76efa1f75bd",
+    "success": false,
+    "elapsed_seconds": 21604.825875000097,
+    "peak_rss_kib": 21708104,
+    "error": "Traceback (most recent call last):\n  File \"<DEVELOPMENT_ROOT>/evidence/model-runtime-20260909T111353596920Z/executor.py\", line 104, in execute\n    if time.monotonic()-start>timeout or rss>rss_limit_kib:raise TimeoutError('Probe resource/time budget reached')\n                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nTimeoutError: Probe resource/time budget reached\n",
+    "sample_count": 20997,
+    "tracked_processes": 3,
+    "all_tracked_pids_absent": true,
+    "cleanup_signals": [
+      {
+        "pid": 855691,
+        "starttime": "131587610",
+        "signal": 15
+      },
+      {
+        "pid": 855712,
+        "starttime": "131587615",
+        "signal": 15
+      },
+      {
+        "pid": 855670,
+        "starttime": "131587605",
+        "signal": 15
+      },
+      {
+        "pid": 855691,
+        "starttime": "131587610",
+        "signal": 9
+      },
+      {
+        "pid": 855712,
+        "starttime": "131587615",
+        "signal": 9
+      },
+      {
+        "pid": 855670,
+        "starttime": "131587605",
+        "signal": 9
+      }
+    ],
+    "files": {
+      "execution.json": {
+        "exists": true,
+        "bytes": 1968,
+        "sha256": "e3ee27527caa6e6cbf1860e0ac57c2051a9a17512180eb35576ed76efa1f75bd"
+      },
+      "resource-samples.json": {
+        "exists": true,
+        "bytes": 1457896,
+        "sha256": "77bbeec97f408dd788ec9cd9ca60a33b79e1178642da4659b2a142bace4fa244"
+      },
+      "sdk.log": {
+        "exists": true,
+        "bytes": 514,
+        "sha256": "e1b2c1d13f45343c4b10fe968ae4e899b030c33a89116c532415174c6f7617df"
+      },
+      "events.jsonl": {
+        "exists": true,
+        "bytes": 630,
+        "sha256": "5f0ce2115f093c46f367953db350c59680b5928c3a3fa2bd85cce0d7151a7813"
+      },
+      "stage.json": {
+        "exists": true,
+        "bytes": 64,
+        "sha256": "68540f8f604d9656403079862d1a83c4396ca6fc84774b377a4c23305748277c"
+      },
+      "results.json": {
+        "exists": false,
+        "bytes": null,
+        "sha256": null
+      },
+      "runtime/normal-d2h.npz": {
+        "exists": true,
+        "bytes": 162384,
+        "sha256": "01ffd6981c0a2cfbe39d402cbae03dfce4ccb369ac1b1df304debb09f95c5f63"
+      },
+      "runtime/normal-report.json": {
+        "exists": false,
+        "bytes": null,
+        "sha256": null
+      },
+      "runtime/actual.npz": {
+        "exists": false,
+        "bytes": null,
+        "sha256": null
+      },
+      "runtime/protocol.json": {
+        "exists": false,
+        "bytes": null,
+        "sha256": null
+      },
+      "runtime/runtime-evidence.json": {
+        "exists": false,
+        "bytes": null,
+        "sha256": null
+      },
+      "runtime/out.core": {
+        "exists": false,
+        "bytes": null,
+        "sha256": null
+      },
+      "runtime/simconfig.json": {
+        "exists": true,
+        "bytes": 1170,
+        "sha256": "5440454141011765cb0b80ca89da0a92b1bcd8d96d8df94b49513b6e46d2405a"
+      },
+      "runtime/sim.log": {
+        "exists": true,
+        "bytes": 4470346,
+        "sha256": "65cec9e97cbc2cd31dbf48301673c1095128c732c17c9fad147da7fe2642b11b"
+      }
+    },
+    "normal_arrays": {
+      "ready": {
+        "shape": [
+          210,
+          193,
+          1
+        ],
+        "dtype": "uint32",
+        "sha256": "a0b633a40bfc194f7af59b50e924d5df246a1ee1f71aeaccc88c8d2bf953d2ec"
+      }
+    },
+    "ready_verified": true,
+    "neural_numerics_accepted": false,
+    "scope": "Closure, resource receipt and actual partial-artifact inventory only. No inference success, neural partial correctness, checkpoint restore or new experiment admission.",
+    "review_script_sha256": "e04b6433251c9f9d6f23c679c2003090e716c00f13dcda27fbda86d1c5959c1d"
+  }
+}

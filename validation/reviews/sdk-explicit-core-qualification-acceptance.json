@@ -1,0 +1,51 @@
+{
+  "accepted_at": "2026-09-09T18:50:17.950115+00:00",
+  "accepted": true,
+  "scope": "Small SDK2.10.1 public dump_elf_core diagnostic export during completed and unfinished twoPE compute/packet work. All original arrays independently read from actualcore using acceptedELF addresses; normalD2H and integer/payload oracles exact.",
+  "source": "sdk-core-export-source-20260909T183022454936Z",
+  "source_manifest_sha256": "efb4fe141fb4072ddeede4526a4bea091fc597cee2caea052cced51b9587f707",
+  "compiled": "sdk-stop-compile-20260909T180325524415Z",
+  "cases": [
+    {
+      "run": "sdk-core-export-normal-compute-20260909T183022501196Z",
+      "review": "sdk-core-export-normal-compute-20260909T183022501196Z-independent-review.json",
+      "review_sha256": "f5900fae7e470d5bf9f4ce8e3af6c04a83959e31799d64df00f968207013158a",
+      "execution_sha256": "ee5250a7a3ffe34f04c2415634f8ce95e73c73ee24890942d556153518426790",
+      "execution_success": true,
+      "snapshot_arrays_passed": true
+    },
+    {
+      "run": "sdk-core-export-active-compute-20260909T183511898335Z",
+      "review": "sdk-core-export-active-compute-20260909T183511898335Z-independent-review.json",
+      "review_sha256": "215f17c35846017337cdb739c46b9733aa08c85108d82c53fbf15ce5d53bf1be",
+      "execution_sha256": "c994059dab897a931a6c3aa25b72e2cfb1f238ca4e759031943dea49be547a98",
+      "execution_success": false,
+      "snapshot_arrays_passed": true
+    },
+    {
+      "run": "sdk-core-export-normal-communication-20260909T183959236362Z",
+      "review": "sdk-core-export-normal-communication-20260909T183959236362Z-independent-review.json",
+      "review_sha256": "c582586cbbff4c85855f508b15f5df53a1380ef657483c519f3209637e519640",
+      "execution_sha256": "b10f51f828be1b64c9e6648880d617502545b05416208cca6487538fbadd25b2",
+      "execution_success": true,
+      "snapshot_arrays_passed": true
+    },
+    {
+      "run": "sdk-core-export-active-communication-20260909T184530225211Z",
+      "review": "sdk-core-export-active-communication-20260909T184530225211Z-independent-review.json",
+      "review_sha256": "82b5fde431273190441a1dd0b3161f97fb10fdf48c63bb43a62c73a00e93fd3a",
+      "execution_sha256": "ec38e68b6b76226f82c170db65371853dddf888818bcdc5ac0a3547b2a1f8723",
+      "execution_success": false,
+      "snapshot_arrays_passed": true
+    }
+  ],
+  "active_compute": "TwoPE issued=committed907<1e9,done0,value1765088451",
+  "active_communication": "Bothsequence6<1e9,done0,sender software receivingflag1; receiver lastpayloadseq5 independentlyexact",
+  "limitations": [
+    "Active runs still failed at30s stopguard; export success is separate from shutdown failure.",
+    "Software receiving flag does not establish physical wavelets in flight.",
+    "No globalatomicity, simulatorrestore, applicationresume, fullmodelneural/generation/capacity or hardware qualification.",
+    "Small1.449MB export cost cannot be extrapolated to fullmodelcore."
+  ],
+  "next": "Prepare and review fullmodel explicit diagnostic hostsource preserving exactacceptedoriginalELFs, selectedreadiness scope, post-exit completion frontier/numerical rules and measuredtime/memory/storage budgets."
+}

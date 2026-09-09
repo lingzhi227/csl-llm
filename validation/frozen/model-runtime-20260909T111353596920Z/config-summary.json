@@ -1,0 +1,17 @@
+{
+  "original_file_sha256": "0671ca43ea129dbf54427de845b129be43334235c62236ef43443a238fd4ad7c",
+  "original_bytes": 612,
+  "publication_note": "Derived metadata; private paths replaced. Binary/tensor payloads omitted. Original SHA-256 identifies the retained private record, not this summary.",
+  "record": {
+    "assembly_execution_sha256": "e3b1217685604d6446f097a410b3b5e3a68cbfa2a27679ce21f0b6f3b663bc83",
+    "reference_build_execution_sha256": "37fee5390e01a54b9422af5583d2ad675e9e78eef83566e93bf25122597d37a0",
+    "timeout_seconds": 21600,
+    "rss_limit_kib": 25165824,
+    "simulator_threads": 16,
+    "prompt": [
+      151644
+    ],
+    "generation_limit": 1,
+    "scope": "First single-token original24layer/full151936 device head integration. One raw token151644, original resident weights, device embedding/finalRMS/greedy. Not complete fixed prompts, cached generation, reset, long context, S5/S6 or hardware acceptance."
+  }
+}

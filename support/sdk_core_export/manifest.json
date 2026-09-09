@@ -1,0 +1,15 @@
+{
+  "original_source_manifest_sha256": "efb4fe141fb4072ddeede4526a4bea091fc597cee2caea052cced51b9587f707",
+  "scope": "Source inspection copy. Portable SDK paths and derived provenance only; immutable historical compile pin remains required by prepare().",
+  "files": {
+    "layout.csl": "888d246ee92ec4910196bd171c1673f6c54fab8714aa8ca45b76e9d2a6e3da78",
+    "pe.csl": "67eab1a71aed81081fec61130146ba4ed607066690ca7eae1fc1cc91617a0f82",
+    "sdk_lifecycle.py": "b9d469ff88a21d9468684d46acbd377df590e63a7e7ba4e2723c910ecfb39949",
+    "README.md": "c55551e52e124a6ad6d32f2af171d5b7fb85ee4d15fa970643d7a2f6c58e327c",
+    "sdk_probe.py": "1e4d555f3eee06e1a4dd3e2c2fee7339f5ae78e2aeb92cf16514a0490661ead6",
+    "packets.csl": "14cf422d0b3b192017e5fb45da1bc77473e07014e87315556332a4dd9f087361",
+    "source-provenance.json": "0baa8598029a0ce486b665c69336225dc1facfdbf121b1f671435fecb4a3c0c6",
+    "driver.py": "0e45754f0e565e973ff9d1ca3fdcf046a7c3576dc9c4a150f334b636cb7a362c",
+    "sdk_core.py": "10ba97cebcccf4749e5ee0c22be5518f800e3820429f7d2ae1425b7f66b9e88d"
+  }
+}

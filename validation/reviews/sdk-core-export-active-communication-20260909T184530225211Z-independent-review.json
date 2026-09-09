@@ -1,0 +1,97 @@
+{
+  "run": "sdk-core-export-active-communication-20260909T184530225211Z",
+  "reviewed_at": "2026-09-09T18:49:27.341088+00:00",
+  "snapshot_arrays_passed": true,
+  "execution_success": false,
+  "checkpoint_restore_qualified": false,
+  "execution_sha256": "ec38e68b6b76226f82c170db65371853dddf888818bcdc5ac0a3547b2a1f8723",
+  "manifest_sha256": "4c003e21e2bb79e3352978862beb3bcbb4d689d7bc6949ff9c906ff6b724d83b",
+  "explicit_core_sha256": "0bc1d7afefc7b1ce0d0314e68313ec779054d44d7f45a9688399555b7eb6723f",
+  "explicit_core_bytes": 1449042,
+  "export_receipt_sha256": "c2dd7e7b6be56da537325d1bd3e02add947e83a880accd5062fb68bc4cce0b30",
+  "export_events": [
+    {
+      "stage": "load",
+      "elapsed_seconds": 0.03751045907847583
+    },
+    {
+      "stage": "run",
+      "elapsed_seconds": 0.03838054393418133
+    },
+    {
+      "stage": "initialize",
+      "elapsed_seconds": 0.06776369991712272
+    },
+    {
+      "stage": "launch-work",
+      "elapsed_seconds": 0.2624477408826351
+    },
+    {
+      "stage": "owner-control-returned",
+      "elapsed_seconds": 0.26273504202254117
+    },
+    {
+      "stage": "bounded-observation",
+      "elapsed_seconds": 0.2711228409316391
+    },
+    {
+      "stage": "observation-window-ended",
+      "elapsed_seconds": 1.2716944150160998
+    },
+    {
+      "stage": "explicit-core-export",
+      "elapsed_seconds": 1.2723487899638712
+    },
+    {
+      "stage": "explicit-core-export-returned",
+      "elapsed_seconds": 1.2863455771002918
+    }
+  ],
+  "host_pid_namespace": "pid:[4026531836]",
+  "tracked_pids_absent": 3,
+  "elapsed_seconds": 34.57352542504668,
+  "peak_rss_kib": 122856,
+  "checked_bytes": 352,
+  "status": [
+    [
+      1,
+      1000000000,
+      6,
+      0,
+      1,
+      0,
+      6,
+      0
+    ],
+    [
+      1,
+      1000000000,
+      6,
+      0,
+      1,
+      0,
+      6,
+      0
+    ]
+  ],
+  "value": [
+    [
+      7
+    ],
+    [
+      7
+    ]
+  ],
+  "wire": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      0
+    ]
+  ],
+  "scope": "Independent actual explicit.core per-PE unfinished-state/sequence numerical validation. Shutdown outcome separately reported; no global atomicity, physical-inflight, restoration or full-model acceptance.",
+  "review_script_sha256": "15fc08d3bac707fbbd32896a479fbb8b74ee20259fddc39a1d49137134e67eed"
+}

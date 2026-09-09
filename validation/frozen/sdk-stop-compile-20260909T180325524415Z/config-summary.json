@@ -1,0 +1,16 @@
+{
+  "original_file_sha256": "505a03f2c0d1e7ed61045fb9a072e2197b07d8cd144137358b0937a5b224047a",
+  "original_bytes": 346,
+  "publication_note": "Derived metadata; private paths replaced. Binary/tensor payloads omitted. Original SHA-256 identifies the retained private record, not this summary.",
+  "record": {
+    "timeout_seconds": 120,
+    "mode": null,
+    "limit": null,
+    "case": "compile",
+    "rss_limit_kib": 2097152,
+    "simulator_threads": 2,
+    "observation_seconds": 1.0,
+    "expected_outer_failure": false,
+    "scope": "Small SDK2.10.1 stop/diagnostic-core qualification only. No restoration, full-model numerical, generation or hardware acceptance."
+  }
+}

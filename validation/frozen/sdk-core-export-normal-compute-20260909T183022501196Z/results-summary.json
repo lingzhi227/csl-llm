@@ -1,0 +1,19 @@
+{
+  "original_file_sha256": "27cd6354704406f4f0e122febd91e3ea100410b1dd7b5e402d3445221a28f008",
+  "original_bytes": 718,
+  "publication_note": "Derived metadata; private paths replaced. Binary/tensor payloads omitted. Original SHA-256 identifies the retained private record, not this summary.",
+  "record": {
+    "success": true,
+    "export_returned": true,
+    "stop_returned": true,
+    "numerical_validated": false,
+    "output_sha256": {
+      "explicit.core": "dd827ccda3e84e92e6575265937ece76c82fbc8482992a62dec4ae21307359bb",
+      "core-export.json": "1bf2a0141f3205bc384b75bf086465207103d1fc0dfeb0d8418d670e8eb6f460",
+      "lifecycle.json": "ecee4229363c31a020496dbccd21a81960017539a79c86abe4c2774441b9377c",
+      "setup.npy": "d4d36d2a583be42901f2f8d614a90e867f537082232c193217846f10acf10fd2",
+      "normal.npz": "a9b01120c11d3191de61b75f1e0f091a0ae01fcc7fffcfd7c5616a16a9093000"
+    },
+    "scope": "Public SDK2.10.1 explicit core export qualification only. No restoration, full-model numerical, generation or hardware acceptance."
+  }
+}

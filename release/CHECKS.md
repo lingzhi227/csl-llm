@@ -108,3 +108,7 @@ Partitions 33–34: six complete remote manifests, local selected source, exact 
 Final static coverage: three complete tail manifests and all 35 remote contract index lists/execution-result bindings verified; original ledger SHA matches complete-coverage acceptance. All 34552 indices contiguous and exact. No SDK/compiler/CPU model rerun. [Tail records](MODEL-PARTITION-35-CHECKS.json).
 
 Complete model assembly publication: remote full-manifest and exact selected-source/acceptance/review bindings verified. Public metadata is derived and excludes huge object tables and model-bearing artifacts. No assembly or SDK rerun. [Publication records](FULL-MODEL-ASSEMBLY-CHECKS.json).
+
+## Explicit core diagnostic publication
+
+See [accepted cases, failure history and reproduction boundaries](../docs/SDK-CORE-EXPORT.md). Four explicit-export snapshots were independently checked; active executions retain failure status. Publication verifies source/receipt identities without rerunning SDK experiments. No core, tensor, ELF or SDK payload is included.

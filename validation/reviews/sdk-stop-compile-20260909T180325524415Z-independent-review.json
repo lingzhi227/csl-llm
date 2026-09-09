@@ -1,0 +1,248 @@
+{
+  "reviewed_at": "2026-09-09T18:07:26.008677+00:00",
+  "run": "sdk-stop-compile-20260909T180325524415Z",
+  "passed": true,
+  "execution_sha256": "c6c404c9d8042a8f6b309c0c82ba5e62d22a36262230f079b654d56716506ee0",
+  "manifest_sha256": "d19bd241da4aab2180525dea9b25d99d9a67863ec9e8e049451e6bb1f2301f3d",
+  "results_sha256": "ef75856475c234d81439af1ba68bbdbd7db823b6dd2c19c78fc4fbf1d63b42f2",
+  "elapsed_seconds": 3.062779563944787,
+  "peak_rss_kib": 398304,
+  "tracked_pids_absent": 7,
+  "all_files_exact": true,
+  "elf_images": [
+    {
+      "elf": "out_0_0.elf",
+      "sha256": "5a13045a597aec5f3e60a7e09a36814bfa9d55e668bfa39fc2de374ffa57720d",
+      "coordinates": [
+        [
+          4,
+          1
+        ]
+      ],
+      "sram_allocated_bytes": 6628,
+      "sram_max_end": 6640,
+      "register_sections": [
+        {
+          "name": ".entry_ival",
+          "address": 64572,
+          "size": 2
+        },
+        {
+          "name": ".fpcw",
+          "address": 64536,
+          "size": 2
+        },
+        {
+          "name": ".fscale",
+          "address": 64538,
+          "size": 2
+        },
+        {
+          "name": ".blocked_ival",
+          "address": 64520,
+          "size": 4
+        },
+        {
+          "name": ".active_ival",
+          "address": 64524,
+          "size": 4
+        },
+        {
+          "name": ".blocked_ut_ival",
+          "address": 64516,
+          "size": 4
+        },
+        {
+          "name": ".fabric_routes",
+          "address": 63488,
+          "size": 48
+        },
+        {
+          "name": ".fabric_switches",
+          "address": 63744,
+          "size": 192
+        },
+        {
+          "name": ".ce_in_q",
+          "address": 63360,
+          "size": 28
+        },
+        {
+          "name": ".ce_out_q",
+          "address": 63232,
+          "size": 14
+        },
+        {
+          "name": ".prng_state",
+          "address": 64416,
+          "size": 16
+        },
+        {
+          "name": ".filters",
+          "address": 63104,
+          "size": 96
+        },
+        {
+          "name": ".user_cfg_0",
+          "address": 64528,
+          "size": 2
+        },
+        {
+          "name": ".user_cfg_1",
+          "address": 64530,
+          "size": 2
+        },
+        {
+          "name": ".user_cfg_2",
+          "address": 64548,
+          "size": 2
+        },
+        {
+          "name": ".user_cfg_3",
+          "address": 64574,
+          "size": 2
+        }
+      ],
+      "symbols": {
+        "control": {
+          "address": 4900,
+          "size": 8
+        },
+        "status": {
+          "address": 4908,
+          "size": 32
+        },
+        "value": {
+          "address": 4940,
+          "size": 4
+        },
+        "wire": {
+          "address": 4944,
+          "size": 8
+        },
+        "last_payload": {
+          "address": 4952,
+          "size": 124
+        }
+      }
+    },
+    {
+      "elf": "out_1_0.elf",
+      "sha256": "079a2da0f3e8b1b40c8b724758befcaaacc52d57c7ba980d8cfba1d44a1e7d25",
+      "coordinates": [
+        [
+          5,
+          1
+        ]
+      ],
+      "sram_allocated_bytes": 6412,
+      "sram_max_end": 6416,
+      "register_sections": [
+        {
+          "name": ".entry_ival",
+          "address": 64572,
+          "size": 2
+        },
+        {
+          "name": ".fpcw",
+          "address": 64536,
+          "size": 2
+        },
+        {
+          "name": ".fscale",
+          "address": 64538,
+          "size": 2
+        },
+        {
+          "name": ".blocked_ival",
+          "address": 64520,
+          "size": 4
+        },
+        {
+          "name": ".active_ival",
+          "address": 64524,
+          "size": 4
+        },
+        {
+          "name": ".blocked_ut_ival",
+          "address": 64516,
+          "size": 4
+        },
+        {
+          "name": ".fabric_routes",
+          "address": 63488,
+          "size": 48
+        },
+        {
+          "name": ".fabric_switches",
+          "address": 63744,
+          "size": 192
+        },
+        {
+          "name": ".ce_in_q",
+          "address": 63360,
+          "size": 28
+        },
+        {
+          "name": ".ce_out_q",
+          "address": 63232,
+          "size": 14
+        },
+        {
+          "name": ".prng_state",
+          "address": 64416,
+          "size": 16
+        },
+        {
+          "name": ".filters",
+          "address": 63104,
+          "size": 96
+        },
+        {
+          "name": ".user_cfg_0",
+          "address": 64528,
+          "size": 2
+        },
+        {
+          "name": ".user_cfg_1",
+          "address": 64530,
+          "size": 2
+        },
+        {
+          "name": ".user_cfg_2",
+          "address": 64548,
+          "size": 2
+        },
+        {
+          "name": ".user_cfg_3",
+          "address": 64574,
+          "size": 2
+        }
+      ],
+      "symbols": {
+        "control": {
+          "address": 4688,
+          "size": 8
+        },
+        "status": {
+          "address": 4696,
+          "size": 32
+        },
+        "value": {
+          "address": 4728,
+          "size": 4
+        },
+        "wire": {
+          "address": 4732,
+          "size": 8
+        },
+        "last_payload": {
+          "address": 4740,
+          "size": 124
+        }
+      }
+    }
+  ],
+  "scope": "Compile and exported diagnostic object/coordinate/SRAM qualification only. Memory-mapped register sections reported separately. No runtime stop/core, physical-inflight, restore or fullmodel acceptance.",
+  "review_script_sha256": "79ba340257148705ab43903fe6d0ff572749c666e8c091f726cdf486b3c91d12"
+}

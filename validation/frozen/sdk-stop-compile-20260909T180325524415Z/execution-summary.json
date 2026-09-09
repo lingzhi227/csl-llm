@@ -1,0 +1,42 @@
+{
+  "original_file_sha256": "c6c404c9d8042a8f6b309c0c82ba5e62d22a36262230f079b654d56716506ee0",
+  "original_bytes": 1290,
+  "publication_note": "Derived metadata; private paths replaced. Binary/tensor payloads omitted. Original SHA-256 identifies the retained private record, not this summary.",
+  "record": {
+    "success": true,
+    "sdk_sha256": "fff17e81c61dcb6012bdee2941a6fdc570f5c8604967530e7b7108651258193d",
+    "manifest_sha256": "d19bd241da4aab2180525dea9b25d99d9a67863ec9e8e049451e6bb1f2301f3d",
+    "command": [
+      "<SDK_ROOT>/cs_python",
+      "<DEVELOPMENT_ROOT>/evidence/sdk-stop-compile-20260909T180325524415Z/driver.py",
+      "--worker",
+      "<DEVELOPMENT_ROOT>/evidence/sdk-stop-compile-20260909T180325524415Z"
+    ],
+    "timeout_seconds": 120,
+    "rss_limit_kib": 2097152,
+    "rss_kind": "Sum of process-tree resident pages, may double-count shared mappings",
+    "peak_rss_kib": 398304,
+    "results_sha256": "ef75856475c234d81439af1ba68bbdbd7db823b6dd2c19c78fc4fbf1d63b42f2",
+    "observed_process_identities": {
+      "1255878": "133994479",
+      "1255921": "133994488",
+      "1255924": "133994507",
+      "1255960": "133994553",
+      "1255900": "133994484",
+      "1256033": "133994649",
+      "1256034": "133994649"
+    },
+    "cleanup_signals": [],
+    "after_cleanup_identities": {
+      "1255878": null,
+      "1255921": null,
+      "1255924": null,
+      "1255960": null,
+      "1255900": null,
+      "1256033": null,
+      "1256034": null
+    },
+    "elapsed_seconds": 3.062779563944787,
+    "samples_sha256": "93694ac2210afef2db9f814718fa3722fae26ccb17f0c61d8abe9d2604f73778"
+  }
+}

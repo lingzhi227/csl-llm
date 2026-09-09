@@ -1,0 +1,37 @@
+{
+  "original_file_sha256": "d707ca017a3dc5eaef1ea9f203b37000703ae8555812984bdb282eefc1ccc539",
+  "original_bytes": 2446,
+  "publication_note": "Derived metadata; private paths replaced. Binary/tensor payloads omitted. Original SHA-256 identifies the retained private record, not this summary.",
+  "record": {
+    "sdk_sha256": "fff17e81c61dcb6012bdee2941a6fdc570f5c8604967530e7b7108651258193d",
+    "files": {
+      "driver.py": "0e45754f0e565e973ff9d1ca3fdcf046a7c3576dc9c4a150f334b636cb7a362c",
+      "source-provenance.json": "0d1c7d7747557c983ec15edc2580f1163ef092fe852af3840d5d737c895a9d28",
+      "packets.csl": "14cf422d0b3b192017e5fb45da1bc77473e07014e87315556332a4dd9f087361",
+      "pe.csl": "67eab1a71aed81081fec61130146ba4ed607066690ca7eae1fc1cc91617a0f82",
+      "compiled-files.json": "4e0ac4444e642fb6d612e9b6623ead5b7195827c33bbfd3b13f5b8e0f846669f",
+      "sdk_core.py": "10ba97cebcccf4749e5ee0c22be5518f800e3820429f7d2ae1425b7f66b9e88d",
+      "sdk_probe.py": "9ccab37dc8b6ecfb0d23d56bf0826da7b87ce5d3c22d0a4ba94cb4aea6501e1c",
+      "config.json": "674ec2cd961004b1132d2e345fcd862301d190cf4f0655130656bef66c45ef6c",
+      "sdk_lifecycle.py": "b9d469ff88a21d9468684d46acbd377df590e63a7e7ba4e2723c910ecfb39949",
+      "compile-manifest.json": "d19bd241da4aab2180525dea9b25d99d9a67863ec9e8e049451e6bb1f2301f3d",
+      "compile-execution.json": "c6c404c9d8042a8f6b309c0c82ba5e62d22a36262230f079b654d56716506ee0",
+      "layout.csl": "888d246ee92ec4910196bd171c1673f6c54fab8714aa8ca45b76e9d2a6e3da78",
+      "out/out.json": "b67e94695ca5a56ae9ae1a4a78bc93d3cae5825997109038dd11891f3cab5bb1",
+      "out/bin/out_1_0.elf": "079a2da0f3e8b1b40c8b724758befcaaacc52d57c7ba980d8cfba1d44a1e7d25",
+      "out/bin/out_0.greedy.dot": "35640b254d423e8ea4b4bf0bb03233dc8d70f908cd1a9f79e6cbf5118ec00d0f",
+      "out/bin/out_0_0.elf": "5a13045a597aec5f3e60a7e09a36814bfa9d55e668bfa39fc2de374ffa57720d",
+      "out/bin/out_rpc.json": "11dbf29b344af7261aa7389d3f56f08fd0ffd9cdefc47a7056aa545268567bf9",
+      "out/bin/out_1.greedy.dot": "35640b254d423e8ea4b4bf0bb03233dc8d70f908cd1a9f79e6cbf5118ec00d0f",
+      "out/west/out.json": "248ecbf17b2090e46e426ee7b905c25f2b9770e8f6a382868cd2e07ab91e7a3a",
+      "out/east/out.json": "46ea180801c589023f5daf7351fb473475b50f302d72cf40f86e4ce5f7d320b7",
+      "out/east/bin/out_1_0.elf": "56ef84b27857b6a7e066ec8cce1dc6c9fa3dfe918a41721155aacbed27a8116a",
+      "out/east/bin/out_0_0.elf": "3ed31cff0fdc956404cce46eb87e3e976fac1fbc9c8627bc1ef53670f8d24b14",
+      "out/west/bin/out_1_0.elf": "46d60207e6e414d09eebaec63fe9543ef855105256e270204cdb1c6b5e3c6c77",
+      "out/west/bin/out_2_0.elf": "e03370a8cec929ca402e9294e48eac12715890c166dd6f42b71b582b3f84e43d",
+      "out/west/bin/out_0_0.elf": "a55adc3b70a68491aaf357e31efbe811213d6133c3117bf9d8d580cf7cdd010e"
+    }
+  },
+  "publication_manifest_entries_verified": 25,
+  "full_manifest_reverified_for_this_publication": true
+}

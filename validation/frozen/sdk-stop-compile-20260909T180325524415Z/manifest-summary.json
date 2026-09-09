@@ -1,0 +1,21 @@
+{
+  "original_file_sha256": "d19bd241da4aab2180525dea9b25d99d9a67863ec9e8e049451e6bb1f2301f3d",
+  "original_bytes": 896,
+  "publication_note": "Derived metadata; private paths replaced. Binary/tensor payloads omitted. Original SHA-256 identifies the retained private record, not this summary.",
+  "record": {
+    "sdk_sha256": "fff17e81c61dcb6012bdee2941a6fdc570f5c8604967530e7b7108651258193d",
+    "files": {
+      "driver.py": "f28e8760b5e7ca48170b9901b01f2fac60a605b75ca54db618f1872fef9de24c",
+      "source-provenance.json": "2ac9d502a0cf3f528c3f41be4517dbd8fab50892a3a95f2cd44884b9ca6cfb6b",
+      "packets.csl": "14cf422d0b3b192017e5fb45da1bc77473e07014e87315556332a4dd9f087361",
+      "pe.csl": "67eab1a71aed81081fec61130146ba4ed607066690ca7eae1fc1cc91617a0f82",
+      "sdk_core.py": "10ba97cebcccf4749e5ee0c22be5518f800e3820429f7d2ae1425b7f66b9e88d",
+      "sdk_probe.py": "9ccab37dc8b6ecfb0d23d56bf0826da7b87ce5d3c22d0a4ba94cb4aea6501e1c",
+      "config.json": "505a03f2c0d1e7ed61045fb9a072e2197b07d8cd144137358b0937a5b224047a",
+      "sdk_lifecycle.py": "b9d469ff88a21d9468684d46acbd377df590e63a7e7ba4e2723c910ecfb39949",
+      "layout.csl": "888d246ee92ec4910196bd171c1673f6c54fab8714aa8ca45b76e9d2a6e3da78"
+    }
+  },
+  "publication_manifest_entries_verified": 9,
+  "full_manifest_reverified_for_this_publication": true
+}

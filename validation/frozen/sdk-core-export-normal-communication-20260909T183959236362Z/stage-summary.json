@@ -1,0 +1,9 @@
+{
+  "original_file_sha256": "04addbf4d9573dea65f01c65a5ef61660e829f1a0b6371302cec64fdf0fcb4f8",
+  "original_bytes": 61,
+  "publication_note": "Derived metadata; private paths replaced. Binary/tensor payloads omitted. Original SHA-256 identifies the retained private record, not this summary.",
+  "record": {
+    "stage": "complete",
+    "elapsed_seconds": 1.9827949788887054
+  }
+}

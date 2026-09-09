@@ -1,5 +1,7 @@
 # Release status — 2026-09-09
 
+**Latest runtime outcome:** the first complete original-weight 24-layer attempt timed out after six hours with readiness only and no accepted neural output. Small two-PE explicit core exports now pass independent compute/communication state checks; active-case shutdown still times out. [Diagnostics and limits](SDK-CORE-EXPORT.md). Restoration and full-model inference remain unqualified.
+
 **Complete static matrix coverage:** all 34552 original blocks across 35 intervals independently accepted. Complete static assembly and its own diagnostic ABI are now independently accepted; neural SDK acceptance remains open. [Assembly evidence](FULL-MODEL-ASSEMBLY.md). [Complete coverage evidence](MODEL-PARTITIONS.md).
 
 Latest integration: the original-weight two-layer chain passes position 0, cached position 1 and reset-to-position-0 in one SDK instance, with 52 independent numerical checks and bit-exact reset outputs. [Scope, source and evidence](TWO-LAYER-CACHED.md). Full-model generation remains unaccepted.
@@ -30,6 +32,10 @@ Eight-PE cross-partition line allreduce is now accepted for the full group-0 128
 193 × 50 tagged streaming transport is independently accepted for selected-column ordering, padding exclusion, repeat/reset and all 9650 completion counters. Tiny support and original tiles 1024–2047 compile-only evidence accompany it. No neural/full-vocabulary runtime acceptance is inferred. [Evidence](STREAM-OUTPUT.md).
 
 Full 193 × 210 model layout: independent static checks and SDK boot accepted for 40530 PEs. Only 12 of 34552 matrix blocks contain original weights; reset/prepare passes, no compute. [Exact scope](MODEL-BOOT.md).
+
+## Historical progress entries
+
+The entries below preserve earlier milestones in order; “latest” and pending assembly statements refer to their historical recording time. Current assembly and runtime status are given above.
 
 Original model blocks 0–1535 now pass two independent initializer/resource/whole-ELF compatibility audits. Full 34552-block assembly and neural execution remain open. [Partition ledger and limits](MODEL-PARTITIONS.md).
 

@@ -1,0 +1,22 @@
+{
+  "original_file_sha256": "a496bcea567558f158dffef6d8f0a2bdfc637a4172dec94a743cd392f454cd28",
+  "original_bytes": 821,
+  "publication_note": "Derived metadata; private paths replaced. Binary/tensor payloads omitted. Original SHA-256 identifies the retained private record, not this summary.",
+  "record": {
+    "timeout_seconds": 30,
+    "mode": 1,
+    "limit": 1000000000,
+    "case": "active-communication",
+    "rss_limit_kib": 2097152,
+    "simulator_threads": 2,
+    "observation_seconds": 1.0,
+    "host_pid_namespace": "pid:[4026531836]",
+    "allow_stop_timeout": true,
+    "explicit_core_export": true,
+    "scope": "Public SDK2.10.1 explicit core export qualification only. No restoration, full-model numerical, generation or hardware acceptance.",
+    "reused_compile_manifest_sha256": "d19bd241da4aab2180525dea9b25d99d9a67863ec9e8e049451e6bb1f2301f3d",
+    "new_driver_sha256": "0e45754f0e565e973ff9d1ca3fdcf046a7c3576dc9c4a150f334b636cb7a362c",
+    "compile_driver_sha256": "f28e8760b5e7ca48170b9901b01f2fac60a605b75ca54db618f1872fef9de24c",
+    "compile_execution_sha256": "c6c404c9d8042a8f6b309c0c82ba5e62d22a36262230f079b654d56716506ee0"
+  }
+}
