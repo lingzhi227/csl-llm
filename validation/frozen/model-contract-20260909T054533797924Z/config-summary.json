@@ -1,0 +1,7 @@
+{
+  "timeout_seconds": 180,
+  "rss_limit_kib": 2097152,
+  "scope": "Offline whole-ELF partition containment, common allocated images, fixed CSL/layout and complete output metadata/ordered SDK I/O/RPC compatibility. No composition, compiler, simulator or neural execution.",
+  "original_file_sha256": "db2e365ef04902b7b9b9aa97ba36b73f307bc7744e6bc63807a31487bd3b142b",
+  "publication_note": "Derived compact report; detailed object tables and private paths omitted; original hash meanings unchanged."
+}

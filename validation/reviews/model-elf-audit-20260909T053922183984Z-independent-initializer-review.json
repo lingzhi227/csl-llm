@@ -1,0 +1,24 @@
+{
+  "reviewed_at": "2026-09-09T05:46:27.239777+00:00",
+  "run": "model-elf-audit-20260909T053922183984Z",
+  "compile_manifest_sha256": "b7cc06c7cf718cb9fb989ad55c1f50cce62fb39652d56d047e06d4f11422ba54",
+  "manifest_sha256": "6138802922a94e8f30baca8d503539cd2e84755dfdffa57ac11c8ccc5b4b6096",
+  "execution_sha256": "2e187f9e8b7dbbf9728cbbd155feeac0e17d19a19bf8fedc1294d0bfadba307b",
+  "results_sha256": "b019334390e2d6cfdb5b76259cf36c92dba1da1df1ea8d81eadf80ef11d673ae",
+  "counts": {
+    "matrix": 34552,
+    "controller": 25,
+    "bias": 9
+  },
+  "coordinates": 40530,
+  "elf_count": 1401,
+  "selected_original_matrices": 1024,
+  "all_initializers_exact": true,
+  "all_manifest_and_report_hashes_verified": true,
+  "all_tracked_pids_absent": true,
+  "elapsed_seconds": 153.92900857911445,
+  "peak_rss_kib": 137664,
+  "method": "Independent closed-form physical ownership, manual ELF64 symbols and SDK ELFObject actual segment coordinates/read_data. Declaration bytes bound to previously independently qualified original data.",
+  "scope": "Compile-only selected original matrices and all controller norms, selected biases, zero placeholders and alignment. No runtime identity, complete original weight deployment or neural inference.",
+  "review_script_sha256": "10b1d448c499d73d31fafe81d357e9362e5fc6d9ca97f66da91d5c8925eb2ae8"
+}
