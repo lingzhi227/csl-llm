@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "selected_tiles": 1024,
+  "common_tiles": 5978,
+  "normalized_layout_sha256": "bb1403153290abb27fe6148b0d072f98b87352870f038ecf46e33c0261ffcfb3",
+  "output_metadata_sha256": "067f1e1cd0ca1465f36072f77cd31ecf828352caad258efc70829e94daa0e97d",
+  "common_allocated_and_ordered_loader_segments_exact": true,
+  "rpc_signature_sha256": "5cfa49240c20822a35ec5174165f0370b93404e910be48b2580d091582e14859",
+  "io_signature_sha256": "ea95fd26b61ef0a72947835741b435aef3c7b88a99c8bfc52bb796f619775a2e",
+  "candidate_audit_execution_sha256": "c0229347aef4dede0762768eead809e885115b7cd3ca21a13d2d09fb5cb12072",
+  "baseline_audit_execution_sha256": "a71689f8b57c99a42f75c80d0829eb77fc749b6c46f6962fc50ec52f555f1c76",
+  "tool_sha256": "134a387da3962b5cac5f2bcad3a5ed2e99d3714c725b6ae9c1b954991a9e7ce0",
+  "scope": "Whole ELF coordinate containment and fixed program/layout/ordered SDK I/O/RPC contracts only. Selected and common images can be requested without cropping. Complete partition coverage, actual composition and SDK neural execution remain separate requirements.",
+  "success": true,
+  "offline_only": true,
+  "original_file_sha256": "4fc84bc8020a01ccb72bb7ab038cc14baccf803f5836885d309c7f011afbfeae",
+  "publication_note": "Derived compact report; detailed object tables and private paths omitted; original hash meanings unchanged."
+}

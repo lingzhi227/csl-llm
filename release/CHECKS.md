@@ -98,3 +98,5 @@ Partitions 23–24: six complete remote manifests, local selected source, exact 
 Partitions 25–26: six complete remote manifests, local selected source, exact original intervals and independent review/execution/results bindings verified. No compiler/SDK/CPU reference rerun. See [publication record](MODEL-PARTITION-25-26-CHECKS.json).
 
 Partitions 27–28: six complete remote manifests, local selected source, exact original intervals and independent review/execution/results bindings verified. No compiler/SDK/CPU reference rerun. See [publication record](MODEL-PARTITION-27-28-CHECKS.json).
+
+Partitions 29–30: six complete remote manifests, local selected source, exact original intervals and independent review/execution/results bindings verified. No compiler/SDK/CPU reference rerun. See [publication record](MODEL-PARTITION-29-30-CHECKS.json).

@@ -1,0 +1,8 @@
+{
+  "success": true,
+  "offline_only": true,
+  "source_execution_sha256": "9bb31c6920feb3a7612d06817bada09b45dff80e6dbd52b7032fed4ce02bdb6e",
+  "scope": "Offline initial ELF bytes, static SRAM and DSR allocations. No compiler, simulator, runtime identity, full original model or neural execution.",
+  "original_file_sha256": "76dad9bbf8ef285e07a96dc5655ff21836353f73aef6b982f91cb1ed23048755",
+  "publication_note": "Derived compact report; detailed object tables and private paths omitted; original hash meanings unchanged."
+}
