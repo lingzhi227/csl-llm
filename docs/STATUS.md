@@ -38,3 +38,5 @@ Full-model validation preparation is published separately: independently accepte
 Latest static ledger covers eight intervals, original blocks 0–7679 of 34552. The [runtime lifecycle source successor](MODEL-VALIDATION-PREPARATION.md) fixes exception-safe cleanup and includes host-tested request helpers; complete model SDK execution remains open.
 
 Latest static coverage: ten intervals, original blocks 0–9727 of 34552. Guarded generation preparation now has a reviewed source-only owner and host admission tests; no actual full-model first-token or generation SDK acceptance yet. [Source/evidence levels](MODEL-VALIDATION-PREPARATION.md).
+
+Latest published static ledger: twelve closed intervals, original blocks 0–11775 of 34552. [Evidence and limits](MODEL-PARTITIONS.md). Full-model assembly and SDK inference remain unaccepted; generation snapshot023236 remains source-only.

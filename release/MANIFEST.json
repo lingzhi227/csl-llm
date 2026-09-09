@@ -1,5 +1,5 @@
 {
-  "scope": "Ten original static model partitions and source-only guarded generation preparation; SDK neural scope remains bounded two-layer cached/reset, 2026-09-09",
+  "scope": "Twelve original static model partitions; SDK neural scope remains bounded two-layer cached/reset, 2026-09-09",
   "files": [
     {
       "path": ".gitignore",
@@ -13,8 +13,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 8481,
-      "sha256": "85bbde4b4299826a9333a686ead98f509d3e767b1bfea39be84da712c6da4f0a"
+      "bytes": 8485,
+      "sha256": "fce15e2ac46d54cf4d94662cade07f0e3907f1ea1632cce9564fd48e36293cdc"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
@@ -473,8 +473,8 @@
     },
     {
       "path": "docs/MODEL-PARTITIONS.md",
-      "bytes": 8730,
-      "sha256": "e5e8fbb5878ae90fcc2ab75529037e4e5f88bf8b75f55bdc3058a3303966f32d"
+      "bytes": 10238,
+      "sha256": "3e2b821a5dfe65892a143120677ae5b4f4ddfa6438529d4f6d5a8cc7cff4e1a9"
     },
     {
       "path": "docs/MODEL-VALIDATION-PREPARATION.md",
@@ -513,8 +513,8 @@
     },
     {
       "path": "docs/STATUS.md",
-      "bytes": 5848,
-      "sha256": "aafeac70c3dff4b789770c0ad4aede1d3fb690b0c4d692e7d53a7444e06735b2"
+      "bytes": 6090,
+      "sha256": "a4eb9b107a770bec353901a750ebe374d1f1240aa52333fec4ea2589290b2976"
     },
     {
       "path": "docs/STREAM-OUTPUT.md",
@@ -543,8 +543,8 @@
     },
     {
       "path": "release/CHECKS.md",
-      "bytes": 12618,
-      "sha256": "4ecb0f5db3692bffb9974e0c3a4db0ac0dfa807e7d1c116abdf20cfe8235ce17"
+      "bytes": 12876,
+      "sha256": "9b96003324a311abc50baeda750c153acdb599bab9c414cca69d729ad1de2aad"
     },
     {
       "path": "release/COLLECTIVE-CHECKS.json",
@@ -587,6 +587,11 @@
       "sha256": "cbb3bbc8c3ae6c1556dcc4d4575ef9df4bd9d10e4c86a02c279fd0fcd79a63f1"
     },
     {
+      "path": "release/MODEL-PARTITION-11-12-CHECKS.json",
+      "bytes": 2688,
+      "sha256": "38a21ec874efdf115ef02f2a0f26ba2c6b8d0a96efd5d5d827188df02b9ba609"
+    },
+    {
       "path": "release/MODEL-PARTITION-5-6-CHECKS.json",
       "bytes": 2685,
       "sha256": "4e40d753c52a3077de3982108b209357ab225d8c79a14ea16eb35ed6ace63084"
@@ -608,8 +613,8 @@
     },
     {
       "path": "release/MODEL-PARTITION-LEDGER.json",
-      "bytes": 7581,
-      "sha256": "077075275a33ac39dd2b5bbe11ddfa8d2d4a2fb7e82a993c9ff37833f8b45f25"
+      "bytes": 9048,
+      "sha256": "27aa56ea19e1f5a4b92adab58d105f053b54db1e70bf88b327336d5e9cb09466"
     },
     {
       "path": "release/MODEL-PREPARATION-CHECKS.json",
@@ -3642,6 +3647,76 @@
       "sha256": "dd890c2e82000fdcb8b6cf27a2d5ea8f105d683b60594bea108a287aea3b08c0"
     },
     {
+      "path": "validation/frozen/model-compile-20260909T024109809422Z/config-summary.json",
+      "bytes": 1038,
+      "sha256": "61e22e8dec4acc1bf9351adc379a12c4ac1ddad579da84b636e1c754041d433c"
+    },
+    {
+      "path": "validation/frozen/model-compile-20260909T024109809422Z/driver.py",
+      "bytes": 6725,
+      "sha256": "6b9c3eabb072023805fe3201100418caac97981c0f0fd555bafcc1ad374d7f55"
+    },
+    {
+      "path": "validation/frozen/model-compile-20260909T024109809422Z/execution-summary.json",
+      "bytes": 807,
+      "sha256": "a57cf573310af86977019aa3dc03eb7bbeed4fe70b9e9e0e5871966f3c18efbc"
+    },
+    {
+      "path": "validation/frozen/model-compile-20260909T024109809422Z/manifest.json",
+      "bytes": 119060,
+      "sha256": "80eaa8a2093d2d1831e95c422ec6625568e7ee23129c0dafe266c72aef01f556"
+    },
+    {
+      "path": "validation/frozen/model-compile-20260909T024109809422Z/results-summary.json",
+      "bytes": 722,
+      "sha256": "ccdfcdc8d56b3282ca6230570687cf521cf09aeecb7547ca58ca435e39804917"
+    },
+    {
+      "path": "validation/frozen/model-compile-20260909T024109809422Z/static-input-config.json",
+      "bytes": 632205,
+      "sha256": "baa52a5012cd50e5e7b53d05c1b6f449e056459915d6fe7bd7bf9eebafac6965"
+    },
+    {
+      "path": "validation/frozen/model-compile-20260909T024109809422Z/static-input-manifest.json",
+      "bytes": 118146,
+      "sha256": "3bc5608622cdae8c56e56477757e7606872fc86e031fb86cb2762b2a9be6a419"
+    },
+    {
+      "path": "validation/frozen/model-compile-20260909T024200991738Z/config-summary.json",
+      "bytes": 1038,
+      "sha256": "87f5c557b490e68937387774a68c3abab6ca7e39319ccf7987b18866117ab874"
+    },
+    {
+      "path": "validation/frozen/model-compile-20260909T024200991738Z/driver.py",
+      "bytes": 6725,
+      "sha256": "6b9c3eabb072023805fe3201100418caac97981c0f0fd555bafcc1ad374d7f55"
+    },
+    {
+      "path": "validation/frozen/model-compile-20260909T024200991738Z/execution-summary.json",
+      "bytes": 807,
+      "sha256": "00f51c15cc73b865c0009d4d6a08d14c13ba8c546ec22ffc190cddd63282b45c"
+    },
+    {
+      "path": "validation/frozen/model-compile-20260909T024200991738Z/manifest.json",
+      "bytes": 119732,
+      "sha256": "e0019ec36114b2bbf05afee9bcb2eafa535de52d00b29926facd0b9e5a820a47"
+    },
+    {
+      "path": "validation/frozen/model-compile-20260909T024200991738Z/results-summary.json",
+      "bytes": 722,
+      "sha256": "ccdfcdc8d56b3282ca6230570687cf521cf09aeecb7547ca58ca435e39804917"
+    },
+    {
+      "path": "validation/frozen/model-compile-20260909T024200991738Z/static-input-config.json",
+      "bytes": 635671,
+      "sha256": "09699a0a3e9a0e0d1d6797e742e06fc9d7dbcb2d5ba645fc8add25e98408bd08"
+    },
+    {
+      "path": "validation/frozen/model-compile-20260909T024200991738Z/static-input-manifest.json",
+      "bytes": 118818,
+      "sha256": "37497821bb09428ef4e73670961f21c63ade86c61100cba287b332c7482eb38c"
+    },
+    {
       "path": "validation/frozen/model-contract-20260908T205030734366Z/config.json",
       "bytes": 472,
       "sha256": "13715f32bee26b11e7f016b91a4a02c0b1345063d34c3c477b8f8785d0f3fe4d"
@@ -4132,6 +4207,116 @@
       "sha256": "134a387da3962b5cac5f2bcad3a5ed2e99d3714c725b6ae9c1b954991a9e7ce0"
     },
     {
+      "path": "validation/frozen/model-contract-20260909T031703587119Z/config-summary.json",
+      "bytes": 502,
+      "sha256": "58340c8daf79744aff028f24a472cbfa4525f6459744e7c2197c30e21e88171e"
+    },
+    {
+      "path": "validation/frozen/model-contract-20260909T031703587119Z/driver.py",
+      "bytes": 4127,
+      "sha256": "a0236b560bde85722f55be199c9583cc7e66c2ee1ba8e0cc65dd58f56f5d2674"
+    },
+    {
+      "path": "validation/frozen/model-contract-20260909T031703587119Z/execution-summary.json",
+      "bytes": 803,
+      "sha256": "3114a85c3f95af245509e327b705c9d3c214b96b272beade113c4091db39749d"
+    },
+    {
+      "path": "validation/frozen/model-contract-20260909T031703587119Z/manifest.json",
+      "bytes": 734525,
+      "sha256": "4aec3dfa6cce282c00d30d9244d9c645441cb7edcb41223f875eabef2a9e1418"
+    },
+    {
+      "path": "validation/frozen/model-contract-20260909T031703587119Z/results-summary.json",
+      "bytes": 1353,
+      "sha256": "89e232165723d24e7019bc38d387a25a74c96bf2c314af146d4d92dc9ae97f4f"
+    },
+    {
+      "path": "validation/frozen/model-contract-20260909T031703587119Z/src/csl_llm/__init__.py",
+      "bytes": 80,
+      "sha256": "e330d6b21720c96f282971a7ec9519f943e1c21b9bd944c611bbb4763ca390e2"
+    },
+    {
+      "path": "validation/frozen/model-contract-20260909T031703587119Z/src/csl_llm/decoder_layout.py",
+      "bytes": 4528,
+      "sha256": "20fa5b2f051dcad58cb2c44f7d7f511b41fde243113c61a338ac2c661877ec13"
+    },
+    {
+      "path": "validation/frozen/model-contract-20260909T031703587119Z/src/csl_llm/regions.py",
+      "bytes": 2413,
+      "sha256": "2b23cc1644fc6e28ebe461bb68dfe0b4c77ac03570c094411d78d477377728c2"
+    },
+    {
+      "path": "validation/frozen/model-contract-20260909T031703587119Z/tools/compare_elf_images.py",
+      "bytes": 2353,
+      "sha256": "64bdf83955560a94e1e0389f9f6ee81c91632c370e70560462d1f285f1852f6f"
+    },
+    {
+      "path": "validation/frozen/model-contract-20260909T031703587119Z/tools/elf_partition.py",
+      "bytes": 6170,
+      "sha256": "53c0c74f0731a9ff26424b9cf53b91dfb02ffd4bffc12e63d6edbbdaf9118878"
+    },
+    {
+      "path": "validation/frozen/model-contract-20260909T031703587119Z/tools/model_partition_contract.py",
+      "bytes": 8405,
+      "sha256": "134a387da3962b5cac5f2bcad3a5ed2e99d3714c725b6ae9c1b954991a9e7ce0"
+    },
+    {
+      "path": "validation/frozen/model-contract-20260909T033259893327Z/config-summary.json",
+      "bytes": 502,
+      "sha256": "6d0e269632a807da406af630671776e4c9cc2823342e84f5e71d6cfb6d765337"
+    },
+    {
+      "path": "validation/frozen/model-contract-20260909T033259893327Z/driver.py",
+      "bytes": 4127,
+      "sha256": "a0236b560bde85722f55be199c9583cc7e66c2ee1ba8e0cc65dd58f56f5d2674"
+    },
+    {
+      "path": "validation/frozen/model-contract-20260909T033259893327Z/execution-summary.json",
+      "bytes": 804,
+      "sha256": "aa32f2eb08b5ff279898a6fee2b5ae8cb5c14d41343298a2d04bdde63dd0c50b"
+    },
+    {
+      "path": "validation/frozen/model-contract-20260909T033259893327Z/manifest.json",
+      "bytes": 735197,
+      "sha256": "0a56acce8ace5b978203d5577e3776accfdae466a011cbb13d9bf12a5c3f932b"
+    },
+    {
+      "path": "validation/frozen/model-contract-20260909T033259893327Z/results-summary.json",
+      "bytes": 1353,
+      "sha256": "2f254b185e4428fa09f9eb0661cbcfc1d3630fa933b1c5f5941d8b05cc181fbe"
+    },
+    {
+      "path": "validation/frozen/model-contract-20260909T033259893327Z/src/csl_llm/__init__.py",
+      "bytes": 80,
+      "sha256": "e330d6b21720c96f282971a7ec9519f943e1c21b9bd944c611bbb4763ca390e2"
+    },
+    {
+      "path": "validation/frozen/model-contract-20260909T033259893327Z/src/csl_llm/decoder_layout.py",
+      "bytes": 4528,
+      "sha256": "20fa5b2f051dcad58cb2c44f7d7f511b41fde243113c61a338ac2c661877ec13"
+    },
+    {
+      "path": "validation/frozen/model-contract-20260909T033259893327Z/src/csl_llm/regions.py",
+      "bytes": 2413,
+      "sha256": "2b23cc1644fc6e28ebe461bb68dfe0b4c77ac03570c094411d78d477377728c2"
+    },
+    {
+      "path": "validation/frozen/model-contract-20260909T033259893327Z/tools/compare_elf_images.py",
+      "bytes": 2353,
+      "sha256": "64bdf83955560a94e1e0389f9f6ee81c91632c370e70560462d1f285f1852f6f"
+    },
+    {
+      "path": "validation/frozen/model-contract-20260909T033259893327Z/tools/elf_partition.py",
+      "bytes": 6170,
+      "sha256": "53c0c74f0731a9ff26424b9cf53b91dfb02ffd4bffc12e63d6edbbdaf9118878"
+    },
+    {
+      "path": "validation/frozen/model-contract-20260909T033259893327Z/tools/model_partition_contract.py",
+      "bytes": 8405,
+      "sha256": "134a387da3962b5cac5f2bcad3a5ed2e99d3714c725b6ae9c1b954991a9e7ce0"
+    },
+    {
       "path": "validation/frozen/model-diagnostic-symbol-source-20260909T004636435324Z/manifest.json",
       "bytes": 723,
       "sha256": "e0278f283dea415e9410b5b3e3ac075e1d49f9a58b9eedb857dfc44f7a130db9"
@@ -4618,6 +4803,116 @@
     },
     {
       "path": "validation/frozen/model-elf-audit-20260909T024607209690Z/tools/model_initializer_audit.py",
+      "bytes": 8499,
+      "sha256": "497abba2a3ce9927325ea8e56f9d2c97fb2ecd785f3fec3105aef70fb0511e29"
+    },
+    {
+      "path": "validation/frozen/model-elf-audit-20260909T031146048688Z/config-summary.json",
+      "bytes": 702,
+      "sha256": "5ddbd265939a9c6090dcfea58b26abdee705965dfefcdb50c9b13e7b3be71b42"
+    },
+    {
+      "path": "validation/frozen/model-elf-audit-20260909T031146048688Z/driver.py",
+      "bytes": 5295,
+      "sha256": "8d46e3e52498efae3a56d1fd57117bae65c6b11463d1d6ffa9de3a01c3a82402"
+    },
+    {
+      "path": "validation/frozen/model-elf-audit-20260909T031146048688Z/execution-summary.json",
+      "bytes": 804,
+      "sha256": "cff54c1d33179d8a0b4fd39b1e9f3a489e6f6427aca374aeaec3878db10ed27f"
+    },
+    {
+      "path": "validation/frozen/model-elf-audit-20260909T031146048688Z/manifest.json",
+      "bytes": 553252,
+      "sha256": "430b0e56406d44b7dcafe8673de176f462aec69ab4971c3d3829dabc009459aa"
+    },
+    {
+      "path": "validation/frozen/model-elf-audit-20260909T031146048688Z/results-summary.json",
+      "bytes": 527,
+      "sha256": "66022dd0d3fb69f7b3492c0cc2192a0eaec6a08afa68fa94ff525664e04f21df"
+    },
+    {
+      "path": "validation/frozen/model-elf-audit-20260909T031146048688Z/src/csl_llm/__init__.py",
+      "bytes": 80,
+      "sha256": "e330d6b21720c96f282971a7ec9519f943e1c21b9bd944c611bbb4763ca390e2"
+    },
+    {
+      "path": "validation/frozen/model-elf-audit-20260909T031146048688Z/src/csl_llm/decoder_layout.py",
+      "bytes": 4528,
+      "sha256": "20fa5b2f051dcad58cb2c44f7d7f511b41fde243113c61a338ac2c661877ec13"
+    },
+    {
+      "path": "validation/frozen/model-elf-audit-20260909T031146048688Z/src/csl_llm/regions.py",
+      "bytes": 2413,
+      "sha256": "2b23cc1644fc6e28ebe461bb68dfe0b4c77ac03570c094411d78d477377728c2"
+    },
+    {
+      "path": "validation/frozen/model-elf-audit-20260909T031146048688Z/tools/dsr_graph.py",
+      "bytes": 4021,
+      "sha256": "b43d3b0cd5c6935b6e33143fc9cfca1f1855516ce29fd06987f047f0c745e111"
+    },
+    {
+      "path": "validation/frozen/model-elf-audit-20260909T031146048688Z/tools/elf_memory.py",
+      "bytes": 2976,
+      "sha256": "88a2c2d6cceefc3186499b12d9c97979d8f565402cda2b9ac493f56f3fe6d136"
+    },
+    {
+      "path": "validation/frozen/model-elf-audit-20260909T031146048688Z/tools/model_initializer_audit.py",
+      "bytes": 8499,
+      "sha256": "497abba2a3ce9927325ea8e56f9d2c97fb2ecd785f3fec3105aef70fb0511e29"
+    },
+    {
+      "path": "validation/frozen/model-elf-audit-20260909T032652818925Z/config-summary.json",
+      "bytes": 702,
+      "sha256": "030fe097201017c53ef5c17c92b776d2f7202673a9a31198c5f2f347dfaaae21"
+    },
+    {
+      "path": "validation/frozen/model-elf-audit-20260909T032652818925Z/driver.py",
+      "bytes": 5295,
+      "sha256": "8d46e3e52498efae3a56d1fd57117bae65c6b11463d1d6ffa9de3a01c3a82402"
+    },
+    {
+      "path": "validation/frozen/model-elf-audit-20260909T032652818925Z/execution-summary.json",
+      "bytes": 804,
+      "sha256": "61bb102d5b115667db66638d17bb93b185b1ab9ac223992cf493b4354fa0aba7"
+    },
+    {
+      "path": "validation/frozen/model-elf-audit-20260909T032652818925Z/manifest.json",
+      "bytes": 553924,
+      "sha256": "967e458da24ebba3d0edf468f6e5da674426f0563d450d655b0c0f6e09509fc1"
+    },
+    {
+      "path": "validation/frozen/model-elf-audit-20260909T032652818925Z/results-summary.json",
+      "bytes": 527,
+      "sha256": "2d4f44a571cdf5a886e35f903be88a7271608b7006bd1178d5895eaadc12682c"
+    },
+    {
+      "path": "validation/frozen/model-elf-audit-20260909T032652818925Z/src/csl_llm/__init__.py",
+      "bytes": 80,
+      "sha256": "e330d6b21720c96f282971a7ec9519f943e1c21b9bd944c611bbb4763ca390e2"
+    },
+    {
+      "path": "validation/frozen/model-elf-audit-20260909T032652818925Z/src/csl_llm/decoder_layout.py",
+      "bytes": 4528,
+      "sha256": "20fa5b2f051dcad58cb2c44f7d7f511b41fde243113c61a338ac2c661877ec13"
+    },
+    {
+      "path": "validation/frozen/model-elf-audit-20260909T032652818925Z/src/csl_llm/regions.py",
+      "bytes": 2413,
+      "sha256": "2b23cc1644fc6e28ebe461bb68dfe0b4c77ac03570c094411d78d477377728c2"
+    },
+    {
+      "path": "validation/frozen/model-elf-audit-20260909T032652818925Z/tools/dsr_graph.py",
+      "bytes": 4021,
+      "sha256": "b43d3b0cd5c6935b6e33143fc9cfca1f1855516ce29fd06987f047f0c745e111"
+    },
+    {
+      "path": "validation/frozen/model-elf-audit-20260909T032652818925Z/tools/elf_memory.py",
+      "bytes": 2976,
+      "sha256": "88a2c2d6cceefc3186499b12d9c97979d8f565402cda2b9ac493f56f3fe6d136"
+    },
+    {
+      "path": "validation/frozen/model-elf-audit-20260909T032652818925Z/tools/model_initializer_audit.py",
       "bytes": 8499,
       "sha256": "497abba2a3ce9927325ea8e56f9d2c97fb2ecd785f3fec3105aef70fb0511e29"
     },
@@ -6372,6 +6667,16 @@
       "sha256": "551d9583ee9ce78b0ec4f6f4e7cea5a3928e642020f8ed679d8d7fac28de6c47"
     },
     {
+      "path": "validation/reviews/model-contract-20260909T031703587119Z-independent-contract-review.json",
+      "bytes": 1292,
+      "sha256": "bc5cae0d262668f7f22627f43c0effb74bc89c40f72795f3049bced50aca17c2"
+    },
+    {
+      "path": "validation/reviews/model-contract-20260909T033259893327Z-independent-contract-review.json",
+      "bytes": 1294,
+      "sha256": "a4210bc0da87d7358dfa2e8c0984ddc2d5a93c661c3fdbbca45f00d5a2d510de"
+    },
+    {
       "path": "validation/reviews/model-elf-audit-20260908T210836386387Z-independent-initializer-review.json",
       "bytes": 1331,
       "sha256": "90f3452269d0d5aa2af50119a05f861406327196fb9d343006db43f2b291a2fc"
@@ -6455,6 +6760,26 @@
       "path": "validation/reviews/model-elf-audit-20260909T024607209690Z-independent-resource-review.json",
       "bytes": 1155,
       "sha256": "931ae000a84d2631638d4ad48524ba700c34840f7d1a5e6f6b27ad77cee5eaeb"
+    },
+    {
+      "path": "validation/reviews/model-elf-audit-20260909T031146048688Z-independent-initializer-review.json",
+      "bytes": 1331,
+      "sha256": "6233076319cb01deb8dee338c9319669ffdabd3e796c07f340b0e6bafef12c17"
+    },
+    {
+      "path": "validation/reviews/model-elf-audit-20260909T031146048688Z-independent-resource-review.json",
+      "bytes": 1155,
+      "sha256": "7c6c38bb5189f8a2cadf7d8d8de8d59f1e0ea8a2d807602645e229aafdce64ab"
+    },
+    {
+      "path": "validation/reviews/model-elf-audit-20260909T032652818925Z-independent-initializer-review.json",
+      "bytes": 1331,
+      "sha256": "2167eb1ea5ea9a93c9598b8f0784692e504fcbc343178ddb5f6fc94f8be95e29"
+    },
+    {
+      "path": "validation/reviews/model-elf-audit-20260909T032652818925Z-independent-resource-review.json",
+      "bytes": 1155,
+      "sha256": "df02a1e82c82005b2b40ca1969c64c13c10f6e596c907c44e7e11ff910a9aa99"
     },
     {
       "path": "validation/reviews/model-generation-integration-source-20260909T023236345664Z-source-snapshot-review.json",
