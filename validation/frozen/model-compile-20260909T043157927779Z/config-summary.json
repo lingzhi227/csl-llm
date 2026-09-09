@@ -1,0 +1,17 @@
+{
+  "timeout_seconds": 900,
+  "rss_limit_kib": 12582912,
+  "width": 193,
+  "height": 210,
+  "matrix_tiles": 34552,
+  "kv_tiles": 3168,
+  "controllers": 25,
+  "layers": 24,
+  "vocabulary": 151936,
+  "initialization": "selected-original-declarations",
+  "weight_storage": "u8",
+  "identity_initialization": "Opt-in device application-coordinate derivation in initialize; unexecuted",
+  "scope": "Complete original-sized193x210 model CSL graph. Selected original matrix declarations, original norms/frequencies on all25controllers (frequencies on24decodercontrollers) and selected original bias roots; remaining matrices/biases zero. Unexecuted coordinate identity initialization and optional byte ABI. Compile-only role/route/resource qualification; no complete initialized model, SdkRuntime or neural result.",
+  "original_file_sha256": "bab83e60397a0ae1ce028017ff78cfe6b66e5c1d5a384c1872b0fc2d24562393",
+  "publication_note": "Derived compact report; detailed object tables and private paths omitted; original hash meanings unchanged."
+}
