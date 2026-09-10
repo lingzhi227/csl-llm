@@ -58,7 +58,26 @@ The model uses hidden width **896**, MLP width **4,864**, **14 query heads / 2 K
 | Whole-model execution | First attempt reached a **six-hour timeout** with readiness only. A later diagnostic exported a core, but its neural state was not numerically accepted. **No verified first token or continuous generation.** |
 | Physical hardware | **Not tested.** Simulator timings are not hardware performance measurements. |
 
-## 2. Development and experiment log — newest first
+## 2. Where to find the code and evidence
+
+| Directory | What it contains | When to read it |
+| --- | --- | --- |
+| [`csl/kernels/`](csl/kernels/) | Reusable CSL arithmetic operators and their contracts. | Understand the device computations. |
+| [`csl/runtime/`](csl/runtime/) | CSL communication, distributed execution and state/control components. | Understand how PEs cooperate. |
+| [`src/csl_llm/`](src/csl_llm/) | Python placement and region-contract machinery. | Understand how a model becomes a PE layout. |
+| [`tools/`](tools/) | Python preparation, compiler/assembly drivers, SDK experiments and reference checks. | Follow the build and validation workflow. |
+| [`support/`](support/) | Isolated helper versions for model assembly, model boot, partitions, two-layer tests and core export; some include CSL. | Find the exact dependency set used by a specific milestone. |
+| [`configs/`](configs/) | Model identity, precision policy and reference inputs. | Identify precisely which model and assumptions are being tested. |
+| [`tests/`](tests/) | Host-side tests for tooling and contracts. | Check Python-side behavior; these are not device execution evidence. |
+| [`validation/frozen/`](validation/frozen/) | Selected historical drivers, CSL sources, manifests and compact run records. | Inspect the version associated with a recorded experiment. |
+| [`validation/reviews/`](validation/reviews/) | Independent acceptance and outcome reviews. | Verify whether a result was numerical, static, diagnostic or unsuccessful. |
+| [`evidence/`](evidence/) | Small published model/reference metadata. | Trace reference provenance without downloading model weights. |
+| [`docs/`](docs/) | Design contracts, milestone explanations, source maps and reproduction limits. | Read the detailed account behind a log entry. |
+| [`release/`](release/) | Publication checks, project state and file-hash manifest. | Audit this public package and distinguish it from original experiment artifacts. |
+
+**Start with a log entry, follow its source map, then inspect the corresponding frozen inputs and independent review.** CSL source is also preserved in milestone-specific `support/` and `validation/frozen/` directories; it is not all under the top-level `csl/` directory. Multiple historical helper versions are intentional: later changes must not silently replace the code behind an earlier accepted result.
+
+## 3. Development and experiment log — newest first
 
 Dates below are **publication dates** in Git history, not necessarily the date an experiment finished. Related small updates are grouped; links lead to the source map, original run identities, independent reviews and limitations. Failed experiments are retained because they define what remains unverified.
 
@@ -88,25 +107,6 @@ Dates below are **publication dates** in Git history, not necessarily the date a
 | 2026-09-08 | **Initial operator library and reference baseline released.** Linear algebra, regional communication, normalization, residual, SwiGLU, softmax, RoPE and model references. | **Bounded component tests.** Starting point for the integrations above. [Operator contracts](csl/kernels/README.md) · [Validation guide](validation/README.md) |
 
 For individual publication changes, see the [complete commit history](https://github.com/lingzhi227/csl-llm/commits/main/). Original acceptance rules are in [ACCEPTANCE.md](docs/ACCEPTANCE.md).
-
-## 3. Where to find the code and evidence
-
-| Directory | What it contains | When to read it |
-| --- | --- | --- |
-| [`csl/kernels/`](csl/kernels/) | Reusable CSL arithmetic operators and their contracts. | Understand the device computations. |
-| [`csl/runtime/`](csl/runtime/) | CSL communication, distributed execution and state/control components. | Understand how PEs cooperate. |
-| [`src/csl_llm/`](src/csl_llm/) | Python placement and region-contract machinery. | Understand how a model becomes a PE layout. |
-| [`tools/`](tools/) | Python preparation, compiler/assembly drivers, SDK experiments and reference checks. | Follow the build and validation workflow. |
-| [`support/`](support/) | Isolated helper versions for model assembly, model boot, partitions, two-layer tests and core export; some include CSL. | Find the exact dependency set used by a specific milestone. |
-| [`configs/`](configs/) | Model identity, precision policy and reference inputs. | Identify precisely which model and assumptions are being tested. |
-| [`tests/`](tests/) | Host-side tests for tooling and contracts. | Check Python-side behavior; these are not device execution evidence. |
-| [`validation/frozen/`](validation/frozen/) | Selected historical drivers, CSL sources, manifests and compact run records. | Inspect the version associated with a recorded experiment. |
-| [`validation/reviews/`](validation/reviews/) | Independent acceptance and outcome reviews. | Verify whether a result was numerical, static, diagnostic or unsuccessful. |
-| [`evidence/`](evidence/) | Small published model/reference metadata. | Trace reference provenance without downloading model weights. |
-| [`docs/`](docs/) | Design contracts, milestone explanations, source maps and reproduction limits. | Read the detailed account behind a log entry. |
-| [`release/`](release/) | Publication checks, project state and file-hash manifest. | Audit this public package and distinguish it from original experiment artifacts. |
-
-**Start with a log entry, follow its source map, then inspect the corresponding frozen inputs and independent review.** CSL source is also preserved in milestone-specific `support/` and `validation/frozen/` directories; it is not all under the top-level `csl/` directory. Multiple historical helper versions are intentional: later changes must not silently replace the code behind an earlier accepted result.
 
 ## Reproduction and scope
 
