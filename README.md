@@ -1,97 +1,115 @@
 # CSL-LLM
 
-**Project state: temporarily development complete; paused pending physical Cerebras hardware validation (2026-09-09, by user decision).** Simulation, performance experiments and further development are stopped. Existing source and evidence are preserved. This is a project pause, not full-model SDK acceptance: no complete-model first output token, continuous generation or declared capacity has been verified. Work resumes only on a new user instruction. [Handoff and evidence boundaries](docs/PROJECT-PAUSE.md).
+**A research implementation of a complete language model in Cerebras Software Language (CSL), with distributed operators and explicit communication across a wafer-scale processor.** The target is **Qwen2.5-0.5B-Instruct** on **Cerebras WSE-3**, using SDK **2.10.1**, original model weights, all **24 decoder layers**, and the full **151,936-token vocabulary**.
 
-CSL kernels and distributed execution components for real-model inference on Cerebras WSE-3, developed with SDK 2.10.1. The target is **Qwen2.5-0.5B-Instruct**, using official weights, all 24 layers and the full vocabulary.
+The research question is how to place the model's weights, computation and persistent attention state in distributed on-chip memory, connect those computations through the wafer's communication fabric, and verify the resulting program against independent model references. A **PE** is one processing element with its own local memory; the complete static assembly occupies **193 × 210 = 40,530 PEs**.
 
-**This is an early research release of validated components, not a working end-to-end LLM runtime.** The complete 151936-token tied embedding/head now passes three isolated SDK cases, and a native two-layer chain passes cached position and reset checks; complete24-layer generation and full-model capacity acceptance are deferred until work resumes. The project builds on Pragma HLS experience; this release contains handwritten CSL and Python planning/validation tools, not a complete HLS model compiler.
+**Current state: development paused, awaiting physical hardware experiments.** All 24 layers have been statically assembled; a two-layer chain and the complete vocabulary head have separately passed SDK numerical tests. **No complete-model first output token has been verified.** “Temporarily development complete” records the user's decision to stop simulation, not a claim of end-to-end correctness. [Pause and handoff](docs/PROJECT-PAUSE.md).
 
-## Start here
+## 1. Project design
 
-- [What has passed, and at what scale](docs/STATUS.md)
-- [Setup and reproduction](docs/REPRODUCING.md)
-- [Kernel contracts](csl/kernels/README.md)
-- [Acceptance requirements](docs/ACCEPTANCE.md) and [development stages](DEVELOPMENT-PLAN.md)
-- [Evidence scope](validation/README.md) and [source attribution](THIRD_PARTY_NOTICES.md)
+The diagram describes the intended complete inference path. Its components have different validation levels, listed below; the entire path has not passed end-to-end execution.
 
-## Published components
+```mermaid
+flowchart TB
+    W["Pinned original model weights"]
+    P["Python preparation<br/>Weight packing, PE placement, CSL generation"]
+    C["SDK compiler and project assembly tools<br/>Compiled per-PE programs and layout"]
+    W --> P --> C
 
-| Component | Recorded SDK scope |
-| --- | --- |
-| Linear algebra | FP32 local GEMV; lossless packed-BF16 weights with FP32 accumulation; real 128×896 contraction over eight PEs, ten calls |
-| Regional communication | Two translated eight-PE regions, repeated device epochs and reset sequences |
-| Vector operators | 21 cases covering RMSNorm, residual addition, SwiGLU slices, finite softmax and selected alias behavior |
-| Qwen RoPE | 14 query / 2 key heads; nine position/alias cases, including position 2047 |
-| Embedding and selection | Original 151936 × 896 tied embedding/head, three isolated SDK cases, complete logits checked from actual stopped cores and ordinary device winner transfer; earlier tile tests retained |
-| Model reference | Verified checkpoint inventory and independent equations compared with official FP32 reference over 42 fixed-prefix steps |
+    subgraph DEVICE["CSL on the wafer — simulated with SDK 2.10.1"]
+        E["Token embedding"]
+        subgraph LAYER["Decoder block — repeated for all 24 layers"]
+            A["RMSNorm → Q / K / V projections"]
+            B["RoPE → causal grouped-query attention<br/>→ output projection → residual add"]
+            K["Persistent KV cache<br/>Keys and values from earlier tokens"]
+            F["RMSNorm → GATE and UP projections<br/>→ SwiGLU → DOWN projection → residual add"]
+            A --> B --> F
+            K <--> B
+        end
+        V["Final RMSNorm → tied vocabulary head<br/>151,936 scores → greedy token selection"]
+        E --> A
+        F --> V
+    end
 
-Recorded SDK results belong to the original development snapshots. Publication changes make host paths portable; they have not received a fresh complete SDK qualification. See [release checks](release/CHECKS.md).
-
-## Latest runtime outcome and diagnostics
-
-The first full 24-layer SDK attempt reached its six-hour time limit with readiness only; **no first output token or neural result was verified**. Two-PE compute and communication experiments subsequently passed independent checks of explicit diagnostic exports during unfinished work. Both active cases still failed at shutdown. [Evidence, source and exact limitations](docs/SDK-CORE-EXPORT.md). Checkpoint restoration and full-model inference remain unqualified.
-
-## Complete static model assembly
-
-**All 34552 original matrix blocks are now assembled across 40530 PE coordinates, with independent whole-ELF and actual assembly symbol checks.** [Source, evidence and runtime boundary](docs/FULL-MODEL-ASSEMBLY.md). This is static acceptance; full-model neural SDK execution remains pending.
-
-## Latest accepted integration
-
-**Original-weight layer 0 → layer 1 now passes position 0, cached position 1 and reset-to-position-0 in one persistent SDK instance.** All 2088 matrix blocks are original; 52 independent numerical checks pass and reset outputs repeat bit for bit. [Cached/reset source and evidence](docs/TWO-LAYER-CACHED.md). Full 24-layer inference and generation remain unfinished.
-
-## Latest accepted component
-
-**The complete original vocabulary now passes actual SDK execution.** All 9496 weight tiles are assembled; three cases verify all 151936 logits, zero/tie behavior, three original embedding rows and fresh-process bit-repeat. [Full evidence, source map and remaining limits](docs/FULL-VOCABULARY.md). Device final normalization, the integrated 24-layer model and persistent generation remain unfinished.
-
-The **193 × 210 model layout now passes actual SDK initialization/reset/prepare** after independent static checks. Only 12 matrix blocks have original weights; no model computation was invoked. [Boot evidence and source boundaries](docs/MODEL-BOOT.md).
-
-All **34552 original matrix blocks** now have independently accepted static partition coverage across 35 intervals, including per-partition whole-ELF compatibility. The complete static assembly and its own diagnostic ABI are now independently accepted; full-model SDK inference remains unaccepted. [Partition evidence and tools](docs/MODEL-PARTITIONS.md).
-
-The full 24-layer single-token **CPU reference** now passes 459 independent checks. Expanded static symbol checks and source-reviewed full-model runtime tools are also published, with their evidence levels kept separate. [Validation preparation and limits](docs/MODEL-VALIDATION-PREPARATION.md). These do not establish full-model SDK inference.
-
-## New accepted milestones
-
-Stateful GQA (34 real reference tokens), a separately scoped 2048-position KV diagnostic, sequential packet ACK completion and exact full-checkpoint BF16 packing are now included. [Read their acceptance boundaries](docs/MILESTONES.md). These are component milestones, not complete-model generation.
-
-The full layer-0 **UP 4864×896 projection** also passes four input cases on 304 PEs. This is a complete single projection, not by itself a complete MLP. The published tool selects the accepted u16-transfer snapshot; later transport optimizations are not included.
-
-The complete layer-0 **GATE 4864×896 projection** now also passes four cases on 304 PEs using paired u32 BF16 transfer and column readback. Its separate entry point preserves the historical UP/u16 qualification. Different UP/GATE runs do not establish a transport speedup ratio.
-
-The complete layer-0 **DOWN 896×4864 projection** now also passes four cases on 308 PEs, including the padded final input shard. UP, GATE and DOWN have each passed separately; their device-side MLP composition subsequently passed in a separate static-weight run.
-
-## Complete resident MLP milestone
-
-**UP/GATE/SwiGLU/DOWN now run together with device-only intermediates**,916 resident weight tiles and four independently checked input cases. [Evidence, reproduction and limits](docs/RESIDENT-MLP.md). RMSNorm/residual were subsequently accepted in the bounded layer0 decoder; complete-model integration remains pending. Generated CSL weight literals are excluded from this repository.
-
-An accepted **DSD-copy optimization reduces measured controller cycles by49.57% on the nonzero MLP cases**, with bit-identical results and protocol observations. This is a simulator interval comparison, not a hardware speedup. Both implementations and [comparison limits](docs/RESIDENT-MLP.md) are retained.
-
-## Complete decoder layer milestone
-
-**The complete native layer0 now passes five calls with causal GQA, persistent KV, both RMSNorm/residual paths and MLP.** [Scope and reproduction](docs/DECODER.md). The separate token-controller tests are scripted metadata only;24-layer layout checks are offline only. Neither is complete-model inference.
-
-A **one-tile native-u8 static-weight SDK probe** now passes full before/after weight readback and four GEMVs. Related compact initializer and streamed-layer checks are explicitly compile-only. [Source and reproduction boundaries](docs/NATIVE-U8.md).
-
-An **experimental two-PE intact-artifact composition** now passes isolated SDK runtime comparison.256/1024 real-tile compilation probes remain separately scoped compiler results with zero-filled placeholders. [Limits and source prerequisites](docs/PARTITION-EXPERIMENT.md).
-
-The **eight-PE cross-partition line allreduce** now also passes actual SDK execution for a complete 128 × 896 contraction, with independent numerical checks and exact direct/composed output comparison. [Evidence and boundaries](docs/PARTITION-EXPERIMENT.md#eight-pe-cross-partition-collective-acceptance). Full-model acceptance remains open.
-
-**Tagged streaming output on a 193 × 50 PE grid** now passes actual SDK transport and independent payload/completion checks. This uses diagnostic integer patterns, not model logits. [Accepted scope, failure history and reproduction](docs/STREAM-OUTPUT.md).
-
-## Repository layout
-
-```text
-csl/kernels/       Reusable local CSL operators and contracts
-csl/runtime/       Distributed linear execution and line collectives
-src/csl_llm/       Region contracts and candidate model layout planner
-tools/             Model/reference preparation, SDK probes and resource inspection
-tests/             Host-side region, ELF and process-lifecycle tests
-configs/           Pinned model, precision policy and reference prompts
-docs/              Scope, reproduction, placement and acceptance
-validation/reviews/ Selected independent historical review records
-evidence/          Small checkpoint metadata; fresh runs are generated locally
-release/           Source snapshot hashes and publication checks
+    C --> DEVICE
+    H["Python host runtime<br/>Input tokens, launch, control, result collection"]
+    H --> E
+    V --> O["Next token"]
+    O -. "Next decoding step" .-> H
+    DEVICE -. "Observed outputs and diagnostic state" .-> T["Independent validation<br/>Reference equations, numerical and protocol checks"]
+    W --> R["Python model reference"]
+    R --> T
 ```
 
-The accepted complete static assembly uses **193×210 application PE positions (40530 PEs)**. The first full-model runtime timed out; static placement does not establish successful inference. Batch 1, total context 2048 and up to 256 generated tokens are targets, not demonstrated capacity.
+**CSL performs the device computation and communication.** Matrix blocks reside on PEs; CSL kernels implement the projections, normalization, attention, nonlinearities and reductions. Distributed runtime code handles routing, completion and persistent state. In the accepted two-layer test, intermediate values pass between layers on the device; Python does not calculate the second layer on its behalf.
 
-Model weights, activation traces, SDK binaries, compiled device artifacts and unfinished experiments are not distributed. Obtain the pinned model and your own SDK installation as described in the reproduction guide. Physical-wafer execution has not been validated.
+**Python builds, drives and checks the program.** It packs weights, plans placement, generates deployment sources, orchestrates compilation and assembly, launches SDK experiments, and compares actual outputs with independent references. Python reference inference is a separate validation tool. This repository builds on Pragma HLS experience, but its current model implementation is handwritten/generated CSL with Python tooling, not a general HLS-to-CSL model compiler.
+
+The model uses hidden width **896**, MLP width **4,864**, **14 query heads / 2 KV heads**, and BF16 weights with FP32 accumulation in the validated linear paths. Batch size **1**, total context **2,048**, and up to **256 generated tokens** are design targets; the full-model capacity has not been demonstrated.
+
+### What has actually been established?
+
+| Scope | Evidence today |
+| --- | --- |
+| Full 24-layer deployment | All **34,552 original matrix blocks** covered across 35 static partitions and assembled into the complete PE layout; program identity and interfaces checked. **Static acceptance.** |
+| Decoder integration | Original **layer 0 → layer 1**, first position, cached next position and reset, in one SDK instance; **52 independent numerical checks** and bit-exact reset repeat. **SDK numerical acceptance at two layers.** |
+| Full vocabulary module | All **151,936 scores** checked in three isolated SDK cases using original weights. **SDK numerical acceptance for this module.** |
+| Whole-model execution | First attempt reached a **six-hour timeout** with readiness only. A later diagnostic exported a core, but its neural state was not numerically accepted. **No verified first token or continuous generation.** |
+| Physical hardware | **Not tested.** Simulator timings are not hardware performance measurements. |
+
+## 2. Development and experiment log — newest first
+
+Dates below are **publication dates** in Git history, not necessarily the date an experiment finished. Related small updates are grouped; links lead to the source map, original run identities, independent reviews and limitations. Failed experiments are retained because they define what remains unverified.
+
+**Evidence labels:** **SDK** = actual simulator output independently checked within the stated scope; **Static** = compilation/artifact checks without inference; **CPU** = reference computation; **Source** = implementation or host checks only; **Diagnostic** = saved state or protocol evidence, not model inference.
+
+| Published | Work completed or outcome recorded | Evidence and limits |
+| --- | --- | --- |
+| 2026-09-09 | **Development paused; final full-model diagnostic retained.** All 40,530 ready flags checked; a 2.25 GB core exported; tracked processes exited. | **Diagnostic / stop timeout.** Core neural values remain unaccepted; no qualified restart checkpoint. [Handoff](docs/PROJECT-PAUSE.md) |
+| 2026-09-09 | **Runtime state export qualified on two PEs.** Normal and unfinished computation/communication snapshots checked independently. The first full-model six-hour failure was also documented. | **Diagnostic.** Active snapshots pass their checks, while shutdown still times out. Full-model failure produced no verified neural output. [Source and results](docs/SDK-CORE-EXPORT.md) |
+| 2026-09-09 | **Complete original-model assembly.** All 34,552 matrix blocks composed into the 193 × 210 layout; 408,684 symbol/coordinate checks. | **Static.** Exact compiled-program and interface checks; no inference pass. [Assembly](docs/FULL-MODEL-ASSEMBLY.md) |
+| 2026-09-09 | **All 35 original-weight partitions completed.** Repeated compilation and initializer audits culminated in complete matrix-block coverage. | **Static.** The full coverage ledger preserves every interval and its evidence. [Partitions](docs/MODEL-PARTITIONS.md) |
+| 2026-09-08 | **Full-model execution tooling prepared.** Exception-safe cleanup and guarded generation preparation added alongside further static partitions. | **Source.** Host checks and reviewed preparation do not establish full-model execution. [Tooling](docs/MODEL-VALIDATION-PREPARATION.md) |
+| 2026-09-08 | **Full 24-layer single-token reference checked.** 459 independent reference checks completed. | **CPU.** This result is separate from CSL execution. [Reference evidence](docs/MODEL-VALIDATION-PREPARATION.md) |
+| 2026-09-08 | **Two-layer cached decoding and reset validated.** Original layer 0 → layer 1, positions 0 and 1, then reset to position 0. | **SDK.** One persistent instance, 52 numerical checks, bit-exact reset outputs. [Cached chain](docs/TWO-LAYER-CACHED.md) |
+| 2026-09-08 | **First original-weight two-layer chain validated.** 2,088 original matrix blocks connected with device-side intermediates. | **SDK.** Bounded first-position integration, preceding the cached/reset extension. [Two-layer chain](docs/TWO-LAYER.md) |
+| 2026-09-08 | **Full-layout boot validated.** Initialization, reset and preparation across 40,530 PE coordinates. | **SDK readiness only.** This early boot fixture had only 12 original-weight matrix blocks; it did not execute model inference. [Boot](docs/MODEL-BOOT.md) |
+| 2026-09-08 | **Complete vocabulary head validated.** 9,496 original weight blocks; all scores, selected embedding rows, tie behavior and repeat checked. | **SDK.** Three isolated cases, not the output of a complete 24-layer chain. [Vocabulary](docs/FULL-VOCABULARY.md) |
+| 2026-09-08 | **Large-grid output transport validated.** Tagged streaming output across a 193 × 50 grid. | **SDK transport.** Diagnostic integer payloads and completion counts, not model scores. [Transport](docs/STREAM-OUTPUT.md) |
+| 2026-09-08 | **Cross-partition execution validated.** Eight-PE reduction for a 128 × 896 contraction, following a two-PE compiled-artifact comparison. | **SDK.** Actual outputs compared with direct execution and independent numerics. [Composition](docs/PARTITION-EXPERIMENT.md) |
+| 2026-09-08 | **Native byte-packed static weights validated on one PE.** Complete weight readback and four GEMV cases. | **SDK at one tile.** Larger initializer experiments had separate compile-only scope. [Static weights](docs/NATIVE-U8.md) |
+| 2026-09-08 | **Full-vocabulary compilation limit recorded.** An early attempt hit its 24 GiB memory guard. | **Failed compilation.** No numerical output; later vocabulary acceptance above supersedes the implementation limitation. [Failure history](docs/NATIVE-U8.md) |
+| 2026-09-08 | **Complete decoder layer 0 validated.** Causal attention, KV state, both normalization/residual paths and the MLP, over five calls. | **SDK.** Full single-layer behavior within a bounded sequence. [Decoder](docs/DECODER.md) |
+| 2026-09-08 | **Resident MLP optimized.** A DSD-copy variant preserved outputs while reducing the measured controller interval by 49.57% in nonzero cases. | **SDK comparison.** Simulator cycle interval, not whole-model or hardware speedup. [Comparison](docs/RESIDENT-MLP.md) |
+| 2026-09-08 | **Resident MLP composed and validated.** UP, GATE, SwiGLU and DOWN connected on device across 916 weight tiles. | **SDK.** Four checked cases; normalization/residual added in the later decoder milestone. [MLP](docs/RESIDENT-MLP.md) |
+| 2026-09-08 | **Full layer-0 projections validated separately.** DOWN (896 × 4,864), GATE and UP (4,864 × 896), across 308/304/304 PEs. | **SDK.** Four cases per projection, before device-side MLP composition. [Projection records](docs/MILESTONES.md) |
+| 2026-09-08 | **Attention, cache and communication foundations validated.** Stateful GQA with 34 reference tokens, a separate 2,048-position KV diagnostic, packet acknowledgments and full-checkpoint BF16 packing. | **SDK components + host packing checks.** The cache diagnostic is not 2,048-token full-model generation. [Milestones](docs/MILESTONES.md) |
+| 2026-09-08 | **Initial operator library and reference baseline released.** Linear algebra, regional communication, normalization, residual, SwiGLU, softmax, RoPE and model references. | **Bounded component tests.** Starting point for the integrations above. [Operator contracts](csl/kernels/README.md) · [Validation guide](validation/README.md) |
+
+For individual publication changes, see the [complete commit history](https://github.com/lingzhi227/csl-llm/commits/main/). Original acceptance rules are in [ACCEPTANCE.md](docs/ACCEPTANCE.md).
+
+## 3. Where to find the code and evidence
+
+| Directory | What it contains | When to read it |
+| --- | --- | --- |
+| [`csl/kernels/`](csl/kernels/) | Reusable CSL arithmetic operators and their contracts. | Understand the device computations. |
+| [`csl/runtime/`](csl/runtime/) | CSL communication, distributed execution and state/control components. | Understand how PEs cooperate. |
+| [`src/csl_llm/`](src/csl_llm/) | Python placement and region-contract machinery. | Understand how a model becomes a PE layout. |
+| [`tools/`](tools/) | Python preparation, compiler/assembly drivers, SDK experiments and reference checks. | Follow the build and validation workflow. |
+| [`support/`](support/) | Isolated helper versions for model assembly, model boot, partitions, two-layer tests and core export; some include CSL. | Find the exact dependency set used by a specific milestone. |
+| [`configs/`](configs/) | Model identity, precision policy and reference inputs. | Identify precisely which model and assumptions are being tested. |
+| [`tests/`](tests/) | Host-side tests for tooling and contracts. | Check Python-side behavior; these are not device execution evidence. |
+| [`validation/frozen/`](validation/frozen/) | Selected historical drivers, CSL sources, manifests and compact run records. | Inspect the version associated with a recorded experiment. |
+| [`validation/reviews/`](validation/reviews/) | Independent acceptance and outcome reviews. | Verify whether a result was numerical, static, diagnostic or unsuccessful. |
+| [`evidence/`](evidence/) | Small published model/reference metadata. | Trace reference provenance without downloading model weights. |
+| [`docs/`](docs/) | Design contracts, milestone explanations, source maps and reproduction limits. | Read the detailed account behind a log entry. |
+| [`release/`](release/) | Publication checks, project state and file-hash manifest. | Audit this public package and distinguish it from original experiment artifacts. |
+
+**Start with a log entry, follow its source map, then inspect the corresponding frozen inputs and independent review.** CSL source is also preserved in milestone-specific `support/` and `validation/frozen/` directories; it is not all under the top-level `csl/` directory. Multiple historical helper versions are intentional: later changes must not silently replace the code behind an earlier accepted result.
+
+## Reproduction and scope
+
+This is a curated research source and evidence release. It excludes model weights, generated weight literals, SDK binaries, compiled device programs, raw tensors and core dumps. Frozen manifests may describe omitted artifacts; their directories are inspection records, not self-contained runnable bundles. Public host-path adaptations have not received a fresh SDK qualification.
+
+See [setup and reproduction](docs/REPRODUCING.md), [publication checks](release/CHECKS.md), and [source attribution and licenses](THIRD_PARTY_NOTICES.md). Obtain the pinned model and an appropriate SDK separately before preparing new experiments. Development and simulation remain paused until a new user instruction.
